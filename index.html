@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PickupRadar — Real wait times for UK delivery drivers</title>
+  <meta name="description" content="PickupRadar helps UK delivery drivers see and report pickup wait times at restaurants and shops." />
+  <style>
+    :root {
+      --bg: #06111a;
+      --card: #0d1c28;
+      --card2: #102638;
+      --text: #f4f8fb;
+      --muted: #9fb2c4;
+      --border: #193247;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at top, #102638 0%, #06111a 50%, #03080d 100%);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .wrap {
+      width: min(980px, 92%);
+      margin: 0 auto;
+      padding: 56px 0;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--card2);
+      border: 1px solid var(--border);
+      color: #b9d7ee;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 0.95;
+      margin: 0 0 20px;
+      letter-spacing: -2px;
+    }
+
+    .subtitle {
+      font-size: clamp(20px, 3vw, 30px);
+      color: #c9d7e4;
+      max-width: 760px;
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 720px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 34px 0;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      color: #041019;
+      background: var(--white);
+      padding: 14px 20px;
+      border-radius: 999px;
+      font-weight: 800;
+    }
+
+    .button.secondary {
+      color: var(--text);
+      background: var(--card2);
+      border: 1px solid var(--border);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 48px;
+    }
+
+    .card {
+      background: rgba(13, 28, 40, 0.9);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 24px;
+    }
+
+    .card h2 {
+      font-size: 22px;
+      margin: 0 0 8px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .notice {
+      margin-top: 48px;
+      background: rgba(82, 255, 117, 0.08);
+      border: 1px solid rgba(82, 255, 117, 0.22);
+      border-radius: 24px;
+      padding: 24px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      margin-top: 56px;
+      padding-top: 24px;
+      color: var(--muted);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer a {
+      color: #c9d7e4;
+      text-decoration: none;
+      margin-left: 14px;
+    }
+
+    @media (max-width: 760px) {
+      .wrap { padding: 38px 0; }
+      .grid { grid-template-columns: 1fr; }
+      footer { display: block; }
+      footer a {
+        display: inline-block;
+        margin: 10px 12px 0 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="badge">Milton Keynes launch</div>
+
+    <h1>PickupRadar</h1>
+
+    <div class="subtitle">Know the wait before you walk in.</div>
+
+    <p class="muted">
+      PickupRadar helps UK delivery drivers see and report pickup wait times at restaurants and shops.
+      It is built to reduce wasted time and help drivers make better pickup decisions.
+    </p>
+
+    <div class="buttons">
+      <a class="button" href="mailto:support@pickupradar.co.uk">Contact support</a>
+      <a class="button secondary" href="privacy.html">Privacy policy</a>
+      <a class="button secondary" href="support.html">Support</a>
+    </div>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Live wait reports</h2>
+        <p>Drivers can report how long they waited at a pickup point.</p>
+      </div>
+
+      <div class="card">
+        <h2>Fresh data only</h2>
+        <p>Recent reports help drivers spot fast and slow pickup points.</p>
+      </div>
+
+      <div class="card">
+        <h2>No login required</h2>
+        <p>The app uses an anonymous device ID to reduce duplicate reports.</p>
+      </div>
+    </section>
+
+    <section class="notice">
+      <strong>Currently launching in Milton Keynes.</strong>
+      <p class="muted">
+        PickupRadar is in early testing for UK delivery drivers. More cities and features may be added later.
+      </p>
+    </section>
+
+    <footer>
+      <div>© 2026 PickupRadar</div>
+      <div>
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+        <a href="mailto:support@pickupradar.co.uk">Email</a>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
