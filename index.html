@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PickupRadar — Real wait times for UK delivery drivers</title>
-  <meta name="description" content="PickupRadar helps UK delivery drivers see and report pickup wait times at restaurants and shops." />
+  <meta name="description" content="PickupRadar helps UK delivery drivers see recent wait times, venue issues, closed reports, tablet problems and driver tips before wasting time at pickup points." />
   <style>
     :root {
       --bg: #06111a;
@@ -14,6 +14,8 @@
       --muted: #9fb2c4;
       --border: #193247;
       --white: #ffffff;
+      --green: #52ff75;
+      --blue: #b9d7ee;
     }
 
     * { box-sizing: border-box; }
@@ -24,6 +26,7 @@
       background: radial-gradient(circle at top, #102638 0%, #06111a 50%, #03080d 100%);
       color: var(--text);
       line-height: 1.5;
+      overflow-x: hidden;
     }
 
     .wrap {
@@ -32,44 +35,46 @@
       padding: 56px 0;
     }
 
+    .brand {
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin: 0 0 16px;
+      color: var(--text);
+    }
+
     .badge {
       display: inline-block;
       background: var(--card2);
       border: 1px solid var(--border);
-      color: #b9d7ee;
+      color: var(--blue);
       padding: 8px 14px;
       border-radius: 999px;
       font-weight: 700;
       font-size: 14px;
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
 
     h1 {
-      font-size: clamp(42px, 8vw, 76px);
-      line-height: 0.95;
-      margin: 0 0 20px;
-      letter-spacing: -2px;
+      font-size: clamp(32px, 6vw, 58px);
+      line-height: 1.05;
+      margin: 0 0 18px;
+      letter-spacing: -1.5px;
+      max-width: 820px;
     }
 
-    .subtitle {
-      font-size: clamp(20px, 3vw, 30px);
-      color: #c9d7e4;
-      max-width: 760px;
-      margin-bottom: 16px;
-      font-weight: 700;
-    }
-
-    .muted {
+    .lead {
       color: var(--muted);
-      font-size: 18px;
+      font-size: clamp(17px, 2.4vw, 19px);
       max-width: 720px;
+      margin: 0 0 28px;
     }
 
     .buttons {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
-      margin: 34px 0;
+      margin: 0 0 40px;
     }
 
     .button {
@@ -80,6 +85,8 @@
       padding: 14px 20px;
       border-radius: 999px;
       font-weight: 800;
+      font-size: 15px;
+      text-align: center;
     }
 
     .button.secondary {
@@ -88,54 +95,127 @@
       border: 1px solid var(--border);
     }
 
-    .grid {
+    .section-title {
+      font-size: clamp(22px, 3.5vw, 28px);
+      margin: 0 0 18px;
+      letter-spacing: -0.5px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-bottom: 48px;
+    }
+
+    .stat {
+      background: rgba(13, 28, 40, 0.9);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 18px 16px;
+      text-align: center;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: clamp(18px, 2.5vw, 22px);
+      margin-bottom: 4px;
+      color: var(--blue);
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .features {
+      margin-bottom: 48px;
+    }
+
+    .feature-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-      margin-top: 48px;
+      gap: 16px;
     }
 
     .card {
       background: rgba(13, 28, 40, 0.9);
       border: 1px solid var(--border);
       border-radius: 24px;
-      padding: 24px;
+      padding: 22px;
     }
 
-    .card h2 {
-      font-size: 22px;
+    .card h3 {
+      font-size: 18px;
       margin: 0 0 8px;
+      line-height: 1.25;
     }
 
     .card p {
       margin: 0;
       color: var(--muted);
+      font-size: 15px;
+    }
+
+    .steps {
+      margin-bottom: 48px;
+    }
+
+    .step-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .step {
+      background: rgba(16, 38, 56, 0.85);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 20px 18px;
+    }
+
+    .step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      background: rgba(82, 255, 117, 0.15);
+      border: 1px solid rgba(82, 255, 117, 0.35);
+      color: var(--green);
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .step h3 {
+      font-size: 16px;
+      margin: 0;
+      line-height: 1.35;
     }
 
     .notice {
-      margin-top: 48px;
       background: rgba(82, 255, 117, 0.08);
       border: 1px solid rgba(82, 255, 117, 0.22);
       border-radius: 24px;
-      padding: 24px;
+      padding: 22px 24px;
     }
 
     .notice h2 {
-      font-size: 22px;
-      margin: 0 0 12px;
+      font-size: 20px;
+      margin: 0 0 10px;
     }
 
     .notice p {
-      margin: 0 0 12px;
-    }
-
-    .notice p:last-child {
-      margin-bottom: 0;
+      margin: 0;
+      color: var(--muted);
+      font-size: 16px;
     }
 
     footer {
       border-top: 1px solid var(--border);
-      margin-top: 56px;
+      margin-top: 48px;
       padding-top: 24px;
       color: var(--muted);
       display: flex;
@@ -151,65 +231,176 @@
       margin-left: 14px;
     }
 
+    @media (max-width: 900px) {
+      .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .step-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
     @media (max-width: 760px) {
-      .wrap { padding: 38px 0; }
-      .grid { grid-template-columns: 1fr; }
-      footer { display: block; }
+      .wrap {
+        padding: 32px 0 40px;
+      }
+
+      h1 {
+        letter-spacing: -1px;
+        margin-bottom: 14px;
+      }
+
+      .lead {
+        margin-bottom: 22px;
+      }
+
+      .buttons {
+        margin-bottom: 32px;
+      }
+
+      .button {
+        flex: 1 1 calc(50% - 6px);
+        min-width: 140px;
+        padding: 13px 16px;
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-bottom: 36px;
+      }
+
+      .stat {
+        padding: 14px 12px;
+      }
+
+      .features,
+      .steps {
+        margin-bottom: 36px;
+      }
+
+      .feature-grid,
+      .step-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .section-title {
+        margin-bottom: 14px;
+      }
+
+      footer {
+        display: block;
+        margin-top: 36px;
+      }
+
       footer a {
         display: inline-block;
         margin: 10px 12px 0 0;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .button {
+        flex: 1 1 100%;
       }
     }
   </style>
 </head>
 <body>
   <main class="wrap">
-    <div class="badge">Built for UK delivery drivers</div>
-
-    <h1>PickupRadar</h1>
-
-    <div class="subtitle">Know the wait before you walk in.</div>
-
-    <p class="muted">
-      PickupRadar helps UK delivery drivers see and report pickup wait times at restaurants and shops.
-      It is built to reduce wasted time and help drivers make better pickup decisions.
-    </p>
-
-    <div class="buttons">
-      <a class="button" href="mailto:support@pickupradar.co.uk">Contact support</a>
-      <a class="button secondary" href="privacy.html">Privacy policy</a>
-      <a class="button secondary" href="support.html">Support</a>
-    </div>
-
-    <section class="grid">
-      <div class="card">
-        <h2>Live wait reports</h2>
-        <p>Drivers can report how long they waited at a pickup point.</p>
+    <section class="hero">
+      <div class="badge">Built for UK delivery drivers</div>
+      <p class="brand">PickupRadar</p>
+      <h1>Know the pickup before you walk in.</h1>
+      <p class="lead">
+        PickupRadar helps delivery drivers see recent wait times, venue issues, closed reports,
+        tablet problems and driver tips before wasting time at pickup points.
+      </p>
+      <div class="buttons">
+        <a class="button" href="mailto:support@pickupradar.co.uk">Contact support</a>
+        <a class="button secondary" href="privacy.html">Privacy policy</a>
       </div>
+    </section>
 
-      <div class="card">
-        <h2>Fresh data only</h2>
-        <p>Recent reports help drivers spot fast and slow pickup points.</p>
+    <section class="stats" aria-label="Key facts">
+      <div class="stat">
+        <strong>No login</strong>
+        <span>Open and use straight away</span>
       </div>
+      <div class="stat">
+        <strong>23 UK cities</strong>
+        <span>Live across the UK</span>
+      </div>
+      <div class="stat">
+        <strong>Driver-reported</strong>
+        <span>Real pickup experiences</span>
+      </div>
+      <div class="stat">
+        <strong>Fresh reports only</strong>
+        <span>Recent data that still matters</span>
+      </div>
+    </section>
 
-      <div class="card">
-        <h2>No login required</h2>
-        <p>The app uses an anonymous device ID to reduce duplicate reports.</p>
+    <section class="features">
+      <h2 class="section-title">What drivers can see and report</h2>
+      <div class="feature-grid">
+        <div class="card">
+          <h3>Live wait reports</h3>
+          <p>Drivers can report how long they waited at a pickup point.</p>
+        </div>
+        <div class="card">
+          <h3>Closed or cannot take orders</h3>
+          <p>See recent reports when a venue may be closed or unable to take orders.</p>
+        </div>
+        <div class="card">
+          <h3>Tablet/server problems</h3>
+          <p>Spot pickup points where drivers reported tablet or system issues.</p>
+        </div>
+        <div class="card">
+          <h3>Order starts when driver arrives</h3>
+          <p>Report venues that usually start making the order only after the driver arrives.</p>
+        </div>
+        <div class="card">
+          <h3>Driver tags</h3>
+          <p>Share quick driver notes like slow staff, parking issues, busy counters or hard-to-find entrances.</p>
+        </div>
+        <div class="card">
+          <h3>Missing or wrong venues</h3>
+          <p>Drivers can report wrong addresses, duplicate venues, wrong branch names, permanently closed venues, or missing pickup points.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps">
+      <h2 class="section-title">How it works</h2>
+      <div class="step-grid">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Choose your area</h3>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Check recent pickup reports</h3>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Report a wait or issue</h3>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h3>Help other drivers avoid wasted time</h3>
+        </div>
       </div>
     </section>
 
     <section class="notice">
       <h2>Independent driver tool</h2>
-      <p class="muted">
+      <p>
         PickupRadar is independent and is not connected to Uber Eats, Deliveroo, Just Eat, or any delivery platform.
-        The app does not connect to or interact with your delivery platform accounts.
-      </p>
-      <p class="muted">
-        PickupRadar does not ask for delivery app login details, passwords, account details, customer details, or order information.
-        It only lets drivers share simple pickup wait-time reports.
-      </p>
-      <p class="muted">
-        Please do not share customer names, customer addresses, order numbers, or private order details in reports.
+        It does not connect to delivery platform accounts and does not ask for login details, passwords, customer details,
+        order numbers, or private order information.
       </p>
     </section>
 
