@@ -31,6 +31,25 @@
       padding: 48px 0;
     }
 
+    .site-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      margin-bottom: 24px;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .site-nav a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .site-nav a:hover,
+    .site-nav a.active {
+      color: #c9d7e4;
+    }
+
     a { color: #c9d7e4; }
 
     .back {
@@ -87,7 +106,12 @@
 </head>
 <body>
   <main class="wrap">
-    <a class="back" href="index.html">← Back to PickupRadar</a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="index.html">Home</a>
+      <a href="app.html">App</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html" class="active">Privacy</a>
+    </nav>
 
     <h1>Privacy Policy</h1>
     <div class="updated">Last updated: 20 June 2026</div>
@@ -198,7 +222,10 @@
     </section>
 
     <footer>
-      © 2026 PickupRadar · <a href="support.html">Support</a>
+      © 2026 PickupRadar ·
+      <a href="index.html">Home</a> ·
+      <a href="app.html">App</a> ·
+      <a href="support.html">Support</a>
     </footer>
   </main>
 </body>
