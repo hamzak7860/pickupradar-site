@@ -753,7 +753,8 @@
 
     const SUPABASE_URL = 'https://jvsseskherxmtcuumldq.supabase.co';
     const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp2c3Nlc2toZXJ4bXRjdXVtbGRxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg1MTQwMTcsImV4cCI6MjA5NDA5MDAxN30.lsbs-umYa1a05GUi3sLZUvS609XlyPQjrcgAPp7HvOU';
-    const DEFAULT_CITY = 'Milton Keynes';
+    const DEFAULT_CITY = 'Manchester';
+    const CITY_STORAGE_KEY = 'pickupradar_active_city';
 
     const TAG_LABELS = {
       order_already_collected: 'Order already collected',
@@ -1301,6 +1302,39 @@
       showScreen('detail');
     }
 
+    function saveSelectedCity(city) {
+      try {
+        localStorage.setItem(CITY_STORAGE_KEY, city);
+      } catch (error) {
+        // Ignore storage errors in private browsing or restricted contexts.
+      }
+    }
+
+    function resolveActiveCity(cities) {
+      const liveList = Array.isArray(cities) ? cities : [];
+      if (liveList.length === 0) return DEFAULT_CITY;
+
+      const urlCity = new URLSearchParams(window.location.search).get('city');
+      if (urlCity && liveList.includes(urlCity)) {
+        return urlCity;
+      }
+
+      try {
+        const savedCity = localStorage.getItem(CITY_STORAGE_KEY);
+        if (savedCity && liveList.includes(savedCity)) {
+          return savedCity;
+        }
+      } catch (error) {
+        // Ignore storage errors in private browsing or restricted contexts.
+      }
+
+      if (liveList.includes(DEFAULT_CITY)) {
+        return DEFAULT_CITY;
+      }
+
+      return liveList[0];
+    }
+
     function populateCitySelect() {
       citySelect.innerHTML = liveCities
         .map((city) => '<option value="' + escapeHtml(city) + '">' + escapeHtml(city) + '</option>')
@@ -1370,6 +1404,7 @@
 
     citySelect.addEventListener('change', () => {
       activeCity = citySelect.value;
+      saveSelectedCity(activeCity);
       showScreen('home');
       searchInput.value = '';
       loadCityData(activeCity).catch((error) => {
@@ -1416,7 +1451,8 @@
       try {
         liveCities = await loadLiveCities();
         if (liveCities.length === 0) liveCities = [DEFAULT_CITY];
-        activeCity = liveCities.includes(DEFAULT_CITY) ? DEFAULT_CITY : liveCities[0];
+        activeCity = resolveActiveCity(liveCities);
+        saveSelectedCity(activeCity);
         populateCitySelect();
         await loadCityData(activeCity);
       } catch (error) {
