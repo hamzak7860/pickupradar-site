@@ -113,10 +113,8 @@
 
     .app-header { margin-bottom: 16px; }
 
-    .city-pill-wrap { position: relative; display: inline-block; margin-bottom: 14px; }
-
-    .city-pill {
-      appearance: none;
+    .city-pill-btn {
+      display: inline-block;
       background: #102232;
       border: none;
       border-radius: 999px;
@@ -124,19 +122,92 @@
       font-size: 12px;
       font-weight: 700;
       letter-spacing: 0.3px;
-      padding: 8px 28px 8px 12px;
+      padding: 8px 12px;
+      margin-bottom: 14px;
       cursor: pointer;
     }
 
-    .city-pill-wrap::after {
-      content: '▾';
-      position: absolute;
-      right: 10px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: #8fb5d7;
-      font-size: 11px;
-      pointer-events: none;
+    .city-picker-header {
+      padding: 14px 16px 12px;
+      border-bottom: 1px solid #182837;
+    }
+
+    .city-picker-title {
+      color: #f6faff;
+      font-size: 28px;
+      font-weight: 900;
+      margin: 12px 0 10px;
+      letter-spacing: -0.5px;
+    }
+
+    .city-search-input {
+      width: 100%;
+      min-height: 48px;
+      padding: 0 14px;
+      border-radius: 16px;
+      border: 1px solid #1d3244;
+      background: #10202d;
+      color: #f6faff;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    .city-search-input::placeholder { color: #89a0b8; }
+
+    .city-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .city-row {
+      min-height: 72px;
+      border-radius: 18px;
+      padding: 14px 16px;
+      background: #0e1822;
+      border: 1px solid #182837;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      cursor: pointer;
+      text-align: left;
+      width: 100%;
+      font-family: inherit;
+      color: inherit;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    .city-row:hover { border-color: #2a4558; }
+
+    .city-row.selected {
+      border-color: #4bc57d;
+    }
+
+    .city-row-name {
+      color: #f6faff;
+      font-size: 16px;
+      font-weight: 800;
+      display: block;
+    }
+
+    .city-row-meta {
+      color: #89a0b8;
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 4px;
+      display: block;
+    }
+
+    .city-row-status {
+      color: #bfd0e0;
+      font-size: 13px;
+      font-weight: 800;
+      flex-shrink: 0;
     }
 
     .app-title {
@@ -447,7 +518,7 @@
     }
 
     .search-bar {
-      width: 100%;
+      display: block;
       min-height: 48px;
       margin: 12px 16px 0;
       width: calc(100% - 32px);
@@ -458,6 +529,8 @@
       color: #f6faff;
       font-size: 14px;
       font-weight: 600;
+      -webkit-appearance: none;
+      appearance: none;
     }
 
     .search-bar::placeholder { color: #89a0b8; }
@@ -632,10 +705,28 @@
 
     @media (max-width: 760px) {
       .wrap { padding: 20px 0 36px; }
-      .phone-shell { border-radius: 28px; padding: 10px; }
-      .phone-screen { border-radius: 22px; }
+      .page-intro { margin-bottom: 18px; }
+      .page-intro h1 { font-size: 24px; }
+      .page-intro p { font-size: 15px; }
+      .phone-shell { border-radius: 28px; padding: 10px; max-width: min(390px, 100%); width: 100%; }
+      .phone-screen { border-radius: 22px; min-height: 640px; }
       footer { display: block; }
       footer a { display: inline-block; margin: 10px 12px 0 0; }
+    }
+
+    @media (max-width: 390px) {
+      .site-nav { margin-bottom: 20px; font-size: 14px; }
+      .page-intro h1 { font-size: 22px; }
+      .preview-note { font-size: 12px; padding: 6px 12px; }
+      .app-title { font-size: 28px; }
+      .app-tagline { font-size: 16px; }
+      .home-helper { font-size: 12px; line-height: 1.45; }
+      .city-picker-title { font-size: 24px; }
+      .filter-chip { min-height: 40px; padding: 0 14px; font-size: 13px; }
+      .venue-name { font-size: 18px; }
+      .meta-value { font-size: 13px; }
+      .meta-item { min-height: 68px; padding: 10px; }
+      .floating-btn { height: 54px; font-size: 16px; }
     }
   </style>
 </head>
@@ -664,9 +755,7 @@
         <div id="homeScreen" class="screen">
           <div class="app-scroll">
             <div class="app-header">
-              <div class="city-pill-wrap">
-                <select id="citySelect" class="city-pill" aria-label="Choose city"></select>
-              </div>
+              <button type="button" id="cityPillBtn" class="city-pill-btn" aria-label="Choose city">Manchester</button>
               <p class="app-title">PickupRadar</p>
               <p class="app-tagline">Know the wait before you walk in.</p>
               <p class="app-supporting">Real wait times for UK delivery drivers</p>
@@ -689,8 +778,17 @@
             <div id="homeBody"></div>
           </div>
           <div class="floating-bar">
-            <button type="button" class="floating-btn write-action">Report a wait</button>
+            <button type="button" class="floating-btn write-action">Get the app to report</button>
           </div>
+        </div>
+
+        <div id="cityScreen" class="screen hidden">
+          <div class="city-picker-header">
+            <button type="button" class="back-btn" id="cityCloseBtn">Close</button>
+            <h2 class="city-picker-title">Choose your area</h2>
+            <input id="citySearchInput" class="city-search-input" type="search" placeholder="Search area" autocomplete="off" />
+          </div>
+          <div class="app-scroll" id="cityListBody"></div>
         </div>
 
         <div id="searchScreen" class="screen hidden">
@@ -698,7 +796,7 @@
             <button type="button" class="back-btn" id="searchBackBtn">← Back</button>
           </div>
           <input id="searchInput" class="search-bar" type="search" placeholder="Search pickup points" autocomplete="off" />
-          <p class="search-heading">Search results</p>
+          <p class="search-heading" id="searchHeading">Suggested pickup points</p>
           <div class="app-scroll" id="searchBody"></div>
         </div>
 
@@ -708,7 +806,7 @@
           </div>
           <div class="app-scroll" id="detailBody"></div>
           <div class="floating-bar">
-            <button type="button" class="floating-btn write-action">Report a wait</button>
+            <button type="button" class="floating-btn write-action">Get the app to report</button>
           </div>
         </div>
       </div>
@@ -718,6 +816,7 @@
       <div>© 2026 PickupRadar</div>
       <div>
         <a href="index.html">Home</a>
+        <a href="app.html">App</a>
         <a href="support.html">Support</a>
         <a href="privacy.html">Privacy</a>
         <a href="mailto:support@pickupradar.co.uk">Email</a>
@@ -779,6 +878,8 @@
 
     const CURATED_FALLBACK_LIMIT = 6;
     const HOME_TAB_LIMITS = { Nearby: 12, Fast: 12, Slow: 12, Recent: 20 };
+    const BRAND_PRIORITY = ["McDonald's", 'KFC', 'Burger King', 'Subway', 'Greggs', 'Taco Bell', 'Popeyes', "Pepe's", 'Dixy', 'German Doner Kebab', 'Starbucks', 'Costa', 'Co-op', 'Tesco', "Sainsbury's", 'One Stop'];
+    const SUGGESTED_LIMIT = 20;
 
     let liveCities = [];
     let activeCity = DEFAULT_CITY;
@@ -786,12 +887,16 @@
     let selectedFilter = 'Nearby';
     let loadError = null;
 
-    const citySelect = document.getElementById('citySelect');
+    const cityPillBtn = document.getElementById('cityPillBtn');
+    const cityListBody = document.getElementById('cityListBody');
+    const citySearchInput = document.getElementById('citySearchInput');
     const homeBody = document.getElementById('homeBody');
     const searchBody = document.getElementById('searchBody');
     const searchInput = document.getElementById('searchInput');
+    const searchHeading = document.getElementById('searchHeading');
     const detailBody = document.getElementById('detailBody');
     const homeScreen = document.getElementById('homeScreen');
+    const cityScreen = document.getElementById('cityScreen');
     const searchScreen = document.getElementById('searchScreen');
     const detailScreen = document.getElementById('detailScreen');
     const downloadModal = document.getElementById('downloadModal');
@@ -909,11 +1014,20 @@
       return 0;
     }
 
+    function isoHoursAgo(hours) {
+      return new Date(Date.now() - hours * 60 * 60 * 1000).toISOString();
+    }
+
+    function getVenueSearchText(venue) {
+      return [venue.name, venue.brand, venue.area, venue.zone, venue.branch, venue.postcode, venue.address]
+        .filter(Boolean)
+        .map((value) => String(value).toLowerCase());
+    }
+
     function buildVenueStats(venueRows, reportRows, statusRows, tagRows) {
       const now = Date.now();
       const midnight = getLocalMidnightTime();
       const madeWhenDriverWindowMs = 48 * 60 * 60 * 1000;
-      const tagWindowMs = 24 * 60 * 60 * 1000;
       const orderedVenues = [...venueRows].sort((a, b) => a.name.localeCompare(b.name));
 
       return orderedVenues.map((venue) => {
@@ -942,22 +1056,15 @@
         const recentMadeWhenDriverReports = venueReports.filter(
           (report) => now - new Date(report.created_at).getTime() <= madeWhenDriverWindowMs && report.order_made_when_driver_arrives
         );
-        const recentMadeWhenDriverDistinctDevices = new Set(recentMadeWhenDriverReports.map((report) => report.device_id)).size;
         const recentMadeWhenDriverTotalReports = venueReports.filter(
           (report) => now - new Date(report.created_at).getTime() <= madeWhenDriverWindowMs
         ).length;
 
-        const recentStatusReports = statusRows.filter(
-          (report) => report.venue_id === venue.id && now - new Date(report.created_at).getTime() <= 90 * 60000
-        );
+        const recentStatusReports = statusRows.filter((report) => report.venue_id === venue.id);
         const recentClosedReports = recentStatusReports.filter((report) => report.status_type === 'closed');
         const recentSystemDownReports = recentStatusReports.filter((report) => report.status_type === 'system_down');
-        const closedDistinctDevices = new Set(recentClosedReports.map((report) => report.device_id)).size;
-        const systemDownDistinctDevices = new Set(recentSystemDownReports.map((report) => report.device_id)).size;
 
-        const recentTagRows = tagRows.filter(
-          (report) => report.venue_id === venue.id && now - new Date(report.created_at).getTime() <= tagWindowMs
-        );
+        const recentTagRows = tagRows.filter((report) => report.venue_id === venue.id);
         const tagCountMap = new Map();
         for (const row of recentTagRows) {
           tagCountMap.set(row.tag_key, (tagCountMap.get(row.tag_key) || 0) + 1);
@@ -976,13 +1083,13 @@
           currentWaitMinutes === null ? 'neutral' : currentWaitMinutes < 8 ? 'green' : currentWaitMinutes <= 15 ? 'amber' : 'red';
         const leftEarlyCount = reportsToday.filter((report) => report.left_early).length;
         const leftEarlyWarning = reportsToday.length >= 3 && leftEarlyCount / reportsToday.length >= 0.3;
+        // TODO: replace count-based public warnings with a Supabase public aggregate view/RPC when available.
         const madeWhenDriverArrivesBadge =
           recentMadeWhenDriverReports.length >= 3 &&
-          recentMadeWhenDriverDistinctDevices >= 3 &&
           recentMadeWhenDriverTotalReports > 0 &&
           recentMadeWhenDriverReports.length / recentMadeWhenDriverTotalReports >= 0.6;
-        const closedWarning = closedDistinctDevices >= 2;
-        const systemDownWarning = systemDownDistinctDevices >= 2;
+        const closedWarning = recentClosedReports.length >= 2;
+        const systemDownWarning = recentSystemDownReports.length >= 2;
 
         return {
           ...venue,
@@ -1184,19 +1291,65 @@
       bindVenueCards(homeBody);
     }
 
-    function renderSearchList() {
-      const query = searchInput.value.trim().toLowerCase();
-      let list = venueStats;
+    function getSuggestedVenues() {
+      const seen = new Set();
+      const result = [];
 
-      if (query) {
-        list = list.filter((venue) => {
-          const name = cleanVenueName(venue.name, activeCity).toLowerCase();
-          const area = getVenueSubtitle(venue, activeCity).toLowerCase();
-          return name.includes(query) || area.includes(query) || venue.name.toLowerCase().includes(query);
-        });
+      function addVenue(venue) {
+        if (!venue || seen.has(venue.id)) return;
+        seen.add(venue.id);
+        result.push(venue);
       }
 
-      list = list.slice(0, 50);
+      venueStats
+        .filter((venue) => venue.currentWaitMinutes !== null)
+        .sort((a, b) => (a.lastReportMinutes ?? Infinity) - (b.lastReportMinutes ?? Infinity))
+        .forEach(addVenue);
+
+      venueStats
+        .filter((venue) => venue.currentWaitMinutes === null && venue.lastReportMinutes !== null)
+        .sort((a, b) => (a.lastReportMinutes ?? Infinity) - (b.lastReportMinutes ?? Infinity))
+        .forEach(addVenue);
+
+      for (const brand of BRAND_PRIORITY) {
+        const brandKey = normalizeName(brand);
+        const match = venueStats.find((venue) => {
+          if (seen.has(venue.id)) return false;
+          const name = normalizeName(venue.name);
+          const venueBrand = venue.brand ? normalizeName(String(venue.brand)) : '';
+          const matchesBrand = name.includes(brandKey) || venueBrand.includes(brandKey);
+          if (!matchesBrand) return false;
+          return (
+            venue.currentWaitMinutes !== null ||
+            venue.lastReportMinutes !== null ||
+            isPredictedFastFallback(venue) ||
+            isPredictedSlowFallback(venue)
+          );
+        });
+        if (match) addVenue(match);
+      }
+
+      venueStats
+        .filter((venue) => isPredictedFastFallback(venue) || isPredictedSlowFallback(venue))
+        .forEach(addVenue);
+
+      return result.slice(0, SUGGESTED_LIMIT);
+    }
+
+    function renderSearchList() {
+      const query = searchInput.value.trim().toLowerCase();
+      let list;
+
+      if (query) {
+        searchHeading.textContent = 'Search results';
+        list = venueStats.filter((venue) => {
+          return getVenueSearchText(venue).some((part) => part.includes(query));
+        });
+        list = list.slice(0, 50);
+      } else {
+        searchHeading.textContent = 'Suggested pickup points';
+        list = getSuggestedVenues();
+      }
 
       if (list.length === 0) {
         searchBody.innerHTML = '<div class="state-box"><strong>No matches</strong><span>Try another search term.</span></div>';
@@ -1211,15 +1364,25 @@
       loadError = null;
       homeBody.innerHTML = '<div class="state-box"><strong>Loading live data…</strong><span>Syncing venues and reports for ' + escapeHtml(city) + '.</span></div>';
 
+      const waitSince = encodeURIComponent(isoHoursAgo(48));
+      const statusSince = encodeURIComponent(isoHoursAgo(1.5));
+      const tagSince = encodeURIComponent(isoHoursAgo(24));
+
       const [venuesResponse, reportsResponse, statusResponse, tagResponse] = await Promise.all([
         supabaseGet(
           '/venues?select=id,name,area,brand,branch,address,postcode,lat,lng,google_place_id,city,zone,venue_type,is_active,created_at&city=eq.' +
             encodeURIComponent(city) +
             '&is_active=eq.true&order=created_at.asc'
         ),
-        supabaseGet('/wait_reports?select=id,venue_id,platform,wait_bucket,wait_minutes,left_early,order_made_when_driver_arrives,device_id,created_at'),
-        supabaseGet('/venue_status_reports?select=id,venue_id,status_type,device_id,created_at'),
-        supabaseGet('/venue_tag_reports?select=id,venue_id,tag_key,device_id,platform,created_at'),
+        supabaseGet(
+          '/wait_reports?select=id,venue_id,platform,wait_bucket,wait_minutes,left_early,order_made_when_driver_arrives,created_at&created_at=gte.' + waitSince
+        ),
+        supabaseGet(
+          '/venue_status_reports?select=id,venue_id,status_type,created_at&created_at=gte.' + statusSince
+        ),
+        supabaseGet(
+          '/venue_tag_reports?select=id,venue_id,tag_key,platform,created_at&created_at=gte.' + tagSince
+        ),
       ]);
 
       venueStats = buildVenueStats(
@@ -1233,15 +1396,82 @@
       if (!searchScreen.classList.contains('hidden')) renderSearchList();
     }
 
+    let previousScreen = 'home';
+
     function showScreen(name) {
       homeScreen.classList.toggle('hidden', name !== 'home');
+      cityScreen.classList.toggle('hidden', name !== 'city');
       searchScreen.classList.toggle('hidden', name !== 'search');
       detailScreen.classList.toggle('hidden', name !== 'detail');
+    }
+
+    function updateCityPill() {
+      cityPillBtn.textContent = activeCity;
+    }
+
+    function renderCityList() {
+      const query = citySearchInput.value.trim().toLowerCase();
+      const filtered = liveCities.filter((city) => city.toLowerCase().includes(query));
+
+      if (filtered.length === 0) {
+        cityListBody.innerHTML = '<div class="state-box"><strong>No matches</strong><span>Try another area name.</span></div>';
+        return;
+      }
+
+      cityListBody.innerHTML =
+        '<div class="city-list">' +
+        filtered
+          .map((city) => {
+            const selected = city === activeCity;
+            return (
+              '<button type="button" class="city-row' + (selected ? ' selected' : '') + '" data-city="' + escapeHtml(city) + '">' +
+              '<span><span class="city-row-name">' + escapeHtml(city) + '</span>' +
+              (selected ? '<span class="city-row-meta">Selected</span>' : '') +
+              '</span>' +
+              '<span class="city-row-status">' + (selected ? 'Active' : 'Choose') + '</span>' +
+              '</button>'
+            );
+          })
+          .join('') +
+        '</div>';
+
+      cityListBody.querySelectorAll('.city-row').forEach((row) => {
+        row.addEventListener('click', () => {
+          const city = row.getAttribute('data-city');
+          if (!city || city === activeCity) {
+            showScreen('home');
+            return;
+          }
+          activeCity = city;
+          saveSelectedCity(activeCity);
+          updateCityPill();
+          citySearchInput.value = '';
+          searchInput.value = '';
+          showScreen('home');
+          loadCityData(activeCity).catch((error) => {
+            loadError = error instanceof Error ? error.message : String(error);
+            renderHomeList();
+          });
+        });
+      });
+    }
+
+    function openCityPicker() {
+      citySearchInput.value = '';
+      renderCityList();
+      showScreen('city');
+      citySearchInput.focus();
     }
 
     function openVenueDetail(venueId) {
       const venue = venueStats.find((item) => item.id === venueId);
       if (!venue) return;
+
+      if (!searchScreen.classList.contains('hidden')) {
+        previousScreen = 'search';
+      } else {
+        previousScreen = 'home';
+      }
 
       const display = getCardDisplay(venue);
       const address = formatVenueLocation(venue);
@@ -1335,13 +1565,6 @@
       return liveList[0];
     }
 
-    function populateCitySelect() {
-      citySelect.innerHTML = liveCities
-        .map((city) => '<option value="' + escapeHtml(city) + '">' + escapeHtml(city) + '</option>')
-        .join('');
-      citySelect.value = activeCity;
-    }
-
     function openDownloadModal() {
       downloadModal.classList.add('open');
     }
@@ -1402,16 +1625,9 @@
       });
     });
 
-    citySelect.addEventListener('change', () => {
-      activeCity = citySelect.value;
-      saveSelectedCity(activeCity);
-      showScreen('home');
-      searchInput.value = '';
-      loadCityData(activeCity).catch((error) => {
-        loadError = error instanceof Error ? error.message : String(error);
-        renderHomeList();
-      });
-    });
+    cityPillBtn.addEventListener('click', openCityPicker);
+    document.getElementById('cityCloseBtn').addEventListener('click', () => showScreen('home'));
+    citySearchInput.addEventListener('input', renderCityList);
 
     document.getElementById('openSearchBtn').addEventListener('click', () => {
       showScreen('search');
@@ -1427,7 +1643,7 @@
     searchInput.addEventListener('input', renderSearchList);
 
     document.getElementById('detailBackBtn').addEventListener('click', () => {
-      showScreen('home');
+      showScreen(previousScreen);
     });
 
     document.getElementById('howItWorksBtn').addEventListener('click', openInfoModal);
@@ -1453,7 +1669,7 @@
         if (liveCities.length === 0) liveCities = [DEFAULT_CITY];
         activeCity = resolveActiveCity(liveCities);
         saveSelectedCity(activeCity);
-        populateCitySelect();
+        updateCityPill();
         await loadCityData(activeCity);
       } catch (error) {
         loadError = error instanceof Error ? error.message : String(error);
