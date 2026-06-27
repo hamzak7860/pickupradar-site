@@ -5,18 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PickupRadar — Real wait times for UK delivery drivers</title>
   <meta name="description" content="PickupRadar helps UK delivery drivers see recent wait times, venue issues, closed reports, tablet problems and driver tips before wasting time at pickup points." />
+  <link rel="stylesheet" href="preview.css" />
   <style>
     :root {
       --bg: #06111a;
       --card: #0d1c28;
       --card2: #102638;
-      --phone: #071018;
       --text: #f4f8fb;
       --muted: #9fb2c4;
       --border: #193247;
       --white: #ffffff;
-      --green: #52ff75;
       --blue: #b9d7ee;
+      --green: #52ff75;
     }
 
     * { box-sizing: border-box; }
@@ -58,7 +58,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 40px;
       align-items: center;
-      margin-bottom: 48px;
+      margin-bottom: 56px;
     }
 
     .badge {
@@ -81,17 +81,18 @@
     }
 
     h1 {
-      font-size: clamp(30px, 5.5vw, 52px);
-      line-height: 1.05;
-      margin: 0 0 14px;
+      font-size: clamp(30px, 5.5vw, 48px);
+      line-height: 1.08;
+      margin: 0 0 16px;
       letter-spacing: -1.5px;
     }
 
-    .lead {
-      color: #bfd0e0;
-      font-size: clamp(17px, 2.4vw, 20px);
-      font-weight: 600;
+    .hero-text {
+      color: var(--muted);
+      font-size: clamp(16px, 2.2vw, 18px);
+      line-height: 1.6;
       margin: 0 0 28px;
+      max-width: 520px;
     }
 
     .buttons {
@@ -118,227 +119,105 @@
       border: 1px solid var(--border);
     }
 
-    .phone-shell {
-      max-width: 380px;
-      margin: 0 auto;
-      background: #050c12;
+    #live-preview { scroll-margin-top: 24px; }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-bottom: 48px;
+    }
+
+    .stat-box {
+      background: var(--card);
       border: 1px solid var(--border);
-      border-radius: 36px;
-      padding: 12px;
-      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+      border-radius: 22px;
+      padding: 20px 18px;
+      min-height: 120px;
     }
 
-    .phone-screen {
-      background: var(--phone);
-      border-radius: 28px;
-      overflow: hidden;
-      min-height: 620px;
-      display: flex;
-      flex-direction: column;
-      position: relative;
+    .stat-box strong {
+      display: block;
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 6px;
+      color: var(--text);
     }
 
-    .phone-status { height: 24px; background: #081018; }
-
-    .mock-scroll {
-      flex: 1;
-      overflow: hidden;
-      padding: 8px 14px 88px;
+    .stat-box span {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
     }
 
-    .city-pill {
-      display: inline-block;
-      background: #102232;
+    .section-heading {
+      font-size: clamp(26px, 4vw, 34px);
+      font-weight: 800;
+      letter-spacing: -0.8px;
+      margin: 0 0 20px;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-bottom: 48px;
+    }
+
+    .feature-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 20px 18px;
+    }
+
+    .feature-card h3 {
+      margin: 0 0 8px;
+      font-size: 17px;
+      font-weight: 800;
+    }
+
+    .feature-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-bottom: 48px;
+    }
+
+    .step-box {
+      background: var(--card2);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 20px 16px;
+    }
+
+    .step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
       border-radius: 999px;
-      color: #8fb5d7;
-      font-size: 12px;
-      font-weight: 700;
-      padding: 8px 12px;
+      background: rgba(185, 215, 238, 0.12);
+      border: 1px solid rgba(185, 215, 238, 0.28);
+      color: var(--blue);
+      font-size: 14px;
+      font-weight: 800;
       margin-bottom: 12px;
     }
 
-    .mock-title {
-      color: #f6faff;
-      font-size: 28px;
-      font-weight: 800;
-      letter-spacing: -0.6px;
+    .step-box h3 {
       margin: 0;
-    }
-
-    .mock-tagline {
-      color: #bfd0e0;
-      font-size: 15px;
-      font-weight: 600;
-      margin: 8px 0 0;
-    }
-
-    .mock-supporting {
-      color: #7f93a9;
-      font-size: 12px;
-      margin: 4px 0 0;
-    }
-
-    .mock-actions {
-      display: flex;
-      gap: 8px;
-      margin-top: 10px;
-    }
-
-    .mock-pill {
-      flex: 1;
-      text-align: center;
-      padding: 7px 8px;
-      border-radius: 999px;
-      background: #102232;
-      border: 1px solid #1d3244;
-      color: #bfd0e0;
-      font-size: 11px;
+      font-size: 16px;
       font-weight: 800;
-    }
-
-    .mock-filters {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-top: 14px;
-    }
-
-    .mock-chip {
-      padding: 7px 12px;
-      border-radius: 999px;
-      border: 1px solid #1d3244;
-      background: #10202d;
-      color: #a8bed1;
-      font-size: 11px;
-      font-weight: 700;
-    }
-
-    .mock-chip.active {
-      background: #e8f0f7;
-      border-color: #e8f0f7;
-      color: #081018;
-    }
-
-    .mock-search-card {
-      margin-top: 10px;
-      width: 100%;
-      border-radius: 18px;
-      padding: 12px;
-      background: #f6faff;
-      border: none;
-      text-align: left;
-      display: block;
-    }
-
-    .mock-search-title {
-      color: #071018;
-      font-size: 13px;
-      font-weight: 900;
-      display: block;
-    }
-
-    .mock-search-sub {
-      color: #32485d;
-      font-size: 10px;
-      font-weight: 700;
-      margin-top: 2px;
-      display: block;
-    }
-
-    .mock-card {
-      background: #0e1822;
-      border: 1px solid #182837;
-      border-radius: 18px;
-      padding: 12px;
-      margin-top: 10px;
-    }
-
-    .mock-card-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 8px;
-    }
-
-    .mock-rank {
-      padding: 4px 10px;
-      border-radius: 999px;
-      background: #142433;
-      color: #d4e2f0;
-      font-size: 10px;
-      font-weight: 800;
-    }
-
-    .mock-wait {
-      padding: 4px 10px;
-      border-radius: 999px;
-      font-size: 11px;
-      font-weight: 800;
-    }
-
-    .wait-red { background: #3b1618; color: #ff8b91; }
-    .wait-green { background: #113a2a; color: #78e6a6; }
-    .wait-amber { background: #3a2418; color: #f3b37a; }
-
-    .mock-venue {
-      color: #f6faff;
-      font-size: 14px;
-      font-weight: 800;
-      margin: 0 0 2px;
-      line-height: 1.25;
-    }
-
-    .mock-area {
-      color: #89a0b8;
-      font-size: 11px;
-      font-weight: 600;
-      margin: 0;
-    }
-
-    .mock-meta {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 6px;
-      margin-top: 10px;
-    }
-
-    .mock-meta-item {
-      background: #101c28;
-      border-radius: 10px;
-      padding: 6px;
-      min-height: 44px;
-    }
-
-    .mock-meta-label {
-      color: #7d93a8;
-      font-size: 8px;
-      font-weight: 700;
-      display: block;
-    }
-
-    .mock-meta-value {
-      color: #edf4fa;
-      font-size: 11px;
-      font-weight: 800;
-      margin-top: 3px;
-      display: block;
-    }
-
-    .mock-float {
-      position: absolute;
-      left: 14px;
-      right: 14px;
-      bottom: 14px;
-      height: 48px;
-      border-radius: 20px;
-      background: #f6faff;
-      color: #071018;
-      font-size: 14px;
-      font-weight: 900;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.28);
+      line-height: 1.35;
     }
 
     .notice {
@@ -358,6 +237,7 @@
       margin: 0;
       color: var(--muted);
       font-size: 16px;
+      line-height: 1.55;
     }
 
     footer {
@@ -369,12 +249,19 @@
       gap: 14px;
       justify-content: space-between;
       align-items: center;
+      font-size: 14px;
     }
 
     footer a {
       color: #c9d7e4;
       text-decoration: none;
       margin-left: 14px;
+    }
+
+    @media (max-width: 960px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .feature-grid { grid-template-columns: repeat(2, 1fr); }
+      .steps-grid { grid-template-columns: repeat(2, 1fr); }
     }
 
     @media (max-width: 900px) {
@@ -384,7 +271,7 @@
       }
 
       .hero-copy { order: 1; }
-      .phone-shell { order: 2; max-width: min(360px, 100%); width: 100%; }
+      #live-preview { order: 2; }
     }
 
     @media (max-width: 760px) {
@@ -393,16 +280,18 @@
       footer a { display: inline-block; margin: 10px 12px 0 0; }
     }
 
+    @media (max-width: 560px) {
+      .feature-grid,
+      .steps-grid { grid-template-columns: 1fr; }
+    }
+
     @media (max-width: 390px) {
       .wrap { padding: 24px 0 36px; }
       .site-nav { margin-bottom: 24px; font-size: 14px; }
       h1 { font-size: 28px; letter-spacing: -1px; }
       .brand { font-size: 28px; }
-      .lead { font-size: 16px; margin-bottom: 22px; }
-      .phone-shell { padding: 10px; border-radius: 28px; }
-      .phone-screen { min-height: 580px; border-radius: 22px; }
-      .mock-title { font-size: 24px; }
-      .mock-meta-value { font-size: 10px; }
+      .hero-text { font-size: 16px; margin-bottom: 22px; }
+      .stat-box { min-height: auto; }
     }
   </style>
 </head>
@@ -410,7 +299,7 @@
   <main class="wrap">
     <nav class="site-nav" aria-label="Site">
       <a href="index.html" class="active">Home</a>
-      <a href="app.html">App</a>
+      <a href="#live-preview">Live preview</a>
       <a href="support.html">Support</a>
       <a href="privacy.html">Privacy</a>
     </nav>
@@ -419,88 +308,95 @@
       <div class="hero-copy">
         <div class="badge">Built for UK delivery drivers</div>
         <p class="brand">PickupRadar</p>
-        <h1>Know the wait before you walk in.</h1>
-        <p class="lead">Real wait times for UK delivery drivers.</p>
+        <h1>Know the pickup before you walk in.</h1>
+        <p class="hero-text">
+          PickupRadar helps delivery drivers see recent wait times, venue issues, closed reports,
+          tablet problems and driver tips before wasting time at pickup points.
+        </p>
         <div class="buttons">
-          <a class="button" href="app.html">Open live preview</a>
-          <a class="button secondary" href="support.html">Support</a>
+          <a class="button" href="support.html">Contact support</a>
+          <a class="button secondary" href="privacy.html">Privacy policy</a>
         </div>
       </div>
 
-      <div class="phone-shell" aria-hidden="true">
-        <div class="phone-screen">
-          <div class="phone-status"></div>
-          <div class="mock-scroll">
-            <span class="city-pill">Manchester</span>
-            <p class="mock-title">PickupRadar</p>
-            <p class="mock-tagline">Know the wait before you walk in.</p>
-            <p class="mock-supporting">Real wait times for UK delivery drivers</p>
-            <div class="mock-actions">
-              <span class="mock-pill">How it works</span>
-              <span class="mock-pill">Support</span>
-            </div>
-            <div class="mock-filters">
-              <span class="mock-chip active">Nearby</span>
-              <span class="mock-chip">Fast</span>
-              <span class="mock-chip">Slow</span>
-              <span class="mock-chip">Recent</span>
-            </div>
-            <div class="mock-search-card">
-              <span class="mock-search-title">Search all pickup points</span>
-              <span class="mock-search-sub">Find any venue in your area</span>
-            </div>
+      <div id="live-preview" aria-label="Live PickupRadar app preview"></div>
+    </section>
 
-            <div class="mock-card">
-              <div class="mock-card-top">
-                <span class="mock-rank">#1</span>
-                <span class="mock-wait wait-red">20 min</span>
-              </div>
-              <p class="mock-venue">Bengies convenience store</p>
-              <p class="mock-area">Blackley</p>
-              <div class="mock-meta">
-                <div class="mock-meta-item"><span class="mock-meta-label">Reports today</span><span class="mock-meta-value">4</span></div>
-                <div class="mock-meta-item"><span class="mock-meta-label">Last report</span><span class="mock-meta-value">12m ago</span></div>
-                <div class="mock-meta-item"><span class="mock-meta-label">Confidence</span><span class="mock-meta-value">Medium</span></div>
-              </div>
-            </div>
+    <section class="stats-grid" aria-label="Key facts">
+      <div class="stat-box">
+        <strong>No login</strong>
+        <span>Open and use straight away</span>
+      </div>
+      <div class="stat-box">
+        <strong><span data-city-count>23</span> UK cities</strong>
+        <span>Coverage expanding</span>
+      </div>
+      <div class="stat-box">
+        <strong>Driver-reported</strong>
+        <span>Real pickup experiences</span>
+      </div>
+      <div class="stat-box">
+        <strong>Fresh reports only</strong>
+        <span>Recent data that still matters</span>
+      </div>
+    </section>
 
-            <div class="mock-card">
-              <div class="mock-card-top">
-                <span class="mock-rank">#2</span>
-                <span class="mock-wait wait-green">3 min</span>
-              </div>
-              <p class="mock-venue">Avenue Pizza Blackley</p>
-              <p class="mock-area">Blackley</p>
-              <div class="mock-meta">
-                <div class="mock-meta-item"><span class="mock-meta-label">Reports today</span><span class="mock-meta-value">2</span></div>
-                <div class="mock-meta-item"><span class="mock-meta-label">Last report</span><span class="mock-meta-value">8m ago</span></div>
-                <div class="mock-meta-item"><span class="mock-meta-label">Confidence</span><span class="mock-meta-value">Low</span></div>
-              </div>
-            </div>
+    <section>
+      <h2 class="section-heading">What drivers can see and report</h2>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Live wait reports</h3>
+          <p>Drivers can report how long they waited at a pickup point.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Closed or cannot take orders</h3>
+          <p>See recent reports when a venue may be closed or unable to take orders.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Tablet/server down</h3>
+          <p>Spot pickup points where drivers reported tablet or system issues.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Order starts when driver arrives</h3>
+          <p>Report venues that usually start making the order only after the driver arrives.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Driver tags</h3>
+          <p>Share quick driver notes like slow staff, parking issues, busy counters or hard-to-find entrances.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Missing or wrong venues</h3>
+          <p>Drivers can report wrong addresses, duplicate venues, wrong branch names, permanently closed venues, or missing pickup points.</p>
+        </article>
+      </div>
+    </section>
 
-            <div class="mock-card">
-              <div class="mock-card-top">
-                <span class="mock-rank">#3</span>
-                <span class="mock-wait wait-amber">Likely slow</span>
-              </div>
-              <p class="mock-venue">Burger King</p>
-              <p class="mock-area">Manchester</p>
-              <div class="mock-meta">
-                <div class="mock-meta-item"><span class="mock-meta-label">Reports today</span><span class="mock-meta-value">0</span></div>
-                <div class="mock-meta-item"><span class="mock-meta-label">Last report</span><span class="mock-meta-value">No recent reports</span></div>
-                <div class="mock-meta-item"><span class="mock-meta-label">Confidence</span><span class="mock-meta-value">Predicted</span></div>
-              </div>
-            </div>
-          </div>
-          <div class="mock-float">Get the app to report</div>
-        </div>
+    <section id="how-it-works">
+      <h2 class="section-heading">How it works</h2>
+      <div class="steps-grid">
+        <article class="step-box">
+          <span class="step-num">1</span>
+          <h3>Choose your area</h3>
+        </article>
+        <article class="step-box">
+          <span class="step-num">2</span>
+          <h3>Check recent pickup reports</h3>
+        </article>
+        <article class="step-box">
+          <span class="step-num">3</span>
+          <h3>Report a wait or issue</h3>
+        </article>
+        <article class="step-box">
+          <span class="step-num">4</span>
+          <h3>Help other drivers avoid wasted time</h3>
+        </article>
       </div>
     </section>
 
     <section class="notice">
       <h2>Independent driver tool</h2>
       <p>
-        PickupRadar is independent and is not connected to Uber Eats, Deliveroo, Just Eat, or any delivery platform.
+        PickupRadar is independent and is not connected to Uber Eats, Deliveroo, Just Eat, or any other delivery platform.
         It does not connect to delivery platform accounts and does not ask for login details, passwords, customer details,
         order numbers, or private order information.
       </p>
@@ -510,12 +406,19 @@
       <div>© 2026 PickupRadar</div>
       <div>
         <a href="index.html">Home</a>
-        <a href="app.html">App</a>
         <a href="support.html">Support</a>
         <a href="privacy.html">Privacy</a>
         <a href="mailto:support@pickupradar.co.uk">Email</a>
       </div>
     </footer>
   </main>
+
+  <script src="preview.js"></script>
+  <script>
+    mountPickupRadarPreview(document.getElementById('live-preview'), {
+      compact: true,
+      howItWorksScrollTo: '#how-it-works',
+    });
+  </script>
 </body>
 </html>
