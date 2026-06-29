@@ -13,7 +13,7 @@ const PREVIEW_MARKUP = `
               <p class="app-supporting">Real wait times for UK delivery drivers</p>
               <div class="header-actions">
                 <button type="button" class="header-pill" data-how-it-works>How it works</button>
-                <a class="header-pill" href="support.html">Support</a>
+                <a class="header-pill" data-support href="support.html">Support</a>
               </div>
               <div class="filter-row" role="tablist" aria-label="Filters">
                 <button type="button" class="filter-chip active" data-filter="Nearby">Nearby</button>
@@ -78,6 +78,27 @@ const PREVIEW_MARKUP = `
         <button type="button" data-info-close class="modal-close">Close</button>
       </div>
     </div>
+    <div data-support-modal class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="supportTitle">
+      <div class="modal">
+        <h2 id="supportTitle">Support / About</h2>
+        <div class="support-modal-body">
+          <h3 class="support-section-title">PickupRadar</h3>
+          <p class="support-body">PickupRadar helps UK delivery drivers see and report pickup wait times.</p>
+          <h3 class="support-section-title">Support email</h3>
+          <p class="support-body"><a class="support-link" href="mailto:support@pickupradar.co.uk">support@pickupradar.co.uk</a></p>
+          <h3 class="support-section-title">Website</h3>
+          <p class="support-body"><a class="support-link" href="https://pickupradar.co.uk" target="_blank" rel="noopener noreferrer">pickupradar.co.uk</a></p>
+          <h3 class="support-section-title">Privacy summary</h3>
+          <ul class="info-list support-privacy-list">
+            <li>No login required</li>
+            <li>Reports are linked to an anonymous device ID to reduce spam</li>
+            <li>Wait reports may include venue, platform, wait time, left early status, and time submitted</li>
+            <li>No personal profile is created</li>
+          </ul>
+        </div>
+        <button type="button" data-support-close class="modal-close">Close</button>
+      </div>
+    </div>
 `;
 
 function mountPickupRadarPreview(container, options) {
@@ -87,7 +108,10 @@ function mountPickupRadarPreview(container, options) {
   const VD = window.PickupRadarVenueDisplay;
 
   const root = document.createElement('div');
-  root.className = 'preview-root' + (options.compact ? ' preview-compact' : '');
+  root.className =
+    'preview-root' +
+    (options.compact ? ' preview-compact' : ' preview-full-page') +
+    (options.large ? ' preview-large' : '');
   root.innerHTML = PREVIEW_MARKUP;
   container.appendChild(root);
 
@@ -140,6 +164,14 @@ function mountPickupRadarPreview(container, options) {
     Deliveroo: { selected: '#00CCBC', unselectedBg: 'rgba(0, 204, 188, 0.14)', border: 'rgba(0, 204, 188, 0.55)' },
     'Just Eat': { selected: '#F36D00', unselectedBg: 'rgba(243, 109, 0, 0.14)', border: 'rgba(243, 109, 0, 0.55)' },
   };
+  const ISSUE_OPTIONS = [
+    { key: 'wrong_address', label: 'Wrong address' },
+    { key: 'wrong_branch', label: 'Wrong branch/name' },
+    { key: 'duplicate_venue', label: 'Duplicate venue' },
+    { key: 'closed_permanently', label: 'Permanently closed' },
+    { key: 'uses_own_drivers', label: 'Uses own drivers' },
+    { key: 'other', label: 'Other' },
+  ];
 
   let liveCities = [];
   let activeCity = DEFAULT_CITY;
@@ -150,12 +182,19 @@ function mountPickupRadarPreview(container, options) {
   let searchReturnScreen = 'home';
   let reportBackScreen = 'home';
   let reportVenueId = null;
+  let currentReportVenue = null;
   let reportFormState = {
     waitBucket: null,
     platform: '',
     orderMadeWhenDriverArrives: false,
-    problemAction: null,
+    issueExpanded: false,
+    selectedIssueType: null,
   };
+  let missingVenueExpanded = false;
+  let suggestionVenueName = '';
+  let suggestionVenueAddress = '';
+  let suggestionVenueNote = '';
+  let lastMissingVenueQuery = '';
 
   const cityPillBtn = root.querySelector('[data-city-pill]');
   const cityListBody = root.querySelector('[data-city-list]');
@@ -172,6 +211,8 @@ function mountPickupRadarPreview(container, options) {
   const reportWaitScreen = root.querySelector('[data-screen="report-wait"]');
   const downloadModal = root.querySelector('[data-download-modal]');
   const infoModal = root.querySelector('[data-info-modal]');
+  const supportModal = root.querySelector('[data-support-modal]');
+  const supportMode = options.supportMode === 'modal' ? 'modal' : 'link';
 
   async function supabaseGet(path) {
     const response = await fetch(SUPABASE_URL + '/rest/v1' + path, {
@@ -614,18 +655,44 @@ function mountPickupRadarPreview(container, options) {
   }
 
   function renderSearchList() {
-    const query = searchInput.value.trim().toLowerCase();
+    const queryRaw = searchInput.value.trim();
+    const query = queryRaw.toLowerCase();
     let list;
 
     if (query) {
-      searchHeading.textContent = 'Search results';
       list = venueStats.filter((venue) => {
         return getVenueSearchText(venue).some((part) => part.includes(query));
       });
       list = list.slice(0, 50);
     } else {
-      searchHeading.textContent = 'Suggested pickup points';
       list = getSuggestedVenues();
+    }
+
+    if (query) {
+      searchHeading.textContent = 'Search results';
+      searchHeading.classList.add('hidden');
+    } else {
+      searchHeading.textContent = 'Suggested pickup points';
+      searchHeading.classList.remove('hidden');
+      missingVenueExpanded = false;
+      lastMissingVenueQuery = '';
+      suggestionVenueName = '';
+      suggestionVenueAddress = '';
+      suggestionVenueNote = '';
+    }
+
+    if (list.length === 0 && query) {
+      if (lastMissingVenueQuery !== queryRaw) {
+        suggestionVenueName = queryRaw;
+        suggestionVenueAddress = '';
+        suggestionVenueNote = '';
+        missingVenueExpanded = false;
+        lastMissingVenueQuery = queryRaw;
+      }
+
+      searchBody.innerHTML = '<p class="search-empty-hint">No pickup points found</p>' + renderMissingVenueSectionHtml();
+      bindMissingVenueSection(searchBody);
+      return;
     }
 
     if (list.length === 0) {
@@ -692,16 +759,24 @@ function mountPickupRadarPreview(container, options) {
     previousScreen = 'home';
     searchReturnScreen = 'home';
     reportVenueId = null;
+    currentReportVenue = null;
     resetReportFormState();
+    missingVenueExpanded = false;
+    suggestionVenueName = '';
+    suggestionVenueAddress = '';
+    suggestionVenueNote = '';
+    lastMissingVenueQuery = '';
     searchInput.value = '';
     citySearchInput.value = '';
     searchHeading.textContent = 'Suggested pickup points';
+    searchHeading.classList.remove('hidden');
     selectedFilter = 'Nearby';
     root.querySelectorAll('.filter-chip').forEach((chip) => {
       chip.classList.toggle('active', chip.getAttribute('data-filter') === 'Nearby');
     });
     closeDownloadModal();
     closeInfoModal();
+    closeSupportModal();
     root.querySelectorAll('.app-scroll').forEach((el) => {
       el.scrollTop = 0;
     });
@@ -711,32 +786,18 @@ function mountPickupRadarPreview(container, options) {
     cityPillBtn.textContent = activeCity;
   }
 
-  function renderCityList() {
-    const query = citySearchInput.value.trim().toLowerCase();
-    const filtered = liveCities.filter((city) => city.toLowerCase().includes(query));
+  function renderCityRow(city, selected) {
+    return (
+      '<button type="button" class="city-row' + (selected ? ' selected' : '') + '" data-city="' + escapeHtml(city) + '">' +
+      '<span><span class="city-row-name">' + escapeHtml(city) + '</span>' +
+      (selected ? '<span class="city-row-meta">Selected</span>' : '') +
+      '</span>' +
+      '<span class="city-row-status">' + (selected ? 'Active' : 'Choose') + '</span>' +
+      '</button>'
+    );
+  }
 
-    if (filtered.length === 0) {
-      cityListBody.innerHTML = '<div class="state-box"><strong>No matches</strong><span>Try another area name.</span></div>';
-      return;
-    }
-
-    cityListBody.innerHTML =
-      '<div class="city-list">' +
-      filtered
-        .map((city) => {
-          const selected = city === activeCity;
-          return (
-            '<button type="button" class="city-row' + (selected ? ' selected' : '') + '" data-city="' + escapeHtml(city) + '">' +
-            '<span><span class="city-row-name">' + escapeHtml(city) + '</span>' +
-            (selected ? '<span class="city-row-meta">Selected</span>' : '') +
-            '</span>' +
-            '<span class="city-row-status">' + (selected ? 'Active' : 'Choose') + '</span>' +
-            '</button>'
-          );
-        })
-        .join('') +
-      '</div>';
-
+  function bindCityRows() {
     cityListBody.querySelectorAll('.city-row').forEach((row) => {
       row.addEventListener('click', () => {
         const city = row.getAttribute('data-city');
@@ -758,6 +819,113 @@ function mountPickupRadarPreview(container, options) {
     });
   }
 
+  function renderCityList() {
+    const query = citySearchInput.value.trim().toLowerCase();
+    const matchesQuery = (city) => !query || city.toLowerCase().includes(query);
+    const otherCities = liveCities
+      .filter((city) => city !== activeCity && matchesQuery(city))
+      .sort((a, b) => a.localeCompare(b));
+    const showSelected = Boolean(activeCity && matchesQuery(activeCity));
+
+    if (!showSelected && otherCities.length === 0) {
+      cityListBody.innerHTML = '<div class="state-box"><strong>No matches</strong><span>Try another area name.</span></div>';
+      return;
+    }
+
+    let rowsHtml = '';
+    if (showSelected) {
+      rowsHtml += renderCityRow(activeCity, true);
+    }
+    rowsHtml += otherCities.map((city) => renderCityRow(city, false)).join('');
+
+    cityListBody.innerHTML = '<div class="city-list">' + rowsHtml + '</div>';
+    bindCityRows();
+  }
+
+  function renderMissingVenueSectionHtml() {
+    const canSubmit = suggestionVenueName.trim().length >= 2;
+
+    if (!missingVenueExpanded) {
+      return (
+        '<div class="missing-venue-card">' +
+        '<p class="missing-venue-title">Missing a venue?</p>' +
+        '<p class="missing-venue-text">Can\'t find this pickup point? Suggest it.</p>' +
+        '<button type="button" class="missing-venue-btn" data-missing-open>Open form</button>' +
+        '</div>'
+      );
+    }
+
+    return (
+      '<div class="missing-venue-card">' +
+      '<p class="missing-venue-title">Missing a venue?</p>' +
+      '<p class="missing-venue-text">Can\'t find this pickup point? Suggest it.</p>' +
+      '<div class="missing-venue-form">' +
+      '<input type="text" class="missing-venue-input" data-suggestion-name placeholder="Venue name" value="' +
+      escapeHtml(suggestionVenueName) +
+      '" autocomplete="off" autocapitalize="off" spellcheck="false" data-lpignore="true" />' +
+      '<input type="text" class="missing-venue-input" data-suggestion-address placeholder="Address or area" value="' +
+      escapeHtml(suggestionVenueAddress) +
+      '" autocomplete="off" autocapitalize="off" spellcheck="false" data-lpignore="true" />' +
+      '<textarea class="missing-venue-input missing-venue-note" data-suggestion-note placeholder="Note (optional)" rows="3">' +
+      escapeHtml(suggestionVenueNote) +
+      '</textarea>' +
+      '<button type="button" class="missing-venue-btn' +
+      (canSubmit ? '' : ' disabled') +
+      '" data-missing-submit' +
+      (canSubmit ? '' : ' disabled') +
+      '>Submit suggestion</button>' +
+      '</div>' +
+      '</div>'
+    );
+  }
+
+  function updateMissingVenueSubmitState(container) {
+    const submitBtn = container.querySelector('[data-missing-submit]');
+    if (!submitBtn) return;
+    const canSubmit = suggestionVenueName.trim().length >= 2;
+    submitBtn.disabled = !canSubmit;
+    submitBtn.classList.toggle('disabled', !canSubmit);
+  }
+
+  function bindMissingVenueSection(container) {
+    const openBtn = container.querySelector('[data-missing-open]');
+    if (openBtn) {
+      openBtn.addEventListener('click', () => {
+        missingVenueExpanded = true;
+        renderSearchList();
+      });
+      return;
+    }
+
+    const nameInput = container.querySelector('[data-suggestion-name]');
+    const addressInput = container.querySelector('[data-suggestion-address]');
+    const noteInput = container.querySelector('[data-suggestion-note]');
+    const submitBtn = container.querySelector('[data-missing-submit]');
+
+    if (nameInput) {
+      nameInput.addEventListener('input', () => {
+        suggestionVenueName = nameInput.value;
+        updateMissingVenueSubmitState(container);
+      });
+    }
+    if (addressInput) {
+      addressInput.addEventListener('input', () => {
+        suggestionVenueAddress = addressInput.value;
+      });
+    }
+    if (noteInput) {
+      noteInput.addEventListener('input', () => {
+        suggestionVenueNote = noteInput.value;
+      });
+    }
+    if (submitBtn) {
+      submitBtn.addEventListener('click', () => {
+        if (suggestionVenueName.trim().length < 2) return;
+        openDownloadModal();
+      });
+    }
+  }
+
   function openCityPicker() {
     citySearchInput.value = '';
     renderCityList();
@@ -770,8 +938,157 @@ function mountPickupRadarPreview(container, options) {
       waitBucket: null,
       platform: '',
       orderMadeWhenDriverArrives: false,
-      problemAction: null,
+      issueExpanded: false,
+      selectedIssueType: null,
     };
+  }
+
+  function renderIssuePanelHtml() {
+    if (!reportFormState.issueExpanded) return '';
+
+    return (
+      '<div class="issue-compact-card">' +
+      '<p class="issue-compact-title">What\'s wrong with this venue?</p>' +
+      '<div class="issue-chip-wrap">' +
+      ISSUE_OPTIONS.map(function (issue) {
+        const active = reportFormState.selectedIssueType === issue.key;
+        return (
+          '<button type="button" class="issue-chip' +
+          (active ? ' active' : '') +
+          '" data-issue-type="' +
+          escapeHtml(issue.key) +
+          '">' +
+          escapeHtml(issue.label) +
+          '</button>'
+        );
+      }).join('') +
+      '</div></div>'
+    );
+  }
+
+  function buildReportWaitHtml(venue) {
+    const title = getVenueCardTitle(venue);
+    const locationHtml = renderSelectedVenueLocationHtml(venue);
+    let warnings = '';
+
+    if (venue.closedWarning) {
+      warnings += '<span class="selected-venue-warning">Reported closed recently</span>';
+    }
+    if (venue.systemDownWarning) {
+      warnings += '<span class="selected-venue-warning">Tablet/server issue reported</span>';
+    }
+
+    const currentWaitHtml =
+      venue.currentWaitMinutes !== null
+        ? '<div class="current-wait-card"><div class="current-wait-row"><span class="current-wait-label">Current wait</span><span class="current-wait-value">' +
+          escapeHtml(venue.currentWaitLabel) +
+          '</span></div></div>'
+        : '';
+
+    const waitChips = WAIT_BUCKETS.map(function (bucket) {
+      const active = reportFormState.waitBucket === bucket;
+      return (
+        '<button type="button" class="report-chip' +
+        (active ? ' active' : '') +
+        '" data-wait-bucket="' +
+        escapeHtml(bucket) +
+        '">' +
+        escapeHtml(WAIT_BUCKET_LABELS[bucket]) +
+        '</button>'
+      );
+    }).join('');
+
+    const platformChips = PLATFORMS.map(function (platform) {
+      const active = reportFormState.platform === platform;
+      return (
+        '<button type="button" class="report-chip platform-chip' +
+        (active ? ' active' : '') +
+        '" data-platform="' +
+        escapeHtml(platform) +
+        '" style="' +
+        getPlatformChipStyle(platform, active) +
+        '">' +
+        escapeHtml(platform) +
+        '</button>'
+      );
+    }).join('');
+
+    const problemButtons = [
+      { key: 'closed', label: 'Closed' },
+      { key: 'system_down', label: 'Tablet/server down' },
+      { key: 'venue_issue', label: reportFormState.issueExpanded ? 'Hide issue' : 'Venue issue' },
+    ]
+      .map(function (item) {
+        const active = item.key === 'venue_issue' && reportFormState.issueExpanded;
+        return (
+          '<button type="button" class="problem-compact-btn' +
+          (active ? ' active' : '') +
+          '" data-problem-action="' +
+          item.key +
+          '">' +
+          escapeHtml(item.label) +
+          '</button>'
+        );
+      })
+      .join('');
+
+    const orderMadeClass = reportFormState.orderMadeWhenDriverArrives ? 'order-made-card on' : 'order-made-card';
+
+    return (
+      '<h2 class="report-wait-title">Report wait</h2>' +
+      '<div class="selected-venue-card">' +
+      '<div class="selected-venue-text">' +
+      '<p class="selected-venue-name">' +
+      escapeHtml(title) +
+      '</p>' +
+      locationHtml +
+      warnings +
+      '</div>' +
+      '<button type="button" class="change-pill" data-report-change>Change</button>' +
+      '</div>' +
+      '<div class="problem-compact-card">' +
+      '<p class="problem-compact-title">Problem with this pickup?</p>' +
+      '<p class="problem-compact-body">Report if the venue is closed or cannot take orders.</p>' +
+      '<div class="problem-compact-buttons">' +
+      problemButtons +
+      '</div>' +
+      renderIssuePanelHtml() +
+      '</div>' +
+      currentWaitHtml +
+      '<div class="report-section">' +
+      '<p class="report-section-label">Wait time (minutes)</p>' +
+      '<div class="report-chip-wrap">' +
+      waitChips +
+      '</div>' +
+      '</div>' +
+      '<div class="report-section">' +
+      '<p class="report-section-label">Platform (optional)</p>' +
+      '<div class="report-chip-wrap">' +
+      platformChips +
+      '</div>' +
+      '</div>' +
+      '<div class="report-section">' +
+      '<button type="button" class="' +
+      orderMadeClass +
+      '" data-order-made-toggle aria-pressed="' +
+      (reportFormState.orderMadeWhenDriverArrives ? 'true' : 'false') +
+      '">' +
+      '<span class="order-made-text">' +
+      '<span class="order-made-title">Order made when driver arrives</span>' +
+      '<span class="order-made-sub">Turn this on if the venue usually starts preparing the order only after you arrive.</span>' +
+      '</span>' +
+      '<span class="report-toggle" aria-hidden="true"><span class="report-toggle-track"><span class="report-toggle-thumb"></span></span></span>' +
+      '</button>' +
+      '</div>'
+    );
+  }
+
+  function renderReportWaitContent(venue, resetScroll) {
+    const scrollTop = reportBody.scrollTop;
+    reportBody.innerHTML = buildReportWaitHtml(venue);
+    bindReportWaitForm();
+    renderReportFooter();
+    reportBody.scrollTop = resetScroll ? 0 : scrollTop;
   }
 
   function renderSelectedVenueLocationHtml(venue) {
@@ -843,10 +1160,30 @@ function mountPickupRadarPreview(container, options) {
     reportBody.querySelectorAll('[data-problem-action]').forEach(function (button) {
       button.addEventListener('click', function () {
         const action = button.getAttribute('data-problem-action');
-        reportFormState.problemAction = reportFormState.problemAction === action ? null : action;
-        reportBody.querySelectorAll('[data-problem-action]').forEach(function (chip) {
-          chip.classList.toggle('active', chip.getAttribute('data-problem-action') === reportFormState.problemAction);
+        if (action === 'closed' || action === 'system_down') {
+          openDownloadModal();
+          return;
+        }
+        if (action === 'venue_issue') {
+          reportFormState.issueExpanded = !reportFormState.issueExpanded;
+          if (!reportFormState.issueExpanded) {
+            reportFormState.selectedIssueType = null;
+          }
+          if (currentReportVenue) {
+            renderReportWaitContent(currentReportVenue, false);
+          }
+        }
+      });
+    });
+
+    reportBody.querySelectorAll('[data-issue-type]').forEach(function (button) {
+      button.addEventListener('click', function () {
+        const issueType = button.getAttribute('data-issue-type');
+        reportFormState.selectedIssueType = issueType;
+        reportBody.querySelectorAll('[data-issue-type]').forEach(function (chip) {
+          chip.classList.toggle('active', chip.getAttribute('data-issue-type') === issueType);
         });
+        openDownloadModal();
       });
     });
 
@@ -879,109 +1216,9 @@ function mountPickupRadarPreview(container, options) {
 
     previousScreen = backScreen || 'home';
     reportVenueId = venueId;
+    currentReportVenue = venue;
     resetReportFormState();
-
-    const title = getVenueCardTitle(venue);
-    const locationHtml = renderSelectedVenueLocationHtml(venue);
-    let warnings = '';
-
-    if (venue.closedWarning) {
-      warnings += '<span class="selected-venue-warning">Reported closed recently</span>';
-    }
-    if (venue.systemDownWarning) {
-      warnings += '<span class="selected-venue-warning">Tablet/server issue reported</span>';
-    }
-
-    const currentWaitHtml =
-      venue.currentWaitMinutes !== null
-        ? '<div class="current-wait-card"><div class="current-wait-row"><span class="current-wait-label">Current wait</span><span class="current-wait-value">' +
-          escapeHtml(venue.currentWaitLabel) +
-          '</span></div></div>'
-        : '';
-
-    const waitChips = WAIT_BUCKETS.map(function (bucket) {
-      return (
-        '<button type="button" class="report-chip" data-wait-bucket="' +
-        escapeHtml(bucket) +
-        '">' +
-        escapeHtml(WAIT_BUCKET_LABELS[bucket]) +
-        '</button>'
-      );
-    }).join('');
-
-    const platformChips = PLATFORMS.map(function (platform) {
-      return (
-        '<button type="button" class="report-chip platform-chip" data-platform="' +
-        escapeHtml(platform) +
-        '" style="' +
-        getPlatformChipStyle(platform, false) +
-        '">' +
-        escapeHtml(platform) +
-        '</button>'
-      );
-    }).join('');
-
-    const problemButtons = [
-      { key: 'closed', label: 'Closed' },
-      { key: 'system_down', label: 'Tablet/server down' },
-      { key: 'venue_issue', label: 'Venue issue' },
-    ]
-      .map(function (item) {
-        return (
-          '<button type="button" class="problem-compact-btn" data-problem-action="' +
-          item.key +
-          '">' +
-          escapeHtml(item.label) +
-          '</button>'
-        );
-      })
-      .join('');
-
-    reportBody.innerHTML =
-      '<h2 class="report-wait-title">Report wait</h2>' +
-      '<div class="selected-venue-card">' +
-      '<div class="selected-venue-text">' +
-      '<p class="selected-venue-name">' +
-      escapeHtml(title) +
-      '</p>' +
-      locationHtml +
-      warnings +
-      '</div>' +
-      '<button type="button" class="change-pill" data-report-change>Change</button>' +
-      '</div>' +
-      '<div class="problem-compact-card">' +
-      '<p class="problem-compact-title">Problem with this pickup?</p>' +
-      '<p class="problem-compact-body">Report if the venue is closed or cannot take orders.</p>' +
-      '<div class="problem-compact-buttons">' +
-      problemButtons +
-      '</div>' +
-      '</div>' +
-      currentWaitHtml +
-      '<div class="report-section">' +
-      '<p class="report-section-label">Wait time (minutes)</p>' +
-      '<div class="report-chip-wrap">' +
-      waitChips +
-      '</div>' +
-      '</div>' +
-      '<div class="report-section">' +
-      '<p class="report-section-label">Platform (optional)</p>' +
-      '<div class="report-chip-wrap">' +
-      platformChips +
-      '</div>' +
-      '</div>' +
-      '<div class="report-section">' +
-      '<button type="button" class="order-made-card" data-order-made-toggle aria-pressed="false">' +
-      '<span class="order-made-text">' +
-      '<span class="order-made-title">Order made when driver arrives</span>' +
-      '<span class="order-made-sub">Turn this on if the venue usually starts preparing the order only after you arrive.</span>' +
-      '</span>' +
-      '<span class="report-toggle" aria-hidden="true"><span class="report-toggle-track"><span class="report-toggle-thumb"></span></span></span>' +
-      '</button>' +
-      '</div>';
-
-    bindReportWaitForm();
-    renderReportFooter();
-    reportBody.scrollTop = 0;
+    renderReportWaitContent(venue, true);
     showScreen('report-wait');
   }
 
@@ -1032,6 +1269,33 @@ function mountPickupRadarPreview(container, options) {
 
   function closeInfoModal() {
     infoModal.classList.remove('open');
+  }
+
+  function openSupportModal() {
+    supportModal.classList.add('open');
+  }
+
+  function closeSupportModal() {
+    supportModal.classList.remove('open');
+  }
+
+  function setupSupportControl() {
+    const supportEl = root.querySelector('[data-support]');
+    if (!supportEl) return;
+
+    if (supportMode === 'modal') {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'header-pill';
+      btn.textContent = 'Support';
+      btn.setAttribute('data-support', '');
+      supportEl.replaceWith(btn);
+      btn.addEventListener('click', openSupportModal);
+      root.querySelector('[data-support-close]').addEventListener('click', closeSupportModal);
+      supportModal.addEventListener('click', (event) => {
+        if (event.target === supportModal) closeSupportModal();
+      });
+    }
   }
 
   function setupStoreButtons() {
@@ -1126,6 +1390,7 @@ function mountPickupRadarPreview(container, options) {
   });
 
   setupStoreButtons();
+  setupSupportControl();
 
   if (options.resetOnLoad) {
     resetPreviewHome();

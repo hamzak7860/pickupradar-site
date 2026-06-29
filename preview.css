@@ -36,6 +36,13 @@
   position: relative;
 }
 
+.preview-root,
+.preview-root *,
+.preview-root *::before,
+.preview-root *::after {
+  box-sizing: border-box;
+}
+
 .phone-status {
   height: 28px;
   background: #081018;
@@ -46,6 +53,9 @@
   flex-direction: column;
   flex: 1;
   min-height: 0;
+  width: 100%;
+  max-width: 100%;
+  align-self: stretch;
 }
 
 .screen.hidden {
@@ -55,16 +65,57 @@
 .app-scroll {
   flex: 1;
   min-height: 0;
+  width: 100%;
+  max-width: 100%;
   overflow-y: auto;
   overflow-x: hidden;
   padding: 8px 16px 100px;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  scrollbar-gutter: auto;
   -webkit-overflow-scrolling: touch;
 }
 
 .preview-root .app-scroll::-webkit-scrollbar {
+  width: 0;
+  height: 0;
   display: none;
+}
+
+[data-screen="city"] {
+  overflow: hidden;
+}
+
+[data-screen="city"] .city-picker-header {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding: 14px 16px 12px;
+  border-bottom: 1px solid #182837;
+}
+
+[data-screen="city"] .app-scroll,
+[data-screen="city"] [data-city-list] {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  max-width: 100%;
+  padding: 12px 16px 28px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scrollbar-gutter: auto;
+}
+
+[data-screen="city"] .city-list {
+  width: 100%;
+  max-width: 100%;
+}
+
+[data-screen="city"] .city-row {
+  width: 100%;
+  max-width: 100%;
 }
 
 .app-header {
@@ -86,6 +137,8 @@
 }
 
 .city-picker-header {
+  width: 100%;
+  max-width: 100%;
   padding: 14px 16px 12px;
   border-bottom: 1px solid #182837;
 }
@@ -99,7 +152,9 @@
 }
 
 .city-search-input {
+  display: block;
   width: 100%;
+  max-width: 100%;
   min-height: 48px;
   padding: 0 14px;
   border-radius: 16px;
@@ -108,7 +163,7 @@
   color: #f6faff;
   font-size: 14px;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 0;
   -webkit-appearance: none;
   appearance: none;
 }
@@ -121,6 +176,8 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
+  max-width: 100%;
 }
 
 .city-row {
@@ -488,6 +545,7 @@
   min-height: 48px;
   margin: 12px 16px 0;
   width: calc(100% - 32px);
+  max-width: calc(100% - 32px);
   padding: 0 14px;
   border-radius: 16px;
   border: 1px solid #1d3244;
@@ -508,6 +566,92 @@
   color: #f6faff;
   font-size: 22px;
   font-weight: 800;
+}
+
+.search-heading.hidden {
+  display: none;
+}
+
+.search-empty-hint {
+  color: #7f93a9;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+
+.missing-venue-card {
+  border-radius: 16px;
+  border: 1px solid #1d3244;
+  background: #10202d;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.missing-venue-title {
+  color: #f6faff;
+  font-size: 15px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.missing-venue-text {
+  color: #89a0b8;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 4px 0 12px;
+  font-weight: 600;
+}
+
+.missing-venue-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.missing-venue-input {
+  width: 100%;
+  min-height: 46px;
+  border-radius: 14px;
+  border: 1px solid #1d3244;
+  background: #0e1822;
+  padding: 12px 14px;
+  color: #f6faff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: inherit;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.missing-venue-input::placeholder {
+  color: #89a0b8;
+}
+
+.missing-venue-note {
+  min-height: 72px;
+  resize: vertical;
+}
+
+.missing-venue-btn {
+  width: 100%;
+  min-height: 46px;
+  border: none;
+  border-radius: 14px;
+  background: #f6faff;
+  color: #071018;
+  font-size: 14px;
+  font-weight: 900;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.missing-venue-btn.disabled,
+.missing-venue-btn:disabled {
+  background: #6f7a85;
+  color: #d9e2ea;
+  cursor: default;
 }
 
 .detail-card {
@@ -712,6 +856,46 @@
   border-color: #3d6a8e;
 }
 
+.issue-compact-card {
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 16px;
+  border: 1px solid #1d3244;
+  background: #10202d;
+}
+
+.issue-compact-title {
+  color: #f6faff;
+  font-size: 14px;
+  font-weight: 800;
+  margin: 0 0 8px;
+}
+
+.issue-chip-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.issue-chip {
+  min-height: 34px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: #0e1822;
+  border: 1px solid #2b4964;
+  color: #f6faff;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.issue-chip.active {
+  background: #e8f0f7;
+  border-color: #e8f0f7;
+  color: #081018;
+}
+
 .current-wait-card {
   margin-top: 18px;
   background: #0e1822;
@@ -894,6 +1078,21 @@
   min-height: var(--preview-phone-height);
 }
 
+/* Full-page live preview on app.html — taller than homepage embed */
+.preview-root.preview-full-page.preview-large {
+  --preview-phone-height: 820px;
+}
+
+.preview-root.preview-full-page.preview-large .phone-shell {
+  width: calc(var(--preview-phone-width) + 28px);
+  max-width: min(calc(var(--preview-phone-width) + 28px), 100%);
+}
+
+.preview-root.preview-full-page.preview-large .phone-screen {
+  height: var(--preview-phone-height);
+  min-height: var(--preview-phone-height);
+}
+
 .modal-overlay {
   display: none;
   position: fixed;
@@ -977,6 +1176,42 @@
   padding-left: 18px;
 }
 
+.support-modal-body {
+  margin-bottom: 18px;
+}
+
+.support-section-title {
+  color: #f6faff;
+  font-size: 15px;
+  font-weight: 800;
+  margin: 16px 0 6px;
+}
+
+.support-modal-body .support-section-title:first-child {
+  margin-top: 0;
+}
+
+.support-body {
+  color: #bfd0e0;
+  font-size: 14px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.support-link {
+  color: #8fb5d7;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.support-link:hover {
+  text-decoration: underline;
+}
+
+.support-privacy-list {
+  margin-bottom: 0;
+}
+
 @media (max-width: 760px) {
   .phone-shell,
   .preview-root.preview-compact .phone-shell {
@@ -987,10 +1222,16 @@
   }
 
   .phone-screen,
-  .preview-root.preview-compact .phone-screen {
+  .preview-root.preview-compact .phone-screen,
+  .preview-root.preview-full-page.preview-large .phone-screen {
     border-radius: 24px;
     height: min(var(--preview-phone-height), 86vh);
     min-height: min(720px, 82vh);
+  }
+
+  .preview-root.preview-full-page.preview-large .phone-screen {
+    height: min(820px, 88vh);
+    min-height: min(760px, 84vh);
   }
 }
 
