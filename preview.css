@@ -15,13 +15,14 @@
 
 .phone-shell {
   width: calc(var(--preview-phone-width) + 28px);
-  max-width: min(calc(var(--preview-phone-width) + 28px), 100%);
+  max-width: calc(var(--preview-phone-width) + 28px);
   margin: 0 auto;
   background: #050c12;
   border: 1px solid var(--border);
   border-radius: 40px;
   padding: 14px;
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  flex-shrink: 0;
 }
 
 .phone-screen {
@@ -1067,25 +1068,17 @@
   font-weight: 600;
 }
 
-/* Homepage embed uses preview-compact only to limit venue count in JS — not UI scale */
-.preview-root.preview-compact .phone-shell {
-  width: min(calc(var(--preview-phone-width) + 28px), 100%);
+.preview-root {
+  width: calc(var(--preview-phone-width) + 28px);
   max-width: calc(var(--preview-phone-width) + 28px);
+  flex-shrink: 0;
 }
 
-.preview-root.preview-compact .phone-screen {
-  height: var(--preview-phone-height);
-  min-height: var(--preview-phone-height);
-}
+/* preview-compact only limits venue count in preview.js — no UI sizing overrides */
 
-/* Full-page live preview on app.html — taller than homepage embed */
+/* Full-page live preview on app.html — taller only, same width */
 .preview-root.preview-full-page.preview-large {
   --preview-phone-height: 820px;
-}
-
-.preview-root.preview-full-page.preview-large .phone-shell {
-  width: calc(var(--preview-phone-width) + 28px);
-  max-width: min(calc(var(--preview-phone-width) + 28px), 100%);
 }
 
 .preview-root.preview-full-page.preview-large .phone-screen {
@@ -1213,16 +1206,12 @@
 }
 
 @media (max-width: 760px) {
-  .phone-shell,
-  .preview-root.preview-compact .phone-shell {
-    width: min(calc(var(--preview-phone-width) + 20px), 100%);
-    max-width: 100%;
+  .phone-shell {
     border-radius: 32px;
     padding: 10px;
   }
 
   .phone-screen,
-  .preview-root.preview-compact .phone-screen,
   .preview-root.preview-full-page.preview-large .phone-screen {
     border-radius: 24px;
     height: min(var(--preview-phone-height), 86vh);
@@ -1235,18 +1224,25 @@
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 480px) {
   .phone-shell,
-  .preview-root.preview-compact .phone-shell {
-    width: 100%;
-    max-width: 100%;
+  .preview-root {
+    width: min(calc(var(--preview-phone-width) + 28px), calc(100vw - 32px));
+    max-width: calc(100vw - 32px);
+  }
+
+  .phone-shell {
     border-radius: 28px;
     padding: 10px;
   }
 
-  .phone-screen,
-  .preview-root.preview-compact .phone-screen {
+  .phone-screen {
     height: min(var(--preview-phone-height), 88vh);
+    min-height: min(680px, 84vh);
+  }
+
+  .preview-root.preview-full-page.preview-large .phone-screen {
+    height: min(820px, 88vh);
     min-height: min(680px, 84vh);
   }
 }
