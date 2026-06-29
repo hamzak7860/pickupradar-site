@@ -1224,11 +1224,63 @@
   }
 }
 
+/* Mobile website: scale embedded previews down (desktop app UI unchanged) */
+@media (max-width: 600px) {
+  body.page-home #live-preview,
+  body.page-live-preview #livePreview {
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  body.page-home #live-preview .preview-root,
+  body.page-live-preview #livePreview .preview-root {
+    width: calc(var(--preview-phone-width) + 28px);
+    max-width: calc(var(--preview-phone-width) + 28px);
+    flex-shrink: 0;
+    transform-origin: top center;
+  }
+
+  body.page-home #live-preview .preview-root {
+    --preview-mobile-scale: 0.82;
+    transform: scale(var(--preview-mobile-scale));
+    margin-bottom: calc(-1 * (var(--preview-phone-height) + 56px) * (1 - var(--preview-mobile-scale)));
+  }
+
+  body.page-home .phone-screen {
+    height: var(--preview-phone-height);
+    min-height: var(--preview-phone-height);
+  }
+
+  body.page-live-preview #livePreview .preview-root {
+    --preview-mobile-scale: 0.9;
+    --preview-mobile-shell-height: 876px;
+    transform: scale(var(--preview-mobile-scale));
+    margin-bottom: calc(-1 * var(--preview-mobile-shell-height) * (1 - var(--preview-mobile-scale)));
+  }
+
+  body.page-live-preview .preview-root.preview-full-page.preview-large .phone-screen {
+    height: 820px;
+    min-height: 820px;
+    max-height: min(820px, 78vh);
+  }
+}
+
 @media (max-width: 480px) {
   .phone-shell,
   .preview-root {
     width: min(calc(var(--preview-phone-width) + 28px), calc(100vw - 32px));
     max-width: calc(100vw - 32px);
+  }
+
+  body.page-home .preview-root,
+  body.page-home .phone-shell,
+  body.page-live-preview .preview-root,
+  body.page-live-preview .phone-shell {
+    width: calc(var(--preview-phone-width) + 28px);
+    max-width: calc(var(--preview-phone-width) + 28px);
   }
 
   .phone-shell {
@@ -1244,5 +1296,16 @@
   .preview-root.preview-full-page.preview-large .phone-screen {
     height: min(820px, 88vh);
     min-height: min(680px, 84vh);
+  }
+
+  body.page-home .phone-screen {
+    height: var(--preview-phone-height);
+    min-height: var(--preview-phone-height);
+  }
+
+  body.page-live-preview .preview-root.preview-full-page.preview-large .phone-screen {
+    height: 820px;
+    min-height: 820px;
+    max-height: min(820px, 78vh);
   }
 }

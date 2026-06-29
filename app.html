@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Live app preview — PickupRadar</title>
   <meta name="description" content="Full read-only PickupRadar app preview for UK delivery drivers — browse pickup data, search venues, and explore the report flow." />
-  <link rel="stylesheet" href="preview.css?v=ce062d6" />
+  <link rel="stylesheet" href="preview.css?v=mobile1" />
   <style>
     :root {
       --bg: #06111a;
@@ -76,6 +76,7 @@
       justify-content: center;
       align-items: flex-start;
       margin: 0 auto;
+      width: 100%;
     }
 
     footer {
@@ -96,6 +97,21 @@
       margin-left: 14px;
     }
 
+    @media (max-width: 600px) {
+      .wrap {
+        width: 94%;
+        padding: 24px 0 32px;
+      }
+
+      .page-intro {
+        margin-bottom: 16px;
+      }
+
+      .page-intro h1 {
+        font-size: clamp(24px, 6.5vw, 32px);
+      }
+    }
+
     @media (max-width: 760px) {
       .wrap { padding: 20px 0 36px; }
       .page-intro { margin-bottom: 20px; }
@@ -106,7 +122,7 @@
     }
   </style>
 </head>
-<body>
+<body class="page-live-preview">
   <main class="wrap">
     <nav class="site-nav" aria-label="Site">
       <a href="index.html">Home</a>
@@ -133,8 +149,8 @@
     </footer>
   </main>
 
-  <script src="venueDisplay.js?v=ce062d6"></script>
-  <script src="preview.js?v=ce062d6"></script>
+  <script src="venueDisplay.js?v=mobile1"></script>
+  <script src="preview.js?v=mobile1"></script>
   <script>
     mountPickupRadarPreview(document.getElementById('livePreview'), {
       compact: false,
