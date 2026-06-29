@@ -9,7 +9,7 @@ const PREVIEW_MARKUP = `
             <div class="app-header">
               <button type="button" data-city-pill class="city-pill-btn" aria-label="Choose city">Manchester</button>
               <p class="app-title">PickupRadar</p>
-              <p class="app-tagline">Know the pickup before you walk in.</p>
+              <p class="app-tagline">Know the wait before you walk in.</p>
               <p class="app-supporting">Real wait times for UK delivery drivers</p>
               <div class="header-actions">
                 <button type="button" class="header-pill" data-how-it-works>How it works</button>
@@ -30,14 +30,14 @@ const PREVIEW_MARKUP = `
             <div data-home-body></div>
           </div>
           <div class="floating-bar">
-            <button type="button" class="floating-btn write-action">Get the app to report</button>
+            <button type="button" class="floating-btn" data-report-wait-btn>Report a wait</button>
           </div>
         </div>
         <div data-screen="city" class="screen hidden">
           <div class="city-picker-header">
             <button type="button" class="back-btn" data-city-close>Close</button>
             <h2 class="city-picker-title">Choose your area</h2>
-            <input data-city-search class="city-search-input" type="search" placeholder="Search area" autocomplete="off" />
+            <input data-city-search class="city-search-input" type="search" placeholder="Search area" autocomplete="off" autocapitalize="off" spellcheck="false" data-lpignore="true" />
           </div>
           <div class="app-scroll" data-city-list></div>
         </div>
@@ -45,18 +45,16 @@ const PREVIEW_MARKUP = `
           <div class="top-bar">
             <button type="button" class="back-btn" data-search-back>← Back</button>
           </div>
-          <input data-search-input class="search-bar" type="search" placeholder="Search pickup points" autocomplete="off" />
+          <input data-search-input class="search-bar" type="search" placeholder="Search pickup points" autocomplete="off" autocapitalize="off" spellcheck="false" data-lpignore="true" />
           <p class="search-heading" data-search-heading>Suggested pickup points</p>
           <div class="app-scroll" data-search-body></div>
         </div>
-        <div data-screen="detail" class="screen hidden">
+        <div data-screen="report-wait" class="screen hidden">
           <div class="top-bar">
-            <button type="button" class="back-btn" data-detail-back>← Back</button>
+            <button type="button" class="back-btn" data-report-back>← Back</button>
           </div>
-          <div class="app-scroll" data-detail-body></div>
-          <div class="floating-bar">
-            <button type="button" class="floating-btn write-action">Get the app to report</button>
-          </div>
+          <div class="app-scroll report-wait-scroll" data-report-body></div>
+          <div class="report-footer" data-report-footer></div>
         </div>
       </div>
     </div>
@@ -85,6 +83,8 @@ const PREVIEW_MARKUP = `
 function mountPickupRadarPreview(container, options) {
   if (!container) return;
   options = options || {};
+
+  const VD = window.PickupRadarVenueDisplay;
 
   const root = document.createElement('div');
   root.className = 'preview-root' + (options.compact ? ' preview-compact' : '');
@@ -127,12 +127,35 @@ function mountPickupRadarPreview(container, options) {
   const BRAND_PRIORITY = ["McDonald's", 'KFC', 'Burger King', 'Subway', 'Greggs', 'Taco Bell', 'Popeyes', "Pepe's", 'Dixy', 'German Doner Kebab', 'Starbucks', 'Costa', 'Co-op', 'Tesco', "Sainsbury's", 'One Stop'];
   const SUGGESTED_LIMIT = options.compact ? 12 : 20;
 
+  const WAIT_BUCKETS = ['<5 min', '5-10 min', '10-15 min', '15+ min'];
+  const WAIT_BUCKET_LABELS = {
+    '<5 min': '<5',
+    '5-10 min': '5–10',
+    '10-15 min': '10–15',
+    '15+ min': '15+',
+  };
+  const PLATFORMS = ['Uber Eats', 'Deliveroo', 'Just Eat'];
+  const PLATFORM_COLORS = {
+    'Uber Eats': { selected: '#06C167', unselectedBg: 'rgba(6, 193, 103, 0.14)', border: 'rgba(6, 193, 103, 0.55)' },
+    Deliveroo: { selected: '#00CCBC', unselectedBg: 'rgba(0, 204, 188, 0.14)', border: 'rgba(0, 204, 188, 0.55)' },
+    'Just Eat': { selected: '#F36D00', unselectedBg: 'rgba(243, 109, 0, 0.14)', border: 'rgba(243, 109, 0, 0.55)' },
+  };
+
   let liveCities = [];
   let activeCity = DEFAULT_CITY;
   let venueStats = [];
   let selectedFilter = 'Nearby';
   let loadError = null;
   let previousScreen = 'home';
+  let searchReturnScreen = 'home';
+  let reportBackScreen = 'home';
+  let reportVenueId = null;
+  let reportFormState = {
+    waitBucket: null,
+    platform: '',
+    orderMadeWhenDriverArrives: false,
+    problemAction: null,
+  };
 
   const cityPillBtn = root.querySelector('[data-city-pill]');
   const cityListBody = root.querySelector('[data-city-list]');
@@ -141,11 +164,12 @@ function mountPickupRadarPreview(container, options) {
   const searchBody = root.querySelector('[data-search-body]');
   const searchInput = root.querySelector('[data-search-input]');
   const searchHeading = root.querySelector('[data-search-heading]');
-  const detailBody = root.querySelector('[data-detail-body]');
+  const reportBody = root.querySelector('[data-report-body]');
+  const reportFooter = root.querySelector('[data-report-footer]');
   const homeScreen = root.querySelector('[data-screen="home"]');
   const cityScreen = root.querySelector('[data-screen="city"]');
   const searchScreen = root.querySelector('[data-screen="search"]');
-  const detailScreen = root.querySelector('[data-screen="detail"]');
+  const reportWaitScreen = root.querySelector('[data-screen="report-wait"]');
   const downloadModal = root.querySelector('[data-download-modal]');
   const infoModal = root.querySelector('[data-info-modal]');
 
@@ -188,29 +212,31 @@ function mountPickupRadarPreview(container, options) {
     return Array.from(cities).sort((a, b) => a.localeCompare(b));
   }
 
-  function cleanVenueName(name, selectedCity) {
-    const city = selectedCity.trim();
-    if (!city) {
-      return name.trim().replace(/[\s,\-]+$/g, '').replace(/[\s,\-]{2,}/g, ' ');
+
+  function renderVenueLocationHtml(venue, mode, visibleVenues) {
+    if (!VD) return '';
+
+    if (mode === 'home') {
+      const label = VD.getVenueHomeLocationLabel(venue, visibleVenues || [], activeCity);
+      return label ? '<p class="venue-area">' + escapeHtml(label) + '</p>' : '';
     }
-    const escapedCity = city.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const suffixPattern = new RegExp('(?:,\\s*|\\s+|\\s-\\s|\\s–\\s|\\s—\\s)?' + escapedCity + '$', 'i');
-    return name.replace(suffixPattern, '').replace(/[\s,\-]+$/g, '').replace(/[\s,\-]{2,}/g, ' ').trim();
+
+    return VD.getVenueDisplayLocationLines(venue, activeCity)
+      .map(function (line, index) {
+        return (
+          '<p class="' +
+          (index === 0 ? 'venue-area' : 'venue-address') +
+          '">' +
+          escapeHtml(line) +
+          '</p>'
+        );
+      })
+      .join('');
   }
 
-  function getVenueSubtitle(venue, selectedCity) {
-    const selected = selectedCity.trim().toLowerCase();
-    const candidates = [venue.branch, venue.zone, venue.area]
-      .filter(Boolean)
-      .map((value) => String(value).trim())
-      .filter(Boolean);
-    const useful = candidates.find((value) => value.toLowerCase() !== selected) || '';
-    return useful || selectedCity;
-  }
-
-  function formatVenueLocation(venue) {
-    const secondaryParts = [venue.address, venue.postcode].filter(Boolean);
-    return secondaryParts.length > 0 ? secondaryParts.join(' • ') : '';
+  function getVenueCardTitle(venue) {
+    if (VD) return VD.getVenueDisplayName(venue, activeCity);
+    return String(venue.name || '').trim();
   }
 
   function normalizeName(value) {
@@ -266,9 +292,9 @@ function mountPickupRadarPreview(container, options) {
   }
 
   function getVenueSearchText(venue) {
-    return [venue.name, venue.brand, venue.area, venue.zone, venue.branch, venue.postcode, venue.address]
-      .filter(Boolean)
-      .map((value) => String(value).toLowerCase());
+    const parts = [venue.name, venue.brand, venue.area, venue.zone, venue.branch, venue.postcode, venue.address];
+    if (VD) parts.push(VD.getVenueDisplayName(venue, activeCity));
+    return parts.filter(Boolean).map((value) => String(value).toLowerCase());
   }
 
   function buildVenueStats(venueRows, reportRows, statusRows, tagRows) {
@@ -450,9 +476,11 @@ function mountPickupRadarPreview(container, options) {
     return { predictedFallback, waitBadgeStyle, waitBadgeText, lastReportText, confidenceText };
   }
 
-  function renderVenueCard(item, index) {
+  function renderVenueCard(item, index, mode, visibleVenues) {
     const display = getCardDisplay(item);
     const rank = index + 1;
+    const title = getVenueCardTitle(item);
+    const locationHtml = renderVenueLocationHtml(item, mode, visibleVenues);
     let badges = '';
 
     if (item.madeWhenDriverArrivesBadge) {
@@ -485,8 +513,8 @@ function mountPickupRadarPreview(container, options) {
       '<span class="rank-badge">#' + rank + '</span>' +
       '<span class="wait-badge" style="' + display.waitBadgeStyle + '">' + escapeHtml(display.waitBadgeText) + '</span>' +
       '</div>' +
-      '<h3 class="venue-name">' + escapeHtml(cleanVenueName(item.name, activeCity)) + '</h3>' +
-      '<p class="venue-area">' + escapeHtml(getVenueSubtitle(item, activeCity)) + '</p>' +
+      '<h3 class="venue-name">' + escapeHtml(title) + '</h3>' +
+      locationHtml +
       badges +
       '<div class="meta-row">' +
       '<div class="meta-item"><span class="meta-label">Reports today</span><span class="meta-value">' + item.reportsToday + '</span></div>' +
@@ -499,9 +527,12 @@ function mountPickupRadarPreview(container, options) {
     );
   }
 
-  function bindVenueCards(target) {
+  function bindVenueCards(target, origin) {
     target.querySelectorAll('.venue-card').forEach((card) => {
-      const open = () => openVenueDetail(card.getAttribute('data-venue-id'));
+      const open = () => {
+        const backScreen = origin === 'search' && searchReturnScreen === 'report-wait' ? reportBackScreen : origin;
+        openReportWait(card.getAttribute('data-venue-id'), backScreen);
+      };
       card.addEventListener('click', open);
       card.addEventListener('keydown', (event) => {
         if (event.key === 'Enter' || event.key === ' ') {
@@ -533,8 +564,8 @@ function mountPickupRadarPreview(container, options) {
       return;
     }
 
-    homeBody.innerHTML = visible.map(renderVenueCard).join('');
-    bindVenueCards(homeBody);
+    homeBody.innerHTML = visible.map((item, index) => renderVenueCard(item, index, 'home', visible)).join('');
+    bindVenueCards(homeBody, 'home');
   }
 
   function getSuggestedVenues() {
@@ -602,8 +633,8 @@ function mountPickupRadarPreview(container, options) {
       return;
     }
 
-    searchBody.innerHTML = list.map((item, index) => renderVenueCard(item, index)).join('');
-    bindVenueCards(searchBody);
+    searchBody.innerHTML = list.map((item, index) => renderVenueCard(item, index, 'search')).join('');
+    bindVenueCards(searchBody, 'search');
   }
 
   async function loadCityData(city) {
@@ -646,7 +677,34 @@ function mountPickupRadarPreview(container, options) {
     homeScreen.classList.toggle('hidden', name !== 'home');
     cityScreen.classList.toggle('hidden', name !== 'city');
     searchScreen.classList.toggle('hidden', name !== 'search');
-    detailScreen.classList.toggle('hidden', name !== 'detail');
+    reportWaitScreen.classList.toggle('hidden', name !== 'report-wait');
+  }
+
+  function openReportWaitSearch() {
+    searchReturnScreen = 'home';
+    showScreen('search');
+    renderSearchList();
+    searchInput.focus();
+  }
+
+  function resetPreviewHome() {
+    showScreen('home');
+    previousScreen = 'home';
+    searchReturnScreen = 'home';
+    reportVenueId = null;
+    resetReportFormState();
+    searchInput.value = '';
+    citySearchInput.value = '';
+    searchHeading.textContent = 'Suggested pickup points';
+    selectedFilter = 'Nearby';
+    root.querySelectorAll('.filter-chip').forEach((chip) => {
+      chip.classList.toggle('active', chip.getAttribute('data-filter') === 'Nearby');
+    });
+    closeDownloadModal();
+    closeInfoModal();
+    root.querySelectorAll('.app-scroll').forEach((el) => {
+      el.scrollTop = 0;
+    });
   }
 
   function updateCityPill() {
@@ -707,69 +765,224 @@ function mountPickupRadarPreview(container, options) {
     citySearchInput.focus();
   }
 
-  function openVenueDetail(venueId) {
-    const venue = venueStats.find((item) => item.id === venueId);
+  function resetReportFormState() {
+    reportFormState = {
+      waitBucket: null,
+      platform: '',
+      orderMadeWhenDriverArrives: false,
+      problemAction: null,
+    };
+  }
+
+  function renderSelectedVenueLocationHtml(venue) {
+    if (!VD) return '';
+    return VD.getVenueDisplayLocationLines(venue, activeCity)
+      .map(function (line, index) {
+        return (
+          '<p class="' +
+          (index === 0 ? 'selected-venue-area' : 'selected-venue-address') +
+          '">' +
+          escapeHtml(line) +
+          '</p>'
+        );
+      })
+      .join('');
+  }
+
+  function getPlatformChipStyle(platform, active) {
+    const brand = PLATFORM_COLORS[platform];
+    if (!brand) return '';
+    if (active) {
+      return 'background:' + brand.selected + ';border-color:' + brand.selected + ';color:#081018;';
+    }
+    return 'background:' + brand.unselectedBg + ';border-color:' + brand.border + ';color:#A8BED1;';
+  }
+
+  function renderReportFooter() {
+    const canSubmit = Boolean(reportFormState.waitBucket);
+    reportFooter.innerHTML =
+      '<button type="button" class="report-submit-btn' +
+      (canSubmit ? '' : ' disabled') +
+      '" data-report-submit' +
+      (canSubmit ? '' : ' disabled') +
+      '>Submit report</button>' +
+      (canSubmit ? '' : '<p class="report-footer-hint">Select a wait time to enable submit.</p>');
+
+    const submitBtn = reportFooter.querySelector('[data-report-submit]');
+    if (submitBtn) {
+      submitBtn.addEventListener('click', function () {
+        if (!reportFormState.waitBucket) return;
+        openDownloadModal();
+      });
+    }
+  }
+
+  function bindReportWaitForm() {
+    reportBody.querySelectorAll('[data-wait-bucket]').forEach(function (button) {
+      button.addEventListener('click', function () {
+        reportFormState.waitBucket = button.getAttribute('data-wait-bucket');
+        reportBody.querySelectorAll('[data-wait-bucket]').forEach(function (chip) {
+          chip.classList.toggle('active', chip === button);
+        });
+        renderReportFooter();
+      });
+    });
+
+    reportBody.querySelectorAll('[data-platform]').forEach(function (button) {
+      button.addEventListener('click', function () {
+        const platform = button.getAttribute('data-platform');
+        reportFormState.platform = reportFormState.platform === platform ? '' : platform;
+        reportBody.querySelectorAll('[data-platform]').forEach(function (chip) {
+          const active = chip.getAttribute('data-platform') === reportFormState.platform;
+          chip.classList.toggle('active', active);
+          chip.setAttribute('style', getPlatformChipStyle(chip.getAttribute('data-platform'), active));
+        });
+      });
+    });
+
+    reportBody.querySelectorAll('[data-problem-action]').forEach(function (button) {
+      button.addEventListener('click', function () {
+        const action = button.getAttribute('data-problem-action');
+        reportFormState.problemAction = reportFormState.problemAction === action ? null : action;
+        reportBody.querySelectorAll('[data-problem-action]').forEach(function (chip) {
+          chip.classList.toggle('active', chip.getAttribute('data-problem-action') === reportFormState.problemAction);
+        });
+      });
+    });
+
+    const toggle = reportBody.querySelector('[data-order-made-toggle]');
+    if (toggle) {
+      toggle.addEventListener('click', function () {
+        reportFormState.orderMadeWhenDriverArrives = !reportFormState.orderMadeWhenDriverArrives;
+        toggle.classList.toggle('on', reportFormState.orderMadeWhenDriverArrives);
+        toggle.setAttribute('aria-pressed', reportFormState.orderMadeWhenDriverArrives ? 'true' : 'false');
+      });
+    }
+
+    const changeBtn = reportBody.querySelector('[data-report-change]');
+    if (changeBtn) {
+      changeBtn.addEventListener('click', function () {
+        reportBackScreen = previousScreen;
+        searchReturnScreen = 'report-wait';
+        showScreen('search');
+        renderSearchList();
+        searchInput.focus();
+      });
+    }
+  }
+
+  function openReportWait(venueId, backScreen) {
+    const venue = venueStats.find(function (item) {
+      return item.id === venueId;
+    });
     if (!venue) return;
 
-    previousScreen = searchScreen.classList.contains('hidden') ? 'home' : 'search';
+    previousScreen = backScreen || 'home';
+    reportVenueId = venueId;
+    resetReportFormState();
 
-    const display = getCardDisplay(venue);
-    const address = formatVenueLocation(venue);
+    const title = getVenueCardTitle(venue);
+    const locationHtml = renderSelectedVenueLocationHtml(venue);
     let warnings = '';
 
-    if (venue.madeWhenDriverArrivesBadge) {
-      warnings += '<span class="warning-badge">Likely slow · Made when driver arrives</span>';
-    }
     if (venue.closedWarning) {
-      warnings += '<span class="warning-badge">Reported closed recently</span>';
+      warnings += '<span class="selected-venue-warning">Reported closed recently</span>';
     }
     if (venue.systemDownWarning) {
-      warnings += '<span class="warning-badge">Tablet/server issue reported</span>';
+      warnings += '<span class="selected-venue-warning">Tablet/server issue reported</span>';
     }
-    if (venue.leftEarlyWarning) {
-      warnings += '<span class="warning-badge">⚠ Drivers leaving early</span>';
-    }
-
-    const tagsHtml =
-      venue.tagCounts.length > 0
-        ? '<div class="tag-inline"><div class="tag-inline-title">Recent driver tags</div><div class="tag-inline-text">' +
-          escapeHtml(venue.tagCounts.map((tag) => tag.label + ' (' + tag.count + ')').join(' · ')) +
-          '</div></div>'
-        : '<p class="venue-area">No recent driver tags.</p>';
 
     const currentWaitHtml =
       venue.currentWaitMinutes !== null
-        ? '<div class="detail-card"><p class="detail-card-title">Current wait</p><p class="detail-card-value">' + escapeHtml(venue.currentWaitLabel) + '</p></div>'
+        ? '<div class="current-wait-card"><div class="current-wait-row"><span class="current-wait-label">Current wait</span><span class="current-wait-value">' +
+          escapeHtml(venue.currentWaitLabel) +
+          '</span></div></div>'
         : '';
 
-    detailBody.innerHTML =
-      '<h2 class="venue-name" style="font-size:30px;margin-top:8px">' + escapeHtml(cleanVenueName(venue.name, activeCity)) + '</h2>' +
-      '<p class="venue-area">' + escapeHtml(getVenueSubtitle(venue, activeCity)) + '</p>' +
-      (address ? '<p class="venue-address">' + escapeHtml(address) + '</p>' : '') +
+    const waitChips = WAIT_BUCKETS.map(function (bucket) {
+      return (
+        '<button type="button" class="report-chip" data-wait-bucket="' +
+        escapeHtml(bucket) +
+        '">' +
+        escapeHtml(WAIT_BUCKET_LABELS[bucket]) +
+        '</button>'
+      );
+    }).join('');
+
+    const platformChips = PLATFORMS.map(function (platform) {
+      return (
+        '<button type="button" class="report-chip platform-chip" data-platform="' +
+        escapeHtml(platform) +
+        '" style="' +
+        getPlatformChipStyle(platform, false) +
+        '">' +
+        escapeHtml(platform) +
+        '</button>'
+      );
+    }).join('');
+
+    const problemButtons = [
+      { key: 'closed', label: 'Closed' },
+      { key: 'system_down', label: 'Tablet/server down' },
+      { key: 'venue_issue', label: 'Venue issue' },
+    ]
+      .map(function (item) {
+        return (
+          '<button type="button" class="problem-compact-btn" data-problem-action="' +
+          item.key +
+          '">' +
+          escapeHtml(item.label) +
+          '</button>'
+        );
+      })
+      .join('');
+
+    reportBody.innerHTML =
+      '<h2 class="report-wait-title">Report wait</h2>' +
+      '<div class="selected-venue-card">' +
+      '<div class="selected-venue-text">' +
+      '<p class="selected-venue-name">' +
+      escapeHtml(title) +
+      '</p>' +
+      locationHtml +
       warnings +
+      '</div>' +
+      '<button type="button" class="change-pill" data-report-change>Change</button>' +
+      '</div>' +
+      '<div class="problem-compact-card">' +
+      '<p class="problem-compact-title">Problem with this pickup?</p>' +
+      '<p class="problem-compact-body">Report if the venue is closed or cannot take orders.</p>' +
+      '<div class="problem-compact-buttons">' +
+      problemButtons +
+      '</div>' +
+      '</div>' +
       currentWaitHtml +
-      '<div class="meta-row">' +
-      '<div class="meta-item"><span class="meta-label">Reports today</span><span class="meta-value">' + venue.reportsToday + '</span></div>' +
-      '<div class="meta-item"><span class="meta-label">Last report</span><span class="meta-value">' + escapeHtml(display.lastReportText) + '</span></div>' +
-      '<div class="meta-item"><span class="meta-label">Confidence</span><span class="meta-value">' + escapeHtml(display.confidenceText) + '</span></div>' +
+      '<div class="report-section">' +
+      '<p class="report-section-label">Wait time (minutes)</p>' +
+      '<div class="report-chip-wrap">' +
+      waitChips +
       '</div>' +
-      tagsHtml +
-      '<div class="problem-card">' +
-      '<p class="problem-title">Problem with this pickup?</p>' +
-      '<p class="problem-text">Report if the venue is closed, cannot take orders, or has another issue.</p>' +
-      '<div class="problem-actions">' +
-      '<button type="button" class="problem-chip write-action">Closed</button>' +
-      '<button type="button" class="problem-chip write-action">Tablet/server down</button>' +
-      '<button type="button" class="problem-chip write-action">Venue issue</button>' +
-      '<button type="button" class="problem-chip write-action">Driver tags</button>' +
       '</div>' +
+      '<div class="report-section">' +
+      '<p class="report-section-label">Platform (optional)</p>' +
+      '<div class="report-chip-wrap">' +
+      platformChips +
+      '</div>' +
+      '</div>' +
+      '<div class="report-section">' +
+      '<button type="button" class="order-made-card" data-order-made-toggle aria-pressed="false">' +
+      '<span class="order-made-text">' +
+      '<span class="order-made-title">Order made when driver arrives</span>' +
+      '<span class="order-made-sub">Turn this on if the venue usually starts preparing the order only after you arrive.</span>' +
+      '</span>' +
+      '<span class="report-toggle" aria-hidden="true"><span class="report-toggle-track"><span class="report-toggle-thumb"></span></span></span>' +
+      '</button>' +
       '</div>';
 
-    detailBody.querySelectorAll('.write-action').forEach((button) => {
-      button.addEventListener('click', openDownloadModal);
-    });
-
-    showScreen('detail');
+    bindReportWaitForm();
+    renderReportFooter();
+    reportBody.scrollTop = 0;
+    showScreen('report-wait');
   }
 
   function saveSelectedCity(city) {
@@ -870,19 +1083,26 @@ function mountPickupRadarPreview(container, options) {
   citySearchInput.addEventListener('input', renderCityList);
 
   root.querySelector('[data-open-search]').addEventListener('click', () => {
+    searchReturnScreen = 'home';
     showScreen('search');
     renderSearchList();
     searchInput.focus();
   });
 
+  root.querySelector('[data-report-wait-btn]').addEventListener('click', openReportWaitSearch);
+
   root.querySelector('[data-search-back]').addEventListener('click', () => {
     searchInput.value = '';
+    if (searchReturnScreen === 'report-wait' && reportVenueId) {
+      openReportWait(reportVenueId);
+      return;
+    }
     showScreen('home');
   });
 
   searchInput.addEventListener('input', renderSearchList);
 
-  root.querySelector('[data-detail-back]').addEventListener('click', () => {
+  root.querySelector('[data-report-back]').addEventListener('click', () => {
     showScreen(previousScreen);
   });
 
@@ -900,16 +1120,19 @@ function mountPickupRadarPreview(container, options) {
     });
   }
 
-  root.querySelectorAll('.write-action').forEach((button) => {
-    button.addEventListener('click', openDownloadModal);
-  });
-
   root.querySelector('[data-modal-close]').addEventListener('click', closeDownloadModal);
   downloadModal.addEventListener('click', (event) => {
     if (event.target === downloadModal) closeDownloadModal();
   });
 
   setupStoreButtons();
+
+  if (options.resetOnLoad) {
+    resetPreviewHome();
+    window.addEventListener('pageshow', (event) => {
+      if (event.persisted) resetPreviewHome();
+    });
+  }
 
   (async function initPreview() {
     try {
@@ -921,7 +1144,9 @@ function mountPickupRadarPreview(container, options) {
       document.querySelectorAll('[data-city-count]').forEach((el) => {
         el.textContent = String(liveCities.length);
       });
+      if (options.resetOnLoad) resetPreviewHome();
       await loadCityData(activeCity);
+      if (options.resetOnLoad) resetPreviewHome();
     } catch (error) {
       loadError = error instanceof Error ? error.message : String(error);
       root.querySelector('[data-home-body]').innerHTML =
