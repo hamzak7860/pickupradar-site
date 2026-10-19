@@ -72,7 +72,7 @@ const PREVIEW_MARKUP = `
         <ul class="info-list">
           <li>Drivers report pickup waits in real time. Recent reports help other drivers avoid wasted time.</li>
           <li>Live wait times are based on recent reports. Reports older than 2 hours do not affect the current wait.</li>
-          <li>When there are no recent reports, PickupRadar may show predicted fast or likely slow places.</li>
+          <li>When there are no recent reports, PickupRadar may show likely fast or likely slow places.</li>
           <li>No login required. An anonymous device ID reduces spam and duplicate reports.</li>
         </ul>
         <button type="button" data-info-close class="modal-close">Close</button>
@@ -105,8 +105,6 @@ function mountPickupRadarPreview(container, options) {
   if (!container) return;
   options = options || {};
 
-  const VD = window.PickupRadarVenueDisplay;
-
   const root = document.createElement('div');
   root.className =
     'preview-root' +
@@ -114,6 +112,17 @@ function mountPickupRadarPreview(container, options) {
     (options.large ? ' preview-large' : '');
   root.innerHTML = PREVIEW_MARKUP;
   container.appendChild(root);
+
+  const LOGIC = window.PickupRadarLogic;
+  if (!LOGIC) {
+    root.querySelector('[data-home-body]').innerHTML =
+      '<div class="state-box"><strong>Could not load live data</strong><span>Live data isn\'t available right now.</span><button type="button" class="retry-btn" data-retry>Try again</button></div>';
+    root.querySelector('[data-retry]').addEventListener('click', () => location.reload());
+    return;
+  }
+  const VD = LOGIC.venueDisplay;
+  const PRED = LOGIC.venuePrediction;
+  const WC = LOGIC.waitColors;
 
   const APP_STORE_URL = '';
   const PLAY_STORE_URL = '';
@@ -135,14 +144,15 @@ function mountPickupRadarPreview(container, options) {
     staff_issue: 'Staff issue',
   };
 
-  const FAST_FALLBACK_KEYWORDS = [
-    'co-op', 'one stop', 'waitrose', 'little waitrose', 'tesco express', 'sainsbury',
-    'londis', 'nisa', 'convenience', 'greggs', 'subway',
-  ];
-
-  const SLOW_FALLBACK_KEYWORDS = [
-    'mcdonald', 'kfc', 'wingstop', 'five guys', 'popeyes', 'burger king', 'pizza',
-    'drive-thru', 'drive thru',
+  const VENUE_ORDER = [
+    "McDonald's - Winchester Circle",
+    "McDonald's - Watling Street",
+    'KFC - Bletchley',
+    "Nando's - Xscape",
+    'Co-op - Fishermead',
+    'Asda - Milton Keynes',
+    'Tesco - Kingston',
+    'Greggs - Central Milton Keynes',
   ];
 
   const CURATED_FALLBACK_LIMIT = 6;
@@ -256,66 +266,22 @@ function mountPickupRadarPreview(container, options) {
   }
 
 
-  function renderVenueLocationHtml(venue, mode, visibleVenues) {
-    if (!VD) return '';
-
-    if (mode === 'home') {
-      const label = VD.getVenueHomeLocationLabel(venue, visibleVenues || [], activeCity);
-      return label ? '<p class="venue-area">' + escapeHtml(label) + '</p>' : '';
-    }
-
-    return VD.getVenueDisplayLocationLines(venue, activeCity)
-      .map(function (line, index) {
-        return (
-          '<p class="' +
-          (index === 0 ? 'venue-area' : 'venue-address') +
-          '">' +
-          escapeHtml(line) +
-          '</p>'
-        );
-      })
-      .join('');
-  }
-
-  function getVenueCardTitle(venue) {
-    if (VD) return VD.getVenueDisplayName(venue, activeCity);
-    return String(venue.name || '').trim();
+  function renderVenueLocationHtml(venue) {
+    const label = VD.getVenueHomeLocationLabel(venue, venueStats, activeCity);
+    return label ? '<p class="venue-area">' + escapeHtml(label) + '</p>' : '';
   }
 
   function normalizeName(value) {
     return value.toLowerCase().replace(/['']/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
   }
 
-  function matchesAnyKeyword(name, keywords) {
-    const normalized = normalizeName(name);
-    return keywords.some((keyword) => normalized.includes(normalizeName(keyword)));
-  }
-
-  function getPredictedStatus(venue) {
-    if (venue.currentWaitMinutes !== null) return null;
-    if (matchesAnyKeyword(venue.name, FAST_FALLBACK_KEYWORDS)) return 'fast';
-    if (matchesAnyKeyword(venue.name, SLOW_FALLBACK_KEYWORDS)) return 'slow';
-    return null;
-  }
-
-  function isPredictedFastFallback(venue) {
-    return getPredictedStatus(venue) === 'fast';
-  }
-
-  function isPredictedSlowFallback(venue) {
-    return getPredictedStatus(venue) === 'slow';
-  }
-
-  function getWaitTone(waitMinutes) {
-    if (waitMinutes < 5) return { className: 'wait-green', bg: '#33C977', color: '#07140D' };
-    if (waitMinutes < 10) return { className: 'wait-amber', bg: '#F2C14E', color: '#1B1402' };
-    if (waitMinutes < 15) return { className: 'wait-orange', bg: '#F2994A', color: '#1B0D03' };
-    return { className: 'wait-red', bg: '#E85D6A', color: '#1A0608' };
+  function effectiveStatus(venue) {
+    return PRED.getEffectiveVenueStatus(venue, Date.now());
   }
 
   function getVenueSearchText(venue) {
     const parts = [venue.name, venue.brand, venue.area, venue.zone, venue.branch, venue.postcode, venue.address];
-    if (VD) parts.push(VD.getVenueDisplayName(venue, activeCity));
+    parts.push(VD.getVenueDisplayName(venue, activeCity, venueStats));
     return parts.filter(Boolean).map((value) => String(value).toLowerCase());
   }
 
@@ -326,16 +292,30 @@ function mountPickupRadarPreview(container, options) {
       if (row && row.venue_id) statsByVenueId.set(row.venue_id, row);
     }
 
-    const orderedVenues = [...venueRows].sort((a, b) => a.name.localeCompare(b.name));
+    const orderIndex = new Map(VENUE_ORDER.map((name, index) => [name, index]));
+    const orderedVenues = [...venueRows].sort((a, b) => {
+      const aIndex = orderIndex.get(a.name) ?? Number.MAX_SAFE_INTEGER;
+      const bIndex = orderIndex.get(b.name) ?? Number.MAX_SAFE_INTEGER;
+      if (aIndex !== bIndex) return aIndex - bIndex;
+      return a.name.localeCompare(b.name);
+    });
 
     return orderedVenues.map((venue) => {
       const s = statsByVenueId.get(venue.id) || null;
       const reportTime = s && s.last_report_at ? new Date(s.last_report_at).getTime() : NaN;
+      const lastReportAt = Number.isFinite(reportTime) ? s.last_report_at : null;
       const lastReportMinutes = Number.isFinite(reportTime)
         ? Math.max(0, Math.floor((now - reportTime) / 60000))
         : null;
-      const isLive = Boolean(s && s.current_wait_minutes != null && lastReportMinutes !== null && lastReportMinutes < 120);
+      const isLive = WC.isLocallyLiveWait(
+        { currentWaitMinutes: s?.current_wait_minutes ?? null, lastReportAt },
+        now
+      );
       const currentWaitMinutes = isLive ? s.current_wait_minutes : null;
+      const recentConsensusStatus =
+        s?.recent_consensus_status === 'fast' || s?.recent_consensus_status === 'slow'
+          ? s.recent_consensus_status
+          : null;
       const currentWaitLabel =
         currentWaitMinutes === null
           ? 'No recent data'
@@ -361,7 +341,10 @@ function mountPickupRadarPreview(container, options) {
         currentWaitMinutes,
         currentWaitLabel,
         reportsToday: s?.reports_today ?? 0,
+        reports2hCount,
+        lastReportAt,
         lastReportMinutes,
+        recentConsensusStatus,
         confidence,
         leftEarlyWarning: s?.left_early_warning === true,
         madeWhenDriverArrivesBadge: s?.made_when_driver_arrives_badge === true,
@@ -377,12 +360,12 @@ function mountPickupRadarPreview(container, options) {
 
     if (filter === 'Nearby') {
       const liveNearby = venues
-        .filter((venue) => venue.lastReportMinutes !== null && venue.lastReportMinutes <= 24 * 60)
+        .filter((venue) => venue.lastReportMinutes !== null && venue.lastReportMinutes <= 1440)
         .sort((a, b) => (a.lastReportMinutes ?? Infinity) - (b.lastReportMinutes ?? Infinity));
+      const liveNearbyIds = new Set(liveNearby.map((venue) => venue.id));
       const fallbackNearby = venues
-        .filter((venue) => !liveNearby.some((live) => live.id === venue.id))
-        .filter((venue) => venue.currentWaitMinutes === null)
-        .filter((venue) => matchesAnyKeyword(venue.name, FAST_FALLBACK_KEYWORDS) || matchesAnyKeyword(venue.name, SLOW_FALLBACK_KEYWORDS))
+        .filter((venue) => !liveNearbyIds.has(venue.id))
+        .filter((venue) => venue.currentWaitMinutes === null && effectiveStatus(venue) !== null)
         .slice(0, Math.min(CURATED_FALLBACK_LIMIT, Math.max(0, HOME_TAB_LIMITS.Nearby - liveNearby.length)))
         .map((venue) => ({ ...venue, isPredictedFallback: true }));
       return [...liveNearby, ...fallbackNearby].slice(0, HOME_TAB_LIMITS.Nearby);
@@ -390,23 +373,23 @@ function mountPickupRadarPreview(container, options) {
 
     if (filter === 'Fast') {
       const liveFast = venues
-        .filter((venue) => venue.currentWaitMinutes !== null && venue.currentWaitMinutes < 10)
+        .filter((venue) => venue.currentWaitMinutes !== null && effectiveStatus(venue) === 'fast')
         .sort((a, b) => (a.currentWaitMinutes ?? Infinity) - (b.currentWaitMinutes ?? Infinity));
       const fallbackFast = venues
-        .filter(isPredictedFastFallback)
+        .filter((venue) => venue.currentWaitMinutes === null && effectiveStatus(venue) === 'fast')
         .slice(0, Math.min(CURATED_FALLBACK_LIMIT, Math.max(0, HOME_TAB_LIMITS.Fast - liveFast.length)))
-        .map((venue) => ({ ...venue, isPredictedFallback: true, isPredictedFastFallback: true }));
+        .map((venue) => ({ ...venue, isPredictedFallback: true }));
       return [...liveFast, ...fallbackFast].slice(0, HOME_TAB_LIMITS.Fast);
     }
 
     if (filter === 'Slow') {
       const liveSlow = venues
-        .filter((venue) => venue.currentWaitMinutes !== null && venue.currentWaitMinutes >= 10)
+        .filter((venue) => venue.currentWaitMinutes !== null && effectiveStatus(venue) === 'slow')
         .sort((a, b) => (b.currentWaitMinutes ?? -1) - (a.currentWaitMinutes ?? -1));
       const fallbackSlow = venues
-        .filter(isPredictedSlowFallback)
+        .filter((venue) => venue.currentWaitMinutes === null && effectiveStatus(venue) === 'slow')
         .slice(0, Math.min(CURATED_FALLBACK_LIMIT, Math.max(0, HOME_TAB_LIMITS.Slow - liveSlow.length)))
-        .map((venue) => ({ ...venue, isPredictedFallback: true, isPredictedSlowFallback: true }));
+        .map((venue) => ({ ...venue, isPredictedFallback: true }));
       return [...liveSlow, ...fallbackSlow].slice(0, HOME_TAB_LIMITS.Slow);
     }
 
@@ -435,27 +418,25 @@ function mountPickupRadarPreview(container, options) {
 
   function getCardDisplay(item) {
     const predictedFallback = item.isPredictedFallback === true;
-    const predictedFastFallback = item.isPredictedFastFallback === true;
-    const predictedSlowFallback = item.isPredictedSlowFallback === true;
     const hasRealWaitData = item.currentWaitMinutes !== null;
-    const predictedStatus = getPredictedStatus(item);
+    const status = hasRealWaitData ? null : effectiveStatus(item);
 
     let waitBadgeStyle = '';
     let waitBadgeText = '';
 
     if (hasRealWaitData) {
-      const tone = getWaitTone(item.currentWaitMinutes);
-      waitBadgeStyle = 'background:' + tone.bg + ';color:' + tone.color;
+      const tone = WC.getWaitColorsFromMinutes(item.currentWaitMinutes);
+      waitBadgeStyle = 'background:' + tone.backgroundColor + ';color:' + tone.color;
       waitBadgeText = item.currentWaitLabel;
-    } else if (predictedFastFallback || predictedStatus === 'fast') {
-      waitBadgeStyle = 'background:#12311f;color:#8be6ae';
-      waitBadgeText = 'Predicted fast';
-    } else if (predictedSlowFallback || predictedStatus === 'slow') {
-      waitBadgeStyle = 'background:#3a2418;color:#f3b37a';
+    } else if (status === 'fast') {
+      waitBadgeStyle = 'background:' + WC.LIKELY_FAST_WAIT_PILL.backgroundColor + ';color:' + WC.LIKELY_FAST_WAIT_PILL.color;
+      waitBadgeText = 'Likely fast';
+    } else if (status === 'slow') {
+      waitBadgeStyle = 'background:' + WC.LIKELY_SLOW_WAIT_PILL.backgroundColor + ';color:' + WC.LIKELY_SLOW_WAIT_PILL.color;
       waitBadgeText = 'Likely slow';
     } else {
       waitBadgeStyle = 'background:#12202b;color:#a9b9c9';
-      waitBadgeText = 'No live data';
+      waitBadgeText = 'No recent wait';
     }
 
     const lastReportText = predictedFallback
@@ -468,11 +449,13 @@ function mountPickupRadarPreview(container, options) {
     return { predictedFallback, waitBadgeStyle, waitBadgeText, lastReportText, confidenceText };
   }
 
-  function renderVenueCard(item, index, mode, visibleVenues) {
+  function renderVenueCard(item, index, mode) {
     const display = getCardDisplay(item);
     const rank = index + 1;
-    const title = getVenueCardTitle(item);
-    const locationHtml = renderVenueLocationHtml(item, mode, visibleVenues);
+    const title = mode === 'home'
+      ? VD.cleanVenueName(item, activeCity, venueStats)
+      : VD.getVenueDisplayName(item, activeCity, venueStats);
+    const locationHtml = renderVenueLocationHtml(item);
     let badges = '';
 
     if (item.madeWhenDriverArrivesBadge) {
@@ -560,7 +543,7 @@ function mountPickupRadarPreview(container, options) {
       return;
     }
 
-    homeBody.innerHTML = visible.map((item, index) => renderVenueCard(item, index, 'home', visible)).join('');
+    homeBody.innerHTML = visible.map((item, index) => renderVenueCard(item, index, 'home')).join('');
     bindVenueCards(homeBody, 'home');
   }
 
@@ -595,15 +578,14 @@ function mountPickupRadarPreview(container, options) {
         return (
           venue.currentWaitMinutes !== null ||
           venue.lastReportMinutes !== null ||
-          isPredictedFastFallback(venue) ||
-          isPredictedSlowFallback(venue)
+          effectiveStatus(venue) !== null
         );
       });
       if (match) addVenue(match);
     }
 
     venueStats
-      .filter((venue) => isPredictedFastFallback(venue) || isPredictedSlowFallback(venue))
+      .filter((venue) => effectiveStatus(venue) !== null)
       .forEach(addVenue);
 
     return result.slice(0, SUGGESTED_LIMIT);
@@ -669,7 +651,7 @@ function mountPickupRadarPreview(container, options) {
 
     while (true) {
       const page = await supabaseGet(
-        '/venues?select=id,name,area,brand,branch,address,postcode,lat,lng,google_place_id,city,zone,venue_type,is_active,created_at&city=eq.' +
+        '/venues?select=id,name,area,brand,branch,address,postcode,lat,lng,google_place_id,city,zone,venue_type,admin_edited_at,is_active,created_at&city=eq.' +
           encodeURIComponent(city) +
           '&is_active=eq.true&order=id.asc&limit=' +
           pageSize +
@@ -927,7 +909,7 @@ function mountPickupRadarPreview(container, options) {
   }
 
   function buildReportWaitHtml(venue) {
-    const title = getVenueCardTitle(venue);
+    const title = VD.getVenueDisplayName(venue, activeCity, venueStats);
     const locationHtml = renderSelectedVenueLocationHtml(venue);
     let warnings = '';
 
@@ -1052,16 +1034,17 @@ function mountPickupRadarPreview(container, options) {
   }
 
   function renderSelectedVenueLocationHtml(venue) {
-    if (!VD) return '';
-    return VD.getVenueDisplayLocationLines(venue, activeCity)
-      .map(function (line, index) {
-        return (
-          '<p class="' +
-          (index === 0 ? 'selected-venue-area' : 'selected-venue-address') +
-          '">' +
-          escapeHtml(line) +
-          '</p>'
-        );
+    const details = VD.getVenueOpenedLocationDetails(venue, activeCity);
+    return [
+      { text: details.area, className: 'selected-venue-area' },
+      { text: details.street, className: 'selected-venue-address' },
+      { text: details.postcode, className: 'selected-venue-address' },
+    ]
+      .filter(function (line) {
+        return line.text;
+      })
+      .map(function (line) {
+        return '<p class="' + line.className + '">' + escapeHtml(line.text) + '</p>';
       })
       .join('');
   }
