@@ -1,5 +1,42 @@
 'use strict';
 
+const PR_ICONS = {
+  location:
+    '<path fill="currentColor" d="M12 2.2A6.8 6.8 0 0 0 5.2 9c0 4.9 5.3 10.7 6.3 11.6a.8.8 0 0 0 1 0C13.5 19.7 18.8 13.9 18.8 9A6.8 6.8 0 0 0 12 2.2zm0 9.2a2.4 2.4 0 1 1 0-4.8 2.4 2.4 0 0 1 0 4.8z"/>',
+  chevron:
+    '<path fill="currentColor" d="M6.7 8.8a1 1 0 0 1 1.4 0L12 12.7l3.9-3.9a1 1 0 1 1 1.4 1.4l-4.6 4.6a1 1 0 0 1-1.4 0L6.7 10.2a1 1 0 0 1 0-1.4z"/>',
+  list: '<path fill="currentColor" d="M4 6.1h16v1.8H4zm0 5h16v1.8H4zm0 5h16v1.8H4z"/>',
+  flash: '<path fill="currentColor" d="M13.1 2.1 5.2 13.1h5.2L8.9 21.9l8.6-12.4h-5.3l1-7.4z"/>',
+  hourglass:
+    '<path fill="currentColor" d="M7 3h10v2.1c0 1.5-.7 2.9-1.8 3.8L12 11.6 9.8 8.9C8.7 8 8 6.6 8 5.1V3h-.9zm.1 16.8h9.8V18c0-1.5-.7-2.9-1.8-3.8L12 12.4l-3.1 1.8c-1.1.9-1.8 2.3-1.8 3.8v1.8z"/>',
+  bookmark: '<path fill="currentColor" d="M6.4 3.1h11.2a1 1 0 0 1 1 1V21l-6.6-3.7L5.4 21V4.1a1 1 0 0 1 1-1z"/>',
+  search:
+    '<circle cx="11" cy="11" r="6.2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.6 15.6 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>',
+  stopwatch:
+    '<path fill="currentColor" d="M9.1 2.2h5.8v1.7H9.1zm2 3.1a7.5 7.5 0 1 0 7.6 7.5A7.5 7.5 0 0 0 11.1 5.3zm-.8 3.3h1.7v4.2l3 1.8-.9 1.5-3.8-2.3z"/>',
+  profile:
+    '<path fill="currentColor" d="M12 2.3a9.7 9.7 0 1 0 0 19.4 9.7 9.7 0 0 0 0-19.4zm0 3.3a2.9 2.9 0 1 1 0 5.8 2.9 2.9 0 0 1 0-5.8zm0 13.6a7.3 7.3 0 0 1-5.6-2.6c.4-1.8 3.7-2.8 5.6-2.8s5.2 1 5.6 2.8A7.3 7.3 0 0 1 12 19.2z"/>',
+  globe:
+    '<circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3.8 12h16.4M12 3.8c2.1 2.3 3.2 5.1 3.2 8.2s-1.1 5.9-3.2 8.2c-2.1-2.3-3.2-5.1-3.2-8.2s1.1-5.9 3.2-8.2z" fill="none" stroke="currentColor" stroke-width="1.7"/>',
+  'restaurant-outline':
+    '<path fill="currentColor" d="M8.2 2.3v7.1c0 1.1-.8 2-1.9 2.2V21H4.6v-9.4c-1.1-.2-1.9-1.1-1.9-2.2V2.3h1.6v6.1h1.2V2.3h1.5v6.1h1.2V2.3zm8.1 0c2.2 0 3.9 3.3 3.9 7.1s-1.7 7.1-3.9 7.1V21h-1.7V2.3h1.7z"/>',
+  'basket-outline':
+    '<path fill="currentColor" d="M7.1 8.1 5 4.4H3.2v1.6h1l2.3 8.1a2 2 0 0 0 1.9 1.4h8.7a2 2 0 0 0 1.9-1.4l1.6-6H7.1zm2.3 11.1a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2zm7.1 0a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2z"/>',
+};
+
+function prIcon(name, size) {
+  const body = PR_ICONS[name] || PR_ICONS['restaurant-outline'];
+  return (
+    '<svg class="pr-icon" width="' +
+    size +
+    '" height="' +
+    size +
+    '" viewBox="0 0 24 24" aria-hidden="true" focusable="false">' +
+    body +
+    '</svg>'
+  );
+}
+
 const PREVIEW_MARKUP = `
     <div class="phone-shell">
       <div class="phone-screen">
@@ -7,30 +44,50 @@ const PREVIEW_MARKUP = `
         <div data-screen="home" class="screen">
           <div class="app-scroll">
             <div class="app-header">
-              <button type="button" data-city-pill class="city-pill-btn" aria-label="Choose city">Milton Keynes</button>
-              <p class="app-title">PickupRadar</p>
-              <p class="app-tagline">Know the wait before you walk in.</p>
-              <p class="app-supporting">Real wait times for UK delivery drivers</p>
-              <div class="header-actions">
-                <button type="button" class="header-pill" data-how-it-works>How it works</button>
-                <a class="header-pill" data-support href="support.html">Support</a>
+              <div class="city-pill-row">
+                <button type="button" data-city-pill class="city-pill-btn" aria-label="Choose city">
+                  ${prIcon('location', 13)}
+                  <span data-city-name>Milton Keynes</span>
+                  ${prIcon('chevron', 12)}
+                </button>
+                <span class="city-pill-spacer"></span>
+                <button type="button" class="help-btn" data-help-open aria-label="Help">?</button>
+                <span class="language-static">
+                  ${prIcon('globe', 14)}
+                  <span>English</span>
+                </span>
+              </div>
+              <div class="title-row">
+                <button type="button" class="title-brand" data-home-brand aria-label="PickupRadar">
+                  <img class="title-brand-icon" src="assets/pickupradar-app-icon.png" alt="" width="36" height="36" />
+                  <span class="app-title">Pickup<span class="title-accent">Radar</span></span>
+                </button>
+                <button type="button" class="rp-pill" data-open-app>RP</button>
               </div>
               <div class="filter-row" role="tablist" aria-label="Filters">
-                <button type="button" class="filter-chip active" data-filter="Nearby">Nearby</button>
-                <button type="button" class="filter-chip" data-filter="Fast">Fast</button>
-                <button type="button" class="filter-chip" data-filter="Slow">Slow</button>
-                <button type="button" class="filter-chip" data-filter="Recent">Recent</button>
+                <button type="button" class="filter-chip active" data-filter="All" role="tab" aria-selected="true">${prIcon('list', 16)}<span>All</span></button>
+                <button type="button" class="filter-chip" data-filter="Fast" role="tab" aria-selected="false">${prIcon('flash', 16)}<span>Fast</span></button>
+                <button type="button" class="filter-chip" data-filter="Slow" role="tab" aria-selected="false">${prIcon('hourglass', 16)}<span>Slow</span></button>
+                <button type="button" class="filter-chip" data-filter="Saved" role="tab" aria-selected="false">${prIcon('bookmark', 16)}<span>Saved</span></button>
               </div>
-              <p class="home-helper">Showing top live and predicted pickup points. Search all pickup points to find any venue in your area.</p>
-              <button type="button" class="search-all-card" data-open-search>
-                <span class="search-all-title">Search all pickup points</span>
-                <span class="search-all-sub">Find any venue in your area</span>
+              <button type="button" class="search-row" data-open-search>
+                ${prIcon('search', 17)}
+                <span>Search pickup points</span>
               </button>
             </div>
             <div data-home-body></div>
           </div>
-          <div class="floating-bar">
-            <button type="button" class="floating-btn" data-report-wait-btn>Report a wait</button>
+          <div class="home-dock">
+            <button type="button" class="dock-report" data-report-wait-btn>${prIcon('stopwatch', 24)}<span>Report wait</span></button>
+            <button type="button" class="dock-profile" data-open-app>${prIcon('profile', 24)}<span>Profile</span></button>
+          </div>
+          <div class="help-overlay hidden" data-help-sheet>
+            <div class="help-sheet" role="dialog" aria-modal="true" aria-labelledby="helpSheetTitle">
+              <p id="helpSheetTitle" class="help-sheet-title">Help</p>
+              <button type="button" class="help-sheet-row" data-how-it-works>How it works</button>
+              <a class="help-sheet-row" data-support href="support.html">Support</a>
+              <button type="button" class="help-sheet-close" data-help-close>Close</button>
+            </div>
           </div>
         </div>
         <div data-screen="city" class="screen hidden">
@@ -157,8 +214,8 @@ function mountPickupRadarPreview(container, options) {
 
   const CURATED_FALLBACK_LIMIT = 6;
   const HOME_TAB_LIMITS = options.compact
-    ? { Nearby: 3, Fast: 3, Slow: 3, Recent: 4 }
-    : { Nearby: 12, Fast: 12, Slow: 12, Recent: 20 };
+    ? { All: 3, Fast: 3, Slow: 3 }
+    : { All: 12, Fast: 12, Slow: 12 };
   const BRAND_PRIORITY = ["McDonald's", 'KFC', 'Burger King', 'Subway', 'Greggs', 'Taco Bell', 'Popeyes', "Pepe's", 'Dixy', 'German Doner Kebab', 'Starbucks', 'Costa', 'Co-op', 'Tesco', "Sainsbury's", 'One Stop'];
   const SUGGESTED_LIMIT = options.compact ? 12 : 20;
 
@@ -187,7 +244,7 @@ function mountPickupRadarPreview(container, options) {
   let liveCities = [];
   let activeCity = DEFAULT_CITY;
   let venueStats = [];
-  let selectedFilter = 'Nearby';
+  let selectedFilter = 'All';
   let loadError = null;
   let previousScreen = 'home';
   let searchReturnScreen = 'home';
@@ -265,11 +322,6 @@ function mountPickupRadarPreview(container, options) {
     return SITE_CITIES.slice();
   }
 
-
-  function renderVenueLocationHtml(venue) {
-    const label = VD.getVenueHomeLocationLabel(venue, venueStats, activeCity);
-    return label ? '<p class="venue-area">' + escapeHtml(label) + '</p>' : '';
-  }
 
   function normalizeName(value) {
     return value.toLowerCase().replace(/['']/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
@@ -358,7 +410,7 @@ function mountPickupRadarPreview(container, options) {
   function getVisibleVenues(filter) {
     const venues = venueStats;
 
-    if (filter === 'Nearby') {
+    if (filter === 'All') {
       const liveNearby = venues
         .filter((venue) => venue.lastReportMinutes !== null && venue.lastReportMinutes <= 1440)
         .sort((a, b) => (a.lastReportMinutes ?? Infinity) - (b.lastReportMinutes ?? Infinity));
@@ -366,9 +418,9 @@ function mountPickupRadarPreview(container, options) {
       const fallbackNearby = venues
         .filter((venue) => !liveNearbyIds.has(venue.id))
         .filter((venue) => venue.currentWaitMinutes === null && effectiveStatus(venue) !== null)
-        .slice(0, Math.min(CURATED_FALLBACK_LIMIT, Math.max(0, HOME_TAB_LIMITS.Nearby - liveNearby.length)))
+        .slice(0, Math.min(CURATED_FALLBACK_LIMIT, Math.max(0, HOME_TAB_LIMITS.All - liveNearby.length)))
         .map((venue) => ({ ...venue, isPredictedFallback: true }));
-      return [...liveNearby, ...fallbackNearby].slice(0, HOME_TAB_LIMITS.Nearby);
+      return [...liveNearby, ...fallbackNearby].slice(0, HOME_TAB_LIMITS.All);
     }
 
     if (filter === 'Fast') {
@@ -393,19 +445,12 @@ function mountPickupRadarPreview(container, options) {
       return [...liveSlow, ...fallbackSlow].slice(0, HOME_TAB_LIMITS.Slow);
     }
 
-    if (filter === 'Recent') {
-      return [...venues]
-        .filter((venue) => venue.lastReportMinutes !== null || venue.reportsToday > 0)
-        .sort((a, b) => (a.lastReportMinutes ?? Infinity) - (b.lastReportMinutes ?? Infinity))
-        .slice(0, HOME_TAB_LIMITS.Recent);
-    }
-
-    return venues.slice(0, HOME_TAB_LIMITS.Nearby);
+    return venues.slice(0, HOME_TAB_LIMITS.All);
   }
 
-  function formatLastReport(minutes) {
-    if (minutes < 60) return minutes + 'm ago';
-    return Math.round(minutes / 60) + 'h ago';
+  function formatEvidenceTime(minutes) {
+    if (minutes < 60) return Math.max(1, minutes) + 'm ago';
+    return Math.floor(minutes / 60) + 'h ago';
   }
 
   function escapeHtml(value) {
@@ -416,89 +461,73 @@ function mountPickupRadarPreview(container, options) {
       .replace(/"/g, '&quot;');
   }
 
-  function getCardDisplay(item) {
-    const predictedFallback = item.isPredictedFallback === true;
-    const hasRealWaitData = item.currentWaitMinutes !== null;
-    const status = hasRealWaitData ? null : effectiveStatus(item);
-
-    let waitBadgeStyle = '';
-    let waitBadgeText = '';
-
-    if (hasRealWaitData) {
-      const tone = WC.getWaitColorsFromMinutes(item.currentWaitMinutes);
-      waitBadgeStyle = 'background:' + tone.backgroundColor + ';color:' + tone.color;
-      waitBadgeText = item.currentWaitLabel;
-    } else if (status === 'fast') {
-      waitBadgeStyle = 'background:' + WC.LIKELY_FAST_WAIT_PILL.backgroundColor + ';color:' + WC.LIKELY_FAST_WAIT_PILL.color;
-      waitBadgeText = 'Likely fast';
-    } else if (status === 'slow') {
-      waitBadgeStyle = 'background:' + WC.LIKELY_SLOW_WAIT_PILL.backgroundColor + ';color:' + WC.LIKELY_SLOW_WAIT_PILL.color;
-      waitBadgeText = 'Likely slow';
-    } else {
-      waitBadgeStyle = 'background:#12202b;color:#a9b9c9';
-      waitBadgeText = 'No recent wait';
-    }
-
-    const lastReportText = predictedFallback
-      ? 'No recent reports'
-      : item.lastReportMinutes === null
-        ? 'No live data'
-        : formatLastReport(item.lastReportMinutes);
-    const confidenceText = predictedFallback ? 'Predicted' : item.currentWaitMinutes === null ? 'No live data' : item.confidence;
-
-    return { predictedFallback, waitBadgeStyle, waitBadgeText, lastReportText, confidenceText };
-  }
-
   function renderVenueCard(item, index, mode) {
-    const display = getCardDisplay(item);
-    const rank = index + 1;
+    const now = Date.now();
+    const hasRealWaitData = WC.isLocallyLiveWait(item, now);
+    const status = effectiveStatus(item);
+    const waitColors = hasRealWaitData
+      ? WC.getWaitColorsFromMinutes(item.currentWaitMinutes)
+      : status === 'fast'
+        ? WC.LIKELY_FAST_WAIT_PILL
+        : status === 'slow'
+          ? WC.LIKELY_SLOW_WAIT_PILL
+          : null;
+    const waitBadgeText = hasRealWaitData
+      ? item.currentWaitLabel
+      : status === 'fast'
+        ? 'Likely fast'
+        : status === 'slow'
+          ? 'Likely slow'
+          : '';
+    const reportTimestampMs = item.lastReportAt ? new Date(item.lastReportAt).getTime() : NaN;
+    const liveReportMinutes = Number.isFinite(reportTimestampMs)
+      ? Math.max(0, Math.floor((now - reportTimestampMs) / 60000))
+      : item.lastReportMinutes;
+    const hasFreshEvidence =
+      hasRealWaitData && item.reports2hCount > 0 && liveReportMinutes !== null && liveReportMinutes < 120;
+    const evidenceText = hasFreshEvidence
+      ? (item.reports2hCount === 1 ? '1 report · ' : item.reports2hCount + ' reports · ') + formatEvidenceTime(liveReportMinutes)
+      : '';
     const title = mode === 'home'
       ? VD.cleanVenueName(item, activeCity, venueStats)
       : VD.getVenueDisplayName(item, activeCity, venueStats);
-    const locationHtml = renderVenueLocationHtml(item);
+    const area = VD.getVenueHomeLocationLabel(item, venueStats, activeCity);
+    const tint = WC.getHomeVenueCardWaitTint(item, now);
+    const iconColor = WC.getVenueWaitIconColor(item, now, status);
+    const cardStyle = tint
+      ? 'background:' + tint.backgroundColor + ';border-color:' + tint.borderColor + ';'
+      : '';
     let badges = '';
-
     if (item.madeWhenDriverArrivesBadge) {
-      badges += '<span class="warning-badge">Likely slow · Made when driver arrives</span>';
+      badges += '<span class="urgent-badge">Made when driver arrives</span>';
     }
     if (item.closedWarning) {
-      badges += '<span class="warning-badge">Reported closed recently</span>';
+      badges += '<span class="urgent-badge">Reported closed recently</span>';
     }
     if (item.systemDownWarning) {
-      badges += '<span class="warning-badge">Tablet/server issue reported</span>';
+      badges += '<span class="urgent-badge">Tablet/server issue reported</span>';
     }
-    if (display.predictedFallback) {
-      badges += '<span class="predicted-badge">No recent reports — predicted</span>';
-    }
-
-    const tagsHtml =
-      item.tagCounts.length > 0
-        ? '<div class="tag-inline"><div class="tag-inline-title">Driver tags today</div><div class="tag-inline-text">' +
-          escapeHtml(item.tagCounts.map((tag) => tag.label + ' ' + tag.count).join(' · ')) +
-          '</div></div>'
-        : '';
-
-    const leftEarlyHtml = item.leftEarlyWarning
-      ? '<span class="warning-badge">⚠ Drivers leaving early</span>'
-      : '';
+    const pill = waitBadgeText
+      ? '<span class="wait-badge" style="background:' + waitColors.backgroundColor + ';color:' + waitColors.color + ';">' +
+        escapeHtml(waitBadgeText) +
+        '</span>'
+      : '<span class="no-recent-wait">No recent wait</span>';
 
     return (
-      '<article class="venue-card" data-venue-id="' + escapeHtml(item.id) + '" tabindex="0" role="button">' +
-      '<div class="card-top">' +
-      '<span class="rank-badge">#' + rank + '</span>' +
-      '<span class="wait-badge" style="' + display.waitBadgeStyle + '">' + escapeHtml(display.waitBadgeText) + '</span>' +
-      '</div>' +
+      '<article class="venue-card" style="' + cardStyle + '" data-venue-id="' + escapeHtml(item.id) + '" tabindex="0" role="button">' +
+      '<div class="venue-title-row">' +
+      '<span class="venue-type-icon" style="color:' + iconColor + ';">' +
+      prIcon(VD.getVenueTypeIconName(item.venue_type), 18) +
+      '</span>' +
+      '<div class="venue-identity">' +
       '<h3 class="venue-name">' + escapeHtml(title) + '</h3>' +
-      locationHtml +
+      (area ? '<p class="venue-area">' + escapeHtml(area) + '</p>' : '') +
+      '</div></div>' +
       badges +
-      '<div class="meta-row">' +
-      '<div class="meta-item"><span class="meta-label">Reports today</span><span class="meta-value">' + item.reportsToday + '</span></div>' +
-      '<div class="meta-item"><span class="meta-label">Last report</span><span class="meta-value">' + escapeHtml(display.lastReportText) + '</span></div>' +
-      '<div class="meta-item"><span class="meta-label">Confidence</span><span class="meta-value">' + escapeHtml(display.confidenceText) + '</span></div>' +
-      '</div>' +
-      leftEarlyHtml +
-      tagsHtml +
-      '</article>'
+      '<div class="card-bottom">' +
+      (evidenceText ? '<p class="evidence-line">' + escapeHtml(evidenceText) + '</p>' : '<span class="evidence-line"></span>') +
+      pill +
+      '</div></article>'
     );
   }
 
@@ -532,6 +561,12 @@ function mountPickupRadarPreview(container, options) {
       return;
     }
 
+    if (selectedFilter === 'Saved') {
+      homeBody.innerHTML =
+        '<div class="state-box"><strong>No saved pickup points</strong><span>Saving pickup points is available in the mobile app.</span></div>';
+      return;
+    }
+
     if (venueStats.length === 0) {
       homeBody.innerHTML = '<div class="state-box"><strong>No venues yet</strong><span>No active pickup points found for this city.</span></div>';
       return;
@@ -539,7 +574,12 @@ function mountPickupRadarPreview(container, options) {
 
     const visible = getVisibleVenues(selectedFilter);
     if (visible.length === 0) {
-      homeBody.innerHTML = '<div class="state-box"><strong>No matches</strong><span>Try another filter to view more venues.</span></div>';
+      const empty = selectedFilter === 'Fast'
+        ? ['No likely fast pickups', 'Try All or Slow.']
+        : selectedFilter === 'Slow'
+          ? ['No likely slow pickups', 'Try All or Fast.']
+          : ['No pickup points found', 'Try another area.'];
+      homeBody.innerHTML = '<div class="state-box"><strong>' + empty[0] + '</strong><span>' + empty[1] + '</span></div>';
       return;
     }
 
@@ -711,10 +751,13 @@ function mountPickupRadarPreview(container, options) {
     citySearchInput.value = '';
     searchHeading.textContent = 'Suggested pickup points';
     searchHeading.classList.remove('hidden');
-    selectedFilter = 'Nearby';
+    selectedFilter = 'All';
     root.querySelectorAll('.filter-chip').forEach((chip) => {
-      chip.classList.toggle('active', chip.getAttribute('data-filter') === 'Nearby');
+      const active = chip.getAttribute('data-filter') === 'All';
+      chip.classList.toggle('active', active);
+      chip.setAttribute('aria-selected', active ? 'true' : 'false');
     });
+    closeHelpSheet();
     closeDownloadModal();
     closeInfoModal();
     closeSupportModal();
@@ -724,7 +767,8 @@ function mountPickupRadarPreview(container, options) {
   }
 
   function updateCityPill() {
-    cityPillBtn.textContent = activeCity;
+    const name = cityPillBtn.querySelector('[data-city-name]');
+    if (name) name.textContent = activeCity;
   }
 
   function renderCityRow(city, selected) {
@@ -1229,11 +1273,14 @@ function mountPickupRadarPreview(container, options) {
     if (supportMode === 'modal') {
       const btn = document.createElement('button');
       btn.type = 'button';
-      btn.className = 'header-pill';
+      btn.className = 'help-sheet-row';
       btn.textContent = 'Support';
       btn.setAttribute('data-support', '');
       supportEl.replaceWith(btn);
-      btn.addEventListener('click', openSupportModal);
+      btn.addEventListener('click', () => {
+        closeHelpSheet();
+        openSupportModal();
+      });
       root.querySelector('[data-support-close]').addEventListener('click', closeSupportModal);
       supportModal.addEventListener('click', (event) => {
         if (event.target === supportModal) closeSupportModal();
@@ -1276,11 +1323,26 @@ function mountPickupRadarPreview(container, options) {
     }
   }
 
+  function closeHelpSheet() {
+    const sheet = root.querySelector('[data-help-sheet]');
+    if (sheet) sheet.classList.add('hidden');
+  }
+
+  function openHelpSheet() {
+    const sheet = root.querySelector('[data-help-sheet]');
+    if (sheet) sheet.classList.remove('hidden');
+  }
+
   root.querySelectorAll('.filter-chip').forEach((chip) => {
     chip.addEventListener('click', () => {
-      root.querySelectorAll('.filter-chip').forEach((item) => item.classList.remove('active'));
-      chip.classList.add('active');
+      root.querySelectorAll('.filter-chip').forEach((item) => {
+        const active = item === chip;
+        item.classList.toggle('active', active);
+        item.setAttribute('aria-selected', active ? 'true' : 'false');
+      });
       selectedFilter = chip.getAttribute('data-filter');
+      const homeScroll = homeScreen.querySelector('.app-scroll');
+      if (homeScroll) homeScroll.scrollTop = 0;
       renderHomeList();
     });
   });
@@ -1297,6 +1359,26 @@ function mountPickupRadarPreview(container, options) {
   });
 
   root.querySelector('[data-report-wait-btn]').addEventListener('click', openReportWaitSearch);
+  root.querySelectorAll('[data-open-app]').forEach((button) => {
+    button.addEventListener('click', openDownloadModal);
+  });
+  root.querySelector('[data-help-open]').addEventListener('click', openHelpSheet);
+  root.querySelector('[data-help-close]').addEventListener('click', closeHelpSheet);
+  root.querySelector('[data-help-sheet]').addEventListener('click', (event) => {
+    if (event.target === root.querySelector('[data-help-sheet]')) closeHelpSheet();
+  });
+  root.querySelector('[data-home-brand]').addEventListener('click', () => {
+    selectedFilter = 'All';
+    root.querySelectorAll('.filter-chip').forEach((chip) => {
+      const active = chip.getAttribute('data-filter') === 'All';
+      chip.classList.toggle('active', active);
+      chip.setAttribute('aria-selected', active ? 'true' : 'false');
+    });
+    showScreen('home');
+    const homeScroll = homeScreen.querySelector('.app-scroll');
+    if (homeScroll) homeScroll.scrollTop = 0;
+    renderHomeList();
+  });
 
   root.querySelector('[data-search-back]').addEventListener('click', () => {
     searchInput.value = '';
@@ -1316,11 +1398,15 @@ function mountPickupRadarPreview(container, options) {
   const howItWorksBtn = root.querySelector('[data-how-it-works]');
   if (options.howItWorksScrollTo) {
     howItWorksBtn.addEventListener('click', () => {
+      closeHelpSheet();
       const target = document.querySelector(options.howItWorksScrollTo);
       if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   } else {
-    howItWorksBtn.addEventListener('click', openInfoModal);
+    howItWorksBtn.addEventListener('click', () => {
+      closeHelpSheet();
+      openInfoModal();
+    });
     root.querySelector('[data-info-close]').addEventListener('click', closeInfoModal);
     infoModal.addEventListener('click', (event) => {
       if (event.target === infoModal) closeInfoModal();
