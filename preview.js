@@ -22,6 +22,23 @@ const PR_ICONS = {
     '<path fill="currentColor" d="M8.2 2.3v7.1c0 1.1-.8 2-1.9 2.2V21H4.6v-9.4c-1.1-.2-1.9-1.1-1.9-2.2V2.3h1.6v6.1h1.2V2.3h1.5v6.1h1.2V2.3zm8.1 0c2.2 0 3.9 3.3 3.9 7.1s-1.7 7.1-3.9 7.1V21h-1.7V2.3h1.7z"/>',
   'basket-outline':
     '<path fill="currentColor" d="M7.1 8.1 5 4.4H3.2v1.6h1l2.3 8.1a2 2 0 0 0 1.9 1.4h8.7a2 2 0 0 0 1.9-1.4l1.6-6H7.1zm2.3 11.1a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2zm7.1 0a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2z"/>',
+  arrow: '<path fill="currentColor" d="M11.1 5.2 5.4 11H21v2H5.4l5.7 5.8-1.4 1.4L2 12l7.7-8.2 1.4 1.4z"/>',
+  'bookmark-outline':
+    '<path fill="none" stroke="currentColor" stroke-width="1.7" d="M6.6 3.6h10.8a1 1 0 0 1 1 1V20l-6.4-3.5L5.6 20V4.6a1 1 0 0 1 1-1z"/>',
+  share:
+    '<path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" d="M8.2 12.2 15.6 8M8.2 12.2 15.6 16.4"/><circle cx="6.2" cy="12.2" r="2.1" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.6" cy="7.4" r="2.1" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.6" cy="17" r="2.1" fill="none" stroke="currentColor" stroke-width="1.7"/>',
+  clock:
+    '<circle cx="12" cy="13" r="7.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" d="M12 13V9.2M12 13l2.8 1.8M9.2 3.2h5.6"/>',
+  phone:
+    '<rect x="8" y="2.6" width="8" height="18.8" rx="2" fill="none" stroke="currentColor" stroke-width="1.7"/><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" d="M11 18.2h2"/>',
+  warning:
+    '<path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" d="M12 3.6 2.8 19.4h18.4L12 3.6z"/><path fill="currentColor" d="M11.1 9.2h1.8v5.2h-1.8zm0 6.4h1.8v1.8h-1.8z"/>',
+  'chevron-up':
+    '<path fill="currentColor" d="M6.7 15.2a1 1 0 0 1 0-1.4l4.6-4.6a1 1 0 0 1 1.4 0l4.6 4.6a1 1 0 1 1-1.4 1.4L12 11.3l-3.9 3.9a1 1 0 0 1-1.4 0z"/>',
+  'close-circle':
+    '<circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" d="m9 9 6 6M15 9l-6 6"/>',
+  cloud:
+    '<path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" d="M7.2 17.2h9.2a3.6 3.6 0 0 0 .4-7.2 4.6 4.6 0 0 0-8.8-1.2A3.2 3.2 0 0 0 7.2 17.2zM5 19.4l14-12"/>',
 };
 
 function prIcon(name, size) {
@@ -99,16 +116,28 @@ const PREVIEW_MARKUP = `
           <div class="app-scroll" data-city-list></div>
         </div>
         <div data-screen="search" class="screen hidden">
-          <div class="top-bar">
-            <button type="button" class="back-btn" data-search-back>← Back</button>
+          <div class="app-scroll report-search-scroll">
+            <div class="report-top-bar">
+              <button type="button" class="back-btn" data-search-back>${prIcon('arrow', 16)}<span>Back</span></button>
+            </div>
+            <div class="report-step-copy">
+              <h2 class="report-screen-title">Report wait</h2>
+              <p class="report-screen-subtitle">Choose a pickup point.</p>
+              <div class="report-search-box">
+                <label class="report-search-label">Search pickup points</label>
+                <input data-search-input class="report-search-input" type="search" placeholder="Name, area or postcode" autocomplete="off" autocapitalize="off" spellcheck="false" data-lpignore="true" />
+                <p class="report-search-hint hidden" data-search-empty>No pickup points found</p>
+              </div>
+              <div data-missing-zero></div>
+              <p class="report-list-label" data-search-heading>Suggested pickup points</p>
+            </div>
+            <div data-search-body></div>
+            <div data-missing-results></div>
           </div>
-          <input data-search-input class="search-bar" type="search" placeholder="Search pickup points" autocomplete="off" autocapitalize="off" spellcheck="false" data-lpignore="true" />
-          <p class="search-heading" data-search-heading>Suggested pickup points</p>
-          <div class="app-scroll" data-search-body></div>
         </div>
         <div data-screen="report-wait" class="screen hidden">
-          <div class="top-bar">
-            <button type="button" class="back-btn" data-report-back>← Back</button>
+          <div class="report-top-bar">
+            <button type="button" class="back-btn" data-report-back>${prIcon('arrow', 16)}<span>Back</span></button>
           </div>
           <div class="app-scroll report-wait-scroll" data-report-body></div>
           <div class="report-footer" data-report-footer></div>
@@ -130,7 +159,7 @@ const PREVIEW_MARKUP = `
           <li>Drivers report pickup waits in real time. Recent reports help other drivers avoid wasted time.</li>
           <li>Live wait times are based on recent reports. Reports older than 2 hours do not affect the current wait.</li>
           <li>When there are no recent reports, PickupRadar may show likely fast or likely slow places.</li>
-          <li>No login required. An anonymous device ID reduces spam and duplicate reports.</li>
+          <li>You don't need an account. The app creates an anonymous Radar profile to keep your RadarPoints, and a random device ID helps prevent spam and duplicate reports. Email sign-in is optional and helps protect and recover your points.</li>
         </ul>
         <button type="button" data-info-close class="modal-close">Close</button>
       </div>
@@ -140,17 +169,18 @@ const PREVIEW_MARKUP = `
         <h2 id="supportTitle">Support / About</h2>
         <div class="support-modal-body">
           <h3 class="support-section-title">PickupRadar</h3>
-          <p class="support-body">PickupRadar helps UK delivery drivers see and report pickup wait times.</p>
+          <p class="support-body">PickupRadar helps delivery drivers see and report pickup wait times.</p>
           <h3 class="support-section-title">Support email</h3>
           <p class="support-body"><a class="support-link" href="mailto:support@pickupradar.co.uk">support@pickupradar.co.uk</a></p>
           <h3 class="support-section-title">Website</h3>
           <p class="support-body"><a class="support-link" href="https://pickupradar.co.uk" target="_blank" rel="noopener noreferrer">pickupradar.co.uk</a></p>
           <h3 class="support-section-title">Privacy summary</h3>
           <ul class="info-list support-privacy-list">
-            <li>No login required</li>
-            <li>Reports are linked to an anonymous device ID to reduce spam</li>
-            <li>Wait reports may include venue, platform, wait time, left early status, and time submitted</li>
-            <li>No personal profile is created</li>
+            <li>No login is required to use PickupRadar or earn RadarPoints</li>
+            <li>PickupRadar creates an anonymous Radar profile to track RadarPoints. Creating an account is optional and helps protect and recover your points.</li>
+            <li>If you choose to create an account, your email is used for sign-in and account recovery.</li>
+            <li>Reports and anonymous RadarPoints are linked to a device ID to reduce spam and keep points associated with this device</li>
+            <li>Wait reports may include venue, platform, wait time, whether the venue starts preparing the order on arrival, and time submitted</li>
           </ul>
         </div>
         <button type="button" data-support-close class="modal-close">Close</button>
@@ -169,6 +199,17 @@ function mountPickupRadarPreview(container, options) {
     (options.large ? ' preview-large' : '');
   root.innerHTML = PREVIEW_MARKUP;
   container.appendChild(root);
+
+  // Fit the phone on narrow screens. preview.css computes this with typed calc(), which
+  // older iOS Safari, Firefox and Samsung Internet do not support; set the same scale here.
+  function fitPreviewToViewport() {
+    const viewportWidth = document.documentElement.clientWidth || window.innerWidth;
+    const phoneWidth = root.offsetWidth || 418;
+    const scale = Math.min(1, Math.max(0.5, (viewportWidth - 24) / phoneWidth));
+    root.style.setProperty('--preview-fit-scale', String(scale));
+  }
+  fitPreviewToViewport();
+  window.addEventListener('resize', fitPreviewToViewport);
 
   const LOGIC = window.PickupRadarLogic;
   if (!LOGIC) {
@@ -217,7 +258,7 @@ function mountPickupRadarPreview(container, options) {
     ? { All: 3, Fast: 3, Slow: 3 }
     : { All: 12, Fast: 12, Slow: 12 };
   const BRAND_PRIORITY = ["McDonald's", 'KFC', 'Burger King', 'Subway', 'Greggs', 'Taco Bell', 'Popeyes', "Pepe's", 'Dixy', 'German Doner Kebab', 'Starbucks', 'Costa', 'Co-op', 'Tesco', "Sainsbury's", 'One Stop'];
-  const SUGGESTED_LIMIT = options.compact ? 12 : 20;
+  const NORMALIZED_BRAND_PRIORITY = BRAND_PRIORITY.map((brand) => normalise(brand));
 
   const WAIT_BUCKETS = ['<5 min', '5-10 min', '10-15 min', '15+ min'];
   const WAIT_BUCKET_LABELS = {
@@ -255,12 +296,16 @@ function mountPickupRadarPreview(container, options) {
     waitBucket: null,
     platform: '',
     orderMadeWhenDriverArrives: false,
+    problemExpanded: false,
+    selectedProblemAction: null,
     issueExpanded: false,
     selectedIssueType: null,
+    issueNote: '',
   };
   let missingVenueExpanded = false;
   let suggestionVenueName = '';
   let suggestionVenueAddress = '';
+  let suggestionVenuePostcode = '';
   let suggestionVenueNote = '';
   let lastMissingVenueQuery = '';
 
@@ -271,6 +316,9 @@ function mountPickupRadarPreview(container, options) {
   const searchBody = root.querySelector('[data-search-body]');
   const searchInput = root.querySelector('[data-search-input]');
   const searchHeading = root.querySelector('[data-search-heading]');
+  const searchEmpty = root.querySelector('[data-search-empty]');
+  const missingZero = root.querySelector('[data-missing-zero]');
+  const missingResults = root.querySelector('[data-missing-results]');
   const reportBody = root.querySelector('[data-report-body]');
   const reportFooter = root.querySelector('[data-report-footer]');
   const homeScreen = root.querySelector('[data-screen="home"]');
@@ -323,8 +371,20 @@ function mountPickupRadarPreview(container, options) {
   }
 
 
-  function normalizeName(value) {
-    return value.toLowerCase().replace(/['']/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+  function normalise(value) {
+    return String(value || '').toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
+  }
+
+  function compact(value) {
+    return normalise(value).replace(/\s+/g, '');
+  }
+
+  function getBrandRank(venue) {
+    const brandText = normalise(String(venue.brand || venue.name || ''));
+    const matchedIndex = NORMALIZED_BRAND_PRIORITY.findIndex((brand) => {
+      return brandText === brand || brandText.includes(brand);
+    });
+    return matchedIndex === -1 ? 999 : matchedIndex;
   }
 
   function effectiveStatus(venue) {
@@ -332,9 +392,21 @@ function mountPickupRadarPreview(container, options) {
   }
 
   function getVenueSearchText(venue) {
-    const parts = [venue.name, venue.brand, venue.area, venue.zone, venue.branch, venue.postcode, venue.address];
-    parts.push(VD.getVenueDisplayName(venue, activeCity, venueStats));
-    return parts.filter(Boolean).map((value) => String(value).toLowerCase());
+    return [venue.name, venue.brand, venue.area, venue.zone, venue.branch, venue.postcode, venue.address]
+      .filter(Boolean)
+      .map((value) => String(value));
+  }
+
+  function isValidReportVenue(venue) {
+    if (venue.is_active === false) return false;
+    if ((venue.city || '').trim().toLowerCase() !== activeCity.trim().toLowerCase()) return false;
+    const name = String(venue.name || '').toLowerCase();
+    if (name.includes('domino') || name.includes('b&m') || name.includes('b & m')) return false;
+    return true;
+  }
+
+  function eligibleReportVenues() {
+    return venueStats.filter(isValidReportVenue);
   }
 
   function buildVenueStats(venueRows, statsRows) {
@@ -587,98 +659,89 @@ function mountPickupRadarPreview(container, options) {
     bindVenueCards(homeBody, 'home');
   }
 
-  function getSuggestedVenues() {
-    const seen = new Set();
-    const result = [];
+  function suggestedReportVenues(eligible) {
+    return eligible
+      .map((venue) => ({
+        venue: venue,
+        brandRank: getBrandRank(venue),
+        sortName: normalise(venue.name || venue.brand || ''),
+      }))
+      .sort((a, b) => {
+        const rankDiff = a.brandRank - b.brandRank;
+        if (rankDiff !== 0) return rankDiff;
+        return a.sortName.localeCompare(b.sortName);
+      })
+      .slice(0, 20)
+      .map((item) => item.venue);
+  }
 
-    function addVenue(venue) {
-      if (!venue || seen.has(venue.id)) return;
-      seen.add(venue.id);
-      result.push(venue);
-    }
+  function searchReportVenues(eligible, trimmedQuery) {
+    const query = normalise(trimmedQuery);
+    const compactQuery = compact(trimmedQuery);
+    return eligible
+      .filter((venue) => {
+        return getVenueSearchText(venue).some((value) => {
+          return normalise(value).includes(query) || compact(value).includes(compactQuery);
+        });
+      })
+      .slice(0, 50);
+  }
 
-    venueStats
-      .filter((venue) => venue.currentWaitMinutes !== null)
-      .sort((a, b) => (a.lastReportMinutes ?? Infinity) - (b.lastReportMinutes ?? Infinity))
-      .forEach(addVenue);
-
-    venueStats
-      .filter((venue) => venue.currentWaitMinutes === null && venue.lastReportMinutes !== null)
-      .sort((a, b) => (a.lastReportMinutes ?? Infinity) - (b.lastReportMinutes ?? Infinity))
-      .forEach(addVenue);
-
-    for (const brand of BRAND_PRIORITY) {
-      const brandKey = normalizeName(brand);
-      const match = venueStats.find((venue) => {
-        if (seen.has(venue.id)) return false;
-        const name = normalizeName(venue.name);
-        const venueBrand = venue.brand ? normalizeName(String(venue.brand)) : '';
-        const matchesBrand = name.includes(brandKey) || venueBrand.includes(brandKey);
-        if (!matchesBrand) return false;
-        return (
-          venue.currentWaitMinutes !== null ||
-          venue.lastReportMinutes !== null ||
-          effectiveStatus(venue) !== null
-        );
-      });
-      if (match) addVenue(match);
-    }
-
-    venueStats
-      .filter((venue) => effectiveStatus(venue) !== null)
-      .forEach(addVenue);
-
-    return result.slice(0, SUGGESTED_LIMIT);
+  function renderSearchVenueRow(venue, eligible) {
+    const now = Date.now();
+    const iconColor = WC.getVenueWaitIconColor(venue, now, PRED.getEffectiveVenueStatus(venue, now));
+    const title = VD.getVenueDisplayName(venue, activeCity, eligible);
+    const area = VD.getVenueHomeLocationLabel(venue, eligible, activeCity);
+    return (
+      '<button type="button" class="venue-result" data-venue-id="' + escapeHtml(venue.id) + '">' +
+      '<span class="venue-type-icon" style="color:' + iconColor + ';">' +
+      prIcon(VD.getVenueTypeIconName(venue.venue_type), 18) +
+      '</span>' +
+      '<span class="venue-result-text">' +
+      '<span class="venue-result-name">' + escapeHtml(title) + '</span>' +
+      (area ? '<span class="venue-result-area">' + escapeHtml(area) + '</span>' : '') +
+      '</span></button>'
+    );
   }
 
   function renderSearchList() {
-    const queryRaw = searchInput.value.trim();
-    const query = queryRaw.toLowerCase();
-    let list;
+    const trimmedQuery = searchInput.value.trim();
+    const searchActive = trimmedQuery.length >= 2;
+    const eligible = eligibleReportVenues();
+    const list = searchActive ? searchReportVenues(eligible, trimmedQuery) : suggestedReportVenues(eligible);
+    const zeroResults = searchActive && list.length === 0;
 
-    if (query) {
-      list = venueStats.filter((venue) => {
-        return getVenueSearchText(venue).some((part) => part.includes(query));
-      });
-      list = list.slice(0, 50);
-    } else {
-      list = getSuggestedVenues();
-    }
-
-    if (query) {
-      searchHeading.textContent = 'Search results';
-      searchHeading.classList.add('hidden');
-    } else {
-      searchHeading.textContent = 'Suggested pickup points';
-      searchHeading.classList.remove('hidden');
+    if (!searchActive) {
       missingVenueExpanded = false;
       lastMissingVenueQuery = '';
       suggestionVenueName = '';
       suggestionVenueAddress = '';
+      suggestionVenuePostcode = '';
       suggestionVenueNote = '';
+    } else if (lastMissingVenueQuery !== trimmedQuery) {
+      suggestionVenueName = zeroResults ? trimmedQuery : '';
+      suggestionVenueAddress = '';
+      suggestionVenuePostcode = '';
+      suggestionVenueNote = '';
+      missingVenueExpanded = false;
+      lastMissingVenueQuery = trimmedQuery;
     }
 
-    if (list.length === 0 && query) {
-      if (lastMissingVenueQuery !== queryRaw) {
-        suggestionVenueName = queryRaw;
-        suggestionVenueAddress = '';
-        suggestionVenueNote = '';
-        missingVenueExpanded = false;
-        lastMissingVenueQuery = queryRaw;
-      }
+    searchHeading.textContent = searchActive ? 'Search results' : 'Suggested pickup points';
+    searchHeading.classList.toggle('hidden', zeroResults);
+    searchEmpty.classList.toggle('hidden', !zeroResults);
 
-      searchBody.innerHTML = '<p class="search-empty-hint">No pickup points found</p>' + renderMissingVenueSectionHtml();
-      bindMissingVenueSection(searchBody);
-      return;
-    }
+    const rows = list.map((venue) => renderSearchVenueRow(venue, eligible)).join('');
+    searchBody.innerHTML = rows || (searchActive ? '' : '<div class="state-box"><strong>No pickup points yet</strong><span>' + escapeHtml(activeCity) + ' is just getting started. Search above to add the pickup point you\'re at — it\'ll show here for other drivers.</span></div>');
+    searchBody.querySelectorAll('.venue-result').forEach((row) => {
+      row.addEventListener('click', () => openReportWait(row.getAttribute('data-venue-id'), 'home'));
+    });
 
-    if (list.length === 0) {
-      searchBody.innerHTML = '<div class="state-box"><strong>No matches</strong><span>Try another search term.</span></div>';
-      return;
-    }
-
-    searchBody.innerHTML = list.map((item, index) => renderVenueCard(item, index, 'search')).join('');
-    bindVenueCards(searchBody, 'search');
+    const missingHtml = searchActive ? renderMissingVenueSectionHtml() : '';
+    missingZero.innerHTML = zeroResults ? missingHtml : '';
+    missingResults.innerHTML = searchActive && !zeroResults ? missingHtml : '';
+    if (zeroResults) bindMissingVenueSection(missingZero);
+    if (searchActive && !zeroResults) bindMissingVenueSection(missingResults);
   }
 
   async function loadCityData(city) {
@@ -745,6 +808,7 @@ function mountPickupRadarPreview(container, options) {
     missingVenueExpanded = false;
     suggestionVenueName = '';
     suggestionVenueAddress = '';
+    suggestionVenuePostcode = '';
     suggestionVenueNote = '';
     lastMissingVenueQuery = '';
     searchInput.value = '';
@@ -834,24 +898,26 @@ function mountPickupRadarPreview(container, options) {
     if (!missingVenueExpanded) {
       return (
         '<div class="missing-venue-card">' +
-        '<p class="missing-venue-title">Missing a venue?</p>' +
-        '<p class="missing-venue-text">Can\'t find this pickup point? Suggest it.</p>' +
-        '<button type="button" class="missing-venue-btn" data-missing-open>Open form</button>' +
+        '<p class="missing-venue-title">Can\'t find it?</p>' +
+        '<button type="button" class="missing-venue-btn" data-missing-open>Suggest pickup point</button>' +
         '</div>'
       );
     }
 
     return (
       '<div class="missing-venue-card">' +
-      '<p class="missing-venue-title">Missing a venue?</p>' +
-      '<p class="missing-venue-text">Can\'t find this pickup point? Suggest it.</p>' +
+      '<p class="missing-venue-title">Can\'t find it?</p>' +
       '<div class="missing-venue-form">' +
+      '<p class="missing-venue-reward">Approved pickup point suggestions earn +20 RP.</p>' +
       '<input type="text" class="missing-venue-input" data-suggestion-name placeholder="Venue name" value="' +
       escapeHtml(suggestionVenueName) +
       '" autocomplete="off" autocapitalize="off" spellcheck="false" data-lpignore="true" />' +
       '<input type="text" class="missing-venue-input" data-suggestion-address placeholder="Address or area" value="' +
       escapeHtml(suggestionVenueAddress) +
       '" autocomplete="off" autocapitalize="off" spellcheck="false" data-lpignore="true" />' +
+      '<input type="text" class="missing-venue-input" data-suggestion-postcode placeholder="Postcode" value="' +
+      escapeHtml(suggestionVenuePostcode) +
+      '" autocomplete="off" autocapitalize="characters" spellcheck="false" data-lpignore="true" />' +
       '<textarea class="missing-venue-input missing-venue-note" data-suggestion-note placeholder="Note (optional)" rows="3">' +
       escapeHtml(suggestionVenueNote) +
       '</textarea>' +
@@ -885,6 +951,7 @@ function mountPickupRadarPreview(container, options) {
 
     const nameInput = container.querySelector('[data-suggestion-name]');
     const addressInput = container.querySelector('[data-suggestion-address]');
+    const postcodeInput = container.querySelector('[data-suggestion-postcode]');
     const noteInput = container.querySelector('[data-suggestion-note]');
     const submitBtn = container.querySelector('[data-missing-submit]');
 
@@ -897,6 +964,11 @@ function mountPickupRadarPreview(container, options) {
     if (addressInput) {
       addressInput.addEventListener('input', () => {
         suggestionVenueAddress = addressInput.value;
+      });
+    }
+    if (postcodeInput) {
+      postcodeInput.addEventListener('input', () => {
+        suggestionVenuePostcode = postcodeInput.value;
       });
     }
     if (noteInput) {
@@ -924,39 +996,72 @@ function mountPickupRadarPreview(container, options) {
       waitBucket: null,
       platform: '',
       orderMadeWhenDriverArrives: false,
+      problemExpanded: false,
+      selectedProblemAction: null,
       issueExpanded: false,
       selectedIssueType: null,
+      issueNote: '',
     };
+  }
+
+  function waitColorWithAlpha(hex, alphaByte) {
+    const normalized = String(hex || '').trim();
+    if (!/^#[0-9A-Fa-f]{6}$/.test(normalized)) return normalized;
+    const alpha = Math.max(0, Math.min(255, alphaByte)).toString(16).padStart(2, '0');
+    return normalized + alpha;
+  }
+
+  function clearProblemSelection() {
+    reportFormState.selectedProblemAction = null;
+    reportFormState.issueExpanded = false;
+    reportFormState.selectedIssueType = null;
+    reportFormState.issueNote = '';
   }
 
   function renderIssuePanelHtml() {
     if (!reportFormState.issueExpanded) return '';
-
+    const chips = ISSUE_OPTIONS.map(function (issue) {
+      const active = reportFormState.selectedIssueType === issue.key;
+      return (
+        '<button type="button" class="issue-chip' +
+        (active ? ' active' : '') +
+        '" data-issue-type="' +
+        escapeHtml(issue.key) +
+        '">' +
+        escapeHtml(issue.label) +
+        '</button>'
+      );
+    }).join('');
+    const note = reportFormState.selectedIssueType === 'other'
+      ? '<textarea class="issue-input" data-issue-note maxlength="500" placeholder="Note (optional)" rows="3">' +
+        escapeHtml(reportFormState.issueNote) +
+        '</textarea>'
+      : '';
     return (
       '<div class="issue-compact-card">' +
       '<p class="issue-compact-title">What\'s wrong with this venue?</p>' +
-      '<div class="issue-chip-wrap">' +
-      ISSUE_OPTIONS.map(function (issue) {
-        const active = reportFormState.selectedIssueType === issue.key;
-        return (
-          '<button type="button" class="issue-chip' +
-          (active ? ' active' : '') +
-          '" data-issue-type="' +
-          escapeHtml(issue.key) +
-          '">' +
-          escapeHtml(issue.label) +
-          '</button>'
-        );
-      }).join('') +
-      '</div></div>'
+      '<div class="issue-chip-wrap">' + chips + '</div>' +
+      note +
+      '</div>'
     );
   }
 
   function buildReportWaitHtml(venue) {
+    const now = Date.now();
     const title = VD.getVenueDisplayName(venue, activeCity, venueStats);
-    const locationHtml = renderSelectedVenueLocationHtml(venue);
+    const details = VD.getVenueOpenedLocationDetails(venue, activeCity);
+    const iconColor = WC.getVenueWaitIconColor(venue, now, PRED.getEffectiveVenueStatus(venue, now));
+    const locationHtml = [
+      { text: details.area, className: 'selected-venue-area' },
+      { text: details.street, className: 'selected-venue-address' },
+      { text: details.postcode, className: 'selected-venue-postcode' },
+    ]
+      .filter(function (line) { return line.text; })
+      .map(function (line) {
+        return '<p class="' + line.className + '">' + escapeHtml(line.text) + '</p>';
+      })
+      .join('');
     let warnings = '';
-
     if (venue.closedWarning) {
       warnings += '<span class="selected-venue-warning">Reported closed recently</span>';
     }
@@ -964,21 +1069,36 @@ function mountPickupRadarPreview(container, options) {
       warnings += '<span class="selected-venue-warning">Tablet/server issue reported</span>';
     }
 
-    const currentWaitHtml =
-      venue.currentWaitMinutes !== null
-        ? '<div class="current-wait-card"><div class="current-wait-row"><span class="current-wait-label">Current wait</span><span class="current-wait-value">' +
-          escapeHtml(venue.currentWaitLabel) +
-          '</span></div></div>'
+    const live = WC.isLocallyLiveWait(venue, now);
+    let currentWaitHtml = '';
+    if (live) {
+      const tint = WC.getHomeVenueCardWaitTint(venue, now);
+      const bucket = WC.getWaitBucketFromMinutes(venue.currentWaitMinutes);
+      const pill = WC.WAIT_BUCKET_COLORS[bucket];
+      const count = venue.reports2hCount || 0;
+      const label = count > 0
+        ? 'Current wait · ' + count + (count === 1 ? ' report' : ' reports')
+        : 'Current wait';
+      const cardStyle = tint
+        ? 'background:' + tint.backgroundColor + ';border-color:' + tint.borderColor + ';'
         : '';
+      currentWaitHtml =
+        '<div class="details-gap"></div>' +
+        '<div class="current-wait-card" style="' + cardStyle + '">' +
+        '<div class="current-wait-row"><span class="current-wait-label">' + escapeHtml(label) + '</span>' +
+        '<span class="current-wait-pill" style="background:' + pill.backgroundColor + ';color:' + pill.color + ';">' +
+        escapeHtml(venue.currentWaitLabel) +
+        '</span></div></div>';
+    }
 
-    const waitChips = WAIT_BUCKETS.map(function (bucket) {
+    const waitTiles = WAIT_BUCKETS.map(function (bucket) {
+      const colors = WC.WAIT_BUCKET_COLORS[bucket];
       const active = reportFormState.waitBucket === bucket;
+      const style = active
+        ? 'background:' + colors.backgroundColor + ';border-color:' + colors.borderColor + ';color:' + colors.color + ';'
+        : 'background:' + waitColorWithAlpha(colors.backgroundColor, 0x26) + ';border-color:' + waitColorWithAlpha(colors.borderColor, 0x80) + ';color:' + waitColorWithAlpha(colors.backgroundColor, 0xd0) + ';';
       return (
-        '<button type="button" class="report-chip' +
-        (active ? ' active' : '') +
-        '" data-wait-bucket="' +
-        escapeHtml(bucket) +
-        '">' +
+        '<button type="button" class="wait-tile' + (active ? ' active' : '') + '" data-wait-bucket="' + escapeHtml(bucket) + '" style="' + style + '">' +
         escapeHtml(WAIT_BUCKET_LABELS[bucket]) +
         '</button>'
       );
@@ -987,85 +1107,64 @@ function mountPickupRadarPreview(container, options) {
     const platformChips = PLATFORMS.map(function (platform) {
       const active = reportFormState.platform === platform;
       return (
-        '<button type="button" class="report-chip platform-chip' +
-        (active ? ' active' : '') +
-        '" data-platform="' +
-        escapeHtml(platform) +
-        '" style="' +
-        getPlatformChipStyle(platform, active) +
-        '">' +
-        escapeHtml(platform) +
-        '</button>'
+        '<button type="button" class="platform-chip' + (active ? ' active' : '') + '" data-platform="' + escapeHtml(platform) + '" style="' +
+        getPlatformChipStyle(platform, active) + '">' + escapeHtml(platform) + '</button>'
       );
     }).join('');
 
-    const problemButtons = [
-      { key: 'closed', label: 'Closed' },
-      { key: 'system_down', label: 'Tablet/server down' },
-      { key: 'venue_issue', label: reportFormState.issueExpanded ? 'Hide issue' : 'Venue issue' },
-    ]
-      .map(function (item) {
-        const active = item.key === 'venue_issue' && reportFormState.issueExpanded;
-        return (
-          '<button type="button" class="problem-compact-btn' +
-          (active ? ' active' : '') +
-          '" data-problem-action="' +
-          item.key +
-          '">' +
-          escapeHtml(item.label) +
-          '</button>'
-        );
-      })
-      .join('');
-
-    const orderMadeClass = reportFormState.orderMadeWhenDriverArrives ? 'order-made-card on' : 'order-made-card';
+    const arrivalOn = reportFormState.orderMadeWhenDriverArrives;
+    const problemOpen = reportFormState.problemExpanded;
+    const closedActive = reportFormState.selectedProblemAction === 'closed';
+    const downActive = reportFormState.selectedProblemAction === 'system_down';
+    const otherActive = reportFormState.selectedProblemAction === 'other';
 
     return (
+      '<div class="details-heading">' +
       '<h2 class="report-wait-title">Report wait</h2>' +
+      '<div class="details-actions">' +
+      '<button type="button" class="icon-action" data-save-venue aria-label="Save pickup point">' + prIcon('bookmark-outline', 20) + '</button>' +
+      '<button type="button" class="icon-action" data-share-venue aria-label="Share pickup point">' + prIcon('share', 20) + '</button>' +
+      '</div></div>' +
       '<div class="selected-venue-card">' +
+      '<div class="selected-venue-identity">' +
+      '<span class="venue-type-icon selected-venue-icon" style="color:' + iconColor + ';">' +
+      prIcon(VD.getVenueTypeIconName(venue.venue_type), 18) +
+      '</span>' +
       '<div class="selected-venue-text">' +
-      '<p class="selected-venue-name">' +
-      escapeHtml(title) +
-      '</p>' +
+      '<p class="selected-venue-name">' + escapeHtml(title) + '</p>' +
       locationHtml +
       warnings +
-      '</div>' +
+      '</div></div>' +
       '<button type="button" class="change-pill" data-report-change>Change</button>' +
       '</div>' +
-      '<div class="problem-compact-card">' +
-      '<p class="problem-compact-title">Problem with this pickup?</p>' +
-      '<p class="problem-compact-body">Report if the venue is closed or cannot take orders.</p>' +
-      '<div class="problem-compact-buttons">' +
-      problemButtons +
-      '</div>' +
-      renderIssuePanelHtml() +
-      '</div>' +
       currentWaitHtml +
-      '<div class="report-section">' +
-      '<p class="report-section-label">Wait time (minutes)</p>' +
-      '<div class="report-chip-wrap">' +
-      waitChips +
-      '</div>' +
-      '</div>' +
-      '<div class="report-section">' +
-      '<p class="report-section-label">Platform (optional)</p>' +
-      '<div class="report-chip-wrap">' +
-      platformChips +
-      '</div>' +
-      '</div>' +
-      '<div class="report-section">' +
-      '<button type="button" class="' +
-      orderMadeClass +
-      '" data-order-made-toggle aria-pressed="' +
-      (reportFormState.orderMadeWhenDriverArrives ? 'true' : 'false') +
-      '">' +
-      '<span class="order-made-text">' +
-      '<span class="order-made-title">Order made when driver arrives</span>' +
-      '<span class="order-made-sub">Turn this on if the venue usually starts preparing the order only after you arrive.</span>' +
+      '<div class="details-gap"></div>' +
+      '<div class="section-heading">' + prIcon('clock', 18) + '<span>Wait time (minutes)</span></div>' +
+      '<div class="wait-grid" role="radiogroup" aria-label="Wait time (minutes)">' + waitTiles + '</div>' +
+      '<div class="details-gap"></div>' +
+      '<div class="section-heading">' + prIcon('phone', 18) + '<span>Delivery app (optional)</span></div>' +
+      '<div class="platform-row">' + platformChips + '</div>' +
+      '<div class="details-gap"></div>' +
+      '<button type="button" class="toggle-row' + (arrivalOn ? ' on' : '') + '" data-order-made-toggle aria-pressed="' + (arrivalOn ? 'true' : 'false') + '">' +
+      '<span class="toggle-copy">' +
+      '<span class="toggle-title-row"><span style="color:#8FB5D7;">' + prIcon(VD.getVenueTypeIconName(venue.venue_type), 18) + '</span><span>Order starts after arrival</span></span>' +
+      '<span class="toggle-subtitle">Staff start preparing the order when you arrive.</span>' +
       '</span>' +
-      '<span class="report-toggle" aria-hidden="true"><span class="report-toggle-track"><span class="report-toggle-thumb"></span></span></span>' +
+      '<span class="switch" aria-hidden="true"><span class="switch-track"><span class="switch-thumb"></span></span></span>' +
       '</button>' +
-      '</div>'
+      '<div class="details-gap"></div>' +
+      '<button type="button" class="problem-toggle" data-problem-toggle>' +
+      '<span class="problem-toggle-title"><span style="color:#E7A85B;">' + prIcon('warning', 18) + '</span><span>Report a problem</span></span>' +
+      '<span style="color:#8FB5D7;">' + prIcon(problemOpen ? 'chevron-up' : 'chevron', 18) + '</span>' +
+      '</button>' +
+      (problemOpen
+        ? '<div class="problem-panel">' +
+          '<button type="button" class="problem-action' + (closedActive ? ' active' : '') + '" data-problem-action="closed"><span style="color:#FF8B91;">' + prIcon('close-circle', 15) + '</span><span>Closed now</span></button>' +
+          '<button type="button" class="problem-action' + (downActive ? ' active' : '') + '" data-problem-action="system_down"><span style="color:#E7A85B;">' + prIcon('cloud', 15) + '</span><span>Not receiving orders</span></button>' +
+          '<button type="button" class="problem-action' + (otherActive ? ' active' : '') + '" data-problem-action="other">Other issue</button>' +
+          renderIssuePanelHtml() +
+          '</div>'
+        : '')
     );
   }
 
@@ -1102,33 +1201,73 @@ function mountPickupRadarPreview(container, options) {
     return 'background:' + brand.unselectedBg + ';border-color:' + brand.border + ';color:#A8BED1;';
   }
 
-  function renderReportFooter() {
-    const canSubmit = Boolean(reportFormState.waitBucket);
-    reportFooter.innerHTML =
-      '<button type="button" class="report-submit-btn' +
-      (canSubmit ? '' : ' disabled') +
-      '" data-report-submit' +
-      (canSubmit ? '' : ' disabled') +
-      '>Submit report</button>' +
-      (canSubmit ? '' : '<p class="report-footer-hint">Select a wait time to enable submit.</p>');
+  function reportProblemMode() {
+    return reportFormState.selectedProblemAction !== null;
+  }
 
+  function canSubmitProblem() {
+    if (reportFormState.selectedProblemAction === 'closed' || reportFormState.selectedProblemAction === 'system_down') {
+      return true;
+    }
+    if (reportFormState.selectedProblemAction === 'other') {
+      return reportFormState.selectedIssueType !== null;
+    }
+    return false;
+  }
+
+  function displayedWaitReportRp(venue) {
+    const now = Date.now();
+    if (venue && !WC.isLocallyLiveWait(venue, now) && PRED.getEffectiveVenueStatus(venue, now) === null) {
+      return 15;
+    }
+    return 10;
+  }
+
+  function renderReportFooter() {
+    const problemMode = reportProblemMode();
+    const canSubmit = problemMode ? canSubmitProblem() : Boolean(reportFormState.waitBucket);
+    let label = 'Submit report · +' + displayedWaitReportRp(currentReportVenue) + ' RP';
+    let hint = '';
+    if (problemMode) {
+      label = 'Submit problem';
+      if (!canSubmit) {
+        hint = reportFormState.selectedProblemAction === 'other' && reportFormState.selectedIssueType === null
+          ? 'Choose an issue.'
+          : 'Choose a problem.';
+      }
+    } else if (!canSubmit) {
+      hint = 'Choose a wait time.';
+    }
+    reportFooter.innerHTML =
+      '<button type="button" class="report-submit-btn' + (canSubmit ? '' : ' disabled') + '" data-report-submit' +
+      (canSubmit ? '' : ' disabled') + '>' + escapeHtml(label) + '</button>' +
+      '<div class="footer-hint-slot">' +
+      (hint ? '<p class="report-footer-hint">' + escapeHtml(hint) + '</p>' : '') +
+      '</div>';
     const submitBtn = reportFooter.querySelector('[data-report-submit]');
     if (submitBtn) {
       submitBtn.addEventListener('click', function () {
-        if (!reportFormState.waitBucket) return;
+        if (problemMode) {
+          if (!canSubmitProblem()) return;
+        } else if (!reportFormState.waitBucket) {
+          return;
+        }
         openDownloadModal();
       });
     }
+  }
+
+  function rerenderReport(resetScroll) {
+    if (!currentReportVenue) return;
+    renderReportWaitContent(currentReportVenue, resetScroll);
   }
 
   function bindReportWaitForm() {
     reportBody.querySelectorAll('[data-wait-bucket]').forEach(function (button) {
       button.addEventListener('click', function () {
         reportFormState.waitBucket = button.getAttribute('data-wait-bucket');
-        reportBody.querySelectorAll('[data-wait-bucket]').forEach(function (chip) {
-          chip.classList.toggle('active', chip === button);
-        });
-        renderReportFooter();
+        clearProblemSelection();
+        rerenderReport(false);
       });
     });
 
@@ -1144,35 +1283,47 @@ function mountPickupRadarPreview(container, options) {
       });
     });
 
+    const problemToggle = reportBody.querySelector('[data-problem-toggle]');
+    if (problemToggle) {
+      problemToggle.addEventListener('click', function () {
+        reportFormState.problemExpanded = !reportFormState.problemExpanded;
+        if (!reportFormState.problemExpanded) clearProblemSelection();
+        rerenderReport(false);
+      });
+    }
+
     reportBody.querySelectorAll('[data-problem-action]').forEach(function (button) {
       button.addEventListener('click', function () {
         const action = button.getAttribute('data-problem-action');
-        if (action === 'closed' || action === 'system_down') {
-          openDownloadModal();
-          return;
+        reportFormState.waitBucket = null;
+        reportFormState.selectedProblemAction = action;
+        if (action === 'other') {
+          reportFormState.issueExpanded = true;
+        } else {
+          reportFormState.issueExpanded = false;
+          reportFormState.selectedIssueType = null;
+          reportFormState.issueNote = '';
         }
-        if (action === 'venue_issue') {
-          reportFormState.issueExpanded = !reportFormState.issueExpanded;
-          if (!reportFormState.issueExpanded) {
-            reportFormState.selectedIssueType = null;
-          }
-          if (currentReportVenue) {
-            renderReportWaitContent(currentReportVenue, false);
-          }
-        }
+        rerenderReport(false);
       });
     });
 
     reportBody.querySelectorAll('[data-issue-type]').forEach(function (button) {
       button.addEventListener('click', function () {
         const issueType = button.getAttribute('data-issue-type');
+        reportFormState.selectedProblemAction = 'other';
         reportFormState.selectedIssueType = issueType;
-        reportBody.querySelectorAll('[data-issue-type]').forEach(function (chip) {
-          chip.classList.toggle('active', chip.getAttribute('data-issue-type') === issueType);
-        });
-        openDownloadModal();
+        if (issueType !== 'other') reportFormState.issueNote = '';
+        rerenderReport(false);
       });
     });
+
+    const issueNote = reportBody.querySelector('[data-issue-note]');
+    if (issueNote) {
+      issueNote.addEventListener('input', function () {
+        reportFormState.issueNote = issueNote.value.slice(0, 500);
+      });
+    }
 
     const toggle = reportBody.querySelector('[data-order-made-toggle]');
     if (toggle) {
@@ -1183,11 +1334,14 @@ function mountPickupRadarPreview(container, options) {
       });
     }
 
+    const saveBtn = reportBody.querySelector('[data-save-venue]');
+    if (saveBtn) saveBtn.addEventListener('click', openDownloadModal);
+    const shareBtn = reportBody.querySelector('[data-share-venue]');
+    if (shareBtn) shareBtn.addEventListener('click', openDownloadModal);
+
     const changeBtn = reportBody.querySelector('[data-report-change]');
     if (changeBtn) {
       changeBtn.addEventListener('click', function () {
-        reportBackScreen = previousScreen;
-        searchReturnScreen = 'report-wait';
         showScreen('search');
         renderSearchList();
         searchInput.focus();
@@ -1382,17 +1536,13 @@ function mountPickupRadarPreview(container, options) {
 
   root.querySelector('[data-search-back]').addEventListener('click', () => {
     searchInput.value = '';
-    if (searchReturnScreen === 'report-wait' && reportVenueId) {
-      openReportWait(reportVenueId);
-      return;
-    }
     showScreen('home');
   });
 
   searchInput.addEventListener('input', renderSearchList);
 
   root.querySelector('[data-report-back]').addEventListener('click', () => {
-    showScreen(previousScreen);
+    showScreen('home');
   });
 
   const howItWorksBtn = root.querySelector('[data-how-it-works]');
