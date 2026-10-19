@@ -7,7 +7,7 @@ const PREVIEW_MARKUP = `
         <div data-screen="home" class="screen">
           <div class="app-scroll">
             <div class="app-header">
-              <button type="button" data-city-pill class="city-pill-btn" aria-label="Choose city">Manchester</button>
+              <button type="button" data-city-pill class="city-pill-btn" aria-label="Choose city">Milton Keynes</button>
               <p class="app-title">PickupRadar</p>
               <p class="app-tagline">Know the wait before you walk in.</p>
               <p class="app-supporting">Real wait times for UK delivery drivers</p>
@@ -120,7 +120,8 @@ function mountPickupRadarPreview(container, options) {
 
   const SUPABASE_URL = 'https://jvsseskherxmtcuumldq.supabase.co';
   const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp2c3Nlc2toZXJ4bXRjdXVtbGRxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg1MTQwMTcsImV4cCI6MjA5NDA5MDAxN30.lsbs-umYa1a05GUi3sLZUvS609XlyPQjrcgAPp7HvOU';
-  const DEFAULT_CITY = 'Manchester';
+  const DEFAULT_CITY = 'Milton Keynes';
+  const SITE_CITIES = ['Milton Keynes'];
   const CITY_STORAGE_KEY = 'pickupradar_active_city';
 
   const TAG_LABELS = {
@@ -224,8 +225,26 @@ function mountPickupRadarPreview(container, options) {
     });
 
     if (!response.ok) {
-      const text = await response.text();
-      throw new Error(text || 'Could not load live data (' + response.status + ')');
+      throw new Error('Live data request failed (' + response.status + ')');
+    }
+
+    const text = await response.text();
+    return text ? JSON.parse(text) : [];
+  }
+
+  async function supabasePost(path, body) {
+    const response = await fetch(SUPABASE_URL + '/rest/v1' + path, {
+      method: 'POST',
+      headers: {
+        apikey: SUPABASE_ANON_KEY,
+        Authorization: 'Bearer ' + SUPABASE_ANON_KEY,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
+    });
+
+    if (!response.ok) {
+      throw new Error('Live data request failed (' + response.status + ')');
     }
 
     const text = await response.text();
@@ -233,24 +252,7 @@ function mountPickupRadarPreview(container, options) {
   }
 
   async function loadLiveCities() {
-    const pageSize = 1000;
-    const cities = new Set();
-    let offset = 0;
-
-    while (true) {
-      const rows = await supabaseGet(
-        '/venues?select=city&is_active=eq.true&city=not.is.null&order=id.asc&limit=' + pageSize + '&offset=' + offset
-      );
-      if (!Array.isArray(rows) || rows.length === 0) break;
-      for (const row of rows) {
-        const city = typeof row.city === 'string' ? row.city.trim() : '';
-        if (city) cities.add(city);
-      }
-      if (rows.length < pageSize) break;
-      offset += pageSize;
-    }
-
-    return Array.from(cities).sort((a, b) => a.localeCompare(b));
+    return SITE_CITIES.slice();
   }
 
 
@@ -305,31 +307,10 @@ function mountPickupRadarPreview(container, options) {
   }
 
   function getWaitTone(waitMinutes) {
-    if (waitMinutes < 8) return { className: 'wait-green', bg: '#113a2a', color: '#78e6a6' };
-    if (waitMinutes <= 15) return { className: 'wait-amber', bg: '#3c3112', color: '#f5c56a' };
-    return { className: 'wait-red', bg: '#3b1618', color: '#ff8b91' };
-  }
-
-  function getLocalMidnightTime() {
-    const date = new Date();
-    date.setHours(0, 0, 0, 0);
-    return date.getTime();
-  }
-
-  function getMinutesSince(timestamp, now) {
-    return Math.max(0, Math.floor((now - new Date(timestamp).getTime()) / 60000));
-  }
-
-  function getWeightForAge(minutesOld) {
-    if (minutesOld < 15) return 1;
-    if (minutesOld < 30) return 0.75;
-    if (minutesOld < 60) return 0.5;
-    if (minutesOld < 120) return 0.25;
-    return 0;
-  }
-
-  function isoHoursAgo(hours) {
-    return new Date(Date.now() - hours * 60 * 60 * 1000).toISOString();
+    if (waitMinutes < 5) return { className: 'wait-green', bg: '#33C977', color: '#07140D' };
+    if (waitMinutes < 10) return { className: 'wait-amber', bg: '#F2C14E', color: '#1B1402' };
+    if (waitMinutes < 15) return { className: 'wait-orange', bg: '#F2994A', color: '#1B0D03' };
+    return { className: 'wait-red', bg: '#E85D6A', color: '#1A0608' };
   }
 
   function getVenueSearchText(venue) {
@@ -338,84 +319,54 @@ function mountPickupRadarPreview(container, options) {
     return parts.filter(Boolean).map((value) => String(value).toLowerCase());
   }
 
-  function buildVenueStats(venueRows, reportRows, statusRows, tagRows) {
+  function buildVenueStats(venueRows, statsRows) {
     const now = Date.now();
-    const midnight = getLocalMidnightTime();
-    const madeWhenDriverWindowMs = 48 * 60 * 60 * 1000;
+    const statsByVenueId = new Map();
+    for (const row of statsRows) {
+      if (row && row.venue_id) statsByVenueId.set(row.venue_id, row);
+    }
+
     const orderedVenues = [...venueRows].sort((a, b) => a.name.localeCompare(b.name));
 
     return orderedVenues.map((venue) => {
-      const venueReports = reportRows.filter((report) => report.venue_id === venue.id);
-      const recentReports = venueReports.filter((report) => now - new Date(report.created_at).getTime() <= 120 * 60000);
-      const recentCount = recentReports.length;
-
-      const weightedReports = recentReports.reduce(
-        (acc, report) => {
-          const ageMinutes = getMinutesSince(report.created_at, now);
-          const weight = getWeightForAge(ageMinutes);
-          if (weight === 0) return acc;
-          acc.weightedTotal += report.wait_minutes * weight;
-          acc.weightSum += weight;
-          return acc;
-        },
-        { weightedTotal: 0, weightSum: 0 }
-      );
-
-      const reportsToday = venueReports.filter((report) => new Date(report.created_at).getTime() >= midnight);
-      const latestReport = venueReports.reduce((latest, report) => {
-        if (!latest) return report;
-        return new Date(report.created_at).getTime() > new Date(latest.created_at).getTime() ? report : latest;
-      }, null);
-
-      const recentMadeWhenDriverReports = venueReports.filter(
-        (report) => now - new Date(report.created_at).getTime() <= madeWhenDriverWindowMs && report.order_made_when_driver_arrives
-      );
-      const recentMadeWhenDriverTotalReports = venueReports.filter(
-        (report) => now - new Date(report.created_at).getTime() <= madeWhenDriverWindowMs
-      ).length;
-
-      const recentStatusReports = statusRows.filter((report) => report.venue_id === venue.id);
-      const recentClosedReports = recentStatusReports.filter((report) => report.status_type === 'closed');
-      const recentSystemDownReports = recentStatusReports.filter((report) => report.status_type === 'system_down');
-
-      const recentTagRows = tagRows.filter((report) => report.venue_id === venue.id);
-      const tagCountMap = new Map();
-      for (const row of recentTagRows) {
-        tagCountMap.set(row.tag_key, (tagCountMap.get(row.tag_key) || 0) + 1);
-      }
-      const tagCounts = Array.from(tagCountMap.entries())
-        .map(([tagKey, count]) => ({ tagKey, label: TAG_LABELS[tagKey] || tagKey, count }))
+      const s = statsByVenueId.get(venue.id) || null;
+      const reportTime = s && s.last_report_at ? new Date(s.last_report_at).getTime() : NaN;
+      const lastReportMinutes = Number.isFinite(reportTime)
+        ? Math.max(0, Math.floor((now - reportTime) / 60000))
+        : null;
+      const isLive = Boolean(s && s.current_wait_minutes != null && lastReportMinutes !== null && lastReportMinutes < 120);
+      const currentWaitMinutes = isLive ? s.current_wait_minutes : null;
+      const currentWaitLabel =
+        currentWaitMinutes === null
+          ? 'No recent data'
+          : currentWaitMinutes < 5
+            ? '<5 min'
+            : currentWaitMinutes < 10
+              ? '5–10 min'
+              : currentWaitMinutes < 15
+                ? '10–15 min'
+                : '15+ min';
+      const reports2hCount = s?.reports_2h_count ?? 0;
+      const confidence =
+        reports2hCount === 0 ? 'No recent data' : reports2hCount === 1 ? 'Low' : reports2hCount <= 3 ? 'Medium' : 'High';
+      const rawTagCounts = Array.isArray(s?.tag_counts) ? s.tag_counts : [];
+      const tagCounts = rawTagCounts
+        .filter((row) => row && typeof row.tagKey === 'string')
+        .map((row) => ({ tagKey: row.tagKey, label: TAG_LABELS[row.tagKey] || row.tagKey, count: row.count }))
         .sort((a, b) => b.count - a.count)
         .slice(0, 3);
-
-      const currentWaitMinutes =
-        weightedReports.weightSum > 0 ? Math.round(weightedReports.weightedTotal / weightedReports.weightSum) : null;
-      const currentWaitLabel = currentWaitMinutes === null ? 'No recent data' : currentWaitMinutes + ' min';
-      const confidence =
-        recentCount === 0 ? 'No recent data' : recentCount <= 2 ? 'Low' : recentCount <= 5 ? 'Medium' : 'High';
-      const waitTone =
-        currentWaitMinutes === null ? 'neutral' : currentWaitMinutes < 8 ? 'green' : currentWaitMinutes <= 15 ? 'amber' : 'red';
-      const leftEarlyCount = reportsToday.filter((report) => report.left_early).length;
-      const leftEarlyWarning = reportsToday.length >= 3 && leftEarlyCount / reportsToday.length >= 0.3;
-      const madeWhenDriverArrivesBadge =
-        recentMadeWhenDriverReports.length >= 3 &&
-        recentMadeWhenDriverTotalReports > 0 &&
-        recentMadeWhenDriverReports.length / recentMadeWhenDriverTotalReports >= 0.6;
-      const closedWarning = recentClosedReports.length >= 2;
-      const systemDownWarning = recentSystemDownReports.length >= 2;
 
       return {
         ...venue,
         currentWaitMinutes,
         currentWaitLabel,
-        waitTone,
-        reportsToday: reportsToday.length,
-        lastReportMinutes: latestReport ? getMinutesSince(latestReport.created_at, now) : null,
+        reportsToday: s?.reports_today ?? 0,
+        lastReportMinutes,
         confidence,
-        leftEarlyWarning,
-        madeWhenDriverArrivesBadge,
-        closedWarning,
-        systemDownWarning,
+        leftEarlyWarning: s?.left_early_warning === true,
+        madeWhenDriverArrivesBadge: s?.made_when_driver_arrives_badge === true,
+        closedWarning: s?.closed_warning === true,
+        systemDownWarning: s?.system_down_warning === true,
         tagCounts,
       };
     });
@@ -587,10 +538,14 @@ function mountPickupRadarPreview(container, options) {
   function renderHomeList() {
     if (loadError) {
       homeBody.innerHTML =
-        '<div class="state-box"><strong>Could not load live data</strong><span>' +
-        escapeHtml(loadError) +
-        '</span><button type="button" class="retry-btn" data-retry>Try again</button></div>';
-      root.querySelector('[data-retry]').addEventListener('click', () => loadCityData(activeCity));
+        '<div class="state-box"><strong>Could not load live data</strong><span>Live data isn\'t available right now.</span><button type="button" class="retry-btn" data-retry>Try again</button></div>';
+      root.querySelector('[data-retry]').addEventListener('click', () => {
+        loadCityData(activeCity).catch((error) => {
+          console.error(error);
+          loadError = "Live data isn't available right now.";
+          renderHomeList();
+        });
+      });
       return;
     }
 
@@ -708,33 +663,37 @@ function mountPickupRadarPreview(container, options) {
     loadError = null;
     homeBody.innerHTML = '<div class="state-box"><strong>Loading live data…</strong><span>Syncing venues and reports for ' + escapeHtml(city) + '.</span></div>';
 
-    const waitSince = encodeURIComponent(isoHoursAgo(48));
-    const statusSince = encodeURIComponent(isoHoursAgo(1.5));
-    const tagSince = encodeURIComponent(isoHoursAgo(24));
+    const pageSize = 1000;
+    const venueRows = [];
+    let offset = 0;
 
-    const [venuesResponse, reportsResponse, statusResponse, tagResponse] = await Promise.all([
-      supabaseGet(
+    while (true) {
+      const page = await supabaseGet(
         '/venues?select=id,name,area,brand,branch,address,postcode,lat,lng,google_place_id,city,zone,venue_type,is_active,created_at&city=eq.' +
           encodeURIComponent(city) +
-          '&is_active=eq.true&order=created_at.asc'
-      ),
-      supabaseGet(
-        '/wait_reports?select=id,venue_id,platform,wait_bucket,wait_minutes,left_early,order_made_when_driver_arrives,created_at&created_at=gte.' + waitSince
-      ),
-      supabaseGet(
-        '/venue_status_reports?select=id,venue_id,status_type,created_at&created_at=gte.' + statusSince
-      ),
-      supabaseGet(
-        '/venue_tag_reports?select=id,venue_id,tag_key,platform,created_at&created_at=gte.' + tagSince
-      ),
-    ]);
+          '&is_active=eq.true&order=id.asc&limit=' +
+          pageSize +
+          '&offset=' +
+          offset
+      );
+      if (!Array.isArray(page)) {
+        throw new Error('Live data request failed');
+      }
+      venueRows.push.apply(venueRows, page);
+      if (page.length < pageSize) break;
+      offset += pageSize;
+    }
 
-    venueStats = buildVenueStats(
-      Array.isArray(venuesResponse) ? venuesResponse : [],
-      Array.isArray(reportsResponse) ? reportsResponse : [],
-      Array.isArray(statusResponse) ? statusResponse : [],
-      Array.isArray(tagResponse) ? tagResponse : []
-    );
+    const statsRows = await supabasePost('/rpc/get_public_venue_stats_sparse_v2', {
+      p_city: city,
+      p_internal_zones: null,
+      p_timezone: 'Europe/London',
+    });
+    if (!Array.isArray(statsRows)) {
+      throw new Error('Live data request failed');
+    }
+
+    venueStats = buildVenueStats(venueRows, statsRows);
 
     renderHomeList();
     if (!searchScreen.classList.contains('hidden')) renderSearchList();
@@ -812,7 +771,8 @@ function mountPickupRadarPreview(container, options) {
         searchInput.value = '';
         showScreen('home');
         loadCityData(activeCity).catch((error) => {
-          loadError = error instanceof Error ? error.message : String(error);
+          console.error(error);
+          loadError = "Live data isn't available right now.";
           renderHomeList();
         });
       });
@@ -1406,18 +1366,14 @@ function mountPickupRadarPreview(container, options) {
       activeCity = resolveActiveCity(liveCities);
       saveSelectedCity(activeCity);
       updateCityPill();
-      document.querySelectorAll('[data-city-count]').forEach((el) => {
-        el.textContent = String(liveCities.length);
-      });
       if (options.resetOnLoad) resetPreviewHome();
       await loadCityData(activeCity);
       if (options.resetOnLoad) resetPreviewHome();
     } catch (error) {
-      loadError = error instanceof Error ? error.message : String(error);
+      console.error(error);
+      loadError = "Live data isn't available right now.";
       root.querySelector('[data-home-body]').innerHTML =
-        '<div class="state-box"><strong>Could not load live data</strong><span>' +
-        escapeHtml(loadError) +
-        '</span><button type="button" class="retry-btn" data-retry>Try again</button></div>';
+        '<div class="state-box"><strong>Could not load live data</strong><span>Live data isn\'t available right now.</span><button type="button" class="retry-btn" data-retry>Try again</button></div>';
       root.querySelector('[data-retry]').addEventListener('click', () => location.reload());
     }
   })();
