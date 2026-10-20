@@ -24,7 +24,7 @@
   <meta name="twitter:description" content="PickupRadar helps UK Uber Eats, Deliveroo and Just Eat drivers check recent pickup waits before they walk in. No account needed. RadarPoints rewards are coming soon." />
   <meta name="twitter:image" content="https://pickupradar.co.uk/assets/og-image.png" />
   <meta name="twitter:image:alt" content="PickupRadar. Know the wait before you walk in." />
-  <link rel="stylesheet" href="preview.css?v=20261019e" />
+  <link rel="stylesheet" href="preview.css?v=20261020a" />
   <style>
     :root {
       --bg: #06111a;
@@ -71,6 +71,12 @@
 
     .site-nav a:hover,
     .site-nav a.active { color: var(--blue); }
+
+    .site-nav a:focus-visible,
+    footer a:focus-visible {
+      outline: 2px solid #8FD0FF;
+      outline-offset: 2px;
+    }
 
     .hero-grid {
       display: grid;
@@ -504,7 +510,7 @@
   </main>
 
   <script src="pickupradar-logic.js?v=3aaae59"></script>
-  <script src="preview.js?v=20261019e"></script>
+  <script src="preview.js?v=20261020a"></script>
   <script>
     mountPickupRadarPreview(document.getElementById('live-preview'), {
       compact: true,

@@ -308,6 +308,9 @@ function mountPickupRadarPreview(container, options) {
   let suggestionVenuePostcode = '';
   let suggestionVenueNote = '';
   let lastMissingVenueQuery = '';
+  let applyingHistory = false;
+  let activeDialog = null;
+  let dialogReturnFocus = null;
 
   const cityPillBtn = root.querySelector('[data-city-pill]');
   const cityListBody = root.querySelector('[data-city-list]');
@@ -791,14 +794,86 @@ function mountPickupRadarPreview(container, options) {
     reportWaitScreen.classList.toggle('hidden', name !== 'report-wait');
   }
 
+  function previewHistoryState(screen) {
+    return {
+      prPreview: true,
+      prScreen: screen,
+      prVenueId: screen === 'report-wait' ? reportVenueId : null,
+      prQuery: searchInput.value,
+    };
+  }
+
+  function pushPreviewScreen(screen) {
+    if (applyingHistory) return;
+    history.pushState(previewHistoryState(screen), '');
+  }
+
+  function rememberSearchQuery() {
+    if (applyingHistory) return;
+    const state = history.state;
+    if (!state || !state.prPreview || state.prScreen !== 'search') return;
+    history.replaceState(previewHistoryState('search'), '');
+  }
+
+  function clearPreviewHistoryMarker() {
+    if (history.state && history.state.prPreview) {
+      history.replaceState(null, '');
+    }
+  }
+
+  function applyPreviewHistory(state) {
+    applyingHistory = true;
+    try {
+      const screen = state && state.prPreview ? state.prScreen : 'home';
+      if (screen === 'search') {
+        searchInput.value = state.prQuery || '';
+        showScreen('search');
+        renderSearchList();
+      } else if (screen === 'report-wait' && state.prVenueId) {
+        const venue = venueStats.find(function (item) {
+          return item.id === state.prVenueId;
+        });
+        if (venue) {
+          previousScreen = 'home';
+          reportVenueId = venue.id;
+          currentReportVenue = venue;
+          resetReportFormState();
+          renderReportWaitContent(venue, true);
+          showScreen('report-wait');
+        } else {
+          showScreen('home');
+        }
+      } else if (screen === 'city') {
+        showScreen('city');
+        renderCityList();
+      } else {
+        searchInput.value = '';
+        showScreen('home');
+      }
+    } finally {
+      applyingHistory = false;
+    }
+  }
+
+  function previewBack() {
+    if (history.state && history.state.prPreview) {
+      history.back();
+      return;
+    }
+    applyPreviewHistory(null);
+  }
+
   function openReportWaitSearch() {
     searchReturnScreen = 'home';
+    searchInput.value = '';
     showScreen('search');
     renderSearchList();
+    pushPreviewScreen('search');
     searchInput.focus();
   }
 
   function resetPreviewHome() {
+    clearPreviewHistoryMarker();
     showScreen('home');
     previousScreen = 'home';
     searchReturnScreen = 'home';
@@ -851,7 +926,7 @@ function mountPickupRadarPreview(container, options) {
       row.addEventListener('click', () => {
         const city = row.getAttribute('data-city');
         if (!city || city === activeCity) {
-          showScreen('home');
+          previewBack();
           return;
         }
         activeCity = city;
@@ -859,7 +934,7 @@ function mountPickupRadarPreview(container, options) {
         updateCityPill();
         citySearchInput.value = '';
         searchInput.value = '';
-        showScreen('home');
+        previewBack();
         loadCityData(activeCity).catch((error) => {
           console.error(error);
           loadError = "Live data isn't available right now.";
@@ -988,6 +1063,7 @@ function mountPickupRadarPreview(container, options) {
     citySearchInput.value = '';
     renderCityList();
     showScreen('city');
+    pushPreviewScreen('city');
     citySearchInput.focus();
   }
 
@@ -1344,6 +1420,7 @@ function mountPickupRadarPreview(container, options) {
       changeBtn.addEventListener('click', function () {
         showScreen('search');
         renderSearchList();
+        pushPreviewScreen('search');
         searchInput.focus();
       });
     }
@@ -1361,6 +1438,8 @@ function mountPickupRadarPreview(container, options) {
     resetReportFormState();
     renderReportWaitContent(venue, true);
     showScreen('report-wait');
+    rememberSearchQuery();
+    pushPreviewScreen('report-wait');
   }
 
   function saveSelectedCity(city) {
@@ -1396,28 +1475,74 @@ function mountPickupRadarPreview(container, options) {
     return liveList[0];
   }
 
-  function openDownloadModal() {
+  function dialogFocusables(dialog) {
+    return Array.prototype.filter.call(
+      dialog.querySelectorAll('a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled])'),
+      function (el) {
+        return !el.closest('.hidden') && el.offsetParent !== null;
+      }
+    );
+  }
+
+  function focusDialog(dialog) {
+    const items = dialogFocusables(dialog);
+    if (items.length) items[0].focus();
+  }
+
+  function beginDialog(dialog, trigger) {
+    dialogReturnFocus = trigger && trigger.focus ? trigger : document.activeElement;
+    activeDialog = dialog;
+    window.setTimeout(function () {
+      if (activeDialog === dialog) focusDialog(dialog);
+    }, 0);
+  }
+
+  function canRestoreFocus(el) {
+    if (!el || typeof el.focus !== 'function' || !document.contains(el)) return false;
+    if (el.closest('.hidden')) return false;
+    return el.offsetParent !== null;
+  }
+
+  function restoreDialogFocus() {
+    const back = dialogReturnFocus;
+    dialogReturnFocus = null;
+    activeDialog = null;
+    if (canRestoreFocus(back)) {
+      back.focus();
+      return;
+    }
+    const fallback = root.querySelector('[data-help-open]') || cityPillBtn;
+    if (fallback) fallback.focus();
+  }
+
+  function openDownloadModal(trigger) {
     downloadModal.classList.add('open');
+    beginDialog(downloadModal, trigger);
   }
 
   function closeDownloadModal() {
     downloadModal.classList.remove('open');
+    if (activeDialog === downloadModal) restoreDialogFocus();
   }
 
-  function openInfoModal() {
+  function openInfoModal(trigger) {
     infoModal.classList.add('open');
+    beginDialog(infoModal, trigger);
   }
 
   function closeInfoModal() {
     infoModal.classList.remove('open');
+    if (activeDialog === infoModal) restoreDialogFocus();
   }
 
-  function openSupportModal() {
+  function openSupportModal(trigger) {
     supportModal.classList.add('open');
+    beginDialog(supportModal, trigger);
   }
 
   function closeSupportModal() {
     supportModal.classList.remove('open');
+    if (activeDialog === supportModal) restoreDialogFocus();
   }
 
   function setupSupportControl() {
@@ -1432,8 +1557,8 @@ function mountPickupRadarPreview(container, options) {
       btn.setAttribute('data-support', '');
       supportEl.replaceWith(btn);
       btn.addEventListener('click', () => {
-        closeHelpSheet();
-        openSupportModal();
+        closeHelpSheet({ keepFocus: true });
+        openSupportModal(btn);
       });
       root.querySelector('[data-support-close]').addEventListener('click', closeSupportModal);
       supportModal.addEventListener('click', (event) => {
@@ -1477,14 +1602,18 @@ function mountPickupRadarPreview(container, options) {
     }
   }
 
-  function closeHelpSheet() {
+  function closeHelpSheet(options) {
     const sheet = root.querySelector('[data-help-sheet]');
     if (sheet) sheet.classList.add('hidden');
+    if (activeDialog === sheet && !(options && options.keepFocus)) restoreDialogFocus();
+    else if (activeDialog === sheet) activeDialog = null;
   }
 
-  function openHelpSheet() {
+  function openHelpSheet(trigger) {
     const sheet = root.querySelector('[data-help-sheet]');
-    if (sheet) sheet.classList.remove('hidden');
+    if (!sheet) return;
+    sheet.classList.remove('hidden');
+    beginDialog(sheet, trigger);
   }
 
   root.querySelectorAll('.filter-chip').forEach((chip) => {
@@ -1502,21 +1631,27 @@ function mountPickupRadarPreview(container, options) {
   });
 
   cityPillBtn.addEventListener('click', openCityPicker);
-  root.querySelector('[data-city-close]').addEventListener('click', () => showScreen('home'));
+  root.querySelector('[data-city-close]').addEventListener('click', previewBack);
   citySearchInput.addEventListener('input', renderCityList);
 
   root.querySelector('[data-open-search]').addEventListener('click', () => {
     searchReturnScreen = 'home';
+    searchInput.value = '';
     showScreen('search');
     renderSearchList();
+    pushPreviewScreen('search');
     searchInput.focus();
   });
 
   root.querySelector('[data-report-wait-btn]').addEventListener('click', openReportWaitSearch);
   root.querySelectorAll('[data-open-app]').forEach((button) => {
-    button.addEventListener('click', openDownloadModal);
+    button.addEventListener('click', function () {
+      openDownloadModal(button);
+    });
   });
-  root.querySelector('[data-help-open]').addEventListener('click', openHelpSheet);
+  root.querySelector('[data-help-open]').addEventListener('click', function (event) {
+    openHelpSheet(event.currentTarget);
+  });
   root.querySelector('[data-help-close]').addEventListener('click', closeHelpSheet);
   root.querySelector('[data-help-sheet]').addEventListener('click', (event) => {
     if (event.target === root.querySelector('[data-help-sheet]')) closeHelpSheet();
@@ -1528,22 +1663,22 @@ function mountPickupRadarPreview(container, options) {
       chip.classList.toggle('active', active);
       chip.setAttribute('aria-selected', active ? 'true' : 'false');
     });
+    // Going Home from a preview screen is a new step, so on-screen Back from a later screen returns here.
+    if (history.state && history.state.prPreview && history.state.prScreen !== 'home') pushPreviewScreen('home');
     showScreen('home');
     const homeScroll = homeScreen.querySelector('.app-scroll');
     if (homeScroll) homeScroll.scrollTop = 0;
     renderHomeList();
   });
 
-  root.querySelector('[data-search-back]').addEventListener('click', () => {
-    searchInput.value = '';
-    showScreen('home');
+  root.querySelector('[data-search-back]').addEventListener('click', previewBack);
+
+  searchInput.addEventListener('input', function () {
+    rememberSearchQuery();
+    renderSearchList();
   });
 
-  searchInput.addEventListener('input', renderSearchList);
-
-  root.querySelector('[data-report-back]').addEventListener('click', () => {
-    showScreen('home');
-  });
+  root.querySelector('[data-report-back]').addEventListener('click', previewBack);
 
   const howItWorksBtn = root.querySelector('[data-how-it-works]');
   if (options.howItWorksScrollTo) {
@@ -1554,8 +1689,8 @@ function mountPickupRadarPreview(container, options) {
     });
   } else {
     howItWorksBtn.addEventListener('click', () => {
-      closeHelpSheet();
-      openInfoModal();
+      closeHelpSheet({ keepFocus: true });
+      openInfoModal(howItWorksBtn);
     });
     root.querySelector('[data-info-close]').addEventListener('click', closeInfoModal);
     infoModal.addEventListener('click', (event) => {
@@ -1570,6 +1705,39 @@ function mountPickupRadarPreview(container, options) {
 
   setupStoreButtons();
   setupSupportControl();
+
+  window.addEventListener('popstate', function (event) {
+    const state = event.state;
+    if (state && state.prPreview) applyPreviewHistory(state);
+    else applyPreviewHistory(null);
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (!activeDialog || activeDialog.classList.contains('hidden') || !root.contains(activeDialog)) return;
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      if (activeDialog === downloadModal) closeDownloadModal();
+      else if (activeDialog === infoModal) closeInfoModal();
+      else if (activeDialog === supportModal) closeSupportModal();
+      else closeHelpSheet();
+      return;
+    }
+    if (event.key !== 'Tab') return;
+    const items = dialogFocusables(activeDialog);
+    if (!items.length) {
+      event.preventDefault();
+      return;
+    }
+    const first = items[0];
+    const last = items[items.length - 1];
+    if (event.shiftKey && (document.activeElement === first || !activeDialog.contains(document.activeElement))) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && (document.activeElement === last || !activeDialog.contains(document.activeElement))) {
+      event.preventDefault();
+      first.focus();
+    }
+  });
 
   if (options.resetOnLoad) {
     resetPreviewHome();
@@ -1588,6 +1756,7 @@ function mountPickupRadarPreview(container, options) {
       if (options.resetOnLoad) resetPreviewHome();
       await loadCityData(activeCity);
       if (options.resetOnLoad) resetPreviewHome();
+      else if (history.state && history.state.prPreview) applyPreviewHistory(history.state);
     } catch (error) {
       console.error(error);
       loadError = "Live data isn't available right now.";

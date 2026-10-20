@@ -2023,3 +2023,12 @@
     max-height: min(820px, 78vh);
   }
 }
+
+.preview-root a:focus-visible,
+.preview-root button:focus-visible,
+.preview-root input:focus-visible,
+.preview-root textarea:focus-visible,
+.preview-root [role="button"]:focus-visible {
+  outline: 2px solid #8FD0FF;
+  outline-offset: 2px;
+}
