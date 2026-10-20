@@ -9,97 +9,81 @@
   <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="icon" href="/assets/favicon-16.png" type="image/png" sizes="16x16" />
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" sizes="180x180" />
-  <style>
-    :root {
-      --bg: #06111a;
-      --card: #0d1c28;
-      --text: #f4f8fb;
-      --muted: #9fb2c4;
-      --border: #193247;
-      --blue: #b9d7ee;
-      --green: #13db85;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: radial-gradient(circle at top, #102638 0%, #06111a 55%, #03080d 100%);
-      color: var(--text);
-      line-height: 1.5;
-    }
-
-    .wrap {
-      width: min(720px, 92%);
-      margin: 0 auto;
-      padding: 48px 0 64px;
-    }
-
-    .brand {
-      margin: 0 0 28px;
-      font-size: 28px;
-      font-weight: 800;
-      letter-spacing: -0.5px;
-    }
-
-    .brand span { color: var(--green); }
-
-    h1 {
-      margin: 0 0 12px;
-      font-size: clamp(32px, 8vw, 48px);
-      line-height: 1.05;
-      letter-spacing: -1px;
-    }
-
-    p {
-      margin: 0 0 22px;
-      color: var(--muted);
-      font-size: 17px;
-      max-width: 36em;
-    }
-
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .links a {
-      display: inline-block;
-      text-decoration: none;
-      color: var(--text);
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      padding: 12px 18px;
-      font-weight: 800;
-      font-size: 15px;
-    }
-
-    .links a:hover { color: var(--blue); }
-
-    .links a:focus-visible {
-      outline: 2px solid #8FD0FF;
-      outline-offset: 2px;
-    }
-
-    @media (max-width: 390px) {
-      .wrap { padding: 32px 0 48px; }
-      .brand { font-size: 24px; }
-    }
-  </style>
+  <meta name="theme-color" content="#071018" />
+  <link rel="preload" href="/assets/fonts/archivo-latin-variable.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/site.css?v=20261020b" />
 </head>
-<body>
-  <main class="wrap">
-    <p class="brand">Pickup<span>Radar</span></p>
-    <h1>Page not found</h1>
-    <p>That address is not on the PickupRadar website. These pages are.</p>
-    <nav class="links" aria-label="Available pages">
-      <a href="/index.html">Home</a>
-      <a href="/app.html">Live preview</a>
-      <a href="/support.html">Support</a>
-    </nav>
+<body class="page-404">
+  <a class="w-skip" href="#main">Skip to content</a>
+
+  <header class="w-header" data-site-header>
+    <div class="w-wrap w-header-inner">
+      <a class="w-brand" href="/index.html" aria-label="PickupRadar home">
+        <img src="/assets/pickupradar-mark-96.png" alt="" width="40" height="40" />
+        <span>Pickup<span class="w-radar-word">Radar</span></span>
+      </a>
+      <nav aria-label="Site">
+        <ul class="w-nav">
+          <li><a href="/index.html#how-it-works">How it works</a></li>
+          <li><a href="/support.html">Support</a></li>
+          <li><a href="/privacy.html">Privacy</a></li>
+        </ul>
+      </nav>
+      <a class="w-btn w-btn-go w-header-cta" href="/app.html">Live preview</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="w-wrap w-lost" aria-labelledby="lost-title">
+      <div class="w-stage w-stage-small" aria-hidden="true"></div>
+      <div>
+        <h1 class="w-display w-display-page" id="lost-title">This page is off the radar.</h1>
+        <p class="w-lede">That address isn't on the PickupRadar website. These pages are:</p>
+        <div class="w-actions">
+          <a class="w-btn w-btn-go" href="/index.html">Home</a>
+          <a class="w-btn w-btn-quiet" href="/app.html">Live preview</a>
+          <a class="w-btn w-btn-quiet" href="/support.html">Support</a>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="w-footer">
+    <div class="w-wrap">
+      <div class="w-footer-grid">
+        <div class="w-footer-brand">
+          <a class="w-brand" href="/index.html" aria-label="PickupRadar home">
+            <img src="/assets/pickupradar-mark-96.png" alt="" width="30" height="30" />
+            <span>Pickup<span class="w-radar-word">Radar</span></span>
+          </a>
+          <p>Know the wait before you walk in.</p>
+        </div>
+        <div>
+          <h2>App</h2>
+          <ul>
+            <li><a href="/app.html">Live preview</a></li>
+            <li><a href="/index.html#how-it-works">How it works</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Help</h2>
+          <ul>
+            <li><a href="/support.html">Support</a></li>
+            <li><a href="mailto:support@pickupradar.co.uk">support@pickupradar.co.uk</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Legal</h2>
+          <ul>
+            <li><a href="/privacy.html">Privacy</a></li>
+            <li><a href="/delete-account.html">Delete account</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="w-footer-small">&copy; 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.</p>
+    </div>
+  </footer>
+
+  <script src="/site.js?v=20261020b"></script>
 </body>
 </html>

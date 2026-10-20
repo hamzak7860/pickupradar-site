@@ -24,158 +24,105 @@
   <meta name="twitter:description" content="Full read-only PickupRadar app preview for UK delivery drivers — browse pickup data, search venues, and explore the report flow." />
   <meta name="twitter:image" content="https://pickupradar.co.uk/assets/og-image.png" />
   <meta name="twitter:image:alt" content="PickupRadar. Know the wait before you walk in." />
+  <meta name="theme-color" content="#071018" />
+  <link rel="preload" href="/assets/fonts/archivo-latin-variable.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="preview.css?v=20261020a" />
-  <style>
-    :root {
-      --bg: #06111a;
-      --text: #f4f8fb;
-      --muted: #9fb2c4;
-      --border: #193247;
-      --blue: #b9d7ee;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: radial-gradient(circle at top, #102638 0%, #06111a 50%, #03080d 100%);
-      color: var(--text);
-      line-height: 1.5;
-      overflow-x: hidden;
-    }
-
-    .wrap {
-      width: min(1100px, 94%);
-      margin: 0 auto;
-      padding: 32px 0 48px;
-    }
-
-    .site-nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px 16px;
-      margin-bottom: 28px;
-      font-size: 15px;
-      font-weight: 700;
-    }
-
-    .site-nav a {
-      color: var(--muted);
-      text-decoration: none;
-    }
-
-    .site-nav a:hover,
-    .site-nav a.active { color: var(--blue); }
-
-    .site-nav a:focus-visible,
-    footer a:focus-visible {
-      outline: 2px solid #8FD0FF;
-      outline-offset: 2px;
-    }
-
-    .page-intro {
-      text-align: center;
-      margin-bottom: 28px;
-      max-width: 640px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .page-intro h1 {
-      font-size: clamp(28px, 4vw, 40px);
-      margin: 0 0 10px;
-      letter-spacing: -0.8px;
-      font-weight: 800;
-    }
-
-    .page-intro p {
-      color: var(--muted);
-      margin: 0;
-      font-size: 16px;
-      line-height: 1.55;
-    }
-
-    #livePreview {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      margin: 0 auto;
-      width: 100%;
-    }
-
-    footer {
-      border-top: 1px solid var(--border);
-      margin-top: 40px;
-      padding-top: 20px;
-      color: var(--muted);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      justify-content: space-between;
-      font-size: 14px;
-    }
-
-    footer a {
-      color: #c9d7e4;
-      text-decoration: none;
-      margin-left: 14px;
-    }
-
-    @media (max-width: 600px) {
-      .wrap {
-        width: 94%;
-        padding: 24px 0 32px;
-      }
-
-      .page-intro {
-        margin-bottom: 16px;
-      }
-
-      .page-intro h1 {
-        font-size: clamp(24px, 6.5vw, 32px);
-      }
-    }
-
-    @media (max-width: 760px) {
-      .wrap { padding: 20px 0 36px; }
-      .page-intro { margin-bottom: 20px; }
-      .page-intro h1 { font-size: 24px; }
-      .page-intro p { font-size: 15px; }
-      footer { display: block; }
-      footer a { display: inline-block; margin: 10px 12px 0 0; }
-    }
-  </style>
+  <link rel="stylesheet" href="/site.css?v=20261020b" />
 </head>
 <body class="page-live-preview">
-  <main class="wrap">
-    <nav class="site-nav" aria-label="Site">
-      <a href="index.html">Home</a>
-      <a href="app.html" class="active">Live preview</a>
-      <a href="support.html">Support</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="delete-account.html">Delete account</a>
-    </nav>
+  <a class="w-skip" href="#main">Skip to content</a>
 
-    <div class="page-intro">
-      <h1>Live app preview</h1>
-      <p>Browse PickupRadar pickup data. Reporting is only available in the mobile app.</p>
+  <header class="w-header" data-site-header>
+    <div class="w-wrap w-header-inner">
+      <a class="w-brand" href="/index.html" aria-label="PickupRadar home">
+        <img src="/assets/pickupradar-mark-96.png" alt="" width="40" height="40" />
+        <span>Pickup<span class="w-radar-word">Radar</span></span>
+      </a>
+      <nav aria-label="Site">
+        <ul class="w-nav">
+          <li><a href="/index.html#how-it-works">How it works</a></li>
+          <li><a href="/support.html">Support</a></li>
+          <li><a href="/privacy.html">Privacy</a></li>
+        </ul>
+      </nav>
+      <a class="w-btn w-btn-go w-header-cta" href="/app.html" aria-current="page">Live preview</a>
     </div>
+  </header>
 
-    <div id="livePreview" aria-label="Full PickupRadar app preview"></div>
-
-    <footer>
-      <div>© 2026 PickupRadar</div>
-      <div>
-        <a href="index.html">Home</a>
-        <a href="support.html">Support</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="delete-account.html">Delete account</a>
-        <a href="mailto:support@pickupradar.co.uk">Email</a>
+  <main id="main">
+    <section class="w-hero w-hero-app" aria-labelledby="app-title">
+      <div class="w-wrap w-hero-grid w-hero-grid-app">
+        <div class="w-hero-copy">
+          <h1 class="w-display w-display-page" id="app-title">Live preview</h1>
+          <p class="w-lede">
+            This is PickupRadar with real Milton Keynes pickup data. Look around, search a pickup and try the report screen.
+            Nothing you tap here is sent: reporting only works in the mobile app.
+          </p>
+        </div>
+        <div class="w-stage w-stage-large">
+          <div id="livePreview" aria-label="Full PickupRadar app preview with real Milton Keynes data"></div>
+        </div>
+        <div class="w-app-tips">
+          <ol class="w-try">
+            <li><span><strong>Pick a tab.</strong> All, Fast and Slow show pickups by their wait or estimate.</span></li>
+            <li><span><strong>Search a pickup.</strong> Try a brand or an area, like KFC or Bletchley.</span></li>
+            <li><span><strong>Open the report screen.</strong> Choose a wait and see what drivers send from the app.</span></li>
+          </ol>
+          <div class="w-try-scale">
+          <ul class="w-scale" aria-label="Wait ranges">
+            <li><span class="w-bar"></span><strong>&lt;5 min</strong><span>In and out</span></li>
+            <li><span class="w-bar"></span><strong>5&ndash;10 min</strong><span>A short wait</span></li>
+            <li><span class="w-bar"></span><strong>10&ndash;15 min</strong><span>Worth knowing</span></li>
+            <li><span class="w-bar"></span><strong>15+ min</strong><span>Think twice</span></li>
+          </ul>
+          <div class="w-estimates">
+            <span>No recent report? You may see a labelled estimate instead:</span>
+            <span class="w-pill w-pill-fast">Likely fast</span>
+            <span class="w-pill w-pill-slow">Likely slow</span>
+          </div>
+          </div>
+        </div>
       </div>
-    </footer>
+    </section>
   </main>
 
+  <footer class="w-footer">
+    <div class="w-wrap">
+      <div class="w-footer-grid">
+        <div class="w-footer-brand">
+          <a class="w-brand" href="/index.html" aria-label="PickupRadar home">
+            <img src="/assets/pickupradar-mark-96.png" alt="" width="30" height="30" />
+            <span>Pickup<span class="w-radar-word">Radar</span></span>
+          </a>
+          <p>Know the wait before you walk in.</p>
+        </div>
+        <div>
+          <h2>App</h2>
+          <ul>
+            <li><a href="/app.html">Live preview</a></li>
+            <li><a href="/index.html#how-it-works">How it works</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Help</h2>
+          <ul>
+            <li><a href="/support.html">Support</a></li>
+            <li><a href="mailto:support@pickupradar.co.uk">support@pickupradar.co.uk</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Legal</h2>
+          <ul>
+            <li><a href="/privacy.html">Privacy</a></li>
+            <li><a href="/delete-account.html">Delete account</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="w-footer-small">&copy; 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.</p>
+    </div>
+  </footer>
+
+  <script src="/site.js?v=20261020b"></script>
   <script src="pickupradar-logic.js?v=3aaae59"></script>
   <script src="preview.js?v=20261020a"></script>
   <script>
