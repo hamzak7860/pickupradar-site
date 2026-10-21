@@ -101,7 +101,7 @@ const PREVIEW_MARKUP = `
           <div class="app-scroll">
             <div class="app-header">
               <div class="city-pill-row">
-                <button type="button" data-city-pill class="city-pill-btn" aria-label="Choose city">
+                <button type="button" data-city-pill class="city-pill-btn" aria-label="Browse cities" data-i18n-aria="city.title">
                   ${prIcon('location', 13)}
                   <span data-city-name>Milton Keynes</span>
                   ${prIcon('chevron', 12)}
@@ -167,7 +167,7 @@ const PREVIEW_MARKUP = `
             <input data-city-search class="city-search-input" type="search" dir="auto" aria-labelledby="cityPickerTitle" placeholder="Search cities" data-i18n-placeholder="city.search" autocomplete="off" autocapitalize="off" spellcheck="false" data-lpignore="true" />
           </div>
           <div class="app-scroll" data-city-list></div>
-          <button type="button" class="scroll-top-btn city-top-btn hidden" data-city-top aria-label="Back to top">${prIcon('arrow-up', 20)}</button>
+          <button type="button" class="scroll-top-btn city-top-btn hidden" data-city-top aria-label="Back to top" data-i18n-aria="common.backToTop">${prIcon('arrow-up', 20)}</button>
         </div>
         <div data-screen="search" class="screen hidden">
           <div class="app-scroll report-search-scroll">
@@ -199,45 +199,51 @@ const PREVIEW_MARKUP = `
       </div>
     </div>
     <div data-download-modal class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <div class="modal">
-        <h2 id="modalTitle">Get the app</h2>
-        <p data-modal-text>Download PickupRadar to report waits and venue issues.<br><br>Reporting is only available in the mobile app.</p>
-        <div class="store-row" data-store-row></div>
-        <button type="button" data-modal-close class="modal-close">Close</button>
+      <div class="modal" data-lang-box>
+        <h2 id="modalTitle" lang="en" dir="ltr" data-web-text="getApp.title">Get the app</h2>
+        <p data-modal-text lang="en" dir="ltr">Download PickupRadar to report waits and venue issues.<br><br>Reporting is only available in the mobile app.</p>
+        <div class="store-row" data-store-row lang="en" dir="ltr"></div>
+        <button type="button" data-modal-close class="modal-close" data-i18n="common.close">Close</button>
       </div>
     </div>
     <div data-info-modal class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="infoTitle">
       <div class="modal">
-        <h2 id="infoTitle">How PickupRadar works</h2>
-        <ul class="info-list">
-          <li>Drivers report pickup waits in real time. Recent reports help other drivers avoid wasted time.</li>
-          <li>Live wait times are based on recent reports. Reports older than 2 hours do not affect the current wait.</li>
-          <li>When there are no recent reports, PickupRadar may show likely fast or likely slow places.</li>
-          <li>You don't need an account. The app creates an anonymous Radar profile to keep your RadarPoints, and a random device ID helps prevent spam and duplicate reports. Email sign-in is optional and helps protect and recover your points.</li>
-        </ul>
-        <button type="button" data-info-close class="modal-close">Close</button>
+        <h2 id="infoTitle" data-i18n="how.kicker">How PickupRadar works</h2>
+        <div class="support-modal-body info-sections">
+          <h3 class="support-section-title" data-i18n="how.live.title">Live wait reports</h3>
+          <p class="support-body" data-i18n="how.live.body">Drivers report pickup waits in real time. Recent reports help other drivers avoid wasted time. Live wait and venue-status reports require location verification near the pickup point, but you can browse without location.</p>
+          <h3 class="support-section-title" data-i18n="how.fresh.title">Fresh data only</h3>
+          <p class="support-body" data-i18n="how.fresh.body">Live wait times are based on recent reports. Reports older than 2 hours do not affect the current wait.</p>
+          <h3 class="support-section-title" data-i18n="how.predicted.title">Likely Fast &amp; Likely Slow</h3>
+          <p class="support-body" data-i18n="how.predicted.body">When there are no recent reports, PickupRadar may show a Likely Fast or Likely Slow estimate based on pickup type. These are estimates and are clearly labelled.</p>
+          <h3 class="support-section-title" data-i18n="how.noLogin.title">No login required</h3>
+          <p class="support-body" data-i18n="how.noLogin.body">You do not need an account to use PickupRadar or earn RadarPoints. An optional email account can protect your RadarPoints so they can be recovered on another phone.</p>
+          <h3 class="support-section-title" data-i18n="how.help.title">Help other drivers</h3>
+          <p class="support-body" data-i18n="how.help.body">Accurate reports help the driver community make better pickup decisions.</p>
+        </div>
+        <button type="button" data-info-close class="modal-close" data-i18n="common.close">Close</button>
       </div>
     </div>
     <div data-support-modal class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="supportTitle">
       <div class="modal">
-        <h2 id="supportTitle">Support / About</h2>
+        <h2 id="supportTitle" data-i18n="support.kicker">Support / About</h2>
         <div class="support-modal-body">
-          <h3 class="support-section-title">PickupRadar</h3>
-          <p class="support-body">PickupRadar helps delivery drivers see and report pickup wait times.</p>
-          <h3 class="support-section-title">Support email</h3>
+          <h3 class="support-section-title" data-i18n="support.about.title">PickupRadar</h3>
+          <p class="support-body" data-i18n="support.about.body">PickupRadar helps delivery drivers see and report pickup wait times.</p>
+          <h3 class="support-section-title" data-i18n="support.email.title">Support email</h3>
           <p class="support-body"><a class="support-link" href="mailto:support@pickupradar.co.uk">support@pickupradar.co.uk</a></p>
-          <h3 class="support-section-title">Website</h3>
+          <h3 class="support-section-title" data-i18n="support.website.title">Website</h3>
           <p class="support-body"><a class="support-link" href="https://pickupradar.co.uk" target="_blank" rel="noopener noreferrer">pickupradar.co.uk</a></p>
-          <h3 class="support-section-title">Privacy summary</h3>
+          <h3 class="support-section-title" data-i18n="support.privacy.title">Privacy summary</h3>
           <ul class="info-list support-privacy-list">
-            <li>No login is required to use PickupRadar or earn RadarPoints</li>
-            <li>PickupRadar creates an anonymous Radar profile to track RadarPoints. Creating an account is optional and helps protect and recover your points.</li>
-            <li>If you choose to create an account, your email is used for sign-in and account recovery.</li>
-            <li>Reports and anonymous RadarPoints are linked to a device ID to reduce spam and keep points associated with this device</li>
-            <li>Wait reports may include venue, platform, wait time, whether the venue starts preparing the order on arrival, and time submitted</li>
+            <li data-i18n="support.privacy.noLogin" data-i18n-bullet>No login is required to use PickupRadar or earn RadarPoints</li>
+            <li data-i18n="support.privacy.radarProfile" data-i18n-bullet>PickupRadar creates an anonymous Radar profile to track RadarPoints. Creating an account is optional and helps protect and recover your points.</li>
+            <li data-i18n="support.privacy.accountEmail" data-i18n-bullet>If you choose to create an account, your email is used for sign-in and account recovery.</li>
+            <li data-i18n="support.privacy.deviceId" data-i18n-bullet>Reports and anonymous RadarPoints are linked to a device ID to reduce spam and keep points associated with this device</li>
+            <li data-i18n="support.privacy.reportData" data-i18n-bullet>Wait reports may include venue, platform, wait time, whether the venue starts preparing the order on arrival, and time submitted</li>
           </ul>
         </div>
-        <button type="button" data-support-close class="modal-close">Close</button>
+        <button type="button" data-support-close class="modal-close" data-i18n="common.close">Close</button>
       </div>
     </div>
 `;
@@ -254,6 +260,24 @@ function mountPickupRadarPreview(container, options) {
   root.innerHTML = PREVIEW_MARKUP;
   container.appendChild(root);
 
+  // Pop-ups live in a layer on <body>, outside the scaled phone and the page sections, so they
+  // always cover the whole screen and sit above the page. They still belong to this preview.
+  const layer = document.createElement('div');
+  layer.className = 'preview-modal-layer';
+  layer.setAttribute('data-preview-layer', '');
+  root.querySelectorAll('.modal-overlay').forEach((overlay) => layer.appendChild(overlay));
+  document.body.appendChild(layer);
+
+  function rootFind(selector) {
+    return root.querySelector(selector) || layer.querySelector(selector);
+  }
+
+  function rootFindAll(selector) {
+    return Array.prototype.slice.call(root.querySelectorAll(selector)).concat(
+      Array.prototype.slice.call(layer.querySelectorAll(selector))
+    );
+  }
+
   // Fit the phone on narrow screens. preview.css computes this with typed calc(), which
   // older iOS Safari, Firefox and Samsung Internet do not support; set the same scale here.
   function fitPreviewToViewport() {
@@ -267,9 +291,9 @@ function mountPickupRadarPreview(container, options) {
 
   const LOGIC = window.PickupRadarLogic;
   if (!LOGIC) {
-    root.querySelector('[data-home-body]').innerHTML =
+    rootFind('[data-home-body]').innerHTML =
       '<div class="state-box"><strong>Could not load live data</strong><span>Live data isn\'t available right now.</span><button type="button" class="retry-btn" data-retry>Try again</button></div>';
-    root.querySelector('[data-retry]').addEventListener('click', () => location.reload());
+    rootFind('[data-retry]').addEventListener('click', () => location.reload());
     return;
   }
   const VD = LOGIC.venueDisplay;
@@ -317,6 +341,30 @@ function mountPickupRadarPreview(container, options) {
   // Website-only English wording (browser instead of phone); other languages use the app's key.
   function tWeb(key, englishText, params) {
     return languageCode === 'en' ? interpolate(englishText, params) : t(key, englishText, params);
+  }
+
+  // Website-only words (no matching key in the app's dictionaries). English for now in every
+  // language; kept in one place so a separate, reviewed website translation can be added later.
+  const WEB_TEXT = {
+    'getApp.title': 'Get the app',
+    'getApp.body': 'Download PickupRadar to report waits and venue issues.<br><br>Reporting is only available in the mobile app.',
+    'getApp.cityAlert': 'Get a launch alert when {city} goes live.<br><br>Launch alerts are set up in the mobile app.',
+    'getApp.cityRequest': 'Ask for PickupRadar in your city.<br><br>City requests are sent from the mobile app.',
+    'store.iosSoon': 'iPhone app coming soon',
+    'store.androidSoon': 'Android coming soon',
+    'store.ios': 'Download on the App Store',
+    'store.android': 'Get it on Google Play',
+    'saved.appOnly': 'Saving pickup points is available in the mobile app.',
+    'location.useButton': 'Use my location to see nearby pickups',
+    'location.retryButton': 'Try location again',
+    'location.deniedBrowser': 'Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.',
+    'aria.filters': 'Filters',
+    'aria.tutorial': 'PickupRadar tutorial',
+    'aria.slide': 'Slide {number} of {total}',
+  };
+
+  function webText(id, params) {
+    return interpolate(WEB_TEXT[id] || '', params);
   }
 
   function isRtlLanguage(code) {
@@ -409,19 +457,27 @@ function mountPickupRadarPreview(container, options) {
   }
 
   function applyStaticTranslations() {
-    root.querySelectorAll('[data-i18n]').forEach((el) => {
+    rootFindAll('[data-i18n]').forEach((el) => {
       if (!el.hasAttribute('data-i18n-en')) el.setAttribute('data-i18n-en', el.textContent);
-      el.textContent = t(el.getAttribute('data-i18n'), el.getAttribute('data-i18n-en'));
+      let text = t(el.getAttribute('data-i18n'), el.getAttribute('data-i18n-en'));
+      // App privacy lines start with "• "; the list already draws a bullet.
+      if (el.hasAttribute('data-i18n-bullet')) text = text.replace(/^\s*[\u2022\u00B7-]\s*/, '');
+      el.textContent = text;
     });
-    root.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
+    // Pop-ups follow the language direction; website-only English parts keep lang="en" dir="ltr".
+    rootFindAll('.modal').forEach((modal) => {
+      modal.setAttribute('dir', isRtlLanguage(languageCode) ? 'rtl' : 'ltr');
+      modal.setAttribute('lang', languageCode);
+    });
+    rootFindAll('[data-i18n-placeholder]').forEach((el) => {
       if (!el.hasAttribute('data-i18n-en-placeholder')) el.setAttribute('data-i18n-en-placeholder', el.getAttribute('placeholder') || '');
       el.setAttribute('placeholder', t(el.getAttribute('data-i18n-placeholder'), el.getAttribute('data-i18n-en-placeholder')));
     });
-    root.querySelectorAll('[data-i18n-aria]').forEach((el) => {
+    rootFindAll('[data-i18n-aria]').forEach((el) => {
       if (!el.hasAttribute('data-i18n-en-aria')) el.setAttribute('data-i18n-en-aria', el.getAttribute('aria-label') || '');
       el.setAttribute('aria-label', t(el.getAttribute('data-i18n-aria'), el.getAttribute('data-i18n-en-aria')));
     });
-    root.querySelectorAll('[data-language-label]').forEach((el) => {
+    rootFindAll('[data-language-label]').forEach((el) => {
       el.textContent = languageDisplayName(languageCode);
     });
   }
@@ -529,27 +585,27 @@ function mountPickupRadarPreview(container, options) {
   let activeDialog = null;
   let dialogReturnFocus = null;
 
-  const cityPillBtn = root.querySelector('[data-city-pill]');
-  const cityListBody = root.querySelector('[data-city-list]');
-  const citySearchInput = root.querySelector('[data-city-search]');
-  const homeBody = root.querySelector('[data-home-body]');
-  const searchBody = root.querySelector('[data-search-body]');
-  const searchInput = root.querySelector('[data-search-input]');
-  const searchHeading = root.querySelector('[data-search-heading]');
-  const searchEmpty = root.querySelector('[data-search-empty]');
-  const missingZero = root.querySelector('[data-missing-zero]');
-  const missingResults = root.querySelector('[data-missing-results]');
-  const reportBody = root.querySelector('[data-report-body]');
-  const reportFooter = root.querySelector('[data-report-footer]');
-  const homeScreen = root.querySelector('[data-screen="home"]');
-  const cityScreen = root.querySelector('[data-screen="city"]');
-  const searchScreen = root.querySelector('[data-screen="search"]');
-  const reportWaitScreen = root.querySelector('[data-screen="report-wait"]');
-  const onboardingScreen = root.querySelector('[data-screen="onboarding"]');
-  const locationIntroScreen = root.querySelector('[data-screen="location-intro"]');
-  const downloadModal = root.querySelector('[data-download-modal]');
-  const infoModal = root.querySelector('[data-info-modal]');
-  const supportModal = root.querySelector('[data-support-modal]');
+  const cityPillBtn = rootFind('[data-city-pill]');
+  const cityListBody = rootFind('[data-city-list]');
+  const citySearchInput = rootFind('[data-city-search]');
+  const homeBody = rootFind('[data-home-body]');
+  const searchBody = rootFind('[data-search-body]');
+  const searchInput = rootFind('[data-search-input]');
+  const searchHeading = rootFind('[data-search-heading]');
+  const searchEmpty = rootFind('[data-search-empty]');
+  const missingZero = rootFind('[data-missing-zero]');
+  const missingResults = rootFind('[data-missing-results]');
+  const reportBody = rootFind('[data-report-body]');
+  const reportFooter = rootFind('[data-report-footer]');
+  const homeScreen = rootFind('[data-screen="home"]');
+  const cityScreen = rootFind('[data-screen="city"]');
+  const searchScreen = rootFind('[data-screen="search"]');
+  const reportWaitScreen = rootFind('[data-screen="report-wait"]');
+  const onboardingScreen = rootFind('[data-screen="onboarding"]');
+  const locationIntroScreen = rootFind('[data-screen="location-intro"]');
+  const downloadModal = rootFind('[data-download-modal]');
+  const infoModal = rootFind('[data-info-modal]');
+  const supportModal = rootFind('[data-support-modal]');
   const supportMode = options.supportMode === 'modal' ? 'modal' : 'link';
 
   async function supabaseGet(path) {
@@ -939,7 +995,7 @@ function mountPickupRadarPreview(container, options) {
         '<div class="state-box"><strong>' + escapeHtml(t('startup.error.title', "Can't connect right now")) + '</strong><span>' +
         escapeHtml(t('startup.error.body', 'Check your internet connection and try again.')) +
         '</span><button type="button" class="retry-btn" data-retry>' + escapeHtml(t('startup.error.retry', 'Try again')) + '</button></div>';
-      root.querySelector('[data-retry]').addEventListener('click', () => {
+      rootFind('[data-retry]').addEventListener('click', () => {
         loadCityData(activeCity).catch((error) => {
           console.error(error);
           loadError = "Live data isn't available right now.";
@@ -951,7 +1007,8 @@ function mountPickupRadarPreview(container, options) {
 
     if (selectedFilter === 'Saved') {
       homeBody.innerHTML =
-        '<div class="state-box"><strong>No saved pickup points</strong><span>Saving pickup points is available in the mobile app.</span></div>';
+        '<div class="state-box"><strong>' + escapeHtml(t('home.saved.empty.title', 'No saved pickup points yet')) + '</strong><span lang="en" dir="ltr">' +
+        escapeHtml(webText('saved.appOnly')) + '</span></div>';
       return;
     }
 
@@ -1137,7 +1194,7 @@ function mountPickupRadarPreview(container, options) {
     cityScreen.classList.toggle('hidden', name !== 'city');
     searchScreen.classList.toggle('hidden', name !== 'search');
     reportWaitScreen.classList.toggle('hidden', name !== 'report-wait');
-    const languageScreenEl = root.querySelector('[data-screen="language"]');
+    const languageScreenEl = rootFind('[data-screen="language"]');
     if (languageScreenEl) languageScreenEl.classList.toggle('hidden', name !== 'language');
   }
 
@@ -1243,7 +1300,7 @@ function mountPickupRadarPreview(container, options) {
     searchHeading.textContent = t('report.suggested', 'Suggested pickup points');
     searchHeading.classList.remove('hidden');
     selectedFilter = 'All';
-    root.querySelectorAll('.filter-chip').forEach((chip) => {
+    rootFindAll('.filter-chip').forEach((chip) => {
       const active = chip.getAttribute('data-filter') === 'All';
       chip.classList.toggle('active', active);
       chip.setAttribute('aria-selected', active ? 'true' : 'false');
@@ -1252,7 +1309,7 @@ function mountPickupRadarPreview(container, options) {
     closeDownloadModal();
     closeInfoModal();
     closeSupportModal();
-    root.querySelectorAll('.app-scroll').forEach((el) => {
+    rootFindAll('.app-scroll').forEach((el) => {
       el.scrollTop = 0;
     });
   }
@@ -1304,7 +1361,7 @@ function mountPickupRadarPreview(container, options) {
           // App: "Notify me when live" opens the launch alert sheet. On the website it points to the app.
           openDownloadModal(
             row,
-            'Get a launch alert when ' + escapeHtml(cityDisplayName(city || '')) + ' goes live.<br><br>Launch alerts are set up in the mobile app.'
+            webText('getApp.cityAlert', { city: escapeHtml(cityDisplayName(city || '')) })
           );
           return;
         }
@@ -1330,7 +1387,7 @@ function mountPickupRadarPreview(container, options) {
     if (request) {
       request.addEventListener('click', () => openDownloadModal(
         request,
-        'Ask for PickupRadar in your city.<br><br>City requests are sent from the mobile app.'
+        webText('getApp.cityRequest')
       ));
     }
   }
@@ -1375,7 +1432,7 @@ function mountPickupRadarPreview(container, options) {
   // App: home.location.* (English says "browser settings" instead of the phone's Settings).
   function locationMessage(status) {
     if (status === 'finding') return t('home.location.finding', 'Finding your location…');
-    if (status === 'denied') return tWeb('home.location.denied', 'Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.');
+    if (status === 'denied') return tWeb('home.location.denied', webText('location.deniedBrowser'));
     if (status === 'error') return t('home.location.error', 'Location is unavailable right now. Try again later, or choose a city to browse PickupRadar.');
     return '';
   }
@@ -1383,12 +1440,12 @@ function mountPickupRadarPreview(container, options) {
   // App: HomeScreen firstTabLabel. "Nearby" unless location is on and the city
   // being viewed is not the one you are in, then "All".
   function updateFirstTab() {
-    const label = root.querySelector('[data-first-tab-label]');
-    const icon = root.querySelector('[data-first-tab-icon]');
+    const label = rootFind('[data-first-tab-label]');
+    const icon = rootFind('[data-first-tab-icon]');
     const showAll = Boolean(userCoords) && nearestLiveCityName() !== activeCity;
     if (label) label.textContent = showAll ? t('home.tab.all', 'All') : t('home.tab.nearby', 'Nearby');
     if (icon) icon.innerHTML = prIcon(showAll ? 'list' : 'location', 16);
-    const useButton = root.querySelector('[data-use-location]');
+    const useButton = rootFind('[data-use-location]');
     if (useButton) {
       // Ask only after a tap: offered until location is on, or the browser has blocked it.
       const offer = HAS_LOCATION_LOGIC && (locationStatus === 'idle' || locationStatus === 'error');
@@ -1396,11 +1453,11 @@ function mountPickupRadarPreview(container, options) {
       const useLabel = useButton.querySelector('[data-use-location-label]');
       if (useLabel) {
         useLabel.textContent = locationStatus === 'error'
-          ? tWeb('startup.error.retry', 'Try location again')
-          : tWeb('onboarding.location.continue', 'Use my location to see nearby pickups');
+          ? tWeb('startup.error.retry', webText('location.retryButton'))
+          : tWeb('onboarding.location.continue', webText('location.useButton'));
       }
     }
-    const line = root.querySelector('[data-location-line]');
+    const line = rootFind('[data-location-line]');
     if (line) {
       const text = locationMessage(locationStatus);
       line.textContent = text;
@@ -2055,11 +2112,11 @@ function mountPickupRadarPreview(container, options) {
       back.focus();
       return;
     }
-    const fallback = root.querySelector('[data-help-open]') || cityPillBtn;
+    const fallback = rootFind('[data-help-open]') || cityPillBtn;
     if (fallback) fallback.focus();
   }
 
-  const DOWNLOAD_MODAL_TEXT = 'Download PickupRadar to report waits and venue issues.<br><br>Reporting is only available in the mobile app.';
+  const DOWNLOAD_MODAL_TEXT = webText('getApp.body');
 
   // messageHtml is built only from fixed text and escaped city names.
   function openDownloadModal(trigger, messageHtml) {
@@ -2095,21 +2152,23 @@ function mountPickupRadarPreview(container, options) {
   }
 
   function setupSupportControl() {
-    const supportEl = root.querySelector('[data-support]');
+    const supportEl = rootFind('[data-support]');
     if (!supportEl) return;
 
     if (supportMode === 'modal') {
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'help-sheet-row';
-      btn.textContent = 'Support';
+      btn.textContent = t('home.help.support', 'Support');
       btn.setAttribute('data-support', '');
+      btn.setAttribute('data-i18n', 'home.help.support');
+      btn.setAttribute('data-i18n-en', 'Support');
       supportEl.replaceWith(btn);
       btn.addEventListener('click', () => {
         closeHelpSheet({ keepFocus: true });
         openSupportModal(btn);
       });
-      root.querySelector('[data-support-close]').addEventListener('click', closeSupportModal);
+      rootFind('[data-support-close]').addEventListener('click', closeSupportModal);
       supportModal.addEventListener('click', (event) => {
         if (event.target === supportModal) closeSupportModal();
       });
@@ -2117,21 +2176,21 @@ function mountPickupRadarPreview(container, options) {
   }
 
   function setupStoreButtons() {
-    const storeRow = root.querySelector('[data-store-row]');
+    const storeRow = rootFind('[data-store-row]');
     storeRow.innerHTML = '';
 
     if (APP_STORE_URL) {
       const link = document.createElement('a');
       link.className = 'store-btn primary';
       link.href = APP_STORE_URL;
-      link.textContent = 'Download on the App Store';
+      link.textContent = webText('store.ios');
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
       storeRow.appendChild(link);
     } else {
       const soon = document.createElement('span');
       soon.className = 'store-btn secondary';
-      soon.textContent = 'iPhone app coming soon';
+      soon.textContent = webText('store.iosSoon');
       storeRow.appendChild(soon);
     }
 
@@ -2139,35 +2198,35 @@ function mountPickupRadarPreview(container, options) {
       const link = document.createElement('a');
       link.className = 'store-btn primary';
       link.href = PLAY_STORE_URL;
-      link.textContent = 'Get it on Google Play';
+      link.textContent = webText('store.android');
       link.target = '_blank';
       link.rel = 'noopener noreferrer';
       storeRow.appendChild(link);
     } else {
       const soon = document.createElement('span');
       soon.className = 'store-btn secondary';
-      soon.textContent = 'Android coming soon';
+      soon.textContent = webText('store.androidSoon');
       storeRow.appendChild(soon);
     }
   }
 
   function closeHelpSheet(options) {
-    const sheet = root.querySelector('[data-help-sheet]');
+    const sheet = rootFind('[data-help-sheet]');
     if (sheet) sheet.classList.add('hidden');
     if (activeDialog === sheet && !(options && options.keepFocus)) restoreDialogFocus();
     else if (activeDialog === sheet) activeDialog = null;
   }
 
   function openHelpSheet(trigger) {
-    const sheet = root.querySelector('[data-help-sheet]');
+    const sheet = rootFind('[data-help-sheet]');
     if (!sheet) return;
     sheet.classList.remove('hidden');
     beginDialog(sheet, trigger);
   }
 
-  root.querySelectorAll('.filter-chip').forEach((chip) => {
+  rootFindAll('.filter-chip').forEach((chip) => {
     chip.addEventListener('click', () => {
-      root.querySelectorAll('.filter-chip').forEach((item) => {
+      rootFindAll('.filter-chip').forEach((item) => {
         const active = item === chip;
         item.classList.toggle('active', active);
         item.setAttribute('aria-selected', active ? 'true' : 'false');
@@ -2180,10 +2239,10 @@ function mountPickupRadarPreview(container, options) {
   });
 
   cityPillBtn.addEventListener('click', openCityPicker);
-  root.querySelector('[data-city-close]').addEventListener('click', previewBack);
+  rootFind('[data-city-close]').addEventListener('click', previewBack);
   citySearchInput.addEventListener('input', renderCityList);
 
-  root.querySelector('[data-open-search]').addEventListener('click', () => {
+  rootFind('[data-open-search]').addEventListener('click', () => {
     searchReturnScreen = 'home';
     searchInput.value = '';
     showScreen('search');
@@ -2192,23 +2251,23 @@ function mountPickupRadarPreview(container, options) {
     searchInput.focus();
   });
 
-  root.querySelector('[data-report-wait-btn]').addEventListener('click', openReportWaitSearch);
-  root.querySelector('[data-use-location]').addEventListener('click', requestLocation);
-  root.querySelectorAll('[data-open-app]').forEach((button) => {
+  rootFind('[data-report-wait-btn]').addEventListener('click', openReportWaitSearch);
+  rootFind('[data-use-location]').addEventListener('click', requestLocation);
+  rootFindAll('[data-open-app]').forEach((button) => {
     button.addEventListener('click', function () {
       openDownloadModal(button);
     });
   });
-  root.querySelector('[data-help-open]').addEventListener('click', function (event) {
+  rootFind('[data-help-open]').addEventListener('click', function (event) {
     openHelpSheet(event.currentTarget);
   });
-  root.querySelector('[data-help-close]').addEventListener('click', closeHelpSheet);
-  root.querySelector('[data-help-sheet]').addEventListener('click', (event) => {
-    if (event.target === root.querySelector('[data-help-sheet]')) closeHelpSheet();
+  rootFind('[data-help-close]').addEventListener('click', closeHelpSheet);
+  rootFind('[data-help-sheet]').addEventListener('click', (event) => {
+    if (event.target === rootFind('[data-help-sheet]')) closeHelpSheet();
   });
-  root.querySelector('[data-home-brand]').addEventListener('click', () => {
+  rootFind('[data-home-brand]').addEventListener('click', () => {
     selectedFilter = 'All';
-    root.querySelectorAll('.filter-chip').forEach((chip) => {
+    rootFindAll('.filter-chip').forEach((chip) => {
       const active = chip.getAttribute('data-filter') === 'All';
       chip.classList.toggle('active', active);
       chip.setAttribute('aria-selected', active ? 'true' : 'false');
@@ -2221,16 +2280,16 @@ function mountPickupRadarPreview(container, options) {
     renderHomeList();
   });
 
-  root.querySelector('[data-search-back]').addEventListener('click', previewBack);
+  rootFind('[data-search-back]').addEventListener('click', previewBack);
 
   searchInput.addEventListener('input', function () {
     rememberSearchQuery();
     renderSearchList();
   });
 
-  root.querySelector('[data-report-back]').addEventListener('click', previewBack);
+  rootFind('[data-report-back]').addEventListener('click', previewBack);
 
-  const howItWorksBtn = root.querySelector('[data-how-it-works]');
+  const howItWorksBtn = rootFind('[data-how-it-works]');
   if (options.howItWorksScrollTo) {
     howItWorksBtn.addEventListener('click', () => {
       closeHelpSheet();
@@ -2242,13 +2301,13 @@ function mountPickupRadarPreview(container, options) {
       closeHelpSheet({ keepFocus: true });
       openInfoModal(howItWorksBtn);
     });
-    root.querySelector('[data-info-close]').addEventListener('click', closeInfoModal);
+    rootFind('[data-info-close]').addEventListener('click', closeInfoModal);
     infoModal.addEventListener('click', (event) => {
       if (event.target === infoModal) closeInfoModal();
     });
   }
 
-  root.querySelector('[data-modal-close]').addEventListener('click', closeDownloadModal);
+  rootFind('[data-modal-close]').addEventListener('click', closeDownloadModal);
   downloadModal.addEventListener('click', (event) => {
     if (event.target === downloadModal) closeDownloadModal();
   });
@@ -2263,7 +2322,7 @@ function mountPickupRadarPreview(container, options) {
   });
 
   document.addEventListener('keydown', function (event) {
-    if (!activeDialog || activeDialog.classList.contains('hidden') || !root.contains(activeDialog)) return;
+    if (!activeDialog || activeDialog.classList.contains('hidden') || !(root.contains(activeDialog) || layer.contains(activeDialog))) return;
     if (event.key === 'Escape') {
       event.preventDefault();
       if (activeDialog === downloadModal) closeDownloadModal();
@@ -2298,7 +2357,7 @@ function mountPickupRadarPreview(container, options) {
 
   // Re-draw everything that shows app words in the new language.
   function applyLanguage() {
-    const phone = root.querySelector('.phone-screen');
+    const phone = rootFind('.phone-screen');
     if (phone) {
       phone.setAttribute('lang', languageCode);
       phone.setAttribute('dir', isRtlLanguage(languageCode) ? 'rtl' : 'ltr');
@@ -2347,9 +2406,9 @@ function mountPickupRadarPreview(container, options) {
   }
 
   // ---- Language screen (app: LanguagePickerScreen; onboarding uses the full list) ----
-  const languageScreen = root.querySelector('[data-screen="language"]');
-  const languageList = root.querySelector('[data-language-list]');
-  const languageSearch = root.querySelector('[data-language-search]');
+  const languageScreen = rootFind('[data-screen="language"]');
+  const languageList = rootFind('[data-language-list]');
+  const languageSearch = rootFind('[data-language-search]');
   let languageMoreExpanded = false;
   let languageFullList = false;
   let languageReturnScreen = null;
@@ -2455,10 +2514,10 @@ function mountPickupRadarPreview(container, options) {
     }, 250);
   }
 
-  root.querySelectorAll('[data-open-language]').forEach((button) => {
+  rootFindAll('[data-open-language]').forEach((button) => {
     button.addEventListener('click', () => openLanguageScreen(button));
   });
-  root.querySelector('[data-language-close]').addEventListener('click', closeLanguageScreen);
+  rootFind('[data-language-close]').addEventListener('click', closeLanguageScreen);
   languageSearch.addEventListener('input', renderLanguageList);
   // Same choice in another tab of this site.
   window.addEventListener('storage', (event) => {
@@ -2479,8 +2538,8 @@ function mountPickupRadarPreview(container, options) {
       scroller.scrollTo({ top: 0, behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
     });
   }
-  setupScrollTop(homeScreen.querySelector('.app-scroll'), root.querySelector('[data-home-top]'));
-  setupScrollTop(cityListBody, root.querySelector('[data-city-top]'), 240);
+  setupScrollTop(homeScreen.querySelector('.app-scroll'), rootFind('[data-home-top]'));
+  setupScrollTop(cityListBody, rootFind('[data-city-top]'), 240);
 
   // ---- Live updates (app: private city:<slug> broadcast "stats_changed") ----
   // Receive-only Supabase Realtime channel with the public anon key, then re-fetch the
@@ -2790,7 +2849,7 @@ function mountPickupRadarPreview(container, options) {
     tutorialReplay = false;
     onboardingActive = false;
     showScreen('home');
-    const helpButton = root.querySelector('[data-help-open]');
+    const helpButton = rootFind('[data-help-open]');
     if (helpButton && onboardingScreen.contains(document.activeElement)) helpButton.focus({ preventScroll: true });
   }
 
@@ -2857,7 +2916,7 @@ function mountPickupRadarPreview(container, options) {
   }
 
   if (options.tutorial) {
-    const replayButton = root.querySelector('[data-tutorial-replay]');
+    const replayButton = rootFind('[data-tutorial-replay]');
     replayButton.classList.remove('hidden');
     replayButton.addEventListener('click', () => {
       closeHelpSheet({ keepFocus: true });
@@ -2880,7 +2939,7 @@ function mountPickupRadarPreview(container, options) {
 
   applyStaticTranslations();
   (function startLanguage() {
-    const phone = root.querySelector('.phone-screen');
+    const phone = rootFind('.phone-screen');
     if (phone) {
       phone.setAttribute('lang', 'en');
       phone.setAttribute('dir', 'ltr');
@@ -2909,9 +2968,11 @@ function mountPickupRadarPreview(container, options) {
     } catch (error) {
       console.error(error);
       loadError = "Live data isn't available right now.";
-      root.querySelector('[data-home-body]').innerHTML =
-        '<div class="state-box"><strong>Could not load live data</strong><span>Live data isn\'t available right now.</span><button type="button" class="retry-btn" data-retry>Try again</button></div>';
-      root.querySelector('[data-retry]').addEventListener('click', () => location.reload());
+      rootFind('[data-home-body]').innerHTML =
+        '<div class="state-box"><strong>' + escapeHtml(t('startup.error.title', "Can't connect right now")) + '</strong><span>' +
+        escapeHtml(t('startup.error.body', 'Check your internet connection and try again.')) +
+        '</span><button type="button" class="retry-btn" data-retry>' + escapeHtml(t('startup.error.retry', 'Try again')) + '</button></div>';
+      rootFind('[data-retry]').addEventListener('click', () => location.reload());
     }
   })();
 }
