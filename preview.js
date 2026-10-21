@@ -82,11 +82,12 @@ const PREVIEW_MARKUP = `
                 <button type="button" class="rp-pill" data-open-app>RP</button>
               </div>
               <div class="filter-row" role="tablist" aria-label="Filters">
-                <button type="button" class="filter-chip active" data-filter="All" role="tab" aria-selected="true">${prIcon('list', 16)}<span>All</span></button>
+                <button type="button" class="filter-chip active" data-filter="All" role="tab" aria-selected="true"><span class="first-tab-icon" data-first-tab-icon>${prIcon('location', 16)}</span><span data-first-tab-label>Nearby</span></button>
                 <button type="button" class="filter-chip" data-filter="Fast" role="tab" aria-selected="false">${prIcon('flash', 16)}<span>Fast</span></button>
                 <button type="button" class="filter-chip" data-filter="Slow" role="tab" aria-selected="false">${prIcon('hourglass', 16)}<span>Slow</span></button>
                 <button type="button" class="filter-chip" data-filter="Saved" role="tab" aria-selected="false">${prIcon('bookmark', 16)}<span>Saved</span></button>
               </div>
+              <p class="nearby-status-line hidden" data-location-line role="status"></p>
               <button type="button" class="search-row" data-open-search>
                 ${prIcon('search', 17)}
                 <span>Search pickup points</span>
@@ -109,9 +110,9 @@ const PREVIEW_MARKUP = `
         </div>
         <div data-screen="city" class="screen hidden">
           <div class="city-picker-header">
-            <button type="button" class="back-btn" data-city-close>Close</button>
-            <h2 class="city-picker-title">Choose your area</h2>
-            <input data-city-search class="city-search-input" type="search" placeholder="Search area" autocomplete="off" autocapitalize="off" spellcheck="false" data-lpignore="true" />
+            <button type="button" class="back-btn" data-city-close>${prIcon('arrow', 16)}<span>Back</span></button>
+            <h2 class="city-picker-title">Browse cities</h2>
+            <input data-city-search class="city-search-input" type="search" placeholder="Search cities" autocomplete="off" autocapitalize="off" spellcheck="false" data-lpignore="true" />
           </div>
           <div class="app-scroll" data-city-list></div>
         </div>
@@ -147,7 +148,7 @@ const PREVIEW_MARKUP = `
     <div data-download-modal class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
       <div class="modal">
         <h2 id="modalTitle">Get the app</h2>
-        <p>Download PickupRadar to report waits and venue issues.<br><br>Reporting is only available in the mobile app.</p>
+        <p data-modal-text>Download PickupRadar to report waits and venue issues.<br><br>Reporting is only available in the mobile app.</p>
         <div class="store-row" data-store-row></div>
         <button type="button" data-modal-close class="modal-close">Close</button>
       </div>
@@ -221,6 +222,12 @@ function mountPickupRadarPreview(container, options) {
   const VD = LOGIC.venueDisplay;
   const PRED = LOGIC.venuePrediction;
   const WC = LOGIC.waitColors;
+  // Location, distances and the city list use the app's own lib/geo.ts and
+  // lib/liveCitySelection.ts. An older cached bundle without them just skips these features.
+  const GEO = LOGIC.geo || null;
+  const LCS = LOGIC.liveCitySelection || null;
+  const CC = LOGIC.countryConfig || null;
+  const HAS_LOCATION_LOGIC = Boolean(GEO && LCS && CC && navigator.geolocation);
 
   const APP_STORE_URL = '';
   const PLAY_STORE_URL = '';
@@ -254,9 +261,11 @@ function mountPickupRadarPreview(container, options) {
   ];
 
   const CURATED_FALLBACK_LIMIT = 6;
-  const HOME_TAB_LIMITS = options.compact
-    ? { All: 3, Fast: 3, Slow: 3 }
-    : { All: 12, Fast: 12, Slow: 12 };
+  // Same caps as the app's Home screen (HOME_TAB_LIMITS / NEARBY_WITH_LOCATION_LIMIT).
+  const HOME_TAB_LIMITS = { All: 12, Fast: 12, Slow: 12 };
+  const NEARBY_WITH_LOCATION_LIMIT = 30;
+  const MAX_LIVE_REPORT_DISTANCE_MILES = GEO ? GEO.MAX_LIVE_REPORT_DISTANCE_MILES : 0.5;
+  const NEAREST_CITY_MAX_MILES = 35;
   const BRAND_PRIORITY = ["McDonald's", 'KFC', 'Burger King', 'Subway', 'Greggs', 'Taco Bell', 'Popeyes', "Pepe's", 'Dixy', 'German Doner Kebab', 'Starbucks', 'Costa', 'Co-op', 'Tesco', "Sainsbury's", 'One Stop'];
   const NORMALIZED_BRAND_PRIORITY = BRAND_PRIORITY.map((brand) => normalise(brand));
 
@@ -283,6 +292,10 @@ function mountPickupRadarPreview(container, options) {
   ];
 
   let liveCities = [];
+  // Browser location (only if the visitor allows it). Used in this browser only, to sort
+  // and label pickup points by distance like the app. It is never sent anywhere.
+  let userCoords = null;
+  let locationStatus = 'idle';
   let activeCity = DEFAULT_CITY;
   let venueStats = [];
   let selectedFilter = 'All';
@@ -482,8 +495,78 @@ function mountPickupRadarPreview(container, options) {
     });
   }
 
+  function toCoordNumber(value) {
+    if (typeof value === 'number') return Number.isFinite(value) ? value : null;
+    if (typeof value === 'string' && value.trim() !== '') {
+      const parsed = Number(value);
+      return Number.isFinite(parsed) ? parsed : null;
+    }
+    return null;
+  }
+
+  function venueCoords(venue) {
+    const lat = toCoordNumber(venue.lat);
+    const lng = toCoordNumber(venue.lng);
+    if (lat === null || lng === null) return null;
+    return { lat: lat, lng: lng };
+  }
+
+  function withDistance(venue) {
+    const coords = userCoords ? venueCoords(venue) : null;
+    return { ...venue, distanceMiles: coords ? GEO.distanceInMiles(userCoords, coords) : null };
+  }
+
+  function distanceUnit() {
+    return CC ? CC.getDistanceUnitForCity(activeCity) : 'mi';
+  }
+
+  // App: HomeScreen sortByDistance (coords first, no-coords after).
+  function sortByDistance(list) {
+    return list.map(withDistance).sort((a, b) => {
+      const aDist = a.distanceMiles;
+      const bDist = b.distanceMiles;
+      if (aDist === null) return bDist === null ? 0 : 1;
+      if (bDist === null) return -1;
+      return aDist - bDist;
+    });
+  }
+
+  // App: HomeScreen sortByFastSlowRelevance (location ON only).
+  function sortByFastSlowRelevance(list) {
+    const now = Date.now();
+    const bucket = (dist) => (dist === null ? 3 : dist <= 2 ? 0 : dist <= 5 ? 1 : 2);
+    return list.map(withDistance).sort((a, b) => {
+      const bucketDiff = bucket(a.distanceMiles) - bucket(b.distanceMiles);
+      if (bucketDiff !== 0) return bucketDiff;
+      const aReal = WC.isLocallyLiveWait(a, now);
+      const bReal = WC.isLocallyLiveWait(b, now);
+      if (aReal !== bReal) return aReal ? -1 : 1;
+      if (aReal && bReal) {
+        const aLast = a.lastReportMinutes ?? Number.POSITIVE_INFINITY;
+        const bLast = b.lastReportMinutes ?? Number.POSITIVE_INFINITY;
+        if (aLast !== bLast) return aLast - bLast;
+      }
+      const aCloser = a.distanceMiles === null ? Number.POSITIVE_INFINITY : a.distanceMiles;
+      const bCloser = b.distanceMiles === null ? Number.POSITIVE_INFINITY : b.distanceMiles;
+      if (aCloser !== bCloser) return aCloser - bCloser;
+      return 0;
+    });
+  }
+
   function getVisibleVenues(filter) {
     const venues = venueStats;
+
+    if (userCoords && filter === 'All') {
+      return sortByDistance(venues).slice(0, NEARBY_WITH_LOCATION_LIMIT);
+    }
+    if (userCoords && (filter === 'Fast' || filter === 'Slow')) {
+      const wanted = filter === 'Fast' ? 'fast' : 'slow';
+      const live = venues.filter((venue) => venue.currentWaitMinutes !== null && effectiveStatus(venue) === wanted);
+      const predicted = venues
+        .filter((venue) => venue.currentWaitMinutes === null && effectiveStatus(venue) === wanted)
+        .map((venue) => ({ ...venue, isPredictedFallback: true }));
+      return sortByFastSlowRelevance([...live, ...predicted]).slice(0, HOME_TAB_LIMITS[filter]);
+    }
 
     if (filter === 'All') {
       const liveNearby = venues
@@ -582,11 +665,20 @@ function mountPickupRadarPreview(container, options) {
     if (item.systemDownWarning) {
       badges += '<span class="urgent-badge">Tablet/server issue reported</span>';
     }
+    const hasDistance = userCoords && typeof item.distanceMiles === 'number' && Number.isFinite(item.distanceMiles);
+    const canShowReportRpPrompt = hasDistance && item.distanceMiles <= MAX_LIVE_REPORT_DISTANCE_MILES && !waitBadgeText;
+    const distanceHtml = hasDistance
+      ? '<span class="venue-distance" style="color:' + (GEO.getDistanceTextColor(item.distanceMiles) || '#8FB5D7') + ';">' +
+        escapeHtml(GEO.formatDistance(item.distanceMiles, distanceUnit())) +
+        '</span>'
+      : '';
     const pill = waitBadgeText
       ? '<span class="wait-badge" style="background:' + waitColors.backgroundColor + ';color:' + waitColors.color + ';">' +
         escapeHtml(waitBadgeText) +
         '</span>'
-      : '<span class="no-recent-wait">No recent wait</span>';
+      : canShowReportRpPrompt
+        ? '<span class="report-rp-prompt">Report needed · +15 RP</span>'
+        : '<span class="no-recent-wait">No recent wait</span>';
 
     return (
       '<article class="venue-card" style="' + cardStyle + '" data-venue-id="' + escapeHtml(item.id) + '" tabindex="0" role="button">' +
@@ -597,7 +689,9 @@ function mountPickupRadarPreview(container, options) {
       '<div class="venue-identity">' +
       '<h3 class="venue-name">' + escapeHtml(title) + '</h3>' +
       (area ? '<p class="venue-area">' + escapeHtml(area) + '</p>' : '') +
-      '</div></div>' +
+      '</div>' +
+      distanceHtml +
+      '</div>' +
       badges +
       '<div class="card-bottom">' +
       (evidenceText ? '<p class="evidence-line">' + escapeHtml(evidenceText) + '</p>' : '<span class="evidence-line"></span>') +
@@ -650,9 +744,9 @@ function mountPickupRadarPreview(container, options) {
     const visible = getVisibleVenues(selectedFilter);
     if (visible.length === 0) {
       const empty = selectedFilter === 'Fast'
-        ? ['No likely fast pickups', 'Try All or Slow.']
+        ? ['No likely fast pickups', 'Try Nearby or Slow.']
         : selectedFilter === 'Slow'
-          ? ['No likely slow pickups', 'Try All or Fast.']
+          ? ['No likely slow pickups', 'Try Nearby or Fast.']
           : ['No pickup points found', 'Try another area.'];
       homeBody.innerHTML = '<div class="state-box"><strong>' + empty[0] + '</strong><span>' + empty[1] + '</span></div>';
       return;
@@ -695,6 +789,12 @@ function mountPickupRadarPreview(container, options) {
     const iconColor = WC.getVenueWaitIconColor(venue, now, PRED.getEffectiveVenueStatus(venue, now));
     const title = VD.getVenueDisplayName(venue, activeCity, eligible);
     const area = VD.getVenueHomeLocationLabel(venue, eligible, activeCity);
+    const coords = userCoords ? venueCoords(venue) : null;
+    const miles = coords ? GEO.distanceInMiles(userCoords, coords) : null;
+    const distanceHtml = miles !== null
+      ? '<span class="venue-result-distance" style="color:' + (GEO.getDistanceTextColor(miles) || '#8FB5D7') + ';">' +
+        escapeHtml(GEO.formatDistance(miles, distanceUnit())) + '</span>'
+      : '';
     return (
       '<button type="button" class="venue-result" data-venue-id="' + escapeHtml(venue.id) + '">' +
       '<span class="venue-type-icon" style="color:' + iconColor + ';">' +
@@ -703,6 +803,7 @@ function mountPickupRadarPreview(container, options) {
       '<span class="venue-result-text">' +
       '<span class="venue-result-name">' + escapeHtml(title) + '</span>' +
       (area ? '<span class="venue-result-area">' + escapeHtml(area) + '</span>' : '') +
+      distanceHtml +
       '</span></button>'
     );
   }
@@ -711,7 +812,9 @@ function mountPickupRadarPreview(container, options) {
     const trimmedQuery = searchInput.value.trim();
     const searchActive = trimmedQuery.length >= 2;
     const eligible = eligibleReportVenues();
-    const list = searchActive ? searchReportVenues(eligible, trimmedQuery) : suggestedReportVenues(eligible);
+    const baseList = searchActive ? searchReportVenues(eligible, trimmedQuery) : suggestedReportVenues(eligible);
+    // App: ReportWaitScreen sortVenuesByDistance when location is on.
+    const list = userCoords ? sortByDistance(baseList) : baseList;
     const zeroResults = searchActive && list.length === 0;
 
     if (!searchActive) {
@@ -910,13 +1013,36 @@ function mountPickupRadarPreview(container, options) {
     if (name) name.textContent = activeCity;
   }
 
-  function renderCityRow(city, selected) {
+  // App: CitySelectorScreen in public mode, rows from lib/liveCitySelection.ts
+  // buildPublicCityBrowseView (live city, Coming next, then Coming soon).
+  function cityDisplayName(city) {
+    return CC ? CC.getCityDisplayName(city) : city;
+  }
+
+  function renderCityRow(row, nearestLiveCity) {
+    const city = row.city;
+    const disabled = row.status !== 'live';
+    const selected = !disabled && city === activeCity;
+    const isPhysicalCity = Boolean(userCoords && !disabled && nearestLiveCity && city === nearestLiveCity);
+    const distanceLabel = userCoords && !isPhysicalCity && GEO ? GEO.formatCityDistance(userCoords, city, venueStats) : null;
+    const statusLabel = disabled
+      ? (row.status === 'comingNext' ? 'Coming next' : 'Coming soon')
+      : selected ? 'Viewing' : 'View';
+    const statusClass = 'city-row-status' +
+      (selected ? ' viewing' : '') +
+      (disabled ? ' disabled' : '') +
+      (row.status === 'comingNext' ? ' next' : '');
     return (
-      '<button type="button" class="city-row' + (selected ? ' selected' : '') + '" data-city="' + escapeHtml(city) + '">' +
-      '<span><span class="city-row-name">' + escapeHtml(city) + '</span>' +
-      (selected ? '<span class="city-row-meta">Selected</span>' : '') +
+      '<button type="button" class="city-row' + (selected ? ' selected' : '') + (disabled ? ' notify' : '') + '" data-city="' + escapeHtml(city) + '" data-city-status="' + row.status + '">' +
+      '<span class="city-row-main">' +
+      '<span class="city-row-name">' + escapeHtml(cityDisplayName(city)) + '</span>' +
+      (isPhysicalCity ? '<span class="city-row-meta">You\'re here</span>' : '') +
+      (disabled ? '<span class="city-row-notify">Notify me when live</span>' : '') +
       '</span>' +
-      '<span class="city-row-status">' + (selected ? 'Active' : 'Choose') + '</span>' +
+      '<span class="city-row-right">' +
+      (distanceLabel ? '<span class="city-row-distance">' + escapeHtml(distanceLabel) + '</span>' : '') +
+      '<span class="' + statusClass + '">' + statusLabel + '</span>' +
+      '</span>' +
       '</button>'
     );
   }
@@ -925,6 +1051,14 @@ function mountPickupRadarPreview(container, options) {
     cityListBody.querySelectorAll('.city-row').forEach((row) => {
       row.addEventListener('click', () => {
         const city = row.getAttribute('data-city');
+        if (row.getAttribute('data-city-status') !== 'live') {
+          // App: "Notify me when live" opens the launch alert sheet. On the website it points to the app.
+          openDownloadModal(
+            row,
+            'Get a launch alert when ' + escapeHtml(cityDisplayName(city || '')) + ' goes live.<br><br>Launch alerts are set up in the mobile app.'
+          );
+          return;
+        }
         if (!city || city === activeCity) {
           previewBack();
           return;
@@ -932,6 +1066,7 @@ function mountPickupRadarPreview(container, options) {
         activeCity = city;
         saveSelectedCity(activeCity);
         updateCityPill();
+        updateFirstTab();
         citySearchInput.value = '';
         searchInput.value = '';
         previewBack();
@@ -942,29 +1077,127 @@ function mountPickupRadarPreview(container, options) {
         });
       });
     });
+    const request = cityListBody.querySelector('[data-city-request]');
+    if (request) {
+      request.addEventListener('click', () => openDownloadModal(
+        request,
+        'Ask for PickupRadar in your city.<br><br>City requests are sent from the mobile app.'
+      ));
+    }
+  }
+
+  // App: nearestCity (App.tsx) - the nearest live city within NEAREST_CITY_MAX_MILES.
+  function nearestLiveCityName() {
+    if (!userCoords || !GEO) return null;
+    const pool = liveCities.filter((city) => !CC || CC.getCountryForCity(city) === 'UK');
+    const nearest = GEO.findNearestCity(userCoords, pool, venueStats);
+    return nearest && nearest.distance <= NEAREST_CITY_MAX_MILES ? nearest.city : null;
   }
 
   function renderCityList() {
-    const query = citySearchInput.value.trim().toLowerCase();
-    const matchesQuery = (city) => !query || city.toLowerCase().includes(query);
-    const otherCities = liveCities
-      .filter((city) => city !== activeCity && matchesQuery(city))
-      .sort((a, b) => a.localeCompare(b));
-    const showSelected = Boolean(activeCity && matchesQuery(activeCity));
-
-    if (!showSelected && otherCities.length === 0) {
-      cityListBody.innerHTML = '<div class="state-box"><strong>No matches</strong><span>Try another area name.</span></div>';
-      return;
+    const query = citySearchInput.value.trim();
+    let rows;
+    if (LCS) {
+      const view = LCS.buildPublicCityBrowseView({
+        liveAreas: liveCities,
+        activeCity: activeCity,
+        userCoords: userCoords,
+        venues: venueStats,
+        gpsCountryIso: 'GB',
+        query: query,
+      });
+      rows = view.rows;
+    } else {
+      rows = liveCities
+        .filter((city) => !query || city.toLowerCase().includes(query.toLowerCase()))
+        .map((city) => ({ city: city, status: 'live' }));
     }
-
-    let rowsHtml = '';
-    if (showSelected) {
-      rowsHtml += renderCityRow(activeCity, true);
-    }
-    rowsHtml += otherCities.map((city) => renderCityRow(city, false)).join('');
-
-    cityListBody.innerHTML = '<div class="city-list">' + rowsHtml + '</div>';
+    const nearestLiveCity = nearestLiveCityName();
+    const rowsHtml = rows.length
+      ? '<div class="city-list">' + rows.map((row) => renderCityRow(row, nearestLiveCity)).join('') + '</div>'
+      : '';
+    cityListBody.innerHTML =
+      rowsHtml +
+      '<button type="button" class="city-request-row" data-city-request>Can\'t find your city? Request it</button>';
     bindCityRows();
+  }
+
+  // ---- Location (browser), like the app's Home "Nearby" ----
+  const LOCATION_MESSAGES = {
+    finding: 'Finding your location…',
+    denied: 'Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.',
+    error: 'Location is unavailable right now. Try again later, or choose a city to browse PickupRadar.',
+  };
+
+  // App: HomeScreen firstTabLabel. "Nearby" unless location is on and the city
+  // being viewed is not the one you are in, then "All".
+  function updateFirstTab() {
+    const label = root.querySelector('[data-first-tab-label]');
+    const icon = root.querySelector('[data-first-tab-icon]');
+    const showAll = Boolean(userCoords) && nearestLiveCityName() !== activeCity;
+    if (label) label.textContent = showAll ? 'All' : 'Nearby';
+    if (icon) icon.innerHTML = prIcon(showAll ? 'list' : 'location', 16);
+    const line = root.querySelector('[data-location-line]');
+    if (line) {
+      const text = LOCATION_MESSAGES[locationStatus] || '';
+      line.textContent = text;
+      line.classList.toggle('hidden', !text);
+      line.classList.toggle('warning', locationStatus === 'denied' || locationStatus === 'error');
+    }
+  }
+
+  function refreshForLocation() {
+    updateFirstTab();
+    if (!venueStats.length) return;
+    renderHomeList();
+    if (!searchScreen.classList.contains('hidden')) renderSearchList();
+    if (!cityScreen.classList.contains('hidden')) renderCityList();
+  }
+
+  function requestLocation() {
+    if (!HAS_LOCATION_LOGIC || locationStatus === 'finding' || locationStatus === 'granted') return;
+    locationStatus = 'finding';
+    updateFirstTab();
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const lat = position && position.coords ? position.coords.latitude : NaN;
+        const lng = position && position.coords ? position.coords.longitude : NaN;
+        if (!Number.isFinite(lat) || !Number.isFinite(lng)) {
+          locationStatus = 'error';
+          refreshForLocation();
+          return;
+        }
+        userCoords = { lat: lat, lng: lng };
+        locationStatus = 'granted';
+        refreshForLocation();
+      },
+      (error) => {
+        userCoords = null;
+        locationStatus = error && error.code === 1 ? 'denied' : 'error';
+        refreshForLocation();
+      },
+      { enableHighAccuracy: false, timeout: 15000, maximumAge: 300000 }
+    );
+  }
+
+  function setupLocation() {
+    if (!HAS_LOCATION_LOGIC) return;
+    // Already allowed earlier: use it straight away without a prompt.
+    if (navigator.permissions && navigator.permissions.query) {
+      navigator.permissions.query({ name: 'geolocation' }).then((result) => {
+        if (result && result.state === 'granted') requestLocation();
+      }).catch(() => {});
+    }
+    // Otherwise ask only when the live preview is on screen.
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          observer.disconnect();
+          requestLocation();
+        }
+      }, { threshold: 0.25 });
+      observer.observe(root);
+    }
   }
 
   function renderMissingVenueSectionHtml() {
@@ -1515,7 +1748,12 @@ function mountPickupRadarPreview(container, options) {
     if (fallback) fallback.focus();
   }
 
-  function openDownloadModal(trigger) {
+  const DOWNLOAD_MODAL_TEXT = 'Download PickupRadar to report waits and venue issues.<br><br>Reporting is only available in the mobile app.';
+
+  // messageHtml is built only from fixed text and escaped city names.
+  function openDownloadModal(trigger, messageHtml) {
+    const text = downloadModal.querySelector('[data-modal-text]');
+    if (text) text.innerHTML = messageHtml || DOWNLOAD_MODAL_TEXT;
     downloadModal.classList.add('open');
     beginDialog(downloadModal, trigger);
   }
@@ -1757,6 +1995,7 @@ function mountPickupRadarPreview(container, options) {
       await loadCityData(activeCity);
       if (options.resetOnLoad) resetPreviewHome();
       else if (history.state && history.state.prPreview) applyPreviewHistory(history.state);
+      setupLocation();
     } catch (error) {
       console.error(error);
       loadError = "Live data isn't available right now.";

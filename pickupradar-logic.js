@@ -4,13 +4,13 @@
  * The PickupRadar mobile app's own venue display, prediction, wait-colour and
  * city/country modules, bundled for the website preview.
  *
- * Source:   pickupradar-app @ 3aaae5983eadddef760d1fb3f3379dd239bb3c63
- * Files:    lib/countryConfig.ts, lib/waitColors.ts, lib/venuePrediction.ts, lib/venueDisplay.ts
+ * Source:   pickupradar-app @ 5dcfec43ee1d9e7452d214181db4902eb7759b45
+ * Files:    lib/countryConfig.ts, lib/geo.ts, lib/liveCitySelection.ts, lib/waitColors.ts, lib/venuePrediction.ts, lib/venueDisplay.ts
  * Compiler: TypeScript 5.9.3 (transpileModule, CommonJS, ES2019)
- * Rebuild:  node tools/build-logic.js --commit 3aaae59
+ * Rebuild:  node tools/build-logic.js --commit 5dcfec4
  * Check:    node tools/build-logic.js --check
  *
- * Exposes window.PickupRadarLogic = { commit, countryConfig, waitColors, venuePrediction, venueDisplay }.
+ * Exposes window.PickupRadarLogic = { commit, countryConfig, geo, liveCitySelection, waitColors, venuePrediction, venueDisplay }.
  */
 (function (global) {
   'use strict';
@@ -623,6 +623,914 @@
             return true;
         }
         return getCitySearchAliases(city).some((alias) => normalizeCitySearchText(alias).includes(needle));
+    }
+  };
+
+  // ---- lib/geo.ts ----
+  defs["./geo"] = function (exports, require, module) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    exports.CITY_SEARCH_BIAS_MAX_LOCAL_MILES = exports.CITY_CENTROIDS = exports.MAX_LIVE_REPORT_DISTANCE_MILES = void 0;
+    exports.normalizeCityKey = normalizeCityKey;
+    exports.deriveCityCentroidFromVenues = deriveCityCentroidFromVenues;
+    exports.resolveCityCentroid = resolveCityCentroid;
+    exports.distanceInMiles = distanceInMiles;
+    exports.resolveCitySearchBias = resolveCitySearchBias;
+    exports.findNearestCity = findNearestCity;
+    exports.formatDistance = formatDistance;
+    exports.formatCityListDistanceLabel = formatCityListDistanceLabel;
+    exports.formatCityDistance = formatCityDistance;
+    exports.formatReportRadius = formatReportRadius;
+    exports.getDistanceTextColor = getDistanceTextColor;
+    exports.MAX_LIVE_REPORT_DISTANCE_MILES = 0.5;
+    const countryConfig_1 = require("./countryConfig");
+    exports.CITY_CENTROIDS = {
+        London: { lat: 51.5074, lng: -0.1278 },
+        Birmingham: { lat: 52.4862, lng: -1.8904 },
+        Manchester: { lat: 53.4808, lng: -2.2426 },
+        Leeds: { lat: 53.8008, lng: -1.5491 },
+        Glasgow: { lat: 55.8642, lng: -4.2518 },
+        Liverpool: { lat: 53.4084, lng: -2.9916 },
+        Bristol: { lat: 51.4545, lng: -2.5879 },
+        Sheffield: { lat: 53.3811, lng: -1.4701 },
+        Nottingham: { lat: 52.9548, lng: -1.1581 },
+        Leicester: { lat: 52.6369, lng: -1.1398 },
+        Newcastle: { lat: 54.9783, lng: -1.6178 },
+        Cardiff: { lat: 51.4816, lng: -3.1791 },
+        Edinburgh: { lat: 55.9533, lng: -3.1883 },
+        Belfast: { lat: 54.5973, lng: -5.9301 },
+        Coventry: { lat: 52.4068, lng: -1.5197 },
+        Bradford: { lat: 53.796, lng: -1.7594 },
+        Southampton: { lat: 50.9097, lng: -1.4044 },
+        Brighton: { lat: 50.8225, lng: -0.1372 },
+        Reading: { lat: 51.4543, lng: -0.9781 },
+        Oxford: { lat: 51.752, lng: -1.2577 },
+        Cambridge: { lat: 52.2053, lng: 0.1218 },
+        Luton: { lat: 51.8787, lng: -0.42 },
+        Northampton: { lat: 52.2405, lng: -0.9027 },
+        'Milton Keynes': { lat: 52.0406, lng: -0.7594 },
+        'St Neots': { lat: 52.228, lng: -0.268 },
+        Hull: { lat: 53.7676, lng: -0.3274 },
+        Sunderland: { lat: 54.9069, lng: -1.3838 },
+        Slough: { lat: 51.5105, lng: -0.595 },
+        Dundee: { lat: 56.462, lng: -2.9707 },
+        Watford: { lat: 51.6565, lng: -0.3903 },
+        // International city centroids (distance/nearest-city support only). These
+        // cities must NOT auto-select until liveAreas reports them as live.
+        'New York': { lat: 40.7128, lng: -74.006 },
+        Chicago: { lat: 41.8781, lng: -87.6298 },
+        Paris: { lat: 48.8566, lng: 2.3522 },
+        Madrid: { lat: 40.4168, lng: -3.7038 },
+        // Ireland
+        Dublin: { lat: 53.3498, lng: -6.2603 },
+        Cork: { lat: 51.8985, lng: -8.4756 },
+        Galway: { lat: 53.2707, lng: -9.0568 },
+        Limerick: { lat: 52.6638, lng: -8.6267 },
+        Waterford: { lat: 52.2593, lng: -7.1101 },
+        // France
+        Lyon: { lat: 45.764, lng: 4.8357 },
+        Marseille: { lat: 43.2965, lng: 5.3698 },
+        Lille: { lat: 50.6292, lng: 3.0573 },
+        Toulouse: { lat: 43.6047, lng: 1.4442 },
+        Bordeaux: { lat: 44.8378, lng: -0.5792 },
+        Nantes: { lat: 47.2184, lng: -1.5536 },
+        Nice: { lat: 43.7102, lng: 7.262 },
+        // Germany
+        Berlin: { lat: 52.52, lng: 13.405 },
+        Hamburg: { lat: 53.5511, lng: 9.9937 },
+        Munich: { lat: 48.1351, lng: 11.582 },
+        Cologne: { lat: 50.9375, lng: 6.9603 },
+        Frankfurt: { lat: 50.1109, lng: 8.6821 },
+        'Düsseldorf': { lat: 51.2277, lng: 6.7735 },
+        Stuttgart: { lat: 48.7758, lng: 9.1829 },
+        Leipzig: { lat: 51.3397, lng: 12.3731 },
+        Dortmund: { lat: 51.5136, lng: 7.4653 },
+        Dresden: { lat: 51.0504, lng: 13.7373 },
+        Nuremberg: { lat: 49.4521, lng: 11.0767 },
+        Bremen: { lat: 53.0793, lng: 8.8017 },
+        // Spain
+        Barcelona: { lat: 41.3874, lng: 2.1686 },
+        Valencia: { lat: 39.4699, lng: -0.3763 },
+        Seville: { lat: 37.3891, lng: -5.9845 },
+        Malaga: { lat: 36.7213, lng: -4.4214 },
+        Zaragoza: { lat: 41.6488, lng: -0.8891 },
+        Alicante: { lat: 38.3452, lng: -0.481 },
+        Bilbao: { lat: 43.263, lng: -2.935 },
+        Murcia: { lat: 37.9922, lng: -1.1307 },
+        'Palma de Mallorca': { lat: 39.5696, lng: 2.6502 },
+        // Italy
+        Milan: { lat: 45.4642, lng: 9.19 },
+        Rome: { lat: 41.9028, lng: 12.4964 },
+        Naples: { lat: 40.8518, lng: 14.2681 },
+        Turin: { lat: 45.0703, lng: 7.6869 },
+        Bologna: { lat: 44.4949, lng: 11.3426 },
+        Florence: { lat: 43.7696, lng: 11.2558 },
+        Palermo: { lat: 38.1157, lng: 13.3615 },
+        Bari: { lat: 41.1171, lng: 16.8719 },
+        Genoa: { lat: 44.4056, lng: 8.9463 },
+        Catania: { lat: 37.5079, lng: 15.083 },
+        // Netherlands
+        Amsterdam: { lat: 52.3676, lng: 4.9041 },
+        Rotterdam: { lat: 51.9244, lng: 4.4777 },
+        'The Hague': { lat: 52.0705, lng: 4.3007 },
+        Utrecht: { lat: 52.0907, lng: 5.1214 },
+        Eindhoven: { lat: 51.4416, lng: 5.4697 },
+        Groningen: { lat: 53.2194, lng: 6.5665 },
+        Tilburg: { lat: 51.5555, lng: 5.0913 },
+        Breda: { lat: 51.5719, lng: 4.7683 },
+        Nijmegen: { lat: 51.8126, lng: 5.8372 },
+        Arnhem: { lat: 51.9851, lng: 5.8987 },
+        // Belgium
+        Brussels: { lat: 50.8503, lng: 4.3517 },
+        Antwerp: { lat: 51.2194, lng: 4.4025 },
+        Ghent: { lat: 51.0543, lng: 3.7174 },
+        'Liège': { lat: 50.6326, lng: 5.5797 },
+        Leuven: { lat: 50.8798, lng: 4.7005 },
+        Charleroi: { lat: 50.4108, lng: 4.4446 },
+        Bruges: { lat: 51.2093, lng: 3.2247 },
+        // Poland
+        Warsaw: { lat: 52.2297, lng: 21.0122 },
+        'Kraków': { lat: 50.0647, lng: 19.945 },
+        'Wrocław': { lat: 51.1079, lng: 17.0385 },
+        'Łódź': { lat: 51.7592, lng: 19.456 },
+        'Poznań': { lat: 52.4064, lng: 16.9252 },
+        'Gdańsk': { lat: 54.352, lng: 18.6466 },
+        Katowice: { lat: 50.2649, lng: 19.0238 },
+        Szczecin: { lat: 53.4285, lng: 14.5528 },
+        Lublin: { lat: 51.2465, lng: 22.5684 },
+        // Portugal
+        Lisbon: { lat: 38.7223, lng: -9.1393 },
+        Porto: { lat: 41.1579, lng: -8.6291 },
+        Braga: { lat: 41.5454, lng: -8.4265 },
+        Coimbra: { lat: 40.2033, lng: -8.4103 },
+        Faro: { lat: 37.0194, lng: -7.9304 },
+        Funchal: { lat: 32.6669, lng: -16.9241 },
+        'Setúbal': { lat: 38.5244, lng: -8.8882 },
+        Aveiro: { lat: 40.6405, lng: -8.6538 },
+        // Austria
+        Vienna: { lat: 48.2082, lng: 16.3738 },
+        Graz: { lat: 47.0707, lng: 15.4395 },
+        Linz: { lat: 48.3069, lng: 14.2858 },
+        Salzburg: { lat: 47.8095, lng: 13.055 },
+        Innsbruck: { lat: 47.2692, lng: 11.4041 },
+        Klagenfurt: { lat: 46.6247, lng: 14.3053 },
+        // Switzerland
+        Zurich: { lat: 47.3769, lng: 8.5417 },
+        Geneva: { lat: 46.2044, lng: 6.1432 },
+        Basel: { lat: 47.5596, lng: 7.5886 },
+        Lausanne: { lat: 46.5197, lng: 6.6323 },
+        Bern: { lat: 46.948, lng: 7.4474 },
+        Winterthur: { lat: 47.5, lng: 8.7241 },
+        'St Gallen': { lat: 47.4245, lng: 9.3767 },
+        Lucerne: { lat: 47.0502, lng: 8.3093 },
+        // United States
+        'Los Angeles': { lat: 34.0522, lng: -118.2437 },
+        Houston: { lat: 29.7604, lng: -95.3698 },
+        Dallas: { lat: 32.7767, lng: -96.797 },
+        Miami: { lat: 25.7617, lng: -80.1918 },
+        Atlanta: { lat: 33.749, lng: -84.388 },
+        'San Francisco Bay Area': { lat: 37.7749, lng: -122.4194 },
+        Seattle: { lat: 47.6062, lng: -122.3321 },
+        Boston: { lat: 42.3601, lng: -71.0589 },
+        // Canada
+        Toronto: { lat: 43.6532, lng: -79.3832 },
+        Montreal: { lat: 45.5017, lng: -73.5673 },
+        Vancouver: { lat: 49.2827, lng: -123.1207 },
+        Calgary: { lat: 51.0447, lng: -114.0719 },
+        Edmonton: { lat: 53.5461, lng: -113.4938 },
+        Ottawa: { lat: 45.4215, lng: -75.6972 },
+        Winnipeg: { lat: 49.8951, lng: -97.1384 },
+        // Australia
+        Sydney: { lat: -33.8688, lng: 151.2093 },
+        Melbourne: { lat: -37.8136, lng: 144.9631 },
+        Brisbane: { lat: -27.4698, lng: 153.0251 },
+        Perth: { lat: -31.9505, lng: 115.8605 },
+        Adelaide: { lat: -34.9285, lng: 138.6007 },
+        'Gold Coast': { lat: -28.0167, lng: 153.4 },
+        Canberra: { lat: -35.2809, lng: 149.13 },
+        // New Zealand
+        Auckland: { lat: -36.8485, lng: 174.7633 },
+        Wellington: { lat: -41.2865, lng: 174.7762 },
+        Christchurch: { lat: -43.5321, lng: 172.6362 },
+        Hamilton: { lat: -37.787, lng: 175.2793 },
+        Tauranga: { lat: -37.6878, lng: 176.1651 },
+        Dunedin: { lat: -45.8788, lng: 170.5028 },
+        // UAE
+        Dubai: { lat: 25.2048, lng: 55.2708 },
+        'Abu Dhabi': { lat: 24.4539, lng: 54.3773 },
+        Sharjah: { lat: 25.3463, lng: 55.4209 },
+        Ajman: { lat: 25.4052, lng: 55.5136 },
+        'Al Ain': { lat: 24.1917, lng: 55.7605 },
+        // Denmark
+        Copenhagen: { lat: 55.6761, lng: 12.5683 },
+        Aarhus: { lat: 56.1629, lng: 10.2039 },
+        Odense: { lat: 55.4038, lng: 10.4024 },
+        Aalborg: { lat: 57.0488, lng: 9.9217 },
+        // Sweden
+        Stockholm: { lat: 59.3293, lng: 18.0686 },
+        Gothenburg: { lat: 57.7089, lng: 11.9746 },
+        'Malmö': { lat: 55.605, lng: 13.0038 },
+        Uppsala: { lat: 59.8586, lng: 17.6389 },
+        // Norway
+        Oslo: { lat: 59.9139, lng: 10.7522 },
+        Bergen: { lat: 60.3913, lng: 5.3221 },
+        Trondheim: { lat: 63.4305, lng: 10.3951 },
+        Stavanger: { lat: 58.97, lng: 5.7331 },
+        // Finland
+        Helsinki: { lat: 60.1699, lng: 24.9384 },
+        Tampere: { lat: 61.4978, lng: 23.761 },
+        Espoo: { lat: 60.2055, lng: 24.6559 },
+        Turku: { lat: 60.4518, lng: 22.2666 },
+        Vantaa: { lat: 60.2934, lng: 25.0378 },
+        Oulu: { lat: 65.0121, lng: 25.4651 },
+        // Czechia
+        Prague: { lat: 50.0755, lng: 14.4378 },
+        Brno: { lat: 49.1951, lng: 16.6068 },
+    };
+    // Normalize a city name so lookups are punctuation- and variation-insensitive.
+    // e.g. "St. Neots", "Saint Neots", "St Neots" all collapse to the same key.
+    function normalizeCityKey(city) {
+        return city
+            .toLowerCase()
+            .replace(/\./g, '')
+            .replace(/[^a-z0-9\s]/g, ' ')
+            .replace(/\bsaint\b/g, 'st')
+            .replace(/\s+/g, ' ')
+            .trim();
+    }
+    // Normalized lookup built once from the static centroids.
+    const NORMALIZED_CENTROIDS = Object.entries(exports.CITY_CENTROIDS).reduce((acc, [name, coords]) => {
+        acc[normalizeCityKey(name)] = coords;
+        return acc;
+    }, {});
+    function isValidCoord(lat, lng) {
+        return (typeof lat === 'number' &&
+            typeof lng === 'number' &&
+            Number.isFinite(lat) &&
+            Number.isFinite(lng) &&
+            Math.abs(lat) <= 90 &&
+            Math.abs(lng) <= 180 &&
+            !(lat === 0 && lng === 0));
+    }
+    // Cache of centroids derived from venue coordinates (keyed by normalized city name),
+    // so we do not recalculate the average on every render.
+    const derivedCentroidCache = {};
+    const missingCentroidWarned = new Set();
+    // Average the valid coordinates of the venues in a city to derive a centroid.
+    function deriveCityCentroidFromVenues(city, venues) {
+        const key = normalizeCityKey(city);
+        if (key in derivedCentroidCache) {
+            return derivedCentroidCache[key];
+        }
+        const valid = venues.filter((venue) => { var _a; return normalizeCityKey((_a = venue.city) !== null && _a !== void 0 ? _a : '') === key && isValidCoord(venue.lat, venue.lng); });
+        if (valid.length === 0) {
+            // Do not cache a null when we simply had no venue data available yet.
+            return null;
+        }
+        const sum = valid.reduce((acc, venue) => ({ lat: acc.lat + venue.lat, lng: acc.lng + venue.lng }), { lat: 0, lng: 0 });
+        const centroid = { lat: sum.lat / valid.length, lng: sum.lng / valid.length };
+        derivedCentroidCache[key] = centroid;
+        return centroid;
+    }
+    // Resolve a city centroid: static list first (with name normalization),
+    // then a centroid derived from active venue coordinates. Future-proof for
+    // newly added active cities that were not manually added to CITY_CENTROIDS.
+    function resolveCityCentroid(city, venues = []) {
+        const direct = exports.CITY_CENTROIDS[city];
+        if (direct) {
+            return direct;
+        }
+        const normalized = NORMALIZED_CENTROIDS[normalizeCityKey(city)];
+        if (normalized) {
+            return normalized;
+        }
+        const derived = deriveCityCentroidFromVenues(city, venues);
+        if (derived) {
+            return derived;
+        }
+        // Development-only warning to catch future cities added without distance support.
+        const isDev = globalThis.__DEV__ === true;
+        if (isDev && !missingCentroidWarned.has(city)) {
+            missingCentroidWarned.add(city);
+            console.warn('Missing city coordinates and no valid venue coordinates for:', city);
+        }
+        return null;
+    }
+    function distanceInMiles(from, to) {
+        const earthRadiusMiles = 3958.8;
+        const toRad = (value) => (value * Math.PI) / 180;
+        const dLat = toRad(to.lat - from.lat);
+        const dLng = toRad(to.lng - from.lng);
+        const lat1 = toRad(from.lat);
+        const lat2 = toRad(to.lat);
+        const h = Math.sin(dLat / 2) ** 2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLng / 2) ** 2;
+        return 2 * earthRadiusMiles * Math.asin(Math.sqrt(h));
+    }
+    // Same radius as App nearest-city auto-select (35 mi). Used only for Google Places
+    // autocomplete ranking bias — never for live-report / distance validation.
+    exports.CITY_SEARCH_BIAS_MAX_LOCAL_MILES = 35;
+    // Choose autocomplete locationBias for the selected PickupRadar city:
+    // - device coords when the driver is within maxLocalMiles of that city's centroid
+    // - otherwise the city centroid (static or venue-derived)
+    // - otherwise null (omit locationBias)
+    function resolveCitySearchBias(selectedCity, venues, userCoords, maxLocalMiles = exports.CITY_SEARCH_BIAS_MAX_LOCAL_MILES) {
+        const centroid = resolveCityCentroid(selectedCity, venues);
+        if (userCoords &&
+            centroid &&
+            Number.isFinite(userCoords.lat) &&
+            Number.isFinite(userCoords.lng) &&
+            distanceInMiles(userCoords, centroid) <= maxLocalMiles) {
+            return userCoords;
+        }
+        return centroid;
+    }
+    function findNearestCity(coords, liveAreas, venues = []) {
+        let best = null;
+        for (const city of liveAreas) {
+            const centroid = resolveCityCentroid(city, venues);
+            if (!centroid) {
+                continue;
+            }
+            const distance = distanceInMiles(coords, centroid);
+            if (!best || distance < best.distance) {
+                best = { city, distance };
+            }
+        }
+        return best;
+    }
+    // Distance shown on a venue card, e.g. "0.4 mi" (or "0.6 km" for metric countries).
+    // Core proximity logic stays in miles; this is display-only unit conversion.
+    function formatDistance(miles, unit = 'mi') {
+        if (unit === 'km') {
+            const km = miles * countryConfig_1.KM_PER_MILE;
+            if (km < 0.1) {
+                return '<0.1 km';
+            }
+            if (km < 10) {
+                return `${km.toFixed(1)} km`;
+            }
+            return `${Math.round(km)} km`;
+        }
+        if (miles < 0.1) {
+            return '<0.1 mi';
+        }
+        if (miles < 10) {
+            return `${miles.toFixed(1)} mi`;
+        }
+        return `${Math.round(miles)} mi`;
+    }
+    // City-list distance, e.g. "58 mi" / "<1 mi" / "1750 mi". No thousands separator.
+    // Unit is chosen from the city's country (UK/USA miles, otherwise km).
+    // Home cards keep formatDistance.
+    function formatCityDistanceAmount(value) {
+        if (value < 10) {
+            const oneDecimal = (Math.round(value * 10) / 10).toFixed(1);
+            return oneDecimal.endsWith('.0') ? oneDecimal.slice(0, -2) : oneDecimal;
+        }
+        return String(Math.round(value));
+    }
+    /** City-list label only. 999 stays "999 mi"; 1000 stays "1000 mi". */
+    function formatCityListDistanceLabel(value, unit) {
+        if (!Number.isFinite(value) || value < 0) {
+            return '';
+        }
+        if (value < 1) {
+            return `<1 ${unit}`;
+        }
+        return `${formatCityDistanceAmount(value)} ${unit}`;
+    }
+    function formatCityDistance(coords, city, venues = []) {
+        const centroid = resolveCityCentroid(city, venues);
+        if (!centroid) {
+            return null;
+        }
+        const miles = distanceInMiles(coords, centroid);
+        if ((0, countryConfig_1.getDistanceUnitForCity)(city) === 'km') {
+            return formatCityListDistanceLabel(miles * countryConfig_1.KM_PER_MILE, 'km');
+        }
+        return formatCityListDistanceLabel(miles, 'mi');
+    }
+    // Displayed live-report radius string for the given unit. Internally the rule is
+    // always MAX_LIVE_REPORT_DISTANCE_MILES = 0.5 mi; metric countries show ~0.8 km.
+    function formatReportRadius(unit) {
+        return unit === 'km' ? '0.8 km' : '0.5 mi';
+    }
+    // Shared colour rule for distance text across the app (distance, NOT wait speed).
+    // One neutral colour for every valid finite distance so it does not clash with wait-severity colours.
+    function getDistanceTextColor(miles) {
+        if (typeof miles !== 'number' || !Number.isFinite(miles)) {
+            return null;
+        }
+        return '#8FB5D7';
+    }
+  };
+
+  // ---- lib/liveCitySelection.ts ----
+  defs["./liveCitySelection"] = function (exports, require, module) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    exports.PUBLIC_LAUNCH_MARKETS = exports.PUBLIC_LAUNCH_COUNTRIES = exports.NON_LIVE_CITY_READ_ONLY_MESSAGE = exports.NON_LIVE_CITY_READ_ONLY_CODE = exports.OFFLINE_LIVE_AREAS_FALLBACK = exports.LAUNCH_DEFAULT_CITY = void 0;
+    exports.resolveOfflineNoCacheLiveAreasStartup = resolveOfflineNoCacheLiveAreasStartup;
+    exports.resolveOwnerCityBrowsePreview = resolveOwnerCityBrowsePreview;
+    exports.canSaveVenuesInCity = canSaveVenuesInCity;
+    exports.shouldAllowOwnerPreviewToggle = shouldAllowOwnerPreviewToggle;
+    exports.parseInternalCityBrowseAccessResponse = parseInternalCityBrowseAccessResponse;
+    exports.resolveOwnerBrowseAccessOnUserChange = resolveOwnerBrowseAccessOnUserChange;
+    exports.resolveOwnerBrowseAccessRpcApply = resolveOwnerBrowseAccessRpcApply;
+    exports.isLiveCity = isLiveCity;
+    exports.isOfflineLiveAreasFallback = isOfflineLiveAreasFallback;
+    exports.resolveQueuedWaitReportFlushAction = resolveQueuedWaitReportFlushAction;
+    exports.shouldBlockSubmissionForCity = shouldBlockSubmissionForCity;
+    exports.resolveFallbackLiveCity = resolveFallbackLiveCity;
+    exports.resolveActiveLiveCity = resolveActiveLiveCity;
+    exports.shouldFetchVenuesForCity = shouldFetchVenuesForCity;
+    exports.filterVenuesForSelectedCity = filterVenuesForSelectedCity;
+    exports.launchCountryForTimeZone = launchCountryForTimeZone;
+    exports.resolvePublicBrowseCountry = resolvePublicBrowseCountry;
+    exports.resolvePublicBrowseDistanceOrigin = resolvePublicBrowseDistanceOrigin;
+    exports.sortCitiesNearestFirst = sortCitiesNearestFirst;
+    exports.buildPublicCityBrowseView = buildPublicCityBrowseView;
+    exports.resolveOwnerPreviewCityList = resolveOwnerPreviewCityList;
+    const geo_1 = require("./geo");
+    const countryConfig_1 = require("./countryConfig");
+    /** Default when no live city can be resolved from coordinates. */
+    exports.LAUNCH_DEFAULT_CITY = 'Milton Keynes';
+    /**
+     * Last-resort live list when the public live-cities RPC fails AND there is no
+     * valid v2 AsyncStorage cache. Used only for that offline path — ordinary
+     * selection and venue loads still follow the RPC response or v2 cache.
+     */
+    exports.OFFLINE_LIVE_AREAS_FALLBACK = [
+        'Milton Keynes',
+        'Chicago',
+    ];
+    /** Friendly local rejection when submitting from a non-live (owner-preview) city. */
+    exports.NON_LIVE_CITY_READ_ONLY_CODE = 'preview_read_only';
+    exports.NON_LIVE_CITY_READ_ONLY_MESSAGE = 'Reporting is not available while browsing this city.';
+    /**
+     * Offline startup branch: RPC failed and there is no valid v2 cache.
+     * Callers MUST run applySelection with the returned liveAreas (race guards apply).
+     */
+    function resolveOfflineNoCacheLiveAreasStartup() {
+        return {
+            liveAreas: [...exports.OFFLINE_LIVE_AREAS_FALLBACK],
+            mustApplySelection: true,
+        };
+    }
+    /** Owner preview is on only when allowlist access AND the session toggle are both true. */
+    function resolveOwnerCityBrowsePreview(options) {
+        return options.ownerCityBrowseAccess === true && options.ownerPreviewToggled === true;
+    }
+    /**
+     * A bookmark is allowed in a live city, or in any city while verified owner
+     * preview is on. Access or the toggle alone does not open non-live cities.
+     */
+    function canSaveVenuesInCity(options) {
+        if (isLiveCity(options.city, options.liveAreas)) {
+            return true;
+        }
+        return resolveOwnerCityBrowsePreview({
+            ownerCityBrowseAccess: options.ownerCityBrowseAccess,
+            ownerPreviewToggled: options.ownerPreviewToggled,
+        });
+    }
+    /** Long-press Browse cities only toggles when the signed-in owner passed the RPC. */
+    function shouldAllowOwnerPreviewToggle(ownerCityBrowseAccess) {
+        return ownerCityBrowseAccess === true;
+    }
+    /** Strict boolean RPC: only literal `true` grants access. */
+    function parseInternalCityBrowseAccessResponse(response) {
+        return response === true;
+    }
+    /**
+     * When the authenticated user id changes, revoke previous owner browse state
+     * immediately. Same-user token refresh preserves access/toggle while rechecking.
+     */
+    function resolveOwnerBrowseAccessOnUserChange(options) {
+        if (!options.nextUserId) {
+            return { access: false, toggle: false };
+        }
+        if (options.previousUserId !== null && options.previousUserId !== options.nextUserId) {
+            return { access: false, toggle: false };
+        }
+        return {
+            access: options.previousAccess,
+            toggle: options.previousToggle,
+        };
+    }
+    /**
+     * Apply an owner-browse RPC result only for the still-current user.
+     * Stale responses (different user) must not restore access.
+     */
+    function resolveOwnerBrowseAccessRpcApply(options) {
+        if (!options.currentUserId || options.currentUserId !== options.requestUserId) {
+            return { apply: false, access: false, toggle: false };
+        }
+        const access = parseInternalCityBrowseAccessResponse(options.response);
+        return {
+            apply: true,
+            access,
+            toggle: access ? options.currentToggle : false,
+        };
+    }
+    function isLiveCity(city, liveAreas) {
+        const trimmed = city.trim();
+        if (!trimmed) {
+            return false;
+        }
+        return liveAreas.some((area) => area.trim() === trimmed);
+    }
+    /** True when the in-memory list is exactly the hard-coded offline fallback. */
+    function isOfflineLiveAreasFallback(liveAreas) {
+        if (liveAreas.length !== exports.OFFLINE_LIVE_AREAS_FALLBACK.length) {
+            return false;
+        }
+        const set = new Set(liveAreas.map((city) => city.trim()).filter(Boolean));
+        if (set.size !== exports.OFFLINE_LIVE_AREAS_FALLBACK.length) {
+            return false;
+        }
+        return exports.OFFLINE_LIVE_AREAS_FALLBACK.every((city) => set.has(city));
+    }
+    /**
+     * Decide what to do with a queued offline wait report.
+     * - Empty liveAreas → defer (startup race; never delete).
+     * - City present in liveAreas → submit (including non-authoritative offline fallback).
+     * - City absent + authoritative list → discard (no network).
+     * - City absent + non-authoritative list → defer (do not delete yet).
+     */
+    function resolveQueuedWaitReportFlushAction(options) {
+        const liveAreas = options.liveAreas;
+        if (liveAreas.length === 0) {
+            return 'defer';
+        }
+        if (isLiveCity(options.queuedCity, liveAreas)) {
+            return 'submit';
+        }
+        if (options.liveAreasAuthoritative) {
+            return 'discard';
+        }
+        return 'defer';
+    }
+    /** Block wait/status/tag/suggestion for non-live cities (after an authoritative list). */
+    function shouldBlockSubmissionForCity(city, liveAreas) {
+        return !isLiveCity(city, liveAreas);
+    }
+    /**
+     * Pick a valid live city when the current selection is not launchable.
+     * Prefers the nearest live city when coordinates are available; otherwise the
+     * launch default (Milton Keynes) when it is live; otherwise the first live city.
+     */
+    function resolveFallbackLiveCity(options) {
+        var _a, _b;
+        const liveAreas = options.liveAreas.filter((city) => city.trim().length > 0);
+        const defaultCity = ((_a = options.defaultCity) !== null && _a !== void 0 ? _a : exports.LAUNCH_DEFAULT_CITY).trim() || exports.LAUNCH_DEFAULT_CITY;
+        if (liveAreas.length === 0) {
+            return defaultCity;
+        }
+        if (options.userCoords) {
+            const nearest = (0, geo_1.findNearestCity)(options.userCoords, [...liveAreas], (_b = options.venues) !== null && _b !== void 0 ? _b : []);
+            if (nearest) {
+                return nearest.city;
+            }
+        }
+        if (liveAreas.includes(defaultCity)) {
+            return defaultCity;
+        }
+        return liveAreas[0];
+    }
+    /**
+     * Keep a live (or preview-allowed) city; otherwise fall back.
+     * `allowNonLive` is only for the owner city-browse preview path.
+     */
+    function resolveActiveLiveCity(options) {
+        const activeCity = options.activeCity.trim();
+        const allowNonLive = options.allowNonLive === true;
+        if (activeCity && isLiveCity(activeCity, options.liveAreas)) {
+            return activeCity;
+        }
+        if (activeCity && allowNonLive) {
+            return activeCity;
+        }
+        return resolveFallbackLiveCity({
+            liveAreas: options.liveAreas,
+            userCoords: options.userCoords,
+            venues: options.venues,
+            defaultCity: options.defaultCity,
+        });
+    }
+    /** Ordinary drivers must never fetch venues for a city outside the public live list. */
+    function shouldFetchVenuesForCity(city, liveAreas, allowNonLive) {
+        if (allowNonLive) {
+            return true;
+        }
+        if (liveAreas.length === 0) {
+            return false;
+        }
+        return isLiveCity(city, liveAreas);
+    }
+    /**
+     * Hard city scope for venue catalogues. Prevents cross-city mixes (e.g. historic
+     * Luton selection showing London / Birmingham / Manchester rows).
+     */
+    function filterVenuesForSelectedCity(venues, selectedCity) {
+        const key = selectedCity.trim().toLowerCase();
+        if (!key) {
+            return [];
+        }
+        return venues.filter((venue) => { var _a; return ((_a = venue.city) !== null && _a !== void 0 ? _a : '').trim().toLowerCase() === key; });
+    }
+    exports.PUBLIC_LAUNCH_COUNTRIES = ['UK', 'United States'];
+    exports.PUBLIC_LAUNCH_MARKETS = {
+        UK: {
+            isoCode: 'GB',
+            liveCity: 'Milton Keynes',
+            comingNextCity: 'London',
+            comingSoonCities: [
+                'Manchester',
+                'Birmingham',
+                'Leeds',
+                'Liverpool',
+                'Glasgow',
+                'Sheffield',
+                'Bristol',
+                'Leicester',
+                'Nottingham',
+                'Edinburgh',
+                'Newcastle',
+                'Cardiff',
+                'Belfast',
+            ],
+        },
+        'United States': {
+            isoCode: 'US',
+            liveCity: 'Chicago',
+            comingNextCity: 'New York',
+            comingSoonCities: [
+                'Los Angeles',
+                'Houston',
+                'Dallas',
+                'Miami',
+                'Atlanta',
+                'San Francisco Bay Area',
+                'Seattle',
+                'Boston',
+            ],
+        },
+    };
+    function launchCountryForIsoCode(code) {
+        var _a;
+        const iso = (code !== null && code !== void 0 ? code : '').trim().toUpperCase();
+        if (!iso) {
+            return null;
+        }
+        return (_a = exports.PUBLIC_LAUNCH_COUNTRIES.find((country) => exports.PUBLIC_LAUNCH_MARKETS[country].isoCode === iso)) !== null && _a !== void 0 ? _a : null;
+    }
+    function isPublicLaunchCountry(country) {
+        return exports.PUBLIC_LAUNCH_COUNTRIES.includes(country);
+    }
+    // Only these identifiers count. Canada, Mexico and others also use America/*
+    // zones, so there is no blanket America/* rule, and offsets (GMT+1) never match.
+    const UK_TIME_ZONES = new Set(['Europe/London']);
+    const US_TIME_ZONES = new Set([
+        'America/New_York',
+        'America/Detroit',
+        'America/Chicago',
+        'America/Menominee',
+        'America/Denver',
+        'America/Boise',
+        'America/Phoenix',
+        'America/Los_Angeles',
+        'America/Anchorage',
+        'America/Juneau',
+        'America/Sitka',
+        'America/Metlakatla',
+        'America/Yakutat',
+        'America/Nome',
+        'America/Adak',
+        'Pacific/Honolulu',
+    ]);
+    const US_TIME_ZONE_PREFIXES = [
+        'US/',
+        'America/Kentucky/',
+        'America/Indiana/',
+        'America/North_Dakota/',
+    ];
+    /** Device time zone → launch country, or null when the zone does not decide it. */
+    function launchCountryForTimeZone(timeZone) {
+        const zone = typeof timeZone === 'string' ? timeZone.trim() : '';
+        if (!zone) {
+            return null;
+        }
+        if (UK_TIME_ZONES.has(zone)) {
+            return 'UK';
+        }
+        if (US_TIME_ZONES.has(zone)
+            || US_TIME_ZONE_PREFIXES.some((prefix) => zone.startsWith(prefix) && zone.length > prefix.length)) {
+            return 'United States';
+        }
+        return null;
+    }
+    /**
+     * Which country's public cities to show:
+     * 1. GPS-detected physical country — UK/US use that list; any other country is
+     *    "not available yet" (device hints never override a physical location).
+     * 2. Device time zone (getCalendars()[0].timeZone), only the supported UK/US zones.
+     * 3. Phone region (getLocales()[0].regionCode), only when GB or US.
+     * 4. Country of the selected city.
+     * 5. Milton Keynes / UK default.
+     */
+    function resolvePublicBrowseCountry(options) {
+        var _a, _b, _c;
+        const gpsIso = ((_a = options.gpsCountryIso) !== null && _a !== void 0 ? _a : '').trim().toUpperCase();
+        if (gpsIso) {
+            const market = launchCountryForIsoCode(gpsIso);
+            if (market) {
+                return { kind: 'market', country: market, source: 'gps' };
+            }
+            const country = (0, countryConfig_1.getPickupRadarCountryForIsoCode)(gpsIso);
+            const countryName = ((_b = options.gpsCountryName) !== null && _b !== void 0 ? _b : '').trim() || country;
+            return { kind: 'outside', country, countryName: countryName || null, source: 'gps' };
+        }
+        const timeZoneMarket = launchCountryForTimeZone(options.deviceTimeZone);
+        if (timeZoneMarket) {
+            return { kind: 'market', country: timeZoneMarket, source: 'timeZone' };
+        }
+        const regionMarket = launchCountryForIsoCode(options.deviceRegionCode);
+        if (regionMarket) {
+            return { kind: 'market', country: regionMarket, source: 'region' };
+        }
+        const activeCity = ((_c = options.activeCity) !== null && _c !== void 0 ? _c : '').trim();
+        if (activeCity) {
+            const country = (0, countryConfig_1.getCountryForCity)(activeCity);
+            if (isPublicLaunchCountry(country)) {
+                return { kind: 'market', country, source: 'activeCity' };
+            }
+            return { kind: 'outside', country, countryName: country, source: 'activeCity' };
+        }
+        return { kind: 'market', country: 'UK', source: 'default' };
+    }
+    function isFiniteCoords(coords) {
+        return Boolean(coords && Number.isFinite(coords.lat) && Number.isFinite(coords.lng));
+    }
+    /**
+     * Distance origin for one country's Coming Soon cities: driver GPS (when it is
+     * nearer this country's live city than the other launch country's), else the
+     * selected city when it belongs to this country, else Milton Keynes (UK) /
+     * Chicago (US). Null means the configured order is kept.
+     */
+    function resolvePublicBrowseDistanceOrigin(options) {
+        var _a, _b;
+        const venues = (_a = options.venues) !== null && _a !== void 0 ? _a : [];
+        const market = exports.PUBLIC_LAUNCH_MARKETS[options.country];
+        if (isFiniteCoords(options.userCoords)) {
+            const anchors = exports.PUBLIC_LAUNCH_COUNTRIES.map((country) => exports.PUBLIC_LAUNCH_MARKETS[country].liveCity);
+            const nearestAnchor = (0, geo_1.findNearestCity)(options.userCoords, anchors, venues);
+            if (nearestAnchor && nearestAnchor.city === market.liveCity) {
+                return options.userCoords;
+            }
+        }
+        const activeCity = ((_b = options.activeCity) !== null && _b !== void 0 ? _b : '').trim();
+        if (activeCity && (0, countryConfig_1.getCountryForCity)(activeCity) === options.country) {
+            const selectedCentroid = (0, geo_1.resolveCityCentroid)(activeCity, venues);
+            if (selectedCentroid) {
+                return selectedCentroid;
+            }
+        }
+        return (0, geo_1.resolveCityCentroid)(market.liveCity, venues);
+    }
+    /** Nearest-first. Equal or unresolvable distances keep the configured order. */
+    function sortCitiesNearestFirst(cities, origin, venues = []) {
+        const ranked = cities.map((city, index) => {
+            const centroid = origin ? (0, geo_1.resolveCityCentroid)(city, venues) : null;
+            const distance = origin && centroid ? (0, geo_1.distanceInMiles)(origin, centroid) : Number.POSITIVE_INFINITY;
+            return { city, index, distance };
+        });
+        ranked.sort((a, b) => (a.distance === b.distance ? a.index - b.index : a.distance - b.distance));
+        return ranked.map((entry) => entry.city);
+    }
+    function uniqueLiveCities(liveAreas) {
+        const seen = new Set();
+        const out = [];
+        for (const area of liveAreas) {
+            const city = area.trim();
+            if (city && !seen.has(city)) {
+                seen.add(city);
+                out.push(city);
+            }
+        }
+        return out;
+    }
+    function compareCityNames(a, b) {
+        const left = a.toLowerCase();
+        const right = b.toLowerCase();
+        if (left === right) {
+            return a < b ? -1 : a > b ? 1 : 0;
+        }
+        return left < right ? -1 : 1;
+    }
+    function buildPublicMarketRows(country, liveCities, origin, venues) {
+        const market = exports.PUBLIC_LAUNCH_MARKETS[country];
+        const live = new Set(liveCities);
+        const rows = [
+            { city: market.liveCity, status: live.has(market.liveCity) ? 'live' : 'comingSoon' },
+            { city: market.comingNextCity, status: live.has(market.comingNextCity) ? 'live' : 'comingNext' },
+        ];
+        // Extra live cities reported by Supabase stay selectable within their own country.
+        const fixed = new Set([market.liveCity, market.comingNextCity]);
+        const extraLive = liveCities
+            .filter((city) => !fixed.has(city) && (0, countryConfig_1.getCountryForCity)(city) === country)
+            .sort(compareCityNames);
+        for (const city of extraLive) {
+            rows.push({ city, status: 'live' });
+        }
+        const comingSoon = market.comingSoonCities.filter((city) => !live.has(city));
+        for (const city of sortCitiesNearestFirst(comingSoon, origin, venues)) {
+            rows.push({ city, status: 'comingSoon' });
+        }
+        return rows;
+    }
+    function buildPublicOutsideRows(ownCountry, liveCities) {
+        const launchOrder = exports.PUBLIC_LAUNCH_COUNTRIES.map((country) => exports.PUBLIC_LAUNCH_MARKETS[country].liveCity);
+        const ownRank = (city) => (ownCountry && (0, countryConfig_1.getCountryForCity)(city) === ownCountry ? 0 : 1);
+        const launchRank = (city) => {
+            const index = launchOrder.indexOf(city);
+            return index === -1 ? launchOrder.length : index;
+        };
+        return [...liveCities]
+            .sort((a, b) => ownRank(a) - ownRank(b) || launchRank(a) - launchRank(b) || compareCityNames(a, b))
+            .map((city) => ({ city, status: 'live' }));
+    }
+    /**
+     * Owner preview OFF city list. Only one country's public cities are returned;
+     * drivers outside the UK and US get only live cities (own country first).
+     * Search filters these rows only, so hidden cities can never be revealed.
+     */
+    function buildPublicCityBrowseView(options) {
+        var _a, _b;
+        const venues = (_a = options.venues) !== null && _a !== void 0 ? _a : [];
+        const liveCities = uniqueLiveCities(options.liveAreas);
+        const query = (_b = options.query) !== null && _b !== void 0 ? _b : '';
+        const matches = (row) => (0, countryConfig_1.cityMatchesSearchQuery)(row.city, query);
+        const resolved = resolvePublicBrowseCountry({
+            gpsCountryIso: options.gpsCountryIso,
+            gpsCountryName: options.gpsCountryName,
+            deviceTimeZone: options.deviceTimeZone,
+            deviceRegionCode: options.deviceRegionCode,
+            activeCity: options.activeCity,
+        });
+        if (resolved.kind === 'outside') {
+            const rows = buildPublicOutsideRows(resolved.country, liveCities);
+            const ownCountryHasLiveCity = Boolean(resolved.country && liveCities.some((city) => (0, countryConfig_1.getCountryForCity)(city) === resolved.country));
+            return {
+                kind: 'outside',
+                countryName: resolved.countryName,
+                showUnavailableMessage: !ownCountryHasLiveCity,
+                rows: rows.filter(matches),
+            };
+        }
+        const origin = resolvePublicBrowseDistanceOrigin({
+            country: resolved.country,
+            userCoords: options.userCoords,
+            activeCity: options.activeCity,
+            venues,
+        });
+        return {
+            kind: 'market',
+            country: resolved.country,
+            source: resolved.source,
+            rows: buildPublicMarketRows(resolved.country, liveCities, origin, venues).filter(matches),
+        };
+    }
+    /**
+     * Owner "Viewing as a driver in" list. "all" keeps the full owner browser
+     * (publicView null). A chosen country is passed as the GPS country so it wins
+     * over the real GPS, time zone, phone region and selected city. Those inputs
+     * are not mutated. Coords are kept only when the chosen country is the real
+     * GPS country.
+     */
+    function resolveOwnerPreviewCityList(options) {
+        var _a;
+        const realCoords = (_a = options.userCoords) !== null && _a !== void 0 ? _a : null;
+        if (options.ownerDriverView === 'all') {
+            return { publicView: null, listCoords: realCoords };
+        }
+        const country = options.ownerDriverView;
+        const realGpsCountry = launchCountryForIsoCode(options.gpsCountryIso);
+        const listCoords = realGpsCountry === country ? realCoords : null;
+        return {
+            publicView: buildPublicCityBrowseView({
+                liveAreas: options.liveAreas,
+                activeCity: options.activeCity,
+                userCoords: listCoords,
+                venues: options.venues,
+                gpsCountryIso: exports.PUBLIC_LAUNCH_MARKETS[country].isoCode,
+                gpsCountryName: null,
+                deviceTimeZone: null,
+                deviceRegionCode: null,
+                query: options.query,
+            }),
+            listCoords,
+        };
     }
   };
 
@@ -3371,8 +4279,10 @@
   };
 
   var api = Object.freeze({
-    commit: "3aaae5983eadddef760d1fb3f3379dd239bb3c63",
+    commit: "5dcfec43ee1d9e7452d214181db4902eb7759b45",
     countryConfig: req("./countryConfig"),
+    geo: req("./geo"),
+    liveCitySelection: req("./liveCitySelection"),
     waitColors: req("./waitColors"),
     venuePrediction: req("./venuePrediction"),
     venueDisplay: req("./venueDisplay"),

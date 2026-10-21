@@ -21,12 +21,14 @@ const fs = require('fs');
 const path = require('path');
 const { execFileSync } = require('child_process');
 
-const DEFAULT_COMMIT = '3aaae59';
+const DEFAULT_COMMIT = '5dcfec4';
 const OUTPUT_FILE = path.resolve(__dirname, '..', 'pickupradar-logic.js');
 
 // Bundled modules, in load order. Keys are the ids used by the app's imports.
 const MODULES = [
   { id: './countryConfig', file: 'lib/countryConfig.ts', exportAs: 'countryConfig' },
+  { id: './geo', file: 'lib/geo.ts', exportAs: 'geo' },
+  { id: './liveCitySelection', file: 'lib/liveCitySelection.ts', exportAs: 'liveCitySelection' },
   { id: './waitColors', file: 'lib/waitColors.ts', exportAs: 'waitColors' },
   { id: './venuePrediction', file: 'lib/venuePrediction.ts', exportAs: 'venuePrediction' },
   { id: './venueDisplay', file: 'lib/venueDisplay.ts', exportAs: 'venueDisplay' },
@@ -74,12 +76,12 @@ function loadTypeScript(appDir) {
   return ts;
 }
 
-function transpile(ts, source, fileName) {
+function transpile(ts, source, fileName, removeComments) {
   const options = {
     module: ts.ModuleKind[COMPILER_OPTIONS.module],
     target: ts.ScriptTarget[COMPILER_OPTIONS.target],
     esModuleInterop: COMPILER_OPTIONS.esModuleInterop,
-    removeComments: COMPILER_OPTIONS.removeComments,
+    removeComments: removeComments === undefined ? COMPILER_OPTIONS.removeComments : removeComments,
     newLine: ts.NewLineKind.LineFeed,
   };
   const result = ts.transpileModule(source.replace(/\r\n/g, '\n'), {
@@ -118,6 +120,14 @@ function build(args) {
   const blocks = MODULES.map((mod) => {
     const source = git(args.app, ['show', fullCommit + ':' + mod.file]);
     const js = transpile(ts, source, mod.file);
+    // Scan the code without comments, so a comment that merely mentions Supabase or
+    // AsyncStorage does not block the build, but real client code or keys still do.
+    const codeOnly = transpile(ts, source, mod.file, true);
+    for (const pattern of FORBIDDEN_PATTERNS) {
+      if (pattern.test(codeOnly)) {
+        throw new Error(mod.file + ' matches forbidden pattern ' + pattern + '. Refusing to bundle it.');
+      }
+    }
     for (const dep of findRequires(js)) {
       if (!knownIds.has(dep)) {
         throw new Error(mod.file + ' requires "' + dep + '", which is not bundled. Add it to MODULES or remove the import.');
@@ -172,10 +182,8 @@ function build(args) {
     '  if (typeof module === \'object\' && module && module.exports) module.exports = api;\n' +
     '})(typeof window !== \'undefined\' ? window : globalThis);\n';
 
-  for (const pattern of FORBIDDEN_PATTERNS) {
-    if (pattern.test(output)) {
-      throw new Error('Generated bundle matches forbidden pattern ' + pattern + '. Refusing to write it.');
-    }
+  if (/eyJhbGci/.test(output)) {
+    throw new Error('Generated bundle contains a JWT-looking string. Refusing to write it.');
   }
   return { output, fullCommit, tsVersion: ts.version };
 }

@@ -277,15 +277,16 @@
 .city-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
   width: 100%;
   max-width: 100%;
 }
 
+/* App: CitySelectorScreen styles (cityRow and friends in App.tsx). */
 .city-row {
-  min-height: 72px;
-  border-radius: 18px;
-  padding: 14px 16px;
+  min-height: 58px;
+  border-radius: 16px;
+  padding: 11px 14px;
   background: #0e1822;
   border: 1px solid #182837;
   display: flex;
@@ -301,34 +302,125 @@
   appearance: none;
 }
 
-.city-row:hover {
-  border-color: #2a4558;
+.city-row:hover,
+.city-row:active {
+  background: #132431;
 }
 
 .city-row.selected {
-  border-color: #4bc57d;
+  border-color: #3e8db0;
+}
+
+.city-row-main {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .city-row-name {
   color: #f6faff;
   font-size: 16px;
+  line-height: 21px;
   font-weight: 800;
   display: block;
 }
 
 .city-row-meta {
   color: #89a0b8;
-  font-size: 13px;
+  font-size: 12px;
+  line-height: 16px;
   font-weight: 600;
-  margin-top: 4px;
+  margin-top: 3px;
   display: block;
 }
 
-.city-row-status {
-  color: #bfd0e0;
+.city-row-notify {
+  color: #8fd0ff;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  margin-top: 3px;
+  display: block;
+}
+
+.city-row.notify .city-row-name,
+.city-row.notify .city-row-right {
+  opacity: 0.65;
+}
+
+.city-row-right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 1;
+  max-width: 52%;
+  column-gap: 8px;
+  row-gap: 2px;
+}
+
+.city-row-distance {
+  color: #7f93a9;
   font-size: 13px;
-  font-weight: 800;
+  line-height: 17px;
+  font-weight: 700;
+  direction: ltr;
   flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.city-row-status {
+  color: #8fa3b8;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 700;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.city-row-status.viewing {
+  color: #b7cbdc;
+  font-weight: 800;
+}
+
+.city-row-status.disabled {
+  color: #9aadc0;
+}
+
+.city-row-status.next {
+  color: #8fd0ff;
+  font-weight: 900;
+}
+
+.city-request-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 8px;
+  min-height: 52px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: #0e1822;
+  border: 1px solid #182837;
+  color: #8fd0ff;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 800;
+  text-align: left;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.city-request-row:hover,
+.city-request-row:active {
+  background: #132431;
+}
+
+[data-screen="city"] .city-picker-header .back-btn {
+  margin-bottom: 0;
 }
 
 .app-title {
@@ -408,6 +500,28 @@
 .filter-chip span {
   line-height: 1.1;
   text-align: center;
+}
+
+.filter-chip .first-tab-icon {
+  display: flex;
+  line-height: 0;
+}
+
+/* App: HomeScreen nearbyStatusLine. */
+.nearby-status-line {
+  color: #8fb5d7;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 700;
+  margin: 14px 0 0;
+}
+
+.nearby-status-line.warning {
+  color: #f5c56a;
+}
+
+.nearby-status-line.hidden {
+  display: none;
 }
 
 .filter-chip[data-filter="All"] {
@@ -557,6 +671,34 @@
   text-align: center;
   flex-shrink: 0;
   max-width: 100%;
+}
+
+/* App: HomeScreen distanceText / savedDistance. */
+.venue-distance {
+  flex-shrink: 0;
+  margin-top: 4px;
+  color: #8fb5d7;
+  font-size: 13px;
+  font-weight: 700;
+  direction: ltr;
+  white-space: nowrap;
+}
+
+/* App: HomeScreen reportRpPrompt. */
+.report-rp-prompt {
+  min-height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: #102232;
+  border: 1px solid #243f52;
+  color: #8fd0ff;
+  font-size: 13px;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-shrink: 0;
 }
 
 .no-recent-wait {
@@ -984,6 +1126,15 @@
   font-size: 13px;
   margin-top: 4px;
   font-weight: 600;
+}
+
+/* App: ReportWaitScreen venueDistance. */
+.venue-result-distance {
+  color: #8fb5d7;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 4px;
+  direction: ltr;
 }
 
 .missing-venue-reward {
