@@ -191,7 +191,7 @@ const PREVIEW_MARKUP = `
         </div>
         <div data-screen="report-wait" class="screen hidden">
           <div class="report-top-bar">
-            <button type="button" class="back-btn" data-report-back>${prIcon('arrow', 16)}<span>Back</span></button>
+            <button type="button" class="back-btn" data-report-back>${prIcon('arrow', 16)}<span data-i18n="common.back">Back</span></button>
           </div>
           <div class="app-scroll report-wait-scroll" data-report-body></div>
           <div class="report-footer" data-report-footer></div>
@@ -1597,18 +1597,18 @@ function mountPickupRadarPreview(container, options) {
         '" data-issue-type="' +
         escapeHtml(issue.key) +
         '">' +
-        escapeHtml(issue.label) +
+        escapeHtml(t('issue.' + issue.key, issue.label)) +
         '</button>'
       );
     }).join('');
     const note = reportFormState.selectedIssueType === 'other'
-      ? '<textarea class="issue-input" data-issue-note maxlength="500" placeholder="Note (optional)" rows="3">' +
+      ? '<textarea class="issue-input" data-issue-note maxlength="500" placeholder="' + escapeHtml(t('missing.note', 'Note (optional)')) + '" rows="3">' +
         escapeHtml(reportFormState.issueNote) +
         '</textarea>'
       : '';
     return (
       '<div class="issue-compact-card">' +
-      '<p class="issue-compact-title">What\'s wrong with this venue?</p>' +
+      '<p class="issue-compact-title">' + escapeHtml(t('problem.whatsWrong', "What's wrong with this venue?")) + '</p>' +
       '<div class="issue-chip-wrap">' + chips + '</div>' +
       note +
       '</div>'
@@ -1632,10 +1632,10 @@ function mountPickupRadarPreview(container, options) {
       .join('');
     let warnings = '';
     if (venue.closedWarning) {
-      warnings += '<span class="selected-venue-warning">Reported closed recently</span>';
+      warnings += '<span class="selected-venue-warning">' + escapeHtml(t('report.badge.closedRecently', 'Reported closed recently')) + '</span>';
     }
     if (venue.systemDownWarning) {
-      warnings += '<span class="selected-venue-warning">Tablet/server issue reported</span>';
+      warnings += '<span class="selected-venue-warning">' + escapeHtml(t('report.badge.systemIssue', 'Tablet/server issue reported')) + '</span>';
     }
 
     const live = WC.isLocallyLiveWait(venue, now);
@@ -1645,9 +1645,11 @@ function mountPickupRadarPreview(container, options) {
       const bucket = WC.getWaitBucketFromMinutes(venue.currentWaitMinutes);
       const pill = WC.WAIT_BUCKET_COLORS[bucket];
       const count = venue.reports2hCount || 0;
+      const currentWait = t('report.currentWait', 'Current wait');
       const label = count > 0
-        ? 'Current wait · ' + count + (count === 1 ? ' report' : ' reports')
-        : 'Current wait';
+        ? currentWait + ' \u00B7 ' + t(count === 1 ? 'report.liveReportCount.one' : 'report.liveReportCount.other',
+          count === 1 ? '{count} report' : '{count} reports', { count: count })
+        : currentWait;
       const cardStyle = tint
         ? 'background:' + tint.backgroundColor + ';border-color:' + tint.borderColor + ';'
         : '';
@@ -1655,8 +1657,8 @@ function mountPickupRadarPreview(container, options) {
         '<div class="details-gap"></div>' +
         '<div class="current-wait-card" style="' + cardStyle + '">' +
         '<div class="current-wait-row"><span class="current-wait-label">' + escapeHtml(label) + '</span>' +
-        '<span class="current-wait-pill" style="background:' + pill.backgroundColor + ';color:' + pill.color + ';">' +
-        escapeHtml(venue.currentWaitLabel) +
+        '<span class="current-wait-pill" dir="ltr" style="background:' + pill.backgroundColor + ';color:' + pill.color + ';">' +
+        escapeHtml(waitRangeLabel(venue.currentWaitMinutes)) +
         '</span></div></div>';
     }
 
@@ -1689,10 +1691,10 @@ function mountPickupRadarPreview(container, options) {
 
     return (
       '<div class="details-heading">' +
-      '<h2 class="report-wait-title">Report wait</h2>' +
+      '<h2 class="report-wait-title">' + escapeHtml(t('report.title', 'Report wait')) + '</h2>' +
       '<div class="details-actions">' +
-      '<button type="button" class="icon-action" data-save-venue aria-label="Save pickup point">' + prIcon('bookmark-outline', 20) + '</button>' +
-      '<button type="button" class="icon-action" data-share-venue aria-label="Share pickup point">' + prIcon('share', 20) + '</button>' +
+      '<button type="button" class="icon-action" data-save-venue aria-label="' + escapeHtml(t('venue.save', 'Save pickup point')) + '">' + prIcon('bookmark-outline', 20) + '</button>' +
+      '<button type="button" class="icon-action" data-share-venue aria-label="' + escapeHtml(t('venue.share', 'Share pickup point')) + '">' + prIcon('share', 20) + '</button>' +
       '</div></div>' +
       '<div class="selected-venue-card">' +
       '<div class="selected-venue-identity">' +
@@ -1704,33 +1706,33 @@ function mountPickupRadarPreview(container, options) {
       locationHtml +
       warnings +
       '</div></div>' +
-      '<button type="button" class="change-pill" data-report-change>Change</button>' +
+      '<button type="button" class="change-pill" data-report-change>' + escapeHtml(t('report.change', 'Change')) + '</button>' +
       '</div>' +
       currentWaitHtml +
       '<div class="details-gap"></div>' +
-      '<div class="section-heading">' + prIcon('clock', 18) + '<span>Wait time (minutes)</span></div>' +
-      '<div class="wait-grid" role="radiogroup" aria-label="Wait time (minutes)">' + waitTiles + '</div>' +
+      '<div class="section-heading">' + prIcon('clock', 18) + '<span>' + escapeHtml(t('report.waitTime', 'Wait time (minutes)')) + '</span></div>' +
+      '<div class="wait-grid" role="radiogroup" aria-label="' + escapeHtml(t('report.waitTime', 'Wait time (minutes)')) + '">' + waitTiles + '</div>' +
       '<div class="details-gap"></div>' +
-      '<div class="section-heading">' + prIcon('phone', 18) + '<span>Delivery app (optional)</span></div>' +
+      '<div class="section-heading">' + prIcon('phone', 18) + '<span>' + escapeHtml(t('report.deliveryApp', 'Delivery app (optional)')) + '</span></div>' +
       '<div class="platform-row">' + platformChips + '</div>' +
       '<div class="details-gap"></div>' +
       '<button type="button" class="toggle-row' + (arrivalOn ? ' on' : '') + '" data-order-made-toggle aria-pressed="' + (arrivalOn ? 'true' : 'false') + '">' +
       '<span class="toggle-copy">' +
-      '<span class="toggle-title-row"><span style="color:#8FB5D7;">' + prIcon(VD.getVenueTypeIconName(venue.venue_type), 18) + '</span><span>Order starts after arrival</span></span>' +
-      '<span class="toggle-subtitle">Staff start preparing the order when you arrive.</span>' +
+      '<span class="toggle-title-row"><span style="color:#8FB5D7;">' + prIcon(VD.getVenueTypeIconName(venue.venue_type), 18) + '</span><span>' + escapeHtml(t('report.orderStartsOnArrival.title', 'Order starts after arrival')) + '</span></span>' +
+      '<span class="toggle-subtitle">' + escapeHtml(t('report.orderStartsOnArrival.subtitle', 'Staff start preparing the order when you arrive.')) + '</span>' +
       '</span>' +
       '<span class="switch" aria-hidden="true"><span class="switch-track"><span class="switch-thumb"></span></span></span>' +
       '</button>' +
       '<div class="details-gap"></div>' +
       '<button type="button" class="problem-toggle" data-problem-toggle>' +
-      '<span class="problem-toggle-title"><span style="color:#E7A85B;">' + prIcon('warning', 18) + '</span><span>Report a problem</span></span>' +
+      '<span class="problem-toggle-title"><span style="color:#E7A85B;">' + prIcon('warning', 18) + '</span><span>' + escapeHtml(t('problem.report', 'Report a problem')) + '</span></span>' +
       '<span style="color:#8FB5D7;">' + prIcon(problemOpen ? 'chevron-up' : 'chevron', 18) + '</span>' +
       '</button>' +
       (problemOpen
         ? '<div class="problem-panel">' +
-          '<button type="button" class="problem-action' + (closedActive ? ' active' : '') + '" data-problem-action="closed"><span style="color:#FF8B91;">' + prIcon('close-circle', 15) + '</span><span>Closed now</span></button>' +
-          '<button type="button" class="problem-action' + (downActive ? ' active' : '') + '" data-problem-action="system_down"><span style="color:#E7A85B;">' + prIcon('cloud', 15) + '</span><span>Not receiving orders</span></button>' +
-          '<button type="button" class="problem-action' + (otherActive ? ' active' : '') + '" data-problem-action="other">Other issue</button>' +
+          '<button type="button" class="problem-action' + (closedActive ? ' active' : '') + '" data-problem-action="closed"><span style="color:#FF8B91;">' + prIcon('close-circle', 15) + '</span><span>' + escapeHtml(t('problem.closedNow', 'Closed now')) + '</span></button>' +
+          '<button type="button" class="problem-action' + (downActive ? ' active' : '') + '" data-problem-action="system_down"><span style="color:#E7A85B;">' + prIcon('cloud', 15) + '</span><span>' + escapeHtml(t('problem.notReceiving', 'Not receiving orders')) + '</span></button>' +
+          '<button type="button" class="problem-action' + (otherActive ? ' active' : '') + '" data-problem-action="other">' + escapeHtml(t('problem.otherIssue', 'Other issue')) + '</button>' +
           renderIssuePanelHtml() +
           '</div>'
         : '')
@@ -1840,17 +1842,18 @@ function mountPickupRadarPreview(container, options) {
   function renderReportFooter() {
     const problemMode = reportProblemMode();
     const canSubmit = problemMode ? canSubmitProblem() : Boolean(reportFormState.waitBucket);
-    let label = 'Submit report · +' + displayedWaitReportRp(currentReportVenue) + ' RP';
+    // App: `${t('report.submit')} · +${rp} RP`, problem.submit and the hint keys.
+    let label = t('report.submit', 'Submit report') + ' \u00B7 +' + displayedWaitReportRp(currentReportVenue) + ' RP';
     let hint = '';
     if (problemMode) {
-      label = 'Submit problem';
+      label = t('problem.submit', 'Submit problem');
       if (!canSubmit) {
         hint = reportFormState.selectedProblemAction === 'other' && reportFormState.selectedIssueType === null
-          ? 'Choose an issue.'
-          : 'Choose a problem.';
+          ? t('problem.chooseIssue', 'Choose an issue.')
+          : t('problem.chooseProblem', 'Choose a problem.');
       }
     } else if (!canSubmit) {
-      hint = 'Choose a wait time.';
+      hint = t('report.chooseWaitTime', 'Choose a wait time.');
     }
     reportFooter.innerHTML =
       '<button type="button" class="report-submit-btn' + (canSubmit ? '' : ' disabled') + '" data-report-submit' +
@@ -2303,6 +2306,8 @@ function mountPickupRadarPreview(container, options) {
     updateFirstTab();
     if (onboardingScreen && !onboardingScreen.classList.contains('hidden')) renderOnboardingSlide();
     if (!languageScreen.classList.contains('hidden')) renderLanguageList();
+    // Keeps the chosen wait, delivery app, open problem options, typed note and scroll position.
+    if (currentReportVenue && !reportWaitScreen.classList.contains('hidden')) rerenderReport(false);
     if (venueStats.length || loadError) {
       const scroller = homeScreen.querySelector('.app-scroll');
       const top = scroller ? scroller.scrollTop : 0;
