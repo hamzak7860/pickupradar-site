@@ -1381,3 +1381,31 @@ body.page-live-preview #livePreview {
   font-weight: 800;
   text-align: center;
 }
+
+/* Back to top (site.js), like the app's round arrow button */
+.w-top {
+  position: fixed;
+  right: 16px;
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  z-index: 40;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border-radius: 24px;
+  border: 1px solid #24384a;
+  background: var(--w-panel-2);
+  color: var(--w-paper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.w-top[hidden] {
+  display: none;
+}
+
+.w-top:hover {
+  color: var(--w-radar);
+}

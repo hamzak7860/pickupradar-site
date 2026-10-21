@@ -37,6 +37,7 @@ const PR_ICONS = {
     '<path fill="currentColor" d="M6.7 15.2a1 1 0 0 1 0-1.4l4.6-4.6a1 1 0 0 1 1.4 0l4.6 4.6a1 1 0 1 1-1.4 1.4L12 11.3l-3.9 3.9a1 1 0 0 1-1.4 0z"/>',
   'close-circle':
     '<circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" d="m9 9 6 6M15 9l-6 6"/>',
+  'arrow-up': '<path fill="currentColor" d="M11 20V7.4l-5.6 5.7L4 11.7 12 3.6l8 8.1-1.4 1.4L13 7.4V20z"/>',
   cloud:
     '<path fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" d="M7.2 17.2h9.2a3.6 3.6 0 0 0 .4-7.2 4.6 4.6 0 0 0-8.8-1.2A3.2 3.2 0 0 0 7.2 17.2zM5 19.4l14-12"/>',
 };
@@ -58,6 +59,44 @@ const PREVIEW_MARKUP = `
     <div class="phone-shell">
       <div class="phone-screen">
         <div class="phone-status" aria-hidden="true"></div>
+        <div data-screen="onboarding" class="screen hidden onboarding-screen" aria-label="PickupRadar tutorial">
+          <div class="onb-top">
+            <span class="onb-lang">${prIcon('globe', 16)}<span>English</span></span>
+            <button type="button" class="onb-skip" data-onb-skip>Skip</button>
+          </div>
+          <div class="onb-body" data-onb-body>
+            <div class="onb-frame" aria-hidden="true">
+              <img data-onb-img="0" data-src="assets/onboarding-slide1.jpg" alt="" width="720" height="540" decoding="async" />
+              <img data-onb-img="1" data-src="assets/onboarding-slide2.jpg" alt="" width="720" height="540" decoding="async" />
+              <img data-onb-img="2" data-src="assets/onboarding-slide3.jpg" alt="" width="720" height="540" decoding="async" />
+            </div>
+            <h2 class="onb-title" data-onb-title></h2>
+            <p class="onb-text" data-onb-text></p>
+          </div>
+          <div class="onb-footer">
+            <div class="onb-dots">
+              <button type="button" class="onb-dot" data-onb-dot="0" aria-label="Slide 1 of 3"></button>
+              <button type="button" class="onb-dot" data-onb-dot="1" aria-label="Slide 2 of 3"></button>
+              <button type="button" class="onb-dot" data-onb-dot="2" aria-label="Slide 3 of 3"></button>
+            </div>
+            <button type="button" class="onb-primary" data-onb-next>Next</button>
+          </div>
+        </div>
+        <div data-screen="location-intro" class="screen hidden onboarding-screen">
+          <div class="onb-top">
+            <span class="onb-lang">${prIcon('globe', 16)}<span>English</span></span>
+          </div>
+          <div class="onb-body onb-body-center">
+            <div class="onb-frame" aria-hidden="true">
+              <img class="active" data-src="assets/onboarding-location.jpg" alt="" width="720" height="540" decoding="async" />
+            </div>
+            <h2 class="onb-title">See pickups near you</h2>
+            <p class="onb-text">Allow location to show nearby pickup points and distances. PickupRadar only uses your location while you use the app — no background tracking.</p>
+          </div>
+          <div class="onb-footer">
+            <button type="button" class="onb-primary" data-location-intro-next>Next</button>
+          </div>
+        </div>
         <div data-screen="home" class="screen">
           <div class="app-scroll">
             <div class="app-header">
@@ -99,6 +138,7 @@ const PREVIEW_MARKUP = `
             <button type="button" class="dock-report" data-report-wait-btn>${prIcon('stopwatch', 24)}<span>Report wait</span></button>
             <button type="button" class="dock-profile" data-open-app>${prIcon('profile', 24)}<span>Profile</span></button>
           </div>
+          <button type="button" class="scroll-top-btn home-top-btn hidden" data-home-top aria-label="Back to top">${prIcon('arrow-up', 20)}</button>
           <div class="help-overlay hidden" data-help-sheet>
             <div class="help-sheet" role="dialog" aria-modal="true" aria-labelledby="helpSheetTitle">
               <p id="helpSheetTitle" class="help-sheet-title">Help</p>
@@ -115,6 +155,7 @@ const PREVIEW_MARKUP = `
             <input data-city-search class="city-search-input" type="search" placeholder="Search cities" autocomplete="off" autocapitalize="off" spellcheck="false" data-lpignore="true" />
           </div>
           <div class="app-scroll" data-city-list></div>
+          <button type="button" class="scroll-top-btn city-top-btn hidden" data-city-top aria-label="Back to top">${prIcon('arrow-up', 20)}</button>
         </div>
         <div data-screen="search" class="screen hidden">
           <div class="app-scroll report-search-scroll">
@@ -322,6 +363,12 @@ function mountPickupRadarPreview(container, options) {
   let suggestionVenueNote = '';
   let lastMissingVenueQuery = '';
   let applyingHistory = false;
+  // Venue rows for the city on screen, kept so live updates only re-fetch the stats.
+  let lastVenueRows = null;
+  let cityLoadInFlight = false;
+  let lastStatsRefreshAt = 0;
+  // Tutorial (app.html only): true while the tutorial or the location screen is showing.
+  let onboardingActive = false;
   let activeDialog = null;
   let dialogReturnFocus = null;
 
@@ -341,6 +388,8 @@ function mountPickupRadarPreview(container, options) {
   const cityScreen = root.querySelector('[data-screen="city"]');
   const searchScreen = root.querySelector('[data-screen="search"]');
   const reportWaitScreen = root.querySelector('[data-screen="report-wait"]');
+  const onboardingScreen = root.querySelector('[data-screen="onboarding"]');
+  const locationIntroScreen = root.querySelector('[data-screen="location-intro"]');
   const downloadModal = root.querySelector('[data-download-modal]');
   const infoModal = root.querySelector('[data-info-modal]');
   const supportModal = root.querySelector('[data-support-modal]');
@@ -850,7 +899,28 @@ function mountPickupRadarPreview(container, options) {
     if (searchActive && !zeroResults) bindMissingVenueSection(missingResults);
   }
 
+  async function fetchStatsRows(city) {
+    const statsRows = await supabasePost('/rpc/get_public_venue_stats_sparse_v2', {
+      p_city: city,
+      p_internal_zones: null,
+      p_timezone: 'Europe/London',
+    });
+    if (!Array.isArray(statsRows)) {
+      throw new Error('Live data request failed');
+    }
+    return statsRows;
+  }
+
   async function loadCityData(city) {
+    cityLoadInFlight = true;
+    try {
+      await loadCityDataNow(city);
+    } finally {
+      cityLoadInFlight = false;
+    }
+  }
+
+  async function loadCityDataNow(city) {
     loadError = null;
     homeBody.innerHTML = '<div class="state-box"><strong>Loading live data…</strong><span>Syncing venues and reports for ' + escapeHtml(city) + '.</span></div>';
 
@@ -875,22 +945,21 @@ function mountPickupRadarPreview(container, options) {
       offset += pageSize;
     }
 
-    const statsRows = await supabasePost('/rpc/get_public_venue_stats_sparse_v2', {
-      p_city: city,
-      p_internal_zones: null,
-      p_timezone: 'Europe/London',
-    });
-    if (!Array.isArray(statsRows)) {
-      throw new Error('Live data request failed');
-    }
+    lastStatsRefreshAt = Date.now();
+    const statsRows = await fetchStatsRows(city);
 
+    lastVenueRows = venueRows;
     venueStats = buildVenueStats(venueRows, statsRows);
+    // Follow the city that is now on screen.
+    if (rtWanted) connectRealtime();
 
     renderHomeList();
     if (!searchScreen.classList.contains('hidden')) renderSearchList();
   }
 
   function showScreen(name) {
+    onboardingScreen.classList.toggle('hidden', name !== 'onboarding');
+    locationIntroScreen.classList.toggle('hidden', name !== 'location-intro');
     homeScreen.classList.toggle('hidden', name !== 'home');
     cityScreen.classList.toggle('hidden', name !== 'city');
     searchScreen.classList.toggle('hidden', name !== 'search');
@@ -925,6 +994,7 @@ function mountPickupRadarPreview(container, options) {
   }
 
   function applyPreviewHistory(state) {
+    if (onboardingActive) return;
     applyingHistory = true;
     try {
       const screen = state && state.prPreview ? state.prScreen : 'home';
@@ -1253,6 +1323,11 @@ function mountPickupRadarPreview(container, options) {
       openBtn.addEventListener('click', () => {
         missingVenueExpanded = true;
         renderSearchList();
+        const scroller = searchScreen.querySelector('.report-search-scroll');
+        const form = searchScreen.querySelector('.missing-venue-form');
+        if (scroller && form) scrollPreviewToShow(scroller, form);
+        const first = searchScreen.querySelector('[data-suggestion-name]');
+        if (first) first.focus({ preventScroll: true });
       });
       return;
     }
@@ -1477,12 +1552,57 @@ function mountPickupRadarPreview(container, options) {
     );
   }
 
-  function renderReportWaitContent(venue, resetScroll) {
+  // Keep keyboard focus on the same control after the form is re-rendered.
+  const REPORT_FOCUS_ATTRS = ['data-problem-toggle', 'data-problem-action', 'data-issue-type', 'data-wait-bucket', 'data-platform', 'data-order-made-toggle', 'data-report-change'];
+
+  function focusedReportControlSelector() {
+    const el = document.activeElement;
+    if (!el || !reportBody.contains(el)) return null;
+    for (const attr of REPORT_FOCUS_ATTRS) {
+      if (el.hasAttribute(attr)) {
+        const value = el.getAttribute(attr);
+        return value ? '[' + attr + '="' + value.replace(/"/g, '') + '"]' : '[' + attr + ']';
+      }
+    }
+    return null;
+  }
+
+  function prefersReducedMotion() {
+    return Boolean(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  }
+
+  // Scroll a preview list to its end (app: scrollToEnd after the problem options open).
+  function scrollPreviewToEnd(container) {
+    requestAnimationFrame(() => {
+      container.scrollTo({ top: container.scrollHeight, behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
+    });
+  }
+
+  // Scroll inside the phone only (never the page) so el is fully visible.
+  function scrollPreviewToShow(container, el) {
+    requestAnimationFrame(() => {
+      const box = container.getBoundingClientRect();
+      const target = el.getBoundingClientRect();
+      const scale = container.offsetHeight ? box.height / container.offsetHeight : 1;
+      const overflow = (target.bottom - box.bottom) / (scale || 1) + 12;
+      if (overflow > 0) {
+        container.scrollBy({ top: overflow, behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
+      }
+    });
+  }
+
+  function renderReportWaitContent(venue, resetScroll, scrollToEnd) {
     const scrollTop = reportBody.scrollTop;
-    reportBody.innerHTML = buildReportWaitHtml(venue);
+    const focusSelector = focusedReportControlSelector();
+    reportBody.innerHTML = '<div class="report-details-content">' + buildReportWaitHtml(venue) + '</div>';
     bindReportWaitForm();
     renderReportFooter();
     reportBody.scrollTop = resetScroll ? 0 : scrollTop;
+    if (focusSelector) {
+      const again = reportBody.querySelector(focusSelector);
+      if (again) again.focus({ preventScroll: true });
+    }
+    if (scrollToEnd) scrollPreviewToEnd(reportBody);
   }
 
   function renderSelectedVenueLocationHtml(venue) {
@@ -1566,9 +1686,9 @@ function mountPickupRadarPreview(container, options) {
     }
   }
 
-  function rerenderReport(resetScroll) {
+  function rerenderReport(resetScroll, scrollToEnd) {
     if (!currentReportVenue) return;
-    renderReportWaitContent(currentReportVenue, resetScroll);
+    renderReportWaitContent(currentReportVenue, resetScroll, scrollToEnd);
   }
 
   function bindReportWaitForm() {
@@ -1597,7 +1717,8 @@ function mountPickupRadarPreview(container, options) {
       problemToggle.addEventListener('click', function () {
         reportFormState.problemExpanded = !reportFormState.problemExpanded;
         if (!reportFormState.problemExpanded) clearProblemSelection();
-        rerenderReport(false);
+        // App: opening the panel scrolls down to show the three options.
+        rerenderReport(false, reportFormState.problemExpanded);
       });
     }
 
@@ -1613,7 +1734,8 @@ function mountPickupRadarPreview(container, options) {
           reportFormState.selectedIssueType = null;
           reportFormState.issueNote = '';
         }
-        rerenderReport(false);
+        // App: Other issue scrolls down again to show the issue options.
+        rerenderReport(false, action === 'other');
       });
     });
 
@@ -1984,6 +2106,343 @@ function mountPickupRadarPreview(container, options) {
     });
   }
 
+  // ---- Back to top (app: Home after one screen of scrolling, Browse cities after 240) ----
+  function setupScrollTop(scroller, button, threshold) {
+    if (!scroller || !button) return;
+    const update = () => {
+      const limit = typeof threshold === 'number' ? threshold : scroller.clientHeight;
+      button.classList.toggle('hidden', scroller.scrollTop <= limit);
+    };
+    scroller.addEventListener('scroll', update, { passive: true });
+    button.addEventListener('click', () => {
+      scroller.scrollTo({ top: 0, behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
+    });
+  }
+  setupScrollTop(homeScreen.querySelector('.app-scroll'), root.querySelector('[data-home-top]'));
+  setupScrollTop(cityListBody, root.querySelector('[data-city-top]'), 240);
+
+  // ---- Live updates (app: private city:<slug> broadcast "stats_changed") ----
+  // Receive-only Supabase Realtime channel with the public anon key, then re-fetch the
+  // same read-only stats. Nothing is ever sent except the join and heartbeats.
+  const REALTIME_URL = SUPABASE_URL.replace(/^http/, 'ws') + '/realtime/v1/websocket?apikey=' + encodeURIComponent(SUPABASE_ANON_KEY) + '&vsn=1.0.0';
+  const STATS_MIN_REFRESH_MS = 5000;
+  const STATS_DELAY_MIN_MS = 300;
+  const STATS_DELAY_MAX_MS = 1000;
+  const RECONNECT_DELAYS_MS = [1000, 2000, 5000, 10000, 30000];
+  let rtSocket = null;
+  let rtTopic = null;
+  let rtRef = 0;
+  let rtHeartbeat = null;
+  let rtRetry = 0;
+  let rtRetryTimer = null;
+  let rtWanted = false;
+  let statsRefreshTimer = null;
+  let statsRefreshInFlight = false;
+  let statsRefreshQueued = false;
+
+  function cityTopic(city) {
+    return 'city:' + String(city || '').trim().toLowerCase().replace(/\s+/g, '-');
+  }
+
+  function requestStatsRefresh() {
+    if (statsRefreshTimer) return;
+    const jitter = STATS_DELAY_MIN_MS + Math.floor(Math.random() * (STATS_DELAY_MAX_MS - STATS_DELAY_MIN_MS + 1));
+    const wait = Math.max(jitter, lastStatsRefreshAt + STATS_MIN_REFRESH_MS - Date.now());
+    statsRefreshTimer = setTimeout(runStatsRefresh, wait);
+  }
+
+  async function runStatsRefresh() {
+    statsRefreshTimer = null;
+    if (statsRefreshInFlight || cityLoadInFlight || !lastVenueRows) {
+      statsRefreshQueued = true;
+      if (!statsRefreshInFlight) setTimeout(() => { if (statsRefreshQueued) { statsRefreshQueued = false; requestStatsRefresh(); } }, 1000);
+      return;
+    }
+    statsRefreshInFlight = true;
+    lastStatsRefreshAt = Date.now();
+    const city = activeCity;
+    try {
+      const rows = await fetchStatsRows(city);
+      if (city !== activeCity || !lastVenueRows) return;
+      venueStats = buildVenueStats(lastVenueRows, rows);
+      rerenderAfterLiveUpdate();
+    } catch (error) {
+      // Keep showing the last data; the next update or reconnect tries again.
+    } finally {
+      statsRefreshInFlight = false;
+      if (statsRefreshQueued) {
+        statsRefreshQueued = false;
+        requestStatsRefresh();
+      }
+    }
+  }
+
+  function rerenderAfterLiveUpdate() {
+    const active = document.activeElement;
+    if (!homeScreen.classList.contains('hidden')) {
+      const scroller = homeScreen.querySelector('.app-scroll');
+      const top = scroller ? scroller.scrollTop : 0;
+      const focusedId = active && homeBody.contains(active) ? active.getAttribute('data-venue-id') : null;
+      renderHomeList();
+      if (scroller) scroller.scrollTop = top;
+      if (focusedId) {
+        const card = homeBody.querySelector('.venue-card[data-venue-id="' + focusedId.replace(/"/g, '') + '"]');
+        if (card) card.focus({ preventScroll: true });
+      }
+    }
+    if (!searchScreen.classList.contains('hidden')) {
+      const typing = active && (missingZero.contains(active) || missingResults.contains(active));
+      if (!typing) {
+        const scroller = searchScreen.querySelector('.report-search-scroll');
+        const top = scroller ? scroller.scrollTop : 0;
+        renderSearchList();
+        if (scroller) scroller.scrollTop = top;
+      }
+    }
+    if (!reportWaitScreen.classList.contains('hidden') && currentReportVenue) {
+      const fresh = venueStats.find((item) => item.id === currentReportVenue.id);
+      const typing = active && reportBody.contains(active) && (active.tagName === 'TEXTAREA' || active.tagName === 'INPUT');
+      if (fresh) currentReportVenue = fresh;
+      if (fresh && !typing) rerenderReport(false);
+    }
+  }
+
+  function stopRealtimeSocket() {
+    if (rtHeartbeat) clearInterval(rtHeartbeat);
+    rtHeartbeat = null;
+    if (rtRetryTimer) clearTimeout(rtRetryTimer);
+    rtRetryTimer = null;
+    const socket = rtSocket;
+    rtSocket = null;
+    rtTopic = null;
+    if (socket) {
+      socket.onopen = socket.onmessage = socket.onclose = socket.onerror = null;
+      try { socket.close(); } catch (error) { /* already closed */ }
+    }
+  }
+
+  function scheduleRealtimeReconnect() {
+    if (rtRetryTimer || !rtWanted || document.hidden) return;
+    const delay = RECONNECT_DELAYS_MS[Math.min(rtRetry, RECONNECT_DELAYS_MS.length - 1)];
+    rtRetry += 1;
+    rtRetryTimer = setTimeout(() => {
+      rtRetryTimer = null;
+      connectRealtime();
+    }, delay);
+  }
+
+  function connectRealtime() {
+    if (!('WebSocket' in window) || !rtWanted || document.hidden) return;
+    if (rtSocket && rtTopic === cityTopic(activeCity)) return;
+    stopRealtimeSocket();
+    const topic = cityTopic(activeCity);
+    const channel = 'realtime:' + topic;
+    let socket;
+    try {
+      socket = new WebSocket(REALTIME_URL);
+    } catch (error) {
+      scheduleRealtimeReconnect();
+      return;
+    }
+    rtSocket = socket;
+    rtTopic = topic;
+    const joinRef = String(++rtRef);
+    const send = (message) => {
+      if (socket.readyState === 1) socket.send(JSON.stringify(message));
+    };
+    socket.onopen = () => {
+      send({
+        topic: channel,
+        event: 'phx_join',
+        payload: {
+          config: { broadcast: { ack: false, self: false }, presence: { key: '' }, postgres_changes: [], private: true },
+          access_token: SUPABASE_ANON_KEY,
+        },
+        ref: joinRef,
+        join_ref: joinRef,
+      });
+      rtHeartbeat = setInterval(() => send({ topic: 'phoenix', event: 'heartbeat', payload: {}, ref: String(++rtRef) }), 25000);
+    };
+    socket.onmessage = (event) => {
+      let message;
+      try { message = JSON.parse(event.data); } catch (error) { return; }
+      if (!message || message.topic !== channel) return;
+      if (message.event === 'phx_reply' && message.ref === joinRef) {
+        if (message.payload && message.payload.status === 'ok') {
+          rtRetry = 0;
+          // App: catch up once subscribed, in case a report arrived while disconnected.
+          requestStatsRefresh();
+        } else {
+          socket.close();
+        }
+        return;
+      }
+      if (message.event === 'broadcast' && message.payload && message.payload.event === 'stats_changed') {
+        requestStatsRefresh();
+        return;
+      }
+      if (message.event === 'phx_error' || message.event === 'phx_close') socket.close();
+    };
+    socket.onerror = () => {};
+    socket.onclose = () => {
+      if (rtSocket !== socket) return;
+      if (rtHeartbeat) clearInterval(rtHeartbeat);
+      rtHeartbeat = null;
+      rtSocket = null;
+      rtTopic = null;
+      scheduleRealtimeReconnect();
+    };
+  }
+
+  function startLiveUpdates() {
+    const begin = () => {
+      rtWanted = true;
+      connectRealtime();
+    };
+    // Connect once the preview has been on screen (the homepage preview sits below the fold).
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          observer.disconnect();
+          begin();
+        }
+      });
+      observer.observe(root);
+    } else {
+      begin();
+    }
+    // App: live only in the foreground. Close in a hidden tab, catch up on return.
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        stopRealtimeSocket();
+      } else if (rtWanted) {
+        rtRetry = 0;
+        connectRealtime();
+      }
+    });
+  }
+
+  // ---- Tutorial (app: OnboardingScreen, then LocationIntroScreen) ----
+  const TUTORIAL_STORAGE_KEY = 'pickupradar_preview_tutorial_seen_v1';
+  const ONBOARDING_SLIDES = [
+    {
+      title: 'Know the wait before you go',
+      body: 'See recent pickup waits at restaurants and stores before you head there, so you can avoid wasting time at slow pickups.',
+    },
+    {
+      title: 'See what drivers are reporting now',
+      body: 'PickupRadar uses recent driver reports for live wait times. When fresh reports are limited, it may show a clearly labelled Likely Fast or Likely Slow estimate.',
+    },
+    {
+      title: 'Help the next driver — they help you',
+      body: 'Report your wait in seconds. Your report helps other drivers choose better pickups — and their reports help you on your next job. You earn RadarPoints for contributing.',
+    },
+  ];
+  let onboardingIndex = 0;
+
+  function tutorialAlreadySeen() {
+    try {
+      return localStorage.getItem(TUTORIAL_STORAGE_KEY) === '1';
+    } catch (error) {
+      return false;
+    }
+  }
+
+  function rememberTutorialSeen() {
+    try {
+      localStorage.setItem(TUTORIAL_STORAGE_KEY, '1');
+    } catch (error) {
+      // Storage blocked: the tutorial simply shows again next time.
+    }
+  }
+
+  function loadTutorialImages(screen) {
+    screen.querySelectorAll('img[data-src]').forEach((img) => {
+      if (!img.getAttribute('src')) img.setAttribute('src', img.getAttribute('data-src'));
+    });
+  }
+
+  function renderOnboardingSlide() {
+    const slide = ONBOARDING_SLIDES[onboardingIndex];
+    onboardingScreen.querySelector('[data-onb-title]').textContent = slide.title;
+    onboardingScreen.querySelector('[data-onb-text]').textContent = slide.body;
+    onboardingScreen.querySelectorAll('[data-onb-img]').forEach((img) => {
+      img.classList.toggle('active', Number(img.getAttribute('data-onb-img')) === onboardingIndex);
+    });
+    onboardingScreen.querySelectorAll('[data-onb-dot]').forEach((dot) => {
+      const current = Number(dot.getAttribute('data-onb-dot')) === onboardingIndex;
+      dot.classList.toggle('active', current);
+      if (current) dot.setAttribute('aria-current', 'step');
+      else dot.removeAttribute('aria-current');
+    });
+    const isLast = onboardingIndex === ONBOARDING_SLIDES.length - 1;
+    onboardingScreen.querySelector('[data-onb-next]').textContent = isLast ? 'Continue' : 'Next';
+    const body = onboardingScreen.querySelector('[data-onb-body]');
+    if (body) body.scrollTop = 0;
+  }
+
+  function goToOnboardingSlide(next) {
+    const clamped = Math.max(0, Math.min(next, ONBOARDING_SLIDES.length - 1));
+    if (clamped === onboardingIndex) return;
+    onboardingIndex = clamped;
+    renderOnboardingSlide();
+  }
+
+  function showLocationIntro() {
+    loadTutorialImages(locationIntroScreen);
+    showScreen('location-intro');
+    const next = locationIntroScreen.querySelector('[data-location-intro-next]');
+    if (next && onboardingScreen.contains(document.activeElement)) next.focus({ preventScroll: true });
+  }
+
+  function finishTutorial() {
+    onboardingActive = false;
+    rememberTutorialSeen();
+    showScreen('home');
+    if (history.state && history.state.prPreview) history.replaceState(null, '');
+    // App: Next on the location screen opens the real location prompt.
+    requestLocation();
+  }
+
+  function setupTutorial() {
+    onboardingScreen.querySelector('[data-onb-skip]').addEventListener('click', showLocationIntro);
+    onboardingScreen.querySelector('[data-onb-next]').addEventListener('click', () => {
+      if (onboardingIndex === ONBOARDING_SLIDES.length - 1) showLocationIntro();
+      else goToOnboardingSlide(onboardingIndex + 1);
+    });
+    onboardingScreen.querySelectorAll('[data-onb-dot]').forEach((dot) => {
+      dot.addEventListener('click', () => goToOnboardingSlide(Number(dot.getAttribute('data-onb-dot'))));
+    });
+    locationIntroScreen.querySelector('[data-location-intro-next]').addEventListener('click', finishTutorial);
+    // Swipe between slides (app: 48px, mostly horizontal).
+    const body = onboardingScreen.querySelector('[data-onb-body]');
+    let start = null;
+    body.addEventListener('pointerdown', (event) => {
+      start = { x: event.clientX, y: event.clientY };
+    });
+    body.addEventListener('pointerup', (event) => {
+      if (!start) return;
+      const dx = event.clientX - start.x;
+      const dy = event.clientY - start.y;
+      start = null;
+      const box = body.getBoundingClientRect();
+      const scale = body.offsetWidth ? box.width / body.offsetWidth : 1;
+      if (Math.abs(dx) / scale < 48 || Math.abs(dx) <= Math.abs(dy) * 1.2) return;
+      goToOnboardingSlide(onboardingIndex + (dx < 0 ? 1 : -1));
+    });
+    body.addEventListener('pointercancel', () => { start = null; });
+  }
+
+  if (options.tutorial && !tutorialAlreadySeen()) {
+    onboardingActive = true;
+    setupTutorial();
+    loadTutorialImages(onboardingScreen);
+    onboardingIndex = 0;
+    renderOnboardingSlide();
+    if (history.state && history.state.prPreview) history.replaceState(null, '');
+    showScreen('onboarding');
+  }
+
   (async function initPreview() {
     try {
       liveCities = await loadLiveCities();
@@ -1991,11 +2450,14 @@ function mountPickupRadarPreview(container, options) {
       activeCity = resolveActiveCity(liveCities);
       saveSelectedCity(activeCity);
       updateCityPill();
-      if (options.resetOnLoad) resetPreviewHome();
+      if (options.resetOnLoad && !onboardingActive) resetPreviewHome();
       await loadCityData(activeCity);
-      if (options.resetOnLoad) resetPreviewHome();
-      else if (history.state && history.state.prPreview) applyPreviewHistory(history.state);
-      setupLocation();
+      if (!onboardingActive) {
+        if (options.resetOnLoad) resetPreviewHome();
+        else if (history.state && history.state.prPreview) applyPreviewHistory(history.state);
+        setupLocation();
+      }
+      startLiveUpdates();
     } catch (error) {
       console.error(error);
       loadError = "Live data isn't available right now.";
