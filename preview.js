@@ -61,8 +61,8 @@ const PREVIEW_MARKUP = `
         <div class="phone-status" aria-hidden="true"></div>
         <div data-screen="onboarding" class="screen hidden onboarding-screen" aria-label="PickupRadar tutorial">
           <div class="onb-top">
-            <span class="onb-lang">${prIcon('globe', 16)}<span>English</span></span>
-            <button type="button" class="onb-skip" data-onb-skip>Skip</button>
+            <button type="button" class="onb-lang" data-open-language aria-haspopup="dialog">${prIcon('globe', 16)}<span data-language-label>English</span></button>
+            <button type="button" class="onb-skip" data-onb-skip data-i18n="onboarding.skip">Skip</button>
           </div>
           <div class="onb-body" data-onb-body>
             <div class="onb-frame" aria-hidden="true">
@@ -84,17 +84,17 @@ const PREVIEW_MARKUP = `
         </div>
         <div data-screen="location-intro" class="screen hidden onboarding-screen">
           <div class="onb-top">
-            <span class="onb-lang">${prIcon('globe', 16)}<span>English</span></span>
+            <button type="button" class="onb-lang" data-open-language aria-haspopup="dialog">${prIcon('globe', 16)}<span data-language-label>English</span></button>
           </div>
           <div class="onb-body onb-body-center">
             <div class="onb-frame" aria-hidden="true">
               <img class="active" data-src="assets/onboarding-location.jpg" alt="" width="720" height="540" decoding="async" />
             </div>
-            <h2 class="onb-title">See pickups near you</h2>
-            <p class="onb-text">Allow location to show nearby pickup points and distances. PickupRadar only uses your location while you use the app — no background tracking.</p>
+            <h2 class="onb-title" data-i18n="onboarding.location.title">See pickups near you</h2>
+            <p class="onb-text" data-i18n="onboarding.location.body">Allow location to show nearby pickup points and distances. PickupRadar only uses your location while you use the app — no background tracking.</p>
           </div>
           <div class="onb-footer">
-            <button type="button" class="onb-primary" data-location-intro-next>Next</button>
+            <button type="button" class="onb-primary" data-location-intro-next data-i18n="onboarding.next">Next</button>
           </div>
         </div>
         <div data-screen="home" class="screen">
@@ -107,11 +107,11 @@ const PREVIEW_MARKUP = `
                   ${prIcon('chevron', 12)}
                 </button>
                 <span class="city-pill-spacer"></span>
-                <button type="button" class="help-btn" data-help-open aria-label="Help">?</button>
-                <span class="language-static">
+                <button type="button" class="help-btn" data-help-open aria-label="Help" data-i18n-aria="home.help">?</button>
+                <button type="button" class="language-static language-btn" data-open-language aria-haspopup="dialog">
                   ${prIcon('globe', 14)}
-                  <span>English</span>
-                </span>
+                  <span data-language-label>English</span>
+                </button>
               </div>
               <div class="title-row">
                 <button type="button" class="title-brand" data-home-brand aria-label="PickupRadar">
@@ -122,33 +122,43 @@ const PREVIEW_MARKUP = `
               </div>
               <div class="filter-row" role="tablist" aria-label="Filters">
                 <button type="button" class="filter-chip active" data-filter="All" role="tab" aria-selected="true"><span class="first-tab-icon" data-first-tab-icon>${prIcon('location', 16)}</span><span data-first-tab-label>Nearby</span></button>
-                <button type="button" class="filter-chip" data-filter="Fast" role="tab" aria-selected="false">${prIcon('flash', 16)}<span>Fast</span></button>
-                <button type="button" class="filter-chip" data-filter="Slow" role="tab" aria-selected="false">${prIcon('hourglass', 16)}<span>Slow</span></button>
-                <button type="button" class="filter-chip" data-filter="Saved" role="tab" aria-selected="false">${prIcon('bookmark', 16)}<span>Saved</span></button>
+                <button type="button" class="filter-chip" data-filter="Fast" role="tab" aria-selected="false">${prIcon('flash', 16)}<span data-i18n="home.tab.fast">Fast</span></button>
+                <button type="button" class="filter-chip" data-filter="Slow" role="tab" aria-selected="false">${prIcon('hourglass', 16)}<span data-i18n="home.tab.slow">Slow</span></button>
+                <button type="button" class="filter-chip" data-filter="Saved" role="tab" aria-selected="false">${prIcon('bookmark', 16)}<span data-i18n="home.tab.saved">Saved</span></button>
               </div>
               <p class="nearby-status-line hidden" data-location-line role="status"></p>
               <button type="button" class="use-location-btn hidden" data-use-location>${prIcon('location', 16)}<span data-use-location-label>Use my location to see nearby pickups</span></button>
               <button type="button" class="search-row" data-open-search>
                 ${prIcon('search', 17)}
-                <span>Search pickup points</span>
+                <span data-i18n="home.search">Search pickup points</span>
               </button>
             </div>
             <div data-home-body></div>
           </div>
           <div class="home-dock">
-            <button type="button" class="dock-report" data-report-wait-btn>${prIcon('stopwatch', 24)}<span>Report wait</span></button>
-            <button type="button" class="dock-profile" data-open-app>${prIcon('profile', 24)}<span>Profile</span></button>
+            <button type="button" class="dock-report" data-report-wait-btn>${prIcon('stopwatch', 24)}<span data-i18n="home.reportWait">Report wait</span></button>
+            <button type="button" class="dock-profile" data-open-app>${prIcon('profile', 24)}<span data-i18n="radar.title">Profile</span></button>
           </div>
-          <button type="button" class="scroll-top-btn home-top-btn hidden" data-home-top aria-label="Back to top">${prIcon('arrow-up', 20)}</button>
+          <button type="button" class="scroll-top-btn home-top-btn hidden" data-home-top aria-label="Back to top" data-i18n-aria="common.backToTop">${prIcon('arrow-up', 20)}</button>
           <div class="help-overlay hidden" data-help-sheet>
             <div class="help-sheet" role="dialog" aria-modal="true" aria-labelledby="helpSheetTitle">
-              <p id="helpSheetTitle" class="help-sheet-title">Help</p>
-              <button type="button" class="help-sheet-row" data-how-it-works>How it works</button>
-              <a class="help-sheet-row" data-support href="support.html">Support</a>
-              <button type="button" class="help-sheet-row hidden" data-tutorial-replay>View tutorial again</button>
-              <button type="button" class="help-sheet-close" data-help-close>Close</button>
+              <p id="helpSheetTitle" class="help-sheet-title" data-i18n="home.help">Help</p>
+              <button type="button" class="help-sheet-row" data-how-it-works data-i18n="home.help.howItWorks">How it works</button>
+              <a class="help-sheet-row" data-support href="support.html" data-i18n="home.help.support">Support</a>
+              <button type="button" class="help-sheet-row hidden" data-tutorial-replay data-i18n="how.tutorial.replay">View tutorial again</button>
+              <button type="button" class="help-sheet-close" data-help-close data-i18n="common.close">Close</button>
             </div>
           </div>
+        </div>
+        <div data-screen="language" class="screen hidden language-screen">
+          <div class="language-header">
+            <h2 class="language-title" id="languageTitle" data-i18n="language.title">Language</h2>
+            <button type="button" class="language-close" data-language-close data-i18n="common.close">Close</button>
+          </div>
+          <div class="language-search-wrap">
+            <input data-language-search class="language-search-input" type="search" placeholder="Search languages" data-i18n-placeholder="language.search" aria-labelledby="languageTitle" autocomplete="off" autocapitalize="off" spellcheck="false" data-lpignore="true" />
+          </div>
+          <div class="app-scroll language-list" data-language-list></div>
         </div>
         <div data-screen="city" class="screen hidden">
           <div class="city-picker-header">
@@ -271,6 +281,150 @@ function mountPickupRadarPreview(container, options) {
   const LCS = LOGIC.liveCitySelection || null;
   const CC = LOGIC.countryConfig || null;
   const HAS_LOCATION_LOGIC = Boolean(GEO && LCS && CC && navigator.geolocation);
+
+  // ---- Language (app: lib/i18n.tsx + lib/translations, built by tools/build-translations.js) ----
+  // i18n/<code>.json are the app's own dictionaries. Missing keys fall back to English.
+  const I18N_STORAGE_KEY = 'pickupradar_language_v1';
+  const I18N_VERSION = '5dcfec4';
+  const I18N_BASE = options.i18nBase || 'i18n/';
+  const RTL_CODES = (CC && CC.RTL_LANGUAGE_CODES) || ['ur', 'ar', 'fa', 'ps', 'prs'];
+  const LANGUAGE_ENTRIES = CC && CC.getAllLanguageEntries
+    ? CC.getAllLanguageEntries()
+    : [{ name: 'English', code: 'en', display: 'English' }];
+  const LANGUAGE_CODE_SET = new Set(LANGUAGE_ENTRIES.map((entry) => entry.code));
+  const dictionaryCache = {};
+  let languageCode = 'en';
+  let languageDict = null;
+  let englishDict = null;
+  let languageRequest = 0;
+
+  function interpolate(template, params) {
+    if (!params) return template;
+    return template.replace(/\{(\w+)\}/g, (match, token) => {
+      const value = params[token];
+      return value === undefined || value === null ? match : String(value);
+    });
+  }
+
+  // t(key, englishFallback, params): selected language, then the app's English, then the fallback.
+  function t(key, fallback, params) {
+    let value = languageDict && typeof languageDict[key] === 'string' ? languageDict[key] : null;
+    if (value === null && englishDict && typeof englishDict[key] === 'string') value = englishDict[key];
+    if (value === null) value = fallback || '';
+    return interpolate(value, params);
+  }
+
+  // Website-only English wording (browser instead of phone); other languages use the app's key.
+  function tWeb(key, englishText, params) {
+    return languageCode === 'en' ? interpolate(englishText, params) : t(key, englishText, params);
+  }
+
+  function isRtlLanguage(code) {
+    return RTL_CODES.indexOf(code) !== -1;
+  }
+
+  function languageDisplayName(code) {
+    const entry = LANGUAGE_ENTRIES.find((item) => item.code === code);
+    return entry ? entry.display : 'English';
+  }
+
+  async function loadDictionary(code) {
+    if (dictionaryCache[code]) return dictionaryCache[code];
+    const response = await fetch(I18N_BASE + encodeURIComponent(code) + '.json?v=' + I18N_VERSION, { credentials: 'omit' });
+    if (!response.ok) throw new Error('Language file unavailable');
+    const dict = await response.json();
+    if (!dict || typeof dict !== 'object') throw new Error('Language file unavailable');
+    dictionaryCache[code] = dict;
+    return dict;
+  }
+
+  function readSavedLanguage() {
+    try {
+      const saved = localStorage.getItem(I18N_STORAGE_KEY);
+      return saved && LANGUAGE_CODE_SET.has(saved) ? saved : null;
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function saveLanguageChoice(code) {
+    try {
+      localStorage.setItem(I18N_STORAGE_KEY, code);
+    } catch (error) {
+      // Storage blocked: the choice still applies until the page is closed.
+    }
+  }
+
+  // App: mapPhoneLocaleToPickupRadarCode (lib/i18n.tsx), applied to the browser's languages.
+  function mapLocaleToLanguageCode(tag) {
+    const parts = String(tag || '').replace(/_/g, '-').toLowerCase().split('-').filter(Boolean);
+    const lang = parts[0];
+    if (!lang) return null;
+    const has = (part) => parts.indexOf(part) !== -1;
+    if (lang === 'tl' || lang === 'fil') return 'tl';
+    if (lang === 'prs') return 'prs';
+    if (lang === 'fa' && has('af')) return 'prs';
+    if (lang === 'zh') return has('hant') || has('tw') || has('hk') || has('mo') ? 'zh-Hant' : 'zh-Hans';
+    if (lang === 'pa') {
+      if (has('arab')) return null;
+      if (has('guru')) return 'pa';
+      if (has('pk')) return null;
+      return 'pa';
+    }
+    if (lang === 'no' || lang === 'nn') return LANGUAGE_CODE_SET.has('nb') ? 'nb' : null;
+    return LANGUAGE_CODE_SET.has(lang) ? lang : null;
+  }
+
+  function detectBrowserLanguage() {
+    const list = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language]) || [];
+    for (const tag of list) {
+      const code = mapLocaleToLanguageCode(tag);
+      if (code) return code;
+    }
+    return null;
+  }
+
+  // App order: saved choice, then the device (browser) language, then English.
+  function initialLanguage() {
+    return readSavedLanguage() || detectBrowserLanguage() || 'en';
+  }
+
+  async function setLanguage(code, settings) {
+    if (!LANGUAGE_CODE_SET.has(code)) return false;
+    const persist = !settings || settings.persist !== false;
+    const request = ++languageRequest;
+    try {
+      const dicts = await Promise.all([code === 'en' ? null : loadDictionary(code), loadDictionary('en')]);
+      if (request !== languageRequest) return false;
+      englishDict = dicts[1];
+      languageDict = code === 'en' ? englishDict : dicts[0];
+      languageCode = code;
+    } catch (error) {
+      // Keep the current language if a file can't be loaded.
+      return false;
+    }
+    if (persist) saveLanguageChoice(code);
+    applyLanguage();
+    return true;
+  }
+
+  function applyStaticTranslations() {
+    root.querySelectorAll('[data-i18n]').forEach((el) => {
+      if (!el.hasAttribute('data-i18n-en')) el.setAttribute('data-i18n-en', el.textContent);
+      el.textContent = t(el.getAttribute('data-i18n'), el.getAttribute('data-i18n-en'));
+    });
+    root.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
+      if (!el.hasAttribute('data-i18n-en-placeholder')) el.setAttribute('data-i18n-en-placeholder', el.getAttribute('placeholder') || '');
+      el.setAttribute('placeholder', t(el.getAttribute('data-i18n-placeholder'), el.getAttribute('data-i18n-en-placeholder')));
+    });
+    root.querySelectorAll('[data-i18n-aria]').forEach((el) => {
+      if (!el.hasAttribute('data-i18n-en-aria')) el.setAttribute('data-i18n-en-aria', el.getAttribute('aria-label') || '');
+      el.setAttribute('aria-label', t(el.getAttribute('data-i18n-aria'), el.getAttribute('data-i18n-en-aria')));
+    });
+    root.querySelectorAll('[data-language-label]').forEach((el) => {
+      el.textContent = languageDisplayName(languageCode);
+    });
+  }
 
   const APP_STORE_URL = '';
   const PLAY_STORE_URL = '';
@@ -658,9 +812,18 @@ function mountPickupRadarPreview(container, options) {
     return venues.slice(0, HOME_TAB_LIMITS.All);
   }
 
+  // App: formatLastReport (HomeScreen.tsx).
   function formatEvidenceTime(minutes) {
-    if (minutes < 60) return Math.max(1, minutes) + 'm ago';
-    return Math.floor(minutes / 60) + 'h ago';
+    if (minutes < 60) return t('home.time.minutesAgo', '{minutes}m ago', { minutes: Math.max(1, minutes) });
+    return t('home.time.hoursAgo', '{hours}h ago', { hours: Math.floor(minutes / 60) });
+  }
+
+  // App: WAIT_BUCKET_TRANSLATION_KEYS.
+  function waitRangeLabel(minutes) {
+    if (minutes < 5) return t('wait.range.under5', '<5 min');
+    if (minutes < 10) return t('wait.range.fiveToTen', '5\u201310 min');
+    if (minutes < 15) return t('wait.range.tenToFifteen', '10\u201315 min');
+    return t('wait.range.fifteenPlus', '15+ min');
   }
 
   function escapeHtml(value) {
@@ -683,11 +846,11 @@ function mountPickupRadarPreview(container, options) {
           ? WC.LIKELY_SLOW_WAIT_PILL
           : null;
     const waitBadgeText = hasRealWaitData
-      ? item.currentWaitLabel
+      ? waitRangeLabel(item.currentWaitMinutes)
       : status === 'fast'
-        ? 'Likely fast'
+        ? t('home.likelyFast', 'Likely fast')
         : status === 'slow'
-          ? 'Likely slow'
+          ? t('home.likelySlow', 'Likely slow')
           : '';
     const reportTimestampMs = item.lastReportAt ? new Date(item.lastReportAt).getTime() : NaN;
     const liveReportMinutes = Number.isFinite(reportTimestampMs)
@@ -696,7 +859,9 @@ function mountPickupRadarPreview(container, options) {
     const hasFreshEvidence =
       hasRealWaitData && item.reports2hCount > 0 && liveReportMinutes !== null && liveReportMinutes < 120;
     const evidenceText = hasFreshEvidence
-      ? (item.reports2hCount === 1 ? '1 report · ' : item.reports2hCount + ' reports · ') + formatEvidenceTime(liveReportMinutes)
+      ? t(item.reports2hCount === 1 ? 'home.reportCount.one' : 'home.reportCount.other',
+        item.reports2hCount === 1 ? '{count} report · {time}' : '{count} reports · {time}',
+        { count: item.reports2hCount, time: formatEvidenceTime(liveReportMinutes) })
       : '';
     const title = mode === 'home'
       ? VD.cleanVenueName(item, activeCity, venueStats)
@@ -709,13 +874,13 @@ function mountPickupRadarPreview(container, options) {
       : '';
     let badges = '';
     if (item.madeWhenDriverArrivesBadge) {
-      badges += '<span class="urgent-badge">Made when driver arrives</span>';
+      badges += '<span class="urgent-badge">' + escapeHtml(t('home.badge.madeOnArrival', 'Made when driver arrives')) + '</span>';
     }
     if (item.closedWarning) {
-      badges += '<span class="urgent-badge">Reported closed recently</span>';
+      badges += '<span class="urgent-badge">' + escapeHtml(t('home.badge.closedRecently', 'Reported closed recently')) + '</span>';
     }
     if (item.systemDownWarning) {
-      badges += '<span class="urgent-badge">Tablet/server issue reported</span>';
+      badges += '<span class="urgent-badge">' + escapeHtml(t('home.badge.systemIssue', 'Tablet/server issue reported')) + '</span>';
     }
     const hasDistance = userCoords && typeof item.distanceMiles === 'number' && Number.isFinite(item.distanceMiles);
     const canShowReportRpPrompt = hasDistance && item.distanceMiles <= MAX_LIVE_REPORT_DISTANCE_MILES && !waitBadgeText;
@@ -725,12 +890,12 @@ function mountPickupRadarPreview(container, options) {
         '</span>'
       : '';
     const pill = waitBadgeText
-      ? '<span class="wait-badge" style="background:' + waitColors.backgroundColor + ';color:' + waitColors.color + ';">' +
+      ? '<span class="wait-badge"' + (hasRealWaitData ? ' dir="ltr"' : '') + ' style="background:' + waitColors.backgroundColor + ';color:' + waitColors.color + ';">' +
         escapeHtml(waitBadgeText) +
         '</span>'
       : canShowReportRpPrompt
-        ? '<span class="report-rp-prompt">Report needed · +15 RP</span>'
-        : '<span class="no-recent-wait">No recent wait</span>';
+        ? '<span class="report-rp-prompt">' + escapeHtml(t('home.reportRpPrompt', 'Report needed · +15 RP')) + '</span>'
+        : '<span class="no-recent-wait">' + escapeHtml(t('home.noRecentWait', 'No recent wait')) + '</span>';
 
     return (
       '<article class="venue-card" style="' + cardStyle + '" data-venue-id="' + escapeHtml(item.id) + '" tabindex="0" role="button">' +
@@ -771,7 +936,9 @@ function mountPickupRadarPreview(container, options) {
   function renderHomeList() {
     if (loadError) {
       homeBody.innerHTML =
-        '<div class="state-box"><strong>Could not load live data</strong><span>Live data isn\'t available right now.</span><button type="button" class="retry-btn" data-retry>Try again</button></div>';
+        '<div class="state-box"><strong>' + escapeHtml(t('startup.error.title', "Can't connect right now")) + '</strong><span>' +
+        escapeHtml(t('startup.error.body', 'Check your internet connection and try again.')) +
+        '</span><button type="button" class="retry-btn" data-retry>' + escapeHtml(t('startup.error.retry', 'Try again')) + '</button></div>';
       root.querySelector('[data-retry]').addEventListener('click', () => {
         loadCityData(activeCity).catch((error) => {
           console.error(error);
@@ -796,11 +963,11 @@ function mountPickupRadarPreview(container, options) {
     const visible = getVisibleVenues(selectedFilter);
     if (visible.length === 0) {
       const empty = selectedFilter === 'Fast'
-        ? ['No likely fast pickups', 'Try Nearby or Slow.']
+        ? [t('home.empty.fast.title', 'No likely fast pickups'), t('home.empty.fast.helper', 'Try Nearby or Slow.')]
         : selectedFilter === 'Slow'
-          ? ['No likely slow pickups', 'Try Nearby or Fast.']
-          : ['No pickup points found', 'Try another area.'];
-      homeBody.innerHTML = '<div class="state-box"><strong>' + empty[0] + '</strong><span>' + empty[1] + '</span></div>';
+          ? [t('home.empty.slow.title', 'No likely slow pickups'), t('home.empty.slow.helper', 'Try Nearby or Fast.')]
+          : [t('home.empty.default.title', 'No pickup points found'), t('home.empty.default.helper', 'Try another area.')];
+      homeBody.innerHTML = '<div class="state-box"><strong>' + escapeHtml(empty[0]) + '</strong><span>' + escapeHtml(empty[1]) + '</span></div>';
       return;
     }
 
@@ -925,7 +1092,8 @@ function mountPickupRadarPreview(container, options) {
 
   async function loadCityDataNow(city) {
     loadError = null;
-    homeBody.innerHTML = '<div class="state-box"><strong>Loading live data…</strong><span>Syncing venues and reports for ' + escapeHtml(city) + '.</span></div>';
+    homeBody.innerHTML = '<div class="state-box"><strong>' + escapeHtml(t('startup.loading.title', 'Loading PickupRadar')) + '</strong><span>' +
+      escapeHtml(t('startup.loading.body', 'Syncing live pickup points…')) + '</span></div>';
 
     const pageSize = 1000;
     const venueRows = [];
@@ -968,6 +1136,8 @@ function mountPickupRadarPreview(container, options) {
     cityScreen.classList.toggle('hidden', name !== 'city');
     searchScreen.classList.toggle('hidden', name !== 'search');
     reportWaitScreen.classList.toggle('hidden', name !== 'report-wait');
+    const languageScreenEl = root.querySelector('[data-screen="language"]');
+    if (languageScreenEl) languageScreenEl.classList.toggle('hidden', name !== 'language');
   }
 
   function previewHistoryState(screen) {
@@ -1023,6 +1193,10 @@ function mountPickupRadarPreview(container, options) {
       } else if (screen === 'city') {
         showScreen('city');
         renderCityList();
+      } else if (screen === 'language') {
+        languageFullList = false;
+        showScreen('language');
+        renderLanguageList();
       } else {
         searchInput.value = '';
         showScreen('home');
@@ -1197,11 +1371,13 @@ function mountPickupRadarPreview(container, options) {
   }
 
   // ---- Location (browser), like the app's Home "Nearby" ----
-  const LOCATION_MESSAGES = {
-    finding: 'Finding your location…',
-    denied: 'Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.',
-    error: 'Location is unavailable right now. Try again later, or choose a city to browse PickupRadar.',
-  };
+  // App: home.location.* (English says "browser settings" instead of the phone's Settings).
+  function locationMessage(status) {
+    if (status === 'finding') return t('home.location.finding', 'Finding your location…');
+    if (status === 'denied') return tWeb('home.location.denied', 'Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.');
+    if (status === 'error') return t('home.location.error', 'Location is unavailable right now. Try again later, or choose a city to browse PickupRadar.');
+    return '';
+  }
 
   // App: HomeScreen firstTabLabel. "Nearby" unless location is on and the city
   // being viewed is not the one you are in, then "All".
@@ -1209,7 +1385,7 @@ function mountPickupRadarPreview(container, options) {
     const label = root.querySelector('[data-first-tab-label]');
     const icon = root.querySelector('[data-first-tab-icon]');
     const showAll = Boolean(userCoords) && nearestLiveCityName() !== activeCity;
-    if (label) label.textContent = showAll ? 'All' : 'Nearby';
+    if (label) label.textContent = showAll ? t('home.tab.all', 'All') : t('home.tab.nearby', 'Nearby');
     if (icon) icon.innerHTML = prIcon(showAll ? 'list' : 'location', 16);
     const useButton = root.querySelector('[data-use-location]');
     if (useButton) {
@@ -1217,11 +1393,15 @@ function mountPickupRadarPreview(container, options) {
       const offer = HAS_LOCATION_LOGIC && (locationStatus === 'idle' || locationStatus === 'error');
       useButton.classList.toggle('hidden', !offer);
       const useLabel = useButton.querySelector('[data-use-location-label]');
-      if (useLabel) useLabel.textContent = locationStatus === 'error' ? 'Try location again' : 'Use my location to see nearby pickups';
+      if (useLabel) {
+        useLabel.textContent = locationStatus === 'error'
+          ? tWeb('startup.error.retry', 'Try location again')
+          : tWeb('onboarding.location.continue', 'Use my location to see nearby pickups');
+      }
     }
     const line = root.querySelector('[data-location-line]');
     if (line) {
-      const text = LOCATION_MESSAGES[locationStatus] || '';
+      const text = locationMessage(locationStatus);
       line.textContent = text;
       line.classList.toggle('hidden', !text);
       line.classList.toggle('warning', locationStatus === 'denied' || locationStatus === 'error');
@@ -2112,6 +2292,146 @@ function mountPickupRadarPreview(container, options) {
     });
   }
 
+  // Re-draw everything that shows app words in the new language.
+  function applyLanguage() {
+    const phone = root.querySelector('.phone-screen');
+    if (phone) {
+      phone.setAttribute('lang', languageCode);
+      phone.setAttribute('dir', isRtlLanguage(languageCode) ? 'rtl' : 'ltr');
+    }
+    applyStaticTranslations();
+    updateFirstTab();
+    if (onboardingScreen && !onboardingScreen.classList.contains('hidden')) renderOnboardingSlide();
+    if (!languageScreen.classList.contains('hidden')) renderLanguageList();
+    if (venueStats.length || loadError) {
+      const scroller = homeScreen.querySelector('.app-scroll');
+      const top = scroller ? scroller.scrollTop : 0;
+      renderHomeList();
+      if (scroller) scroller.scrollTop = top;
+    }
+  }
+
+  // ---- Language screen (app: LanguagePickerScreen; onboarding uses the full list) ----
+  const languageScreen = root.querySelector('[data-screen="language"]');
+  const languageList = root.querySelector('[data-language-list]');
+  const languageSearch = root.querySelector('[data-language-search]');
+  let languageMoreExpanded = false;
+  let languageFullList = false;
+  let languageReturnScreen = null;
+  let languageReturnFocus = null;
+  let languageCloseTimer = null;
+
+  function normalizeLanguageSearchText(value) {
+    return String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+  }
+
+  function renderLanguageList() {
+    const query = normalizeLanguageSearchText(languageSearch.value);
+    let rows;
+    let showMore = false;
+    if (query) {
+      rows = LANGUAGE_ENTRIES.filter((entry) =>
+        normalizeLanguageSearchText(entry.name).includes(query) ||
+        normalizeLanguageSearchText(entry.display).includes(query) ||
+        normalizeLanguageSearchText(entry.code).includes(query));
+    } else if (languageFullList || !CC || !CC.buildLanguagePickerSections) {
+      rows = LANGUAGE_ENTRIES.slice();
+    } else {
+      const sections = CC.buildLanguagePickerSections(activeCity, LANGUAGE_ENTRIES, languageCode, () => true);
+      rows = languageMoreExpanded ? sections.recommended.concat(sections.more) : sections.recommended;
+      showMore = !languageMoreExpanded && sections.more.length > 0;
+    }
+    const html = rows.map((entry) => {
+      const active = entry.code === languageCode;
+      return (
+        '<button type="button" class="language-row' + (active ? ' active' : '') + '" data-language-code="' + escapeHtml(entry.code) + '"' +
+        (active ? ' aria-current="true"' : '') + '>' +
+        '<span class="language-row-text" lang="' + escapeHtml(entry.code) + '">' + escapeHtml(entry.display) + '</span>' +
+        (active ? '<span class="language-row-active">' + escapeHtml(t('common.active', 'Active')) + '</span>' : '') +
+        '</button>'
+      );
+    }).join('');
+    languageList.innerHTML =
+      (rows.length ? html : '<p class="language-no-results">' + escapeHtml(t('language.noResults', 'No languages found')) + '</p>') +
+      (showMore
+        ? '<button type="button" class="language-more-row" data-language-more><span>' + escapeHtml(t('language.more', 'More languages')) + '</span>' + prIcon('chevron', 18) + '</button>'
+        : '');
+    languageList.querySelectorAll('[data-language-code]').forEach((button) => {
+      button.addEventListener('click', () => selectLanguage(button.getAttribute('data-language-code')));
+    });
+    const more = languageList.querySelector('[data-language-more]');
+    if (more) {
+      more.addEventListener('click', () => {
+        languageMoreExpanded = true;
+        renderLanguageList();
+        const next = languageList.querySelectorAll('.language-row')[LANGUAGE_ENTRIES.length ? 15 : 0];
+        if (next) next.focus({ preventScroll: true });
+      });
+    }
+  }
+
+  function openLanguageScreen(trigger) {
+    languageReturnFocus = trigger || null;
+    languageReturnScreen = onboardingActive
+      ? (!onboardingScreen.classList.contains('hidden') ? 'onboarding' : 'location-intro')
+      : null;
+    // App: the onboarding control lists every language; Home shows recommended + More languages.
+    languageFullList = Boolean(languageReturnScreen);
+    languageMoreExpanded = false;
+    languageSearch.value = '';
+    renderLanguageList();
+    showScreen('language');
+    languageList.scrollTop = 0;
+    if (!languageReturnScreen) pushPreviewScreen('language');
+    languageSearch.focus({ preventScroll: true });
+  }
+
+  function closeLanguageScreen() {
+    if (languageCloseTimer) {
+      clearTimeout(languageCloseTimer);
+      languageCloseTimer = null;
+    }
+    if (languageReturnScreen) {
+      showScreen(languageReturnScreen);
+      if (languageReturnScreen === 'onboarding') renderOnboardingSlide();
+      languageReturnScreen = null;
+    } else {
+      previewBack();
+    }
+    const focusTarget = languageReturnFocus;
+    languageReturnFocus = null;
+    // Back goes through browser history, so wait until the previous screen is showing again.
+    const restore = (tries) => {
+      if (!focusTarget || !document.contains(focusTarget)) return;
+      if (focusTarget.offsetParent !== null) focusTarget.focus({ preventScroll: true });
+      else if (tries > 0) setTimeout(() => restore(tries - 1), 40);
+    };
+    restore(10);
+  }
+
+  async function selectLanguage(code) {
+    if (!code || code === languageCode) return;
+    const ok = await setLanguage(code);
+    if (!ok) return;
+    // App: closes shortly after a successful choice.
+    languageCloseTimer = setTimeout(() => {
+      languageCloseTimer = null;
+      if (!languageScreen.classList.contains('hidden')) closeLanguageScreen();
+    }, 250);
+  }
+
+  root.querySelectorAll('[data-open-language]').forEach((button) => {
+    button.addEventListener('click', () => openLanguageScreen(button));
+  });
+  root.querySelector('[data-language-close]').addEventListener('click', closeLanguageScreen);
+  languageSearch.addEventListener('input', renderLanguageList);
+  // Same choice in another tab of this site.
+  window.addEventListener('storage', (event) => {
+    if (event.key === I18N_STORAGE_KEY && event.newValue && event.newValue !== languageCode && LANGUAGE_CODE_SET.has(event.newValue)) {
+      setLanguage(event.newValue, { persist: false });
+    }
+  });
+
   // ---- Back to top (app: Home after one screen of scrolling, Browse cities after 240) ----
   function setupScrollTop(scroller, button, threshold) {
     if (!scroller || !button) return;
@@ -2406,8 +2726,9 @@ function mountPickupRadarPreview(container, options) {
 
   function renderOnboardingSlide() {
     const slide = ONBOARDING_SLIDES[onboardingIndex];
-    onboardingScreen.querySelector('[data-onb-title]').textContent = slide.title;
-    onboardingScreen.querySelector('[data-onb-text]').textContent = slide.body;
+    const number = onboardingIndex + 1;
+    onboardingScreen.querySelector('[data-onb-title]').textContent = t('onboarding.slide' + number + '.title', slide.title);
+    onboardingScreen.querySelector('[data-onb-text]').textContent = t('onboarding.slide' + number + '.body', slide.body);
     onboardingScreen.querySelectorAll('[data-onb-img]').forEach((img) => {
       img.classList.toggle('active', Number(img.getAttribute('data-onb-img')) === onboardingIndex);
     });
@@ -2418,7 +2739,7 @@ function mountPickupRadarPreview(container, options) {
       else dot.removeAttribute('aria-current');
     });
     const isLast = onboardingIndex === ONBOARDING_SLIDES.length - 1;
-    onboardingScreen.querySelector('[data-onb-next]').textContent = isLast ? 'Continue' : 'Next';
+    onboardingScreen.querySelector('[data-onb-next]').textContent = isLast ? t('onboarding.getStarted', 'Continue') : t('onboarding.next', 'Next');
     const body = onboardingScreen.querySelector('[data-onb-body]');
     if (body) body.scrollTop = 0;
   }
@@ -2521,6 +2842,18 @@ function mountPickupRadarPreview(container, options) {
     if (history.state && history.state.prPreview) history.replaceState(null, '');
     showScreen('onboarding');
   }
+
+  applyStaticTranslations();
+  (function startLanguage() {
+    const phone = root.querySelector('.phone-screen');
+    if (phone) {
+      phone.setAttribute('lang', 'en');
+      phone.setAttribute('dir', 'ltr');
+    }
+    const code = initialLanguage();
+    // App: an automatic (device) choice is not saved; only a picked language is.
+    if (code !== 'en') setLanguage(code, { persist: Boolean(readSavedLanguage()) });
+  })();
 
   (async function initPreview() {
     try {

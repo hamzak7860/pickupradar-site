@@ -183,9 +183,30 @@
   font-size: 12px;
   font-weight: 700;
   margin-bottom: 14px;
-  flex-shrink: 0;
+  flex-shrink: 1;
+  min-width: 0;
+  max-width: 45%;
   cursor: default;
   user-select: none;
+}
+
+/* App: HomeScreen languageButton. */
+.language-btn {
+  cursor: pointer;
+  font-family: inherit;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid #1d3244;
+  background: #102232;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.language-btn [data-language-label] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
 }
 
 .title-row {
@@ -205,7 +226,7 @@
   background: transparent;
   cursor: pointer;
   font-family: inherit;
-  text-align: left;
+  text-align: start;
 }
 
 .title-brand-icon {
@@ -294,7 +315,7 @@
   justify-content: space-between;
   gap: 12px;
   cursor: pointer;
-  text-align: left;
+  text-align: start;
   width: 100%;
   font-family: inherit;
   color: inherit;
@@ -408,7 +429,7 @@
   font-size: 15px;
   line-height: 20px;
   font-weight: 800;
-  text-align: left;
+  text-align: start;
   cursor: pointer;
   -webkit-appearance: none;
   appearance: none;
@@ -588,7 +609,7 @@
   font-weight: 700;
   cursor: pointer;
   font-family: inherit;
-  text-align: left;
+  text-align: start;
 }
 
 .home-helper {
@@ -606,7 +627,7 @@
   background: #f6faff;
   border: 1px solid #f6faff;
   cursor: pointer;
-  text-align: left;
+  text-align: start;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);
 }
 
@@ -633,7 +654,7 @@
   margin-bottom: 10px;
   cursor: pointer;
   font-family: inherit;
-  text-align: left;
+  text-align: start;
   width: 100%;
   color: inherit;
 }
@@ -760,7 +781,7 @@
   flex: 1;
   min-width: 0;
   margin: 0;
-  padding-left: 26px;
+  padding-inline-start: 26px;
   color: #8fb5d7;
   font-size: 13px;
   line-height: 18px;
@@ -978,7 +999,7 @@
   font-size: 16px;
   font-weight: 800;
   text-decoration: none;
-  text-align: left;
+  text-align: start;
   cursor: pointer;
   font-family: inherit;
 }
@@ -1102,7 +1123,7 @@
   display: flex;
   align-items: flex-start;
   gap: 8px;
-  text-align: left;
+  text-align: start;
   cursor: pointer;
   font-family: inherit;
 }
@@ -1277,7 +1298,7 @@
   color: inherit;
   cursor: pointer;
   font-family: inherit;
-  text-align: left;
+  text-align: start;
 }
 
 .toggle-copy {
@@ -1841,7 +1862,7 @@
   border-radius: 18px;
   background: #0e1822;
   border: 1px solid #182837;
-  text-align: left;
+  text-align: start;
   cursor: pointer;
 }
 
@@ -2445,4 +2466,178 @@
 .use-location-btn.hidden,
 .help-sheet-row.hidden {
   display: none;
+}
+
+
+/* ---- Language screen (app: LanguagePickerScreen styles) ---- */
+.language-screen {
+  background: #071018;
+}
+
+.language-header {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px 14px;
+  border-bottom: 1px solid #152534;
+}
+
+.language-title {
+  margin: 0;
+  color: #f6faff;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.language-close {
+  min-height: 40px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 999px;
+  background: #102232;
+  color: #bfd0e0;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.language-search-wrap {
+  flex-shrink: 0;
+  padding: 12px 16px 4px;
+}
+
+.language-search-input {
+  display: block;
+  width: 100%;
+  min-height: 46px;
+  padding: 0 14px;
+  border-radius: 12px;
+  border: 1px solid #182837;
+  background: #101c28;
+  color: #f6faff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.language-search-input::placeholder {
+  color: #5e7488;
+}
+
+.preview-root .language-list {
+  padding: 8px 16px 24px;
+}
+
+.language-row,
+.language-more-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  min-height: 54px;
+  margin-bottom: 8px;
+  padding: 10px 16px;
+  border-radius: 14px;
+  border: 1px solid #182837;
+  background: #101c28;
+  color: #f6faff;
+  font-family: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.language-row.active {
+  border-color: #3e8db0;
+}
+
+.language-row:hover,
+.language-more-row:hover {
+  background: #132431;
+}
+
+.language-row-text {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 800;
+  text-align: start;
+}
+
+.language-row-active {
+  flex-shrink: 0;
+  color: #78e6a6;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.language-more-row {
+  margin-top: 4px;
+  border-style: dashed;
+  background: #0c1620;
+  color: #bfd0e0;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.language-more-row svg {
+  color: #5e7488;
+  transform: rotate(-90deg);
+}
+
+.language-no-results {
+  margin: 0;
+  padding: 18px 0;
+  color: #89a0b8;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.onb-lang {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* ---- Right-to-left languages (app: isRTL row-reverse + right-aligned text) ---- */
+.phone-screen[dir="rtl"] .scroll-top-btn {
+  right: auto;
+  left: 14px;
+}
+
+.phone-screen[dir="rtl"] .back-btn svg {
+  transform: scaleX(-1);
+}
+
+.phone-screen[dir="rtl"] .language-more-row svg {
+  transform: rotate(90deg);
+}
+
+.phone-screen[dir="rtl"] .switch-thumb,
+.phone-screen[dir="rtl"] .report-toggle-thumb {
+  left: auto;
+  right: 2px;
+}
+
+.phone-screen[dir="rtl"] .toggle-row.on .switch-thumb {
+  transform: translateX(-20px);
+}
+
+/* Times, distances and points read left to right in every language. */
+.wait-badge,
+.current-wait-pill,
+.wait-tile,
+.venue-distance,
+.venue-result-distance,
+.city-row-distance,
+.rp-pill {
+  unicode-bidi: isolate;
 }
