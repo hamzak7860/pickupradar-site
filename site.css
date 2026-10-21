@@ -1093,6 +1093,31 @@ body.page-live-preview #livePreview {
 
 .w-mail svg { color: var(--w-radar); flex-shrink: 0; }
 
+.w-post {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--w-line-2);
+}
+
+.w-post-title {
+  margin: 0;
+  color: var(--w-paper);
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.w-card .w-post-note {
+  margin: 4px 0 10px;
+  color: var(--w-dim);
+  font-size: 14px;
+}
+
+.w-post address {
+  font-style: normal;
+  color: var(--w-mist);
+  line-height: 1.55;
+}
+
 .w-topics h3 { font-size: 20px; }
 
 .w-h2 + .w-topics { margin-top: 32px; }
