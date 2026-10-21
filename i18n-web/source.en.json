@@ -1,0 +1,73 @@
+{
+  "about": "English source for the PickupRadar website preview. Translate \"en\" into the language; keep {placeholders} and blank lines. Do not translate PickupRadar, RadarPoints or city names.",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "note": "Pop-up title on the website when an action needs the mobile app. Matches \"Get the app\"."
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "note": "Pop-up when an action needs the mobile app. Keep the blank line. The app is not in the stores yet: do not say it can be downloaded."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "note": "Pop-up after tapping a city that is coming soon. {city} is the city name: keep {city} exactly as written. Keep the blank line."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "note": "Pop-up after tapping \"Request your city\". Keep the blank line."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "note": "Label shown instead of the App Store button until the iPhone app is released."
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "note": "Label shown instead of the Google Play button until the Android app is released."
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "note": "App Store button (not shown yet). Use the wording Apple uses in this language if it exists."
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "note": "Google Play button (not shown yet). Use the wording Google uses in this language if it exists."
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "note": "Saved tab on the website. Saving is only in the mobile app. Use the app's word for \"pickup point\"."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "note": "Shown only if a city has no pickup points. Use the app's word for \"pickup point\"."
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "note": "Shown under the title above."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "note": "Button on Home. The browser asks for location only after this tap."
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "note": "Same button after location failed."
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "note": "Shown when the browser blocked location. Say browser settings (not phone settings)."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "note": "Screen-reader label for the row Nearby / Fast / Slow / Saved. Not shown on screen."
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "note": "Screen-reader label for the tutorial screen. Not shown on screen."
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "note": "Screen-reader label for each tutorial dot. Keep {number} and {total}, for example \"Slide 1 of 3\"."
+    }
+  }
+}
