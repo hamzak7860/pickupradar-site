@@ -127,6 +127,7 @@ const PREVIEW_MARKUP = `
                 <button type="button" class="filter-chip" data-filter="Saved" role="tab" aria-selected="false">${prIcon('bookmark', 16)}<span>Saved</span></button>
               </div>
               <p class="nearby-status-line hidden" data-location-line role="status"></p>
+              <button type="button" class="use-location-btn hidden" data-use-location>${prIcon('location', 16)}<span data-use-location-label>Use my location to see nearby pickups</span></button>
               <button type="button" class="search-row" data-open-search>
                 ${prIcon('search', 17)}
                 <span>Search pickup points</span>
@@ -144,6 +145,7 @@ const PREVIEW_MARKUP = `
               <p id="helpSheetTitle" class="help-sheet-title">Help</p>
               <button type="button" class="help-sheet-row" data-how-it-works>How it works</button>
               <a class="help-sheet-row" data-support href="support.html">Support</a>
+              <button type="button" class="help-sheet-row hidden" data-tutorial-replay>View tutorial again</button>
               <button type="button" class="help-sheet-close" data-help-close>Close</button>
             </div>
           </div>
@@ -365,6 +367,7 @@ function mountPickupRadarPreview(container, options) {
   let applyingHistory = false;
   // Venue rows for the city on screen, kept so live updates only re-fetch the stats.
   let lastVenueRows = null;
+  let lastStatsRows = null;
   let cityLoadInFlight = false;
   let lastStatsRefreshAt = 0;
   // Tutorial (app.html only): true while the tutorial or the location screen is showing.
@@ -949,6 +952,7 @@ function mountPickupRadarPreview(container, options) {
     const statsRows = await fetchStatsRows(city);
 
     lastVenueRows = venueRows;
+    lastStatsRows = statsRows;
     venueStats = buildVenueStats(venueRows, statsRows);
     // Follow the city that is now on screen.
     if (rtWanted) connectRealtime();
@@ -1207,6 +1211,14 @@ function mountPickupRadarPreview(container, options) {
     const showAll = Boolean(userCoords) && nearestLiveCityName() !== activeCity;
     if (label) label.textContent = showAll ? 'All' : 'Nearby';
     if (icon) icon.innerHTML = prIcon(showAll ? 'list' : 'location', 16);
+    const useButton = root.querySelector('[data-use-location]');
+    if (useButton) {
+      // Ask only after a tap: offered until location is on, or the browser has blocked it.
+      const offer = HAS_LOCATION_LOGIC && (locationStatus === 'idle' || locationStatus === 'error');
+      useButton.classList.toggle('hidden', !offer);
+      const useLabel = useButton.querySelector('[data-use-location-label]');
+      if (useLabel) useLabel.textContent = locationStatus === 'error' ? 'Try location again' : 'Use my location to see nearby pickups';
+    }
     const line = root.querySelector('[data-location-line]');
     if (line) {
       const text = LOCATION_MESSAGES[locationStatus] || '';
@@ -1226,6 +1238,7 @@ function mountPickupRadarPreview(container, options) {
 
   function requestLocation() {
     if (!HAS_LOCATION_LOGIC || locationStatus === 'finding' || locationStatus === 'granted') return;
+    if (locationStatus === 'error') locationStatus = 'idle';
     locationStatus = 'finding';
     updateFirstTab();
     navigator.geolocation.getCurrentPosition(
@@ -1258,16 +1271,8 @@ function mountPickupRadarPreview(container, options) {
         if (result && result.state === 'granted') requestLocation();
       }).catch(() => {});
     }
-    // Otherwise ask only when the live preview is on screen.
-    if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver((entries) => {
-        if (entries.some((entry) => entry.isIntersecting)) {
-          observer.disconnect();
-          requestLocation();
-        }
-      }, { threshold: 0.25 });
-      observer.observe(root);
-    }
+    // Otherwise the browser only asks after the visitor taps "Use my location".
+    updateFirstTab();
   }
 
   function renderMissingVenueSectionHtml() {
@@ -2004,6 +2009,7 @@ function mountPickupRadarPreview(container, options) {
   });
 
   root.querySelector('[data-report-wait-btn]').addEventListener('click', openReportWaitSearch);
+  root.querySelector('[data-use-location]').addEventListener('click', requestLocation);
   root.querySelectorAll('[data-open-app]').forEach((button) => {
     button.addEventListener('click', function () {
       openDownloadModal(button);
@@ -2164,6 +2170,7 @@ function mountPickupRadarPreview(container, options) {
     try {
       const rows = await fetchStatsRows(city);
       if (city !== activeCity || !lastVenueRows) return;
+      lastStatsRows = rows;
       venueStats = buildVenueStats(lastVenueRows, rows);
       rerenderAfterLiveUpdate();
     } catch (error) {
@@ -2322,6 +2329,39 @@ function mountPickupRadarPreview(container, options) {
     });
   }
 
+  // ---- Keep waits current (app: 30 s nowTick redraw, 120 s stats poll on Home / venue) ----
+  const REDRAW_MS = 30 * 1000;
+  const STATS_POLL_MS = 120 * 1000;
+  let liveTimersStarted = false;
+
+  function liveWaitScreenShowing() {
+    return !homeScreen.classList.contains('hidden') || !reportWaitScreen.classList.contains('hidden');
+  }
+
+  // Rebuild from the data already loaded, so a wait older than two hours stops showing
+  // as live. No network request.
+  function redrawWaits() {
+    if (document.hidden || !lastVenueRows || !lastStatsRows || cityLoadInFlight) return;
+    venueStats = buildVenueStats(lastVenueRows, lastStatsRows);
+    rerenderAfterLiveUpdate();
+  }
+
+  function startLiveTimers() {
+    if (liveTimersStarted) return;
+    liveTimersStarted = true;
+    setInterval(redrawWaits, REDRAW_MS);
+    setInterval(() => {
+      if (document.hidden || !rtWanted || !liveWaitScreenShowing()) return;
+      requestStatsRefresh();
+    }, STATS_POLL_MS);
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden || !rtWanted) return;
+      // Back in the tab: redraw at once, then catch up (also covers a blocked live channel).
+      redrawWaits();
+      if (Date.now() - lastStatsRefreshAt > 20000) requestStatsRefresh();
+    });
+  }
+
   // ---- Tutorial (app: OnboardingScreen, then LocationIntroScreen) ----
   const TUTORIAL_STORAGE_KEY = 'pickupradar_preview_tutorial_seen_v1';
   const ONBOARDING_SLIDES = [
@@ -2339,6 +2379,8 @@ function mountPickupRadarPreview(container, options) {
     },
   ];
   let onboardingIndex = 0;
+  let tutorialReplay = false;
+  let tutorialListenersReady = false;
 
   function tutorialAlreadySeen() {
     try {
@@ -2388,7 +2430,20 @@ function mountPickupRadarPreview(container, options) {
     renderOnboardingSlide();
   }
 
+  function endTutorialReplay() {
+    tutorialReplay = false;
+    onboardingActive = false;
+    showScreen('home');
+    const helpButton = root.querySelector('[data-help-open]');
+    if (helpButton && onboardingScreen.contains(document.activeElement)) helpButton.focus({ preventScroll: true });
+  }
+
   function showLocationIntro() {
+    // App: the replay only shows the three slides, then goes back.
+    if (tutorialReplay) {
+      endTutorialReplay();
+      return;
+    }
     loadTutorialImages(locationIntroScreen);
     showScreen('location-intro');
     const next = locationIntroScreen.querySelector('[data-location-intro-next]');
@@ -2405,6 +2460,8 @@ function mountPickupRadarPreview(container, options) {
   }
 
   function setupTutorial() {
+    if (tutorialListenersReady) return;
+    tutorialListenersReady = true;
     onboardingScreen.querySelector('[data-onb-skip]').addEventListener('click', showLocationIntro);
     onboardingScreen.querySelector('[data-onb-next]').addEventListener('click', () => {
       if (onboardingIndex === ONBOARDING_SLIDES.length - 1) showLocationIntro();
@@ -2433,6 +2490,28 @@ function mountPickupRadarPreview(container, options) {
     body.addEventListener('pointercancel', () => { start = null; });
   }
 
+  function startTutorial(replay) {
+    tutorialReplay = Boolean(replay);
+    onboardingActive = true;
+    setupTutorial();
+    loadTutorialImages(onboardingScreen);
+    onboardingIndex = 0;
+    renderOnboardingSlide();
+    showScreen('onboarding');
+  }
+
+  if (options.tutorial) {
+    const replayButton = root.querySelector('[data-tutorial-replay]');
+    replayButton.classList.remove('hidden');
+    replayButton.addEventListener('click', () => {
+      closeHelpSheet({ keepFocus: true });
+      // Replaying never changes the saved first-visit flag.
+      startTutorial(true);
+      const next = onboardingScreen.querySelector('[data-onb-next]');
+      if (next) next.focus({ preventScroll: true });
+    });
+  }
+
   if (options.tutorial && !tutorialAlreadySeen()) {
     onboardingActive = true;
     setupTutorial();
@@ -2458,6 +2537,7 @@ function mountPickupRadarPreview(container, options) {
         setupLocation();
       }
       startLiveUpdates();
+      startLiveTimers();
     } catch (error) {
       console.error(error);
       loadError = "Live data isn't available right now.";
