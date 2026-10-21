@@ -890,6 +890,12 @@ function mountPickupRadarPreview(container, options) {
       .replace(/"/g, '&quot;');
   }
 
+  // Right-to-left languages: keep "+10 RP" in reading order inside a translated sentence.
+  // Takes escaped text and wraps only the amount; the sentence itself is unchanged.
+  function isolateRpAmounts(escapedText) {
+    return escapedText.replace(/\+\d+ RP/g, '<bdi dir="ltr">$&</bdi>');
+  }
+
   function renderVenueCard(item, index, mode) {
     const now = Date.now();
     const hasRealWaitData = WC.isLocallyLiveWait(item, now);
@@ -950,7 +956,7 @@ function mountPickupRadarPreview(container, options) {
         escapeHtml(waitBadgeText) +
         '</span>'
       : canShowReportRpPrompt
-        ? '<span class="report-rp-prompt">' + escapeHtml(t('home.reportRpPrompt', 'Report needed · +15 RP')) + '</span>'
+        ? '<span class="report-rp-prompt">' + isolateRpAmounts(escapeHtml(t('home.reportRpPrompt', 'Report needed · +15 RP'))) + '</span>'
         : '<span class="no-recent-wait">' + escapeHtml(t('home.noRecentWait', 'No recent wait')) + '</span>';
 
     return (
@@ -1529,7 +1535,7 @@ function mountPickupRadarPreview(container, options) {
       '<div class="missing-venue-card">' +
       '<p class="missing-venue-title">' + escapeHtml(t('missing.title', "Can't find it?")) + '</p>' +
       '<div class="missing-venue-form">' +
-      '<p class="missing-venue-reward">' + escapeHtml(t('missing.rewardHint', 'Approved pickup point suggestions earn +20 RP.')) + '</p>' +
+      '<p class="missing-venue-reward">' + isolateRpAmounts(escapeHtml(t('missing.rewardHint', 'Approved pickup point suggestions earn +20 RP.'))) + '</p>' +
       '<input type="text" class="missing-venue-input" data-suggestion-name dir="auto" placeholder="' + escapeHtml(t('missing.name', 'Venue name')) + '" aria-label="' + escapeHtml(t('missing.name', 'Venue name')) + '" value="' +
       escapeHtml(suggestionVenueName) +
       '" autocomplete="off" autocapitalize="off" spellcheck="false" data-lpignore="true" />' +
@@ -1727,7 +1733,7 @@ function mountPickupRadarPreview(container, options) {
         ? 'background:' + colors.backgroundColor + ';border-color:' + colors.borderColor + ';color:' + colors.color + ';'
         : 'background:' + waitColorWithAlpha(colors.backgroundColor, 0x26) + ';border-color:' + waitColorWithAlpha(colors.borderColor, 0x80) + ';color:' + waitColorWithAlpha(colors.backgroundColor, 0xd0) + ';';
       return (
-        '<button type="button" class="wait-tile' + (active ? ' active' : '') + '" data-wait-bucket="' + escapeHtml(bucket) + '" style="' + style + '">' +
+        '<button type="button" class="wait-tile' + (active ? ' active' : '') + '" dir="ltr" data-wait-bucket="' + escapeHtml(bucket) + '" style="' + style + '">' +
         escapeHtml(WAIT_BUCKET_LABELS[bucket]) +
         '</button>'
       );
@@ -1915,7 +1921,7 @@ function mountPickupRadarPreview(container, options) {
     }
     reportFooter.innerHTML =
       '<button type="button" class="report-submit-btn' + (canSubmit ? '' : ' disabled') + '" data-report-submit' +
-      (canSubmit ? '' : ' disabled') + '>' + escapeHtml(label) + '</button>' +
+      (canSubmit ? '' : ' disabled') + '>' + isolateRpAmounts(escapeHtml(label)) + '</button>' +
       '<div class="footer-hint-slot">' +
       (hint ? '<p class="report-footer-hint">' + escapeHtml(hint) + '</p>' : '') +
       '</div>';

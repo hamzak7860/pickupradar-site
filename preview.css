@@ -2649,6 +2649,21 @@
   unicode-bidi: isolate;
 }
 
+/* Pickup point names and addresses: each line takes its own direction, so
+   "25 Barnsdale Drive" keeps its order and Arabic or Urdu names still read
+   right to left. Lines stay right-aligned with the rest of the RTL screen. */
+.phone-screen[dir="rtl"] .venue-name,
+.phone-screen[dir="rtl"] .venue-area,
+.phone-screen[dir="rtl"] .venue-result-name,
+.phone-screen[dir="rtl"] .venue-result-area,
+.phone-screen[dir="rtl"] .selected-venue-name,
+.phone-screen[dir="rtl"] .selected-venue-area,
+.phone-screen[dir="rtl"] .selected-venue-address,
+.phone-screen[dir="rtl"] .selected-venue-postcode {
+  unicode-bidi: plaintext;
+  text-align: right;
+}
+
 /* Long translations: pop-ups scroll inside the screen instead of running off it. */
 .modal {
   max-height: calc(100vh - 40px);
