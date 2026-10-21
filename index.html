@@ -59,8 +59,8 @@
         <div class="w-hero-copy">
           <h1 class="w-display" id="hero-title">Know the wait before you walk in.</h1>
           <p class="w-lede">
-            Do you deliver for Uber Eats, Deliveroo or Just Eat? See how long drivers wait at restaurants and shops.
-            Avoid long waits. Share your wait and earn RadarPoints. No sign-up needed.
+            Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops.
+            Avoid long waits. Tap Report wait and earn RadarPoints. No sign-up needed.
           </p>
           <div class="w-actions">
             <a class="w-btn w-btn-go" href="#try-it">Try it with real data</a>
@@ -121,7 +121,7 @@
         <div>
           <h2 class="w-h2" id="scale-title">See how long you may wait.</h2>
           <p class="w-text">
-            Drivers share how long they waited. PickupRadar shows the wait from reports in the last 2 hours.
+            Drivers report how long they waited. The current wait comes from reports in the last 2 hours.
             You can see fast and slow pickups quickly.
           </p>
         </div>
@@ -133,7 +133,7 @@
             <li><span class="w-bar"></span><strong>15+ min</strong><span>Very long wait</span></li>
           </ul>
           <div class="w-estimates">
-            <span>No recent reports? You may see a likely wait instead:</span>
+            <span>No recent reports? PickupRadar may show Likely fast or Likely slow:</span>
             <span class="w-pill w-pill-fast">Likely fast</span>
             <span class="w-pill w-pill-slow">Likely slow</span>
           </div>
@@ -146,13 +146,13 @@
         <div class="w-live-copy">
           <h2 class="w-h2" id="live-title">Try PickupRadar with real Milton Keynes data.</h2>
           <p class="w-text">
-            See real pickup points in Milton Keynes. Check recent waits or likely waits.
+            See real pickup points in Milton Keynes. Check recent waits, or Likely fast and Likely slow.
             You can try the report screen, but nothing is sent.
           </p>
           <ol class="w-try">
             <li><span><strong>Pick a tab.</strong> Use Nearby to find pickups close to you when location is on. Use Fast and Slow to check waits and estimates.</span></li>
-            <li><span><strong>Search for a pickup point.</strong> Try a name or an area, like KFC or Bletchley.</span></li>
-            <li><span><strong>Open the report screen.</strong> Choose a wait. This is what drivers send from the app.</span></li>
+            <li><span><strong>Search pickup points.</strong> Try a name, area or postcode, like KFC or Bletchley.</span></li>
+            <li><span><strong>Open a pickup point.</strong> The Report wait screen opens. Choose a wait time. Nothing is sent.</span></li>
           </ol>
           <div class="w-actions">
             <a class="w-btn w-btn-quiet" href="/app.html">Open the big preview</a>
@@ -176,8 +176,8 @@
             <div>
               <div class="w-signal-ui"><span class="w-pill w-pill-1">&lt;5 min</span><span class="w-pill w-pill-evidence">1 report &middot; 4m ago</span></div>
               <div>
-                <h3 class="w-h3">The live wait</h3>
-                <p>Drivers choose one of four times. You see the wait and how many drivers reported it in the last 2 hours.</p>
+                <h3 class="w-h3">Current wait</h3>
+                <p>Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.</p>
               </div>
             </div>
           </li>
@@ -186,8 +186,8 @@
             <div>
               <div class="w-signal-ui"><span class="w-pill w-pill-fast">Likely fast</span><span class="w-pill w-pill-slow">Likely slow</span></div>
               <div>
-                <h3 class="w-h3">No recent reports? See a likely wait.</h3>
-                <p>It only shows when there is no recent report. It always says &ldquo;Likely&rdquo;, so you know it is not a live report.</p>
+                <h3 class="w-h3">Likely fast and Likely slow</h3>
+                <p>Shown only when there are no recent reports. These are estimates, not live reports.</p>
               </div>
             </div>
           </li>
@@ -196,8 +196,8 @@
             <div>
               <div class="w-signal-ui"><span class="w-pill w-pill-warn">Reported closed recently</span></div>
               <div>
-                <h3 class="w-h3">Closed or not taking orders</h3>
-                <p>Drivers can tell you a pickup is closed or not taking orders. You know before you drive there.</p>
+                <h3 class="w-h3">Closed now or Not receiving orders</h3>
+                <p>Drivers tap Report a problem to report this. You see their report before you drive there.</p>
               </div>
             </div>
           </li>
@@ -206,8 +206,8 @@
             <div>
               <div class="w-signal-ui"><span class="w-pill w-pill-warn">Tablet/server issue reported</span></div>
               <div>
-                <h3 class="w-h3">Tablet or system problems</h3>
-                <p>See when drivers report that the restaurant's tablet or system is not working.</p>
+                <h3 class="w-h3">Tablet/server issue reported</h3>
+                <p>See when drivers report that a restaurant's tablet or system is not working.</p>
               </div>
             </div>
           </li>
@@ -216,8 +216,8 @@
             <div>
               <div class="w-signal-ui"><span class="w-pill w-pill-warn">Made when driver arrives</span></div>
               <div>
-                <h3 class="w-h3">Orders that start when you arrive</h3>
-                <p>Some places only start the order when the driver arrives. Drivers can say this when they report.</p>
+                <h3 class="w-h3">Order starts after arrival</h3>
+                <p>Some places only start the order when you arrive. Drivers can turn this on when they report.</p>
               </div>
             </div>
           </li>
@@ -227,7 +227,7 @@
               <div class="w-signal-ui"><span class="w-pill w-pill-rp">Suggest pickup point</span></div>
               <div>
                 <h3 class="w-h3">Missing or wrong pickup points</h3>
-                <p>Add a missing pickup point. Or report a wrong address, wrong branch, a pickup point listed twice, or one that has closed for good.</p>
+                <p>Missing a pickup point? Tap Suggest pickup point. Something wrong? Tap Report a problem, then Other issue: Wrong address, Wrong branch/name, Duplicate venue or Permanently closed.</p>
               </div>
             </div>
           </li>
@@ -248,11 +248,11 @@
           </li>
           <li class="w-step">
             <h3 class="w-h3">Check before you go in</h3>
-            <p>Find the pickup point. See the live wait, or a likely wait if there are no recent reports.</p>
+            <p>Find the pickup point. See the current wait, or Likely fast or Likely slow if there are no recent reports.</p>
           </li>
           <li class="w-step">
-            <h3 class="w-h3">Share your wait</h3>
-            <p>After you collect the order, tap Report wait. This helps the next driver, and you earn points.</p>
+            <h3 class="w-h3">Report your wait</h3>
+            <p>After you collect the order, tap Report wait. It takes seconds. Your report helps other drivers, and you earn RadarPoints.</p>
             <span class="w-pill w-pill-rp">+10 RP</span>
           </li>
         </ol>
@@ -264,16 +264,17 @@
         <div>
           <h2 class="w-h2" id="points-title">Earn RadarPoints</h2>
           <p class="w-text">
-            Earn points when you share a wait. You can start without an account. Add your email to keep your points safe
-            if you change or reset your phone. There is no password. The app emails you a 6-digit code.
+            Tap Report wait to earn RadarPoints. You can start without an account. Protect your RadarPoints with your email,
+            so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.
           </p>
-          <p class="w-note"><span>Save your points for future rewards. <strong>Rewards are coming soon.</strong> RadarPoints cannot be used yet.</span></p>
+          <p class="w-note"><span><strong>Rewards coming soon.</strong> You can't redeem RadarPoints yet.</span></p>
         </div>
         <ul class="w-ledger" aria-label="How to earn RadarPoints">
-          <li><span>Share a wait</span><span class="w-pill w-pill-rp">+10 RP</span></li>
-          <li><span>Share a wait where it is needed<small>An eligible nearby pickup point with no recent wait or likely wait</small></span><span class="w-pill w-pill-rp">+15 RP</span></li>
-          <li><span>Add a new pickup point that we approve</span><span class="w-pill w-pill-rp">+20 RP</span></li>
-          <li><span>Invite a driver<small>You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need to add your email. Your friend must enter your code before their first valid wait report.</small></span><span class="w-pill w-pill-rp">+50 RP</span></li>
+          <li><span>Valid wait report</span><span class="w-pill w-pill-rp">+10 RP</span></li>
+          <li><span>Report needed<small>An eligible pickup point near you with no recent wait and no Likely fast or Likely slow. You earn 15 RP for the report instead of 10.</small></span><span class="w-pill w-pill-rp">+15 RP</span></li>
+          <li><span>First report bonus<small>Extra points on your first valid wait report. If it is also Report needed, you earn 25 RP in total.</small></span><span class="w-pill w-pill-rp">+10 RP extra</span></li>
+          <li><span>Pickup point approved<small>When we approve a pickup point you suggest</small></span><span class="w-pill w-pill-rp">+20 RP</span></li>
+          <li><span>Driver referral<small>You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.</small></span><span class="w-pill w-pill-rp">+50 RP each</span></li>
         </ul>
       </div>
     </section>
@@ -283,8 +284,8 @@
         <div>
           <h2 class="w-h2" id="cities-title">Now in Milton Keynes. London is next.</h2>
           <p class="w-text">
-            These are the UK cities in the app. Is your city missing? Ask for it in the app. Or tap
-            Notify me on a city that is coming soon. We will email you when it starts.
+            These are the UK cities in the app. Can't find your city? Request it in the app. Or tap
+            Notify me when live on a Coming soon city. We'll email you when it's live.
           </p>
         </div>
         <div class="w-cities">
@@ -357,7 +358,7 @@
         <div class="w-faq">
           <details>
             <summary>Do I need an account?</summary>
-            <div><p>No. The app gives you a Radar profile automatically. You can share waits straight away. To keep your RadarPoints safe, add your email later. There is no password. The app emails you a 6-digit code.</p></div>
+            <div><p>No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your RadarPoints, add your email later. No password needed. The app emails you a 6-digit code.</p></div>
           </details>
           <details>
             <summary>Where does PickupRadar work?</summary>
@@ -369,7 +370,7 @@
           </details>
           <details>
             <summary>How is the current wait worked out?</summary>
-            <div><p>It comes from driver reports in the last 2 hours. Older reports are not used for the live wait.</p></div>
+            <div><p>It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.</p></div>
           </details>
           <details>
             <summary>What do Likely fast and Likely slow mean?</summary>
