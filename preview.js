@@ -156,15 +156,15 @@ const PREVIEW_MARKUP = `
             <button type="button" class="language-close" data-language-close data-i18n="common.close">Close</button>
           </div>
           <div class="language-search-wrap">
-            <input data-language-search class="language-search-input" type="search" placeholder="Search languages" data-i18n-placeholder="language.search" aria-labelledby="languageTitle" autocomplete="off" autocapitalize="off" spellcheck="false" data-lpignore="true" />
+            <input data-language-search class="language-search-input" type="search" dir="auto" placeholder="Search languages" data-i18n-placeholder="language.search" aria-labelledby="languageTitle" autocomplete="off" autocapitalize="off" spellcheck="false" data-lpignore="true" />
           </div>
           <div class="app-scroll language-list" data-language-list></div>
         </div>
         <div data-screen="city" class="screen hidden">
           <div class="city-picker-header">
-            <button type="button" class="back-btn" data-city-close>${prIcon('arrow', 16)}<span>Back</span></button>
-            <h2 class="city-picker-title">Browse cities</h2>
-            <input data-city-search class="city-search-input" type="search" placeholder="Search cities" autocomplete="off" autocapitalize="off" spellcheck="false" data-lpignore="true" />
+            <button type="button" class="back-btn" data-city-close>${prIcon('arrow', 16)}<span data-i18n="common.back">Back</span></button>
+            <h2 class="city-picker-title" id="cityPickerTitle" data-i18n="city.title">Browse cities</h2>
+            <input data-city-search class="city-search-input" type="search" dir="auto" aria-labelledby="cityPickerTitle" placeholder="Search cities" data-i18n-placeholder="city.search" autocomplete="off" autocapitalize="off" spellcheck="false" data-lpignore="true" />
           </div>
           <div class="app-scroll" data-city-list></div>
           <button type="button" class="scroll-top-btn city-top-btn hidden" data-city-top aria-label="Back to top">${prIcon('arrow-up', 20)}</button>
@@ -172,15 +172,15 @@ const PREVIEW_MARKUP = `
         <div data-screen="search" class="screen hidden">
           <div class="app-scroll report-search-scroll">
             <div class="report-top-bar">
-              <button type="button" class="back-btn" data-search-back>${prIcon('arrow', 16)}<span>Back</span></button>
+              <button type="button" class="back-btn" data-search-back>${prIcon('arrow', 16)}<span data-i18n="common.back">Back</span></button>
             </div>
             <div class="report-step-copy">
-              <h2 class="report-screen-title">Report wait</h2>
-              <p class="report-screen-subtitle">Choose a pickup point.</p>
+              <h2 class="report-screen-title" data-i18n="report.title">Report wait</h2>
+              <p class="report-screen-subtitle" data-i18n="report.choosePickup">Choose a pickup point.</p>
               <div class="report-search-box">
-                <label class="report-search-label">Search pickup points</label>
-                <input data-search-input class="report-search-input" type="search" placeholder="Name, area or postcode" autocomplete="off" autocapitalize="off" spellcheck="false" data-lpignore="true" />
-                <p class="report-search-hint hidden" data-search-empty>No pickup points found</p>
+                <label class="report-search-label" id="reportSearchLabel" data-i18n="report.search.label">Search pickup points</label>
+                <input data-search-input class="report-search-input" type="search" dir="auto" aria-labelledby="reportSearchLabel" placeholder="Name, area or postcode" data-i18n-placeholder="report.search.placeholder" autocomplete="off" autocapitalize="off" spellcheck="false" data-lpignore="true" />
+                <p class="report-search-hint hidden" data-search-empty data-i18n="report.search.noResults">No pickup points found</p>
               </div>
               <div data-missing-zero></div>
               <p class="report-list-label" data-search-heading>Suggested pickup points</p>
@@ -1052,12 +1052,13 @@ function mountPickupRadarPreview(container, options) {
       lastMissingVenueQuery = trimmedQuery;
     }
 
-    searchHeading.textContent = searchActive ? 'Search results' : 'Suggested pickup points';
+    searchHeading.textContent = searchActive ? t('report.results', 'Search results') : t('report.suggested', 'Suggested pickup points');
     searchHeading.classList.toggle('hidden', zeroResults);
     searchEmpty.classList.toggle('hidden', !zeroResults);
 
     const rows = list.map((venue) => renderSearchVenueRow(venue, eligible)).join('');
-    searchBody.innerHTML = rows || (searchActive ? '' : '<div class="state-box"><strong>No pickup points yet</strong><span>' + escapeHtml(activeCity) + ' is just getting started. Search above to add the pickup point you\'re at — it\'ll show here for other drivers.</span></div>');
+    searchBody.innerHTML = rows || (searchActive ? '' : '<div class="state-box"><strong>' + escapeHtml(t('report.emptyVenues.title', 'No pickup points yet')) + '</strong><span>' +
+      escapeHtml(t('report.emptyVenues.text', "{city} is just getting started. Search above to add the pickup point you're at \u2014 it'll show here for other drivers.", { city: cityDisplayName(activeCity) })) + '</span></div>');
     searchBody.querySelectorAll('.venue-result').forEach((row) => {
       row.addEventListener('click', () => openReportWait(row.getAttribute('data-venue-id'), 'home'));
     });
@@ -1239,7 +1240,7 @@ function mountPickupRadarPreview(container, options) {
     lastMissingVenueQuery = '';
     searchInput.value = '';
     citySearchInput.value = '';
-    searchHeading.textContent = 'Suggested pickup points';
+    searchHeading.textContent = t('report.suggested', 'Suggested pickup points');
     searchHeading.classList.remove('hidden');
     selectedFilter = 'All';
     root.querySelectorAll('.filter-chip').forEach((chip) => {
@@ -1274,8 +1275,8 @@ function mountPickupRadarPreview(container, options) {
     const isPhysicalCity = Boolean(userCoords && !disabled && nearestLiveCity && city === nearestLiveCity);
     const distanceLabel = userCoords && !isPhysicalCity && GEO ? GEO.formatCityDistance(userCoords, city, venueStats) : null;
     const statusLabel = disabled
-      ? (row.status === 'comingNext' ? 'Coming next' : 'Coming soon')
-      : selected ? 'Viewing' : 'View';
+      ? (row.status === 'comingNext' ? t('city.comingNext', 'Coming next') : t('common.comingSoon', 'Coming soon'))
+      : selected ? t('city.viewing', 'Viewing') : t('city.view', 'View');
     const statusClass = 'city-row-status' +
       (selected ? ' viewing' : '') +
       (disabled ? ' disabled' : '') +
@@ -1284,12 +1285,12 @@ function mountPickupRadarPreview(container, options) {
       '<button type="button" class="city-row' + (selected ? ' selected' : '') + (disabled ? ' notify' : '') + '" data-city="' + escapeHtml(city) + '" data-city-status="' + row.status + '">' +
       '<span class="city-row-main">' +
       '<span class="city-row-name">' + escapeHtml(cityDisplayName(city)) + '</span>' +
-      (isPhysicalCity ? '<span class="city-row-meta">You\'re here</span>' : '') +
-      (disabled ? '<span class="city-row-notify">Notify me when live</span>' : '') +
+      (isPhysicalCity ? '<span class="city-row-meta">' + escapeHtml(t('city.currentArea', "You're here")) + '</span>' : '') +
+      (disabled ? '<span class="city-row-notify">' + escapeHtml(t('cityAlert.notifyLine', 'Notify me when live')) + '</span>' : '') +
       '</span>' +
       '<span class="city-row-right">' +
       (distanceLabel ? '<span class="city-row-distance">' + escapeHtml(distanceLabel) + '</span>' : '') +
-      '<span class="' + statusClass + '">' + statusLabel + '</span>' +
+      '<span class="' + statusClass + '">' + escapeHtml(statusLabel) + '</span>' +
       '</span>' +
       '</button>'
     );
@@ -1366,7 +1367,7 @@ function mountPickupRadarPreview(container, options) {
       : '';
     cityListBody.innerHTML =
       rowsHtml +
-      '<button type="button" class="city-request-row" data-city-request>Can\'t find your city? Request it</button>';
+      '<button type="button" class="city-request-row" data-city-request>' + escapeHtml(t('cityAlert.requestRow', "Can't find your city? Request it")) + '</button>';
     bindCityRows();
   }
 
@@ -1461,34 +1462,34 @@ function mountPickupRadarPreview(container, options) {
     if (!missingVenueExpanded) {
       return (
         '<div class="missing-venue-card">' +
-        '<p class="missing-venue-title">Can\'t find it?</p>' +
-        '<button type="button" class="missing-venue-btn" data-missing-open>Suggest pickup point</button>' +
+        '<p class="missing-venue-title">' + escapeHtml(t('missing.title', "Can't find it?")) + '</p>' +
+        '<button type="button" class="missing-venue-btn" data-missing-open>' + escapeHtml(t('missing.button', 'Suggest pickup point')) + '</button>' +
         '</div>'
       );
     }
 
     return (
       '<div class="missing-venue-card">' +
-      '<p class="missing-venue-title">Can\'t find it?</p>' +
+      '<p class="missing-venue-title">' + escapeHtml(t('missing.title', "Can't find it?")) + '</p>' +
       '<div class="missing-venue-form">' +
-      '<p class="missing-venue-reward">Approved pickup point suggestions earn +20 RP.</p>' +
-      '<input type="text" class="missing-venue-input" data-suggestion-name placeholder="Venue name" value="' +
+      '<p class="missing-venue-reward">' + escapeHtml(t('missing.rewardHint', 'Approved pickup point suggestions earn +20 RP.')) + '</p>' +
+      '<input type="text" class="missing-venue-input" data-suggestion-name dir="auto" placeholder="' + escapeHtml(t('missing.name', 'Venue name')) + '" aria-label="' + escapeHtml(t('missing.name', 'Venue name')) + '" value="' +
       escapeHtml(suggestionVenueName) +
       '" autocomplete="off" autocapitalize="off" spellcheck="false" data-lpignore="true" />' +
-      '<input type="text" class="missing-venue-input" data-suggestion-address placeholder="Address or area" value="' +
+      '<input type="text" class="missing-venue-input" data-suggestion-address dir="auto" placeholder="' + escapeHtml(t('missing.address', 'Address or area')) + '" aria-label="' + escapeHtml(t('missing.address', 'Address or area')) + '" value="' +
       escapeHtml(suggestionVenueAddress) +
       '" autocomplete="off" autocapitalize="off" spellcheck="false" data-lpignore="true" />' +
-      '<input type="text" class="missing-venue-input" data-suggestion-postcode placeholder="Postcode" value="' +
+      '<input type="text" class="missing-venue-input" data-suggestion-postcode dir="ltr" placeholder="' + escapeHtml(t('missing.postcode', 'Postcode')) + '" aria-label="' + escapeHtml(t('missing.postcode', 'Postcode')) + '" value="' +
       escapeHtml(suggestionVenuePostcode) +
       '" autocomplete="off" autocapitalize="characters" spellcheck="false" data-lpignore="true" />' +
-      '<textarea class="missing-venue-input missing-venue-note" data-suggestion-note placeholder="Note (optional)" rows="3">' +
+      '<textarea class="missing-venue-input missing-venue-note" data-suggestion-note dir="auto" placeholder="' + escapeHtml(t('missing.note', 'Note (optional)')) + '" aria-label="' + escapeHtml(t('missing.note', 'Note (optional)')) + '" rows="3">' +
       escapeHtml(suggestionVenueNote) +
       '</textarea>' +
       '<button type="button" class="missing-venue-btn' +
       (canSubmit ? '' : ' disabled') +
       '" data-missing-submit' +
       (canSubmit ? '' : ' disabled') +
-      '>Submit suggestion</button>' +
+      '>' + escapeHtml(t('missing.submit', 'Submit suggestion')) + '</button>' +
       '</div>' +
       '</div>'
     );
@@ -1602,7 +1603,7 @@ function mountPickupRadarPreview(container, options) {
       );
     }).join('');
     const note = reportFormState.selectedIssueType === 'other'
-      ? '<textarea class="issue-input" data-issue-note maxlength="500" placeholder="' + escapeHtml(t('missing.note', 'Note (optional)')) + '" rows="3">' +
+      ? '<textarea class="issue-input" data-issue-note dir="auto" maxlength="500" placeholder="' + escapeHtml(t('missing.note', 'Note (optional)')) + '" rows="3">' +
         escapeHtml(reportFormState.issueNote) +
         '</textarea>'
       : '';
@@ -2308,11 +2309,40 @@ function mountPickupRadarPreview(container, options) {
     if (!languageScreen.classList.contains('hidden')) renderLanguageList();
     // Keeps the chosen wait, delivery app, open problem options, typed note and scroll position.
     if (currentReportVenue && !reportWaitScreen.classList.contains('hidden')) rerenderReport(false);
+    if (!searchScreen.classList.contains('hidden')) rerenderSearchKeepingInput();
+    if (!cityScreen.classList.contains('hidden')) {
+      const top = cityListBody.scrollTop;
+      renderCityList();
+      cityListBody.scrollTop = top;
+    }
     if (venueStats.length || loadError) {
       const scroller = homeScreen.querySelector('.app-scroll');
       const top = scroller ? scroller.scrollTop : 0;
       renderHomeList();
       if (scroller) scroller.scrollTop = top;
+    }
+  }
+
+  // Re-draw Search in the new language. The query and every typed suggestion field are kept
+  // (they live in state), and the field being typed in gets its cursor back. No data request.
+  function rerenderSearchKeepingInput() {
+    const active = document.activeElement;
+    const fieldAttr = active && searchScreen.contains(active)
+      ? ['data-suggestion-name', 'data-suggestion-address', 'data-suggestion-postcode', 'data-suggestion-note'].find((attr) => active.hasAttribute(attr))
+      : null;
+    const caret = fieldAttr && typeof active.selectionStart === 'number' ? [active.selectionStart, active.selectionEnd] : null;
+    const scroller = searchScreen.querySelector('.report-search-scroll');
+    const top = scroller ? scroller.scrollTop : 0;
+    renderSearchList();
+    if (scroller) scroller.scrollTop = top;
+    if (fieldAttr) {
+      const again = searchScreen.querySelector('[' + fieldAttr + ']');
+      if (again) {
+        again.focus({ preventScroll: true });
+        if (caret) {
+          try { again.setSelectionRange(caret[0], caret[1]); } catch (error) { /* not a text field */ }
+        }
+      }
     }
   }
 
