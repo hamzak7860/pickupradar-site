@@ -12,6 +12,12 @@
       "quality": "machine",
       "date": "2026-10-22"
     },
+    "de": {
+      "v": "d85bc6224026",
+      "keys": 148,
+      "quality": "machine",
+      "date": "2026-10-22"
+    },
     "es": {
       "v": "74eed0eab97a",
       "keys": 148,
@@ -36,8 +42,32 @@
       "quality": "machine",
       "date": "2026-10-22"
     },
+    "it": {
+      "v": "72e0e5c0c685",
+      "keys": 148,
+      "quality": "machine",
+      "date": "2026-10-22"
+    },
+    "ja": {
+      "v": "1e98c22421d3",
+      "keys": 148,
+      "quality": "machine",
+      "date": "2026-10-22"
+    },
+    "ko": {
+      "v": "bf21fcf9f973",
+      "keys": 148,
+      "quality": "machine",
+      "date": "2026-10-22"
+    },
     "ne": {
       "v": "60d51afa921b",
+      "keys": 148,
+      "quality": "machine",
+      "date": "2026-10-22"
+    },
+    "nl": {
+      "v": "6450f0941256",
       "keys": 148,
       "quality": "machine",
       "date": "2026-10-22"
@@ -66,8 +96,26 @@
       "quality": "machine",
       "date": "2026-10-22"
     },
+    "ru": {
+      "v": "6791a09fe367",
+      "keys": 148,
+      "quality": "machine",
+      "date": "2026-10-22"
+    },
+    "so": {
+      "v": "f722c70e036e",
+      "keys": 148,
+      "quality": "machine",
+      "date": "2026-10-22"
+    },
     "sq": {
       "v": "2d81319cb528",
+      "keys": 148,
+      "quality": "machine",
+      "date": "2026-10-22"
+    },
+    "sw": {
+      "v": "f561be267ab0",
       "keys": 148,
       "quality": "machine",
       "date": "2026-10-22"
@@ -84,8 +132,32 @@
       "quality": "machine",
       "date": "2026-10-22"
     },
+    "uk": {
+      "v": "9f7924cab15e",
+      "keys": 148,
+      "quality": "machine",
+      "date": "2026-10-22"
+    },
     "ur": {
       "v": "9f2ac4d22ef7",
+      "keys": 148,
+      "quality": "machine",
+      "date": "2026-10-22"
+    },
+    "vi": {
+      "v": "cb74a6676bfe",
+      "keys": 148,
+      "quality": "machine",
+      "date": "2026-10-22"
+    },
+    "zh-Hans": {
+      "v": "d5822e52b7f4",
+      "keys": 148,
+      "quality": "machine",
+      "date": "2026-10-22"
+    },
+    "zh-Hant": {
+      "v": "f7387cdb0508",
       "keys": 148,
       "quality": "machine",
       "date": "2026-10-22"

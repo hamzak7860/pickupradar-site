@@ -1,0 +1,602 @@
+{
+  "language": "nl",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "Ga naar de inhoud"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "PickupRadar-startpagina"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "Site"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "Privacy"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "Live voorbeeld"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "App"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "Hulp"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "Juridisch"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "Ken de wachttijd voordat je naar binnen gaat."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar. Onafhankelijk en niet verbonden met Uber Eats, Deliveroo of Just Eat."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "Wachttijdbereiken"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "Snel"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "Korte wachttijd"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "Lange wachttijd"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "Zeer lange wachttijd"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "Geen recente meldingen? PickupRadar kan {likelyFast} of {likelySlow} tonen:"
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar): wachttijden bij afhaalpunten voor bezorgers in het Verenigd Koninkrijk"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "Zie hoe lang bezorgers wachten bij restaurants en winkels voordat je naar binnen gaat. Voor bezorgers van Uber Eats, Deliveroo en Just Eat in het Verenigd Koninkrijk. Geen account nodig."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar. Ken de wachttijd voordat je naar binnen gaat."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "Bezorg je voor Uber Eats, Deliveroo of Just Eat? Zie recente wachttijden bij afhaalpunten van restaurants en winkels. Vermijd lange wachttijden. Tik op {reportWait} en verdien {radarPoints}. Geen account nodig."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "Probeer het met echte gegevens"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "Beschikbaarheid"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "Nu in Milton Keynes. Daarna London."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "De apps voor iPhone en Android komen binnenkort."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "Voorbeeld van het PickupRadar-startscherm met het tabblad {nearby} open, met afhaalpunten gekleurd op wachttijd"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "Voorbeeldscherm: voorbeeldwachttijden, geen echte meldingen van bezorgers"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "Voorbeeldwachttijd"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "Voorbeeldschatting"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "1 melding · 4 min geleden"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "Voorbeeldscherm. Dit zijn voorbeeldwachttijden, geen live meldingen. {live} met echte gegevens."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "Probeer het live voorbeeld"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "Zie hoe lang je kunt wachten."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "Bezorgers melden hoe lang ze hebben gewacht. De huidige wachttijd komt uit meldingen van de laatste 2 uur. Je ziet snel welke afhaalpunten snel en langzaam zijn."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "Live voorbeeld van de PickupRadar-app met echte gegevens uit Milton Keynes"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "Probeer PickupRadar met echte gegevens uit Milton Keynes."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "Zie echte afhaalpunten in Milton Keynes. Bekijk recente wachttijden, of {likelyFast} en {likelySlow}. Je kunt het meldscherm proberen, maar er wordt niets verstuurd."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "Kies een tabblad."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} Gebruik {nearby} om afhaalpunten bij jou in de buurt te vinden als locatie aan staat. Gebruik {fast} en {slow} om wachttijden en schattingen te bekijken."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "Afhaalpunten zoeken."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} Probeer een naam, een wijk of een postcode, zoals KFC of Bletchley."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "Open een afhaalpunt."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} Het scherm {reportWait} opent. Kies een wachttijd. Er wordt niets verstuurd."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "Open het grote voorbeeld"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "Wat je ziet voordat je naar binnen gaat"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "Je ziet dezelfde labels in de app. Bezorgers melden ze, niet de bezorgapps."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "Bezorgers kiezen een wachttijd. Je ziet de huidige wachttijd en hoeveel bezorgers die in de laatste 2 uur hebben gemeld."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} en {likelySlow}"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "Alleen zichtbaar als er geen recente meldingen zijn. Dit zijn schattingen, geen live meldingen."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "Onlangs als gesloten gemeld"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} of {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "Bezorgers tikken op {reportProblem} om dit te melden. Je ziet hun melding voordat je erheen rijdt."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "Zie wanneer bezorgers melden dat de tablet of het systeem van een restaurant niet werkt."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "De bestelling start na aankomst"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "Sommige plekken starten de bestelling pas als je aankomt. Bezorgers kunnen dit aanzetten als ze melden."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "Ontbrekende of verkeerde afhaalpunten"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "Ontbreekt een afhaalpunt? Tik op {suggest}. Klopt er iets niet? Tik op {reportProblem}, daarna {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} of {closedPermanently}."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "Drie makkelijke stappen. Melden duurt een paar seconden."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "Open de app"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "Geen wachtwoord. De app geeft je automatisch een Radar-profiel. Je hoeft je niet aan te melden."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "Controleer voordat je naar binnen gaat"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "Vind het afhaalpunt. Zie de huidige wachttijd, of {likelyFast} of {likelySlow} als er geen recente meldingen zijn."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "Meld je wachttijd"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "Nadat je de bestelling hebt opgehaald, tik je op {reportWait}. Het duurt seconden. Je melding helpt andere bezorgers en je verdient {radarPoints}."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "Verdien {radarPoints}"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Tik op {reportWait} om {radarPoints} te verdienen. Je kunt beginnen zonder account. Bescherm je {radarPoints} met je e-mail, zodat ze veilig blijven als je je telefoon wisselt of reset. Geen wachtwoord. De app mailt je een code van 6 cijfers."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "Beloningen binnenkort beschikbaar."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} Je kunt {radarPoints} nog niet inwisselen."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "Hoe je {radarPoints} verdient"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "Een geschikt afhaalpunt bij jou in de buurt, zonder recente wachttijd en zonder {likelyFast} of {likelySlow}. Je krijgt 15 RP voor de melding in plaats van 10."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "Extra punten bij je eerste geldige wachttijdmelding. Als die ook {reportNeeded} is, verdien je in totaal 25 RP."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "Als we een afhaalpunt goedkeuren dat jij voorstelt"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "Jullie krijgen het allebei als je vriend 3 geldige wachttijdmeldingen doet, op minstens 2 verschillende dagen (UTC-tijd), bij 2 verschillende afhaalpunten. Jullie hebben allebei een beschermd Radar-account nodig (voeg je e-mail toe). Je vriend moet je code invoeren vóór de eerste geldige wachttijdmelding."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "{referralRp} per persoon"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "Dit zijn de steden in het Verenigd Koninkrijk in de app. Vind je jouw stad niet? Vraag hem aan in de app. Of tik op {notify} bij een stad die {comingSoon} is. We mailen je als de stad beschikbaar is."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "Nu beschikbaar"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "Geen onderdeel van een bezorgapp"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "PickupRadar is onafhankelijk. Het hoort niet bij Uber Eats, Deliveroo, Just Eat of een andere bezorgapp. Het gebruikt nooit je accounts daar."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "Lees het privacybeleid"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "Geen logins van bezorgapps."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} We vragen nooit om je gebruikersnaam of wachtwoord van Uber Eats, Deliveroo of Just Eat."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "Geen klant- of bestelgegevens."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} Geen namen, adressen of bestelnummers."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "Je kunt de bezorgapp overslaan."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} De bezorgapp kiezen is optioneel."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "Jij hebt de controle."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} Verwijder je account of Radar-profiel op elk moment in de app."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "Vragen van bezorgers"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "Heb ik een account nodig?"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "Nee. De app geeft je automatisch een Radar-profiel. Je kunt meteen wachttijden melden. Voeg later je e-mail toe om je {radarPoints} te beschermen. Geen wachtwoord. De app mailt je een code van 6 cijfers."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "Waar werkt PickupRadar?"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "PickupRadar werkt nu in Milton Keynes. Daarna London. Daarna meer steden, zoals Manchester, Birmingham, Leeds, Liverpool en Glasgow. Zie {cities}."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "alle steden"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "Wanneer kan ik de app downloaden?"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "De apps voor iPhone en Android komen binnenkort. Voor nu toont het {preview} echte afhaalpunten en wachttijden in Milton Keynes."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "live voorbeeld"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "Hoe wordt de huidige wachttijd berekend?"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "Die komt uit meldingen van bezorgers van de laatste 2 uur. Meldingen ouder dan 2 uur veranderen de huidige wachttijd niet."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "Wat betekenen {likelyFast} en {likelySlow}?"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "Dit zijn schattingen, geen live meldingen. Ze verschijnen als er geen recente wachttijdmeldingen zijn."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "Volgt het mijn locatie?"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "Geen tracking op de achtergrond. De app gebruikt je locatie terwijl je hem gebruikt, om afhaalpunten in de buurt te tonen en te controleren dat je bij een afhaalpunt bent als je meldt. De website vraagt alleen om locatie als jij die wilt gebruiken. Lees het {privacy} voor meer."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "privacybeleid"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "Hoe verwijder ik mijn gegevens?"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "Open in de app {profile}. Tik op {deleteAccount}. Als je geen e-mail hebt toegevoegd, tik je op {deleteProfile}. Je kunt ons ook mailen. Zie {page} voor de stappen."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "Ontdek afhaalpunten in Milton Keynes."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "Ontdek echte afhaalpunten in Milton Keynes. Zoek een plek en probeer het meldscherm. Niets wat je aantikt wordt verstuurd."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "Open het live voorbeeld"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "Live app-voorbeeld — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "Probeer de PickupRadar-app met echte gegevens uit Milton Keynes. Kijk rond, zoek afhaalpunten en bekijk het meldscherm."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "Dit is PickupRadar met echte gegevens uit Milton Keynes. Kijk rond. Zoek een afhaalpunt en open het. Niets wat je hier aantikt wordt verstuurd. Melden kan alleen in de mobiele app."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "Volledig voorbeeld van de PickupRadar-app met echte gegevens uit Milton Keynes"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "Support — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "Hulp bij PickupRadar: neem contact op met support, meld een probleem bij een afhaalpunt en vind antwoorden over je Radar-profiel, {radarPoints} en het verwijderen van je account."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "Hulp nodig? Mail ons over de app, een afhaalpunt, je {radarPoints} of je privacy."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "Contact"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "Contact met support"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "Mail ons voor hulp, ideeën, problemen bij afhaalpunten of privacyvragen:"
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "Adres voor zakelijke post"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "Alleen voor brieven. Mail is de snelste manier om ons te bereiken."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "Wat je vermeldt"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "Als je een probleem meldt, vertel ons:"
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "De naam van het afhaalpunt"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "De wijk of postcode, als je die weet"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "Wat er misging"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "Je telefoonmodel, als de app een probleem heeft"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "Veelgestelde vragen"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "Radar-profiel en e-mail"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "De app geeft je automatisch een Radar-profiel. Je hoeft niet in te loggen om PickupRadar te gebruiken of {radarPoints} te verdienen. Je e-mail toevoegen is optioneel. Het beschermt je {radarPoints} als je je telefoon wisselt of reset. Geen wachtwoord. De app mailt je een code van 6 cijfers."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} en uitnodigingen"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "Je verdient {radarPoints} voor geldige wachttijdmeldingen ({waitRp}, of {neededRp} als er {reportNeeded} staat), een bonus voor de eerste melding ({firstRp}) en afhaalpunten die we goedkeuren ({approvedRp}). Je kunt een bezorger uitnodigen vanuit {profile}. Jullie hebben allebei een beschermd Radar-account nodig (voeg je e-mail toe). Je vriend voert je code in vóór de eerste geldige wachttijdmelding. Als je vriend 3 geldige wachttijdmeldingen doet, op minstens 2 verschillende dagen (UTC-tijd), bij 2 verschillende afhaalpunten, krijgen jullie allebei {referralRp}. {rewards} Je kunt {radarPoints} nog niet inwisselen."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "Berichten voor bezorgers"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "{profile} heeft {messages}: aankondigingen, meldingen en persoonlijke berichten voor jouw stad of Radar-profiel. Oude of verwijderde berichten worden misschien niet meer getoond."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "Verwijder je account"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "Verwijder je account in de app: {profile} → {deleteAccount}. Of mail {email}. Als je geen e-mail hebt toegevoegd, toont de app {deleteProfile}. Zie de pagina {page} voor de stappen."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "Ontbreekt een afhaalpunt? Tik in de app op {suggest}. Klopt er een niet? Tik op {reportProblem}. Of mail ons, dan kijken we ernaar."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "Je accounts bij bezorgapps"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "PickupRadar maakt geen verbinding met je accounts bij Uber Eats, Deliveroo, Just Eat of andere bezorgapps. We vragen nooit om logins, wachtwoorden, accountgegevens, klantgegevens of bestelgegevens. Bezorgers delen alleen afhaalmeldingen, zoals wachttijden en problemen bij afhaalpunten."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "Probeer PickupRadar voordat de app start."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "Het live voorbeeld toont echte afhaalpunten en wachttijden in Milton Keynes. Melden en {radarPoints} zijn alleen in de mobiele app."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "Pagina niet gevonden — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "Die pagina staat niet op de PickupRadar-website."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "Deze pagina is van de radar verdwenen."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "Dit adres staat niet op de PickupRadar-website. Deze pagina’s wel:"
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "Startpagina"
+    }
+  }
+}

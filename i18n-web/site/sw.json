@@ -1,0 +1,602 @@
+{
+  "language": "sw",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "Ruka hadi maudhui"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "Mwanzo wa PickupRadar"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "Tovuti"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "Faragha"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "Onyesho la moja kwa moja"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "Programu"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "Msaada"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "Kisheria"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "Jua muda wa kusubiri kabla hujaingia."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar. Huru na haihusiani na Uber Eats, Deliveroo wala Just Eat."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "Masafa ya kusubiri"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "Haraka"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "Kusubiri kidogo"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "Kusubiri kwa muda mrefu"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "Kusubiri kwa muda mrefu sana"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "Hakuna ripoti za hivi karibuni? PickupRadar inaweza kuonyesha {likelyFast} au {likelySlow}:"
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar): muda wa kusubiri kuchukua kwa madereva wa usafirishaji nchini Uingereza"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "Ona madereva husubiri muda gani kwenye mikahawa na maduka kabla hujaingia. Kwa madereva wa Uber Eats, Deliveroo na Just Eat nchini Uingereza. Huhitaji kujisajili."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar. Jua muda wa kusubiri kabla hujaingia."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "Unasafirisha kwa Uber Eats, Deliveroo au Just Eat? Ona muda wa kusubiri wa hivi karibuni kwenye sehemu za kuchukua za mikahawa na maduka. Epuka kusubiri kwa muda mrefu. Gusa {reportWait} upate {radarPoints}. Huhitaji kujisajili."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "Ijaribu kwa data halisi"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "Upatikanaji"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "Sasa iko Milton Keynes. Inayofuata ni London."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "Programu za iPhone na Android zinakuja hivi karibuni."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "Mfano wa skrini ya Mwanzo ya PickupRadar ikiwa kichupo {nearby} kimefunguliwa, sehemu za kuchukua zikiwa na rangi kulingana na muda wa kusubiri"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "Skrini ya mfano: muda wa kusubiri wa sampuli, si ripoti za moja kwa moja za madereva"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "Muda wa kusubiri wa sampuli"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "Makadirio ya sampuli"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "1 ripoti · dakika 4 zilizopita"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "Skrini ya mfano. Hivi ni muda wa kusubiri wa sampuli, si ripoti za moja kwa moja. {live} kwa data halisi."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "Jaribu onyesho la moja kwa moja"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "Ona muda unaoweza kusubiri."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "Madereva huripoti muda waliokusubiri. Muda wa kusubiri sasa unatokana na ripoti za saa 2 zilizopita. Unaona haraka sehemu za kuchukua zenye kasi na zile za polepole."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "Onyesho la moja kwa moja la programu ya PickupRadar lenye data halisi ya Milton Keynes"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "Jaribu PickupRadar kwa data halisi ya Milton Keynes."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "Ona sehemu halisi za kuchukua huko Milton Keynes. Angalia muda wa kusubiri wa hivi karibuni, au {likelyFast} na {likelySlow}. Unaweza kujaribu skrini ya ripoti, lakini hakuna kinachotumwa."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "Chagua kichupo."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} Tumia {nearby} kupata sehemu za kuchukua karibu nawe eneo likiwa limewashwa. Tumia {fast} na {slow} kuangalia muda wa kusubiri na makadirio."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "Tafuta sehemu za kuchukua."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} Jaribu jina, eneo au msimbo wa posta, kama KFC au Bletchley."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "Fungua sehemu ya kuchukua."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} Skrini ya {reportWait} inafunguka. Chagua muda wa kusubiri. Hakuna kinachotumwa."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "Fungua onyesho kubwa"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "Unachoweza kuona kabla hujaingia"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "Unaona lebo zilezile kwenye programu. Madereva huziripoti, si programu za usafirishaji."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "Madereva huchagua muda wa kusubiri. Unaona muda wa kusubiri sasa na madereva wangapi waliuripoti katika saa 2 zilizopita."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} na {likelySlow}"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "Huonyeshwa tu wakati hakuna ripoti za hivi karibuni. Haya ni makadirio, si ripoti za moja kwa moja."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "Imeripotiwa imefungwa hivi karibuni"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} au {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "Madereva hugusa {reportProblem} kuripoti hili. Unaona ripoti yao kabla hujaenda huko."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "Ona wakati madereva wanaporipoti kuwa kompyuta kibao au mfumo wa mkahawa haufanyi kazi."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "Oda huanza baada ya kufika"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "Baadhi ya maeneo huanza oda tu unapofika. Madereva wanaweza kuiwasha wanaporipoti."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "Sehemu za kuchukua zinazokosekana au zisizo sahihi"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "Sehemu ya kuchukua haipo? Gusa {suggest}. Kuna kosa? Gusa {reportProblem}, kisha {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} au {closedPermanently}."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "Hatua tatu rahisi. Kuripoti huchukua sekunde chache."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "Fungua programu"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "Hakuna nenosiri. Programu hukupa wasifu wa Radar kiotomatiki. Huhitaji kujisajili."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "Angalia kabla hujaingia"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "Tafuta sehemu ya kuchukua. Ona muda wa kusubiri sasa, au {likelyFast} au {likelySlow} ikiwa hakuna ripoti za hivi karibuni."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "Ripoti muda wako wa kusubiri"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "Baada ya kuchukua oda, gusa {reportWait}. Huchukua sekunde. Ripoti yako huwasaidia madereva wengine, na unapata {radarPoints}."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "Pata {radarPoints}"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Gusa {reportWait} upate {radarPoints}. Unaweza kuanza bila akaunti. Linda {radarPoints} kwa barua pepe ili ziwe salama ukibadilisha au kuweka upya simu. Hakuna nenosiri. Programu inakutumia msimbo wa tarakimu 6 kwa barua pepe."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "Zawadi zinakuja hivi karibuni."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} Bado huwezi kukomboa {radarPoints}."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "Jinsi ya kupata {radarPoints}"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "Sehemu ya kuchukua inayostahili karibu nawe, bila muda wa kusubiri wa hivi karibuni na bila {likelyFast} wala {likelySlow}. Unapata 15 RP kwa ripoti hiyo badala ya 10."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "Pointi za ziada kwenye ripoti yako ya kwanza halali ya muda wa kusubiri. Ikiwa pia ni {reportNeeded}, unapata jumla ya 25 RP."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "Tunapoidhinisha sehemu ya kuchukua unayopendekeza"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "Kila mmoja wenu anapata pointi hizi rafiki yako anapotoa ripoti 3 halali za muda wa kusubiri, kwa angalau siku 2 tofauti (saa za UTC), katika sehemu 2 tofauti za kuchukua. Nyote mnahitaji akaunti za Radar zilizolindwa (ongeza barua pepe). Rafiki yako lazima aingize msimbo wako kabla ya ripoti yake ya kwanza halali ya muda wa kusubiri."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "{referralRp} kila mmoja"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "Hizi ni miji ya Uingereza kwenye programu. Huioni mji wako? Uombe kwenye programu. Au gusa {notify} kwenye mji {comingSoon}. Tutakutumia barua pepe utakapoanza."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "Inafanya kazi sasa"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "Si sehemu ya programu yoyote ya usafirishaji"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "PickupRadar ni huru. Si sehemu ya Uber Eats, Deliveroo, Just Eat wala programu nyingine yoyote ya usafirishaji. Haitumii akaunti zako huko."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "Soma sera ya faragha"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "Hakuna kuingia kwenye programu za usafirishaji."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} Hatuombi jina la mtumiaji wala nenosiri la Uber Eats, Deliveroo au Just Eat."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "Hakuna maelezo ya mteja au oda."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} Hakuna majina, anwani wala nambari za oda."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "Unaweza kuruka programu ya usafirishaji."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} Kuchagua programu ya usafirishaji si lazima."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "Wewe unadhibiti."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} Futa akaunti au wasifu wa Radar kwenye programu wakati wowote."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "Maswali ya madereva"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "Nahitaji akaunti?"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "Hapana. Programu hukupa wasifu wa Radar kiotomatiki. Unaweza kuripoti muda wa kusubiri mara moja. Ili kulinda {radarPoints}, ongeza barua pepe baadaye. Hakuna nenosiri. Programu inakutumia msimbo wa tarakimu 6 kwa barua pepe."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "PickupRadar inafanya kazi wapi?"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "PickupRadar inafanya kazi sasa huko Milton Keynes. Inayofuata ni London. Kisha miji zaidi, kama Manchester, Birmingham, Leeds, Liverpool na Glasgow. Ona {cities}."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "miji yote"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "Ninaweza kupakua programu lini?"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "Programu za iPhone na Android zinakuja hivi karibuni. Kwa sasa, {preview} inaonyesha sehemu halisi za kuchukua na muda wa kusubiri huko Milton Keynes."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "onyesho la moja kwa moja"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "Muda wa kusubiri sasa huhesabiwaje?"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "Unatokana na ripoti za madereva katika saa 2 zilizopita. Ripoti za zaidi ya saa 2 hazibadilishi muda wa kusubiri sasa."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "{likelyFast} na {likelySlow} zinamaanisha nini?"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "Haya ni makadirio, si ripoti za moja kwa moja. Huonekana wakati hakuna ripoti za hivi karibuni za muda wa kusubiri."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "Je, inafuatilia eneo langu?"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "Hakuna ufuatiliaji wa chinichini. Programu hutumia eneo lako unapoitumia, kuonyesha sehemu za kuchukua zilizo karibu na kuthibitisha uko kwenye sehemu ya kuchukua unaporipoti. Tovuti huomba eneo tu unapochagua kulitumia. Soma {privacy} kwa maelezo zaidi."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "sera ya faragha"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "Ninafutaje data yangu?"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "Kwenye programu, fungua {profile}. Gusa {deleteAccount}. Ikiwa hukutia barua pepe, gusa {deleteProfile}. Unaweza pia kututumia barua pepe. Ona {page} kwa hatua."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "Chunguza sehemu za kuchukua za Milton Keynes."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "Chunguza sehemu halisi za kuchukua huko Milton Keynes. Tafuta mahali na ujaribu skrini ya ripoti. Hakuna unachogusa kinachotumwa."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "Fungua onyesho la moja kwa moja"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "Onyesho la moja kwa moja la programu — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "Jaribu programu ya PickupRadar kwa data halisi ya Milton Keynes. Angalia, tafuta sehemu za kuchukua na uone skrini ya ripoti."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "Hii ni PickupRadar yenye data halisi ya Milton Keynes. Angalia. Tafuta sehemu ya kuchukua uifungue. Hakuna unachogusa hapa kinachotumwa. Unaweza kuripoti kwenye programu ya simu pekee."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "Onyesho kamili la programu ya PickupRadar lenye data halisi ya Milton Keynes"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "Usaidizi — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "Msaada wa PickupRadar: wasiliana na usaidizi, ripoti tatizo la sehemu ya kuchukua, na upate majibu kuhusu wasifu wa Radar, {radarPoints} na kufuta akaunti."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "Unahitaji msaada? Tutumie barua pepe kuhusu programu, sehemu ya kuchukua, {radarPoints} au faragha yako."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "Wasiliana"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "Wasiliana na usaidizi"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "Tutumie barua pepe kwa msaada, mawazo, matatizo ya sehemu za kuchukua au maswali ya faragha:"
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "Anwani ya barua za biashara"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "Kwa barua tu. Barua pepe ndiyo njia ya haraka zaidi ya kutufikia."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "Cha kuweka"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "Ukiripoti tatizo, tafadhali tuambie:"
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "Jina la sehemu ya kuchukua"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "Eneo au msimbo wa posta, ukiujua"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "Kilichokosewa"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "Aina ya simu, ikiwa tatizo liko kwenye programu"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "Maswali ya kawaida"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "Wasifu wa Radar na barua pepe"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Programu hukupa wasifu wa Radar kiotomatiki. Huhitaji kuingia ili kutumia PickupRadar au kupata {radarPoints}. Kuongeza barua pepe ni hiari. Inalinda {radarPoints} ukibadilisha au kuweka upya simu. Hakuna nenosiri. Programu inakutumia msimbo wa tarakimu 6 kwa barua pepe."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} na mialiko"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "Unapata {radarPoints} kwa ripoti halali za muda wa kusubiri ({waitRp}, au {neededRp} inaposema {reportNeeded}), bonasi ya ripoti ya kwanza ({firstRp}) na sehemu za kuchukua tunazoidhinisha ({approvedRp}). Unaweza kumwalika dereva kutoka {profile}. Nyote mnahitaji akaunti za Radar zilizolindwa (ongeza barua pepe). Rafiki yako anaingiza msimbo wako kabla ya ripoti yake ya kwanza halali ya muda wa kusubiri. Rafiki yako anapofanya ripoti 3 halali za muda wa kusubiri, kwa angalau siku 2 tofauti (saa za UTC), katika sehemu 2 tofauti za kuchukua, kila mmoja anapata {referralRp}. {rewards} Bado huwezi kukomboa {radarPoints}."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "Ujumbe wa madereva"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "{profile} ina {messages}: matangazo, arifa na ujumbe binafsi kwa mji wako au wasifu wa Radar. Ujumbe wa zamani au ulioondolewa unaweza usionekane tena."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "Futa akaunti yako"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "Futa akaunti kwenye programu: {profile} → {deleteAccount}. Au tumia barua pepe kwa {email}. Ikiwa hukutia barua pepe, programu inaonyesha {deleteProfile}. Ona ukurasa wa {page} kwa hatua."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "Sehemu ya kuchukua haipo? Gusa {suggest} kwenye programu. Moja si sahihi? Gusa {reportProblem}. Au tutumie barua pepe tutaangalia."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "Akaunti zako za programu za usafirishaji"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "PickupRadar haiunganishi na akaunti zako za Uber Eats, Deliveroo, Just Eat au programu nyingine za usafirishaji. Hatuombi kuingia, manenosiri, maelezo ya akaunti, maelezo ya wateja wala maelezo ya oda. Madereva hushiriki ripoti za kuchukua tu, kama muda wa kusubiri na matatizo ya sehemu za kuchukua."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "Jaribu PickupRadar kabla programu haijazinduliwa."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "Onyesho la moja kwa moja linaonyesha sehemu halisi za kuchukua na muda wa kusubiri huko Milton Keynes. Kuripoti na {radarPoints} viko kwenye programu ya simu pekee."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "Ukurasa haujapatikana — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "Ukurasa huo haupo kwenye tovuti ya PickupRadar."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "Ukurasa huu uko nje ya rada."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "Anwani hiyo haipo kwenye tovuti ya PickupRadar. Kurasa hizi zipo:"
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "Mwanzo"
+    }
+  }
+}

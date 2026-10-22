@@ -1,0 +1,602 @@
+{
+  "language": "vi",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "Chuyển tới nội dung"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "Trang chủ PickupRadar"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "Trang web"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "Quyền riêng tư"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "Xem trước trực tiếp"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "Ứng dụng"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "Trợ giúp"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "Pháp lý"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "Biết thời gian chờ trước khi bước vào."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar. Độc lập và không liên kết với Uber Eats, Deliveroo hay Just Eat."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "Các khoảng thời gian chờ"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "Nhanh"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "Chờ ngắn"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "Chờ lâu"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "Chờ rất lâu"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "Không có báo cáo gần đây? PickupRadar có thể hiện {likelyFast} hoặc {likelySlow}:"
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar): thời gian chờ lấy hàng cho tài xế giao hàng ở Vương quốc Anh"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "Xem tài xế chờ bao lâu ở nhà hàng và cửa hàng trước khi bạn vào. Dành cho tài xế Uber Eats, Deliveroo và Just Eat ở Vương quốc Anh. Không cần đăng ký."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar. Biết thời gian chờ trước khi bước vào."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "Bạn giao hàng cho Uber Eats, Deliveroo hay Just Eat? Xem thời gian chờ lấy hàng gần đây ở nhà hàng và cửa hàng. Tránh chờ lâu. Chạm {reportWait} và nhận {radarPoints}. Không cần đăng ký."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "Thử với dữ liệu thật"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "Tình trạng hoạt động"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "Hiện có ở Milton Keynes. Tiếp theo là London."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "Ứng dụng cho iPhone và Android sắp ra mắt."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "Màn hình ví dụ Trang chủ PickupRadar với tab {nearby} đang mở, điểm lấy hàng được tô màu theo thời gian chờ"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "Màn hình ví dụ: thời gian chờ mẫu, không phải báo cáo trực tiếp của tài xế"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "Thời gian chờ mẫu"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "Ước tính mẫu"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "1 báo cáo · 4 phút trước"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "Màn hình ví dụ. Đây là thời gian chờ mẫu, không phải báo cáo trực tiếp. {live} với dữ liệu thật."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "Thử xem trước trực tiếp"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "Xem bạn có thể phải chờ bao lâu."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "Tài xế báo họ đã chờ bao lâu. Thời gian chờ hiện tại lấy từ báo cáo trong 2 giờ gần nhất. Bạn nhanh chóng thấy điểm lấy hàng nhanh và điểm lấy hàng chậm."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "Xem trước trực tiếp ứng dụng PickupRadar với dữ liệu thật của Milton Keynes"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "Thử PickupRadar với dữ liệu thật của Milton Keynes."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "Xem điểm lấy hàng thật ở Milton Keynes. Kiểm tra thời gian chờ gần đây, hoặc {likelyFast} và {likelySlow}. Bạn có thể thử màn hình báo cáo, nhưng không có gì được gửi đi."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "Chọn một tab."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} Dùng {nearby} để tìm điểm lấy hàng gần bạn khi vị trí đang bật. Dùng {fast} và {slow} để xem thời gian chờ và ước tính."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "Tìm điểm lấy hàng."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} Thử tên, khu vực hoặc mã bưu chính, ví dụ KFC hoặc Bletchley."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "Mở một điểm lấy hàng."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} Màn hình {reportWait} sẽ mở. Chọn thời gian chờ. Không có gì được gửi đi."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "Mở bản xem trước lớn"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "Bạn thấy gì trước khi vào"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "Bạn thấy cùng nhãn trong ứng dụng. Tài xế báo chúng, không phải ứng dụng giao hàng."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "Tài xế chọn một thời gian chờ. Bạn thấy thời gian chờ hiện tại và bao nhiêu tài xế đã báo trong 2 giờ gần nhất."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} và {likelySlow}"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "Chỉ hiện khi không có báo cáo gần đây. Đây là ước tính, không phải báo cáo trực tiếp."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "Vừa được báo là đã đóng cửa"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} hoặc {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "Tài xế chạm {reportProblem} để báo điều này. Bạn thấy báo cáo trước khi lái xe đến đó."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "Xem khi tài xế báo máy tính bảng hoặc hệ thống của nhà hàng không hoạt động."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "Đơn bắt đầu sau khi bạn đến"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "Một số nơi chỉ bắt đầu đơn khi bạn đến. Tài xế có thể bật mục này khi báo cáo."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "Điểm lấy hàng bị thiếu hoặc sai"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "Thiếu điểm lấy hàng? Chạm {suggest}. Có gì sai? Chạm {reportProblem}, rồi {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} hoặc {closedPermanently}."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "Ba bước đơn giản. Báo cáo chỉ mất vài giây."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "Mở ứng dụng"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "Không cần mật khẩu. Ứng dụng tự tạo hồ sơ Radar cho bạn. Không cần đăng ký."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "Kiểm tra trước khi vào"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "Tìm điểm lấy hàng. Xem thời gian chờ hiện tại, hoặc {likelyFast} hay {likelySlow} nếu không có báo cáo gần đây."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "Báo thời gian chờ của bạn"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "Sau khi lấy đơn, chạm {reportWait}. Chỉ mất vài giây. Báo cáo của bạn giúp tài xế khác và bạn nhận {radarPoints}."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "Nhận {radarPoints}"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Chạm {reportWait} để nhận {radarPoints}. Bạn có thể bắt đầu mà không cần tài khoản. Bảo vệ {radarPoints} bằng email để chúng còn an toàn nếu bạn đổi hoặc đặt lại điện thoại. Không cần mật khẩu. Ứng dụng gửi mã 6 chữ số qua email."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "Phần thưởng sắp có."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} Bạn chưa thể đổi {radarPoints}."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "Cách nhận {radarPoints}"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "Một điểm lấy hàng đủ điều kiện gần bạn, không có thời gian chờ gần đây và không có {likelyFast} hay {likelySlow}. Bạn nhận 15 RP cho báo cáo đó thay vì 10."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "Điểm thêm cho báo cáo thời gian chờ hợp lệ đầu tiên. Nếu đó cũng là {reportNeeded}, bạn nhận tổng cộng 25 RP."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "Khi chúng tôi duyệt điểm lấy hàng bạn đề xuất"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "Mỗi người nhận được khi bạn của bạn có 3 báo cáo thời gian chờ hợp lệ, trong ít nhất 2 ngày khác nhau (giờ UTC), tại 2 điểm lấy hàng khác nhau. Cả hai cần tài khoản Radar được bảo vệ (thêm email). Bạn của bạn phải nhập mã của bạn trước báo cáo thời gian chờ hợp lệ đầu tiên."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "{referralRp} mỗi người"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "Đây là các thành phố ở Vương quốc Anh trong ứng dụng. Không thấy thành phố của bạn? Yêu cầu trong ứng dụng. Hoặc chạm {notify} ở thành phố {comingSoon}. Chúng tôi sẽ gửi email khi thành phố hoạt động."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "Đang hoạt động"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "Không thuộc ứng dụng giao hàng nào"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "PickupRadar độc lập. Nó không thuộc Uber Eats, Deliveroo, Just Eat hay ứng dụng giao hàng nào khác. Nó không bao giờ dùng tài khoản của bạn ở đó."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "Đọc chính sách quyền riêng tư"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "Không cần đăng nhập ứng dụng giao hàng."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} Chúng tôi không bao giờ hỏi tên đăng nhập hoặc mật khẩu Uber Eats, Deliveroo hay Just Eat."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "Không có thông tin khách hàng hay đơn hàng."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} Không có tên, địa chỉ hay số đơn."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "Bạn có thể bỏ qua ứng dụng giao hàng."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} Việc chọn ứng dụng giao hàng là không bắt buộc."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "Bạn tự quyết định."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} Xóa tài khoản hoặc hồ sơ Radar trong ứng dụng bất cứ lúc nào."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "Câu hỏi của tài xế"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "Tôi có cần tài khoản không?"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "Không. Ứng dụng tự tạo hồ sơ Radar cho bạn. Bạn có thể báo thời gian chờ ngay. Để bảo vệ {radarPoints}, hãy thêm email sau. Không cần mật khẩu. Ứng dụng gửi mã 6 chữ số qua email."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "PickupRadar hoạt động ở đâu?"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "PickupRadar hiện hoạt động ở Milton Keynes. Tiếp theo là London. Sau đó thêm các thành phố như Manchester, Birmingham, Leeds, Liverpool và Glasgow. Xem {cities}."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "tất cả thành phố"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "Khi nào tôi tải được ứng dụng?"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "Ứng dụng cho iPhone và Android sắp ra mắt. Hiện tại, {preview} cho thấy điểm lấy hàng và thời gian chờ thật ở Milton Keynes."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "xem trước trực tiếp"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "Thời gian chờ hiện tại được tính thế nào?"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "Nó lấy từ báo cáo của tài xế trong 2 giờ gần nhất. Báo cáo cũ hơn 2 giờ không ảnh hưởng đến thời gian chờ hiện tại."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "{likelyFast} và {likelySlow} nghĩa là gì?"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "Đó là ước tính, không phải báo cáo trực tiếp. Chúng xuất hiện khi không có báo cáo thời gian chờ gần đây."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "Nó có theo dõi vị trí của tôi không?"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "Không theo dõi nền. Ứng dụng dùng vị trí khi bạn đang dùng, để hiện điểm lấy hàng gần và kiểm tra bạn đang ở điểm lấy hàng khi báo cáo. Trang web chỉ xin vị trí khi bạn chọn dùng. Đọc {privacy} để biết thêm."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "chính sách quyền riêng tư"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "Làm sao để xóa dữ liệu của tôi?"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "Trong ứng dụng, mở {profile}. Chạm {deleteAccount}. Nếu bạn chưa thêm email, chạm {deleteProfile}. Bạn cũng có thể gửi email cho chúng tôi. Xem {page} để biết các bước."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "Xem các điểm lấy hàng ở Milton Keynes."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "Xem điểm lấy hàng thật ở Milton Keynes. Tìm một nơi và thử màn hình báo cáo. Không có gì bạn chạm được gửi đi."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "Mở xem trước trực tiếp"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "Xem trước ứng dụng trực tiếp — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "Thử ứng dụng PickupRadar với dữ liệu thật của Milton Keynes. Xem quanh, tìm điểm lấy hàng và xem màn hình báo cáo."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "Đây là PickupRadar với dữ liệu thật của Milton Keynes. Xem quanh. Tìm một điểm lấy hàng và mở nó. Không có gì bạn chạm ở đây được gửi đi. Bạn chỉ báo cáo được trong ứng dụng điện thoại."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "Bản xem trước đầy đủ ứng dụng PickupRadar với dữ liệu thật của Milton Keynes"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "Hỗ trợ — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "Trợ giúp PickupRadar: liên hệ hỗ trợ, báo sự cố điểm lấy hàng và tìm câu trả lời về hồ sơ Radar, {radarPoints} và việc xóa tài khoản."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "Cần giúp đỡ? Gửi email cho chúng tôi về ứng dụng, điểm lấy hàng, {radarPoints} hoặc quyền riêng tư của bạn."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "Liên hệ"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "Liên hệ hỗ trợ"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "Gửi email cho chúng tôi nếu cần giúp đỡ, có ý tưởng, sự cố điểm lấy hàng hoặc câu hỏi về quyền riêng tư:"
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "Địa chỉ thư từ doanh nghiệp"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "Chỉ dùng cho thư. Email là cách nhanh nhất để liên hệ."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "Nên ghi những gì"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "Nếu báo sự cố, hãy cho chúng tôi biết:"
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "Tên điểm lấy hàng"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "Khu vực hoặc mã bưu chính, nếu bạn biết"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "Chuyện gì đã xảy ra"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "Mẫu điện thoại, nếu ứng dụng có sự cố"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "Câu hỏi thường gặp"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "Hồ sơ Radar và email"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Ứng dụng tự tạo hồ sơ Radar cho bạn. Bạn không cần đăng nhập để dùng PickupRadar hoặc nhận {radarPoints}. Thêm email là tùy chọn. Nó bảo vệ {radarPoints} nếu bạn đổi hoặc đặt lại điện thoại. Không cần mật khẩu. Ứng dụng gửi mã 6 chữ số qua email."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} và lời mời"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "Bạn nhận {radarPoints} cho báo cáo thời gian chờ hợp lệ ({waitRp}, hoặc {neededRp} khi ghi {reportNeeded}), thưởng báo cáo đầu tiên ({firstRp}) và điểm lấy hàng chúng tôi duyệt ({approvedRp}). Bạn có thể mời tài xế từ {profile}. Cả hai cần tài khoản Radar được bảo vệ (thêm email). Bạn của bạn nhập mã của bạn trước báo cáo thời gian chờ hợp lệ đầu tiên. Khi bạn của bạn có 3 báo cáo thời gian chờ hợp lệ, trong ít nhất 2 ngày khác nhau (giờ UTC), tại 2 điểm lấy hàng khác nhau, mỗi người nhận {referralRp}. {rewards} Bạn chưa thể đổi {radarPoints}."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "Tin nhắn cho tài xế"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "{profile} có {messages}: thông báo, cảnh báo và tin nhắn cá nhân cho thành phố hoặc hồ sơ Radar của bạn. Tin cũ hoặc đã xóa có thể không còn hiện."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "Xóa tài khoản"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "Xóa tài khoản trong ứng dụng: {profile} → {deleteAccount}. Hoặc gửi email tới {email}. Nếu bạn chưa thêm email, ứng dụng hiện {deleteProfile}. Xem trang {page} để biết các bước."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "Thiếu điểm lấy hàng? Chạm {suggest} trong ứng dụng. Có điểm bị sai? Chạm {reportProblem}. Hoặc gửi email, chúng tôi sẽ kiểm tra."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "Tài khoản ứng dụng giao hàng của bạn"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "PickupRadar không kết nối với tài khoản Uber Eats, Deliveroo, Just Eat hay ứng dụng giao hàng khác của bạn. Chúng tôi không bao giờ hỏi thông tin đăng nhập, mật khẩu, chi tiết tài khoản, thông tin khách hàng hay chi tiết đơn hàng. Tài xế chỉ chia sẻ báo cáo lấy hàng, như thời gian chờ và sự cố điểm lấy hàng."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "Thử PickupRadar trước khi ứng dụng ra mắt."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "Bản xem trước trực tiếp hiện điểm lấy hàng và thời gian chờ thật ở Milton Keynes. Báo cáo và {radarPoints} chỉ có trong ứng dụng điện thoại."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "Không tìm thấy trang — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "Trang đó không có trên trang web PickupRadar."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "Trang này nằm ngoài radar."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "Địa chỉ đó không có trên trang web PickupRadar. Các trang này có:"
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "Trang chủ"
+    }
+  }
+}

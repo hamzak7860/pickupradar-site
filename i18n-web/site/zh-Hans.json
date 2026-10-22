@@ -1,0 +1,602 @@
+{
+  "language": "zh-Hans",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "跳到主要内容"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "PickupRadar 首页"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "网站"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "隐私"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "实时预览"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "应用"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "帮助"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "法律信息"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "进门之前先知道要等多久。"
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar。独立运营，与 Uber Eats、Deliveroo 或 Just Eat 无关。"
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "等待时间范围"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "很快"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "等待较短"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "等待较长"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "等待很长"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "没有近期上报？PickupRadar 可能会显示 {likelyFast} 或 {likelySlow}："
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar)：英国外卖骑手的取餐等待时间"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "进门之前先看骑手在餐厅和商店要等多久。面向英国的 Uber Eats、Deliveroo 和 Just Eat 骑手。无需注册。"
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar。进门之前先知道要等多久。"
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "你为 Uber Eats、Deliveroo 或 Just Eat 送餐吗？查看餐厅和商店取餐点的近期等待。避开长时间等待。点 {reportWait}，赚取 {radarPoints}。无需注册。"
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "用真实数据试一试"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "可用情况"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "现已覆盖 Milton Keynes。下一个是 London。"
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "iPhone 和 Android 应用即将推出。"
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "PickupRadar 首页示例，{nearby} 标签已打开，取餐点按等待时间标成不同颜色"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "示例画面：示例等待时间，不是骑手的实时上报"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "示例等待"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "示例估计"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "1 条上报 · 4 分钟前"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "示例画面。这些是示例等待时间，不是实时上报。{live}，查看真实数据。"
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "试试实时预览"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "看看你可能要等多久。"
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "骑手上报自己等了多久。当前等待来自最近 2 小时的上报。你可以很快看出哪些取餐点快、哪些慢。"
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "使用 Milton Keynes 真实数据的 PickupRadar 应用实时预览"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "用 Milton Keynes 的真实数据试用 PickupRadar。"
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "查看 Milton Keynes 的真实取餐点。看看近期等待，或 {likelyFast} 和 {likelySlow}。你可以打开上报画面，但不会发送任何内容。"
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "选一个标签。"
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} 打开定位后，用 {nearby} 找附近的取餐点。用 {fast} 和 {slow} 查看等待和估计。"
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "搜索取餐点。"
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} 试试名称、区域或邮编，例如 KFC 或 Bletchley。"
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "打开一个取餐点。"
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} 会打开 {reportWait} 画面。选择等待时间。不会发送任何内容。"
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "打开大预览"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "进门之前你能看到什么"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "应用里是同样的标签。由骑手上报，不是外卖应用上报。"
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "骑手选择一个等待时间。你会看到当前等待，以及最近 2 小时有多少骑手上报。"
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} 和 {likelySlow}"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "只在没有近期上报时显示。这是估计，不是实时上报。"
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "最近有人上报已关门"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} 或 {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "骑手点 {reportProblem} 来上报。你在开车过去之前就能看到。"
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "查看骑手何时上报餐厅的平板或系统无法使用。"
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "到达后才开始做餐"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "有些地方要等你到达才开始做餐。骑手上报时可以打开这项。"
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "缺少或错误的取餐点"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "缺少取餐点？点 {suggest}。有问题？点 {reportProblem}，然后选 {otherIssue}：{wrongAddress}、{wrongBranch}、{duplicate} 或 {closedPermanently}。"
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "三个简单步骤。上报只需几秒。"
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "打开应用"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "没有密码。应用会自动给你一个 Radar 资料。不需要注册。"
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "进门前先看"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "找到取餐点。查看当前等待；如果没有近期上报，就看 {likelyFast} 或 {likelySlow}。"
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "上报你的等待"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "取到餐后，点 {reportWait}。只需几秒。你的上报能帮助其他骑手，你也会获得 {radarPoints}。"
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "赚取 {radarPoints}"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "点 {reportWait} 赚取 {radarPoints}。没有账户也能开始。用邮箱保护 {radarPoints}，换手机或重置手机后也不会丢。不需要密码。应用会把 6 位数验证码发到你的邮箱。"
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "奖励即将推出。"
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} 现在还不能兑换 {radarPoints}。"
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "如何赚取 {radarPoints}"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "你附近符合条件的取餐点，没有近期等待，也没有 {likelyFast} 或 {likelySlow}。这次上报你获得 15 RP，而不是 10。"
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "第一次有效等待上报有额外分数。如果同时是 {reportNeeded}，你一共获得 25 RP。"
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "当我们批准你推荐的取餐点时"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "朋友完成 3 次有效等待上报后，你们各自获得。这些上报至少在 2 个不同的日期（UTC 时间），并且在 2 个不同的取餐点。你们都需要受保护的 Radar 账户（添加邮箱）。朋友必须在第一次有效等待上报之前输入你的邀请码。"
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "每人 {referralRp}"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "这些是应用里的英国城市。找不到你的城市？在应用里申请。或在 {comingSoon} 的城市上点 {notify}。上线后我们会发邮件通知你。"
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "现已上线"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "不属于任何外卖应用"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "PickupRadar 是独立的。它不属于 Uber Eats、Deliveroo、Just Eat 或任何其他外卖应用。它从不使用你在那些应用里的账户。"
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "阅读隐私政策"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "不需要外卖应用的登录信息。"
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} 我们从不索取你的 Uber Eats、Deliveroo 或 Just Eat 用户名或密码。"
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "没有顾客或订单信息。"
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} 没有姓名、地址或订单号。"
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "可以不选外卖应用。"
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} 选择外卖应用是可选的。"
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "由你决定。"
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} 你可以随时在应用里删除账户或 Radar 资料。"
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "骑手常问的问题"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "需要账户吗？"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "不需要。应用会自动给你一个 Radar 资料。你可以马上上报等待。要保护 {radarPoints}，可以稍后再加邮箱。不需要密码。应用会把 6 位数验证码发到你的邮箱。"
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "PickupRadar 在哪里可用？"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "PickupRadar 目前在 Milton Keynes。下一个是 London。之后还有更多城市，例如 Manchester、Birmingham、Leeds、Liverpool 和 Glasgow。查看 {cities}。"
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "所有城市"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "什么时候可以下载应用？"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "iPhone 和 Android 应用即将推出。目前，{preview} 显示 Milton Keynes 的真实取餐点和等待时间。"
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "实时预览"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "当前等待是怎么算的？"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "它来自骑手最近 2 小时的上报。超过 2 小时的上报不影响当前等待。"
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "{likelyFast} 和 {likelySlow} 是什么意思？"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "它们是估计，不是实时上报。没有近期等待上报时才会出现。"
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "它会追踪我的位置吗？"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "没有后台追踪。你使用应用时，它会用你的位置显示附近的取餐点，并在你上报时确认你在取餐点。只有你选择使用时，网站才会请求位置。详情请阅读 {privacy}。"
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "隐私政策"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "如何删除我的数据？"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "在应用中打开 {profile}。点 {deleteAccount}。如果没有添加邮箱，点 {deleteProfile}。也可以给我们发邮件。步骤见 {page}。"
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "看看 Milton Keynes 的取餐点。"
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "查看 Milton Keynes 的真实取餐点。搜索一个地方，试试上报画面。你点的内容都不会发送。"
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "打开实时预览"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "应用实时预览 — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "用 Milton Keynes 的真实数据试用 PickupRadar 应用。四处看看，搜索取餐点，并查看上报画面。"
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "这是使用 Milton Keynes 真实数据的 PickupRadar。四处看看。搜索并打开一个取餐点。你在这里点的内容都不会发送。只能在手机应用里上报。"
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "使用 Milton Keynes 真实数据的完整 PickupRadar 应用预览"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "支持 — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "PickupRadar 帮助：联系支持、上报取餐点问题，并查找关于 Radar 资料、{radarPoints} 和删除账户的答案。"
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "需要帮助？发邮件告诉我们应用、取餐点、你的 {radarPoints} 或隐私问题。"
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "联系"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "联系支持"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "如需帮助、想法、取餐点问题或隐私问题，请发邮件给我们："
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "商务信函地址"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "仅用于信件。发邮件是联系我们最快的方式。"
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "请写上这些"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "如果上报问题，请告诉我们："
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "取餐点名称"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "区域或邮编（如果知道）"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "出了什么问题"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "如果是应用问题，请写手机型号"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "常见问题"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "Radar 资料和邮箱"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "应用会自动给你一个 Radar 资料。使用 PickupRadar 或赚取 {radarPoints} 不需要登录。添加邮箱是可选的。换手机或重置手机后，它可以保护你的 {radarPoints}。不需要密码。应用会把 6 位数验证码发到你的邮箱。"
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} 和邀请"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "有效等待上报可以获得 {radarPoints}（{waitRp}；显示 {reportNeeded} 时是 {neededRp}），第一次上报还有奖励（{firstRp}），我们批准的取餐点也有（{approvedRp}）。你可以在 {profile} 里邀请骑手。你们都需要受保护的 Radar 账户（添加邮箱）。朋友必须在第一次有效等待上报之前输入你的邀请码。朋友完成 3 次有效等待上报，至少在 2 个不同的日期（UTC 时间），并且在 2 个不同的取餐点后，你们各自获得 {referralRp}。{rewards} 现在还不能兑换 {radarPoints}。"
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "骑手消息"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "{profile} 里有 {messages}：给你的城市或 Radar 资料的公告、提醒和个人消息。旧的或已删除的消息可能不再显示。"
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "删除账户"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "在应用里删除账户：{profile} → {deleteAccount}。或发邮件到 {email}。如果没有添加邮箱，应用会显示 {deleteProfile}。步骤见 {page} 页面。"
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "缺少取餐点？在应用里点 {suggest}。有一个不对？点 {reportProblem}。或发邮件给我们，我们会查看。"
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "你的外卖应用账户"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "PickupRadar 不会连接你的 Uber Eats、Deliveroo、Just Eat 或其他外卖应用账户。我们从不索取登录信息、密码、账户资料、顾客资料或订单资料。骑手只分享取餐上报，例如等待时间和取餐点问题。"
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "应用推出之前先试用 PickupRadar。"
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "实时预览显示 Milton Keynes 的真实取餐点和等待时间。上报和 {radarPoints} 只在手机应用里。"
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "找不到页面 — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "PickupRadar 网站上没有这个页面。"
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "这个页面不在雷达上。"
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "PickupRadar 网站上没有这个地址。这些页面有："
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "首页"
+    }
+  }
+}
