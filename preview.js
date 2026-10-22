@@ -562,7 +562,15 @@ function mountPickupRadarPreview(container, options) {
       // Keep the current language if a file can't be loaded.
       return false;
     }
-    if (persist) saveLanguageChoice(code);
+    if (persist) {
+      saveLanguageChoice(code);
+      // Same-tab pages (the website header) do not receive a storage event.
+      try {
+        window.dispatchEvent(new CustomEvent('pickupradar-language', { detail: { code: code } }));
+      } catch (error) {
+        // The saved choice still applies on the next load.
+      }
+    }
     applyLanguage();
     return true;
   }
@@ -2688,10 +2696,16 @@ function mountPickupRadarPreview(container, options) {
   });
   rootFind('[data-language-close]').addEventListener('click', closeLanguageScreen);
   languageSearch.addEventListener('input', renderLanguageList);
-  // Same choice in another tab of this site.
+  // Same choice in another tab of this site, or from the website header in this tab.
   window.addEventListener('storage', (event) => {
     if (event.key === I18N_STORAGE_KEY && event.newValue && event.newValue !== languageCode && LANGUAGE_CODE_SET.has(event.newValue)) {
       setLanguage(event.newValue, { persist: false });
+    }
+  });
+  window.addEventListener('pickupradar-language', (event) => {
+    const code = event.detail && event.detail.code;
+    if (code && code !== languageCode && LANGUAGE_CODE_SET.has(code)) {
+      setLanguage(code, { persist: false });
     }
   });
 

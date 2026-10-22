@@ -77,6 +77,8 @@ body {
   font-family: var(--w-system);
   font-stretch: 100%;
   line-height: 1.35;
+  /* The page direction must not flip the phone. The preview sets dir on .phone-screen. */
+  direction: ltr;
 }
 
 img { max-width: 100%; }
@@ -93,7 +95,7 @@ summary:focus-visible {
 
 .w-skip {
   position: absolute;
-  left: 12px;
+  inset-inline-start: 12px;
   top: -60px;
   z-index: 200;
   padding: 10px 16px;
@@ -168,7 +170,45 @@ summary:focus-visible {
 
 .w-brand .w-radar-word { color: var(--w-radar); }
 
-.w-header nav { margin-left: auto; }
+.w-header nav { margin-inline-start: auto; }
+
+.w-header-tools {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+}
+
+.w-lang {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 44px;
+  min-height: 44px;
+  max-width: 11rem;
+  padding: 0 12px 0 10px;
+  border: 1px solid var(--w-line-2);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--w-paper);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.w-lang-icon { flex: 0 0 auto; }
+
+.w-lang-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.w-lang:hover { background: var(--w-panel-2); }
 
 .w-nav {
   display: flex;
@@ -210,11 +250,33 @@ summary:focus-visible {
 @media (max-width: 860px) {
   .w-header { position: static; background: rgba(7, 16, 24, 0.94); border-bottom-color: var(--w-line); }
   .w-header-inner { padding-top: 14px; padding-bottom: 12px; min-height: 0; column-gap: 12px; }
-  .w-header nav { order: 3; flex: 1 1 100%; min-width: 0; margin-left: 0; }
+  .w-header nav { order: 3; flex: 1 1 100%; min-width: 0; margin-inline-start: 0; }
+  .w-header-tools { order: 2; margin-inline-start: auto; }
   .w-nav { margin: 0 -10px; }
   .w-nav a { font-size: 14px; padding: 6px 10px; }
   .w-brand { font-size: 22px; }
   .w-brand img { width: 36px; height: 36px; }
+}
+
+@media (max-width: 480px) {
+  .w-header:has(.w-lang) .w-brand { font-size: 18.5px; gap: 7px; }
+  .w-header:has(.w-lang) .w-brand img { width: 30px; height: 30px; }
+  .w-header:has(.w-lang) .w-header-cta.w-btn { min-height: 40px; padding: 0 12px; font-size: 13.5px; border-radius: 12px; }
+}
+
+@media (max-width: 400px) {
+  .w-lang { width: 44px; padding: 0; gap: 0; }
+  .w-header .w-lang-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
 }
 
 @media (max-width: 380px) {
@@ -222,6 +284,10 @@ summary:focus-visible {
   .w-header-cta.w-btn { min-height: 40px; padding: 0 12px; font-size: 13.5px; border-radius: 12px; }
   .w-header .w-brand { font-size: 18.5px; gap: 7px; }
   .w-header .w-brand img { width: 30px; height: 30px; }
+}
+
+@media (max-width: 360px) {
+  .w-header-tools { flex-basis: 100%; margin-inline-start: 0; }
 }
 
 /* ---------- Type ---------- */
@@ -873,7 +939,7 @@ body.page-home #live-preview {
 .w-card p,
 .w-card li { color: var(--w-mist); }
 
-.w-card ul { padding-left: 20px; margin: 12px 0 0; }
+.w-card ul { padding-inline-start: 20px; margin: 12px 0 0; }
 
 .w-card li + li { margin-top: 6px; }
 
@@ -1385,7 +1451,7 @@ body.page-live-preview #livePreview {
 /* Back to top (site.js), like the app's round arrow button */
 .w-top {
   position: fixed;
-  right: 16px;
+  inset-inline-end: 16px;
   bottom: calc(16px + env(safe-area-inset-bottom, 0px));
   z-index: 40;
   width: 48px;
@@ -1408,4 +1474,135 @@ body.page-live-preview #livePreview {
 
 .w-top:hover {
   color: var(--w-radar);
+}
+
+/* Language dialog. The phone preview keeps its own language screen. */
+body.w-lang-open { overflow: hidden; }
+
+.w-lang-dialog {
+  position: fixed;
+  inset: 0;
+  z-index: 260;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 12px;
+  background: rgba(5, 12, 18, 0.72);
+}
+
+.w-lang-dialog[hidden] { display: none; }
+
+.w-lang-panel {
+  display: flex;
+  flex-direction: column;
+  width: min(440px, 100%);
+  max-height: min(640px, calc(100dvh - 24px));
+  border: 1px solid var(--w-line);
+  border-radius: 20px;
+  background: var(--w-panel);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+}
+
+.w-lang-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 14px 8px 18px;
+}
+
+.w-lang-title {
+  margin: 0;
+  font-family: var(--w-display);
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.w-lang-close {
+  min-height: 44px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--w-mist);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.w-lang-close:hover { color: var(--w-paper); background: var(--w-panel-2); }
+
+.w-lang-search {
+  margin: 0 14px 10px;
+  min-height: 44px;
+  padding: 0 14px;
+  border: 1px solid var(--w-line-2);
+  border-radius: 12px;
+  background: var(--w-deep);
+  color: var(--w-paper);
+  font: inherit;
+  font-size: 16px;
+}
+
+.w-lang-search:focus { outline: 2px solid var(--w-signal); outline-offset: 2px; }
+
+.w-lang-list {
+  min-height: 0;
+  overflow: auto;
+  padding-bottom: 8px;
+}
+
+.w-lang-option,
+.w-lang-more {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  min-height: 48px;
+  padding: 8px 18px;
+  border: 0;
+  background: transparent;
+  color: var(--w-paper);
+  font: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: start;
+  cursor: pointer;
+}
+
+.w-lang-option[aria-selected='true'] { background: #102232; }
+
+.w-lang-option:hover,
+.w-lang-more:hover { background: var(--w-panel-2); }
+
+.w-lang-option-name { min-width: 0; }
+
+.w-lang-active {
+  flex: 0 0 auto;
+  color: var(--w-radar);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.w-lang-chevron {
+  color: var(--w-mist);
+  font-size: 22px;
+  line-height: 1;
+}
+
+.w-lang-empty {
+  margin: 12px 18px 20px;
+  color: var(--w-mist);
+}
+
+@media (min-width: 720px) {
+  .w-lang-dialog { align-items: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .w-lang-dialog { scroll-behavior: auto; }
 }

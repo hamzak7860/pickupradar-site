@@ -1,0 +1,1053 @@
+{
+  "about": "English source for the PickupRadar website pages. Translate \"en\" into the language. Keep {placeholders}, PickupRadar, city names, brand names and email addresses. Keys with \"app\" come from the app dictionary and must not be translated here. \"appSlots\" insert those app phrases. \"domSlots\" are link or bold phrases that stay in the page.",
+  "strings": {
+    "shared.term.reportWait": {
+      "en": "Report wait",
+      "app": "home.reportWait",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.currentWait": {
+      "en": "Current wait",
+      "app": "report.currentWait",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.likelyFast": {
+      "en": "Likely fast",
+      "app": "home.likelyFast",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.likelySlow": {
+      "en": "Likely slow",
+      "app": "home.likelySlow",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.radarPoints": {
+      "en": "RadarPoints",
+      "app": "radar.balance",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.reportNeeded": {
+      "en": "Report needed",
+      "app": "radar.earning.reportNeeded",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.reportProblem": {
+      "en": "Report a problem",
+      "app": "problem.report",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.nearby": {
+      "en": "Nearby",
+      "app": "home.tab.nearby",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.fast": {
+      "en": "Fast",
+      "app": "home.tab.fast",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.slow": {
+      "en": "Slow",
+      "app": "home.tab.slow",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.saved": {
+      "en": "Saved",
+      "app": "home.tab.saved",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.search": {
+      "en": "Search pickup points",
+      "app": "home.search",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.suggest": {
+      "en": "Suggest pickup point",
+      "app": "missing.button",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.profile": {
+      "en": "Profile",
+      "app": "radar.title",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.messages": {
+      "en": "Messages",
+      "app": "radar.messages.title",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.deleteAccount": {
+      "en": "Delete account",
+      "app": "radar.delete.protected.action",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.deleteProfile": {
+      "en": "Delete Radar profile",
+      "app": "radar.delete.anonymous.action",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.comingSoon": {
+      "en": "Coming soon",
+      "app": "common.comingSoon",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.comingNext": {
+      "en": "Coming next",
+      "app": "city.comingNext",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.notify": {
+      "en": "Notify me when live",
+      "app": "cityAlert.notifyLine",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.how": {
+      "en": "How it works",
+      "app": "home.help.howItWorks",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.support": {
+      "en": "Support",
+      "app": "home.help.support",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.madeOnArrival": {
+      "en": "Made when driver arrives",
+      "app": "home.badge.madeOnArrival",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.systemIssue": {
+      "en": "Tablet/server issue reported",
+      "app": "home.badge.systemIssue",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.closedNow": {
+      "en": "Closed now",
+      "app": "problem.closedNow",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.notReceiving": {
+      "en": "Not receiving orders",
+      "app": "problem.notReceiving",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.otherIssue": {
+      "en": "Other issue",
+      "app": "problem.otherIssue",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.wrongAddress": {
+      "en": "Wrong address",
+      "app": "issue.wrong_address",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.wrongBranch": {
+      "en": "Wrong branch/name",
+      "app": "issue.wrong_branch",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.duplicate": {
+      "en": "Duplicate venue",
+      "app": "issue.duplicate_venue",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.closedPermanently": {
+      "en": "Permanently closed",
+      "app": "issue.closed_permanently",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.waitReport": {
+      "en": "Valid wait report",
+      "app": "radar.earning.waitReport",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.waitRp": {
+      "en": "+10 RP",
+      "app": "radar.earning.waitReportRp",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.neededRp": {
+      "en": "+15 RP",
+      "app": "radar.earning.reportNeededRp",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.firstBonus": {
+      "en": "First report bonus",
+      "app": "radar.earning.firstBonus",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.firstRp": {
+      "en": "+10 RP extra",
+      "app": "radar.earning.firstBonusRp",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.approved": {
+      "en": "Pickup point approved",
+      "app": "radar.history.pickupPointApproved",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.approvedRp": {
+      "en": "+20 RP",
+      "app": "radar.earning.pickupPointApprovedRp",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.referral": {
+      "en": "Driver referral",
+      "app": "radar.history.driverReferral",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.referralRp": {
+      "en": "+50 RP",
+      "app": "radar.earning.driverReferralRp",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.rewards": {
+      "en": "Rewards coming soon",
+      "app": "radar.rewards.comingSoon",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.under5": {
+      "en": "<5 min",
+      "app": "wait.range.under5",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.fiveToTen": {
+      "en": "5–10 min",
+      "app": "wait.range.fiveToTen",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.tenToFifteen": {
+      "en": "10–15 min",
+      "app": "wait.range.tenToFifteen",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.fifteenPlus": {
+      "en": "15+ min",
+      "app": "wait.range.fifteenPlus",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.backToTop": {
+      "en": "Back to top",
+      "app": "common.backToTop",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.ui.language": {
+      "en": "Language",
+      "app": "language.title",
+      "note": "Accessible name and dialog title for the website language button. App dictionary label. Do not translate it in the website file."
+    },
+    "shared.ui.close": {
+      "en": "Close",
+      "app": "common.close",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.ui.search": {
+      "en": "Search languages",
+      "app": "language.search",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.ui.more": {
+      "en": "More languages",
+      "app": "language.more",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.ui.active": {
+      "en": "Active",
+      "app": "common.active",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.ui.noResults": {
+      "en": "No languages found",
+      "app": "language.noResults",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.skip": {
+      "en": "Skip to content",
+      "note": "Skip link at the start of every translated page. Not shown until it is focused."
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "note": "Accessible name for the PickupRadar logo link. Keep the name PickupRadar."
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "note": "Accessible name for the header navigation. Not shown on screen."
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "note": "Header and footer link to the privacy policy. The policy page itself stays in English."
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "note": "Header button and footer link to the live preview page."
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "note": "Footer heading above the preview and how-it-works links."
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "note": "Footer heading above support and the email address."
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "note": "Footer heading above privacy and delete account. Do not change the legal pages."
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "note": "Homepage heading and the short line under the footer logo."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "note": "Footer copyright line. Keep PickupRadar, Uber Eats, Deliveroo, Just Eat and 2026."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "note": "Accessible name for the four wait-range examples. Not shown on screen."
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "note": "Caption under the shortest wait range."
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "note": "Caption under the 5–10 minute range."
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "note": "Caption under the 10–15 minute range."
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "note": "Caption under the 15+ minute range."
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "appSlots": {
+        "likelyFast": "home.likelyFast",
+        "likelySlow": "home.likelySlow"
+      },
+      "note": "Line above the Likely fast and Likely slow examples. {likelyFast} and {likelySlow} are the app labels."
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "note": "Browser title and social title for the homepage. Keep both PickupRadar and Pickup Radar."
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "note": "Homepage description for search and social cards. Keep Uber Eats, Deliveroo and Just Eat."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "note": "Description of the homepage share image. Keep PickupRadar."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "appSlots": {
+        "reportWait": "home.reportWait",
+        "radarPoints": "radar.balance"
+      },
+      "note": "Homepage introduction. Keep the delivery-app names. {reportWait} and {radarPoints} are the app labels."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "note": "Button that jumps to the live preview on the homepage."
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "note": "Accessible name for the Milton Keynes and app-status notes. Not shown on screen."
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "note": "Homepage status line and the cities heading. Keep the city names Milton Keynes and London."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "note": "Homepage note under the city status. Do not say the apps can be downloaded."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "appSlots": {
+        "nearby": "home.tab.nearby"
+      },
+      "note": "Accessible description of the example phone picture. British spelling. {nearby} is the app label."
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "note": "Banner on the example phone. These waits are samples."
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "note": "Label on example cards that show a sample wait time."
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "note": "Label on the example card that shows an estimate."
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "note": "Sample evidence chip. Keep the digit 1, the digit 4 and the · character."
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "domSlots": [
+        "live"
+      ],
+      "note": "Caption under the example phone. {live} is the link text."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "note": "Link under the example phone. It jumps to the live preview on this page."
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "note": "Heading for the wait-range section."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "note": "Explanation of the wait ranges. Use the same idea as the app label Current wait."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "note": "Accessible name for the homepage phone preview. Keep PickupRadar and Milton Keynes."
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "note": "Heading beside the homepage phone preview. Keep PickupRadar and Milton Keynes."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "appSlots": {
+        "likelyFast": "home.likelyFast",
+        "likelySlow": "home.likelySlow"
+      },
+      "note": "Introduction to the homepage preview. {likelyFast} and {likelySlow} are the app labels. Keep Milton Keynes."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "note": "Bold start of the first preview instruction."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "appSlots": {
+        "nearby": "home.tab.nearby",
+        "fast": "home.tab.fast",
+        "slow": "home.tab.slow"
+      },
+      "domSlots": [
+        "lead"
+      ],
+      "note": "First preview instruction. {lead} stays bold. The other placeholders are app labels."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "note": "Bold start of the second preview instruction. Same words as the app search label, with a full stop."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "domSlots": [
+        "lead"
+      ],
+      "note": "Second preview instruction. {lead} stays bold. Keep KFC and Bletchley."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "note": "Bold start of the third preview instruction."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "appSlots": {
+        "reportWait": "home.reportWait"
+      },
+      "domSlots": [
+        "lead"
+      ],
+      "note": "Third preview instruction. {lead} stays bold. {reportWait} is the app label."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "note": "Link from the homepage preview to the full preview page."
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "note": "Heading for the section that explains the labels on a pickup point."
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "note": "Introduction under that heading."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "note": "Explains the current-wait label. Use the same idea as the app label Current wait."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "appSlots": {
+        "likelyFast": "home.likelyFast",
+        "likelySlow": "home.likelySlow"
+      },
+      "note": "Heading for the estimate labels. Both placeholders are app labels."
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "note": "Explains Likely fast and Likely slow."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "note": "Sample pill for a recent closure report. It is not the same as the app label Closed now."
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "appSlots": {
+        "closedNow": "problem.closedNow",
+        "notReceiving": "problem.notReceiving"
+      },
+      "note": "Heading for closure labels. Both placeholders are app labels."
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "appSlots": {
+        "reportProblem": "problem.report"
+      },
+      "note": "Explains closure reports. {reportProblem} is the app label."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "note": "Explains the tablet or server issue label."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "note": "Heading for places that start the order when the driver arrives."
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "note": "Explains the made-when-driver-arrives label."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "note": "Heading for suggesting or correcting a pickup point. Also used on the support page."
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "appSlots": {
+        "suggest": "missing.button",
+        "reportProblem": "problem.report",
+        "otherIssue": "problem.otherIssue",
+        "wrongAddress": "issue.wrong_address",
+        "wrongBranch": "issue.wrong_branch",
+        "duplicate": "issue.duplicate_venue",
+        "closedPermanently": "issue.closed_permanently"
+      },
+      "note": "Explains how to suggest or correct a pickup point. Every placeholder is an app label."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "note": "Introduction under How it works."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "note": "First step heading."
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "note": "First step. Radar profile is the app's name for the profile."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "note": "Second step heading."
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "appSlots": {
+        "likelyFast": "home.likelyFast",
+        "likelySlow": "home.likelySlow"
+      },
+      "note": "Second step. {likelyFast} and {likelySlow} are the app labels."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "note": "Third step heading."
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "appSlots": {
+        "reportWait": "home.reportWait",
+        "radarPoints": "radar.balance"
+      },
+      "note": "Third step. {reportWait} and {radarPoints} are the app labels."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "appSlots": {
+        "radarPoints": "radar.balance"
+      },
+      "note": "RadarPoints section heading. {radarPoints} is the app label."
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "appSlots": {
+        "reportWait": "home.reportWait",
+        "radarPoints": "radar.balance"
+      },
+      "note": "Explains earning and protecting points. Placeholders are app labels. {radarPoints} appears twice."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "note": "Bold note. Same words as the app phrase Rewards coming soon, with a full stop."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "appSlots": {
+        "radarPoints": "radar.balance"
+      },
+      "domSlots": [
+        "soon"
+      ],
+      "note": "Note under the points explanation. {soon} stays bold. {radarPoints} is the app label."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "appSlots": {
+        "radarPoints": "radar.balance"
+      },
+      "note": "Accessible name for the points table. {radarPoints} is the app label."
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "appSlots": {
+        "reportNeeded": "radar.earning.reportNeeded"
+      },
+      "domSlots": [
+        "help"
+      ],
+      "note": "Report needed row. {reportNeeded} is the app label. {help} is the smaller explanation."
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "appSlots": {
+        "likelyFast": "home.likelyFast",
+        "likelySlow": "home.likelySlow"
+      },
+      "note": "Smaller explanation under Report needed. {likelyFast} and {likelySlow} are the app labels. Keep 15 and 10."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "appSlots": {
+        "firstBonus": "radar.earning.firstBonus"
+      },
+      "domSlots": [
+        "help"
+      ],
+      "note": "First report bonus row. {firstBonus} is the app label. {help} is the smaller explanation."
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "appSlots": {
+        "reportNeeded": "radar.earning.reportNeeded"
+      },
+      "note": "Smaller explanation under the first-report bonus. {reportNeeded} is the app label. Keep 25."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "appSlots": {
+        "approved": "radar.history.pickupPointApproved"
+      },
+      "domSlots": [
+        "help"
+      ],
+      "note": "Approved pickup point row. {approved} is the app label. {help} is the smaller explanation."
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "note": "Smaller explanation under Pickup point approved."
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "appSlots": {
+        "referral": "radar.history.driverReferral"
+      },
+      "domSlots": [
+        "help"
+      ],
+      "note": "Driver referral row. {referral} is the app label. {help} is the smaller explanation."
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "note": "Referral rules. Keep the numbers 3 and 2, and keep UTC."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "appSlots": {
+        "referralRp": "radar.earning.driverReferralRp"
+      },
+      "note": "Points shown for a referral. {referralRp} is the app amount. Translate the word each."
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "appSlots": {
+        "notify": "cityAlert.notifyLine",
+        "comingSoon": "common.comingSoon"
+      },
+      "note": "Text beside the city list. {notify} and {comingSoon} are app labels. Do not translate the city names in the list."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "note": "Heading for cities where PickupRadar is available."
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "note": "Heading for the independence section."
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "note": "Explains that PickupRadar is independent. Keep the delivery-app names and PickupRadar."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "note": "Link to the English privacy policy."
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "note": "Bold start of the first trust point."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "domSlots": [
+        "lead"
+      ],
+      "note": "First trust point. {lead} stays bold. Keep the delivery-app names."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "note": "Bold start of the second trust point."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "domSlots": [
+        "lead"
+      ],
+      "note": "Second trust point. {lead} stays bold."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "note": "Bold start of the third trust point."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "domSlots": [
+        "lead"
+      ],
+      "note": "Third trust point. {lead} stays bold."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "note": "Bold start of the fourth trust point."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "domSlots": [
+        "lead"
+      ],
+      "note": "Fourth trust point. {lead} stays bold."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "note": "Frequently asked questions heading."
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "note": "FAQ question."
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "appSlots": {
+        "radarPoints": "radar.balance"
+      },
+      "note": "FAQ answer. {radarPoints} is the app label."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "note": "FAQ question. Keep PickupRadar."
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "domSlots": [
+        "cities"
+      ],
+      "note": "FAQ answer. Keep PickupRadar and every city name. {cities} is the link."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "note": "Link text to the city list on this page."
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "note": "FAQ question. Do not say the app can be downloaded today."
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "domSlots": [
+        "preview"
+      ],
+      "note": "FAQ answer. {preview} is the link. Keep Milton Keynes. Do not say the apps are in the stores."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "note": "Link text inside the download answer. It opens the live preview page."
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "note": "FAQ question. Use the same idea as the app label Current wait."
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "note": "FAQ answer. Keep 2 hours."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "appSlots": {
+        "likelyFast": "home.likelyFast",
+        "likelySlow": "home.likelySlow"
+      },
+      "note": "FAQ question. Both placeholders are app labels."
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "note": "FAQ answer for Likely fast and Likely slow."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "note": "FAQ question."
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "domSlots": [
+        "privacy"
+      ],
+      "note": "FAQ answer. {privacy} is the link to the English privacy policy."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "note": "Link text to the English privacy policy."
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "note": "FAQ question."
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "appSlots": {
+        "profile": "radar.title",
+        "deleteAccount": "radar.delete.protected.action",
+        "deleteProfile": "radar.delete.anonymous.action"
+      },
+      "domSlots": [
+        "page"
+      ],
+      "note": "FAQ answer. {profile}, {deleteAccount} and {deleteProfile} are app labels. {page} is the link."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "note": "Closing heading. Keep Milton Keynes."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "note": "Closing text. Keep Milton Keynes."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "note": "Closing button. It opens the live preview page."
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "note": "Browser title and social title for the live preview page. Keep PickupRadar."
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "note": "Description for the live preview page. Keep PickupRadar and Milton Keynes."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "note": "Introduction on the live preview page. Keep PickupRadar and Milton Keynes."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "note": "Accessible name for the full phone preview. Keep PickupRadar and Milton Keynes."
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "note": "Browser title for the support page. Keep PickupRadar."
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "appSlots": {
+        "radarPoints": "radar.balance"
+      },
+      "note": "Description for the support page. Keep PickupRadar. {radarPoints} is the app label."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "appSlots": {
+        "radarPoints": "radar.balance"
+      },
+      "note": "Support page introduction. {radarPoints} is the app label."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "note": "Accessible name for the contact cards. Not shown on screen."
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "note": "Heading on the contact card."
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "note": "Line above the support email address. Do not translate the email address."
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "note": "Heading above the postal address. Do not translate the address lines."
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "note": "Note under the postal-address heading."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "note": "Heading for the list of details to send with a problem report."
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "note": "Line above that list."
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "note": "First detail to include."
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "note": "Second detail to include."
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "note": "Third detail to include."
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "note": "Fourth detail to include."
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "note": "Heading for the support topics."
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "note": "Support topic heading."
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "appSlots": {
+        "radarPoints": "radar.balance"
+      },
+      "note": "Support topic. Keep PickupRadar. {radarPoints} is the app label and appears twice."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "appSlots": {
+        "radarPoints": "radar.balance"
+      },
+      "note": "Support topic heading. {radarPoints} is the app label."
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "appSlots": {
+        "radarPoints": "radar.balance",
+        "waitRp": "radar.earning.waitReportRp",
+        "neededRp": "radar.earning.reportNeededRp",
+        "reportNeeded": "radar.earning.reportNeeded",
+        "firstRp": "radar.earning.firstBonusRp",
+        "approvedRp": "radar.earning.pickupPointApprovedRp",
+        "profile": "radar.title",
+        "referralRp": "radar.earning.driverReferralRp",
+        "rewards": "radar.rewards.comingSoon"
+      },
+      "note": "Support topic with the points rules. Every placeholder is an app label. {radarPoints} appears twice. Keep 3, 2 and UTC."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "note": "Support topic heading."
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "appSlots": {
+        "profile": "radar.title",
+        "messages": "radar.messages.title"
+      },
+      "note": "Support topic. {profile} and {messages} are app labels."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "note": "Support topic heading."
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "appSlots": {
+        "profile": "radar.title",
+        "deleteAccount": "radar.delete.protected.action",
+        "deleteProfile": "radar.delete.anonymous.action"
+      },
+      "domSlots": [
+        "email",
+        "page"
+      ],
+      "note": "Support topic. Keep the arrow → and the email address. {profile}, {deleteAccount} and {deleteProfile} are app labels. {email} and {page} stay links."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "appSlots": {
+        "suggest": "missing.button",
+        "reportProblem": "problem.report"
+      },
+      "note": "Support topic. {suggest} and {reportProblem} are app labels."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "note": "Support topic heading."
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "note": "Support topic. Keep PickupRadar, Uber Eats, Deliveroo and Just Eat."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "note": "Closing heading on the support page. Keep PickupRadar."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "appSlots": {
+        "radarPoints": "radar.balance"
+      },
+      "note": "Closing text. Keep Milton Keynes. {radarPoints} is the app label."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "note": "Browser title for the not-found page. Keep PickupRadar."
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "note": "Description for the not-found page. Keep PickupRadar."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "note": "Heading on the not-found page."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "note": "Text on the not-found page. Keep PickupRadar."
+    },
+    "notfound.home": {
+      "en": "Home",
+      "note": "Button back to the homepage."
+    }
+  }
+}

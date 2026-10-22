@@ -3,33 +3,39 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Page not found — PickupRadar</title>
-  <meta name="description" content="That page is not on the PickupRadar website." />
+  <title data-site-i18n="notfound.meta.title">Page not found — PickupRadar</title>
+  <meta name="description" data-site-i18n="notfound.meta.description" content="That page is not on the PickupRadar website." />
   <meta name="robots" content="noindex" />
   <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="icon" href="/assets/favicon-16.png" type="image/png" sizes="16x16" />
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" sizes="180x180" />
   <meta name="theme-color" content="#071018" />
   <link rel="preload" href="/assets/fonts/archivo-latin-variable.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="/site.css?v=20261021b" />
+  <link rel="stylesheet" href="/site.css?v=20261022c" />
 </head>
-<body class="page-404">
-  <a class="w-skip" href="#main">Skip to content</a>
+<body class="page-404" data-site-i18n-page>
+  <a class="w-skip" href="#main" data-site-i18n="shared.skip">Skip to content</a>
 
   <header class="w-header" data-site-header>
     <div class="w-wrap w-header-inner">
-      <a class="w-brand" href="/index.html" aria-label="PickupRadar home">
+      <a class="w-brand" href="/index.html" data-site-i18n-aria="shared.homeLabel" aria-label="PickupRadar home">
         <img src="/assets/pickupradar-mark-96.png" alt="" width="40" height="40" />
         <span>Pickup<span class="w-radar-word">Radar</span></span>
       </a>
-      <nav aria-label="Site">
+      <nav data-site-i18n-aria="shared.navLabel" aria-label="Site">
         <ul class="w-nav">
-          <li><a href="/index.html#how-it-works">How it works</a></li>
-          <li><a href="/support.html">Support</a></li>
-          <li><a href="/privacy.html">Privacy</a></li>
+          <li><a href="/index.html#how-it-works" data-site-i18n="shared.term.how">How it works</a></li>
+          <li><a href="/support.html" data-site-i18n="shared.term.support">Support</a></li>
+          <li><a href="/privacy.html" data-site-i18n="shared.nav.privacy">Privacy</a></li>
         </ul>
       </nav>
-      <a class="w-btn w-btn-go w-header-cta" href="/app.html">Live preview</a>
+      <div class="w-header-tools">
+        <button type="button" class="w-lang" data-site-language-open aria-haspopup="dialog" aria-expanded="false" aria-controls="site-language-dialog">
+          <svg class="w-lang-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3.8 12h16.4M12 3.8c2.1 2.3 3.2 5.1 3.2 8.2s-1.1 5.9-3.2 8.2c-2.1-2.3-3.2-5.1-3.2-8.2s1.1-5.9 3.2-8.2z" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+          <span class="w-lang-label" data-site-language-label>English</span>
+        </button>
+        <a class="w-btn w-btn-go w-header-cta" href="/app.html" data-site-i18n="shared.nav.preview">Live preview</a>
+      </div>
     </div>
   </header>
 
@@ -37,12 +43,12 @@
     <section class="w-wrap w-lost" aria-labelledby="lost-title">
       <div class="w-stage w-stage-small" aria-hidden="true"></div>
       <div>
-        <h1 class="w-display w-display-page" id="lost-title">This page is off the radar.</h1>
-        <p class="w-lede">That address isn't on the PickupRadar website. These pages are:</p>
+        <h1 class="w-display w-display-page" id="lost-title" data-site-i18n="notfound.title">This page is off the radar.</h1>
+        <p class="w-lede" data-site-i18n="notfound.body">That address isn't on the PickupRadar website. These pages are:</p>
         <div class="w-actions">
-          <a class="w-btn w-btn-go" href="/index.html">Home</a>
-          <a class="w-btn w-btn-quiet" href="/app.html">Live preview</a>
-          <a class="w-btn w-btn-quiet" href="/support.html">Support</a>
+          <a class="w-btn w-btn-go" href="/index.html" data-site-i18n="notfound.home">Home</a>
+          <a class="w-btn w-btn-quiet" href="/app.html" data-site-i18n="shared.nav.preview">Live preview</a>
+          <a class="w-btn w-btn-quiet" href="/support.html" data-site-i18n="shared.term.support">Support</a>
         </div>
       </div>
     </section>
@@ -52,38 +58,39 @@
     <div class="w-wrap">
       <div class="w-footer-grid">
         <div class="w-footer-brand">
-          <a class="w-brand" href="/index.html" aria-label="PickupRadar home">
+          <a class="w-brand" href="/index.html" data-site-i18n-aria="shared.homeLabel" aria-label="PickupRadar home">
             <img src="/assets/pickupradar-mark-96.png" alt="" width="30" height="30" />
             <span>Pickup<span class="w-radar-word">Radar</span></span>
           </a>
-          <p>Know the wait before you walk in.</p>
+          <p data-site-i18n="shared.tagline">Know the wait before you walk in.</p>
         </div>
         <div>
-          <h2>App</h2>
+          <h2 data-site-i18n="shared.footer.app">App</h2>
           <ul>
-            <li><a href="/app.html">Live preview</a></li>
-            <li><a href="/index.html#how-it-works">How it works</a></li>
+            <li><a href="/app.html" data-site-i18n="shared.nav.preview">Live preview</a></li>
+            <li><a href="/index.html#how-it-works" data-site-i18n="shared.term.how">How it works</a></li>
           </ul>
         </div>
         <div>
-          <h2>Help</h2>
+          <h2 data-site-i18n="shared.footer.help">Help</h2>
           <ul>
-            <li><a href="/support.html">Support</a></li>
+            <li><a href="/support.html" data-site-i18n="shared.term.support">Support</a></li>
             <li><a href="mailto:support@pickupradar.co.uk">support@pickupradar.co.uk</a></li>
           </ul>
         </div>
         <div>
-          <h2>Legal</h2>
+          <h2 data-site-i18n="shared.footer.legal">Legal</h2>
           <ul>
-            <li><a href="/privacy.html">Privacy</a></li>
-            <li><a href="/delete-account.html">Delete account</a></li>
+            <li><a href="/privacy.html" data-site-i18n="shared.nav.privacy">Privacy</a></li>
+            <li><a href="/delete-account.html" data-site-i18n="shared.term.deleteAccount">Delete account</a></li>
           </ul>
         </div>
       </div>
-      <p class="w-footer-small">&copy; 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.</p>
+      <p class="w-footer-small" data-site-i18n="shared.footer.copyright">&copy; 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.</p>
     </div>
   </footer>
 
-  <script src="/site.js?v=20261021b"></script>
+  <script src="pickupradar-logic.js?v=5dcfec4"></script>
+  <script src="/site.js?v=20261022c"></script>
 </body>
 </html>

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Live app preview — PickupRadar</title>
-  <meta name="description" content="Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen." />
+  <title data-site-i18n="app.meta.title">Live app preview — PickupRadar</title>
+  <meta name="description" data-site-i18n="app.meta.description" content="Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen." />
   <link rel="canonical" href="https://pickupradar.co.uk/app.html" />
   <link rel="icon" href="/assets/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="icon" href="/assets/favicon-16.png" type="image/png" sizes="16x16" />
@@ -12,40 +12,46 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="PickupRadar" />
   <meta property="og:url" content="https://pickupradar.co.uk/app.html" />
-  <meta property="og:title" content="Live app preview — PickupRadar" />
-  <meta property="og:description" content="Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen." />
+  <meta property="og:title" data-site-i18n="app.meta.title" content="Live app preview — PickupRadar" />
+  <meta property="og:description" data-site-i18n="app.meta.description" content="Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen." />
   <meta property="og:image" content="https://pickupradar.co.uk/assets/og-image.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="PickupRadar. Know the wait before you walk in." />
+  <meta property="og:image:alt" data-site-i18n="home.meta.imageAlt" content="PickupRadar. Know the wait before you walk in." />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Live app preview — PickupRadar" />
-  <meta name="twitter:description" content="Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen." />
+  <meta name="twitter:title" data-site-i18n="app.meta.title" content="Live app preview — PickupRadar" />
+  <meta name="twitter:description" data-site-i18n="app.meta.description" content="Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen." />
   <meta name="twitter:image" content="https://pickupradar.co.uk/assets/og-image.png" />
-  <meta name="twitter:image:alt" content="PickupRadar. Know the wait before you walk in." />
+  <meta name="twitter:image:alt" data-site-i18n="home.meta.imageAlt" content="PickupRadar. Know the wait before you walk in." />
   <meta name="theme-color" content="#071018" />
   <link rel="preload" href="/assets/fonts/archivo-latin-variable.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="preview.css?v=20261021g" />
-  <link rel="stylesheet" href="/site.css?v=20261021b" />
+  <link rel="stylesheet" href="/site.css?v=20261022c" />
 </head>
-<body class="page-live-preview">
-  <a class="w-skip" href="#main">Skip to content</a>
+<body class="page-live-preview" data-site-i18n-page>
+  <a class="w-skip" href="#main" data-site-i18n="shared.skip">Skip to content</a>
 
   <header class="w-header" data-site-header>
     <div class="w-wrap w-header-inner">
-      <a class="w-brand" href="/index.html" aria-label="PickupRadar home">
+      <a class="w-brand" href="/index.html" data-site-i18n-aria="shared.homeLabel" aria-label="PickupRadar home">
         <img src="/assets/pickupradar-mark-96.png" alt="" width="40" height="40" />
         <span>Pickup<span class="w-radar-word">Radar</span></span>
       </a>
-      <nav aria-label="Site">
+      <nav data-site-i18n-aria="shared.navLabel" aria-label="Site">
         <ul class="w-nav">
-          <li><a href="/index.html#how-it-works">How it works</a></li>
-          <li><a href="/support.html">Support</a></li>
-          <li><a href="/privacy.html">Privacy</a></li>
+          <li><a href="/index.html#how-it-works" data-site-i18n="shared.term.how">How it works</a></li>
+          <li><a href="/support.html" data-site-i18n="shared.term.support">Support</a></li>
+          <li><a href="/privacy.html" data-site-i18n="shared.nav.privacy">Privacy</a></li>
         </ul>
       </nav>
-      <a class="w-btn w-btn-go w-header-cta" href="/app.html" aria-current="page">Live preview</a>
+      <div class="w-header-tools">
+        <button type="button" class="w-lang" data-site-language-open aria-haspopup="dialog" aria-expanded="false" aria-controls="site-language-dialog">
+          <svg class="w-lang-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3.8 12h16.4M12 3.8c2.1 2.3 3.2 5.1 3.2 8.2s-1.1 5.9-3.2 8.2c-2.1-2.3-3.2-5.1-3.2-8.2s1.1-5.9 3.2-8.2z" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+          <span class="w-lang-label" data-site-language-label>English</span>
+        </button>
+        <a class="w-btn w-btn-go w-header-cta" href="/app.html" aria-current="page" data-site-i18n="shared.nav.preview">Live preview</a>
+      </div>
     </div>
   </header>
 
@@ -53,32 +59,32 @@
     <section class="w-hero w-hero-app" aria-labelledby="app-title">
       <div class="w-wrap w-hero-grid w-hero-grid-app">
         <div class="w-hero-copy">
-          <h1 class="w-display w-display-page" id="app-title">Live preview</h1>
-          <p class="w-lede">
+          <h1 class="w-display w-display-page" id="app-title" data-site-i18n="shared.nav.preview">Live preview</h1>
+          <p class="w-lede" data-site-i18n="app.hero.lede">
             This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it.
             Nothing you tap here is sent. You can only report in the mobile app.
           </p>
         </div>
         <div class="w-stage w-stage-large">
-          <div id="livePreview" aria-label="Full PickupRadar app preview with real Milton Keynes data"></div>
+          <div id="livePreview" data-site-i18n-aria="app.preview.aria" aria-label="Full PickupRadar app preview with real Milton Keynes data"></div>
         </div>
         <div class="w-app-tips">
           <ol class="w-try">
-            <li><span><strong>Pick a tab.</strong> Use Nearby to find pickups close to you when location is on. Use Fast and Slow to check waits and estimates.</span></li>
-            <li><span><strong>Search pickup points.</strong> Try a name, area or postcode, like KFC or Bletchley.</span></li>
-            <li><span><strong>Open a pickup point.</strong> The Report wait screen opens. Choose a wait time. Nothing is sent.</span></li>
+            <li><span data-site-i18n="home.try.tab"><strong data-site-slot="lead" data-site-i18n="home.try.tabLead">Pick a tab.</strong> Use Nearby to find pickup points close to you when location is on. Use Fast and Slow to check waits and estimates.</span></li>
+            <li><span data-site-i18n="home.try.search"><strong data-site-slot="lead" data-site-i18n="home.try.searchLead">Search pickup points.</strong> Try a name, area or postcode, like KFC or Bletchley.</span></li>
+            <li><span data-site-i18n="home.try.open"><strong data-site-slot="lead" data-site-i18n="home.try.openLead">Open a pickup point.</strong> The Report wait screen opens. Choose a wait time. Nothing is sent.</span></li>
           </ol>
           <div class="w-try-scale">
-          <ul class="w-scale" aria-label="Wait ranges">
-            <li><span class="w-bar"></span><strong>&lt;5 min</strong><span>Quick</span></li>
-            <li><span class="w-bar"></span><strong>5&ndash;10 min</strong><span>Short wait</span></li>
-            <li><span class="w-bar"></span><strong>10&ndash;15 min</strong><span>Long wait</span></li>
-            <li><span class="w-bar"></span><strong>15+ min</strong><span>Very long wait</span></li>
+          <ul class="w-scale" data-site-i18n-aria="shared.scale.aria" aria-label="Wait ranges">
+            <li><span class="w-bar"></span><strong data-site-i18n="shared.term.under5">&lt;5 min</strong><span data-site-i18n="shared.scale.quick">Quick</span></li>
+            <li><span class="w-bar"></span><strong data-site-i18n="shared.term.fiveToTen">5&ndash;10 min</strong><span data-site-i18n="shared.scale.short">Short wait</span></li>
+            <li><span class="w-bar"></span><strong data-site-i18n="shared.term.tenToFifteen">10&ndash;15 min</strong><span data-site-i18n="shared.scale.long">Long wait</span></li>
+            <li><span class="w-bar"></span><strong data-site-i18n="shared.term.fifteenPlus">15+ min</strong><span data-site-i18n="shared.scale.veryLong">Very long wait</span></li>
           </ul>
           <div class="w-estimates">
-            <span>No recent reports? PickupRadar may show Likely fast or Likely slow:</span>
-            <span class="w-pill w-pill-fast">Likely fast</span>
-            <span class="w-pill w-pill-slow">Likely slow</span>
+            <span data-site-i18n="shared.scale.estimate">No recent reports? PickupRadar may show Likely fast or Likely slow:</span>
+            <span class="w-pill w-pill-fast" data-site-i18n="shared.term.likelyFast">Likely fast</span>
+            <span class="w-pill w-pill-slow" data-site-i18n="shared.term.likelySlow">Likely slow</span>
           </div>
           </div>
         </div>
@@ -90,41 +96,41 @@
     <div class="w-wrap">
       <div class="w-footer-grid">
         <div class="w-footer-brand">
-          <a class="w-brand" href="/index.html" aria-label="PickupRadar home">
+          <a class="w-brand" href="/index.html" data-site-i18n-aria="shared.homeLabel" aria-label="PickupRadar home">
             <img src="/assets/pickupradar-mark-96.png" alt="" width="30" height="30" />
             <span>Pickup<span class="w-radar-word">Radar</span></span>
           </a>
-          <p>Know the wait before you walk in.</p>
+          <p data-site-i18n="shared.tagline">Know the wait before you walk in.</p>
         </div>
         <div>
-          <h2>App</h2>
+          <h2 data-site-i18n="shared.footer.app">App</h2>
           <ul>
-            <li><a href="/app.html">Live preview</a></li>
-            <li><a href="/index.html#how-it-works">How it works</a></li>
+            <li><a href="/app.html" data-site-i18n="shared.nav.preview">Live preview</a></li>
+            <li><a href="/index.html#how-it-works" data-site-i18n="shared.term.how">How it works</a></li>
           </ul>
         </div>
         <div>
-          <h2>Help</h2>
+          <h2 data-site-i18n="shared.footer.help">Help</h2>
           <ul>
-            <li><a href="/support.html">Support</a></li>
+            <li><a href="/support.html" data-site-i18n="shared.term.support">Support</a></li>
             <li><a href="mailto:support@pickupradar.co.uk">support@pickupradar.co.uk</a></li>
           </ul>
         </div>
         <div>
-          <h2>Legal</h2>
+          <h2 data-site-i18n="shared.footer.legal">Legal</h2>
           <ul>
-            <li><a href="/privacy.html">Privacy</a></li>
-            <li><a href="/delete-account.html">Delete account</a></li>
+            <li><a href="/privacy.html" data-site-i18n="shared.nav.privacy">Privacy</a></li>
+            <li><a href="/delete-account.html" data-site-i18n="shared.term.deleteAccount">Delete account</a></li>
           </ul>
         </div>
       </div>
-      <p class="w-footer-small">&copy; 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.</p>
+      <p class="w-footer-small" data-site-i18n="shared.footer.copyright">&copy; 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.</p>
     </div>
   </footer>
 
-  <script src="/site.js?v=20261021b"></script>
   <script src="pickupradar-logic.js?v=5dcfec4"></script>
-  <script src="preview.js?v=20261022a"></script>
+  <script src="/site.js?v=20261022c"></script>
+  <script src="preview.js?v=20261022c"></script>
   <script>
     mountPickupRadarPreview(document.getElementById('livePreview'), {
       compact: false,
