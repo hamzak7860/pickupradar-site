@@ -1,0 +1,602 @@
+{
+  "language": "gu",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "મુખ્ય વિષય પર જાઓ"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "PickupRadar હોમ"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "સાઇટ"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "પ્રાઇવસી"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "લાઇવ પ્રિવ્યૂ"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "એપ"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "મદદ"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "કાનૂની"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "અંદર જતા પહેલાં રાહ જાણી લો."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar. સ્વતંત્ર છે અને Uber Eats, Deliveroo કે Just Eat સાથે જોડાયેલું નથી."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "રાહની રેન્જ"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "ઝડપી"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "ટૂંકી રાહ"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "લાંબી રાહ"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "ખૂબ લાંબી રાહ"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "તાજી રિપોર્ટ નથી? PickupRadar {likelyFast} અથવા {likelySlow} બતાવી શકે છે:"
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar): યુકેમાં ડિલિવરી ડ્રાઇવરો માટે પિકઅપ રાહનો સમય"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "અંદર જતા પહેલાં જુઓ ડ્રાઇવરો રેસ્ટોરન્ટ અને દુકાનો પર કેટલી રાહ જુએ છે. યુકેમાં Uber Eats, Deliveroo અને Just Eat ડ્રાઇવરો માટે. સાઇન-અપની જરૂર નથી."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar. અંદર જતા પહેલાં રાહ જાણી લો."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "શું તમે Uber Eats, Deliveroo અથવા Just Eat માટે ડિલિવર કરો છો? રેસ્ટોરન્ટ અને દુકાનો પર તાજી પિકઅપ રાહ જુઓ. લાંબી રાહ ટાળો. {reportWait} ટૅપ કરો અને {radarPoints} કમાઓ. સાઇન-અપની જરૂર નથી."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "અસલ ડેટા સાથે અજમાવો"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "ઉપલબ્ધતા"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "હવે Milton Keynesમાં. પછી London."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "iPhone અને Android એપ ટૂંક સમયમાં આવશે."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "PickupRadar હોમની ઉદાહરણ સ્ક્રીન, {nearby} ટૅબ ખુલ્લી, રાહ પ્રમાણે રંગીન પિકઅપ પોઈન્ટ"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "ઉદાહરણ સ્ક્રીન: નમૂના રાહ, લાઇવ ડ્રાઇવર રિપોર્ટ નહીં"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "નમૂના રાહ"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "નમૂના અંદાજ"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "1 રિપોર્ટ · 4 મિ પહેલાં"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "ઉદાહરણ સ્ક્રીન. આ નમૂના રાહના સમય છે, લાઇવ રિપોર્ટ નહીં. અસલ ડેટા સાથે {live}."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "લાઇવ પ્રિવ્યૂ અજમાવો"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "જુઓ તમે કેટલી રાહ જોઈ શકો."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "ડ્રાઇવરો જણાવે છે કે તેમણે કેટલી રાહ જોઈ. વર્તમાન રાહ છેલ્લા 2 કલાકની રિપોર્ટમાંથી આવે છે. ઝડપી અને ધીમા પિકઅપ ઝડપથી જોઈ શકો છો."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "Milton Keynesના અસલ ડેટા સાથે PickupRadar એપનું લાઇવ પ્રિવ્યૂ"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "Milton Keynesના અસલ ડેટા સાથે PickupRadar અજમાવો."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "Milton Keynesમાં અસલ પિકઅપ પોઈન્ટ જુઓ. તાજી રાહ તપાસો, અથવા {likelyFast} અને {likelySlow}. રિપોર્ટ સ્ક્રીન અજમાવી શકો છો, પણ કંઈ મોકલાતું નથી."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "એક ટૅબ પસંદ કરો."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} લોકેશન ચાલુ હોય ત્યારે નજીકના પિકઅપ પોઈન્ટ શોધવા {nearby} વાપરો. રાહ અને અંદાજ જોવા {fast} અને {slow} વાપરો."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "પિકઅપ પોઈન્ટ શોધો."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} નામ, વિસ્તાર અથવા પોસ્ટકોડ અજમાવો, જેમ કે KFC અથવા Bletchley."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "એક પિકઅપ પોઈન્ટ ખોલો."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} {reportWait} સ્ક્રીન ખૂલે છે. રાહનો સમય પસંદ કરો. કંઈ મોકલાતું નથી."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "મોટું પ્રિવ્યૂ ખોલો"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "અંદર જતા પહેલાં શું જોઈ શકો"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "એપમાં તે જ લેબલ દેખાય છે. ડ્રાઇવરો તેની રિપોર્ટ કરે છે, ડિલિવરી એપ નહીં."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "ડ્રાઇવરો રાહનો સમય પસંદ કરે છે. તમે વર્તમાન રાહ જુઓ છો અને છેલ્લા 2 કલાકમાં કેટલા ડ્રાઇવરોએ રિપોર્ટ કરી."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} અને {likelySlow}"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "માત્ર ત્યારે દેખાય છે જ્યારે તાજી રિપોર્ટ ન હોય. આ અંદાજ છે, લાઇવ રિપોર્ટ નહીં."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "હાલમાં બંધ રિપોર્ટ થયું"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} અથવા {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "ડ્રાઇવરો આ રિપોર્ટ કરવા {reportProblem} ટૅપ કરે છે. ત્યાં જતા પહેલાં તમે તેમની રિપોર્ટ જુઓ છો."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "જુઓ જ્યારે ડ્રાઇવરો રિપોર્ટ કરે કે રેસ્ટોરન્ટની ટૅબલેટ કે સિસ્ટમ કામ કરતી નથી."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "ઓર્ડર પહોંચ્યા પછી શરૂ થાય છે"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "કેટલીક જગ્યાઓ તમે પહોંચો ત્યારે જ ઓર્ડર શરૂ કરે છે. ડ્રાઇવરો રિપોર્ટ કરતી વખતે આ ચાલુ કરી શકે છે."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "ગાયબ અથવા ખોટા પિકઅપ પોઈન્ટ"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "પિકઅપ પોઈન્ટ ગાયબ છે? {suggest} ટૅપ કરો. કંઈ ખોટું છે? {reportProblem} ટૅપ કરો, પછી {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} અથવા {closedPermanently}."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "ત્રણ સરળ પગલાં. રિપોર્ટ કરવામાં થોડી સેકન્ડ લાગે છે."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "એપ ખોલો"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "પાસવર્ડ નથી. એપ આપમેળે Radar પ્રોફાઈલ આપે છે. સાઇન-અપ કરવાની જરૂર નથી."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "અંદર જતા પહેલાં તપાસો"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "પિકઅપ પોઈન્ટ શોધો. વર્તમાન રાહ જુઓ, અથવા તાજી રિપોર્ટ ન હોય તો {likelyFast} અથવા {likelySlow}."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "તમારી રાહની રિપોર્ટ કરો"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "ઓર્ડર લીધા પછી {reportWait} ટૅપ કરો. સેકન્ડ લાગે છે. તમારી રિપોર્ટ અન્ય ડ્રાઇવરોને મદદ કરે છે, અને તમે {radarPoints} કમાઓ છો."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "{radarPoints} કમાઓ"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "{radarPoints} કમાવા {reportWait} ટૅપ કરો. એકાઉન્ટ વગર શરૂ કરી શકો છો. ફોન બદલો કે રીસેટ કરો તો સુરક્ષિત રહે, તેથી ઈમેલથી તમારા {radarPoints} સુરક્ષિત કરો. પાસવર્ડની જરૂર નથી. એપ ઈમેલ પર 6 અંકનો કોડ મોકલે છે."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "રિવોર્ડ ટૂંક સમયમાં."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} તમે હજુ {radarPoints} વાપરી શકતા નથી."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "{radarPoints} કેવી રીતે કમાવવા"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "તમારી નજીક યોગ્ય પિકઅપ પોઈન્ટ, તાજી રાહ નહીં અને {likelyFast} કે {likelySlow} નહીં. રિપોર્ટ પર 10 ની જગ્યાએ 15 RP મળે છે."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "પહેલી માન્ય રાહની રિપોર્ટ પર વધારાના પોઈન્ટ. જો તે {reportNeeded} પણ હોય તો કુલ 25 RP મળે છે."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "જ્યારે અમે તમે સૂચવેલો પિકઅપ પોઈન્ટ મંજૂર કરીએ"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "જ્યારે તમારો મિત્ર ઓછામાં ઓછા 2 અલગ દિવસે (UTC સમય), 2 અલગ પિકઅપ પોઈન્ટ પર 3 માન્ય રાહની રિપોર્ટ કરે ત્યારે બંને કમાઓ છો. બંનેને સુરક્ષિત Radar એકાઉન્ટ જોઈએ (ઈમેલ ઉમેરો). મિત્રે પહેલી માન્ય રાહની રિપોર્ટ પહેલાં તમારો કોડ નાખવો પડે."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "દરેક {referralRp}"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "એપમાં યુકેના આ શહેરો છે. તમારું શહેર ન મળ્યું? એપમાં વિનંતી કરો. અથવા {comingSoon} શહેર પર {notify} ટૅપ કરો. લાઇવ થાય ત્યારે અમે ઈમેલ મોકલીશું."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "હવે લાઇવ"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "કોઈ ડિલિવરી એપનો ભાગ નથી"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "PickupRadar સ્વતંત્ર છે. તે Uber Eats, Deliveroo, Just Eat કે અન્ય કોઈ ડિલિવરી એપનો ભાગ નથી. તેમના એકાઉન્ટ ક્યારેય વાપરતું નથી."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "પ્રાઇવસી નીતિ વાંચો"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "ડિલિવરી એપ લૉગિન નથી."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} અમે ક્યારેય Uber Eats, Deliveroo કે Just Eatનું યુઝરનેમ કે પાસવર્ડ માગતા નથી."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "ગ્રાહક કે ઓર્ડરની વિગત નથી."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} નામ, સરનામાં કે ઓર્ડર નંબર નથી."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "ડિલિવરી એપ છોડી શકો છો."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} ડિલિવરી એપ પસંદ કરવી વૈકલ્પિક છે."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "નિયંત્રણ તમારા હાથમાં છે."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} એપમાં કોઈ પણ સમયે તમારું એકાઉન્ટ કે Radar પ્રોફાઈલ ડિલીટ કરો."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "ડ્રાઇવરોના પ્રશ્નો"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "શું મને એકાઉન્ટ જોઈએ?"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "ના. એપ આપમેળે Radar પ્રોફાઈલ આપે છે. તરત રાહની રિપોર્ટ કરી શકો છો. તમારા {radarPoints} સુરક્ષિત રાખવા પછી ઈમેલ ઉમેરો. પાસવર્ડની જરૂર નથી. એપ ઈમેલ પર 6 અંકનો કોડ મોકલે છે."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "PickupRadar ક્યાં કામ કરે છે?"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "PickupRadar હવે Milton Keynesમાં કામ કરે છે. પછી London. પછી વધુ શહેરો, જેમ કે Manchester, Birmingham, Leeds, Liverpool અને Glasgow. જુઓ {cities}."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "બધા શહેરો"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "એપ ક્યારે ડાઉનલોડ કરી શકું?"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "iPhone અને Android એપ ટૂંક સમયમાં આવશે. હાલમાં {preview} Milton Keynesના અસલ પિકઅપ પોઈન્ટ અને રાહ બતાવે છે."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "લાઇવ પ્રિવ્યૂ"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "વર્તમાન રાહ કેવી રીતે નીકળે છે?"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "તે છેલ્લા 2 કલાકની ડ્રાઇવર રિપોર્ટમાંથી આવે છે. 2 કલાકથી જૂની રિપોર્ટ વર્તમાન રાહને અસર કરતી નથી."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "{likelyFast} અને {likelySlow}નો અર્થ શું છે?"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "આ અંદાજ છે, લાઇવ રિપોર્ટ નહીં. તાજી રાહની રિપોર્ટ ન હોય ત્યારે દેખાય છે."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "શું તે મારી લોકેશન ટ્રૅક કરે છે?"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "બૅકગ્રાઉન્ડ ટ્રૅકિંગ નથી. એપ તેને વાપરતી વખતે લોકેશન વાપરે છે, નજીકના પિકઅપ પોઈન્ટ બતાવવા અને રિપોર્ટ કરતી વખતે પિકઅપ પોઈન્ટ પર છો કે નહીં તપાસવા. વેબસાઇટ લોકેશન ત્યારે જ માગે છે જ્યારે તમે વાપરવાનું પસંદ કરો. વધુ માટે {privacy} વાંચો."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "પ્રાઇવસી નીતિ"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "મારો ડેટા કેવી રીતે ડિલીટ કરું?"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "એપમાં {profile} ખોલો. {deleteAccount} ટૅપ કરો. જો ઈમેલ ઉમેર્યો ન હોય તો {deleteProfile} ટૅપ કરો. અમને ઈમેલ પણ કરી શકો છો. પગલાં માટે {page} જુઓ."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "Milton Keynesના પિકઅપ પોઈન્ટ જુઓ."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "Milton Keynesમાં અસલ પિકઅપ પોઈન્ટ જુઓ. જગ્યા શોધો અને રિપોર્ટ સ્ક્રીન અજમાવો. તમે જે ટૅપ કરો તે મોકલાતું નથી."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "લાઇવ પ્રિવ્યૂ ખોલો"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "લાઇવ એપ પ્રિવ્યૂ — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "Milton Keynesના અસલ ડેટા સાથે PickupRadar એપ અજમાવો. ફરો, પિકઅપ પોઈન્ટ શોધો અને રિપોર્ટ સ્ક્રીન જુઓ."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "આ Milton Keynesના અસલ ડેટા સાથે PickupRadar છે. ફરો. પિકઅપ પોઈન્ટ શોધીને ખોલો. અહીં જે ટૅપ કરો તે મોકલાતું નથી. રિપોર્ટ ફક્ત મોબાઇલ એપમાં થઈ શકે છે."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "Milton Keynesના અસલ ડેટા સાથે સંપૂર્ણ PickupRadar એપ પ્રિવ્યૂ"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "સપોર્ટ — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "PickupRadar મદદ: સપોર્ટનો સંપર્ક કરો, પિકઅપ પોઈન્ટની સમસ્યા રિપોર્ટ કરો, અને Radar પ્રોફાઈલ, {radarPoints} અને એકાઉન્ટ ડિલીટ કરવાના જવાબ શોધો."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "મદદ જોઈએ? એપ, પિકઅપ પોઈન્ટ, તમારા {radarPoints} અથવા પ્રાઇવસી વિશે અમને ઈમેલ કરો."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "સંપર્ક"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "સપોર્ટનો સંપર્ક કરો"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "મદદ, વિચાર, પિકઅપ પોઈન્ટ સમસ્યા અથવા પ્રાઇવસી પ્રશ્નો માટે અમને ઈમેલ કરો:"
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "વ્યવસાયિક પત્રવ્યવહારનું સરનામું"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "ફક્ત પત્રો માટે. અમારા સુધી પહોંચવાનો સૌથી ઝડપી રસ્તો ઈમેલ છે."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "શું ઉમેરવું"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "જો સમસ્યા રિપોર્ટ કરો તો અમને કહો:"
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "પિકઅપ પોઈન્ટનું નામ"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "વિસ્તાર અથવા પોસ્ટકોડ, જો ખબર હોય"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "શું ખોટું થયું"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "ફોન મોડલ, જો એપમાં સમસ્યા હોય"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "સામાન્ય પ્રશ્નો"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "Radar પ્રોફાઈલ અને ઈમેલ"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "એપ આપમેળે Radar પ્રોફાઈલ આપે છે. PickupRadar વાપરવા કે {radarPoints} કમાવા લૉગિનની જરૂર નથી. ઈમેલ ઉમેરવો વૈકલ્પિક છે. ફોન બદલો કે રીસેટ કરો તો તે {radarPoints} સુરક્ષિત રાખે છે. પાસવર્ડની જરૂર નથી. એપ ઈમેલ પર 6 અંકનો કોડ મોકલે છે."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} અને રેફરલ"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "માન્ય રાહની રિપોર્ટ પર {radarPoints} મળે છે ({waitRp}, અથવા {reportNeeded} લખ્યું હોય તો {neededRp}), પહેલી રિપોર્ટ બોનસ ({firstRp}) અને અમે મંજૂર કરીએ તે પિકઅપ પોઈન્ટ ({approvedRp}). {profile}માંથી ડ્રાઇવરને આમંત્રણ આપી શકો છો. બંનેને સુરક્ષિત Radar એકાઉન્ટ જોઈએ (ઈમેલ ઉમેરો). મિત્ર પહેલી માન્ય રાહની રિપોર્ટ પહેલાં તમારો કોડ નાખે છે. જ્યારે મિત્ર ઓછામાં ઓછા 2 અલગ દિવસે (UTC સમય), 2 અલગ પિકઅપ પોઈન્ટ પર 3 માન્ય રાહની રિપોર્ટ કરે ત્યારે દરેકને {referralRp} મળે છે. {rewards} તમે હજુ {radarPoints} વાપરી શકતા નથી."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "ડ્રાઇવર સંદેશા"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "{profile}માં {messages} છે: જાહેરાત, અલર્ટ અને તમારા શહેર કે Radar પ્રોફાઈલ માટે વ્યક્તિગત સંદેશા. જૂના કે કાઢી નાખેલા સંદેશા હવે ન દેખાય."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "એકાઉન્ટ ડિલીટ કરો"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "એપમાં એકાઉન્ટ ડિલીટ કરો: {profile} → {deleteAccount}. અથવા {email} પર ઈમેલ કરો. જો ઈમેલ ઉમેર્યો ન હોય તો એપ {deleteProfile} બતાવે છે. પગલાં માટે {page} પેજ જુઓ."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "પિકઅપ પોઈન્ટ ગાયબ છે? એપમાં {suggest} ટૅપ કરો. કોઈ ખોટું છે? {reportProblem} ટૅપ કરો. અથવા અમને ઈમેલ કરો, અમે તપાસીશું."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "તમારા ડિલિવરી એપ એકાઉન્ટ"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "PickupRadar તમારા Uber Eats, Deliveroo, Just Eat કે અન્ય ડિલિવરી એપ એકાઉન્ટ સાથે જોડાતું નથી. અમે ક્યારેય ડિલિવરી એપ લૉગિન, પાસવર્ડ, એકાઉન્ટ વિગત, ગ્રાહક વિગત કે ઓર્ડર વિગત માગતા નથી. ડ્રાઇવરો ફક્ત પિકઅપ રિપોર્ટ શેર કરે છે, જેમ કે રાહનો સમય અને પિકઅપ પોઈન્ટની સમસ્યાઓ."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "એપ લૉન્ચ થાય તે પહેલાં PickupRadar અજમાવો."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "લાઇવ પ્રિવ્યૂ Milton Keynesના અસલ પિકઅપ પોઈન્ટ અને રાહ બતાવે છે. રિપોર્ટિંગ અને {radarPoints} ફક્ત મોબાઇલ એપમાં છે."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "પેજ મળ્યું નહીં — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "તે પેજ PickupRadar વેબસાઇટ પર નથી."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "આ પેજ રડારની બહાર છે."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "તે સરનામું PickupRadar વેબસાઇટ પર નથી. આ પેજ છે:"
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "હોમ"
+    }
+  }
+}

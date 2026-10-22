@@ -1,0 +1,602 @@
+{
+  "language": "es",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "Saltar al contenido"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "Inicio de PickupRadar"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "Sitio"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "Privacidad"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "Vista previa en vivo"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "App"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "Ayuda"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "Legal"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "Conoce la espera antes de entrar."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar. Independiente y no afiliado a Uber Eats, Deliveroo ni Just Eat."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "Rangos de espera"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "Rápido"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "Espera corta"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "Espera larga"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "Espera muy larga"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "¿Sin informes recientes? PickupRadar puede mostrar {likelyFast} o {likelySlow}:"
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar): tiempos de espera en la recogida para repartidores en el Reino Unido"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "Consulta cuánto esperan los repartidores en restaurantes y tiendas antes de entrar. Para repartidores de Uber Eats, Deliveroo y Just Eat en el Reino Unido. Sin registro."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar. Conoce la espera antes de entrar."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "¿Repartes para Uber Eats, Deliveroo o Just Eat? Consulta esperas recientes de recogida en restaurantes y tiendas. Evita esperas largas. Pulsa {reportWait} y gana {radarPoints}. Sin registro."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "Pruébalo con datos reales"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "Disponibilidad"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "Ya en Milton Keynes. A continuación, London."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "Las apps para iPhone y Android estarán disponibles pronto."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "Pantalla de ejemplo de Inicio de PickupRadar con la pestaña {nearby} abierta, que muestra puntos de recogida coloreados según la espera"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "Pantalla de ejemplo: esperas de muestra, no informes reales de repartidores"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "Espera de muestra"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "Estimación de muestra"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "1 informe · hace 4 min"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "Pantalla de ejemplo. Estos son tiempos de espera de muestra, no informes en vivo. {live} con datos reales."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "Prueba la vista previa en vivo"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "Mira cuánto puedes esperar."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "Los repartidores informan cuánto esperaron. La espera actual sale de los informes de las últimas 2 horas. Puedes ver enseguida los puntos de recogida rápidos y los lentos."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "Vista previa en vivo de la app PickupRadar con datos reales de Milton Keynes"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "Prueba PickupRadar con datos reales de Milton Keynes."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "Consulta puntos de recogida reales en Milton Keynes. Revisa esperas recientes, o {likelyFast} y {likelySlow}. Puedes probar la pantalla de informe, pero no se envía nada."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "Elige una pestaña."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} Usa {nearby} para encontrar puntos de recogida cerca de ti cuando la ubicación esté activada. Usa {fast} y {slow} para consultar esperas y estimaciones."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "Buscar puntos de recogida."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} Prueba un nombre, una zona o un código postal, como KFC o Bletchley."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "Abre un punto de recogida."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} Se abre la pantalla {reportWait}. Elige un tiempo de espera. No se envía nada."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "Abrir la vista previa grande"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "Qué puedes ver antes de entrar"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "Ves las mismas etiquetas en la app. Las informan los repartidores, no las apps de entrega."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "Los repartidores eligen un tiempo de espera. Ves la espera actual y cuántos repartidores la informaron en las últimas 2 horas."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} y {likelySlow}"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "Solo se muestran cuando no hay informes recientes. Son estimaciones, no informes en vivo."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "Informado como cerrado hace poco"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} o {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "Los repartidores pulsan {reportProblem} para informar de esto. Ves su informe antes de ir."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "Consulta cuándo los repartidores informan de que la tableta o el sistema de un restaurante no funciona."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "El pedido empieza al llegar"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "Algunos sitios solo empiezan el pedido cuando llegas. Los repartidores pueden activarlo al informar."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "Puntos de recogida que faltan o están mal"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "¿Falta un punto de recogida? Pulsa {suggest}. ¿Algo mal? Pulsa {reportProblem} y luego {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} o {closedPermanently}."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "Tres pasos fáciles. Informar tarda unos segundos."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "Abre la app"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "Sin contraseña. La app te da un perfil Radar automáticamente. No hace falta registrarse."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "Consulta antes de entrar"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "Encuentra el punto de recogida. Mira la espera actual, o {likelyFast} o {likelySlow} si no hay informes recientes."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "Informa de tu espera"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "Después de recoger el pedido, pulsa {reportWait}. Tarda segundos. Tu informe ayuda a otros repartidores y ganas {radarPoints}."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "Gana {radarPoints}"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Pulsa {reportWait} para ganar {radarPoints}. Puedes empezar sin cuenta. Protege tus {radarPoints} con tu correo, para que estén seguros si cambias o restableces el teléfono. Sin contraseña. La app te envía por correo un código de 6 dígitos."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "Recompensas próximamente."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} Aún no puedes canjear {radarPoints}."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "Cómo ganar {radarPoints}"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "Un punto de recogida válido cerca de ti, sin espera reciente y sin {likelyFast} ni {likelySlow}. Ganas 15 RP por el informe en lugar de 10."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "Puntos extra en tu primer informe de espera válido. Si también es {reportNeeded}, ganas 25 RP en total."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "Cuando aprobamos un punto de recogida que sugieres"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "Cada uno lo gana cuando tu amigo hace 3 informes de espera válidos, en al menos 2 días distintos (hora UTC), en 2 puntos de recogida distintos. Ambos necesitáis cuentas Radar protegidas (añadid el correo). Tu amigo debe introducir tu código antes de su primer informe de espera válido."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "{referralRp} cada uno"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "Estas son las ciudades del Reino Unido en la app. ¿No encuentras tu ciudad? Pídela en la app. O pulsa {notify} en una ciudad {comingSoon}. Te enviaremos un correo cuando esté disponible."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "Disponible ahora"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "No forma parte de ninguna app de entrega"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "PickupRadar es independiente. No forma parte de Uber Eats, Deliveroo, Just Eat ni de ninguna otra app de entrega. Nunca usa tus cuentas de esas apps."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "Leer la política de privacidad"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "Sin inicios de sesión de apps de entrega."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} Nunca pedimos tu usuario o contraseña de Uber Eats, Deliveroo o Just Eat."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "Sin datos de clientes ni de pedidos."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} Sin nombres, direcciones ni números de pedido."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "Puedes saltarte la app de entrega."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} Elegir la app de entrega es opcional."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "Tú tienes el control."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} Elimina tu cuenta o perfil Radar en la app en cualquier momento."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "Preguntas de repartidores"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "¿Necesito una cuenta?"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "No. La app te da un perfil Radar automáticamente. Puedes informar esperas al momento. Para proteger tus {radarPoints}, añade tu correo más tarde. Sin contraseña. La app te envía por correo un código de 6 dígitos."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "¿Dónde funciona PickupRadar?"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "PickupRadar funciona ahora en Milton Keynes. A continuación, London. Luego más ciudades, como Manchester, Birmingham, Leeds, Liverpool y Glasgow. Consulta {cities}."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "todas las ciudades"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "¿Cuándo puedo descargar la app?"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "Las apps para iPhone y Android estarán disponibles pronto. Por ahora, la {preview} muestra puntos de recogida y esperas reales de Milton Keynes."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "vista previa en vivo"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "¿Cómo se calcula la espera actual?"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "Sale de los informes de repartidores de las últimas 2 horas. Los informes de más de 2 horas no afectan a la espera actual."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "¿Qué significan {likelyFast} y {likelySlow}?"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "Son estimaciones, no informes en vivo. Aparecen cuando no hay informes de espera recientes."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "¿Sigue mi ubicación?"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "Sin seguimiento en segundo plano. La app usa tu ubicación mientras la usas, para mostrar puntos de recogida cercanos y comprobar que estás en un punto de recogida al informar. El sitio solo pide la ubicación si eliges usarla. Lee la {privacy} para más información."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "política de privacidad"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "¿Cómo elimino mis datos?"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "En la app, abre {profile}. Pulsa {deleteAccount}. Si no añadiste un correo, pulsa {deleteProfile}. También puedes enviarnos un correo. Consulta {page} para los pasos."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "Explora los puntos de recogida de Milton Keynes."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "Explora puntos de recogida reales en Milton Keynes. Busca un sitio y prueba la pantalla de informe. Nada de lo que pulses se envía."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "Abrir la vista previa en vivo"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "Vista previa en vivo de la app — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "Prueba la app PickupRadar con datos reales de Milton Keynes. Explora, busca puntos de recogida y mira la pantalla de informe."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "Esto es PickupRadar con datos reales de Milton Keynes. Explora. Busca un punto de recogida y ábrelo. Nada de lo que pulses aquí se envía. Solo puedes informar en la app para el teléfono."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "Vista previa completa de la app PickupRadar con datos reales de Milton Keynes"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "Soporte — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "Ayuda con PickupRadar: contacta con soporte, informa de un problema en un punto de recogida y encuentra respuestas sobre tu perfil Radar, los {radarPoints} y cómo eliminar tu cuenta."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "¿Necesitas ayuda? Escríbenos sobre la app, un punto de recogida, tus {radarPoints} o tu privacidad."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "Contacto"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "Contactar con soporte"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "Escríbenos para ayuda, ideas, problemas en puntos de recogida o preguntas de privacidad:"
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "Dirección de correspondencia comercial"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "Solo para cartas. El correo es la forma más rápida de contactarnos."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "Qué incluir"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "Si informas de un problema, indícanos:"
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "El nombre del punto de recogida"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "La zona o el código postal, si lo sabes"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "Qué ha fallado"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "El modelo de tu teléfono, si la app tiene un problema"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "Preguntas frecuentes"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "Perfil Radar y correo"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "La app te da un perfil Radar automáticamente. No hace falta iniciar sesión para usar PickupRadar o ganar {radarPoints}. Añadir el correo es opcional. Protege tus {radarPoints} si cambias o restableces el teléfono. Sin contraseña. La app te envía por correo un código de 6 dígitos."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} y referidos"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "Ganas {radarPoints} por informes de espera válidos ({waitRp}, o {neededRp} cuando dice {reportNeeded}), un extra por el primer informe ({firstRp}) y puntos de recogida que aprobamos ({approvedRp}). Puedes invitar a un repartidor desde {profile}. Ambos necesitáis cuentas Radar protegidas (añadid el correo). Tu amigo introduce tu código antes de su primer informe de espera válido. Cuando tu amigo hace 3 informes de espera válidos, en al menos 2 días distintos (hora UTC), en 2 puntos de recogida distintos, cada uno gana {referralRp}. {rewards} Aún no puedes canjear {radarPoints}."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "Mensajes para repartidores"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "{profile} tiene {messages}: anuncios, alertas y mensajes personales para tu ciudad o perfil Radar. Los mensajes antiguos o eliminados pueden dejar de aparecer."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "Eliminar tu cuenta"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "Elimina tu cuenta en la app: {profile} → {deleteAccount}. O escribe a {email}. Si no añadiste un correo, la app muestra {deleteProfile} en su lugar. Consulta la página {page} para los pasos."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "¿Falta un punto de recogida? Pulsa {suggest} en la app. ¿Está mal? Pulsa {reportProblem}. O escríbenos y lo revisaremos."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "Tus cuentas de apps de entrega"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "PickupRadar no se conecta a tus cuentas de Uber Eats, Deliveroo, Just Eat ni de otras apps de entrega. Nunca pedimos inicios de sesión, contraseñas, datos de cuenta, datos de clientes ni datos de pedidos. Los repartidores solo comparten informes de recogida, como tiempos de espera y problemas en puntos de recogida."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "Prueba PickupRadar antes del lanzamiento de la app."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "La vista previa en vivo muestra puntos de recogida y esperas reales de Milton Keynes. Informar y los {radarPoints} solo están en la app para el teléfono."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "Página no encontrada — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "Esa página no está en el sitio de PickupRadar."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "Esta página se ha salido del radar."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "Esa dirección no está en el sitio de PickupRadar. Estas páginas sí:"
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "Inicio"
+    }
+  }
+}

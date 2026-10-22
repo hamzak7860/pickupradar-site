@@ -1476,6 +1476,17 @@ body.page-live-preview #livePreview {
   color: var(--w-radar);
 }
 
+/* Translated labels can be much longer than the English: let them wrap on small screens. */
+.w-signal-ui .w-pill { white-space: normal; max-width: 100%; }
+.w-display, .w-h2, .w-h3, .w-lede, .w-text { overflow-wrap: break-word; }
+.w-ledger li > span:first-child { min-width: 0; overflow-wrap: anywhere; }
+
+@media (max-width: 960px) {
+  .w-points-grid,
+  .w-scale-grid,
+  .w-trust { grid-template-columns: minmax(0, 1fr); }
+}
+
 /* Language dialog. The phone preview keeps its own language screen. */
 body.w-lang-open { overflow: hidden; }
 

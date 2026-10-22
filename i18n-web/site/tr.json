@@ -1,0 +1,602 @@
+{
+  "language": "tr",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "İçeriğe geç"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "PickupRadar ana sayfa"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "Site"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "Gizlilik"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "Canlı önizleme"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "Uygulama"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "Yardım"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "Yasal"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "İçeri girmeden önce beklemeyi öğrenin."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar. Bağımsızdır; Uber Eats, Deliveroo veya Just Eat ile bağlantılı değildir."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "Bekleme aralıkları"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "Hızlı"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "Kısa bekleme"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "Uzun bekleme"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "Çok uzun bekleme"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "Yakın zamanda bildirim yok mu? PickupRadar {likelyFast} veya {likelySlow} gösterebilir:"
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar): Birleşik Krallık’taki kuryeler için teslim alma bekleme süreleri"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "Restoran ve dükkanlara girmeden önce kuryelerin ne kadar beklediğini görün. Birleşik Krallık’taki Uber Eats, Deliveroo ve Just Eat kuryeleri için. Kayıt gerekmez."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar. İçeri girmeden önce beklemeyi öğrenin."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "Uber Eats, Deliveroo veya Just Eat için mi teslimat yapıyorsunuz? Restoran ve dükkanlardaki son teslim alma beklemelerini görün. Uzun beklemelerden kaçının. {reportWait} öğesine dokunun ve {radarPoints} kazanın. Kayıt gerekmez."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "Gerçek verilerle deneyin"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "Kullanılabilirlik"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "Şimdi Milton Keynes’te. Sırada London var."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "iPhone ve Android uygulamaları yakında gelecek."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "{nearby} sekmesi açık PickupRadar Ana ekran örneği; teslim alma noktaları beklemeye göre renkli"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "Örnek ekran: örnek beklemeler, canlı kurye bildirimleri değil"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "Örnek bekleme"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "Örnek tahmin"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "1 bildirim · 4 dk önce"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "Örnek ekran. Bunlar örnek bekleme süreleridir, canlı bildirim değildir. Gerçek verilerle {live}."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "Canlı önizlemeyi deneyin"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "Ne kadar bekleyebileceğinizi görün."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "Kuryeler ne kadar beklediklerini bildirir. Mevcut bekleme, son 2 saatteki bildirimlerden gelir. Hızlı ve yavaş teslim almaları çabuk görebilirsiniz."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "Gerçek Milton Keynes verileriyle canlı PickupRadar uygulama önizlemesi"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "PickupRadar’ı gerçek Milton Keynes verileriyle deneyin."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "Milton Keynes’teki gerçek teslim alma noktalarını görün. Son beklemeleri veya {likelyFast} ve {likelySlow} durumunu kontrol edin. Bildirim ekranını deneyebilirsiniz, ancak hiçbir şey gönderilmez."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "Bir sekme seçin."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} Konum açıkken size yakın teslim alma noktalarını bulmak için {nearby} kullanın. Bekleme ve tahminleri görmek için {fast} ve {slow} kullanın."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "Teslim alma noktalarını ara."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} KFC veya Bletchley gibi bir ad, bölge veya posta kodu deneyin."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "Bir teslim alma noktası açın."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} {reportWait} ekranı açılır. Bir bekleme süresi seçin. Hiçbir şey gönderilmez."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "Büyük önizlemeyi aç"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "İçeri girmeden önce neleri görebilirsiniz"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "Uygulamada aynı etiketleri görürsünüz. Bunları teslimat uygulamaları değil, kuryeler bildirir."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "Kuryeler bir bekleme süresi seçer. Mevcut beklemeyi ve son 2 saatte kaç kuryenin bildirdiğini görürsünüz."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} ve {likelySlow}"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "Yalnızca yakın zamanda bildirim yoksa gösterilir. Bunlar tahmindir, canlı bildirim değildir."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "Yakın zamanda kapalı bildirildi"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} veya {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "Kuryeler bunu bildirmek için {reportProblem} öğesine dokunur. Oraya gitmeden önce bildirimlerini görürsünüz."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "Kuryelerin bir restoranın tableti veya sisteminin çalışmadığını bildirdiğini görün."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "Sipariş varıştan sonra başlar"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "Bazı yerler siparişi ancak siz varınca başlatır. Kuryeler bildirirken bunu açabilir."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "Eksik veya yanlış teslim alma noktaları"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "Teslim alma noktası mı eksik? {suggest} öğesine dokunun. Bir şey mi yanlış? {reportProblem} öğesine, sonra {otherIssue} öğesine dokunun: {wrongAddress}, {wrongBranch}, {duplicate} veya {closedPermanently}."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "Üç kolay adım. Bildirmek birkaç saniye sürer."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "Uygulamayı açın"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "Parola yok. Uygulama size otomatik bir Radar profili verir. Kayıt olmanız gerekmez."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "İçeri girmeden önce bakın"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "Teslim alma noktasını bulun. Mevcut beklemeyi görün; yakın zamanda bildirim yoksa {likelyFast} veya {likelySlow} görün."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "Beklemenizi bildirin"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "Siparişi aldıktan sonra {reportWait} öğesine dokunun. Saniyeler sürer. Bildiriminiz diğer kuryelere yardımcı olur ve {radarPoints} kazanırsınız."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "{radarPoints} kazanın"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "{radarPoints} kazanmak için {reportWait} öğesine dokunun. Hesap olmadan başlayabilirsiniz. Telefonunuzu değiştirir veya sıfırlarsanız güvende kalsın diye {radarPoints} puanınızı e-postanızla koruyun. Parola gerekmez. Uygulama size 6 haneli bir kod e-postayla gönderir."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "Ödüller yakında."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} {radarPoints} henüz kullanılamaz."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "{radarPoints} nasıl kazanılır"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "Yakınınızda, yakın zamanda beklemesi olmayan ve {likelyFast} veya {likelySlow} göstermeyen uygun bir teslim alma noktası. Bildirim için 10 yerine 15 RP kazanırsınız."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "İlk geçerli bekleme bildiriminizde ekstra puan. Aynı zamanda {reportNeeded} ise toplamda 25 RP kazanırsınız."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "Önerdiğiniz bir teslim alma noktasını onayladığımızda"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "Arkadaşınız en az 2 farklı günde (UTC saati), 2 farklı teslim alma noktasında 3 geçerli bekleme bildirimi yaptığında her ikiniz de kazanırsınız. İkinizin de korumalı Radar hesabı olması gerekir (e-postanızı ekleyin). Arkadaşınız kodunuzu ilk geçerli bekleme bildiriminden önce girmelidir."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "her biri {referralRp}"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "Bunlar uygulamadaki Birleşik Krallık şehirleridir. Şehrinizi bulamıyor musunuz? Uygulamadan isteyin. Veya {comingSoon} bir şehirde {notify} öğesine dokunun. Canlı olduğunda e-posta göndeririz."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "Şimdi canlı"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "Hiçbir teslimat uygulamasının parçası değil"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "PickupRadar bağımsızdır. Uber Eats, Deliveroo, Just Eat veya başka bir teslimat uygulamasının parçası değildir. Onlardaki hesaplarınızı asla kullanmaz."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "Gizlilik politikasını oku"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "Teslimat uygulaması girişi yok."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} Uber Eats, Deliveroo veya Just Eat kullanıcı adı ya da parolanızı asla sormayız."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "Müşteri veya sipariş bilgisi yok."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} İsim, adres veya sipariş numarası yok."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "Teslimat uygulamasını atlayabilirsiniz."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} Teslimat uygulamasını seçmek isteğe bağlıdır."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "Kontrol sizde."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} Hesabınızı veya Radar profilinizi uygulamada istediğiniz zaman silin."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "Kuryelerin soruları"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "Hesaba ihtiyacım var mı?"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "Hayır. Uygulama size otomatik bir Radar profili verir. Beklemeleri hemen bildirebilirsiniz. {radarPoints} puanınızı korumak için e-postanızı sonra ekleyin. Parola gerekmez. Uygulama size 6 haneli bir kod e-postayla gönderir."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "PickupRadar nerede çalışır?"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "PickupRadar şu an Milton Keynes’te çalışır. Sırada London var. Sonra Manchester, Birmingham, Leeds, Liverpool ve Glasgow gibi daha fazla şehir. {cities} sayfasına bakın."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "tüm şehirler"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "Uygulamayı ne zaman indirebilirim?"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "iPhone ve Android uygulamaları yakında gelecek. Şimdilik {preview}, Milton Keynes’teki gerçek teslim alma noktalarını ve beklemeleri gösterir."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "canlı önizleme"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "Mevcut bekleme nasıl hesaplanır?"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "Son 2 saatteki kurye bildirimlerinden gelir. 2 saatten eski bildirimler mevcut beklemeyi etkilemez."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "{likelyFast} ve {likelySlow} ne anlama gelir?"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "Bunlar tahmindir, canlı bildirim değildir. Yakın zamanda bekleme bildirimi yoksa görünür."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "Konumumu takip eder mi?"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "Arka planda takip yok. Uygulama, yakındaki teslim alma noktalarını göstermek ve bildirirken bir teslim alma noktasında olduğunuzu kontrol etmek için onu kullanırken konumunuzu kullanır. Site konumu yalnızca siz kullanmayı seçerseniz ister. Daha fazlası için {privacy} metnini okuyun."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "gizlilik politikası"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "Verilerimi nasıl silerim?"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "Uygulamada {profile} öğesini açın. {deleteAccount} öğesine dokunun. E-posta eklemediyseniz {deleteProfile} öğesine dokunun. Bize e-posta da gönderebilirsiniz. Adımlar için {page} sayfasına bakın."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "Milton Keynes teslim alma noktalarını keşfedin."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "Milton Keynes’teki gerçek teslim alma noktalarını keşfedin. Bir yer arayın ve bildirim ekranını deneyin. Dokunduğunuz hiçbir şey gönderilmez."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "Canlı önizlemeyi aç"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "Canlı uygulama önizlemesi — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "PickupRadar uygulamasını gerçek Milton Keynes verileriyle deneyin. Etrafa bakın, teslim alma noktası arayın ve bildirim ekranını görün."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "Bu, gerçek Milton Keynes verileriyle PickupRadar. Etrafa bakın. Bir teslim alma noktası arayıp açın. Burada dokunduğunuz hiçbir şey gönderilmez. Yalnızca telefon uygulamasında bildirim yapabilirsiniz."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "Gerçek Milton Keynes verileriyle tam PickupRadar uygulama önizlemesi"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "Destek — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "PickupRadar yardımı: destekle iletişime geçin, bir teslim alma noktası sorunu bildirin ve Radar profiliniz, {radarPoints} ve hesabı silme hakkında yanıt bulun."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "Yardım mı lazım? Uygulama, bir teslim alma noktası, {radarPoints} veya gizliliğiniz hakkında bize e-posta gönderin."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "İletişim"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "Destekle iletişim"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "Yardım, fikir, teslim alma noktası sorunları veya gizlilik soruları için bize e-posta gönderin:"
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "Ticari yazışma adresi"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "Yalnızca mektuplar için. Bize ulaşmanın en hızlı yolu e-postadır."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "Neleri eklemelisiniz"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "Bir sorun bildiriyorsanız lütfen şunları yazın:"
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "Teslim alma noktasının adı"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "Bölge veya posta kodu, biliyorsanız"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "Ne yanlış gitti"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "Uygulamada sorun varsa telefon modeliniz"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "Sık sorulanlar"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "Radar profili ve e-posta"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Uygulama size otomatik bir Radar profili verir. PickupRadar’ı kullanmak veya {radarPoints} kazanmak için giriş yapmanız gerekmez. E-posta eklemek isteğe bağlıdır. Telefonunuzu değiştirir veya sıfırlarsanız {radarPoints} puanınızı korur. Parola gerekmez. Uygulama size 6 haneli bir kod e-postayla gönderir."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} ve davetler"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "Geçerli bekleme bildirimleri ({waitRp}, veya {reportNeeded} yazıyorsa {neededRp}), ilk bildirim bonusu ({firstRp}) ve onayladığımız teslim alma noktaları ({approvedRp}) için {radarPoints} kazanırsınız. {profile} içinden bir kurye davet edebilirsiniz. İkinizin de korumalı Radar hesabı olması gerekir (e-postanızı ekleyin). Arkadaşınız kodunuzu ilk geçerli bekleme bildiriminden önce girer. Arkadaşınız en az 2 farklı günde (UTC saati), 2 farklı teslim alma noktasında 3 geçerli bekleme bildirimi yaptığında her biriniz {referralRp} kazanırsınız. {rewards} {radarPoints} henüz kullanılamaz."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "Kurye mesajları"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "{profile} içinde {messages} vardır: şehriniz veya Radar profiliniz için duyurular, uyarılar ve kişisel mesajlar. Eski veya kaldırılmış mesajlar artık görünmeyebilir."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "Hesabınızı silin"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "Hesabınızı uygulamada silin: {profile} → {deleteAccount}. Veya {email} adresine e-posta gönderin. E-posta eklemediyseniz uygulama bunun yerine {deleteProfile} gösterir. Adımlar için {page} sayfasına bakın."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "Bir teslim alma noktası mı eksik? Uygulamada {suggest} öğesine dokunun. Biri mi yanlış? {reportProblem} öğesine dokunun. Veya bize e-posta gönderin, kontrol ederiz."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "Teslimat uygulaması hesaplarınız"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "PickupRadar, Uber Eats, Deliveroo, Just Eat veya diğer teslimat uygulaması hesaplarınıza bağlanmaz. Teslimat uygulaması girişlerinizi, parolalarınızı, hesap bilgilerinizi, müşteri bilgilerinizi veya sipariş bilgilerinizi asla sormayız. Kuryeler yalnızca bekleme süreleri ve teslim alma noktası sorunları gibi teslim alma bildirimleri paylaşır."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "Uygulama çıkmadan önce PickupRadar’ı deneyin."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "Canlı önizleme, Milton Keynes’teki gerçek teslim alma noktalarını ve beklemeleri gösterir. Bildirim ve {radarPoints} yalnızca telefon uygulamasındadır."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "Sayfa bulunamadı — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "Bu sayfa PickupRadar sitesinde yok."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "Bu sayfa radardan çıktı."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "Bu adres PickupRadar sitesinde yok. Bu sayfalar var:"
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "Ana sayfa"
+    }
+  }
+}
