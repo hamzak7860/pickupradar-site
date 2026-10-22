@@ -1,0 +1,602 @@
+{
+  "language": "ku",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "Derbasî naverokê bibe"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "Mala PickupRadar"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "Malper"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "Nepenî"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "Pêşdîtina zindî"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "Sepan"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "Alîkarî"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "Yasa"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "Berî ku têkevî, dema bendê bizane."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar. Serbixwe ye û bi Uber Eats, Deliveroo an Just Eat ve ne girêdayî ye."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "Rêza dema bendê"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "Bilez"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "Bendeke kurt"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "Bendeke dirêj"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "Bendeke gelek dirêj"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "Raporeke nû tune? PickupRadar dikare {likelyFast} an {likelySlow} nîşan bide:"
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar): dema bendê ya wergirtinê ji bo ajokaran li Keyaniya Yekbûyî"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "Bibîne ajokar berî ku tu têkevî çiqas li restorant û dikanan disekinin. Ji bo ajokarên Uber Eats, Deliveroo û Just Eat li Keyaniya Yekbûyî. Bê tomarkirin."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar. Berî ku têkevî, dema bendê bizane."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "Tu ji bo Uber Eats, Deliveroo an Just Eat radest dikî? Dema bendê ya nû li xalên wergirtinê yên restorant û dikanan bibîne. Ji bendeke dirêj dûr bikeve. {reportWait} bitikîne û {radarPoints} bistîne. Bê tomarkirin."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "Bi daneyên rast biceribîne"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "Hebûn"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "Niha li Milton Keynes. Piştre London."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "Sepanên iPhone û Androidê dê zû werin."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "Mînaka ekrana mala PickupRadar bi hilpekîna {nearby} vekirî. Xalên wergirtinê li gorî dema bendê rengkirî ne"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "Ekrana mînak: dema bendê ya mînak e, ne rapora zindî ya ajokaran"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "Dema bendê ya mînak"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "Texmîna mînak"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "1 rapor · berî 4 deqîqeyan"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "Ekrana mînak. Ev dema bendê ya mînak e, ne rapora zindî. {live} bi daneyên rast."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "Pêşdîtina zindî biceribîne"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "Bibîne dibe ku tu çiqas bisekinî."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "Ajokar radigihînin ku çiqas sekinîn. Dema bendê ya niha ji raporên 2 saetên dawî tê. Tu zû dibînî kîjan xala wergirtinê bilez e û kîjan hêdî ye."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "Pêşdîtina zindî ya sepana PickupRadar bi daneyên rast ên Milton Keynes"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "PickupRadar bi daneyên rast ên Milton Keynes biceribîne."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "Xalên wergirtinê yên rast li Milton Keynes bibîne. Dema bendê ya nû bibîne, an {likelyFast} û {likelySlow}. Tu dikarî ekrana raporê biceribînî, lê tiştek naçe."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "Hilpekînekê hilbijêre."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} Dema cih vekirî be, {nearby} bi kar bîne da ku xalên wergirtinê yên nêzî xwe bibînî. {fast} û {slow} bi kar bîne da ku demên bendê û texmînan bibînî."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "Xaleke wergirtinê bibîne."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} Nav, herêm an koda postê biceribîne, wekî KFC an Bletchley."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "Xaleke wergirtinê veke."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} Ekrana {reportWait} vedibe. Demeke bendê hilbijêre. Tiştek naçe."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "Pêşdîtina mezin veke"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "Tiştê ku tu berî têketinê dibînî"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "Tu heman etîketan di sepanê de dibînî. Ajokar wan radigihînin, ne sepana radestkirinê."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "Ajokar dema bendê hilbijêrin. Tu dema bendê ya niha dibînî û çend ajokaran ew di 2 saetên dawî de ragihandiye."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} û {likelySlow}"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "Tenê dema raporeke nû tune be tê nîşandan. Ev texmîn e, ne rapora zindî."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "Nû wekî girtî hatiye ragihandin"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} an {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "Ajokar {reportProblem} ditikînin da ku vê ragihînin. Tu raporê berî ku biçî wir dibînî."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "Bibîne dema ajokar radigihînin ku tableta an pergala restorantê naxebite."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "Siparîş piştî ku tu digihîjî dest pê dike"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "Hin cih siparîşê tenê dema tu digihîjî dest pê dikin. Ajokar dikarin vê di dema ragihandinê de vekin."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "Xala wergirtinê ya winda an şaş"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "Xala wergirtinê tune? {suggest} bitikîne. Tiştek şaş e? {reportProblem} bitikîne, paşê {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} an {closedPermanently}."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "Sê gavên hêsan. Ragihandin tenê çend saniyan digire."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "Sepanê veke"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "Bê şîfre. Sepan bixweber profîleke Radar dide te. Ne hewce ye tu tomar bibî."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "Berî têketinê binêre"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "Xala wergirtinê bibîne. Dema bendê ya niha bibîne, an {likelyFast} an {likelySlow} heke raporeke nû tune be."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "Dema bendê ya xwe ragihîne"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "Piştî ku siparîşê digirî, {reportWait} bitikîne. Çend saniye digire. Rapora te alîkariya ajokarên din dike, û tu {radarPoints} distînî."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "{radarPoints} bistîne"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "{reportWait} bitikîne da ku {radarPoints} bistînî. Tu dikarî bê hesab dest pê bikî. {radarPoints} bi e-nameyê biparêze da ku ewle bimînin heke tu têlefonê biguherînî an vegerînî. Bê şîfre. Sepan kodeke 6-reqemî bi e-nameyê dişîne."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "Xelat dê werin."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} Tu hê nikarî {radarPoints} bi kar bînî."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "Çawa {radarPoints} bistînî"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "Xaleke wergirtinê ya guncaw nêzî te, bê dema bendê ya nû, û bê {likelyFast} an {likelySlow}. Tu ji bo wê raporê 15 RP distînî, ne 10."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "Xalên zêde li ser rapora yekem a derbasdar a dema bendê. Heke ew {reportNeeded} jî be, tu bi tevahî 25 RP distînî."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "Dema em xala wergirtinê ya ku te pêşniyar kiriye pesend dikin"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "Hûn herdu distînin dema hevalê te 3 raporên derbasdar ên dema bendê çêdike, li ser herî kêm 2 rojên cuda (dema UTC), li 2 xalên wergirtinê yên cuda. Divê herdu hesabên Radar ên parastî hebin (e-nameyê lê zêde bike). Divê hevalê te koda te berî rapora yekem a derbasdar a dema bendê binivîse."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "{referralRp} her yek"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "Ev bajarên Keyaniya Yekbûyî di sepanê de ne. Bajarê xwe nabînî? Di sepanê de bixwaze. An li bajarekî ku {comingSoon} e {notify} bitikîne. Dema ew zindî bibe em e-nameyê dişînin."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "Niha zindî"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "Ne beşek ji tu sepana radestkirinê ye"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "PickupRadar serbixwe ye. Ne beşek ji Uber Eats, Deliveroo, Just Eat an tu sepana radestkirinê ya din e. Ew qet hesabê te li wir bi kar nayîne."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "Polîtîkaya nepeniyê bixwîne"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "Bê têketina sepana radestkirinê."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} Em qet navê bikarhêner an şîfreya Uber Eats, Deliveroo an Just Eat naxwazin."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "Bê hûrgiliyên xerîdar an siparîşê."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} Bê nav, navnîşan an hejmara siparîşê."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "Tu dikarî sepana radestkirinê derbas bikî."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} Hilbijartina sepana radestkirinê vebijarkî ye."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "Kontrol bi te ye."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} Her dem hesab an profîla Radar di sepanê de jê bibe."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "Pirsên ajokaran"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "Gelo pêdiviya min bi hesabekê heye?"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "Na. Sepan bixweber profîleke Radar dide te. Tu dikarî dema bendê tavilê ragihînî. Ji bo parastina {radarPoints}, paşê e-nameyê lê zêde bike. Bê şîfre. Sepan kodeke 6-reqemî bi e-nameyê dişîne."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "PickupRadar li ku dixebite?"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "PickupRadar niha li Milton Keynes dixebite. Piştre London. Paşê bêtir bajar, wekî Manchester, Birmingham, Leeds, Liverpool û Glasgow. {cities} bibîne."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "hemû bajar"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "Kengê ez dikarim sepanê daxînim?"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "Sepanên iPhone û Androidê dê zû werin. Heta wê demê, {preview} xalên wergirtinê yên rast û dema bendê li Milton Keynes nîşan dide."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "pêşdîtina zindî"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "Dema bendê ya niha çawa tê hesibandin?"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "Ew ji raporên ajokaran di 2 saetên dawî de tê. Raporên ji 2 saetan kevntir dema bendê ya niha naguherînin."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "{likelyFast} û {likelySlow} tê çi wateyê?"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "Ev texmîn in, ne raporên zindî. Dema raporeke nû ya dema bendê tune be xuya dibin."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "Gelo ew cihê min dişopîne?"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "Şopandina paşperdeyê tune. Sepan cihê te dema tu wê bi kar tînî bi kar tîne, da ku xalên wergirtinê yên nêzîk nîşan bide û dema tu radigihînî kontrol bike ku tu li xala wergirtinê yî. Malper tenê dema tu bikaranînê hilbijêrî cih dixwaze. Ji bo bêtir {privacy} bixwîne."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "polîtîkaya nepeniyê"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "Ez çawa daneyên xwe jê dibim?"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "Di sepanê de {profile} veke. {deleteAccount} bitikîne. Heke te e-name lê nezêde kiriye, {deleteProfile} bitikîne. Tu dikarî e-name jî ji me re bişînî. Gavên wê li {page} bibîne."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "Xalên wergirtinê yên Milton Keynes bibîne."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "Xalên wergirtinê yên rast li Milton Keynes bibîne. Cihakî bibîne û ekrana raporê biceribîne. Tiştê ku tu ditikînî naçe."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "Pêşdîtina zindî veke"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "Pêşdîtina zindî ya sepanê — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "Sepana PickupRadar bi daneyên rast ên Milton Keynes biceribîne. Li derdorê binêre, xaleke wergirtinê bibîne û ekrana raporê bibîne."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "Ev PickupRadar bi daneyên rast ên Milton Keynes e. Li derdorê binêre. Xaleke wergirtinê bibîne û wê veke. Tiştê ku tu li vir ditikînî naçe. Tu tenê di sepana têlefonê de dikarî ragihînî."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "Pêşdîtina tevahî ya sepana PickupRadar bi daneyên rast ên Milton Keynes"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "Piştgirî — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "Alîkariya PickupRadar: bi piştgiriyê re têkilî dayne, pirsgirêka xala wergirtinê ragihîne, û bersivên derbarê profîla Radar, {radarPoints} û jêbirina hesabê de bibîne."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "Alîkarî dixwazî? Derbarê sepanê, xala wergirtinê, {radarPoints} an nepeniya xwe de e-name bişîne."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "Têkilî"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "Bi piştgiriyê re têkilî dayne"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "Ji bo alîkarî, raman, pirsgirêka xala wergirtinê an pirsên nepeniyê e-name bişîne:"
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "Navnîşana posteyê ya karsaziyê"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "Tenê ji bo nameyê. E-name riya herî bilez e ku tu bi me re têkilî daynî."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "Çi tê de binivîse"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "Heke tu pirsgirêkekê radigihînî, ji me re bibêje:"
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "Navê xala wergirtinê"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "Herêm an koda postê, heke tu dizanî"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "Çi şaş e"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "Modela têlefonê, heke pirsgirêk di sepanê de be"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "Pirsên berbelav"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "Profîla Radar û e-name"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Sepan bixweber profîleke Radar dide te. Ne hewce ye tu têkevî da ku PickupRadar bi kar bînî an {radarPoints} bistînî. Lêzêdekirina e-nameyê vebijarkî ye. Ew {radarPoints} diparêze heke tu têlefonê biguherînî an vegerînî. Bê şîfre. Sepan kodeke 6-reqemî bi e-nameyê dişîne."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} û vexwendin"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "Tu {radarPoints} ji bo rapora derbasdar a dema bendê distînî ({waitRp}, an {neededRp} dema {reportNeeded} hatiye nivîsandin), bonusa rapora yekem ({firstRp}) û xala wergirtinê ya ku em pesend dikin ({approvedRp}). Tu dikarî ji {profile} ajokarekî vexwînî. Divê herdu hesabên Radar ên parastî hebin (e-nameyê lê zêde bike). Hevalê te koda te berî rapora yekem a derbasdar a dema bendê dinivîse. Dema hevalê te 3 raporên derbasdar ên dema bendê çêdike, li ser herî kêm 2 rojên cuda (dema UTC), li 2 xalên wergirtinê yên cuda, her yek {referralRp} distîne. {rewards} Tu hê nikarî {radarPoints} bi kar bînî."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "Peyam ji bo ajokaran"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "{profile} {messages} hene: ragihandin, hişyarî û peyamên kesane ji bo bajêr an profîla Radar a te. Peyamên kevin an yên hatine rakirin dibe ku careke din xuya nebin."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "Hesabê xwe jê bibe"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "Hesabê di sepanê de jê bibe: {profile} → {deleteAccount}. An e-name ji {email} re bişîne. Heke te e-name lê nezêde kiriye, sepan {deleteProfile} nîşan dide. Gavên wê li rûpela {page} bibîne."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "Xala wergirtinê tune? Di sepanê de {suggest} bitikîne. Tiştek şaş e? {reportProblem} bitikîne. An e-name bişîne û em ê lê binêrin."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "Hesabê sepana radestkirinê ya te"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "PickupRadar bi hesabê te yê Uber Eats, Deliveroo, Just Eat an tu sepana radestkirinê ya din ve ne girêdayî ye. Em qet têketin, şîfre, hûrgiliyên hesabê, hûrgiliyên xerîdar an hûrgiliyên siparîşê naxwazin. Ajokar tenê raporên wergirtinê parve dikin, wekî dema bendê û pirsgirêka xala wergirtinê."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "Berî ku sepan were weşandin PickupRadar biceribîne."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "Pêşdîtina zindî xalên wergirtinê yên rast û dema bendê li Milton Keynes nîşan dide. Ragihandin û {radarPoints} tenê di sepana têlefonê de ne."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "Rûpel nehat dîtin — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "Ew rûpel li ser malpera PickupRadar tune ye."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "Ev rûpel li derveyî radarê ye."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "Ew navnîşan li ser malpera PickupRadar tune ye. Ev rûpel hene:"
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "Mal"
+    }
+  }
+}

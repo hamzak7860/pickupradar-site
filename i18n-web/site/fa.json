@@ -1,0 +1,602 @@
+{
+  "language": "fa",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "رفتن به محتوا"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "خانه PickupRadar"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "سایت"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "حریم خصوصی"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "پیش‌نمایش زنده"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "اپ"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "راهنما"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "قانونی"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "زمان انتظار را پیش از ورود بدانید."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar. مستقل است و به Uber Eats، Deliveroo یا Just Eat وابسته نیست."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "بازه زمان انتظار"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "سریع"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "انتظار کوتاه"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "انتظار طولانی"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "انتظار خیلی طولانی"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "گزارش تازه‌ای نیست؟ PickupRadar ممکن است {likelyFast} یا {likelySlow} را نشان دهد:"
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar): زمان انتظار تحویل برای رانندگان در بریتانیا"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "ببینید رانندگان پیش از ورود شما چقدر در رستوران‌ها و فروشگاه‌ها منتظر می‌مانند. برای رانندگان Uber Eats، Deliveroo و Just Eat در بریتانیا. بدون ثبت‌نام."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar. زمان انتظار را پیش از ورود بدانید."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "برای Uber Eats، Deliveroo یا Just Eat پیک می‌زنید؟ تازه‌ترین زمان انتظار را در نقطه تحویل رستوران‌ها و فروشگاه‌ها ببینید. از انتظار طولانی دور بمانید. {reportWait} را بزنید و {radarPoints} بگیرید. بدون ثبت‌نام."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "با داده واقعی امتحان کنید"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "دسترسی"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "الان در Milton Keynes. بعدی London."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "اپ‌های iPhone و Android به‌زودی می‌آیند."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "نمونه صفحه خانه PickupRadar با زبانه {nearby} باز. نقطه تحویل‌ها بر اساس زمان انتظار رنگ شده‌اند"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "صفحه نمونه: زمان انتظار نمونه است، نه گزارش زنده رانندگان"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "زمان انتظار نمونه"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "برآورد نمونه"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "1 گزارش · 4 دقیقه پیش"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "صفحه نمونه. این زمان انتظار نمونه است، نه گزارش زنده. {live} با داده واقعی."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "پیش‌نمایش زنده را امتحان کنید"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "ببینید ممکن است چقدر منتظر بمانید."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "رانندگان گزارش می‌دهند چقدر منتظر مانده‌اند. زمان انتظار فعلی از گزارش‌های 2 ساعت گذشته می‌آید. سریع می‌بینید کدام نقطه تحویل سریع است و کدام کند."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "پیش‌نمایش زنده اپ PickupRadar با داده واقعی Milton Keynes"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "PickupRadar را با داده واقعی Milton Keynes امتحان کنید."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "نقطه تحویل واقعی در Milton Keynes را ببینید. تازه‌ترین زمان انتظار را ببینید، یا {likelyFast} و {likelySlow}. می‌توانید صفحه گزارش را امتحان کنید، اما چیزی فرستاده نمی‌شود."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "یک زبانه انتخاب کنید."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} وقتی مکان روشن است، از {nearby} برای پیدا کردن نقطه تحویل نزدیک خود استفاده کنید. از {fast} و {slow} برای دیدن زمان انتظار و برآوردها استفاده کنید."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "یک نقطه تحویل پیدا کنید."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} نام، منطقه یا کد پستی را امتحان کنید، مثل KFC یا Bletchley."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "یک نقطه تحویل را باز کنید."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} صفحه {reportWait} باز می‌شود. یک زمان انتظار انتخاب کنید. چیزی فرستاده نمی‌شود."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "پیش‌نمایش بزرگ را باز کنید"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "آنچه پیش از ورود می‌بینید"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "همان برچسب‌ها را در اپ می‌بینید. رانندگان آن‌ها را گزارش می‌کنند، نه اپ تحویل."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "رانندگان زمان انتظار را انتخاب می‌کنند. زمان انتظار فعلی را می‌بینید و اینکه چند راننده در 2 ساعت گذشته آن را گزارش کرده‌اند."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} و {likelySlow}"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "فقط وقتی نشان داده می‌شود که گزارش تازه‌ای نباشد. این برآورد است، نه گزارش زنده."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "تازه بسته گزارش شده"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} یا {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "رانندگان برای گزارش این موضوع {reportProblem} را می‌زنند. پیش از رفتن به آنجا گزارش را می‌بینید."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "ببینید وقتی رانندگان گزارش می‌دهند تبلت یا سیستم رستوران کار نمی‌کند."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "سفارش بعد از رسیدن شما شروع می‌شود"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "بعضی جاها سفارش را فقط وقتی شما می‌رسید شروع می‌کنند. رانندگان می‌توانند هنگام گزارش این را روشن کنند."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "نقطه تحویل جاافتاده یا اشتباه"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "نقطه تحویل نیست؟ {suggest} را بزنید. چیزی غلط است؟ {reportProblem} را بزنید، بعد {otherIssue}: {wrongAddress}، {wrongBranch}، {duplicate} یا {closedPermanently}."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "سه گام ساده. گزارش فقط چند ثانیه طول می‌کشد."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "اپ را باز کنید"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "بدون رمز عبور. اپ به‌طور خودکار یک پروفایل Radar به شما می‌دهد. لازم نیست ثبت‌نام کنید."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "پیش از ورود نگاه کنید"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "نقطه تحویل را پیدا کنید. زمان انتظار فعلی را ببینید، یا اگر گزارش تازه‌ای نیست {likelyFast} یا {likelySlow}."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "زمان انتظار خود را گزارش کنید"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "بعد از گرفتن سفارش، {reportWait} را بزنید. چند ثانیه طول می‌کشد. گزارش شما به رانندگان دیگر کمک می‌کند و {radarPoints} می‌گیرید."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "{radarPoints} بگیرید"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "برای گرفتن {radarPoints}، {reportWait} را بزنید. می‌توانید بدون حساب شروع کنید. {radarPoints} را با ایمیل محافظت کنید تا اگر گوشی را عوض یا بازنشانی کردید امن بماند. بدون رمز عبور. اپ یک کد 6 رقمی با ایمیل می‌فرستد."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "پاداش‌ها به‌زودی می‌آیند."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} هنوز نمی‌توانید {radarPoints} را خرج کنید."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "چگونه {radarPoints} بگیرید"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "یک نقطه تحویل واجد شرایط نزدیک شما، بدون زمان انتظار تازه، و بدون {likelyFast} یا {likelySlow}. برای آن گزارش 15 RP می‌گیرید، نه 10."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "امتیاز اضافه روی اولین گزارش انتظار معتبر. اگر همان گزارش {reportNeeded} هم باشد، در مجموع 25 RP می‌گیرید."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "وقتی نقطه تحویلی را که پیشنهاد کرده‌اید تأیید کنیم"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "هر دو وقتی می‌گیرید که دوستتان 3 گزارش انتظار معتبر ثبت کند، در دست‌کم 2 روز متفاوت (زمان UTC)، در 2 نقطه تحویل متفاوت. هر دو به حساب Radar محافظت‌شده نیاز دارید (ایمیل اضافه کنید). دوستتان باید کد شما را پیش از اولین گزارش انتظار معتبر وارد کند."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "{referralRp} برای هر نفر"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "این شهرهای بریتانیا در اپ هستند. شهر خود را نمی‌بینید؟ در اپ درخواست کنید. یا روی شهری که {comingSoon} است {notify} را بزنید. وقتی فعال شد ایمیل می‌زنیم."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "الان فعال"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "بخشی از هیچ اپ تحویلی نیست"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "PickupRadar مستقل است. بخشی از Uber Eats، Deliveroo، Just Eat یا هیچ اپ تحویل دیگری نیست. هرگز از حساب شما در آنجا استفاده نمی‌کند."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "سیاست حریم خصوصی را بخوانید"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "بدون ورود به اپ تحویل."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} هرگز نام کاربری یا رمز عبور Uber Eats، Deliveroo یا Just Eat را نمی‌خواهیم."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "بدون جزئیات مشتری یا سفارش."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} بدون نام، نشانی یا شماره سفارش."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "می‌توانید اپ تحویل را رد کنید."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} انتخاب اپ تحویل اختیاری است."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "کنترل با شماست."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} هر وقت خواستید حساب یا پروفایل Radar را در اپ حذف کنید."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "پرسش‌های رانندگان"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "آیا به حساب نیاز دارم؟"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "نه. اپ به‌طور خودکار یک پروفایل Radar به شما می‌دهد. می‌توانید فوراً زمان انتظار را گزارش کنید. برای محافظت از {radarPoints}، بعداً ایمیل اضافه کنید. بدون رمز عبور. اپ یک کد 6 رقمی با ایمیل می‌فرستد."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "PickupRadar کجا کار می‌کند؟"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "PickupRadar الان در Milton Keynes کار می‌کند. بعدی London است. بعد شهرهای بیشتر، مثل Manchester، Birmingham، Leeds، Liverpool و Glasgow. {cities} را ببینید."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "همه شهرها"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "کی می‌توانم اپ را دانلود کنم؟"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "اپ‌های iPhone و Android به‌زودی می‌آیند. تا آن زمان، {preview} نقطه تحویل واقعی و زمان انتظار در Milton Keynes را نشان می‌دهد."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "پیش‌نمایش زنده"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "زمان انتظار فعلی چطور حساب می‌شود؟"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "از گزارش‌های رانندگان در 2 ساعت گذشته می‌آید. گزارش‌های قدیمی‌تر از 2 ساعت زمان انتظار فعلی را تغییر نمی‌دهند."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "{likelyFast} و {likelySlow} یعنی چه؟"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "برآورد هستند، نه گزارش زنده. وقتی گزارش انتظار تازه‌ای نباشد نشان داده می‌شوند."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "آیا مکان من را ردیابی می‌کند؟"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "ردیابی پس‌زمینه نیست. اپ مکان شما را وقتی از آن استفاده می‌کنید به کار می‌برد، تا نقطه تحویل نزدیک را نشان دهد و هنگام گزارش بررسی کند که در نقطه تحویل هستید. سایت فقط وقتی مکان می‌خواهد که خودتان استفاده از آن را انتخاب کنید. برای اطلاعات بیشتر {privacy} را بخوانید."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "سیاست حریم خصوصی"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "چطور داده‌هایم را حذف کنم؟"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "در اپ، {profile} را باز کنید. {deleteAccount} را بزنید. اگر ایمیل اضافه نکرده‌اید، {deleteProfile} را بزنید. می‌توانید به ما ایمیل هم بزنید. گام‌ها را در {page} ببینید."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "نقطه تحویل‌های Milton Keynes را ببینید."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "نقطه تحویل واقعی در Milton Keynes را ببینید. یک جا پیدا کنید و صفحه گزارش را امتحان کنید. چیزی که می‌زنید فرستاده نمی‌شود."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "پیش‌نمایش زنده را باز کنید"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "پیش‌نمایش زنده اپ — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "اپ PickupRadar را با داده واقعی Milton Keynes امتحان کنید. بگردید، نقطه تحویل پیدا کنید و صفحه گزارش را ببینید."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "این PickupRadar با داده واقعی Milton Keynes است. بگردید. یک نقطه تحویل پیدا کنید و بازش کنید. چیزی که اینجا می‌زنید فرستاده نمی‌شود. فقط در اپ گوشی می‌توانید گزارش دهید."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "پیش‌نمایش کامل اپ PickupRadar با داده واقعی Milton Keynes"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "پشتیبانی — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "راهنمای PickupRadar: با پشتیبانی تماس بگیرید، مشکل نقطه تحویل را گزارش کنید، و پاسخ پرسش‌ها درباره پروفایل Radar، {radarPoints} و حذف حساب را پیدا کنید."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "کمک می‌خواهید؟ درباره اپ، نقطه تحویل، {radarPoints} یا حریم خصوصی‌تان ایمیل بزنید."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "تماس"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "تماس با پشتیبانی"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "برای کمک، ایده، مشکل نقطه تحویل یا پرسش حریم خصوصی ایمیل بزنید:"
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "نشانی پستی کسب‌وکار"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "فقط برای نامه. ایمیل سریع‌ترین راه تماس با ماست."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "چه چیزهایی را بنویسید"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "اگر مشکلی را گزارش می‌کنید، به ما بگویید:"
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "نام نقطه تحویل"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "منطقه یا کد پستی، اگر می‌دانید"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "چه چیزی غلط است"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "مدل گوشی‌تان، اگر مشکل از اپ است"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "پرسش‌های رایج"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "پروفایل Radar و ایمیل"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "اپ به‌طور خودکار یک پروفایل Radar به شما می‌دهد. برای استفاده از PickupRadar یا گرفتن {radarPoints} لازم نیست وارد شوید. افزودن ایمیل اختیاری است. اگر گوشی را عوض یا بازنشانی کنید، {radarPoints} را حفظ می‌کند. بدون رمز عبور. اپ یک کد 6 رقمی با ایمیل می‌فرستد."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} و دعوت‌ها"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "برای گزارش انتظار معتبر {radarPoints} می‌گیرید ({waitRp}، یا {neededRp} وقتی {reportNeeded} نوشته شده)، پاداش اولین گزارش ({firstRp}) و نقطه تحویلی که تأیید می‌کنیم ({approvedRp}). می‌توانید از {profile} راننده دعوت کنید. هر دو به حساب Radar محافظت‌شده نیاز دارید (ایمیل اضافه کنید). دوستتان کد شما را پیش از اولین گزارش انتظار معتبر وارد می‌کند. وقتی دوستتان 3 گزارش انتظار معتبر ثبت کند، در دست‌کم 2 روز متفاوت (زمان UTC)، در 2 نقطه تحویل متفاوت، هر کدام {referralRp} می‌گیرید. {rewards} هنوز نمی‌توانید {radarPoints} را خرج کنید."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "پیام برای رانندگان"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "{profile} دارای {messages} است: اعلامیه‌ها، هشدارها و پیام‌های شخصی برای شهر یا پروفایل Radar شما. پیام‌های قدیمی یا حذف‌شده ممکن است دیگر نشان داده نشوند."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "حساب خود را حذف کنید"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "حساب را در اپ حذف کنید: {profile} → {deleteAccount}. یا به {email} ایمیل بزنید. اگر ایمیل اضافه نکرده‌اید، اپ {deleteProfile} را نشان می‌دهد. گام‌ها را در صفحه {page} ببینید."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "نقطه تحویل نیست؟ در اپ {suggest} را بزنید. چیزی غلط است؟ {reportProblem} را بزنید. یا ایمیل بزنید تا بررسی کنیم."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "حساب اپ تحویل شما"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "PickupRadar به حساب Uber Eats، Deliveroo، Just Eat یا هیچ اپ تحویل دیگری وصل نیست. هرگز ورود، رمز عبور، جزئیات حساب، جزئیات مشتری یا جزئیات سفارش را نمی‌خواهیم. رانندگان فقط گزارش تحویل را به اشتراک می‌گذارند، مثل زمان انتظار و مشکل نقطه تحویل."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "پیش از انتشار اپ، PickupRadar را امتحان کنید."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "پیش‌نمایش زنده نقطه تحویل واقعی و زمان انتظار در Milton Keynes را نشان می‌دهد. گزارش و {radarPoints} فقط در اپ گوشی هستند."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "صفحه پیدا نشد — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "آن صفحه در سایت PickupRadar نیست."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "این صفحه خارج از رادار است."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "آن نشانی در سایت PickupRadar نیست. این صفحه‌ها هستند:"
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "خانه"
+    }
+  }
+}

@@ -1,0 +1,602 @@
+{
+  "language": "wo",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "Tàbbal ci mbir mi"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "Kër PickupRadar"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "Dalu dal"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "Sutura"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "Xool bu bees"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "Aplikasyon"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "Ndimbal"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "Yoon"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "Xam waxtu xaar bi bala nga dugg."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar. Moom boppam la, te amul lëkkaleek Uber Eats, Deliveroo walla Just Eat."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "Tolluwaayu waxtu xaar"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "Gaaw"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "Xaar bu gàtt"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "Xaar bu gudd"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "Xaar bu gudd lool"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "Amul yëgle bu bees? PickupRadar mën na wone {likelyFast} walla {likelySlow}:"
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar): waxtu xaar bu jël ngir livrër yi ci Royaume-Uni"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "Xool livrër yi ñu ngi xaar lu ëpp ci restorã ak bitig yi bala nga dugg. Ngir livrër yi Uber Eats, Deliveroo ak Just Eat ci Royaume-Uni. Amul bindu."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar. Xam waxtu xaar bi bala nga dugg."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "Yaa ngi yónnee ngir Uber Eats, Deliveroo walla Just Eat? Xool waxtu xaar bu bees ci bérébu jël bu restorã ak bitig. Moytu xaar bu gudd. Bës {reportWait} te am {radarPoints}. Amul bindu."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "Jéem ci xibaar yu dëgg"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "Am-am"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "Léegi ci Milton Keynes. Bi ci topp London."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "Aplikasyon iPhone ak Android dinañu ñëw léegi."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "Misaal bu ekran kër PickupRadar, tabil {nearby} ubbi na. Bérébu jël yi am nañu melo ci waxtu xaar"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "Ekran misaal: waxtu xaar misaal la, du yëgle bu bees bu livrër"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "Waxtu xaar misaal"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "Misaal bu natt"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "1 yëgle · 4 simili ci ginnaaw"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "Ekran misaal. Waxtu xaar misaal la, du yëgle bu bees. {live} ci xibaar yu dëgg."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "Jéem xool bu bees"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "Xool loo mën a xaar."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "Livrër yi yégle nañu ñu xaar lu ëpp. Waxtu xaar bi léegi jóge na ci yëgle yi ci 2 waxtu yu mujj. Gaaw nga gis béréb yu gaaw ak yu yeex."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "Xool bu bees bu aplikasyon PickupRadar ci xibaar yu dëgg yu Milton Keynes"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "Jéem PickupRadar ci xibaar yu dëgg yu Milton Keynes."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "Xool bérébu jël yu dëgg ci Milton Keynes. Xool waxtu xaar bu bees, walla {likelyFast} ak {likelySlow}. Mën nga jéem ekran yëgle, waaye dara du yonnee."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "Tànnal ab tabil."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} Jëfandikool {nearby} ngir gis bérébu jël yu jege na la bu bërëb ubbee. Jëfandikool {fast} ak {slow} ngir xool waxtu xaar ak natt."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "Seetal ab bérébu jël."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} Jéem tur, gox walla koodu post, ni KFC walla Bletchley."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "Ubbil ab bérébu jël."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} Ekran {reportWait} ubbi. Tànnal waxtu xaar. Dara du yonnee."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "Ubbil xool bu mag"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "Loo gis bala nga dugg"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "Gis nga ni melokaan yi ci aplikasyon bi. Livrër yi yégle leen, du aplikasyon yónnee."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "Livrër yi tànnal nañu waxtu xaar. Gis nga waxtu xaar bi léegi ak ñaata livrër yégle ko ci 2 waxtu yu mujj."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} ak {likelySlow}"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "Wonees na ko rekk su amul yëgle bu bees. Natt la, du yëgle bu bees."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "Yëgle nañu ko ubbi léegi"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} walla {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "Livrër yi bës {reportProblem} ngir yégle lii. Gis nga yëgle bi bala nga dem fa."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "Xool bu livrër yi yéglee tablette walla sistem restorã bi doxul."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "Ndën bi tàmbali bu nga àggee"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "Yenn béréb yi tàmbali ndën bi rekk bu nga àggee. Livrër yi mën nañu ko ubbi bu ñuy yégle."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "Bérébu jël bu ñàkk walla bu juum"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "Bérébu jël bi amul? Bës {suggest}. Am na lu juum? Bës {reportProblem}, te {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} walla {closedPermanently}."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "Ñatti jàpp yu yomb. Yëgle bi jël na ay simili rekk."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "Ubbil aplikasyon bi"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "Amul baat. Aplikasyon bi jox la profil Radar ci boppam. Waruloo bindu."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "Xool bala nga dugg"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "Seetal bérébu jël bi. Xool waxtu xaar bi léegi, walla {likelyFast} walla {likelySlow} su amul yëgle bu bees."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "Yégle sa waxtu xaar"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "Bu nga jëlee ndën bi, bës {reportWait}. Ay simili rekk. Sa yëgle dimbali na livrër yi, te am nga {radarPoints}."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "Am {radarPoints}"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Bës {reportWait} ngir am {radarPoints}. Mën nga tàmbali ci kenn kont. Aaral {radarPoints} ci imeel ngir mu wóor su nga soppee walla delloo telefon bi. Amul baat. Aplikasyon bi yónnee na kóodu 6 lim ci imeel."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "Yool yi dinañu ñëw."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} Mënoo jëfandikoo {radarPoints} léegi."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "Nan nga am {radarPoints}"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "Bérébu jël bu jekk bu la jege, amul waxtu xaar bu bees, te amul {likelyFast} walla {likelySlow}. Am nga 15 RP ci yëgle boobu, du 10."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "Poi yu yokk ci yëgle bu jëkk bu baax bu waxtu xaar. Su doon itam {reportNeeded}, am nga 25 RP ci lépp."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "Bu nu nangu bérébu jël bi nga digale"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "Yéen ñaar am leen ko bu sa xarit defee 3 yëgle yu baax yu waxtu xaar, ci lu néew 2 fan yu wuute (waxtu UTC), ci 2 bérébu jël yu wuute. Yéen ñaar soxla ngeen kontu Radar bu ñu aar (yokk imeel). Sa xarit war na dugal sa kóod bala yëgle bu jëkk bu baax bu waxtu xaar."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "{referralRp} ku nekk"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "Dëkk yu Royaume-Uni yi ci aplikasyon bi ñoo. Gisuloo sa dëkk? Laaj ko ci aplikasyon bi. Walla bës {notify} ci dëkk bu {comingSoon}. Danuy yónnee imeel bu mu beesee."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "Bees na léegi"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "Du benn aplikasyon yónnee"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "PickupRadar moom boppam la. Du benn ci Uber Eats, Deliveroo, Just Eat walla beneen aplikasyon yónnee. Jëfandikoowul sa kont fa."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "Jàng politig sutura"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "Amul dugg ci aplikasyon yónnee."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} Laajunu tur walla baat Uber Eats, Deliveroo walla Just Eat."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "Amul xibaar kiliyaan walla ndën."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} Amul tur, adres walla nimero ndën."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "Mën nga jàll aplikasyon yónnee."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} Tànnal aplikasyon yónnee du lu war."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "Yaw yaa ko yor."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} Faral kont walla profil Radar ci aplikasyon bi saa yu la neexee."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "Laaj yu livrër yi"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "Ndax soxla naa kont?"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "Déet. Aplikasyon bi jox la profil Radar ci boppam. Mën nga yégle waxtu xaar ci saa si. Ngir aar {radarPoints}, yokk imeel ci ginnaaw. Amul baat. Aplikasyon bi yónnee na kóodu 6 lim ci imeel."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "PickupRadar fan la dox?"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "PickupRadar dox na léegi ci Milton Keynes. Bi ci topp London. Te dëkk yu bari, ni Manchester, Birmingham, Leeds, Liverpool ak Glasgow. Xool {cities}."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "dëkk yépp"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "Kaň laa mën a yeb aplikasyon bi?"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "Aplikasyon iPhone ak Android dinañu ñëw léegi. Léegi, {preview} wone na bérébu jël yu dëgg ak waxtu xaar ci Milton Keynes."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "xool bu bees"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "Naka lañu natt waxtu xaar bi léegi?"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "Jóge na ci yëgle yu livrër yi ci 2 waxtu yu mujj. Yëgle yu gëna mag 2 waxtu soppiwuñu waxtu xaar bi léegi."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "{likelyFast} ak {likelySlow} lan la tekki?"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "Natt lañu, du yëgle yu bees. Feeñ nañu su amul yëgle bu bees bu waxtu xaar."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "Ndax dafay topp sama bërëb?"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "Amul topp ci ginnaaw. Aplikasyon bi jëfandikoo sa bërëb bu nga koy jëfandikoo, ngir wone bérébu jël yu jege na la te seet ne yaa ngi ci bérébu jël bi bu ngay yégle. Dalu dal bi laaj bërëb rekk bu nga tànnee jëfandikoo ko. Jàng {privacy} ngir gëna xam."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "politig sutura"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "Naka laa far sama xibaar?"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "Ci aplikasyon bi, ubbil {profile}. Bës {deleteAccount}. Su yokkul imeel, bës {deleteProfile}. Mën nga itam yónnee imeel. Xool {page} ngir jàpp yi."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "Xool bérébu jël yi ci Milton Keynes."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "Xool bérébu jël yu dëgg ci Milton Keynes. Seetal benn béréb te jéem ekran yëgle. Lu nga bës du yonnee."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "Ubbil xool bu bees"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "Xool bu bees bu aplikasyon — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "Jéem aplikasyon PickupRadar ci xibaar yu dëgg yu Milton Keynes. Xool ci wet, seetal bérébu jël te xool ekran yëgle."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "Lii PickupRadar la ci xibaar yu dëgg yu Milton Keynes. Xool ci wet. Seetal bérébu jël te ubbi ko. Lu nga bës fii du yonnee. Mën nga yégle rekk ci aplikasyon telefon."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "Xool bu bees bu mat bu aplikasyon PickupRadar ci xibaar yu dëgg yu Milton Keynes"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "Ndimbal — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "Ndimbal PickupRadar: jokkoo ak ndimbal, yégle jafe-jafe bérébu jël, te gis tontu ci profil Radar, {radarPoints} ak far kont."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "Soxla nga ndimbal? Yónnee imeel ci aplikasyon bi, bérébu jël, {radarPoints} walla sa sutura."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "Jokkoo"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "Jokkoo ak ndimbal"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "Yónnee imeel ngir ndimbal, xalaat, jafe-jafe bérébu jël walla laaj sutura:"
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "Adres postu liggéey"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "Ngir bataaxal rekk. Imeel moo gëna gaaw ngir jokkoo ak nun."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "Lan nga wara boole"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "Su ngay yégle jafe-jafe, wax nu:"
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "Tur bérébu jël"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "Gox walla koodu post, su nga ko xam"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "Lan moo juum"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "Melokaan telefon, su jafe-jafe bi nekkee ci aplikasyon bi"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "Laaj yu bari"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "Profil Radar ak imeel"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Aplikasyon bi jox la profil Radar ci boppam. Waruloo dugg ngir jëfandikoo PickupRadar walla am {radarPoints}. Yokk imeel du lu war. Mu aar {radarPoints} su nga soppee walla delloo telefon bi. Amul baat. Aplikasyon bi yónnee na kóodu 6 lim ci imeel."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} ak woo"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "Am nga {radarPoints} ci yëgle bu baax bu waxtu xaar ({waitRp}, walla {neededRp} bu ñu bind {reportNeeded}), yool yëgle bu jëkk ({firstRp}) ak bérébu jël bu nu nangu ({approvedRp}). Mën nga woo livrër ci {profile}. Yéen ñaar soxla ngeen kontu Radar bu ñu aar (yokk imeel). Sa xarit dugal sa kóod bala yëgle bu jëkk bu baax bu waxtu xaar. Bu sa xarit defee 3 yëgle yu baax yu waxtu xaar, ci lu néew 2 fan yu wuute (waxtu UTC), ci 2 bérébu jël yu wuute, ku nekk am {referralRp}. {rewards} Mënoo jëfandikoo {radarPoints} léegi."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "Bataaxal ngir livrër yi"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "{profile} am na {messages}: yëgle, artu ak bataaxal bu bopp ngir sa dëkk walla sa profil Radar. Bataaxal yu mag walla yu ñu dindi mën nañu bañ feeñaat."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "Far sa kont"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "Far kont bi ci aplikasyon bi: {profile} → {deleteAccount}. Walla yónnee imeel ci {email}. Su yokkul imeel, aplikasyon bi wone {deleteProfile}. Xool xët {page} ngir jàpp yi."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "Bérébu jël bi amul? Bës {suggest} ci aplikasyon bi. Am na lu juum? Bës {reportProblem}. Walla yónnee imeel, danuy xool."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "Sa kont aplikasyon yónnee"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "PickupRadar lëkkaleewul ak sa kont Uber Eats, Deliveroo, Just Eat walla beneen aplikasyon yónnee. Laajunu dugg, baat, xibaar kont, xibaar kiliyaan walla xibaar ndën. Livrër yi séddoo yëgle jël rekk, ni waxtu xaar ak jafe-jafe bérébu jël."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "Jéem PickupRadar bala aplikasyon bi génn."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "Xool bu bees wone na bérébu jël yu dëgg ak waxtu xaar ci Milton Keynes. Yëgle ak {radarPoints} ci aplikasyon telefon rekk lañu nekk."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "Xët bi amul — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "Xët boobu nekkul ci dalu dal PickupRadar."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "Xët bii ci biti radar la."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "Adres boobu nekkul ci dalu dal PickupRadar. Xët yii am nañu:"
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "Kër"
+    }
+  }
+}

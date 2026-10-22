@@ -1,0 +1,602 @@
+{
+  "language": "ln",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "Kende na makambo"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "Ndako ya PickupRadar"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "Site"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "Bokundoli"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "Botali ya sikawa"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "Appli"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "Lisalisi"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "Mibeko"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "Yeba ntango ya kozela liboso oyingela."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar. Ezali na bomoko, mpe ezali na boyokani te na Uber Eats, Deliveroo to Just Eat."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "Monzoto ya ntango ya kozela"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "Noki"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "Kozela ya mokuse"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "Kozela ya molai"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "Kozela ya molai mingi"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "Lapolo ya sika ezali te? PickupRadar ekoki kolakisa {likelyFast} to {likelySlow}:"
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar): ntango ya kozela ya kozwa mpo na ba chauffeur na Royaume-Uni"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "Tala chauffeur bazelaka ntango boni na ba restora mpe ba magazini liboso oyingela. Mpo na ba chauffeur ya Uber Eats, Deliveroo mpe Just Eat na Royaume-Uni. Kokomisa nkombo ezali te."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar. Yeba ntango ya kozela liboso oyingela."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "Ozali kopesa biloko mpo na Uber Eats, Deliveroo to Just Eat? Tala ntango ya kozela ya sika na bisika ya kozwa ya ba restora mpe ba magazini. Pema kozela ya molai. Finá {reportWait} mpe zwa {radarPoints}. Kokomisa nkombo ezali te."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "Meka na makambo ya solo"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "Kozala"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "Sikoyo na Milton Keynes. Oyo elandi London."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "Ba appli ya iPhone mpe Android ekoya noki."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "Ndakisa ya ekran ya ndako ya PickupRadar, onglet {nearby} efungwami. Bisika ya kozwa ezali na langi kolanda ntango ya kozela"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "Ekran ya ndakisa: ntango ya kozela ya ndakisa, ezali lapolo ya sikawa ya chauffeur te"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "Ntango ya kozela ya ndakisa"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "Kaniseli ya ndakisa"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "lapolo 1 · miniti 4 eleki"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "Ekran ya ndakisa. Oyo ezali ntango ya kozela ya ndakisa, ezali lapolo ya sikawa te. {live} na makambo ya solo."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "Meka botali ya sikawa"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "Tala ntango boni okoki kozela."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "Ba chauffeur bayebisaka ntango boni bazelaki. Ntango ya kozela ya sikoyo ewuti na balapolo ya ngonga 2 eleki. Omoni noki bisika ya kozwa ya noki mpe ya mokeke."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "Botali ya sikawa ya appli PickupRadar na makambo ya solo ya Milton Keynes"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "Meka PickupRadar na makambo ya solo ya Milton Keynes."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "Tala bisika ya kozwa ya solo na Milton Keynes. Tala ntango ya kozela ya sika, to {likelyFast} mpe {likelySlow}. Okoki komeka ekran ya lapolo, kasi eloko moko te ekotindama."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "Pona onglet."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} Salela {nearby} mpo na koluka bisika ya kozwa pene na yo soki esika efungwami. Salela {fast} mpe {slow} mpo na kotala ntango ya kozela mpe makanisi."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "Luka esika ya kozwa."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} Meka nkombo, etuka to kode ya poste, lokola KFC to Bletchley."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "Fungola esika ya kozwa."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} Ekran {reportWait} ekofungwama. Pona ntango ya kozela. Eloko moko te ekotindama."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "Fungola botali monene"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "Oyo omoni liboso oyingela"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "Omoni bilembo ndenge moko na appli. Ba chauffeur nde bayebisaka yango, ezali appli ya kopesa te."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "Ba chauffeur baponaka ntango ya kozela. Omoni ntango ya kozela ya sikoyo mpe chauffeur boni bayebisi yango na ngonga 2 eleki."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} mpe {likelySlow}"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "Emonisami kaka soki lapolo ya sika ezali te. Eza kaniseli, ezali lapolo ya sikawa te."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "Bayebisi sikawa ete ekangami"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} to {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "Ba chauffeur bafinaka {reportProblem} mpo na koyebisa oyo. Omoni lapolo liboso okende kuna."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "Tala soki ba chauffeur bayebisi ete tablette to système ya restora ezali kosala te."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "Komande ebandi sima oyaki"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "Bisika mosusu ebandisaka komande kaka sima oyaki. Ba chauffeur bakoki kofungola yango ntango bazali koyebisa."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "Esika ya kozwa oyo ebungi to ezali mabe"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "Esika ya kozwa ezali te? Finá {suggest}. Eloko ezali mabe? Finá {reportProblem}, sima {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} to {closedPermanently}."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "Mitambo misato ya pete. Koyebisa ezwi kaka mwa segonde."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "Fungola appli"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "Mot de passe ezali te. Appli epesi yo profil Radar yango moko. Osengeli kokomisa nkombo te."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "Tala liboso oyingela"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "Luka esika ya kozwa. Tala ntango ya kozela ya sikoyo, to {likelyFast} to {likelySlow} soki lapolo ya sika ezali te."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "Yebisa ntango na yo ya kozela"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "Sima ozwi komande, finá {reportWait}. Ezwi mwa segonde. Lapolo na yo esalisaka ba chauffeur mosusu, mpe ozwi {radarPoints}."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "Zwa {radarPoints}"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Finá {reportWait} mpo na kozwa {radarPoints}. Okoki kobanda kozanga kɔnti. Batela {radarPoints} na imel mpo ezala na libateli soki obongoli to ozongisi telefone. Mot de passe ezali te. Appli etindi kode ya 6 chiffre na imel."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "Mbano ekoya."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} Okoki kosalela {radarPoints} naino te."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "Ndenge ya kozwa {radarPoints}"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "Esika ya kozwa oyo ebongi pene na yo, kozanga ntango ya kozela ya sika, mpe kozanga {likelyFast} to {likelySlow}. Ozwí 15 RP mpo na lapolo wana, ezali 10 te."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "Point ya kobakisa na lapolo ya liboso ya kozela oyo endimami. Soki ezali mpe {reportNeeded}, ozwí 25 RP nyonso."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "Ntango tondimi esika ya kozwa oyo opesaki makanisi"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "Bino mibale bozwí yango ntango moninga na yo asalisi balapolo 3 ya kozela oyo endimami, na mikolo ata 2 ekeseni (ngonga UTC), na bisika 2 ekeseni ya kozwa. Bino mibale bosengeli kozala na kɔnti Radar oyo ebatelami (bakisa imel). Moninga na yo asengeli kokotisa kode na yo liboso ya lapolo ya liboso ya kozela oyo endimami."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "{referralRp} moko na moko"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "Oyo ezali bingumba ya Royaume-Uni na appli. Omoni engumba na yo te? Senga yango na appli. To finá {notify} na engumba oyo ezali {comingSoon}. Totindeli imel ntango ekokoma ya sikawa."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "Ya sikawa sikoyo"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "Ezali eteni ya appli moko te ya kopesa"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "PickupRadar ezali na bomoko. Ezali eteni te ya Uber Eats, Deliveroo, Just Eat to appli mosusu ya kopesa. Esalelaka kɔnti na yo kuna te."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "Tanga mibeko ya bokundoli"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "Kokota na appli ya kopesa ezali te."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} Tosengaka nkombo to mot de passe ya Uber Eats, Deliveroo to Just Eat te."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "Makambo ya client to ya komande ezali te."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} Nkombo, adresse to nimero ya komande ezali te."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "Okoki koleka appli ya kopesa."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} Kopona appli ya kopesa ezali na bolingi."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "Yo nde ozali na bokonzi."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} Longola kɔnti to profil Radar na appli na ntango nyonso."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "Mituna ya ba chauffeur"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "Nasengeli kozala na kɔnti?"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "Te. Appli epesi yo profil Radar yango moko. Okoki koyebisa ntango ya kozela sikoyo. Mpo na kobatela {radarPoints}, bakisa imel nsima. Mot de passe ezali te. Appli etindi kode ya 6 chiffre na imel."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "PickupRadar esalaka wapi?"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "PickupRadar esalaka sikoyo na Milton Keynes. Oyo elandi ezali London. Sima bingumba mosusu, lokola Manchester, Birmingham, Leeds, Liverpool mpe Glasgow. Tala {cities}."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "bingumba nyonso"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "Ntango nini nakoki kozwa appli?"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "Ba appli ya iPhone mpe Android ekoya noki. Mpo na sikoyo, {preview} elakisi bisika ya kozwa ya solo mpe ntango ya kozela na Milton Keynes."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "botali ya sikawa"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "Ntango ya kozela ya sikoyo etangami ndenge nini?"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "Ewuti na balapolo ya ba chauffeur na ngonga 2 eleki. Balapolo oyo eleki ngonga 2 ebongolaka ntango ya kozela ya sikoyo te."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "{likelyFast} mpe {likelySlow} elingi koloba nini?"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "Eza makanisi, ezali balapolo ya sikawa te. Emonani soki lapolo ya sika ya kozela ezali te."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "Ezali kolanda esika na ngai?"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "Kolanda na sima ezali te. Appli esalelaka esika na yo ntango ozali kosalela yango, mpo na kolakisa bisika ya kozwa pene na yo mpe kotala ete ozali na esika ya kozwa ntango ozali koyebisa. Site esengaka esika kaka soki oponi kosalela yango. Tanga {privacy} mpo na koyeba mingi."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "mibeko ya bokundoli"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "Nalongoli makambo na ngai ndenge nini?"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "Na appli, fungola {profile}. Finá {deleteAccount}. Soki obakisaki imel te, finá {deleteProfile}. Okoki mpe kotindela biso imel. Tala {page} mpo na mitambo."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "Talela bisika ya kozwa ya Milton Keynes."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "Talela bisika ya kozwa ya solo na Milton Keynes. Luka esika mpe meka ekran ya lapolo. Eloko oyo ofini ekotindama te."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "Fungola botali ya sikawa"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "Botali ya sikawa ya appli — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "Meka appli PickupRadar na makambo ya solo ya Milton Keynes. Tala zingazinga, luka esika ya kozwa mpe tala ekran ya lapolo."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "Oyo ezali PickupRadar na makambo ya solo ya Milton Keynes. Tala zingazinga. Luka esika ya kozwa mpe fungola yango. Eloko oyo ofini awa ekotindama te. Okoki koyebisa kaka na appli ya telefone."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "Botali mobimba ya appli PickupRadar na makambo ya solo ya Milton Keynes"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "Lisungi — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "Lisalisi ya PickupRadar: benga lisungi, yebisa likambo ya esika ya kozwa, mpe luka biyano na ntina na profil Radar, {radarPoints} mpe kolongola kɔnti."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "Osengeli lisalisi? Tindela biso imel mpo na appli, esika ya kozwa, {radarPoints} to bokundoli na yo."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "Benga"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "Benga lisungi"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "Tinda imel mpo na lisalisi, makanisi, likambo ya esika ya kozwa to mituna ya bokundoli:"
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "Adresse ya nkanda ya mombongo"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "Mpo na nkanda kaka. Imel nde nzela ya noki mpo na kobenga biso."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "Nini okoki kobakisa"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "Soki ozali koyebisa likambo, yebisa biso:"
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "Nkombo ya esika ya kozwa"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "Etuka to kode ya poste, soki oyebi"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "Nini ezali mabe"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "Modèle ya telefone na yo, soki likambo ezali na appli"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "Mituna oyo batunaka mingi"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "Profil Radar mpe imel"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Appli epesi yo profil Radar yango moko. Osengeli kokota te mpo na kosalela PickupRadar to kozwa {radarPoints}. Kobakisa imel ezali na bolingi. Ebatelaka {radarPoints} soki obongoli to ozongisi telefone. Mot de passe ezali te. Appli etindi kode ya 6 chiffre na imel."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} mpe biyambi"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "Ozwí {radarPoints} mpo na lapolo ya kozela oyo endimami ({waitRp}, to {neededRp} soki bakomi {reportNeeded}), libonza ya lapolo ya liboso ({firstRp}) mpe esika ya kozwa oyo tondimi ({approvedRp}). Okoki koyamba chauffeur uta na {profile}. Bino mibale bosengeli kozala na kɔnti Radar oyo ebatelami (bakisa imel). Moninga na yo akotisaka kode na yo liboso ya lapolo ya liboso ya kozela oyo endimami. Ntango moninga na yo asalisi balapolo 3 ya kozela oyo endimami, na mikolo ata 2 ekeseni (ngonga UTC), na bisika 2 ekeseni ya kozwa, moko na moko azwi {referralRp}. {rewards} Okoki kosalela {radarPoints} naino te."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "Nsango mpo na ba chauffeur"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "{profile} ezali na {messages}: biyebisi, bokebisi mpe nsango ya moto moko mpo na engumba to profil Radar na yo. Nsango ya kala to oyo balongoli ekoki komonana lisusu te."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "Longola kɔnti na yo"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "Longola kɔnti na appli: {profile} → {deleteAccount}. To tindela {email} imel. Soki obakisaki imel te, appli elakisi {deleteProfile}. Tala lokasa {page} mpo na mitambo."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "Esika ya kozwa ezali te? Finá {suggest} na appli. Eloko ezali mabe? Finá {reportProblem}. To tinda imel, toko tala."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "Kɔnti na yo ya appli ya kopesa"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "PickupRadar ekangami te na kɔnti na yo ya Uber Eats, Deliveroo, Just Eat to appli mosusu ya kopesa. Tosengaka kokota, mot de passe, makambo ya kɔnti, makambo ya client to makambo ya komande te. Ba chauffeur bakabolaka kaka balapolo ya kozwa, lokola ntango ya kozela mpe likambo ya esika ya kozwa."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "Meka PickupRadar liboso appli ebima."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "Botali ya sikawa elakisi bisika ya kozwa ya solo mpe ntango ya kozela na Milton Keynes. Koyebisa mpe {radarPoints} ezali kaka na appli ya telefone."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "Lokasa emonanaki te — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "Lokasa wana ezali te na site ya PickupRadar."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "Lokasa oyo ezali libanda ya radar."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "Adresse wana ezali te na site ya PickupRadar. Lokasa oyo ezali:"
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "Ndako"
+    }
+  }
+}

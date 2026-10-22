@@ -1,0 +1,602 @@
+{
+  "language": "lt",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "Pereiti prie turinio"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "PickupRadar pradžia"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "Svetainė"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "Privatumas"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "Tiesioginė peržiūra"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "Programėlė"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "Pagalba"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "Teisinė informacija"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "Sužinok laukimą prieš įeidamas."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar. Nepriklausoma ir nesusijusi su Uber Eats, Deliveroo ar Just Eat."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "Laukimo intervalai"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "Greita"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "Trumpas laukimas"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "Ilgas laukimas"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "Labai ilgas laukimas"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "Nėra naujų pranešimų? PickupRadar gali rodyti {likelyFast} arba {likelySlow}:"
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar): laukimo laikas atsiimant užsakymus kurjeriams Jungtinėje Karalystėje"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "Pažiūrėk, kiek kurjeriai laukia restoranuose ir parduotuvėse, prieš įeidamas. Uber Eats, Deliveroo ir Just Eat kurjeriams Jungtinėje Karalystėje. Registruotis nereikia."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar. Sužinok laukimą prieš įeidamas."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "Veži Uber Eats, Deliveroo ar Just Eat? Matyk naują laukimą atsiėmimo vietose restoranuose ir parduotuvėse. Venk ilgo laukimo. Bakstelėk {reportWait} ir gauk {radarPoints}. Registruotis nereikia."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "Išbandyk su tikrais duomenimis"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "Prieinamumas"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "Dabar Milton Keynes. Toliau London."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "iPhone ir Android programėlės netrukus pasirodys."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "PickupRadar pradžios ekrano pavyzdys su atidarytu skirtuku {nearby}. Atsiėmimo vietos nuspalvintos pagal laukimą"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "Pavyzdinis ekranas: pavyzdinis laukimas, ne tikri kurjerių pranešimai"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "Pavyzdinis laukimas"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "Pavyzdinis įvertinimas"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "1 pranešimas · prieš 4 min"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "Pavyzdinis ekranas. Tai pavyzdinis laukimo laikas, ne tiesioginiai pranešimai. {live} su tikrais duomenimis."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "Išbandyk tiesioginę peržiūrą"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "Pažiūrėk, kiek gali tekti laukti."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "Kurjeriai praneša, kiek laukė. Dabartinis laukimas imamas iš pranešimų per pastarąsias 2 valandas. Greitai matai greitas ir lėtas atsiėmimo vietas."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "PickupRadar programėlės tiesioginė peržiūra su tikrais Milton Keynes duomenimis"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "Išbandyk PickupRadar su tikrais Milton Keynes duomenimis."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "Matyk tikras atsiėmimo vietas Milton Keynes. Patikrink naują laukimą arba {likelyFast} ir {likelySlow}. Gali išbandyti pranešimo ekraną, bet niekas nesiunčiama."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "Pasirink skirtuką."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} Naudok {nearby}, kad rastum netoliese esančias atsiėmimo vietas, kai vieta įjungta. Naudok {fast} ir {slow}, kad patikrintum laukimą ir įvertinimus."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "Ieškoti atsiėmimo vietų."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} Pabandyk pavadinimą, rajoną ar pašto kodą, pavyzdžiui KFC arba Bletchley."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "Atidaryk atsiėmimo vietą."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} Atsidaro ekranas {reportWait}. Pasirink laukimo laiką. Nieko nesiunčiama."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "Atidaryti didelę peržiūrą"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "Ką matai prieš įeidamas"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "Programėlėje matai tas pačias žymas. Jas praneša kurjeriai, ne pristatymo programėlės."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "Kurjeriai pasirenka laukimo laiką. Matai dabartinį laukimą ir kiek kurjerių jį pranešė per pastarąsias 2 valandas."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} ir {likelySlow}"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "Rodoma tik kai nėra naujų pranešimų. Tai įvertinimai, ne tiesioginiai pranešimai."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "Neseniai pranešta, kad uždaryta"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} arba {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "Kurjeriai baksteli {reportProblem}, kad tai praneštų. Pranešimą matai prieš važiuodamas ten."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "Matyk, kai kurjeriai praneša, kad restorano planšetė ar sistema neveikia."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "Užsakymas pradedamas atvykus"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "Kai kurios vietos užsakymą pradeda tik tau atvykus. Kurjeriai gali tai įjungti pranešdami."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "Trūkstamos ar neteisingos atsiėmimo vietos"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "Trūksta atsiėmimo vietos? Bakstelėk {suggest}. Kažkas ne taip? Bakstelėk {reportProblem}, tada {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} arba {closedPermanently}."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "Trys paprasti žingsniai. Pranešti užtrunka kelias sekundes."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "Atidaryk programėlę"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "Be slaptažodžio. Programėlė automatiškai sukuria Radar profilį. Registruotis nereikia."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "Patikrink prieš įeidamas"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "Rask atsiėmimo vietą. Matyk dabartinį laukimą arba {likelyFast} ar {likelySlow}, jei naujų pranešimų nėra."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "Pranešk savo laukimą"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "Paėmęs užsakymą bakstelėk {reportWait}. Tai trunka sekundes. Tavo pranešimas padeda kitiems kurjeriams, o tu gauni {radarPoints}."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "Gauk {radarPoints}"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Bakstelėk {reportWait}, kad gautum {radarPoints}. Gali pradėti be paskyros. Apsaugok {radarPoints} el. paštu, kad jie išliktų, jei pakeisi ar atkursi telefoną. Slaptažodžio nereikia. Programėlė atsiųs 6 skaitmenų kodą el. paštu."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "Apdovanojimai netrukus."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} {radarPoints} dar negali iškeisti."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "Kaip gauti {radarPoints}"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "Tinkama atsiėmimo vieta netoli tavęs, be neseniai buvusio laukimo ir be {likelyFast} ar {likelySlow}. Už pranešimą gauni 15 RP vietoj 10."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "Papildomi taškai už pirmą galiojantį laukimo pranešimą. Jei jis taip pat yra {reportNeeded}, iš viso gauni 25 RP."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "Kai patvirtiname tavo pasiūlytą atsiėmimo vietą"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "Abu gaunate, kai draugas padaro 3 galiojančius laukimo pranešimus bent per 2 skirtingas dienas (UTC laikas) 2 skirtingose atsiėmimo vietose. Abiem reikia apsaugotų Radar paskyrų (pridėkite el. paštą). Draugas turi įvesti tavo kodą prieš pirmą galiojantį laukimo pranešimą."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "{referralRp} kiekvienam"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "Tai Jungtinės Karalystės miestai programėlėje. Nerandi savo miesto? Paprašyk jo programėlėje. Arba bakstelėk {notify} prie miesto, kuris yra {comingSoon}. Parašysime el. laišką, kai jis veiks."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "Veikia dabar"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "Nepriklauso jokiai pristatymo programėlei"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "PickupRadar yra nepriklausoma. Ji nepriklauso Uber Eats, Deliveroo, Just Eat ar kitai pristatymo programėlei. Ji niekada nenaudoja tavo paskyrų ten."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "Skaityti privatumo politiką"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "Be prisijungimo prie pristatymo programėlių."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} Niekada neprašome Uber Eats, Deliveroo ar Just Eat vartotojo vardo ar slaptažodžio."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "Jokių kliento ar užsakymo duomenų."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} Jokių vardų, adresų ar užsakymo numerių."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "Pristatymo programėlę gali praleisti."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} Pristatymo programėlės pasirinkimas neprivalomas."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "Tu valdai."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} Paskyrą ar Radar profilį programėlėje gali ištrinti bet kada."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "Kurjerių klausimai"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "Ar man reikia paskyros?"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "Ne. Programėlė automatiškai sukuria Radar profilį. Laukymą gali pranešti iš karto. Kad apsaugotum {radarPoints}, el. paštą pridėk vėliau. Slaptažodžio nereikia. Programėlė atsiųs 6 skaitmenų kodą el. paštu."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "Kur veikia PickupRadar?"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "PickupRadar dabar veikia Milton Keynes. Toliau London. Paskui daugiau miestų, pavyzdžiui Manchester, Birmingham, Leeds, Liverpool ir Glasgow. Žiūrėk {cities}."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "visus miestus"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "Kada galėsiu atsisiųsti programėlę?"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "iPhone ir Android programėlės netrukus pasirodys. Kol kas {preview} rodo tikras atsiėmimo vietas ir laukimą Milton Keynes."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "tiesioginė peržiūra"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "Kaip skaičiuojamas dabartinis laukimas?"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "Jis imamas iš kurjerių pranešimų per pastarąsias 2 valandas. Senesni nei 2 valandų pranešimai dabartinio laukimo nekeičia."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "Ką reiškia {likelyFast} ir {likelySlow}?"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "Tai įvertinimai, ne tiesioginiai pranešimai. Jie rodomi, kai nėra naujų laukimo pranešimų."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "Ar ji seka mano vietą?"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "Fone nesekama. Programėlė naudoja tavo vietą, kol ja naudojiesi, kad rodytų netoliese esančias atsiėmimo vietas ir patikrintų, ar pranešdamas esi atsiėmimo vietoje. Svetainė vietos prašo tik jei pasirenki ją naudoti. Daugiau skaityk {privacy}."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "privatumo politiką"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "Kaip ištrinti savo duomenis?"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "Programėlėje atidaryk {profile}. Bakstelėk {deleteAccount}. Jei nepridėjai el. pašto, bakstelėk {deleteProfile}. Gali ir parašyti mums. Žingsnius žiūrėk {page}."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "Apžiūrėk atsiėmimo vietas Milton Keynes."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "Apžiūrėk tikras atsiėmimo vietas Milton Keynes. Ieškok vietos ir išbandyk pranešimo ekraną. Nieko, ką baksteli, nesiunčiama."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "Atidaryti tiesioginę peržiūrą"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "Tiesioginė programėlės peržiūra — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "Išbandyk PickupRadar programėlę su tikrais Milton Keynes duomenimis. Apsižvalgyk, ieškok atsiėmimo vietų ir matyk pranešimo ekraną."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "Tai PickupRadar su tikrais Milton Keynes duomenimis. Apsižvalgyk. Rask atsiėmimo vietą ir ją atidaryk. Nieko, ką baksteli čia, nesiunčiama. Pranešti gali tik telefono programėlėje."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "Visa PickupRadar programėlės peržiūra su tikrais Milton Keynes duomenimis"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "Pagalba — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "Pagalba dėl PickupRadar: susisiek su pagalba, pranešk apie atsiėmimo vietos problemą ir rask atsakymus apie Radar profilį, {radarPoints} ir paskyros trynimą."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "Reikia pagalbos? Parašyk mums apie programėlę, atsiėmimo vietą, savo {radarPoints} ar privatumą."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "Kontaktai"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "Susisiekti su pagalba"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "Rašyk mums dėl pagalbos, idėjų, atsiėmimo vietų problemų ar privatumo klausimų:"
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "Verslo korespondencijos adresas"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "Tik laiškams. El. paštas yra greičiausias būdas mus pasiekti."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "Ką nurodyti"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "Jei praneši apie problemą, parašyk:"
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "Atsiėmimo vietos pavadinimą"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "Rajoną ar pašto kodą, jei žinai"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "Kas nutiko ne taip"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "Telefono modelį, jei problema programėlėje"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "Dažni klausimai"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "Radar profilis ir el. paštas"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Programėlė automatiškai sukuria Radar profilį. Prisijungti nereikia, kad naudotum PickupRadar ar gautum {radarPoints}. El. paštą pridėti neprivaloma. Jis apsaugo {radarPoints}, jei pakeisi ar atkursi telefoną. Slaptažodžio nereikia. Programėlė atsiųs 6 skaitmenų kodą el. paštu."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} ir pakvietimai"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "Gauni {radarPoints} už galiojančius laukimo pranešimus ({waitRp}, arba {neededRp}, kai parašyta {reportNeeded}), premiją už pirmą pranešimą ({firstRp}) ir atsiėmimo vietas, kurias patvirtiname ({approvedRp}). Kurjerį gali pakviesti iš {profile}. Abiem reikia apsaugotų Radar paskyrų (pridėkite el. paštą). Draugas įveda tavo kodą prieš pirmą galiojantį laukimo pranešimą. Kai draugas padaro 3 galiojančius laukimo pranešimus bent per 2 skirtingas dienas (UTC laikas) 2 skirtingose atsiėmimo vietose, kiekvienas gauna {referralRp}. {rewards} {radarPoints} dar negali iškeisti."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "Žinutės kurjeriams"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "{profile} turi {messages}: pranešimus, įspėjimus ir asmenines žinutes tavo miestui ar Radar profiliui. Senos ar pašalintos žinutės gali neberodytis."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "Ištrinti paskyrą"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "Ištrink paskyrą programėlėje: {profile} → {deleteAccount}. Arba rašyk {email}. Jei nepridėjai el. pašto, programėlė rodo {deleteProfile}. Žingsnius žiūrėk puslapyje {page}."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "Trūksta atsiėmimo vietos? Programėlėje bakstelėk {suggest}. Viena neteisinga? Bakstelėk {reportProblem}. Arba parašyk mums, patikrinsime."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "Tavo pristatymo programėlių paskyros"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "PickupRadar nesijungia prie tavo Uber Eats, Deliveroo, Just Eat ar kitų pristatymo programėlių paskyrų. Niekada neprašome prisijungimų, slaptažodžių, paskyros duomenų, kliento duomenų ar užsakymo duomenų. Kurjeriai dalijasi tik atsiėmimo pranešimais, pavyzdžiui laukimo laiku ir atsiėmimo vietų problemomis."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "Išbandyk PickupRadar prieš programėlės paleidimą."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "Tiesioginė peržiūra rodo tikras atsiėmimo vietas ir laukimą Milton Keynes. Pranešimai ir {radarPoints} yra tik telefono programėlėje."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "Puslapis nerastas — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "To puslapio PickupRadar svetainėje nėra."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "Šis puslapis dingo iš radaro."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "To adreso PickupRadar svetainėje nėra. Yra šie puslapiai:"
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "Pradžia"
+    }
+  }
+}

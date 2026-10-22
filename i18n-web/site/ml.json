@@ -1,0 +1,602 @@
+{
+  "language": "ml",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "ഉള്ളടക്കത്തിലേക്ക് പോകുക"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "PickupRadar ഹോം"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "സൈറ്റ്"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "സ്വകാര്യത"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "തത്സമയ പ്രിവ്യൂ"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "ആപ്പ്"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "സഹായം"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "നിയമപരം"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "അകത്ത് കയറുന്നതിന് മുമ്പ് കാത്തിരിപ്പ് സമയം അറിയുക."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar. സ്വതന്ത്രമാണ്. Uber Eats, Deliveroo അല്ലെങ്കിൽ Just Eat എന്നിവയുമായി ബന്ധമില്ല."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "കാത്തിരിപ്പ് പരിധി"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "വേഗം"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "കുറഞ്ഞ കാത്തിരിപ്പ്"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "നീണ്ട കാത്തിരിപ്പ്"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "വളരെ നീണ്ട കാത്തിരിപ്പ്"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "പുതിയ റിപ്പോർട്ട് ഇല്ലേ? PickupRadar {likelyFast} അല്ലെങ്കിൽ {likelySlow} കാണിച്ചേക്കാം:"
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar): യുണൈറ്റഡ് കിംഗ്ഡത്തിലെ ഡ്രൈവർമാർക്കുള്ള പിക്കപ്പ് കാത്തിരിപ്പ്"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "നിങ്ങൾ അകത്ത് കയറുന്നതിന് മുമ്പ് ഡ്രൈവർമാർ റെസ്റ്റോറന്റുകളിലും കടകളിലും എത്ര നേരം കാത്തിരിക്കുന്നു എന്ന് കാണുക. യുണൈറ്റഡ് കിംഗ്ഡത്തിലെ Uber Eats, Deliveroo, Just Eat ഡ്രൈവർമാർക്ക്. സൈൻ അപ്പ് വേണ്ട."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar. അകത്ത് കയറുന്നതിന് മുമ്പ് കാത്തിരിപ്പ് സമയം അറിയുക."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "Uber Eats, Deliveroo അല്ലെങ്കിൽ Just Eat എന്നിവയ്ക്ക് ഡെലിവറി ചെയ്യുന്നുണ്ടോ? റെസ്റ്റോറന്റ്, കട പിക്കപ്പ് പോയിന്റുകളിലെ ഏറ്റവും പുതിയ കാത്തിരിപ്പ് കാണുക. നീണ്ട കാത്തിരിപ്പ് ഒഴിവാക്കുക. {reportWait} ടാപ്പ് ചെയ്ത് {radarPoints} നേടുക. സൈൻ അപ്പ് വേണ്ട."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "യഥാർത്ഥ ഡാറ്റ ഉപയോഗിച്ച് ശ്രമിക്കുക"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "ലഭ്യത"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "ഇപ്പോൾ Milton Keynes-ൽ. അടുത്തത് London."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "iPhone, Android ആപ്പുകൾ ഉടൻ വരും."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "{nearby} ടാബ് തുറന്ന PickupRadar ഹോം സ്ക്രീനിന്റെ ഉദാഹരണം. കാത്തിരിപ്പ് അനുസരിച്ച് പിക്കപ്പ് പോയിന്റുകൾക്ക് നിറമുണ്ട്"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "ഉദാഹരണ സ്ക്രീൻ: ഉദാഹരണ കാത്തിരിപ്പാണ്, ഡ്രൈവർമാരുടെ തത്സമയ റിപ്പോർട്ടല്ല"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "ഉദാഹരണ കാത്തിരിപ്പ്"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "ഉദാഹരണ കണക്കുകൂട്ടൽ"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "1 റിപ്പോർട്ട് · 4 മിനിറ്റ് മുമ്പ്"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "ഉദാഹരണ സ്ക്രീൻ. ഇത് ഉദാഹരണ കാത്തിരിപ്പാണ്, തത്സമയ റിപ്പോർട്ടല്ല. യഥാർത്ഥ ഡാറ്റ ഉപയോഗിച്ച് {live}."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "തത്സമയ പ്രിവ്യൂ ശ്രമിക്കുക"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "നിങ്ങൾ എത്ര നേരം കാത്തിരിക്കേണ്ടി വന്നേക്കാം എന്ന് കാണുക."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "ഡ്രൈവർമാർ എത്ര നേരം കാത്തിരുന്നുവെന്ന് റിപ്പോർട്ട് ചെയ്യുന്നു. നിലവിലെ കാത്തിരിപ്പ് കഴിഞ്ഞ 2 മണിക്കൂറിലെ റിപ്പോർട്ടുകളിൽ നിന്നാണ്. വേഗമുള്ളതും വേഗം കുറഞ്ഞതുമായ പിക്കപ്പ് പോയിന്റുകൾ നിങ്ങൾ പെട്ടെന്ന് കാണുന്നു."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "Milton Keynes യഥാർത്ഥ ഡാറ്റയുള്ള PickupRadar ആപ്പിന്റെ തത്സമയ പ്രിവ്യൂ"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "Milton Keynes യഥാർത്ഥ ഡാറ്റ ഉപയോഗിച്ച് PickupRadar ശ്രമിക്കുക."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "Milton Keynes-ലെ യഥാർത്ഥ പിക്കപ്പ് പോയിന്റുകൾ കാണുക. ഏറ്റവും പുതിയ കാത്തിരിപ്പ് കാണുക, അല്ലെങ്കിൽ {likelyFast} ഉം {likelySlow} ഉം. റിപ്പോർട്ട് സ്ക്രീൻ ശ്രമിക്കാം, പക്ഷേ ഒന്നും അയയ്ക്കില്ല."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "ഒരു ടാബ് തിരഞ്ഞെടുക്കുക."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} ലൊക്കേഷൻ ഓണായിരിക്കുമ്പോൾ അടുത്തുള്ള പിക്കപ്പ് പോയിന്റുകൾ കണ്ടെത്താൻ {nearby} ഉപയോഗിക്കുക. കാത്തിരിപ്പും കണക്കുകൂട്ടലുകളും കാണാൻ {fast} ഉം {slow} ഉം ഉപയോഗിക്കുക."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "ഒരു പിക്കപ്പ് പോയിന്റ് കണ്ടെത്തുക."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} പേര്, പ്രദേശം അല്ലെങ്കിൽ പോസ്റ്റ്‌കോഡ് ശ്രമിക്കുക, ഉദാഹരണം KFC അല്ലെങ്കിൽ Bletchley."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "ഒരു പിക്കപ്പ് പോയിന്റ് തുറക്കുക."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} {reportWait} സ്ക്രീൻ തുറക്കും. ഒരു കാത്തിരിപ്പ് തിരഞ്ഞെടുക്കുക. ഒന്നും അയയ്ക്കില്ല."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "വലിയ പ്രിവ്യൂ തുറക്കുക"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "അകത്ത് കയറുന്നതിന് മുമ്പ് നിങ്ങൾ കാണുന്നത്"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "ആപ്പിലും ഇതേ ലേബലുകൾ കാണാം. അവ റിപ്പോർട്ട് ചെയ്യുന്നത് ഡ്രൈവർമാരാണ്, ഡെലിവറി ആപ്പല്ല."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "ഡ്രൈവർമാർ കാത്തിരിപ്പ് തിരഞ്ഞെടുക്കുന്നു. നിലവിലെ കാത്തിരിപ്പും കഴിഞ്ഞ 2 മണിക്കൂറിൽ എത്ര ഡ്രൈവർമാർ അത് റിപ്പോർട്ട് ചെയ്തു എന്നതും നിങ്ങൾ കാണുന്നു."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} ഉം {likelySlow} ഉം"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "പുതിയ റിപ്പോർട്ട് ഇല്ലെങ്കിൽ മാത്രമേ കാണിക്കൂ. ഇത് കണക്കുകൂട്ടലാണ്, തത്സമയ റിപ്പോർട്ടല്ല."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "അടുത്തിടെ അടച്ചതായി റിപ്പോർട്ട് ചെയ്തു"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} അല്ലെങ്കിൽ {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "ഇത് റിപ്പോർട്ട് ചെയ്യാൻ ഡ്രൈവർമാർ {reportProblem} ടാപ്പ് ചെയ്യുന്നു. അവിടെ പോകുന്നതിന് മുമ്പ് റിപ്പോർട്ട് കാണാം."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "റെസ്റ്റോറന്റ് ടാബ്‌ലെറ്റോ സിസ്റ്റമോ പ്രവർത്തിക്കുന്നില്ലെന്ന് ഡ്രൈവർമാർ റിപ്പോർട്ട് ചെയ്യുമ്പോൾ കാണുക."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "നിങ്ങൾ എത്തിയ ശേഷമാണ് ഓർഡർ തുടങ്ങുന്നത്"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "ചില സ്ഥലങ്ങൾ നിങ്ങൾ എത്തിയ ശേഷം മാത്രമേ ഓർഡർ തുടങ്ങൂ. റിപ്പോർട്ട് ചെയ്യുമ്പോൾ ഡ്രൈവർമാർക്ക് ഇത് ഓൺ ചെയ്യാം."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "കാണാതായ അല്ലെങ്കിൽ തെറ്റായ പിക്കപ്പ് പോയിന്റ്"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "പിക്കപ്പ് പോയിന്റ് ഇല്ലേ? {suggest} ടാപ്പ് ചെയ്യുക. എന്തെങ്കിലും തെറ്റാണോ? {reportProblem} ടാപ്പ് ചെയ്യുക, പിന്നെ {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} അല്ലെങ്കിൽ {closedPermanently}."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "മൂന്ന് എളുപ്പ ഘട്ടങ്ങൾ. റിപ്പോർട്ട് ചെയ്യാൻ ഏതാനും സെക്കൻഡ് മതി."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "ആപ്പ് തുറക്കുക"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "പാസ്‌വേഡ് വേണ്ട. ആപ്പ് നിങ്ങൾക്ക് സ്വയമേവ ഒരു Radar പ്രൊഫൈൽ തരും. സൈൻ അപ്പ് ചെയ്യേണ്ടതില്ല."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "അകത്ത് കയറുന്നതിന് മുമ്പ് നോക്കുക"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "പിക്കപ്പ് പോയിന്റ് കണ്ടെത്തുക. നിലവിലെ കാത്തിരിപ്പ് കാണുക, അല്ലെങ്കിൽ പുതിയ റിപ്പോർട്ട് ഇല്ലെങ്കിൽ {likelyFast} അല്ലെങ്കിൽ {likelySlow}."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "നിങ്ങളുടെ കാത്തിരിപ്പ് റിപ്പോർട്ട് ചെയ്യുക"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "ഓർഡർ എടുത്ത ശേഷം {reportWait} ടാപ്പ് ചെയ്യുക. ഏതാനും സെക്കൻഡ് മതി. നിങ്ങളുടെ റിപ്പോർട്ട് മറ്റ് ഡ്രൈവർമാരെ സഹായിക്കും, നിങ്ങൾക്ക് {radarPoints} ലഭിക്കും."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "{radarPoints} നേടുക"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "{radarPoints} നേടാൻ {reportWait} ടാപ്പ് ചെയ്യുക. അക്കൗണ്ട് ഇല്ലാതെ തുടങ്ങാം. ഫോൺ മാറ്റുകയോ റീസെറ്റ് ചെയ്യുകയോ ചെയ്താൽ സുരക്ഷിതമാകാൻ {radarPoints} ഇമെയിൽ ഉപയോഗിച്ച് സംരക്ഷിക്കുക. പാസ്‌വേഡ് വേണ്ട. ആപ്പ് 6 അക്ക കോഡ് ഇമെയിൽ ചെയ്യും."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "റിവാർഡുകൾ ഉടൻ വരും."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} നിങ്ങൾക്ക് ഇനിയും {radarPoints} റിഡീം ചെയ്യാനാകില്ല."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "{radarPoints} എങ്ങനെ നേടാം"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "നിങ്ങളുടെ അടുത്തുള്ള യോഗ്യമായ പിക്കപ്പ് പോയിന്റ്, പുതിയ കാത്തിരിപ്പ് ഇല്ല, {likelyFast} അല്ലെങ്കിൽ {likelySlow} ഇല്ല. ആ റിപ്പോർട്ടിന് നിങ്ങൾക്ക് 15 RP ലഭിക്കും, 10 അല്ല."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "ആദ്യത്തെ സാധുവായ കാത്തിരിപ്പ് റിപ്പോർട്ടിലെ അധിക പോയിന്റുകൾ. അതും {reportNeeded} ആണെങ്കിൽ നിങ്ങൾക്ക് ആകെ 25 RP ലഭിക്കും."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "നിങ്ങൾ നിർദ്ദേശിച്ച പിക്കപ്പ് പോയിന്റ് ഞങ്ങൾ അംഗീകരിക്കുമ്പോൾ"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "നിങ്ങളുടെ സുഹൃത്ത് 3 സാധുവായ കാത്തിരിപ്പ് റിപ്പോർട്ടുകൾ ചെയ്യുമ്പോൾ, കുറഞ്ഞത് 2 വ്യത്യസ്ത ദിവസങ്ങളിൽ (UTC സമയം), 2 വ്യത്യസ്ത പിക്കപ്പ് പോയിന്റുകളിൽ, നിങ്ങൾ രണ്ടുപേർക്കും ലഭിക്കും. നിങ്ങൾ രണ്ടുപേർക്കും സംരക്ഷിത Radar അക്കൗണ്ട് വേണം (ഇമെയിൽ ചേർക്കുക). ആദ്യത്തെ സാധുവായ കാത്തിരിപ്പ് റിപ്പോർട്ടിന് മുമ്പ് നിങ്ങളുടെ സുഹൃത്ത് നിങ്ങളുടെ കോഡ് നൽകണം."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "ഓരോരുത്തർക്കും {referralRp}"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "ഇവ ആപ്പിലെ യുണൈറ്റഡ് കിംഗ്ഡം നഗരങ്ങളാണ്. നിങ്ങളുടെ നഗരം കാണുന്നില്ലേ? ആപ്പിൽ അഭ്യർത്ഥിക്കുക. അല്ലെങ്കിൽ {comingSoon} ആയ നഗരത്തിൽ {notify} ടാപ്പ് ചെയ്യുക. അത് ലൈവ് ആകുമ്പോൾ ഞങ്ങൾ ഇമെയിൽ ചെയ്യും."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "ഇപ്പോൾ ലൈവ്"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "ഒരു ഡെലിവറി ആപ്പിന്റെയും ഭാഗമല്ല"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "PickupRadar സ്വതന്ത്രമാണ്. Uber Eats, Deliveroo, Just Eat അല്ലെങ്കിൽ മറ്റേതെങ്കിലും ഡെലിവറി ആപ്പിന്റെ ഭാഗമല്ല. അവിടത്തെ നിങ്ങളുടെ അക്കൗണ്ട് ഒരിക്കലും ഉപയോഗിക്കില്ല."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "സ്വകാര്യതാ നയം വായിക്കുക"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "ഡെലിവറി ആപ്പ് ലോഗിൻ ഇല്ല."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} Uber Eats, Deliveroo അല്ലെങ്കിൽ Just Eat യൂസർനെയിമോ പാസ്‌വേഡോ ഞങ്ങൾ ഒരിക്കലും ചോദിക്കില്ല."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "ഉപഭോക്തൃ അല്ലെങ്കിൽ ഓർഡർ വിശദാംശങ്ങൾ ഇല്ല."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} പേര്, വിലാസം അല്ലെങ്കിൽ ഓർഡർ നമ്പർ ഇല്ല."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "ഡെലിവറി ആപ്പ് ഒഴിവാക്കാം."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} ഡെലിവറി ആപ്പ് തിരഞ്ഞെടുക്കുന്നത് ഐച്ഛികമാണ്."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "നിയന്ത്രണം നിങ്ങൾക്കാണ്."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} ആപ്പിലെ അക്കൗണ്ടോ Radar പ്രൊഫൈലോ എപ്പോൾ വേണമെങ്കിലും ഇല്ലാതാക്കുക."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "ഡ്രൈവർമാരുടെ ചോദ്യങ്ങൾ"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "എനിക്ക് അക്കൗണ്ട് വേണോ?"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "വേണ്ട. ആപ്പ് നിങ്ങൾക്ക് സ്വയമേവ ഒരു Radar പ്രൊഫൈൽ തരും. ഉടൻ കാത്തിരിപ്പ് റിപ്പോർട്ട് ചെയ്യാം. {radarPoints} സംരക്ഷിക്കാൻ പിന്നീട് ഇമെയിൽ ചേർക്കുക. പാസ്‌വേഡ് വേണ്ട. ആപ്പ് 6 അക്ക കോഡ് ഇമെയിൽ ചെയ്യും."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "PickupRadar എവിടെ പ്രവർത്തിക്കും?"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "PickupRadar ഇപ്പോൾ Milton Keynes-ൽ പ്രവർത്തിക്കുന്നു. അടുത്തത് London. പിന്നെ കൂടുതൽ നഗരങ്ങൾ, Manchester, Birmingham, Leeds, Liverpool, Glasgow പോലെ. {cities} കാണുക."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "എല്ലാ നഗരങ്ങളും"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "ആപ്പ് എപ്പോൾ ഡൗൺലോഡ് ചെയ്യാം?"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "iPhone, Android ആപ്പുകൾ ഉടൻ വരും. ഇപ്പോൾ {preview} Milton Keynes-ലെ യഥാർത്ഥ പിക്കപ്പ് പോയിന്റുകളും കാത്തിരിപ്പും കാണിക്കുന്നു."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "തത്സമയ പ്രിവ്യൂ"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "നിലവിലെ കാത്തിരിപ്പ് എങ്ങനെ കണക്കാക്കുന്നു?"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "കഴിഞ്ഞ 2 മണിക്കൂറിലെ ഡ്രൈവർ റിപ്പോർട്ടുകളിൽ നിന്നാണ്. 2 മണിക്കൂറിൽ പഴയ റിപ്പോർട്ടുകൾ നിലവിലെ കാത്തിരിപ്പ് മാറ്റില്ല."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "{likelyFast} ഉം {likelySlow} ഉം എന്താണ് അർത്ഥമാക്കുന്നത്?"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "അവ കണക്കുകൂട്ടലുകളാണ്, തത്സമയ റിപ്പോർട്ടുകളല്ല. പുതിയ കാത്തിരിപ്പ് റിപ്പോർട്ട് ഇല്ലെങ്കിൽ അവ കാണും."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "ഇത് എന്റെ ലൊക്കേഷൻ ട്രാക്ക് ചെയ്യുന്നുണ്ടോ?"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "പശ്ചാത്തല ട്രാക്കിംഗ് ഇല്ല. നിങ്ങൾ ആപ്പ് ഉപയോഗിക്കുമ്പോൾ അത് നിങ്ങളുടെ ലൊക്കേഷൻ ഉപയോഗിക്കുന്നു, അടുത്ത പിക്കപ്പ് പോയിന്റുകൾ കാണിക്കാനും റിപ്പോർട്ട് ചെയ്യുമ്പോൾ നിങ്ങൾ പിക്കപ്പ് പോയിന്റിലാണെന്ന് പരിശോധിക്കാനും. നിങ്ങൾ അത് ഉപയോഗിക്കാൻ തിരഞ്ഞെടുക്കുമ്പോൾ മാത്രമേ സൈറ്റ് ലൊക്കേഷൻ ചോദിക്കൂ. കൂടുതലറിയാൻ {privacy} വായിക്കുക."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "സ്വകാര്യതാ നയം"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "എന്റെ ഡാറ്റ എങ്ങനെ ഇല്ലാതാക്കാം?"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "ആപ്പിൽ {profile} തുറക്കുക. {deleteAccount} ടാപ്പ് ചെയ്യുക. നിങ്ങൾ ഇമെയിൽ ചേർത്തിട്ടില്ലെങ്കിൽ {deleteProfile} ടാപ്പ് ചെയ്യുക. ഞങ്ങൾക്ക് ഇമെയിൽ ചെയ്യാം. ഘട്ടങ്ങൾക്ക് {page} കാണുക."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "Milton Keynes പിക്കപ്പ് പോയിന്റുകൾ നോക്കുക."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "Milton Keynes-ലെ യഥാർത്ഥ പിക്കപ്പ് പോയിന്റുകൾ നോക്കുക. ഒരു സ്ഥലം കണ്ടെത്തി റിപ്പോർട്ട് സ്ക്രീൻ ശ്രമിക്കുക. നിങ്ങൾ ടാപ്പ് ചെയ്യുന്നതൊന്നും അയയ്ക്കില്ല."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "തത്സമയ പ്രിവ്യൂ തുറക്കുക"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "ആപ്പ് തത്സമയ പ്രിവ്യൂ — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "Milton Keynes യഥാർത്ഥ ഡാറ്റ ഉപയോഗിച്ച് PickupRadar ആപ്പ് ശ്രമിക്കുക. ചുറ്റും നോക്കുക, പിക്കപ്പ് പോയിന്റ് കണ്ടെത്തുക, റിപ്പോർട്ട് സ്ക്രീൻ കാണുക."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "ഇതാണ് Milton Keynes യഥാർത്ഥ ഡാറ്റയുള്ള PickupRadar. ചുറ്റും നോക്കുക. ഒരു പിക്കപ്പ് പോയിന്റ് കണ്ടെത്തി തുറക്കുക. ഇവിടെ നിങ്ങൾ ടാപ്പ് ചെയ്യുന്നതൊന്നും അയയ്ക്കില്ല. ഫോൺ ആപ്പിൽ മാത്രമേ റിപ്പോർട്ട് ചെയ്യാനാകൂ."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "Milton Keynes യഥാർത്ഥ ഡാറ്റയുള്ള PickupRadar ആപ്പിന്റെ പൂർണ പ്രിവ്യൂ"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "പിന്തുണ — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "PickupRadar സഹായം: പിന്തുണയെ ബന്ധപ്പെടുക, പിക്കപ്പ് പോയിന്റ് പ്രശ്നം റിപ്പോർട്ട് ചെയ്യുക, Radar പ്രൊഫൈൽ, {radarPoints}, അക്കൗണ്ട് ഇല്ലാതാക്കൽ എന്നിവയെക്കുറിച്ചുള്ള ഉത്തരങ്ങൾ കണ്ടെത്തുക."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "സഹായം വേണോ? ആപ്പ്, പിക്കപ്പ് പോയിന്റ്, {radarPoints} അല്ലെങ്കിൽ നിങ്ങളുടെ സ്വകാര്യത എന്നിവയെക്കുറിച്ച് ഇമെയിൽ ചെയ്യുക."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "ബന്ധപ്പെടുക"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "പിന്തുണയെ ബന്ധപ്പെടുക"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "സഹായം, ആശയം, പിക്കപ്പ് പോയിന്റ് പ്രശ്നം അല്ലെങ്കിൽ സ്വകാര്യതാ ചോദ്യം എന്നിവയ്ക്ക് ഇമെയിൽ ചെയ്യുക:"
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "ബിസിനസ് തപാൽ വിലാസം"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "കത്തുകൾക്ക് മാത്രം. ഞങ്ങളെ ബന്ധപ്പെടാനുള്ള ഏറ്റവും വേഗമുള്ള വഴി ഇമെയിലാണ്."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "എന്ത് ഉൾപ്പെടുത്തണം"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "ഒരു പ്രശ്നം റിപ്പോർട്ട് ചെയ്യുകയാണെങ്കിൽ ഞങ്ങളോട് പറയുക:"
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "പിക്കപ്പ് പോയിന്റിന്റെ പേര്"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "പ്രദേശം അല്ലെങ്കിൽ പോസ്റ്റ്‌കോഡ്, അറിയാമെങ്കിൽ"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "എന്താണ് തെറ്റ്"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "പ്രശ്നം ആപ്പിലാണെങ്കിൽ നിങ്ങളുടെ ഫോൺ മോഡൽ"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "പതിവ് ചോദ്യങ്ങൾ"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "Radar പ്രൊഫൈലും ഇമെയിലും"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "ആപ്പ് നിങ്ങൾക്ക് സ്വയമേവ ഒരു Radar പ്രൊഫൈൽ തരും. PickupRadar ഉപയോഗിക്കാനോ {radarPoints} നേടാനോ സൈൻ ഇൻ ചെയ്യേണ്ടതില്ല. ഇമെയിൽ ചേർക്കുന്നത് ഐച്ഛികമാണ്. ഫോൺ മാറ്റുകയോ റീസെറ്റ് ചെയ്യുകയോ ചെയ്താൽ അത് {radarPoints} സംരക്ഷിക്കും. പാസ്‌വേഡ് വേണ്ട. ആപ്പ് 6 അക്ക കോഡ് ഇമെയിൽ ചെയ്യും."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} ഉം ക്ഷണങ്ങളും"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "സാധുവായ കാത്തിരിപ്പ് റിപ്പോർട്ടിന് നിങ്ങൾക്ക് {radarPoints} ലഭിക്കും ({waitRp}, അല്ലെങ്കിൽ {reportNeeded} എഴുതിയിരിക്കുമ്പോൾ {neededRp}), ആദ്യ റിപ്പോർട്ട് ബോണസ് ({firstRp}), ഞങ്ങൾ അംഗീകരിക്കുന്ന പിക്കപ്പ് പോയിന്റ് ({approvedRp}). {profile}-ൽ നിന്ന് ഒരു ഡ്രൈവറെ ക്ഷണിക്കാം. നിങ്ങൾ രണ്ടുപേർക്കും സംരക്ഷിത Radar അക്കൗണ്ട് വേണം (ഇമെയിൽ ചേർക്കുക). ആദ്യത്തെ സാധുവായ കാത്തിരിപ്പ് റിപ്പോർട്ടിന് മുമ്പ് നിങ്ങളുടെ സുഹൃത്ത് നിങ്ങളുടെ കോഡ് നൽകുന്നു. നിങ്ങളുടെ സുഹൃത്ത് 3 സാധുവായ കാത്തിരിപ്പ് റിപ്പോർട്ടുകൾ ചെയ്യുമ്പോൾ, കുറഞ്ഞത് 2 വ്യത്യസ്ത ദിവസങ്ങളിൽ (UTC സമയം), 2 വ്യത്യസ്ത പിക്കപ്പ് പോയിന്റുകളിൽ, ഓരോരുത്തർക്കും {referralRp} ലഭിക്കും. {rewards} നിങ്ങൾക്ക് ഇനിയും {radarPoints} റിഡീം ചെയ്യാനാകില്ല."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "ഡ്രൈവർമാർക്കുള്ള സന്ദേശങ്ങൾ"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "{profile}-ൽ {messages} ഉണ്ട്: നിങ്ങളുടെ നഗരത്തിനോ Radar പ്രൊഫൈലിനോ വേണ്ടി അറിയിപ്പുകൾ, മുന്നറിയിപ്പുകൾ, വ്യക്തിഗത സന്ദേശങ്ങൾ. പഴയതോ നീക്കം ചെയ്തതോ ആയ സന്ദേശങ്ങൾ വീണ്ടും കാണണമെന്നില്ല."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "നിങ്ങളുടെ അക്കൗണ്ട് ഇല്ലാതാക്കുക"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "ആപ്പിൽ അക്കൗണ്ട് ഇല്ലാതാക്കുക: {profile} → {deleteAccount}. അല്ലെങ്കിൽ {email} ലേക്ക് ഇമെയിൽ ചെയ്യുക. നിങ്ങൾ ഇമെയിൽ ചേർത്തിട്ടില്ലെങ്കിൽ ആപ്പ് {deleteProfile} കാണിക്കും. ഘട്ടങ്ങൾക്ക് {page} പേജ് കാണുക."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "പിക്കപ്പ് പോയിന്റ് ഇല്ലേ? ആപ്പിൽ {suggest} ടാപ്പ് ചെയ്യുക. എന്തെങ്കിലും തെറ്റാണോ? {reportProblem} ടാപ്പ് ചെയ്യുക. അല്ലെങ്കിൽ ഇമെയിൽ ചെയ്യുക, ഞങ്ങൾ നോക്കാം."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "നിങ്ങളുടെ ഡെലിവറി ആപ്പ് അക്കൗണ്ട്"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "PickupRadar നിങ്ങളുടെ Uber Eats, Deliveroo, Just Eat അല്ലെങ്കിൽ മറ്റേതെങ്കിലും ഡെലിവറി ആപ്പ് അക്കൗണ്ടുമായി ബന്ധപ്പെട്ടിട്ടില്ല. ലോഗിൻ, പാസ്‌വേഡ്, അക്കൗണ്ട് വിശദാംശങ്ങൾ, ഉപഭോക്തൃ വിശദാംശങ്ങൾ അല്ലെങ്കിൽ ഓർഡർ വിശദാംശങ്ങൾ ഞങ്ങൾ ഒരിക്കലും ചോദിക്കില്ല. ഡ്രൈവർമാർ പങ്കിടുന്നത് പിക്കപ്പ് റിപ്പോർട്ടുകൾ മാത്രമാണ്, കാത്തിരിപ്പും പിക്കപ്പ് പോയിന്റ് പ്രശ്നങ്ങളും പോലെ."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "ആപ്പ് പുറത്തിറങ്ങുന്നതിന് മുമ്പ് PickupRadar ശ്രമിക്കുക."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "തത്സമയ പ്രിവ്യൂ Milton Keynes-ലെ യഥാർത്ഥ പിക്കപ്പ് പോയിന്റുകളും കാത്തിരിപ്പും കാണിക്കുന്നു. റിപ്പോർട്ടും {radarPoints} ഉം ഫോൺ ആപ്പിൽ മാത്രമാണ്."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "പേജ് കണ്ടെത്തിയില്ല — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "ആ പേജ് PickupRadar സൈറ്റിൽ ഇല്ല."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "ഈ പേജ് റഡാറിന് പുറത്താണ്."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "ആ വിലാസം PickupRadar സൈറ്റിൽ ഇല്ല. ഈ പേജുകൾ ഉണ്ട്:"
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "ഹോം"
+    }
+  }
+}

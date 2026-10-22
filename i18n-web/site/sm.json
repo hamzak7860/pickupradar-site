@@ -1,0 +1,602 @@
+{
+  "language": "sm",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "Alu i le anotusi"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "Aiga o PickupRadar"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "Upega"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "Faalilolilo"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "Vaaiga ola"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "Polokalame"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "Fesoasoani"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "Tulafono"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "Iloa le taimi faatali a o lei e te ulufale."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar. Tutoatasi, ma e le fesoʻotaʻi ma Uber Eats, Deliveroo po o Just Eat."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "Va o taimi faatali"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "Vave"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "Faatali puupuu"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "Faatali umi"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "Faatali umi tele"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "Leai se lipoti fou? E mafai ona faaalia e PickupRadar le {likelyFast} po o le {likelySlow}:"
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar): taimi faatali o piki mo avetaʻavale i Peretania"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "Vaai pe o le a le umi e faatali ai avetaʻavale i faleaiga ma faleoloa a o lei e te ulufale. Mo avetaʻavale o Uber Eats, Deliveroo ma Just Eat i Peretania. E leai se lesitala."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar. Iloa le taimi faatali a o lei e te ulufale."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "E te aveina mo Uber Eats, Deliveroo po o Just Eat? Vaai i taimi faatali fou i nofoaga piki o faleaiga ma faleoloa. Aloese mai le faatali umi. Tap le {reportWait} ma maua {radarPoints}. E leai se lesitala."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "Taumafai i faamatalaga moni"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "Avanoa"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "O lea i Milton Keynes. Sosoo ai London."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "O le a oo mai nei polokalame iPhone ma Android."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "Faataitaiga o le lau autu o PickupRadar ma le tap {nearby} ua tatala. O nofoaga piki e lanu i le taimi faatali"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "Lau faataitaiga: taimi faatali faataitaiga, e le o se lipoti ola a avetaʻavale"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "Taimi faatali faataitaiga"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "Fuafuaga faataitaiga"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "1 lipoti · i le 4 minute talu ai"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "Lau faataitaiga. O se taimi faatali faataitaiga, e le o se lipoti ola. {live} i faamatalaga moni."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "Taumafai le vaaiga ola"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "Vaai pe o le a le umi e te ono faatali ai."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "E lipoti e avetaʻavale pe o le a le umi na latou faatali ai. O le taimi faatali o lea e sau mai lipoti i le 2 itula talu ai. E vave ona e iloa nofoaga piki vave ma nofoaga piki telegese."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "Vaaiga ola o le polokalame PickupRadar i faamatalaga moni o Milton Keynes"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "Taumafai PickupRadar i faamatalaga moni o Milton Keynes."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "Vaai i nofoaga piki moni i Milton Keynes. Siaki taimi faatali fou, po o le {likelyFast} ma le {likelySlow}. E mafai ona e taumafai le lau lipoti, ae e leai se mea e lafo."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "Filifili se tap."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} Faʻaaoga le {nearby} e saili nofoaga piki latalata pe a ua ki le nofoaga. Faʻaaoga le {fast} ma le {slow} e siaki taimi faatali ma fuafuaga."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "Saili se nofoaga piki."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} Taumafai se igoa, eria po o le numera meli, e pei o KFC po o Bletchley."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "Tatala se nofoaga piki."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} E tatala le lau {reportWait}. Filifili se taimi faatali. E leai se mea e lafo."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "Tatala le vaaiga tele"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "O mea e te vaai i ai a o lei e te ulufale"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "E te vaai i faailoga tutusa i le polokalame. O avetaʻavale e lipotiina, e le o le polokalame tiliva."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "E filifili e avetaʻavale le taimi faatali. E te vaai i le taimi faatali o lea ma le aofaʻi o avetaʻavale na lipotiina i le 2 itula talu ai."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} ma le {likelySlow}"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "E faaalia pe a leai se lipoti fou. O se fuafuaga, e le o se lipoti ola."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "Na lipoti lata nei ua tapuni"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} po o le {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "E tap e avetaʻavale le {reportProblem} e lipoti lenei mea. E te vaai i le lipoti a o lei e te alu i ai."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "Vaai pe a lipoti e avetaʻavale e le o galue le laupapa po o le faiga a le faleaiga."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "E amata le oka pe a e taunuu"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "O nisi nofoaga e amata le oka pe a e taunuu. E mafai e avetaʻavale ona kiina pe a latou lipoti."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "Nofoaga piki ua leiloa pe sese"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "E leai se nofoaga piki? Tap le {suggest}. E iai se mea sese? Tap le {reportProblem}, ona {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} po o le {closedPermanently}."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "Laasaga faigofie e tolu. E na o ni nai sekone le lipoti."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "Tatala le polokalame"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "E leai se upu faalilolilo. E avatu e le polokalame se faamatalaga Radar ia te oe. E le tatau ona e lesitala."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "Siaki a o lei e te ulufale"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "Saili le nofoaga piki. Vaai i le taimi faatali o lea, po o le {likelyFast} po o le {likelySlow} pe a leai se lipoti fou."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "Lipoti lau taimi faatali"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "A uma ona e piki le oka, tap le {reportWait}. E na o ni nai sekone. E fesoasoani lau lipoti i isi avetaʻavale, ma e te maua {radarPoints}."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "Maua {radarPoints}"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Tap le {reportWait} e maua ai {radarPoints}. E mafai ona e amata e aunoa ma se account. Puipui {radarPoints} i se imeli ina ia saogalemu pe a e sui pe toe seti le telefoni. E leai se upu faalilolilo. E lafo e le polokalame se code e 6 numera i le imeli."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "O loo oo mai faailoga."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} E le mafai ona e faaaogaina {radarPoints}."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "Auala e maua ai {radarPoints}"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "O se nofoaga piki agavaa latalata ia te oe, e leai se taimi faatali fou, ma e leai se {likelyFast} po o le {likelySlow}. E te maua 15 RP mo lena lipoti, e le o le 10."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "Pio faaopoopo i le lipoti muamua aoga o le taimi faatali. Afai o le {reportNeeded} foi, e te maua 25 RP atoa."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "Pe a matou faamaonia le nofoaga piki na e fautuaina"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "E maua e oulua pe a fai e lau uo lipoti aoga e 3 o le taimi faatali, i aso eseese e lē itiiti ifo i le 2 (taimi UTC), i nofoaga piki eseese e 2. E manaʻomia e oulua uma se account Radar ua puipuia (faaopoopo se imeli). E tatau ona tuu e lau uo lau code a o lei fai le lipoti muamua aoga o le taimi faatali."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "{referralRp} taʻitasi"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "O aai ia o Peretania i le polokalame. E le o e vaai i lau aai? Talosaga i le polokalame. Po o le tap le {notify} i se aai o loo {comingSoon}. Matou te imeli pe a ola."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "Ola nei"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "E le o se vaega o soo se polokalame tiliva"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "E tutoatasi PickupRadar. E le o se vaega o Uber Eats, Deliveroo, Just Eat po o se isi polokalame tiliva. E le faaaoga lava lau account iina."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "Faitau le faiga faavae o le faalilolilo"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "E leai se ulufale i le polokalame tiliva."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} Matou te le fesili lava i se igoa faaaoga po o se upu faalilolilo o Uber Eats, Deliveroo po o Just Eat."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "E leai ni faamatalaga a tagata faatau po o oka."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} E leai se igoa, tuatusi po o le numera o le oka."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "E mafai ona e sopoia le polokalame tiliva."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} O le filifilia o le polokalame tiliva e filifilia."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "E pule oe."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} Tape le account po o le faamatalaga Radar i le polokalame i soo se taimi."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "Fesili a avetaʻavale"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "E manaomia ea se account?"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "Leai. E avatu e le polokalame se faamatalaga Radar ia te oe. E mafai ona e lipoti le taimi faatali i le taimi lava lenei. Ina ia puipuia {radarPoints}, faaopoopo se imeli mulimuli ane. E leai se upu faalilolilo. E lafo e le polokalame se code e 6 numera i le imeli."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "O fea e galue ai PickupRadar?"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "E galue PickupRadar i Milton Keynes i le taimi nei. Sosoo ai London. Ona tele ai lea o aai, e pei o Manchester, Birmingham, Leeds, Liverpool ma Glasgow. Vaai i {cities}."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "aai uma"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "O afea e mafai ai ona ou sii mai le polokalame?"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "O le a oo mai nei polokalame iPhone ma Android. Mo le taimi nei, e faaalia e le {preview} nofoaga piki moni ma taimi faatali i Milton Keynes."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "vaaiga ola"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "E faapefea ona fuafuaina le taimi faatali o lea?"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "E sau mai lipoti a avetaʻavale i le 2 itula talu ai. O lipoti e sili atu i le 2 itula le matua e le suia ai le taimi faatali o lea."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "O le a le uiga o le {likelyFast} ma le {likelySlow}?"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "O fuafuaga ia, e le o ni lipoti ola. E aliali mai pe a leai se lipoti fou o le taimi faatali."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "E sailia ea loʻu nofoaga?"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "E leai se sailiga i tua. E faaaoga e le polokalame lou nofoaga a o e faaaogaina, e faaalia ai nofoaga piki latalata ma siaki o e i le nofoaga piki pe a e lipoti. E na o le fesili e le upega i le nofoaga pe a e filifili e faaaoga. Faitau le {privacy} mo nisi faamatalaga."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "faiga faavae o le faalilolilo"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "E faapefea ona ou tape aʻu faamatalaga?"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "I le polokalame, tatala le {profile}. Tap le {deleteAccount}. Afai e te lei faaopoopoina se imeli, tap le {deleteProfile}. E mafai foi ona e imeli mai. Vaai i le {page} mo laasaga."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "Saili nofoaga piki i Milton Keynes."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "Saili nofoaga piki moni i Milton Keynes. Saili se nofoaga ma taumafai le lau lipoti. E leai se mea e te tap e lafo."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "Tatala le vaaiga ola"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "Vaaiga ola o le polokalame — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "Taumafai le polokalame PickupRadar i faamatalaga moni o Milton Keynes. Vaai solo, saili se nofoaga piki ma vaai i le lau lipoti."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "O PickupRadar lea i faamatalaga moni o Milton Keynes. Vaai solo. Saili se nofoaga piki ma tatala. E leai se mea e te tap iinei e lafo. E na o le polokalame telefoni e mafai ona e lipoti ai."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "Vaaiga atoa o le polokalame PickupRadar i faamatalaga moni o Milton Keynes"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "Lagolago — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "Fesoasoani PickupRadar: faafesootai le lagolago, lipoti se faafitauli o le nofoaga piki, ma saili tali e uiga i le faamatalaga Radar, {radarPoints} ma le tapeina o le account."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "E te manaomia se fesoasoani? Imeli e uiga i le polokalame, nofoaga piki, {radarPoints} po o lou faalilolilo."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "Faafesootai"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "Faafesootai le lagolago"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "Imeli mo se fesoasoani, manatu, faafitauli o le nofoaga piki po o se fesili faalilolilo:"
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "Tuatusi meli o pisinisi"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "Mo tusi na o. O le imeli o le auala vave e faafesootai ai i matou."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "Mea e aofia ai"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "Afai o loo e lipotiina se faafitauli, taʻu mai ia i matou:"
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "Igoa o le nofoaga piki"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "Eria po o le numera meli, pe a e iloa"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "O le a le mea sese"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "Lau ituaiga telefoni, pe afai o le faafitauli i le polokalame"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "Fesili masani"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "Faamatalaga Radar ma le imeli"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "E avatu e le polokalame se faamatalaga Radar ia te oe. E le tatau ona e saini i totonu e faaaoga ai PickupRadar po o le mauaina o {radarPoints}. O le faaopoopoina o se imeli e filifilia. E puipuia {radarPoints} pe a e sui pe toe seti le telefoni. E leai se upu faalilolilo. E lafo e le polokalame se code e 6 numera i le imeli."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} ma valaʻaulia"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "E te maua {radarPoints} mo se lipoti aoga o le taimi faatali ({waitRp}, po o le {neededRp} pe a tusia le {reportNeeded}), le bonus o le lipoti muamua ({firstRp}) ma se nofoaga piki matou te faamaonia ({approvedRp}). E mafai ona e valaʻaulia se avetaʻavale mai le {profile}. E manaʻomia e oulua uma se account Radar ua puipuia (faaopoopo se imeli). E tuu e lau uo lau code a o lei fai le lipoti muamua aoga o le taimi faatali. Pe a fai e lau uo lipoti aoga e 3 o le taimi faatali, i aso eseese e lē itiiti ifo i le 2 (taimi UTC), i nofoaga piki eseese e 2, e maua e taʻitasi le {referralRp}. {rewards} E le mafai ona e faaaogaina {radarPoints}."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "Feʻau mo avetaʻavale"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "O loo iai {messages} i le {profile}: faasalalauga, lapataiga ma feʻau patino mo lau aai po o lau faamatalaga Radar. Atonu e le toe aliali mai feʻau tuai po o feʻau ua aveese."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "Tape lau account"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "Tape le account i le polokalame: {profile} → {deleteAccount}. Po o le imeli i le {email}. Afai e te lei faaopoopoina se imeli, e faaalia e le polokalame le {deleteProfile}. Vaai i le itulau {page} mo laasaga."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "E leai se nofoaga piki? Tap le {suggest} i le polokalame. E iai se mea sese? Tap le {reportProblem}. Po o le imeli mai ma o le a matou siakiina."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "Lau account o le polokalame tiliva"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "E le fesoʻotaʻi PickupRadar i lau account o Uber Eats, Deliveroo, Just Eat po o se isi polokalame tiliva. Matou te le fesili lava i se ulufale, upu faalilolilo, faamatalaga o le account, faamatalaga a tagata faatau po o faamatalaga o le oka. E na o lipoti piki e faasoa e avetaʻavale, e pei o le taimi faatali ma faafitauli o le nofoaga piki."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "Taumafai PickupRadar a o lei faalauiloa le polokalame."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "E faaalia e le vaaiga ola nofoaga piki moni ma taimi faatali i Milton Keynes. O le lipoti ma {radarPoints} e na o le polokalame telefoni."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "E leʻi maua le itulau — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "E le o iai lena itulau i le upega PickupRadar."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "O lenei itulau i fafo atu o le radar."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "E le o iai lena tuatusi i le upega PickupRadar. O loo iai nei itulau:"
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "Aiga"
+    }
+  }
+}

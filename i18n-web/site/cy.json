@@ -1,0 +1,602 @@
+{
+  "language": "cy",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "Neidio i'r cynnwys"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "Hafan PickupRadar"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "Gwefan"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "Preifatrwydd"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "Rhagolwg byw"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "Ap"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "Cymorth"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "Gwybodaeth gyfreithiol"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "Gwybod yr aros cyn i ti fynd i mewn."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar. Annibynnol ac heb gysylltiad ag Uber Eats, Deliveroo na Just Eat."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "Ystodau aros"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "Cyflym"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "Aros byr"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "Aros hir"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "Aros hir iawn"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "Dim adroddiadau diweddar? Gall PickupRadar ddangos {likelyFast} neu {likelySlow}:"
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar): amseroedd aros wrth gasglu i yrwyr yn y Deyrnas Unedig"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "Gweld pa mor hir y mae yrwyr yn aros mewn bwytai a siopau cyn i ti fynd i mewn. I yrwyr Uber Eats, Deliveroo a Just Eat yn y Deyrnas Unedig. Dim cofrestru."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar. Gwybod yr aros cyn i ti fynd i mewn."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "Wyt ti'n dosbarthu i Uber Eats, Deliveroo neu Just Eat? Gweld aros diweddar mewn pwyntiau casglu bwytai a siopau. Osgowch aros hir. Tapia {reportWait} ac ennill {radarPoints}. Dim cofrestru."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "Rho gynnig arni gyda data go iawn"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "Argaeledd"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "Nawr ym Milton Keynes. London nesaf."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "Mae apiau iPhone ac Android yn dod cyn bo hir."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "Enghraifft o sgrin gartref PickupRadar gyda'r tab {nearby} ar agor. Mae pwyntiau casglu wedi'u lliwio yn ôl yr aros"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "Sgrin enghreifftiol: amseroedd aros enghreifftiol, nid adroddiadau byw gan yrwyr"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "Aros enghreifftiol"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "Amcangyfrif enghreifftiol"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "1 adroddiad · 4 mun yn ôl"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "Sgrin enghreifftiol. Amseroedd aros enghreifftiol yw'r rhain, nid adroddiadau byw. {live} gyda data go iawn."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "Rho gynnig ar y rhagolwg byw"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "Gweld pa mor hir y gallet ti aros."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "Mae yrwyr yn adrodd pa mor hir y gwnaethon nhw aros. Daw'r aros presennol o adroddiadau'r 2 awr ddiwethaf. Rwyt ti'n gweld pwyntiau casglu cyflym ac araf yn gyflym."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "Rhagolwg byw o ap PickupRadar gyda data go iawn o Milton Keynes"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "Rho gynnig ar PickupRadar gyda data go iawn o Milton Keynes."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "Gweld pwyntiau casglu go iawn ym Milton Keynes. Gwirio aros diweddar, neu {likelyFast} a {likelySlow}. Gallet ti roi cynnig ar y sgrin adrodd, ond nid yw dim yn cael ei anfon."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "Dewis tab."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} Defnyddia {nearby} i ddod o hyd i bwyntiau casglu yn agos atat pan fydd lleoliad ymlaen. Defnyddia {fast} a {slow} i wirio aros ac amcangyfrifon."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "Chwilio pwyntiau casglu."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} Rho gynnig ar enw, ardal neu god post, fel KFC neu Bletchley."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "Agor pwynt casglu."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} Mae'r sgrin {reportWait} yn agor. Dewis amser aros. Nid yw dim yn cael ei anfon."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "Agor y rhagolwg mawr"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "Beth alli di ei weld cyn mynd i mewn"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "Rwyt ti'n gweld yr un labeli yn yr ap. Yrwyr sy'n eu hadrodd, nid yr apiau dosbarthu."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "Mae yrwyr yn dewis amser aros. Rwyt ti'n gweld yr aros presennol a faint o yrwyr a'i hadroddodd yn y 2 awr ddiwethaf."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} a {likelySlow}"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "Dim ond pan nad oes adroddiadau diweddar y caiff ei ddangos. Amcangyfrifon yw'r rhain, nid adroddiadau byw."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "Adroddwyd ei fod ar gau yn ddiweddar"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} neu {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "Mae yrwyr yn tapio {reportProblem} i adrodd hyn. Rwyt ti'n gweld yr adroddiad cyn gyrru yno."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "Gweld pan fydd yrwyr yn adrodd nad yw tabled neu system bwyty yn gweithio."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "Mae'r archeb yn dechrau ar ôl cyrraedd"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "Dim ond pan fyddi di'n cyrraedd y mae rhai lleoedd yn dechrau'r archeb. Gall yrwyr droi hyn ymlaen wrth adrodd."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "Pwyntiau casglu sydd ar goll neu'n anghywir"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "Pwynt casglu ar goll? Tapia {suggest}. Rhywbeth o'i le? Tapia {reportProblem}, yna {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} neu {closedPermanently}."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "Tri cham hawdd. Mae adrodd yn cymryd ychydig eiliadau."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "Agor yr ap"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "Dim cyfrinair. Mae'r ap yn rhoi proffil Radar i ti yn awtomatig. Does dim angen cofrestru."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "Gwirio cyn mynd i mewn"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "Dod o hyd i'r pwynt casglu. Gweld yr aros presennol, neu {likelyFast} neu {likelySlow} os nad oes adroddiadau diweddar."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "Adrodd dy aros"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "Ar ôl i ti gasglu'r archeb, tapia {reportWait}. Mae'n cymryd eiliadau. Mae dy adroddiad yn helpu yrwyr eraill, ac rwyt ti'n ennill {radarPoints}."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "Ennill {radarPoints}"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Tapia {reportWait} i ennill {radarPoints}. Gallet ti ddechrau heb gyfrif. Diogela dy {radarPoints} gyda dy e-bost, fel eu bod yn ddiogel os byddi di'n newid neu'n ailosod dy ffôn. Dim cyfrinair. Mae'r ap yn anfon cod 6 digid atat drwy e-bost."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "Gwobrau yn dod cyn bo hir."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} Ni elli di adbrynu {radarPoints} eto."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "Sut i ennill {radarPoints}"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "Pwynt casglu addas yn agos atat heb aros diweddar a heb {likelyFast} na {likelySlow}. Rwyt ti'n cael 15 RP am yr adroddiad yn lle 10."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "Pwyntiau ychwanegol ar dy adroddiad aros dilys cyntaf. Os yw hefyd yn {reportNeeded}, rwyt ti'n cael 25 RP i gyd."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "Pan fyddwn ni'n cymeradwyo pwynt casglu rwyt ti'n ei awgrymu"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "Mae'r ddau ohonoch yn ei gael pan fydd dy ffrind yn gwneud 3 adroddiad aros dilys, ar o leiaf 2 ddiwrnod gwahanol (amser UTC), mewn 2 bwynt casglu gwahanol. Mae angen cyfrifon Radar wedi'u diogelu ar y ddau (ychwanegwch e-bost). Rhaid i dy ffrind roi dy god cyn yr adroddiad aros dilys cyntaf."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "{referralRp} yr un"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "Dyma ddinasoedd y Deyrnas Unedig yn yr ap. Ddim yn dod o hyd i dy ddinas? Gofyn amdani yn yr ap. Neu tapia {notify} ar ddinas sy'n {comingSoon}. Byddwn ni'n anfon e-bost pan fydd hi'n fyw."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "Yn fyw nawr"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "Ddim yn rhan o unrhyw ap dosbarthu"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "Mae PickupRadar yn annibynnol. Nid yw'n rhan o Uber Eats, Deliveroo, Just Eat nac unrhyw ap dosbarthu arall. Nid yw byth yn defnyddio dy gyfrifon gyda nhw."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "Darllen y polisi preifatrwydd"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "Dim mewngofnodi apiau dosbarthu."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} Nid ydym byth yn gofyn am dy enw defnyddiwr na chyfrinair Uber Eats, Deliveroo neu Just Eat."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "Dim manylion cwsmeriaid nac archebion."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} Dim enwau, cyfeiriadau na rhifau archeb."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "Gallet ti hepgor yr ap dosbarthu."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} Mae dewis yr ap dosbarthu yn ddewisol."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "Ti sy'n rheoli."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} Dilëa dy gyfrif neu dy broffil Radar yn yr ap unrhyw bryd."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "Cwestiynau gan yrwyr"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "Oes angen cyfrif arnaf i?"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "Nac oes. Mae'r ap yn rhoi proffil Radar i ti yn awtomatig. Gallet ti adrodd aros ar unwaith. I ddiogelu dy {radarPoints}, ychwanega dy e-bost yn nes ymlaen. Dim cyfrinair. Mae'r ap yn anfon cod 6 digid atat drwy e-bost."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "Ble mae PickupRadar yn gweithio?"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "Mae PickupRadar yn gweithio ym Milton Keynes nawr. London nesaf. Yna mwy o ddinasoedd, fel Manchester, Birmingham, Leeds, Liverpool a Glasgow. Gweld {cities}."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "yr holl ddinasoedd"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "Pryd alla i lawrlwytho'r ap?"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "Mae apiau iPhone ac Android yn dod cyn bo hir. Am y tro, mae'r {preview} yn dangos pwyntiau casglu ac aros go iawn ym Milton Keynes."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "rhagolwg byw"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "Sut mae'r aros presennol yn cael ei gyfrifo?"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "Daw o adroddiadau yrwyr yn y 2 awr ddiwethaf. Nid yw adroddiadau hŷn na 2 awr yn effeithio ar yr aros presennol."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "Beth mae {likelyFast} a {likelySlow} yn ei olygu?"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "Amcangyfrifon yw'r rhain, nid adroddiadau byw. Maen nhw'n ymddangos pan nad oes adroddiadau aros diweddar."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "Ydy e'n tracio fy lleoliad?"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "Dim tracio yn y cefndir. Mae'r ap yn defnyddio dy leoliad tra byddi di'n ei ddefnyddio, i ddangos pwyntiau casglu gerllaw ac i wirio dy fod mewn pwynt casglu wrth adrodd. Dim ond pan fyddi di'n dewis ei ddefnyddio y mae'r wefan yn gofyn am leoliad. Darllen y {privacy} i gael rhagor."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "polisi preifatrwydd"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "Sut ydw i'n dileu fy nata?"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "Yn yr ap, agor {profile}. Tapia {deleteAccount}. Os na wnest ti ychwanegu e-bost, tapia {deleteProfile}. Gallet ti anfon e-bost atom hefyd. Gweld {page} am y camau."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "Archwilio pwyntiau casglu Milton Keynes."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "Archwilio pwyntiau casglu go iawn ym Milton Keynes. Chwilio am le a rhoi cynnig ar y sgrin adrodd. Nid yw dim rwyt ti'n tapio yn cael ei anfon."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "Agor y rhagolwg byw"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "Rhagolwg byw o'r ap — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "Rho gynnig ar ap PickupRadar gyda data go iawn o Milton Keynes. Edrych o gwmpas, chwilio pwyntiau casglu a gweld y sgrin adrodd."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "Dyma PickupRadar gyda data go iawn o Milton Keynes. Edrych o gwmpas. Chwilio pwynt casglu a'i agor. Nid yw dim rwyt ti'n tapio yma yn cael ei anfon. Dim ond yn yr ap symudol y gallet ti adrodd."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "Rhagolwg llawn o ap PickupRadar gyda data go iawn o Milton Keynes"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "Cymorth — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "Cymorth PickupRadar: cysylltu â chymorth, adrodd problem pwynt casglu, a dod o hyd i atebion am dy broffil Radar, {radarPoints} a dileu dy gyfrif."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "Angen help? Anfon e-bost atom am yr ap, pwynt casglu, dy {radarPoints} neu dy breifatrwydd."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "Cyswllt"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "Cysylltu â chymorth"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "Anfon e-bost atom am help, syniadau, problemau pwyntiau casglu neu gwestiynau preifatrwydd:"
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "Cyfeiriad gohebiaeth fusnes"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "Ar gyfer llythyrau yn unig. E-bost yw'r ffordd gyflymaf o gysylltu â ni."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "Beth i'w gynnwys"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "Os wyt ti'n adrodd problem, dywed wrthym:"
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "Enw'r pwynt casglu"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "Yr ardal neu'r cod post, os wyt ti'n ei wybod"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "Beth aeth o'i le"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "Model dy ffôn, os oes problem gyda'r ap"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "Cwestiynau cyffredin"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "Proffil Radar ac e-bost"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Mae'r ap yn rhoi proffil Radar i ti yn awtomatig. Does dim angen mewngofnodi i ddefnyddio PickupRadar nac ennill {radarPoints}. Mae ychwanegu e-bost yn ddewisol. Mae'n diogelu dy {radarPoints} os byddi di'n newid neu'n ailosod dy ffôn. Dim cyfrinair. Mae'r ap yn anfon cod 6 digid atat drwy e-bost."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} a gwahoddiadau"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "Rwyt ti'n ennill {radarPoints} am adroddiadau aros dilys ({waitRp}, neu {neededRp} pan mae'n dweud {reportNeeded}), bonws am yr adroddiad cyntaf ({firstRp}) a phwyntiau casglu rydyn ni'n eu cymeradwyo ({approvedRp}). Gallet ti wahodd gyrrwr o {profile}. Mae angen cyfrifon Radar wedi'u diogelu ar y ddau ohonoch (ychwanegwch e-bost). Mae dy ffrind yn rhoi dy god cyn yr adroddiad aros dilys cyntaf. Pan fydd dy ffrind yn gwneud 3 adroddiad aros dilys, ar o leiaf 2 ddiwrnod gwahanol (amser UTC), mewn 2 bwynt casglu gwahanol, mae pob un ohonoch yn cael {referralRp}. {rewards} Ni elli di adbrynu {radarPoints} eto."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "Negeseuon i yrwyr"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "Mae gan {profile} {messages}: cyhoeddiadau, rhybuddion a negeseuon personol i dy ddinas neu dy broffil Radar. Efallai na fydd hen negeseuon neu rai sydd wedi'u tynnu yn ymddangos mwyach."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "Dileu dy gyfrif"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "Dilëa dy gyfrif yn yr ap: {profile} → {deleteAccount}. Neu anfon e-bost at {email}. Os na wnest ti ychwanegu e-bost, mae'r ap yn dangos {deleteProfile}. Gweld y dudalen {page} am y camau."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "Pwynt casglu ar goll? Tapia {suggest} yn yr ap. Un yn anghywir? Tapia {reportProblem}. Neu anfon e-bost atom a byddwn ni'n ei wirio."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "Dy gyfrifon apiau dosbarthu"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "Nid yw PickupRadar yn cysylltu â dy gyfrifon Uber Eats, Deliveroo, Just Eat nac apiau dosbarthu eraill. Nid ydym byth yn gofyn am fewngofnodi, cyfrineiriau, manylion cyfrif, manylion cwsmeriaid na manylion archebion. Dim ond adroddiadau casglu y mae yrwyr yn eu rhannu, fel amseroedd aros a phroblemau pwyntiau casglu."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "Rho gynnig ar PickupRadar cyn i'r ap lansio."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "Mae'r rhagolwg byw yn dangos pwyntiau casglu ac aros go iawn ym Milton Keynes. Dim ond yn yr ap symudol y mae adrodd a {radarPoints}."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "Heb ganfod y dudalen — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "Nid yw'r dudalen honno ar wefan PickupRadar."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "Mae'r dudalen hon oddi ar y radar."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "Nid yw'r cyfeiriad hwnnw ar wefan PickupRadar. Mae'r tudalennau hyn yn bodoli:"
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "Hafan"
+    }
+  }
+}

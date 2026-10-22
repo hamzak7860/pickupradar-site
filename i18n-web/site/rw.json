@@ -1,0 +1,602 @@
+{
+  "language": "rw",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "Simbuka ujye ku birimo"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "Ahabanza ha PickupRadar"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "Urubuga"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "Ibanga"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "Igaragaza ry'ako kanya"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "Porogaramu"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "Ubufasha"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "Amategeko"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "Menya igihe cyo gutegereza mbere yo kwinjira."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar. Yigenga, kandi nta isano ifitanye na Uber Eats, Deliveroo cyangwa Just Eat."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "Urwego rw'igihe cyo gutegereza"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "Byihuse"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "Gutegereza gato"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "Gutegereza kirekire"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "Gutegereza kirekire cyane"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "Nta raporo nshya? PickupRadar ishobora kwerekana {likelyFast} cyangwa {likelySlow}:"
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar): igihe cyo gutegereza gufata ku bashoferi mu Bwongereza"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "Reba igihe abashoferi bategereza mu resitora no mu maduka mbere yo kwinjira. Ku bashoferi ba Uber Eats, Deliveroo na Just Eat mu Bwongereza. Nta kwiyandikisha."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar. Menya igihe cyo gutegereza mbere yo kwinjira."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "Utwara ibintu kuri Uber Eats, Deliveroo cyangwa Just Eat? Reba igihe gishya cyo gutegereza ahafatirwa ibicuruzwa mu resitora no mu maduka. Irinde gutegereza kirekire. Kanda {reportWait} ubone {radarPoints}. Nta kwiyandikisha."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "Gerageza amakuru y'ukuri"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "Kuboneka"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "Ubu i Milton Keynes. Hakurikira London."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "Porogaramu za iPhone na Android zizaza vuba."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "Urugero rw'ikidirishya ry'ahabanza rya PickupRadar, tabu {nearby} ifunguye. Ahafatirwa hafite ibara hashingiwe ku gihe cyo gutegereza"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "Ikidirishya cy'urugero: igihe cyo gutegereza cy'urugero, si raporo y'ako kanya y'abashoferi"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "Igihe cyo gutegereza cy'urugero"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "Icyegeranyo cy'urugero"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "raporo 1 · iminota 4 ishize"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "Ikidirishya cy'urugero. Iki ni igihe cyo gutegereza cy'urugero, si raporo y'ako kanya. {live} amakuru y'ukuri."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "Gerageza igaragaza ry'ako kanya"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "Reba igihe ushobora gutegereza."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "Abashoferi batanga raporo y'igihe bategereje. Igihe cyo gutegereza kiriho kiva mu raporo z'amasaha 2 ashize. Ubona vuba ahafatirwa byihuse n'ahafatirwa bigenda buhoro."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "Igaragaza ry'ako kanya rya porogaramu PickupRadar n'amakuru y'ukuri ya Milton Keynes"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "Gerageza PickupRadar n'amakuru y'ukuri ya Milton Keynes."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "Reba ahafatirwa nyakuri i Milton Keynes. Reba igihe gishya cyo gutegereza, cyangwa {likelyFast} na {likelySlow}. Ushobora kugerageza ikidirishya cya raporo, ariko nta kintu cyoherezwa."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "Hitamo tabu."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} Koresha {nearby} kugira ngo ubone ahafatirwa hafi yawe iyo aho uri hafunguwe. Koresha {fast} na {slow} kugira ngo urebe ibihe byo gutegereza n'ibyegeranyo."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "Shakisha ahafatirwa."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} Gerageza izina, akarere cyangwa kode y'iposita, nk'urugero KFC cyangwa Bletchley."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "Fungura ahafatirwa."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} Ikidirishya {reportWait} gifunguka. Hitamo igihe cyo gutegereza. Nta kintu cyoherezwa."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "Fungura igaragaza rinini"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "Ibyo ubona mbere yo kwinjira"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "Ubona ibimenyetso bimwe muri porogaramu. Abashoferi ni bo babitanga, si porogaramu yo gutanga."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "Abashoferi bahitamo igihe cyo gutegereza. Ubona igihe cyo gutegereza kiriho n'umubare w'abashoferi babitangye mu masaha 2 ashize."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} na {likelySlow}"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "Bigaragara gusa iyo nta raporo nshya. Ibi ni ibyegeranyo, si raporo y'ako kanya."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "Byatangwe vuba ko byafunze"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} cyangwa {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "Abashoferi bakanda {reportProblem} kugira ngo babitange. Ubona raporo mbere yo kujya hariya."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "Reba iyo abashoferi batanga ko tablette cyangwa sisitemu ya resitora idakora."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "Iteka ritangira nyuma yo kugera"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "Ahantu hamwe hatangira iteka gusa nyuma yo kugera. Abashoferi barashobora kubikoresha mugihe batanga raporo."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "Ahafatirwa habuze cyangwa hatari neza"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "Ahafatirwa ntihariho? Kanda {suggest}. Hari ikitagenze neza? Kanda {reportProblem}, hanyuma {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} cyangwa {closedPermanently}."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "Intambwe eshatu zoroshye. Gutanga raporo bifata amasegonda make."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "Fungura porogaramu"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "Nta ijambo ry'ibanga. Porogaramu iguha umwirondoro wa Radar ubwayo. Ntugomba kwiyandikisha."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "Reba mbere yo kwinjira"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "Shakisha ahafatirwa. Reba igihe cyo gutegereza kiriho, cyangwa {likelyFast} cyangwa {likelySlow} niba nta raporo nshya."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "Tanga igihe cyawe cyo gutegereza"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "Nyuma yo gufata iteka, kanda {reportWait}. Bifata amasegonda make. Raporo yawe ifasha abandi bashoferi, kandi ubona {radarPoints}."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "Bona {radarPoints}"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Kanda {reportWait} kugira ngo ubone {radarPoints}. Ushobora gutangira utagira konti. Rinza {radarPoints} ukoresheje imeri kugira ngo zibe mu mutekano niba uhinduye cyangwa usubiza telefoni. Nta ijambo ry'ibanga. Porogaramu yohereza kode y'imibare 6 kuri imeri."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "Ibihembo biraza."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} Ntushobora gukoresha {radarPoints} ubu."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "Uko ubona {radarPoints}"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "Ahafatirwa hujuje ibisabwa hafi yawe, nta gihe gishya cyo gutegereza, kandi nta {likelyFast} cyangwa {likelySlow}. Ubona 15 RP kuri iyo raporo, si 10."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "Amanota y'inyongera kuri raporo ya mbere yemewe y'igihe cyo gutegereza. Niba ari na {reportNeeded}, ubona 25 RP byose."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "Iyo twemeje ahafatirwa wasabye"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "Mwembi mubibona iyo inshuti yawe ikora raporo 3 zemewe z'igihe cyo gutegereza, byibuze ku minsi 2 itandukanye (igihe cya UTC), ahantu 2 hatandukanye hafatirwa. Mwembi mukeneye konti ya Radar irinzwe (ongeraho imeri). Inshuti yawe igomba kwandika kode yawe mbere ya raporo ya mbere yemewe y'igihe cyo gutegereza."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "{referralRp} buri wese"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "Ibi ni imijyi y'Ubwongereza iri muri porogaramu. Ntubona umujyi wawe? Usabe muri porogaramu. Cyangwa ukande {notify} ku mujyi uri {comingSoon}. Tuzakwandikira imeri iyo ubayeho."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "Birakora ubu"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "Si igice cya porogaramu iyo ari yo yo yo gutanga"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "PickupRadar yigenga. Si igice cya Uber Eats, Deliveroo, Just Eat cyangwa indi porogaramu yo gutanga. Ntigikoresha konti yawe hano."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "Soma politiki y'ibanga"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "Nta kwinjira muri porogaramu yo gutanga."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} Ntidusaba izina cyangwa ijambo ry'ibanga rya Uber Eats, Deliveroo cyangwa Just Eat."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "Nta bisobanuro by'umukiriya cyangwa by'iteka."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} Nta zina, aderesi cyangwa nimero y'iteka."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "Ushobora gusimbuka porogaramu yo gutanga."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} Guhitamo porogaramu yo gutanga ni ubushake."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "Ni wowe ufite ububasha."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} Siba konti cyangwa umwirondoro wa Radar muri porogaramu igihe icyo ari cyo cyose."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "Ibibazo by'abashoferi"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "Nkeneye konti?"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "Oya. Porogaramu iguha umwirondoro wa Radar ubwayo. Ushobora gutanga igihe cyo gutegereza ako kanya. Kugira ngo urinze {radarPoints}, ongeraho imeri nyuma. Nta ijambo ry'ibanga. Porogaramu yohereza kode y'imibare 6 kuri imeri."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "PickupRadar ikora he?"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "PickupRadar ikora i Milton Keynes ubu. Hakurikira London. Hanyuma imijyi myinshi, nk'urugero Manchester, Birmingham, Leeds, Liverpool na Glasgow. Reba {cities}."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "imijyi yose"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "Ni ryari nshobora gukurura porogaramu?"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "Porogaramu za iPhone na Android zizaza vuba. Ubu, {preview} yerekana ahafatirwa nyakuri n'igihe cyo gutegereza i Milton Keynes."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "igaragaza ry'ako kanya"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "Igihe cyo gutegereza kiriho gibarwa gute?"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "Kiva mu raporo z'abashoferi mu masaha 2 ashize. Raporo zirenze amasaha 2 ntizihindura igihe cyo gutegereza kiriho."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "{likelyFast} na {likelySlow} bisobanura iki?"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "Ni ibyegeranyo, si raporo z'ako kanya. Bigaragara iyo nta raporo nshya y'igihe cyo gutegereza."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "Ikurikirana aho ndi?"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "Nta gukurikirana inyuma. Porogaramu ikoresha aho uri mugihe uyikoresha, kugira ngo yerekane ahafatirwa hafi kandi igenzure ko uri ahafatirwa mugihe utanga raporo. Urubuga rubaza aho uri gusa iyo uhisemo kubukoresha. Soma {privacy} kugira ngo umenye byinshi."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "politiki y'ibanga"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "Nasiba amakuru yanjye nte?"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "Muri porogaramu, fungura {profile}. Kanda {deleteAccount}. Niba utongeyeho imeri, kanda {deleteProfile}. Ushobora kandi kutwandikira imeri. Reba {page} kugira ngo umenye intambwe."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "Shakisha ahafatirwa i Milton Keynes."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "Shakisha ahafatirwa nyakuri i Milton Keynes. Shakisha ahantu ukagerageze ikidirishya cya raporo. Icyo ukanda nticyoherezwa."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "Fungura igaragaza ry'ako kanya"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "Igaragaza ry'ako kanya rya porogaramu — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "Gerageza porogaramu PickupRadar n'amakuru y'ukuri ya Milton Keynes. Reba hafi, shakisha ahafatirwa urebe ikidirishya cya raporo."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "Iyi ni PickupRadar n'amakuru y'ukuri ya Milton Keynes. Reba hafi. Shakisha ahafatirwa ukahafungura. Icyo ukanda hano nticyoherezwa. Ushobora gutanga raporo muri porogaramu ya telefoni gusa."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "Igaragaza ryuzuye rya porogaramu PickupRadar n'amakuru y'ukuri ya Milton Keynes"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "Ubufasha — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "Ubufasha bwa PickupRadar: vugana n'ubufasha, tanga ikibazo cy'ahafatirwa, kandi ushake ibisubizo ku mwirondoro wa Radar, {radarPoints} no gusiba konti."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "Ukeneye ubufasha? Andikira imeri ku bijyanye na porogaramu, ahafatirwa, {radarPoints} cyangwa ibanga ryawe."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "Twandikire"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "Vugana n'ubufasha"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "Andikira imeri ku bufasha, igitekerezo, ikibazo cy'ahafatirwa cyangwa ikibazo cy'ibanga:"
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "Aderesi y'iposita y'ubucuruzi"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "Ku mabaruwa gusa. Imeri ni yo nzira yihuse yo kutwandikira."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "Ibyo ukwiriye gushyiramo"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "Niba utanga ikibazo, tubwire:"
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "Izina ry'ahafatirwa"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "Akarere cyangwa kode y'iposita, niba ubizi"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "Ikitagenze neza"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "Ubwoko bwa telefoni yawe, niba ikibazo kiri muri porogaramu"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "Ibibazo bikunze kubazwa"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "Umwirondoro wa Radar n'imeri"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Porogaramu iguha umwirondoro wa Radar ubwayo. Ntugomba kwinjira kugira ngo ukoreshe PickupRadar cyangwa ubone {radarPoints}. Kongeraho imeri ni ubushake. Birinda {radarPoints} niba uhinduye cyangwa usubiza telefoni. Nta ijambo ry'ibanga. Porogaramu yohereza kode y'imibare 6 kuri imeri."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} n'ubutumire"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "Ubona {radarPoints} kuri raporo yemewe y'igihe cyo gutegereza ({waitRp}, cyangwa {neededRp} iyo {reportNeeded} yanditswe), agahimbazamusyi ka raporo ya mbere ({firstRp}) n'ahafatirwa twemeje ({approvedRp}). Ushobora gutumira umushoferi uhereye kuri {profile}. Mwembi mukeneye konti ya Radar irinzwe (ongeraho imeri). Inshuti yawe yandika kode yawe mbere ya raporo ya mbere yemewe y'igihe cyo gutegereza. Inshuti yawe ikora raporo 3 zemewe z'igihe cyo gutegereza, byibuze ku minsi 2 itandukanye (igihe cya UTC), ahantu 2 hatandukanye hafatirwa, buri wese abona {referralRp}. {rewards} Ntushobora gukoresha {radarPoints} ubu."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "Ubutumwa ku bashoferi"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "{profile} ifite {messages}: itangazo, impuruza n'ubutumwa bwite ku mujyi wawe cyangwa umwirondoro wa Radar. Ubutumwa bwa kera cyangwa bwakuwe bushobora kutongera kugaragara."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "Siba konti yawe"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "Siba konti muri porogaramu: {profile} → {deleteAccount}. Cyangwa wandikire {email}. Niba utongeyeho imeri, porogaramu yerekana {deleteProfile}. Reba paji {page} kugira ngo umenye intambwe."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "Ahafatirwa ntihariho? Kanda {suggest} muri porogaramu. Hari ikitagenze neza? Kanda {reportProblem}. Cyangwa utwandikire, tuzabireba."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "Konti yawe ya porogaramu yo gutanga"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "PickupRadar ntiyifatanya na konti yawe ya Uber Eats, Deliveroo, Just Eat cyangwa indi porogaramu yo gutanga. Ntidusaba kwinjira, ijambo ry'ibanga, ibisobanuro bya konti, ibisobanuro by'umukiriya cyangwa ibisobanuro by'iteka. Abashoferi basangira raporo zo gufata gusa, nk'igihe cyo gutegereza n'ikibazo cy'ahafatirwa."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "Gerageza PickupRadar mbere y'uko porogaramu isohoka."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "Igaragaza ry'ako kanya ryerekana ahafatirwa nyakuri n'igihe cyo gutegereza i Milton Keynes. Gutanga raporo na {radarPoints} biri muri porogaramu ya telefoni gusa."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "Paji ntiyabonetse — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "Iyo paji ntiba ku rubuga rwa PickupRadar."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "Iyi paji iri hanze ya radar."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "Iyo aderesi ntiba ku rubuga rwa PickupRadar. Izi paji zirahari:"
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "Ahabanza"
+    }
+  }
+}

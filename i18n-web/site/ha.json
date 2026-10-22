@@ -1,0 +1,602 @@
+{
+  "language": "ha",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "Tsallaka zuwa abun ciki"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "Gida na PickupRadar"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "Shafin"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "Sirri"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "Duban kai tsaye"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "Manhaja"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "Taimako"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "Doka"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "San lokacin jira kafin ka shiga."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar. Mai zaman kansa ne, ba shi da alaƙa da Uber Eats, Deliveroo ko Just Eat."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "Matsayin lokacin jira"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "Sauri"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "Jira kaɗan"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "Jira mai tsawo"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "Jira mai tsawo sosai"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "Babu sabon rahoto? PickupRadar na iya nuna {likelyFast} ko {likelySlow}:"
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar): lokacin jiran ɗauka ga direbobi a Birtaniya"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "Duba tsawon lokacin da direbobi ke jira a gidajen abinci da shaguna kafin ka shiga. Ga direbobin Uber Eats, Deliveroo da Just Eat a Birtaniya. Babu rajista."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar. San lokacin jira kafin ka shiga."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "Kana kai kaya ga Uber Eats, Deliveroo ko Just Eat? Duba sabon lokacin jira a wuraren ɗauka na gidajen abinci da shaguna. Guji jira mai tsawo. Danna {reportWait} ka samu {radarPoints}. Babu rajista."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "Gwada da bayanan gaskiya"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "Samuwa"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "Yanzu a Milton Keynes. Na gaba London."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "Manhajojin iPhone da Android na zuwa nan ba da jimawa ba."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "Misalin allon gida na PickupRadar tare da shafin {nearby} a buɗe. Wuraren ɗauka suna da launi bisa lokacin jira"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "Allon misali: lokacin jira na misali ne, ba rahoton direba kai tsaye ba"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "Lokacin jira na misali"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "Kiyasin misali"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "rahoto 1 · minti 4 da suka wuce"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "Allon misali. Wannan lokacin jira ne na misali, ba rahoto kai tsaye ba. {live} da bayanan gaskiya."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "Gwada duban kai tsaye"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "Duba tsawon lokacin da za ka iya jira."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "Direbobi suna bayar da rahoton tsawon lokacin da suka jira. Lokacin jira na yanzu yana zuwa daga rahotanni a cikin awanni 2 da suka wuce. Kana ganin wuraren ɗauka masu sauri da masu jinkiri da sauri."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "Duban kai tsaye na manhajar PickupRadar da bayanan gaskiya na Milton Keynes"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "Gwada PickupRadar da bayanan gaskiya na Milton Keynes."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "Duba wuraren ɗauka na gaskiya a Milton Keynes. Duba sabon lokacin jira, ko {likelyFast} da {likelySlow}. Kana iya gwada allon rahoto, amma babu abin da ake aikawa."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "Zaɓi shafi."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} Yi amfani da {nearby} don nemo wuraren ɗauka kusa da kai idan wurin yana kunne. Yi amfani da {fast} da {slow} don duba lokutan jira da kiyasai."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "Nemi wuri na ɗauka."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} Gwada suna, yanki ko lambar gidan waya, kamar KFC ko Bletchley."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "Buɗe wuri na ɗauka."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} Allon {reportWait} zai buɗe. Zaɓi lokacin jira. Babu abin da ake aikawa."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "Buɗe babban dubawa"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "Abin da kake gani kafin ka shiga"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "Kana ganin alamun iri ɗaya a cikin manhaja. Direbobi ne ke bayar da rahotonsu, ba manhajar isarwa ba."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "Direbobi suna zaɓar lokacin jira. Kana ganin lokacin jira na yanzu da adadin direbobin da suka ba da rahoto a cikin awanni 2 da suka wuce."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} da {likelySlow}"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "Ana nuna shi ne kawai idan babu sabon rahoto. Kiyasi ne, ba rahoto kai tsaye ba."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "An bayar da rahoton rufe kwanan nan"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} ko {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "Direbobi suna danna {reportProblem} don bayar da rahoton wannan. Kana ganin rahoton kafin ka tafi can."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "Duba idan direbobi suka bayar da rahoton cewa allon ko tsarin gidan abinci baya aiki."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "Oda tana farawa bayan ka iso"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "Wasu wurare suna fara oda ne kawai bayan ka iso. Direbobi na iya kunna wannan yayin bayar da rahoto."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "Wuri na ɗauka da ya ɓace ko kuskure"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "Babu wuri na ɗauka? Danna {suggest}. Akwai kuskure? Danna {reportProblem}, sannan {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} ko {closedPermanently}."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "Matakai uku masu sauƙi. Bayar da rahoto yana ɗaukar daƙiƙu kaɗan."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "Buɗe manhaja"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "Babu kalmar sirri. Manhaja tana ba ka bayanin Radar kai tsaye. Ba ka buƙatar yin rajista."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "Duba kafin ka shiga"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "Nemi wuri na ɗauka. Duba lokacin jira na yanzu, ko {likelyFast} ko {likelySlow} idan babu sabon rahoto."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "Bayar da rahoton lokacin jiranka"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "Bayan ka ɗauki oda, danna {reportWait}. Yana ɗaukar daƙiƙu kaɗan. Rahotonka yana taimaka wa sauran direbobi, kuma kana samun {radarPoints}."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "Samu {radarPoints}"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Danna {reportWait} don samun {radarPoints}. Kana iya farawa ba tare da asusu ba. Kare {radarPoints} da imel don su kasance cikin aminci idan ka canza ko sake saita waya. Babu kalmar sirri. Manhaja tana aika lambar lamba 6 ta imel."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "Kyaututtuka na zuwa."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} Ba za ka iya amfani da {radarPoints} ba tukuna."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "Yadda ake samun {radarPoints}"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "Wuri na ɗauka da ya cancanci kusa da kai, babu sabon lokacin jira, kuma babu {likelyFast} ko {likelySlow}. Kana samun 15 RP don wannan rahoto, ba 10 ba."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "Ƙarin maki a kan rahoton jira na farko mai inganci. Idan shi ma {reportNeeded} ne, kana samun 25 RP gaba ɗaya."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "Lokacin da muka amince da wuri na ɗauka da ka gabatar"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "Ku duka kuna samu idan abokinka ya yi rahotannin jira 3 masu inganci, aƙalla a ranaku 2 daban-daban (lokacin UTC), a wuraren ɗauka 2 daban-daban. Ku duka kuna buƙatar asusun Radar mai kariya (ƙara imel). Abokinka dole ne ya shigar da lambarka kafin rahoton jira na farko mai inganci."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "{referralRp} kowane ɗaya"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "Waɗannan garuruwan Birtaniya ne a cikin manhaja. Ba ka ganin garinka? Nemi shi a cikin manhaja. Ko danna {notify} a garin da yake {comingSoon}. Za mu aika imel idan ya fara aiki."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "Yana aiki yanzu"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "Ba wani ɓangare na manhajar isarwa ba"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "PickupRadar mai zaman kansa ne. Ba wani ɓangare na Uber Eats, Deliveroo, Just Eat ko wata manhajar isarwa ba. Ba ya taɓa amfani da asusunka a can."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "Karanta manufar sirri"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "Babu shiga manhajar isarwa."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} Ba ma taɓa neman sunan mai amfani ko kalmar sirri ta Uber Eats, Deliveroo ko Just Eat."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "Babu bayanan abokin ciniki ko oda."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} Babu suna, adireshin ko lambar oda."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "Kana iya tsallake manhajar isarwa."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} Zaɓar manhajar isarwa zaɓi ne."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "Kai kake da iko."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} Share asusu ko bayanin Radar a cikin manhaja a kowane lokaci."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "Tambayoyin direbobi"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "Ina buƙatar asusu?"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "A'a. Manhaja tana ba ka bayanin Radar kai tsaye. Kana iya bayar da rahoton lokacin jira nan take. Don kare {radarPoints}, ƙara imel daga baya. Babu kalmar sirri. Manhaja tana aika lambar lamba 6 ta imel."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "Ina PickupRadar ke aiki?"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "PickupRadar yana aiki a Milton Keynes yanzu. Na gaba London ne. Sannan ƙarin garuruwa, kamar Manchester, Birmingham, Leeds, Liverpool da Glasgow. Duba {cities}."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "dukkan garuruwa"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "Yaushe zan iya sauke manhaja?"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "Manhajojin iPhone da Android na zuwa nan ba da jimawa ba. A yanzu, {preview} yana nuna wuraren ɗauka na gaskiya da lokacin jira a Milton Keynes."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "duban kai tsaye"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "Ta yaya ake ƙididdige lokacin jira na yanzu?"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "Yana zuwa daga rahotannin direbobi a cikin awanni 2 da suka wuce. Rahotannin da suka wuce awanni 2 ba sa canza lokacin jira na yanzu."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "Mene ne {likelyFast} da {likelySlow}?"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "Kiyasai ne, ba rahotanni kai tsaye ba. Suna bayyana idan babu sabon rahoton lokacin jira."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "Shin yana bin wurina?"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "Babu bin diddigi a bayan fage. Manhaja tana amfani da wurinka yayin da kake amfani da ita, don nuna wuraren ɗauka kusa da kai da duba cewa kana wurin ɗauka yayin bayar da rahoto. Shafin yana neman wuri ne kawai idan ka zaɓi amfani da shi. Karanta {privacy} don ƙarin bayani."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "manufar sirri"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "Ta yaya zan share bayanana?"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "A cikin manhaja, buɗe {profile}. Danna {deleteAccount}. Idan ba ka ƙara imel ba, danna {deleteProfile}. Kana iya kuma aika mana imel. Duba {page} don matakan."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "Bincika wuraren ɗauka a Milton Keynes."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "Bincika wuraren ɗauka na gaskiya a Milton Keynes. Nemi wuri ka gwada allon rahoto. Babu abin da ka danna da ake aikawa."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "Buɗe duban kai tsaye"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "Duban kai tsaye na manhaja — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "Gwada manhajar PickupRadar da bayanan gaskiya na Milton Keynes. Duba kewaye, nemi wuri na ɗauka ka duba allon rahoto."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "Wannan PickupRadar ne da bayanan gaskiya na Milton Keynes. Duba kewaye. Nemi wuri na ɗauka ka buɗe shi. Babu abin da ka danna a nan da ake aikawa. Kana iya bayar da rahoto a manhajar waya kawai."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "Cikakken dubawa na manhajar PickupRadar da bayanan gaskiya na Milton Keynes"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "Taimako — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "Taimakon PickupRadar: tuntuɓi taimako, bayar da rahoton matsalar wuri na ɗauka, kuma nemo amsoshi game da bayanin Radar, {radarPoints} da share asusu."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "Kana buƙatar taimako? Aika imel game da manhaja, wuri na ɗauka, {radarPoints} ko sirrinka."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "Tuntuɓi"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "Tuntuɓi taimako"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "Aika imel don taimako, ra'ayi, matsalar wuri na ɗauka ko tambayar sirri:"
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "Adireshin wasiƙar kasuwanci"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "Don wasiƙa kawai. Imel ita ce hanya mafi sauri ta tuntuɓar mu."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "Abin da za a haɗa"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "Idan kana bayar da rahoton matsala, gaya mana:"
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "Sunan wuri na ɗauka"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "Yanki ko lambar gidan waya, idan ka sani"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "Abin da ya yi kuskure"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "Nau'in wayarka, idan matsala a cikin manhaja ce"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "Tambayoyin da ake yawan yi"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "Bayanin Radar da imel"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Manhaja tana ba ka bayanin Radar kai tsaye. Ba ka buƙatar shiga don amfani da PickupRadar ko samun {radarPoints}. Ƙara imel zaɓi ne. Yana kare {radarPoints} idan ka canza ko sake saita waya. Babu kalmar sirri. Manhaja tana aika lambar lamba 6 ta imel."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} da gayyata"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "Kana samun {radarPoints} don rahoton jira mai inganci ({waitRp}, ko {neededRp} idan an rubuta {reportNeeded}), kari na rahoto na farko ({firstRp}) da wuri na ɗauka da muka amince da shi ({approvedRp}). Kana iya gayyatar direba daga {profile}. Ku duka kuna buƙatar asusun Radar mai kariya (ƙara imel). Abokinka yana shigar da lambarka kafin rahoton jira na farko mai inganci. Idan abokinka ya yi rahotannin jira 3 masu inganci, aƙalla a ranaku 2 daban-daban (lokacin UTC), a wuraren ɗauka 2 daban-daban, kowane ɗaya yana samun {referralRp}. {rewards} Ba za ka iya amfani da {radarPoints} ba tukuna."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "Saƙonni ga direbobi"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "{profile} yana da {messages}: sanarwa, faɗakarwa da saƙonni na sirri ga garinka ko bayanin Radar ɗinka. Tsoffin saƙonni ko waɗanda aka cire ƙila ba za su sake bayyana ba."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "Share asusunka"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "Share asusu a cikin manhaja: {profile} → {deleteAccount}. Ko aika imel zuwa {email}. Idan ba ka ƙara imel ba, manhaja tana nuna {deleteProfile}. Duba shafin {page} don matakan."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "Babu wuri na ɗauka? Danna {suggest} a cikin manhaja. Akwai kuskure? Danna {reportProblem}. Ko aika imel, za mu duba."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "Asusunka na manhajar isarwa"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "PickupRadar baya haɗuwa da asusunka na Uber Eats, Deliveroo, Just Eat ko wata manhajar isarwa. Ba ma taɓa neman shiga, kalmar sirri, bayanan asusu, bayanan abokin ciniki ko bayanan oda. Direbobi suna raba rahotannin ɗauka kawai, kamar lokacin jira da matsalar wuri na ɗauka."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "Gwada PickupRadar kafin manhaja ta fito."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "Duban kai tsaye yana nuna wuraren ɗauka na gaskiya da lokacin jira a Milton Keynes. Bayar da rahoto da {radarPoints} a cikin manhajar waya kawai suke."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "Ba a sami shafi ba — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "Wannan shafi baya kan shafin PickupRadar."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "Wannan shafi yana wajen radar."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "Wannan adireshin baya kan shafin PickupRadar. Waɗannan shafuka suna nan:"
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "Gida"
+    }
+  }
+}

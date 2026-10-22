@@ -1,0 +1,602 @@
+{
+  "language": "ga",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "Léim go dtí an t-ábhar"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "Baile PickupRadar"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "Suíomh"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "Príobháideachas"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "Réamhamharc beo"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "Aip"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "Cabhair"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "Faisnéis dhlíthiúil"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "Bíodh an fanacht ar eolas agat sula dtéann tú isteach."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar. Neamhspleách agus gan nasc le Uber Eats, Deliveroo ná Just Eat."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "Raonta fanachta"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "Tapa"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "Fanacht ghearr"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "Fanacht fhada"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "Fanacht an-fhada"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "Gan tuairiscí úra? Féadfaidh PickupRadar {likelyFast} nó {likelySlow} a thaispeáint:"
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar): amanna fanachta ag bailiú do thiománaithe sa Ríocht Aontaithe"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "Féach cé chomh fada is a fhanann tiománaithe i mbialanna agus i siopaí sula dtéann tú isteach. Do thiománaithe Uber Eats, Deliveroo agus Just Eat sa Ríocht Aontaithe. Gan clárú."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar. Bíodh an fanacht ar eolas agat sula dtéann tú isteach."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "An seachadann tú do Uber Eats, Deliveroo nó Just Eat? Féach fanachtaí úra ag pointí bailithe i mbialanna agus i siopaí. Seachain fanacht fhada. Tapáil {reportWait} agus tuill {radarPoints}. Gan clárú."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "Bain triail as le sonraí fíor"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "Infhaighteacht"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "Anois i Milton Keynes. London ina dhiaidh sin."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "Tá na haipeanna iPhone agus Android ag teacht go luath."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "Sampla de scáileán baile PickupRadar leis an gcluaisín {nearby} oscailte. Tá pointí bailithe daite de réir na fanachta"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "Scáileán samplach: fanachtaí samplacha, ní tuairiscí beo ó thiománaithe"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "Fanacht shamplach"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "Meastachán samplach"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "1 tuairisc · 4 nóim ó shin"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "Scáileán samplach. Is amanna fanachta samplacha iad seo, ní tuairiscí beo. {live} le sonraí fíor."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "Bain triail as an réamhamharc beo"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "Féach cé chomh fada is a d’fhéadfá fanacht."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "Tuairiscíonn tiománaithe cé chomh fada is a d’fhan siad. Tagann an fanacht reatha ó thuairiscí le 2 uair an chloig anuas. Feiceann tú go tapa pointí bailithe tapa agus malla."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "Réamhamharc beo d’aip PickupRadar le sonraí fíor ó Milton Keynes"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "Bain triail as PickupRadar le sonraí fíor ó Milton Keynes."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "Féach pointí bailithe fíor i Milton Keynes. Seiceáil fanachtaí úra, nó {likelyFast} agus {likelySlow}. Is féidir leat an scáileán tuairisce a thriail, ach ní sheoltar aon rud."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "Roghnaigh cluaisín."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} Úsáid {nearby} chun pointí bailithe gar duit a aimsiú nuair a bhíonn an suíomh casta air. Úsáid {fast} agus {slow} chun fanachtaí agus meastacháin a sheiceáil."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "Cuardaigh pointí bailithe."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} Bain triail as ainm, ceantar nó cód poist, mar shampla KFC nó Bletchley."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "Oscail pointe bailithe."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} Osclaíonn an scáileán {reportWait}. Roghnaigh am fanachta. Ní sheoltar aon rud."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "Oscail an réamhamharc mór"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "Cad is féidir leat a fheiceáil sula dtéann tú isteach"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "Feiceann tú na lipéid chéanna san aip. Is tiománaithe a thuairiscíonn iad, ní na haipeanna seachadta."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "Roghnaíonn tiománaithe am fanachta. Feiceann tú an fanacht reatha agus cé mhéad tiománaí a thuairiscigh í le 2 uair an chloig anuas."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} agus {likelySlow}"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "Ní thaispeántar é ach nuair nach bhfuil tuairiscí úra ann. Is meastacháin iad, ní tuairiscí beo."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "Tuairiscíodh dúnta le déanaí é"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} nó {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "Tapálann tiománaithe {reportProblem} chun é seo a thuairisciú. Feiceann tú an tuairisc sula dtiomáineann tú ann."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "Féach nuair a thuairiscíonn tiománaithe nach bhfuil táibléad nó córas bialainne ag obair."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "Tosaíonn an t-ordú tar éis teacht"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "Ní thosaíonn roinnt áiteanna an t-ordú go dtí go dtagann tú. Is féidir le tiománaithe é seo a chur ar siúl agus iad ag tuairisciú."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "Pointí bailithe atá in easnamh nó mícheart"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "Pointe bailithe in easnamh? Tapáil {suggest}. Rud éigin mícheart? Tapáil {reportProblem}, ansin {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} nó {closedPermanently}."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "Trí chéim éasca. Tógann tuairisciú cúpla soicind."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "Oscail an aip"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "Gan phasfhocal. Tugann an aip próifíl Radar duit go huathoibríoch. Ní gá duit clárú."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "Seiceáil sula dtéann tú isteach"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "Aimsigh an pointe bailithe. Féach an fanacht reatha, nó {likelyFast} nó {likelySlow} mura bhfuil tuairiscí úra ann."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "Tuairiscigh do fanacht"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "Tar éis duit an t-ordú a bhailiú, tapáil {reportWait}. Tógann sé soicindí. Cabhraíonn do thuairisc le tiománaithe eile, agus tuilleann tú {radarPoints}."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "Tuill {radarPoints}"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Tapáil {reportWait} chun {radarPoints} a thuilleamh. Is féidir leat tosú gan chuntas. Cosain do {radarPoints} le do ríomhphost ionas go mbeidh siad sábháilte má athraíonn tú nó má athshocraíonn tú an fón. Gan phasfhocal. Seolann an aip cód 6 dhigit chugat trí ríomhphost."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "Duaiseanna ag teacht go luath."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} Ní féidir leat {radarPoints} a fhuascailt fós."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "Conas {radarPoints} a thuilleamh"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "Pointe bailithe oiriúnach gar duit gan fanacht le déanaí agus gan {likelyFast} ná {likelySlow}. Faigheann tú 15 RP as an tuairisc in ionad 10."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "Pointí breise ar do chéad tuairisc fanachta bhailí. Má tá sí ina {reportNeeded} freisin, faigheann tú 25 RP san iomlán."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "Nuair a cheadaímid pointe bailithe a mholann tú"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "Faigheann sibh beirt é nuair a dhéanann do chara 3 thuairisc fanachta bhailí, ar a laghad ar 2 lá éagsúil (am UTC), ag 2 phointe bailithe éagsúla. Teastaíonn cuntais Radar chosanta ón mbeirt agaibh (cuir ríomhphost leis). Caithfidh do chara do chód a chur isteach roimh an gcéad tuairisc fanachta bhailí."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "{referralRp} an duine"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "Seo cathracha na Ríochta Aontaithe san aip. Nach bhfuil do chathair le fáil? Iarr í san aip. Nó tapáil {notify} ar chathair atá {comingSoon}. Seolfaimid ríomhphost nuair a bheidh sí beo."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "Beo anois"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "Ní cuid d’aon aip seachadta é"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "Tá PickupRadar neamhspleách. Ní cuid de Uber Eats, Deliveroo, Just Eat ná aon aip seachadta eile é. Ní úsáideann sé do chuntais leo choíche."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "Léigh an polasaí príobháideachais"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "Gan logáil isteach in aipeanna seachadta."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} Ní iarrann muid ainm úsáideora ná pasfhocal Uber Eats, Deliveroo ná Just Eat choíche."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "Gan sonraí custaiméara ná ordaithe."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} Gan ainmneacha, seoltaí ná uimhreacha ordaithe."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "Is féidir leat an aip seachadta a scipeáil."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} Tá sé roghnach an aip seachadta a roghnú."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "Tá an smacht agat."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} Scrios do chuntas nó do phróifíl Radar san aip am ar bith."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "Ceisteanna ó thiománaithe"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "An bhfuil cuntas ag teastáil uaim?"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "Níl. Tugann an aip próifíl Radar duit go huathoibríoch. Is féidir leat fanachtaí a thuairisciú láithreach. Chun do {radarPoints} a chosaint, cuir do ríomhphost leis níos déanaí. Gan phasfhocal. Seolann an aip cód 6 dhigit chugat trí ríomhphost."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "Cá n-oibríonn PickupRadar?"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "Oibríonn PickupRadar i Milton Keynes anois. London ina dhiaidh sin. Ansin tuilleadh cathracha, mar Manchester, Birmingham, Leeds, Liverpool agus Glasgow. Féach {cities}."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "na cathracha go léir"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "Cathain is féidir liom an aip a íoslódáil?"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "Tá na haipeanna iPhone agus Android ag teacht go luath. Go dtí sin, taispeánann an {preview} pointí bailithe agus fanachtaí fíor i Milton Keynes."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "réamhamharc beo"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "Conas a ríomhtar an fanacht reatha?"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "Tagann sí ó thuairiscí tiománaithe le 2 uair an chloig anuas. Ní chuireann tuairiscí níos sine ná 2 uair an chloig isteach ar an bhfanacht reatha."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "Cad a chiallaíonn {likelyFast} agus {likelySlow}?"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "Is meastacháin iad, ní tuairiscí beo. Bíonn siad le feiceáil nuair nach bhfuil tuairiscí fanachta úra ann."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "An rianaíonn sé mo shuíomh?"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "Gan rianú sa chúlra. Úsáideann an aip do shuíomh agus tú á húsáid, chun pointí bailithe in aice láimhe a thaispeáint agus chun a sheiceáil go bhfuil tú ag pointe bailithe agus tú ag tuairisciú. Ní iarrann an suíomh suíomh ach má roghnaíonn tú é a úsáid. Léigh an {privacy} le haghaidh tuilleadh."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "polasaí príobháideachais"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "Conas a scriosaim mo shonraí?"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "San aip, oscail {profile}. Tapáil {deleteAccount}. Mura bhfuil ríomhphost curtha leis agat, tapáil {deleteProfile}. Is féidir leat ríomhphost a sheoladh chugainn freisin. Féach {page} le haghaidh na gcéimeanna."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "Déan iniúchadh ar phointí bailithe Milton Keynes."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "Déan iniúchadh ar phointí bailithe fíor i Milton Keynes. Cuardaigh áit agus bain triail as an scáileán tuairisce. Ní sheoltar aon rud a dtapálann tú air."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "Oscail an réamhamharc beo"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "Réamhamharc beo ar an aip — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "Bain triail as aip PickupRadar le sonraí fíor ó Milton Keynes. Féach timpeall, cuardaigh pointí bailithe agus féach an scáileán tuairisce."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "Seo PickupRadar le sonraí fíor ó Milton Keynes. Féach timpeall. Cuardaigh pointe bailithe agus oscail é. Ní sheoltar aon rud a dtapálann tú air anseo. Ní féidir leat tuairisciú ach san aip mhóibíleach."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "Réamhamharc iomlán ar aip PickupRadar le sonraí fíor ó Milton Keynes"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "Tacaíocht — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "Cabhair le PickupRadar: déan teagmháil leis an tacaíocht, tuairiscigh fadhb ag pointe bailithe, agus faigh freagraí faoi do phróifíl Radar, {radarPoints} agus do chuntas a scriosadh."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "Cabhair uait? Seol ríomhphost chugainn faoin aip, pointe bailithe, do {radarPoints} nó do phríobháideachas."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "Teagmháil"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "Déan teagmháil leis an tacaíocht"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "Seol ríomhphost chugainn le haghaidh cabhrach, smaointe, fadhbanna ag pointí bailithe nó ceisteanna príobháideachais:"
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "Seoladh comhfhreagrais ghnó"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "Do litreacha amháin. Is é an ríomhphost an bealach is tapúla lenár dteagmháil a dhéanamh."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "Cad le cur san áireamh"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "Má thuairiscíonn tú fadhb, inis dúinn:"
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "Ainm an phoinnte bailithe"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "An ceantar nó an cód poist, má tá sé ar eolas agat"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "Cad a chuaigh mícheart"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "Múnla do ghutháin, má tá fadhb ag an aip"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "Ceisteanna coitianta"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "Próifíl Radar agus ríomhphost"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Tugann an aip próifíl Radar duit go huathoibríoch. Ní gá duit logáil isteach chun PickupRadar a úsáid ná {radarPoints} a thuilleamh. Tá sé roghnach ríomhphost a chur leis. Cosnaíonn sé do {radarPoints} má athraíonn tú nó má athshocraíonn tú an fón. Gan phasfhocal. Seolann an aip cód 6 dhigit chugat trí ríomhphost."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} agus cuirí"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "Tuilleann tú {radarPoints} as tuairiscí fanachta bailí ({waitRp}, nó {neededRp} nuair a deir sé {reportNeeded}), bónas don chéad tuairisc ({firstRp}) agus pointí bailithe a cheadaímid ({approvedRp}). Is féidir leat tiománaí a thabhairt cuireadh ó {profile}. Teastaíonn cuntais Radar chosanta ón mbeirt agaibh (cuir ríomhphost leis). Cuireann do chara do chód isteach roimh an gcéad tuairisc fanachta bhailí. Nuair a dhéanann do chara 3 thuairisc fanachta bhailí, ar a laghad ar 2 lá éagsúil (am UTC), ag 2 phointe bailithe éagsúla, faigheann gach duine agaibh {referralRp}. {rewards} Ní féidir leat {radarPoints} a fhuascailt fós."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "Teachtaireachtaí do thiománaithe"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "Tá {messages} ag {profile}: fógraí, foláirimh agus teachtaireachtaí pearsanta do do chathair nó do phróifíl Radar. Seans nach dtaispeánfar teachtaireachtaí sean nó bainte a thuilleadh."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "Scrios do chuntas"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "Scrios do chuntas san aip: {profile} → {deleteAccount}. Nó seol ríomhphost chuig {email}. Mura bhfuil ríomhphost curtha leis agat, taispeánann an aip {deleteProfile}. Féach an leathanach {page} le haghaidh na gcéimeanna."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "Pointe bailithe in easnamh? Tapáil {suggest} san aip. Ceann mícheart? Tapáil {reportProblem}. Nó seol ríomhphost chugainn agus seiceálfaimid é."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "Do chuntais aipeanna seachadta"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "Ní nascann PickupRadar le do chuntais Uber Eats, Deliveroo, Just Eat ná aipeanna seachadta eile. Ní iarrann muid logáil isteach, pasfhocail, sonraí cuntais, sonraí custaiméirí ná sonraí ordaithe choíche. Ní roinneann tiománaithe ach tuairiscí bailithe, mar amanna fanachta agus fadhbanna ag pointí bailithe."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "Bain triail as PickupRadar sula seoltar an aip."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "Taispeánann an réamhamharc beo pointí bailithe agus fanachtaí fíor i Milton Keynes. Níl tuairisciú ná {radarPoints} ach san aip mhóibíleach."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "Níor aimsíodh an leathanach — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "Níl an leathanach sin ar shuíomh PickupRadar."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "Tá an leathanach seo as an radar."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "Níl an seoladh sin ar shuíomh PickupRadar. Tá na leathanaigh seo ann:"
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "Baile"
+    }
+  }
+}

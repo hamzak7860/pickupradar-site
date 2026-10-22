@@ -1,0 +1,602 @@
+{
+  "language": "ak",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "Huri kɔ nsɛm no so"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "PickupRadar fie"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "Saet"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "Kokoam"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "Hwɛ a ɛreyɛ"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "App"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "Mmoa"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "Mmara"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "Hu twɛn bere no ansa na wobɛhyɛn."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar. Ɛgyina ne ho so, na enni Uber Eats, Deliveroo anaa Just Eat ho."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "Twɛn bere no nhyehyɛe"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "Ntɛm"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "Twɛn tiawa"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "Twɛn tenten"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "Twɛn tenten paa"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "Amanneɛbɔ foforo nni hɔ? PickupRadar betumi akyerɛ {likelyFast} anaa {likelySlow}:"
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar): pickup twɛn bere ma akarfoɔ wɔ United Kingdom"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "Hwɛ sɛnea akarfoɔ twɛn wɔ adidibea ne sotɔɔ mu ansa na wobɛhyɛn. Ma Uber Eats, Deliveroo ne Just Eat akarfoɔ wɔ United Kingdom. Wɔnhyɛ wo din."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar. Hu twɛn bere no ansa na wobɛhyɛn."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "Wode nneɛma kɔ ma Uber Eats, Deliveroo anaa Just Eat? Hwɛ twɛn bere foforo wɔ adidibea ne sotɔɔ pickup beae. Kwati twɛn tenten. Mia {reportWait} na nya {radarPoints}. Wɔnhyɛ wo din."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "Sɔ hwɛ nokware nsɛm"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "Nea ɛwɔ hɔ"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "Seesei wɔ Milton Keynes. Akyiri no London."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "iPhone ne Android app no reba ntɛm."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "PickupRadar fie skreen nhwɛso, tab {nearby} abue. Pickup beae no wɔ kɔla sɛnea twɛn bere no te"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "Nhwɛso skreen: twɛn bere nhwɛso, ɛnyɛ akarfo amanneɛbɔ a ɛreyɛ"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "Twɛn bere nhwɛso"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "Nhwɛso bu"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "amanneɛbɔ 1 · simma 4 a atwam"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "Nhwɛso skreen. Eyi yɛ twɛn bere nhwɛso, ɛnyɛ amanneɛbɔ a ɛreyɛ. {live} nokware nsɛm."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "Sɔ hwɛ a ɛreyɛ no"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "Hwɛ bere a wobetumi atwɛn."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "Akarfoɔ bɔ twɛn bere a wɔatwɛn ho amanneɛ. Twɛn bere a ɛwɔ hɔ seesei fi amanneɛbɔ a ɛwɔ nnɔnhwerew 2 a atwam mu. Wohu pickup beae a ɛyɛ ntɛm ne nea ɛyɛ nwann."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "PickupRadar app hwɛ a ɛreyɛ a Milton Keynes nokware nsɛm wom"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "Sɔ PickupRadar hwɛ a Milton Keynes nokware nsɛm wom."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "Hwɛ pickup beae ankasa wɔ Milton Keynes. Hwɛ twɛn bere foforo, anaa {likelyFast} ne {likelySlow}. Wubetumi asɔ amanneɛbɔ skreen no hwɛ, nanso biribiara nkɔ."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "Paw tab."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} Fa {nearby} di dwuma hwehwɛ pickup beae a ɛbɛn wo bere a beae no ayɛ. Fa {fast} ne {slow} di dwuma hwɛ twɛn bere ne nsusui."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "Hwehwɛ pickup beae."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} Sɔ din, mpɔtam anaa post koodu hwɛ, te sɛ KFC anaa Bletchley."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "Bue pickup beae."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} {reportWait} skreen no bue. Paw twɛn bere. Biribiara nkɔ."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "Bue hwɛ kɛse no"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "Nea wohu ansa na wobɛhyɛn"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "Wohu nkyerɛwde koro no ara wɔ app no mu. Akarfoɔ na wɔbɔ ho amanneɛ, ɛnyɛ delivery app no."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "Akarfoɔ paw twɛn bere no. Wohu twɛn bere a ɛwɔ hɔ seesei ne akarfoɔ dodow a wɔabɔ ho amanneɛ wɔ nnɔnhwerew 2 a atwam mu."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} ne {likelySlow}"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "Wɔkyerɛ wɔ bere a amanneɛbɔ foforo nni hɔ nko ara. Eyi yɛ nsusui, ɛnyɛ amanneɛbɔ a ɛreyɛ."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "Wɔabɔ amanneɛ seesei ara sɛ wɔato mu"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} anaa {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "Akarfoɔ mia {reportProblem} de bɔ eyi ho amanneɛ. Wohu amanneɛbɔ no ansa na wobɛkɔ hɔ."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "Hwɛ bere a akarfoɔ bɔ amanneɛ sɛ adidibea tablet anaa nhyehyɛe no nyɛ adwuma."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "Hyɛ no fi ase bere a woduru"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "Beae bi fi hyɛ no ase bere a woduru nko ara. Akarfoɔ betumi asɔ no bere a wɔrebɔ amanneɛ."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "Pickup beae a ayera anaa a ɛnyɛ"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "Pickup beae no nni hɔ? Mia {suggest}. Biribi nyɛ yiye? Mia {reportProblem}, na {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} anaa {closedPermanently}."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "Anammɔn mmiɛnsa a ɛyɛ mmerɛw. Amanneɛbɔ no gye simma kakra."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "Bue app no"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "Password nni hɔ. App no ma wo Radar profael ankasa. Ɛnsɛ sɛ wohyɛ wo din."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "Hwɛ ansa na wobɛhyɛn"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "Hwehwɛ pickup beae no. Hwɛ twɛn bere a ɛwɔ hɔ seesei, anaa {likelyFast} anaa {likelySlow} sɛ amanneɛbɔ foforo nni hɔ a."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "Bɔ wo twɛn bere ho amanneɛ"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "Bere a wogye hyɛ no awie no, mia {reportWait}. Ɛgye simma kakra. Wo amanneɛbɔ no boa akarfoɔ foforo, na wunya {radarPoints}."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "Nya {radarPoints}"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Mia {reportWait} na nya {radarPoints}. Wubetumi afi ase a akontaabu biara nni hɔ. Bɔ {radarPoints} ho ban wɔ email so na ɛbɛyɛ dwoodwoo sɛ wosesa anaa wosiesie fon no bio a. Password nni hɔ. App no soma nɔma 6 koodu wɔ email so."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "Akatua no reba."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} Wuntumi mfa {radarPoints} nni dwuma seesei."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "Sɛnea wobenya {radarPoints}"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "Pickup beae a ɛfata a ɛbɛn wo, twɛn bere foforo nni hɔ, na {likelyFast} anaa {likelySlow} nni hɔ. Wonya 15 RP wɔ saa amanneɛbɔ no ho, ɛnyɛ 10."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "Nkonta a wɔde ka ho wɔ twɛn amanneɛbɔ a edi kan a ɛfata no so. Sɛ ɛyɛ {reportNeeded} nso a, wonya 25 RP nyinaa."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "Bere a yɛpene pickup beae a wosusuw ho no so"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "Mo baanu nya no bere a wo adamfo yɛ twɛn amanneɛbɔ a ɛfata 3, wɔ nna 2 soronko so koraa (UTC bere), wɔ pickup beae 2 soronko so. Mo baanu hia Radar akontaabu a wɔabɔ ho ban (fa email ka ho). Wo adamfo nso ɛsɛ sɛ ɔkyerɛw wo koodu no ansa na twɛn amanneɛbɔ a edi kan a ɛfata no aba."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "{referralRp} biara"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "Eyinom ne United Kingdom nkuro a ɛwɔ app no mu. Wunhu wo kurow? Bisa wɔ app no mu. Anaa mia {notify} wɔ kurow a ɛyɛ {comingSoon} so. Yɛbɛsoma email bere a ɛba ase."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "Ɛreyɛ seesei"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "Ɛnyɛ delivery app biara fa"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "PickupRadar gyina ne ho so. Ɛnyɛ Uber Eats, Deliveroo, Just Eat anaa delivery app foforo biara fa. Ɛmfa wo akontaabu a ɛwɔ hɔ no nni dwuma da."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "Kenkan kokoam nhyehyɛe no"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "Delivery app mu nkɔ."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} Yɛmmisa Uber Eats, Deliveroo anaa Just Eat din anaa password da."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "Dɛtɔfo anaa hyɛ ho nsɛm nni hɔ."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} Din, adrɛse anaa hyɛ nɔma nni hɔ."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "Wubetumi atwa delivery app no mu."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} Delivery app a wopaw no yɛ nea wopɛ."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "Wo na wodi so."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} Popa akontaabu anaa Radar profael wɔ app no mu bere biara."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "Akarfoɔ nsɛmmisa"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "Mehia akontaabu?"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "Dabi. App no ma wo Radar profael ankasa. Wubetumi abɔ twɛn bere ho amanneɛ ntɛm ara. Sɛ wopɛ sɛ wobɔ {radarPoints} ho ban a, fa email ka ho akyiri. Password nni hɔ. App no soma nɔma 6 koodu wɔ email so."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "Ɛhe na PickupRadar yɛ adwuma?"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "PickupRadar yɛ adwuma wɔ Milton Keynes seesei. Akyiri no yɛ London. Afei nkuro pii, te sɛ Manchester, Birmingham, Leeds, Liverpool ne Glasgow. Hwɛ {cities}."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "nkuro nyinaa"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "Bere bɛn na mɛtumi atwe app no?"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "iPhone ne Android app no reba ntɛm. Seesei, {preview} kyerɛ pickup beae ankasa ne twɛn bere wɔ Milton Keynes."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "hwɛ a ɛreyɛ"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "Wɔbu twɛn bere a ɛwɔ hɔ seesei no sɛn?"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "Efi akarfo amanneɛbɔ a ɛwɔ nnɔnhwerew 2 a atwam mu. Amanneɛbɔ a ɛboro nnɔnhwerew 2 nsesa twɛn bere a ɛwɔ hɔ seesei no."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "{likelyFast} ne {likelySlow} ase ne dɛn?"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "Ɛyɛ nsusui, ɛnyɛ amanneɛbɔ a ɛreyɛ. Ɛba bere a twɛn amanneɛbɔ foforo nni hɔ."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "Ɛdi m'akyi?"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "Akyi akyidifoɔ nni hɔ. App no de wo beae di dwuma bere a wode reyɛ adwuma, de kyerɛ pickup beae a ɛbɛn wo na hwɛ sɛ wowɔ pickup beae no so bere a worebɔ amanneɛ. Saet no bisa beae no bere a wopaw sɛ wode bɛyɛ adwuma nko ara. Kenkan {privacy} na hu pii."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "kokoam nhyehyɛe no"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "Mɛpopa me nsɛm no sɛn?"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "Wɔ app no mu, bue {profile}. Mia {deleteAccount}. Sɛ woamfa email anka ho a, mia {deleteProfile}. Wubetumi asoma yɛn email nso. Hwɛ {page} na hu anammɔn no."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "Hwehwɛ pickup beae wɔ Milton Keynes."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "Hwehwɛ pickup beae ankasa wɔ Milton Keynes. Hwehwɛ beae na sɔ amanneɛbɔ skreen no hwɛ. Biribiara a womia no nkɔ."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "Bue hwɛ a ɛreyɛ no"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "App hwɛ a ɛreyɛ — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "Sɔ PickupRadar app no hwɛ a Milton Keynes nokware nsɛm wom. Hwɛ ho, hwehwɛ pickup beae na hwɛ amanneɛbɔ skreen no."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "Eyi ne PickupRadar a Milton Keynes nokware nsɛm wom. Hwɛ ho. Hwehwɛ pickup beae na bue. Biribiara a womia wɔ ha nkɔ. Wubetumi abɔ amanneɛ wɔ fon app no mu nko ara."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "PickupRadar app hwɛ a emu nyinaa a Milton Keynes nokware nsɛm wom"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "Mmoa — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "PickupRadar mmoa: frɛ mmoa, bɔ pickup beae ɔhaw ho amanneɛ, na hwehwɛ mmuae fa Radar profael, {radarPoints} ne akontaabu popa ho."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "Wohia mmoa? Soma email fa app no, pickup beae, {radarPoints} anaa wo kokoam ho."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "Frɛ"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "Frɛ mmoa"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "Soma email ma mmoa, adwene, pickup beae ɔhaw anaa kokoam nsɛmmisa:"
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "Adwumayɛ krataa adrɛse"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "Ma krataa nko ara. Email ne kwan a ɛyɛ ntɛm a wode bɛfrɛ yɛn."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "Nea ɛsɛ sɛ woka ho"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "Sɛ worebɔ ɔhaw ho amanneɛ a, ka kyerɛ yɛn:"
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "Pickup beae no din"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "Mpɔtam anaa post koodu, sɛ wonim a"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "Nea ɛnyɛ"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "Wo fon nhyehyɛe, sɛ ɔhaw no wɔ app no mu a"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "Nsɛmmisa a wɔbisa daa"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "Radar profael ne email"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "App no ma wo Radar profael ankasa. Ɛnsɛ sɛ wokɔ mu na wode PickupRadar bedi dwuma anaa wubenya {radarPoints}. Email a wode ka ho yɛ nea wopɛ. Ɛbɔ {radarPoints} ho ban sɛ wosesa anaa wosiesie fon no bio a. Password nni hɔ. App no soma nɔma 6 koodu wɔ email so."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} ne nsafrɛ"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "Wonya {radarPoints} wɔ twɛn amanneɛbɔ a ɛfata ho ({waitRp}, anaa {neededRp} bere a wɔakyerɛw {reportNeeded}), amanneɛbɔ a edi kan no bɔnas ({firstRp}) ne pickup beae a yɛpene so ({approvedRp}). Wubetumi afrɛ akarfo fi {profile}. Mo baanu hia Radar akontaabu a wɔabɔ ho ban (fa email ka ho). Wo adamfo kyerɛw wo koodu no ansa na twɛn amanneɛbɔ a edi kan a ɛfata no aba. Bere a wo adamfo yɛ twɛn amanneɛbɔ a ɛfata 3, wɔ nna 2 soronko so koraa (UTC bere), wɔ pickup beae 2 soronko so no, biara nya {referralRp}. {rewards} Wuntumi mfa {radarPoints} nni dwuma seesei."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "Nkrasɛm ma akarfoɔ"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "{profile} wɔ {messages}: nkratoɔ, kɔkɔbɔ ne ankasa nkrasɛm ma wo kurow anaa wo Radar profael. Nkrasɛm dadaw anaa nea wɔayi no betumi ammra bio."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "Popa wo akontaabu"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "Popa akontaabu no wɔ app no mu: {profile} → {deleteAccount}. Anaa soma email kɔ {email}. Sɛ woamfa email anka ho a, app no kyerɛ {deleteProfile}. Hwɛ krataafa {page} na hu anammɔn no."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "Pickup beae no nni hɔ? Mia {suggest} wɔ app no mu. Biribi nyɛ yiye? Mia {reportProblem}. Anaa soma email na yɛbɛhwɛ."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "Wo delivery app akontaabu"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "PickupRadar nni wo Uber Eats, Deliveroo, Just Eat anaa delivery app foforo akontaabu ho. Yɛmmisa kɔ mu, password, akontaabu nsɛm, dɛtɔfo nsɛm anaa hyɛ nsɛm da. Akarfoɔ kyɛ pickup amanneɛbɔ nko ara, te sɛ twɛn bere ne pickup beae ɔhaw."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "Sɔ PickupRadar hwɛ ansa na app no aba."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "Hwɛ a ɛreyɛ no kyerɛ pickup beae ankasa ne twɛn bere wɔ Milton Keynes. Amanneɛbɔ ne {radarPoints} wɔ fon app no mu nko ara."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "Wɔanhu krataafa no — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "Saa krataafa no nni PickupRadar saet no so."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "Saa krataafa yi wɔ radar akyi."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "Saa adrɛse no nni PickupRadar saet no so. Krataafa yi wɔ hɔ:"
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "Fie"
+    }
+  }
+}

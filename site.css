@@ -628,7 +628,7 @@ body.page-home #live-preview {
   border-top: 1px solid var(--w-line);
 }
 
-.w-signal > div { display: grid; gap: 12px; }
+.w-signal > div { display: grid; gap: 12px; min-width: 0; }
 
 .w-icon {
   display: inline-flex;
@@ -1477,9 +1477,13 @@ body.page-live-preview #livePreview {
 }
 
 /* Translated labels can be much longer than the English: let them wrap on small screens. */
-.w-signal-ui .w-pill { white-space: normal; max-width: 100%; }
+.w-signal-ui { min-width: 0; }
+.w-signal-ui .w-pill,
+.w-signal .w-h3 { white-space: normal; max-width: 100%; min-width: 0; overflow-wrap: anywhere; }
 .w-display, .w-h2, .w-h3, .w-lede, .w-text { overflow-wrap: break-word; }
 .w-ledger li > span:first-child { min-width: 0; overflow-wrap: anywhere; }
+/* Keep amounts such as "+10 RP" on one line. */
+bdi { white-space: nowrap; }
 
 @media (max-width: 960px) {
   .w-points-grid,

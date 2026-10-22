@@ -1,0 +1,602 @@
+{
+  "language": "om",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "Gara qabiyyee ce'i"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "Fuula PickupRadar"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "Marsariitii"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "Iccitii"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "Ilaalcha kallattii"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "Appii"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "Gargaarsa"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "Seera"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "Yeroo eegumsaa osoo hin seenin dura beeki."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar. Of danda'aa, Uber Eats, Deliveroo yookaan Just Eat waliin hin hidhamne."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "Hanga yeroo eegumsaa"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "Saffisaa"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "Eegumsa gabaabaa"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "Eegumsa dheeraa"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "Eegumsa baay'ee dheeraa"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "Gabaasni haaraan hin jiru? PickupRadar {likelyFast} yookaan {likelySlow} agarsiisuu danda'a:"
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar): yeroo eegumsa fudhannaa konkolaachistootaaf Mootummaa Gamtooftuu keessatti"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "Osoo hin seenin dura konkolaachistoonni mana nyaataa fi dukkaana keessatti hammam akka eegan ilaali. Konkolaachistoota Uber Eats, Deliveroo fi Just Eat Mootummaa Gamtooftuu keessatti. Galmeen hin barbaachisu."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar. Yeroo eegumsaa osoo hin seenin dura beeki."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "Uber Eats, Deliveroo yookaan Just Eat tiif ni geessitaa? Bakka fudhannaa mana nyaataa fi dukkaana irratti yeroo eegumsaa haaraa ilaali. Eegumsa dheeraa irraa fagaadhu. {reportWait} tuqi {radarPoints} argadhu. Galmeen hin barbaachisu."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "Odeeffannoo dhugaa waliin yaali"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "Argamuu"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "Amma Milton Keynes keessatti. Itti aansee London."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "Appilii iPhone fi Android dhiyeenyaan dhufu."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "Fakkeenya fuula jalqabaa PickupRadar, taabii {nearby} banamee. Bakkeewwan fudhannaa yeroo eegumsaatiin halluu qabu"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "Fuula fakkeenyaa: yeroo eegumsa fakkeenyaa, gabaasa kallattii konkolaachistotaa miti"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "Yeroo eegumsa fakkeenyaa"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "Tilmaama fakkeenyaa"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "gabaasa 1 · daqiiqaa 4 dura"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "Fuula fakkeenyaa. Kun yeroo eegumsa fakkeenyaa, gabaasa kallattii miti. {live} odeeffannoo dhugaa waliin."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "Ilaalcha kallattii yaali"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "Hammam akka eegu dandeessu ilaali."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "Konkolaachistoonni hammam akka eegan ni gabaasu. Yeroon eegumsaa ammaa gabaasa sa'aatii 2 darban keessaa dhufa. Bakka fudhannaa saffisaa fi suuta ta'e dafanii ni argitu."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "Ilaalcha kallattii appii PickupRadar odeeffannoo dhugaa Milton Keynes waliin"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "PickupRadar odeeffannoo dhugaa Milton Keynes waliin yaali."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "Bakkeewwan fudhannaa dhugaa Milton Keynes keessaa ilaali. Yeroo eegumsaa haaraa ilaali, yookaan {likelyFast} fi {likelySlow}. Fuula gabaasaa yaaluu dandeessu, garuu wanni ergamu hin jiru."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "Taabii filadhu."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} Bakki yoo baname bakkeewwan fudhannaa si dhiyoo jiran argachuuf {nearby} fayyadami. Yeroo eegumsaa fi tilmaama ilaaluuf {fast} fi {slow} fayyadami."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "Bakka fudhannaa barbaadi."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} Maqaa, naannoo yookaan koodii poostaa yaali, fakkeenyaaf KFC yookaan Bletchley."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "Bakka fudhannaa bani."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} Fuulli {reportWait} ni banama. Yeroo eegumsaa filadhu. Wanni ergamu hin jiru."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "Ilaalcha guddaa bani"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "Osoo hin seenin dura wanta argitu"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "Appii keessatti mallattoo walfakkaataa ni argita. Konkolaachistoonni isa gabaasu, appii geejjibaa miti."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "Konkolaachistoonni yeroo eegumsaa filatu. Yeroo eegumsaa ammaa fi sa'aatii 2 darban keessatti konkolaachistoonni meeqa akka gabaasan ni argita."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} fi {likelySlow}"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "Gabaasni haaraan yoo hin jirre qofa ni agarsiifama. Kun tilmaama, gabaasa kallattii miti."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "Dhiyeenya cufame jedhamee gabaafame"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} yookaan {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "Konkolaachistoonni kana gabaasuuf {reportProblem} tuqu. Achitti deemuu kee dura gabaasa ni argita."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "Konkolaachistoonni taabileetii yookaan sirni mana nyaataa hin hojjenne yoo gabaasan ilaali."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "Ajajni ati yommuu geessu jalqaba"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "Bakkeewwan tokko tokko ajaja yommuu ati geessu qofa jalqabu. Konkolaachistoonni yeroo gabaasaa kana banuu danda'u."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "Bakka fudhannaa bade yookaan dogoggoraa"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "Bakki fudhannaa hin jiru? {suggest} tuqi. Wanti dogoggoraa jiraa? {reportProblem} tuqi, achiis {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} yookaan {closedPermanently}."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "Tarkaanfii sadii salphaa. Gabaasuun sekondii muraasa qofa fudhata."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "Appii bani"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "Jecha iccitii hin jiru. Appiin piroofaayilii Radar ofumaan siif kenna. Galmaa'uun hin barbaachisu."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "Osoo hin seenin dura ilaali"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "Bakka fudhannaa barbaadi. Yeroo eegumsaa ammaa ilaali, yookaan gabaasni haaraan yoo hin jirre {likelyFast} yookaan {likelySlow}."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "Yeroo eegumsaa kee gabaasi"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "Ajaja erga fudhattee booda {reportWait} tuqi. Sekondii muraasa fudhata. Gabaasni kee konkolaachistoota biroo gargaara, ati {radarPoints} argatta."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "{radarPoints} argadhu"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "{radarPoints} argachuuf {reportWait} tuqi. Akkaawuntii malee jalqabuu dandeessa. Bilbilli yoo jijjiiramte yookaan deebifamte {radarPoints} nageenyaan akka turu imeelii tiin eegi. Jecha iccitii hin jiru. Appiin koodii dijiitii 6 imeelii tiin erga."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "Badhaasni dhiyeenyaan dhufa."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} {radarPoints} amma fayyadamuu hin dandeessu."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "Akkaataa {radarPoints} itti argatan"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "Bakka fudhannaa ulaagaa guutu si dhiyoo jiru, yeroo eegumsaa haaraa hin qabu, {likelyFast} yookaan {likelySlow} hin qabu. Gabaasa sanaaf 15 RP argatta, 10 miti."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "Qabxii dabalataa gabaasa eegumsaa sirrii jalqabaa irratti. Sunis {reportNeeded} yoo ta'e, waliigala 25 RP argatta."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "Bakka fudhannaa ati dhiyeessite yeroo mirkaneessinu"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "Hiriyyaan kee gabaasa eegumsaa sirrii 3 yeroo hojjetu, yoo xiqqaate guyyaa 2 adda addaa (yeroo UTC) irratti, bakka fudhannaa 2 adda addaa irratti, lamaan keessan ni argattu. Lamaan keessan akkaawuntii Radar eegumsa qabu barbaaddu (imeelii dabaluu). Hiriyyaan kee koodii kee gabaasa eegumsaa sirrii jalqabaa dura galchuu qaba."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "tokkoon tokkoon {referralRp}"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "Kanneen magaalota Mootummaa Gamtooftuu appii keessaa dha. Magaalaa kee hin arginee? Appii keessatti gaafadhu. Yookaan magaalaa {comingSoon} ta'e irratti {notify} tuqi. Yeroo seenu imeelii siif ergina."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "Amma jira"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "Appii geejjibaa kamiyyuu keessaa miti"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "PickupRadar of danda'aa dha. Uber Eats, Deliveroo, Just Eat yookaan appii geejjibaa biraa kamiyyuu keessaa miti. Akkaawuntii kee achitti gonkumaa hin fayyadamu."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "Imaammata iccitii dubbisi"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "Seenuun appii geejjibaa hin jiru."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} Maqaa fayyadamaa yookaan jecha iccitii Uber Eats, Deliveroo yookaan Just Eat gonkumaa hin gaafannu."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "Bal'inni maamilaa yookaan ajajaa hin jiru."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} Maqaan, teessoon yookaan lakkoofsi ajajaa hin jiru."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "Appii geejjibaa irra darbuu dandeessa."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} Appii geejjibaa filachuun filannoo dha."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "To'annaan kee ti."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} Appii keessatti akkaawuntii yookaan piroofaayilii Radar yeroo barbaaddetti haqi."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "Gaaffii konkolaachistootaa"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "Akkaawuntiin na barbaachisaa?"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "Lakki. Appiin piroofaayilii Radar ofumaan siif kenna. Yeroo eegumsaa battalumatti gabaasuu dandeessa. {radarPoints} eeguuf booda imeelii dabaluu. Jecha iccitii hin jiru. Appiin koodii dijiitii 6 imeelii tiin erga."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "PickupRadar eessa hojjeta?"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "PickupRadar amma Milton Keynes keessatti hojjeta. Itti aansee London. Achii booda magaalota dabalataa, akka Manchester, Birmingham, Leeds, Liverpool fi Glasgow. {cities} ilaali."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "magaalota hunda"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "Appii yoom buufachuu danda'a?"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "Appilii iPhone fi Android dhiyeenyaan dhufu. Ammaaf {preview} bakkeewwan fudhannaa dhugaa fi yeroo eegumsaa Milton Keynes agarsiisa."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "ilaalcha kallattii"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "Yeroon eegumsaa ammaa akkamitti shallagama?"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "Gabaasa konkolaachistootaa sa'aatii 2 darban keessaa dhufa. Gabaasni sa'aatii 2 caalu yeroo eegumsaa ammaa hin jijjiiru."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "{likelyFast} fi {likelySlow} maal jechuudha?"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "Tilmaama, gabaasa kallattii miti. Gabaasni eegumsaa haaraan yoo hin jirre ni mul'atu."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "Bakka koo hordofaa?"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "Hordoffiin duubaa hin jiru. Appiin bakka kee yeroo ati fayyadamtu fayyadama, bakkeewwan fudhannaa dhiyoo jiran agarsiisuuf fi yeroo gabaasa bakka fudhannaa irra akka jirtu mirkaneessuuf. Marsariitiin bakka gaafata yeroo ati fayyadamuu filattu qofa. Dabalataan {privacy} dubbisi."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "imaammata iccitii"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "Odeeffannoo koo akkamitti haqa?"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "Appii keessatti {profile} bani. {deleteAccount} tuqi. Imeelii yoo hin daballe {deleteProfile} tuqi. Imeelii nuuf erguu dandeessa. Tarkaanfii {page} ilaali."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "Bakkeewwan fudhannaa Milton Keynes sakatta'i."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "Bakkeewwan fudhannaa dhugaa Milton Keynes sakatta'i. Bakka barbaadi fuula gabaasaas yaali. Wanti ati tuqxe hin ergamu."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "Ilaalcha kallattii bani"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "Ilaalcha kallattii appii — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "Appii PickupRadar odeeffannoo dhugaa Milton Keynes waliin yaali. Naannoo ilaali, bakka fudhannaa barbaadi, fuula gabaasaas ilaali."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "Kun PickupRadar odeeffannoo dhugaa Milton Keynes waliini. Naannoo ilaali. Bakka fudhannaa barbaadi baniis. Wanti asitti tuqxe hin ergamu. Appii bilbilaa qofatti gabaasuu dandeessa."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "Ilaalcha guutuu appii PickupRadar odeeffannoo dhugaa Milton Keynes waliin"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "Deeggarsa — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "Gargaarsa PickupRadar: deeggarsa qunnami, rakkoo bakka fudhannaa gabaasi, deebii waa'ee piroofaayilii Radar, {radarPoints} fi akkaawuntii haquu barbaadi."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "Gargaarsa barbaaddaa? Waa'ee appii, bakka fudhannaa, {radarPoints} yookaan iccitii keetii imeelii ergi."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "Qunnami"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "Deeggarsa qunnami"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "Gargaarsa, yaada, rakkoo bakka fudhannaa yookaan gaaffii iccitii tiif imeelii ergi:"
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "Teessoo poostaa daldalaa"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "Xalayaa qofaaf. Nu qunnamuuf karaan saffisaa imeelii dha."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "Maal hammatamuu qaba"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "Rakkoo yoo gabaasaa jirtan nuuf himaa:"
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "Maqaa bakka fudhannaa"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "Naannoo yookaan koodii poostaa, yoo beektan"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "Maaltu dogoggora"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "Moodela bilbila keessanii, rakkoon appii yoo ta'e"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "Gaaffii yeroo baay'ee gaafataman"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "Piroofaayilii Radar fi imeelii"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Appiin piroofaayilii Radar ofumaan siif kenna. PickupRadar fayyadamuuf yookaan {radarPoints} argachuuf seenuun hin barbaachisu. Imeelii dabaluun filannoo dha. Bilbilli yoo jijjiiramte yookaan deebifamte {radarPoints} ni eega. Jecha iccitii hin jiru. Appiin koodii dijiitii 6 imeelii tiin erga."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} fi affeerraa"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "Gabaasa eegumsaa sirrii tiif {radarPoints} argatta ({waitRp}, yookaan {reportNeeded} yoo barreeffame {neededRp}), badhaasa gabaasa jalqabaa ({firstRp}) fi bakka fudhannaa nu mirkaneessinu ({approvedRp}). {profile} irraa konkolaachisaa affeeruu dandeessa. Lamaan keessan akkaawuntii Radar eegumsa qabu barbaaddu (imeelii dabaluu). Hiriyyaan kee koodii kee gabaasa eegumsaa sirrii jalqabaa dura galcha. Hiriyyaan kee gabaasa eegumsaa sirrii 3 yeroo hojjetu, yoo xiqqaate guyyaa 2 adda addaa (yeroo UTC) irratti, bakka fudhannaa 2 adda addaa irratti, tokkoon tokkoon {referralRp} argata. {rewards} {radarPoints} amma fayyadamuu hin dandeessu."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "Ergaa konkolaachistootaaf"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "{profile} {messages} qaba: beeksisa, akeekkachiisa fi ergaa dhuunfaa magaalaa kee yookaan piroofaayilii Radar keetiif. Ergaan durii yookaan haqame deebi'ee hin mul'atu ta'a."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "Akkaawuntii kee haqi"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "Appii keessatti akkaawuntii haqi: {profile} → {deleteAccount}. Yookaan {email} tiif imeelii ergi. Imeelii yoo hin daballe appiin {deleteProfile} agarsiisa. Tarkaanfii fuula {page} ilaali."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "Bakki fudhannaa hin jiru? Appii keessatti {suggest} tuqi. Wanti dogoggoraa jiraa? {reportProblem} tuqi. Yookaan imeelii ergi, ni ilaalla."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "Akkaawuntii appii geejjibaa kee"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "PickupRadar akkaawuntii kee Uber Eats, Deliveroo, Just Eat yookaan appii geejjibaa biraa kamiyyuu waliin hin hidhamu. Seenuu, jecha iccitii, bal'ina akkaawuntii, bal'ina maamilaa yookaan bal'ina ajajaa gonkumaa hin gaafannu. Konkolaachistoonni gabaasa fudhannaa qofa qoodu, akka yeroo eegumsaa fi rakkoo bakka fudhannaa."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "Appiin osoo hin baasin dura PickupRadar yaali."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "Ilaalchi kallattii bakkeewwan fudhannaa dhugaa fi yeroo eegumsaa Milton Keynes agarsiisa. Gabaasuun fi {radarPoints} appii bilbilaa qofa keessa jiru."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "Fuulli hin argamne — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "Fuulli sun marsariitii PickupRadar irratti hin jiru."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "Fuulli kun raadaar ala."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "Teessoon sun marsariitii PickupRadar irratti hin jiru. Fuuloonni kun jiru:"
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "Fuula jalqabaa"
+    }
+  }
+}

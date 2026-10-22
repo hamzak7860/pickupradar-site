@@ -1,0 +1,602 @@
+{
+  "language": "el",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "Μετάβαση στο περιεχόμενο"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "Αρχική PickupRadar"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "Ιστότοπος"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "Απόρρητο"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "Ζωντανή προεπισκόπηση"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "Εφαρμογή"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "Βοήθεια"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "Νομικά"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "Μάθε την αναμονή πριν μπεις μέσα."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar. Ανεξάρτητο και χωρίς σχέση με Uber Eats, Deliveroo ή Just Eat."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "Εύρη αναμονής"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "Γρήγορα"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "Σύντομη αναμονή"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "Μεγάλη αναμονή"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "Πολύ μεγάλη αναμονή"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "Δεν υπάρχουν πρόσφατες αναφορές; Το PickupRadar μπορεί να δείξει {likelyFast} ή {likelySlow}:"
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar): χρόνοι αναμονής παραλαβής για διανομείς στο Ηνωμένο Βασίλειο"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "Δες πόσο περιμένουν οι διανομείς σε εστιατόρια και καταστήματα πριν μπεις. Για διανομείς Uber Eats, Deliveroo και Just Eat στο Ηνωμένο Βασίλειο. Χωρίς εγγραφή."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar. Μάθε την αναμονή πριν μπεις μέσα."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "Κάνεις διανομές για Uber Eats, Deliveroo ή Just Eat; Δες πρόσφατες αναμονές σε σημεία παραλαβής εστιατορίων και καταστημάτων. Απόφυγε τις μεγάλες αναμονές. Πάτησε {reportWait} και κέρδισε {radarPoints}. Χωρίς εγγραφή."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "Δοκίμασέ το με πραγματικά δεδομένα"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "Διαθεσιμότητα"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "Τώρα στο Milton Keynes. Μετά το London."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "Οι εφαρμογές για iPhone και Android έρχονται σύντομα."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "Παράδειγμα αρχικής οθόνης PickupRadar με ανοιχτή την καρτέλα {nearby}. Τα σημεία παραλαβής έχουν χρώμα ανάλογα με την αναμονή"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "Οθόνη παραδείγματος: ενδεικτικές αναμονές, όχι πραγματικές αναφορές διανομέων"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "Ενδεικτική αναμονή"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "Ενδεικτική εκτίμηση"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "1 αναφορά · πριν από 4 λεπτά"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "Οθόνη παραδείγματος. Αυτοί είναι ενδεικτικοί χρόνοι, όχι ζωντανές αναφορές. {live} με πραγματικά δεδομένα."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "Δοκίμασε τη ζωντανή προεπισκόπηση"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "Δες πόσο μπορεί να περιμένεις."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "Οι διανομείς αναφέρουν πόσο περίμεναν. Η τρέχουσα αναμονή προέρχεται από αναφορές των τελευταίων 2 ωρών. Βλέπεις γρήγορα τα γρήγορα και τα αργά σημεία παραλαβής."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "Ζωντανή προεπισκόπηση της εφαρμογής PickupRadar με πραγματικά δεδομένα του Milton Keynes"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "Δοκίμασε το PickupRadar με πραγματικά δεδομένα του Milton Keynes."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "Δες πραγματικά σημεία παραλαβής στο Milton Keynes. Έλεγξε πρόσφατες αναμονές ή {likelyFast} και {likelySlow}. Μπορείς να δοκιμάσεις την οθόνη αναφοράς, αλλά δεν στέλνεται τίποτα."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "Διάλεξε μια καρτέλα."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} Χρησιμοποίησε το {nearby} για να βρεις σημεία παραλαβής κοντά σου όταν η τοποθεσία είναι ανοιχτή. Χρησιμοποίησε τα {fast} και {slow} για αναμονές και εκτιμήσεις."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "Αναζήτηση σημείων παραλαβής."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} Δοκίμασε όνομα, περιοχή ή ταχυδρομικό κώδικα, όπως KFC ή Bletchley."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "Άνοιξε ένα σημείο παραλαβής."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} Ανοίγει η οθόνη {reportWait}. Διάλεξε χρόνο αναμονής. Δεν στέλνεται τίποτα."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "Άνοιξε τη μεγάλη προεπισκόπηση"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "Τι βλέπεις πριν μπεις"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "Βλέπεις τις ίδιες ετικέτες στην εφαρμογή. Τις αναφέρουν οι διανομείς, όχι οι εφαρμογές διανομής."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "Οι διανομείς διαλέγουν χρόνο αναμονής. Βλέπεις την τρέχουσα αναμονή και πόσοι διανομείς την ανέφεραν τις τελευταίες 2 ώρες."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} και {likelySlow}"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "Εμφανίζεται μόνο όταν δεν υπάρχουν πρόσφατες αναφορές. Είναι εκτιμήσεις, όχι ζωντανές αναφορές."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "Αναφέρθηκε κλειστό πρόσφατα"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} ή {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "Οι διανομείς πατούν {reportProblem} για να το αναφέρουν. Βλέπεις την αναφορά πριν πας εκεί."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "Δες πότε οι διανομείς αναφέρουν ότι το tablet ή το σύστημα ενός εστιατορίου δεν λειτουργεί."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "Η παραγγελία ξεκινά μετά την άφιξη"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "Μερικά μέρη ξεκινούν την παραγγελία μόνο όταν φτάσεις. Οι διανομείς μπορούν να το ενεργοποιήσουν όταν αναφέρουν."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "Σημεία παραλαβής που λείπουν ή είναι λάθος"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "Λείπει σημείο παραλαβής; Πάτησε {suggest}. Κάτι δεν πάει καλά; Πάτησε {reportProblem} και μετά {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} ή {closedPermanently}."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "Τρία εύκολα βήματα. Η αναφορά παίρνει λίγα δευτερόλεπτα."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "Άνοιξε την εφαρμογή"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "Χωρίς κωδικό. Η εφαρμογή σου δίνει αυτόματα προφίλ Radar. Δεν χρειάζεται εγγραφή."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "Έλεγξε πριν μπεις"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "Βρες το σημείο παραλαβής. Δες την τρέχουσα αναμονή ή {likelyFast} ή {likelySlow} αν δεν υπάρχουν πρόσφατες αναφορές."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "Ανάφερε την αναμονή σου"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "Αφού πάρεις την παραγγελία, πάτησε {reportWait}. Παίρνει δευτερόλεπτα. Η αναφορά σου βοηθά άλλους διανομείς και κερδίζεις {radarPoints}."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "Κέρδισε {radarPoints}"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Πάτησε {reportWait} για να κερδίσεις {radarPoints}. Μπορείς να ξεκινήσεις χωρίς λογαριασμό. Προστάτευσε τα {radarPoints} με το email σου, ώστε να μείνουν ασφαλή αν αλλάξεις ή επαναφέρεις το τηλέφωνο. Χωρίς κωδικό. Η εφαρμογή στέλνει κωδικό 6 ψηφίων με email."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "Οι ανταμοιβές έρχονται σύντομα."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} Δεν μπορείς ακόμα να εξαργυρώσεις {radarPoints}."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "Πώς κερδίζεις {radarPoints}"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "Κατάλληλο σημείο παραλαβής κοντά σου, χωρίς πρόσφατη αναμονή και χωρίς {likelyFast} ή {likelySlow}. Για την αναφορά παίρνεις 15 RP αντί για 10."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "Επιπλέον πόντοι στην πρώτη έγκυρη αναφορά αναμονής. Αν είναι και {reportNeeded}, παίρνεις συνολικά 25 RP."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "Όταν εγκρίνουμε ένα σημείο παραλαβής που προτείνεις"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "Το παίρνετε και οι δύο όταν ο φίλος σου κάνει 3 έγκυρες αναφορές αναμονής, σε τουλάχιστον 2 διαφορετικές ημέρες (ώρα UTC), σε 2 διαφορετικά σημεία παραλαβής. Χρειάζεστε και οι δύο προστατευμένους λογαριασμούς Radar (προσθέστε email). Ο φίλος σου πρέπει να βάλει τον κωδικό σου πριν από την πρώτη έγκυρη αναφορά αναμονής."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "{referralRp} ο καθένας"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "Αυτές είναι οι πόλεις του Ηνωμένου Βασιλείου στην εφαρμογή. Δεν βρίσκεις την πόλη σου; Ζήτησέ την στην εφαρμογή. Ή πάτησε {notify} σε πόλη που είναι {comingSoon}. Θα σου στείλουμε email όταν είναι διαθέσιμη."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "Διαθέσιμο τώρα"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "Δεν ανήκει σε εφαρμογή διανομής"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "Το PickupRadar είναι ανεξάρτητο. Δεν ανήκει σε Uber Eats, Deliveroo, Just Eat ή άλλη εφαρμογή διανομής. Δεν χρησιμοποιεί ποτέ τους λογαριασμούς σου εκεί."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "Διάβασε την πολιτική απορρήτου"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "Χωρίς συνδέσεις σε εφαρμογές διανομής."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} Δεν ζητάμε ποτέ όνομα χρήστη ή κωδικό Uber Eats, Deliveroo ή Just Eat."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "Χωρίς στοιχεία πελατών ή παραγγελιών."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} Χωρίς ονόματα, διευθύνσεις ή αριθμούς παραγγελίας."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "Μπορείς να παραλείψεις την εφαρμογή διανομής."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} Η επιλογή εφαρμογής διανομής είναι προαιρετική."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "Εσύ αποφασίζεις."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} Διέγραψε τον λογαριασμό ή το προφίλ Radar στην εφαρμογή οποιαδήποτε στιγμή."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "Ερωτήσεις διανομέων"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "Χρειάζομαι λογαριασμό;"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "Όχι. Η εφαρμογή σου δίνει αυτόματα προφίλ Radar. Μπορείς να αναφέρεις αναμονές αμέσως. Για να προστατεύσεις τα {radarPoints}, πρόσθεσε email αργότερα. Χωρίς κωδικό. Η εφαρμογή στέλνει κωδικό 6 ψηφίων με email."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "Πού λειτουργεί το PickupRadar;"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "Το PickupRadar λειτουργεί τώρα στο Milton Keynes. Μετά το London. Έπειτα περισσότερες πόλεις, όπως Manchester, Birmingham, Leeds, Liverpool και Glasgow. Δες {cities}."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "όλες τις πόλεις"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "Πότε μπορώ να κατεβάσω την εφαρμογή;"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "Οι εφαρμογές για iPhone και Android έρχονται σύντομα. Προς το παρόν, η {preview} δείχνει πραγματικά σημεία παραλαβής και αναμονές στο Milton Keynes."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "ζωντανή προεπισκόπηση"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "Πώς υπολογίζεται η τρέχουσα αναμονή;"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "Προέρχεται από αναφορές διανομέων των τελευταίων 2 ωρών. Αναφορές παλαιότερες από 2 ώρες δεν αλλάζουν την τρέχουσα αναμονή."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "Τι σημαίνουν τα {likelyFast} και {likelySlow};"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "Είναι εκτιμήσεις, όχι ζωντανές αναφορές. Εμφανίζονται όταν δεν υπάρχουν πρόσφατες αναφορές αναμονής."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "Παρακολουθεί την τοποθεσία μου;"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "Όχι παρακολούθηση στο παρασκήνιο. Η εφαρμογή χρησιμοποιεί την τοποθεσία σου όσο τη χρησιμοποιείς, για να δείχνει κοντινά σημεία παραλαβής και να ελέγχει ότι είσαι σε σημείο παραλαβής όταν αναφέρεις. Ο ιστότοπος ζητά τοποθεσία μόνο αν επιλέξεις να τη χρησιμοποιήσεις. Διάβασε την {privacy} για περισσότερα."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "πολιτική απορρήτου"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "Πώς διαγράφω τα δεδομένα μου;"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "Στην εφαρμογή άνοιξε το {profile}. Πάτησε {deleteAccount}. Αν δεν πρόσθεσες email, πάτησε {deleteProfile}. Μπορείς και να μας στείλεις email. Δες το {page} για τα βήματα."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "Εξερεύνησε σημεία παραλαβής στο Milton Keynes."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "Εξερεύνησε πραγματικά σημεία παραλαβής στο Milton Keynes. Ψάξε ένα μέρος και δοκίμασε την οθόνη αναφοράς. Τίποτα από όσα πατάς δεν στέλνεται."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "Άνοιξε τη ζωντανή προεπισκόπηση"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "Ζωντανή προεπισκόπηση εφαρμογής — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "Δοκίμασε την εφαρμογή PickupRadar με πραγματικά δεδομένα του Milton Keynes. Κοίτα γύρω, ψάξε σημεία παραλαβής και δες την οθόνη αναφοράς."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "Αυτό είναι το PickupRadar με πραγματικά δεδομένα του Milton Keynes. Κοίτα γύρω. Ψάξε ένα σημείο παραλαβής και άνοιξέ το. Τίποτα από όσα πατάς εδώ δεν στέλνεται. Μπορείς να αναφέρεις μόνο στην εφαρμογή του τηλεφώνου."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "Πλήρης προεπισκόπηση της εφαρμογής PickupRadar με πραγματικά δεδομένα του Milton Keynes"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "Υποστήριξη — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "Βοήθεια για το PickupRadar: επικοινώνησε με την υποστήριξη, ανάφερε πρόβλημα σε σημείο παραλαβής και βρες απαντήσεις για το προφίλ Radar, τα {radarPoints} και τη διαγραφή λογαριασμού."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "Χρειάζεσαι βοήθεια; Στείλε μας email για την εφαρμογή, ένα σημείο παραλαβής, τα {radarPoints} ή το απόρρητό σου."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "Επικοινωνία"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "Επικοινωνία με την υποστήριξη"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "Στείλε μας email για βοήθεια, ιδέες, προβλήματα σημείων παραλαβής ή ερωτήσεις απορρήτου:"
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "Διεύθυνση επαγγελματικής αλληλογραφίας"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "Μόνο για επιστολές. Το email είναι ο πιο γρήγορος τρόπος να μας βρεις."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "Τι να συμπεριλάβεις"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "Αν αναφέρεις πρόβλημα, πες μας:"
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "Το όνομα του σημείου παραλαβής"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "Την περιοχή ή τον ταχυδρομικό κώδικα, αν τον ξέρεις"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "Τι πήγε στραβά"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "Το μοντέλο του τηλεφώνου, αν το πρόβλημα είναι στην εφαρμογή"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "Συχνές ερωτήσεις"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "Προφίλ Radar και email"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Η εφαρμογή σου δίνει αυτόματα προφίλ Radar. Δεν χρειάζεται σύνδεση για να χρησιμοποιήσεις το PickupRadar ή να κερδίσεις {radarPoints}. Η προσθήκη email είναι προαιρετική. Προστατεύει τα {radarPoints} αν αλλάξεις ή επαναφέρεις το τηλέφωνο. Χωρίς κωδικό. Η εφαρμογή στέλνει κωδικό 6 ψηφίων με email."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} και προσκλήσεις"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "Κερδίζεις {radarPoints} για έγκυρες αναφορές αναμονής ({waitRp}, ή {neededRp} όταν λέει {reportNeeded}), μπόνους πρώτης αναφοράς ({firstRp}) και σημεία παραλαβής που εγκρίνουμε ({approvedRp}). Μπορείς να προσκαλέσεις διανομέα από το {profile}. Χρειάζεστε και οι δύο προστατευμένους λογαριασμούς Radar (προσθέστε email). Ο φίλος σου βάζει τον κωδικό σου πριν από την πρώτη έγκυρη αναφορά αναμονής. Όταν ο φίλος σου κάνει 3 έγκυρες αναφορές αναμονής, σε τουλάχιστον 2 διαφορετικές ημέρες (ώρα UTC), σε 2 διαφορετικά σημεία παραλαβής, ο καθένας παίρνει {referralRp}. {rewards} Δεν μπορείς ακόμα να εξαργυρώσεις {radarPoints}."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "Μηνύματα για διανομείς"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "Το {profile} έχει {messages}: ανακοινώσεις, ειδοποιήσεις και προσωπικά μηνύματα για την πόλη ή το προφίλ Radar. Παλιά ή αφαιρεμένα μηνύματα μπορεί να μην εμφανίζονται πια."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "Διαγραφή λογαριασμού"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "Διέγραψε τον λογαριασμό στην εφαρμογή: {profile} → {deleteAccount}. Ή στείλε email στο {email}. Αν δεν πρόσθεσες email, η εφαρμογή δείχνει {deleteProfile}. Δες τη σελίδα {page} για τα βήματα."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "Λείπει σημείο παραλαβής; Πάτησε {suggest} στην εφαρμογή. Είναι κάποιο λάθος; Πάτησε {reportProblem}. Ή στείλε μας email και θα το ελέγξουμε."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "Οι λογαριασμοί σου σε εφαρμογές διανομής"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "Το PickupRadar δεν συνδέεται με τους λογαριασμούς σου σε Uber Eats, Deliveroo, Just Eat ή άλλες εφαρμογές διανομής. Δεν ζητάμε ποτέ στοιχεία σύνδεσης, κωδικούς, στοιχεία λογαριασμού, στοιχεία πελατών ή στοιχεία παραγγελιών. Οι διανομείς μοιράζονται μόνο αναφορές παραλαβής, όπως χρόνους αναμονής και προβλήματα σημείων παραλαβής."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "Δοκίμασε το PickupRadar πριν κυκλοφορήσει η εφαρμογή."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "Η ζωντανή προεπισκόπηση δείχνει πραγματικά σημεία παραλαβής και αναμονές στο Milton Keynes. Οι αναφορές και τα {radarPoints} είναι μόνο στην εφαρμογή του τηλεφώνου."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "Η σελίδα δεν βρέθηκε — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "Αυτή η σελίδα δεν υπάρχει στον ιστότοπο του PickupRadar."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "Αυτή η σελίδα είναι εκτός ραντάρ."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "Αυτή η διεύθυνση δεν υπάρχει στον ιστότοπο του PickupRadar. Αυτές οι σελίδες υπάρχουν:"
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "Αρχική"
+    }
+  }
+}

@@ -1,0 +1,602 @@
+{
+  "language": "nb",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "Hopp til innhold"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "PickupRadar-forsiden"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "Nettsted"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "Personvern"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "Direkt forhåndsvisning"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "App"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "Hjelp"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "Juridisk"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "Vit ventetiden før du går inn."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar. Uavhengig og ikke tilknyttet Uber Eats, Deliveroo eller Just Eat."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "Ventetidsintervaller"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "Rask"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "Kort ventetid"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "Lang ventetid"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "Svært lang ventetid"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "Ingen nye rapporter? PickupRadar kan vise {likelyFast} eller {likelySlow}:"
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar): ventetider ved henting for bud i Storbritannia"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "Se hvor lenge bud venter på restauranter og i butikker før du går inn. For bud hos Uber Eats, Deliveroo og Just Eat i Storbritannia. Ingen registrering."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar. Vit ventetiden før du går inn."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "Kjører du for Uber Eats, Deliveroo eller Just Eat? Se nye ventetider ved hentesteder på restauranter og i butikker. Unngå lange ventetider. Trykk på {reportWait} og tjen {radarPoints}. Ingen registrering."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "Prøv med ekte data"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "Tilgjengelighet"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "Nå i Milton Keynes. London er neste."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "Apper for iPhone og Android kommer snart."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "Eksempel på PickupRadar-startskjermen med fanen {nearby} åpen. Hentesteder er farget etter ventetid"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "Eksempelskjerm: eksempelventetider, ikke ekte budrapporter"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "Eksempelventetid"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "Eksempelvurdering"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "1 rapport · for 4 min siden"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "Eksempelskjerm. Dette er eksempelventetider, ikke direkterapporter. {live} med ekte data."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "Prøv direkt forhåndsvisning"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "Se hvor lenge du kan vente."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "Bud rapporterer hvor lenge de ventet. Gjeldende ventetid kommer fra rapporter de siste 2 timene. Du ser raskt raske og trege hentesteder."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "Direkt forhåndsvisning av PickupRadar-appen med ekte data fra Milton Keynes"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "Prøv PickupRadar med ekte data fra Milton Keynes."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "Se ekte hentesteder i Milton Keynes. Sjekk nye ventetider eller {likelyFast} og {likelySlow}. Du kan prøve rapportskjermen, men ingenting sendes."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "Velg en fane."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} Bruk {nearby} for å finne hentesteder nær deg når posisjon er på. Bruk {fast} og {slow} for å sjekke ventetider og vurderinger."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "Søk hentesteder."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} Prøv et navn, et område eller et postnummer, for eksempel KFC eller Bletchley."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "Åpne et hentested."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} Skjermen {reportWait} åpnes. Velg en ventetid. Ingenting sendes."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "Åpne den store forhåndsvisningen"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "Dette kan du se før du går inn"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "Du ser de samme etikettene i appen. Det er bud som rapporterer dem, ikke leveringsappene."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "Bud velger en ventetid. Du ser gjeldende ventetid og hvor mange bud som har rapportert den de siste 2 timene."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} og {likelySlow}"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "Vises bare når det ikke finnes nye rapporter. Det er vurderinger, ikke direkterapporter."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "Rapportert stengt nylig"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} eller {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "Bud trykker på {reportProblem} for å rapportere det. Du ser rapporten før du kjører dit."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "Se når bud rapporterer at nettbrettet eller systemet til en restaurant ikke virker."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "Bestillingen starter etter ankomst"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "Noen steder starter bestillingen først når du kommer. Bud kan slå det på når de rapporterer."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "Manglende eller feil hentesteder"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "Mangler et hentested? Trykk på {suggest}. Er noe galt? Trykk på {reportProblem} og deretter {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} eller {closedPermanently}."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "Tre enkle trinn. Det tar noen sekunder å rapportere."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "Åpne appen"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "Ingen passord. Appen gir deg en Radar-profil automatisk. Du trenger ikke registrere deg."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "Sjekk før du går inn"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "Finn hentestedet. Se gjeldende ventetid, eller {likelyFast} eller {likelySlow} hvis det ikke finnes nye rapporter."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "Rapporter ventetiden din"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "Etter at du har hentet bestillingen, trykk på {reportWait}. Det tar sekunder. Rapporten din hjelper andre bud, og du tjener {radarPoints}."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "Tjen {radarPoints}"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Trykk på {reportWait} for å tjene {radarPoints}. Du kan starte uten konto. Beskytt {radarPoints} med e-posten din, så de er trygge hvis du bytter eller nullstiller telefonen. Ingen passord. Appen sender deg en kode på 6 siffer."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "Belønninger kommer snart."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} Du kan ikke løse inn {radarPoints} ennå."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "Slik tjener du {radarPoints}"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "Et egnet hentested nær deg uten nylig ventetid og uten {likelyFast} eller {likelySlow}. Du får 15 RP for rapporten i stedet for 10."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "Ekstrapoeng på den første gyldige ventetidsrapporten. Hvis den også er {reportNeeded}, får du 25 RP totalt."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "Når vi godkjenner et hentested du foreslår"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "Dere får det begge når vennen din gjør 3 gyldige ventetidsrapporter på minst 2 forskjellige dager (UTC-tid) på 2 forskjellige hentesteder. Dere trenger begge beskyttede Radar-kontoer (legg til e-post). Vennen din må skrive inn koden din før den første gyldige ventetidsrapporten."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "{referralRp} hver"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "Dette er byene i Storbritannia i appen. Finner du ikke byen din? Be om den i appen. Eller trykk på {notify} ved en by som er {comingSoon}. Vi sender e-post når den er live."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "Live nå"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "Ikke en del av noen leveringsapp"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "PickupRadar er uavhengig. Den er ikke en del av Uber Eats, Deliveroo, Just Eat eller noen annen leveringsapp. Den bruker aldri kontoene dine der."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "Les personvernerklæringen"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "Ingen innlogging til leveringsapper."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} Vi ber aldri om brukernavn eller passord til Uber Eats, Deliveroo eller Just Eat."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "Ingen kunde- eller ordredetaljer."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} Ingen navn, adresser eller ordrenumre."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "Du kan hoppe over leveringsappen."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} Det er valgfritt å velge leveringsappen."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "Du bestemmer."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} Slett kontoen eller Radar-profilen i appen når som helst."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "Spørsmål fra bud"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "Trenger jeg en konto?"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "Nei. Appen gir deg en Radar-profil automatisk. Du kan rapportere ventetider med en gang. Legg til e-posten senere for å beskytte {radarPoints}. Ingen passord. Appen sender deg en kode på 6 siffer."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "Hvor virker PickupRadar?"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "PickupRadar virker i Milton Keynes nå. London er neste. Deretter flere byer, for eksempel Manchester, Birmingham, Leeds, Liverpool og Glasgow. Se {cities}."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "alle byene"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "Når kan jeg laste ned appen?"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "Apper for iPhone og Android kommer snart. Inntil da viser {preview} ekte hentesteder og ventetider i Milton Keynes."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "direkt forhåndsvisning"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "Hvordan regnes gjeldende ventetid ut?"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "Den kommer fra budrapporter de siste 2 timene. Rapporter eldre enn 2 timer påvirker ikke gjeldende ventetid."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "Hva betyr {likelyFast} og {likelySlow}?"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "Det er vurderinger, ikke direkterapporter. De vises når det ikke finnes nye ventetidsrapporter."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "Sporer den posisjonen min?"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "Ingen sporing i bakgrunnen. Appen bruker posisjonen din mens du bruker den, for å vise hentesteder i nærheten og sjekke at du er ved et hentested når du rapporterer. Nettstedet ber bare om posisjon hvis du velger å bruke den. Les {privacy} for mer."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "personvernerklæringen"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "Hvordan sletter jeg dataene mine?"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "Åpne {profile} i appen. Trykk på {deleteAccount}. Hvis du ikke har lagt til e-post, trykk på {deleteProfile}. Du kan også skrive til oss. Se {page} for trinnene."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "Utforsk hentesteder i Milton Keynes."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "Utforsk ekte hentesteder i Milton Keynes. Søk etter et sted og prøv rapportskjermen. Ingenting du trykker på, blir sendt."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "Åpne direkt forhåndsvisning"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "Direkt forhåndsvisning av appen — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "Prøv PickupRadar-appen med ekte data fra Milton Keynes. Se deg rundt, søk etter hentesteder og se rapportskjermen."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "Dette er PickupRadar med ekte data fra Milton Keynes. Se deg rundt. Søk etter et hentested og åpne det. Ingenting du trykker på her, blir sendt. Du kan bare rapportere i mobilappen."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "Full forhåndsvisning av PickupRadar-appen med ekte data fra Milton Keynes"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "Støtte — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "Hjelp med PickupRadar: kontakt støtte, rapporter et problem ved et hentested, og finn svar om Radar-profilen, {radarPoints} og sletting av kontoen."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "Trenger du hjelp? Skriv til oss om appen, et hentested, {radarPoints} eller personvernet ditt."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "Kontakt"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "Kontakt støtte"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "Skriv til oss for hjelp, ideer, problemer ved hentesteder eller spørsmål om personvern:"
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "Adresse for forretningspost"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "Bare for brev. E-post er den raskeste måten å nå oss på."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "Dette bør du ta med"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "Hvis du rapporterer et problem, fortell oss:"
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "Navnet på hentestedet"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "Området eller postnummeret, hvis du vet det"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "Hva som gikk galt"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "Telefonmodellen din, hvis appen har et problem"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "Vanlige spørsmål"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "Radar-profil og e-post"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Appen gir deg en Radar-profil automatisk. Du trenger ikke logge inn for å bruke PickupRadar eller tjene {radarPoints}. Det er valgfritt å legge til e-post. Den beskytter {radarPoints} hvis du bytter eller nullstiller telefonen. Ingen passord. Appen sender deg en kode på 6 siffer."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} og invitasjoner"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "Du tjener {radarPoints} for gyldige ventetidsrapporter ({waitRp}, eller {neededRp} når det står {reportNeeded}), en bonus for den første rapporten ({firstRp}) og hentesteder vi godkjenner ({approvedRp}). Du kan invitere et bud fra {profile}. Dere trenger begge beskyttede Radar-kontoer (legg til e-post). Vennen din skriver inn koden din før den første gyldige ventetidsrapporten. Når vennen din gjør 3 gyldige ventetidsrapporter på minst 2 forskjellige dager (UTC-tid) på 2 forskjellige hentesteder, får dere {referralRp} hver. {rewards} Du kan ikke løse inn {radarPoints} ennå."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "Meldinger til bud"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "{profile} har {messages}: kunngjøringer, varsler og personlige meldinger for byen din eller Radar-profilen. Gamle eller fjernede meldinger vises kanskje ikke lenger."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "Slett kontoen din"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "Slett kontoen i appen: {profile} → {deleteAccount}. Eller skriv til {email}. Hvis du ikke har lagt til e-post, viser appen {deleteProfile} i stedet. Se siden {page} for trinnene."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "Mangler et hentested? Trykk på {suggest} i appen. Er ett feil? Trykk på {reportProblem}. Eller skriv til oss, så sjekker vi det."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "Kontoene dine hos leveringsapper"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "PickupRadar kobler seg ikke til kontoene dine hos Uber Eats, Deliveroo, Just Eat eller andre leveringsapper. Vi ber aldri om innlogging, passord, kontodetaljer, kundedetaljer eller ordredetaljer. Bud deler bare henterapporter, for eksempel ventetider og problemer ved hentesteder."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "Prøv PickupRadar før appen lanseres."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "Direkt forhåndsvisning viser ekte hentesteder og ventetider i Milton Keynes. Rapporter og {radarPoints} finnes bare i mobilappen."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "Siden ble ikke funnet — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "Den siden finnes ikke på PickupRadar-nettstedet."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "Denne siden er borte fra radaren."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "Den adressen finnes ikke på PickupRadar-nettstedet. Disse sidene finnes:"
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "Forside"
+    }
+  }
+}

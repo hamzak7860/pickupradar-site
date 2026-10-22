@@ -1,0 +1,602 @@
+{
+  "language": "cs",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "Přejít na obsah"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "Domů PickupRadar"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "Web"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "Soukromí"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "Živý náhled"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "Aplikace"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "Nápověda"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "Právní informace"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "Zjisti čekání, než vejdeš."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar. Nezávislé a nespojené s Uber Eats, Deliveroo ani Just Eat."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "Intervaly čekání"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "Rychlé"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "Krátké čekání"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "Dlouhé čekání"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "Velmi dlouhé čekání"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "Žádná nová hlášení? PickupRadar může ukázat {likelyFast} nebo {likelySlow}:"
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar): čekání při vyzvednutí pro kurýry ve Spojeném království"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "Podívej se, jak dlouho kurýři čekají v restauracích a obchodech, než vejdeš. Pro kurýry Uber Eats, Deliveroo a Just Eat ve Spojeném království. Bez registrace."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar. Zjisti čekání, než vejdeš."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "Rozvážíš pro Uber Eats, Deliveroo nebo Just Eat? Podívej se na nedávné čekání v místech vyzvednutí v restauracích a obchodech. Vyhni se dlouhému čekání. Klepni na {reportWait} a získej {radarPoints}. Bez registrace."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "Vyzkoušej s reálnými daty"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "Dostupnost"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "Teď v Milton Keynes. Další je London."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "Aplikace pro iPhone a Android brzy přijdou."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "Ukázka úvodní obrazovky PickupRadar s otevřenou kartou {nearby}. Místa vyzvednutí jsou barevně podle čekání"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "Ukázková obrazovka: ukázková čekání, ne skutečná hlášení kurýrů"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "Ukázkové čekání"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "Ukázkový odhad"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "1 hlášení · před 4 min"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "Ukázková obrazovka. Jsou to ukázkové časy čekání, ne živá hlášení. {live} s reálnými daty."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "Vyzkoušej živý náhled"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "Podívej se, jak dlouho můžeš čekat."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "Kurýři hlásí, jak dlouho čekali. Aktuální čekání pochází z hlášení za poslední 2 hodiny. Rychle uvidíš rychlá a pomalá místa vyzvednutí."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "Živý náhled aplikace PickupRadar se skutečnými daty z Milton Keynes"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "Vyzkoušej PickupRadar se skutečnými daty z Milton Keynes."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "Podívej se na skutečná místa vyzvednutí v Milton Keynes. Zkontroluj nedávné čekání nebo {likelyFast} a {likelySlow}. Obrazovku hlášení můžeš vyzkoušet, ale nic se neodešle."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "Vyber kartu."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} Použij {nearby} a najdi místa vyzvednutí blízko tebe, když je zapnutá poloha. Použij {fast} a {slow} ke kontrole čekání a odhadů."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "Hledat místa vyzvednutí."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} Zkus název, oblast nebo PSČ, třeba KFC nebo Bletchley."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "Otevři místo vyzvednutí."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} Otevře se obrazovka {reportWait}. Vyber čas čekání. Nic se neodešle."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "Otevřít velký náhled"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "Co uvidíš, než vejdeš"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "V aplikaci vidíš stejné štítky. Hlásí je kurýři, ne rozvážkové aplikace."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "Kurýři zvolí čas čekání. Vidíš aktuální čekání a kolik kurýrů ho nahlásilo za poslední 2 hodiny."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} a {likelySlow}"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "Zobrazí se jen když nejsou nová hlášení. Jsou to odhady, ne živá hlášení."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "Nedávno nahlášeno jako zavřené"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} nebo {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "Kurýři klepnou na {reportProblem}, aby to nahlásili. Hlášení uvidíš, než tam pojedeš."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "Podívej se, když kurýři nahlásí, že tablet nebo systém restaurace nefunguje."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "Objednávka začíná po příchodu"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "Některá místa začnou objednávku až když přijedeš. Kurýři to mohou při hlášení zapnout."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "Chybějící nebo špatná místa vyzvednutí"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "Chybí místo vyzvednutí? Klepni na {suggest}. Něco nesedí? Klepni na {reportProblem} a pak {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} nebo {closedPermanently}."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "Tři snadné kroky. Hlášení zabere pár sekund."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "Otevři aplikaci"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "Bez hesla. Aplikace ti automaticky dá profil Radar. Nemusíš se registrovat."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "Zkontroluj, než vejdeš"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "Najdi místo vyzvednutí. Podívej se na aktuální čekání nebo na {likelyFast} či {likelySlow}, když nejsou nová hlášení."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "Nahlas své čekání"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "Až vyzvedneš objednávku, klepni na {reportWait}. Zabere to sekundy. Tvé hlášení pomůže ostatním kurýrům a získáš {radarPoints}."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "Získej {radarPoints}"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Klepni na {reportWait} a získej {radarPoints}. Můžeš začít bez účtu. Ochraň {radarPoints} e-mailem, ať zůstanou v bezpečí, když vyměníš nebo resetuješ telefon. Bez hesla. Aplikace ti pošle kód o 6 číslicích e-mailem."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "Odměny již brzy."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} {radarPoints} ještě nemůžeš uplatnit."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "Jak získat {radarPoints}"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "Vhodné místo vyzvednutí blízko tebe bez nedávného čekání a bez {likelyFast} nebo {likelySlow}. Za hlášení dostaneš 15 RP místo 10."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "Body navíc za první platné hlášení čekání. Když je zároveň {reportNeeded}, dostaneš celkem 25 RP."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "Když schválíme místo vyzvednutí, které navrhneš"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "Dostanete to oba, když kamarád udělá 3 platná hlášení čekání alespoň ve 2 různých dnech (čas UTC) na 2 různých místech vyzvednutí. Oba potřebujete chráněné účty Radar (přidejte e-mail). Kamarád musí zadat tvůj kód před prvním platným hlášením čekání."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "{referralRp} každý"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "Tohle jsou města Spojeného království v aplikaci. Nenajdeš své město? Požádej o něj v aplikaci. Nebo klepni na {notify} u města, které je {comingSoon}. Napíšeme ti, až bude v provozu."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "V provozu teď"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "Není součástí žádné rozvážkové aplikace"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "PickupRadar je nezávislé. Není součástí Uber Eats, Deliveroo, Just Eat ani jiné rozvážkové aplikace. Nikdy nepoužívá tvé účty u nich."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "Přečíst zásady ochrany soukromí"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "Bez přihlášení do rozvážkových aplikací."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} Nikdy nechceme uživatelské jméno ani heslo k Uber Eats, Deliveroo nebo Just Eat."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "Žádné údaje o zákaznících ani objednávkách."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} Žádná jména, adresy ani čísla objednávek."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "Rozvážkovou aplikaci můžeš přeskočit."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} Volba rozvážkové aplikace je dobrovolná."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "Rozhoduješ ty."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} Účet nebo profil Radar můžeš v aplikaci kdykoli smazat."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "Otázky kurýrů"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "Potřebuju účet?"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "Ne. Aplikace ti automaticky dá profil Radar. Čekání můžeš hlásit hned. Aby sis ochránil {radarPoints}, přidej e-mail později. Bez hesla. Aplikace ti pošle kód o 6 číslicích e-mailem."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "Kde PickupRadar funguje?"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "PickupRadar teď funguje v Milton Keynes. Další je London. Pak další města, třeba Manchester, Birmingham, Leeds, Liverpool a Glasgow. Podívej se na {cities}."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "všechna města"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "Kdy si můžu aplikaci stáhnout?"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "Aplikace pro iPhone a Android brzy přijdou. Zatím {preview} ukazuje skutečná místa vyzvednutí a čekání v Milton Keynes."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "živý náhled"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "Jak se počítá aktuální čekání?"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "Pochází z hlášení kurýrů za poslední 2 hodiny. Hlášení starší než 2 hodiny aktuální čekání nemění."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "Co znamenají {likelyFast} a {likelySlow}?"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "Jsou to odhady, ne živá hlášení. Objeví se, když nejsou nová hlášení čekání."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "Sleduje moji polohu?"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "Žádné sledování na pozadí. Aplikace používá polohu, když ji používáš, aby ukázala blízká místa vyzvednutí a ověřila, že jsi při hlášení na místě vyzvednutí. Web žádá polohu jen když se ji rozhodneš použít. Víc najdeš v {privacy}."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "zásadách ochrany soukromí"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "Jak smažu svá data?"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "V aplikaci otevři {profile}. Klepni na {deleteAccount}. Pokud jsi nepřidal e-mail, klepni na {deleteProfile}. Můžeš nám taky napsat. Kroky najdeš na {page}."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "Prozkoumej místa vyzvednutí v Milton Keynes."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "Prozkoumej skutečná místa vyzvednutí v Milton Keynes. Vyhledej místo a vyzkoušej obrazovku hlášení. Nic, na co klepneš, se neodešle."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "Otevřít živý náhled"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "Živý náhled aplikace — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "Vyzkoušej aplikaci PickupRadar se skutečnými daty z Milton Keynes. Rozhlédni se, hledej místa vyzvednutí a podívej se na obrazovku hlášení."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "Tohle je PickupRadar se skutečnými daty z Milton Keynes. Rozhlédni se. Vyhledej místo vyzvednutí a otevři ho. Nic, na co tady klepneš, se neodešle. Hlásit můžeš jen v mobilní aplikaci."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "Úplný náhled aplikace PickupRadar se skutečnými daty z Milton Keynes"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "Podpora — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "Pomoc s PickupRadar: kontaktuj podporu, nahlas problém místa vyzvednutí a najdi odpovědi o profilu Radar, {radarPoints} a smazání účtu."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "Potřebuješ pomoc? Napiš nám o aplikaci, místě vyzvednutí, svých {radarPoints} nebo soukromí."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "Kontakt"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "Kontaktovat podporu"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "Napiš nám kvůli pomoci, nápadům, problémům míst vyzvednutí nebo otázkám o soukromí:"
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "Adresa pro obchodní poštu"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "Jen pro dopisy. E-mail je nejrychlejší způsob, jak se nám ozvat."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "Co uvést"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "Když hlásíš problém, napiš nám:"
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "Název místa vyzvednutí"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "Oblast nebo PSČ, pokud ho znáš"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "Co se pokazilo"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "Model telefonu, když je problém v aplikaci"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "Časté otázky"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "Profil Radar a e-mail"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Aplikace ti automaticky dá profil Radar. Nemusíš se přihlašovat, abys použil PickupRadar nebo získal {radarPoints}. Přidání e-mailu je dobrovolné. Chrání {radarPoints}, když vyměníš nebo resetuješ telefon. Bez hesla. Aplikace ti pošle kód o 6 číslicích e-mailem."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} a pozvánky"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "Získáš {radarPoints} za platná hlášení čekání ({waitRp}, nebo {neededRp}, když je uvedeno {reportNeeded}), bonus za první hlášení ({firstRp}) a místa vyzvednutí, která schválíme ({approvedRp}). Kurýra můžeš pozvat z {profile}. Oba potřebujete chráněné účty Radar (přidejte e-mail). Kamarád zadá tvůj kód před prvním platným hlášením čekání. Když kamarád udělá 3 platná hlášení čekání alespoň ve 2 různých dnech (čas UTC) na 2 různých místech vyzvednutí, každý dostane {referralRp}. {rewards} {radarPoints} ještě nemůžeš uplatnit."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "Zprávy pro kurýry"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "{profile} má {messages}: oznámení, upozornění a osobní zprávy pro tvé město nebo profil Radar. Staré nebo odebrané zprávy se už nemusí zobrazit."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "Smazat účet"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "Smaž účet v aplikaci: {profile} → {deleteAccount}. Nebo napiš na {email}. Pokud jsi nepřidal e-mail, aplikace ukáže {deleteProfile}. Kroky najdeš na stránce {page}."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "Chybí místo vyzvednutí? V aplikaci klepni na {suggest}. Je nějaké špatně? Klepni na {reportProblem}. Nebo nám napiš a zkontrolujeme to."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "Tvé účty v rozvážkových aplikacích"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "PickupRadar se nepřipojuje k tvým účtům Uber Eats, Deliveroo, Just Eat ani jiných rozvážkových aplikací. Nikdy nechceme přihlášení, hesla, údaje o účtu, údaje o zákaznících ani údaje o objednávkách. Kurýři sdílejí jen hlášení o vyzvednutí, třeba časy čekání a problémy míst vyzvednutí."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "Vyzkoušej PickupRadar, než se aplikace spustí."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "Živý náhled ukazuje skutečná místa vyzvednutí a čekání v Milton Keynes. Hlášení a {radarPoints} jsou jen v mobilní aplikaci."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "Stránka nenalezena — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "Tahle stránka na webu PickupRadar není."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "Tahle stránka je mimo radar."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "Tahle adresa na webu PickupRadar není. Tyto stránky ano:"
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "Domů"
+    }
+  }
+}

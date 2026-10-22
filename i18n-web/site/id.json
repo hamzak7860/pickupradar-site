@@ -1,0 +1,602 @@
+{
+  "language": "id",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "Lewati ke isi"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "Beranda PickupRadar"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "Situs"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "Privasi"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "Pratinjau langsung"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "Aplikasi"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "Bantuan"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "Hukum"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "Ketahui waktu tunggu sebelum kamu masuk."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar. Mandiri dan tidak terkait dengan Uber Eats, Deliveroo, atau Just Eat."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "Rentang waktu tunggu"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "Cepat"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "Tunggu singkat"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "Tunggu lama"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "Tunggu sangat lama"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "Tidak ada laporan baru? PickupRadar bisa menampilkan {likelyFast} atau {likelySlow}:"
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar): waktu tunggu pengambilan untuk pengemudi di Britania Raya"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "Lihat berapa lama pengemudi menunggu di restoran dan toko sebelum kamu masuk. Untuk pengemudi Uber Eats, Deliveroo, dan Just Eat di Britania Raya. Tanpa daftar."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar. Ketahui waktu tunggu sebelum kamu masuk."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "Kamu mengantar untuk Uber Eats, Deliveroo, atau Just Eat? Lihat waktu tunggu terbaru di titik pengambilan restoran dan toko. Hindari menunggu lama. Ketuk {reportWait} dan dapatkan {radarPoints}. Tanpa daftar."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "Coba dengan data asli"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "Ketersediaan"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "Sekarang di Milton Keynes. Berikutnya London."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "Aplikasi iPhone dan Android segera hadir."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "Contoh layar beranda PickupRadar dengan tab {nearby} terbuka. Titik pengambilan diwarnai menurut waktu tunggu"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "Layar contoh: waktu tunggu contoh, bukan laporan langsung pengemudi"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "Waktu tunggu contoh"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "Perkiraan contoh"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "1 laporan · 4 menit lalu"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "Layar contoh. Ini waktu tunggu contoh, bukan laporan langsung. {live} dengan data asli."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "Coba pratinjau langsung"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "Lihat berapa lama kamu mungkin menunggu."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "Pengemudi melaporkan berapa lama mereka menunggu. Waktu tunggu saat ini berasal dari laporan dalam 2 jam terakhir. Kamu cepat melihat titik pengambilan yang cepat dan yang lambat."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "Pratinjau langsung aplikasi PickupRadar dengan data asli Milton Keynes"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "Coba PickupRadar dengan data asli Milton Keynes."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "Lihat titik pengambilan asli di Milton Keynes. Periksa waktu tunggu terbaru, atau {likelyFast} dan {likelySlow}. Kamu bisa mencoba layar laporan, tetapi tidak ada yang terkirim."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "Pilih tab."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} Pakai {nearby} untuk menemukan titik pengambilan di dekatmu saat lokasi menyala. Pakai {fast} dan {slow} untuk memeriksa waktu tunggu dan perkiraan."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "Cari titik pengambilan."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} Coba nama, wilayah, atau kode pos, misalnya KFC atau Bletchley."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "Buka titik pengambilan."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} Layar {reportWait} terbuka. Pilih waktu tunggu. Tidak ada yang terkirim."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "Buka pratinjau besar"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "Yang bisa kamu lihat sebelum masuk"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "Kamu melihat label yang sama di aplikasi. Pengemudi yang melaporkannya, bukan aplikasi pengantaran."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "Pengemudi memilih waktu tunggu. Kamu melihat waktu tunggu saat ini dan berapa pengemudi yang melaporkannya dalam 2 jam terakhir."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} dan {likelySlow}"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "Hanya muncul jika tidak ada laporan baru. Ini perkiraan, bukan laporan langsung."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "Baru dilaporkan tutup"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} atau {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "Pengemudi mengetuk {reportProblem} untuk melaporkan ini. Kamu melihat laporannya sebelum berkendara ke sana."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "Lihat saat pengemudi melaporkan tablet atau sistem restoran tidak berfungsi."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "Pesanan mulai setelah kamu tiba"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "Beberapa tempat baru mulai pesanan saat kamu tiba. Pengemudi bisa menyalakannya saat melapor."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "Titik pengambilan yang hilang atau salah"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "Titik pengambilan tidak ada? Ketuk {suggest}. Ada yang salah? Ketuk {reportProblem}, lalu {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate}, atau {closedPermanently}."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "Tiga langkah mudah. Melapor hanya butuh beberapa detik."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "Buka aplikasi"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "Tanpa kata sandi. Aplikasi memberimu profil Radar secara otomatis. Kamu tidak perlu mendaftar."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "Periksa sebelum masuk"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "Temukan titik pengambilan. Lihat waktu tunggu saat ini, atau {likelyFast} atau {likelySlow} jika tidak ada laporan baru."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "Laporkan waktu tunggumu"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "Setelah mengambil pesanan, ketuk {reportWait}. Hanya beberapa detik. Laporanmu membantu pengemudi lain, dan kamu mendapat {radarPoints}."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "Dapatkan {radarPoints}"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Ketuk {reportWait} untuk mendapat {radarPoints}. Kamu bisa mulai tanpa akun. Lindungi {radarPoints} dengan email agar aman jika kamu ganti atau setel ulang ponsel. Tanpa kata sandi. Aplikasi mengirim kode 6 digit lewat email."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "Hadiah segera hadir."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} Kamu belum bisa menukar {radarPoints}."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "Cara mendapat {radarPoints}"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "Titik pengambilan yang memenuhi syarat di dekatmu, tanpa waktu tunggu baru, dan tanpa {likelyFast} atau {likelySlow}. Kamu mendapat 15 RP untuk laporan itu, bukan 10."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "Poin tambahan pada laporan waktu tunggu valid yang pertama. Jika itu juga {reportNeeded}, kamu mendapat total 25 RP."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "Saat kami menyetujui titik pengambilan yang kamu sarankan"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "Kalian berdua mendapatkannya saat temanmu membuat 3 laporan waktu tunggu yang valid, pada sedikitnya 2 hari berbeda (waktu UTC), di 2 titik pengambilan berbeda. Kalian berdua butuh akun Radar yang dilindungi (tambahkan email). Temanmu harus memasukkan kodemu sebelum laporan waktu tunggu valid yang pertama."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "{referralRp} masing-masing"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "Ini kota Britania Raya di aplikasi. Tidak menemukan kotamu? Minta di aplikasi. Atau ketuk {notify} pada kota yang {comingSoon}. Kami mengirim email saat kota itu aktif."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "Aktif sekarang"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "Bukan bagian dari aplikasi pengantaran mana pun"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "PickupRadar mandiri. Bukan bagian dari Uber Eats, Deliveroo, Just Eat, atau aplikasi pengantaran lain. PickupRadar tidak pernah memakai akunmu di sana."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "Baca kebijakan privasi"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "Tanpa masuk ke aplikasi pengantaran."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} Kami tidak pernah meminta nama pengguna atau kata sandi Uber Eats, Deliveroo, atau Just Eat."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "Tidak ada data pelanggan atau pesanan."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} Tidak ada nama, alamat, atau nomor pesanan."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "Kamu bisa melewati aplikasi pengantaran."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} Memilih aplikasi pengantaran bersifat opsional."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "Kamu yang mengatur."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} Hapus akun atau profil Radar di aplikasi kapan saja."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "Pertanyaan pengemudi"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "Apakah saya perlu akun?"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "Tidak. Aplikasi memberimu profil Radar secara otomatis. Kamu bisa melaporkan waktu tunggu segera. Untuk melindungi {radarPoints}, tambahkan email nanti. Tanpa kata sandi. Aplikasi mengirim kode 6 digit lewat email."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "Di mana PickupRadar berfungsi?"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "PickupRadar berfungsi di Milton Keynes sekarang. Berikutnya London. Lalu kota lain, seperti Manchester, Birmingham, Leeds, Liverpool, dan Glasgow. Lihat {cities}."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "semua kota"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "Kapan saya bisa mengunduh aplikasinya?"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "Aplikasi iPhone dan Android segera hadir. Untuk sekarang, {preview} menampilkan titik pengambilan dan waktu tunggu asli di Milton Keynes."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "pratinjau langsung"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "Bagaimana waktu tunggu saat ini dihitung?"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "Itu berasal dari laporan pengemudi dalam 2 jam terakhir. Laporan yang lebih lama dari 2 jam tidak mengubah waktu tunggu saat ini."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "Apa arti {likelyFast} dan {likelySlow}?"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "Itu perkiraan, bukan laporan langsung. Muncul saat tidak ada laporan waktu tunggu yang baru."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "Apakah ini melacak lokasi saya?"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "Tidak ada pelacakan latar belakang. Aplikasi memakai lokasimu saat kamu memakainya, untuk menampilkan titik pengambilan terdekat dan memeriksa kamu berada di titik pengambilan saat melapor. Situs hanya meminta lokasi jika kamu memilih memakainya. Baca {privacy} untuk selengkapnya."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "kebijakan privasi"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "Bagaimana cara menghapus data saya?"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "Di aplikasi, buka {profile}. Ketuk {deleteAccount}. Jika kamu belum menambahkan email, ketuk {deleteProfile}. Kamu juga bisa mengirim email kepada kami. Lihat {page} untuk langkahnya."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "Jelajahi titik pengambilan di Milton Keynes."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "Jelajahi titik pengambilan asli di Milton Keynes. Cari tempat dan coba layar laporan. Tidak ada yang kamu ketuk yang terkirim."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "Buka pratinjau langsung"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "Pratinjau aplikasi langsung — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "Coba aplikasi PickupRadar dengan data asli Milton Keynes. Lihat sekeliling, cari titik pengambilan, dan lihat layar laporan."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "Ini PickupRadar dengan data asli Milton Keynes. Lihat sekeliling. Cari titik pengambilan dan bukalah. Tidak ada yang kamu ketuk di sini yang terkirim. Kamu hanya bisa melapor di aplikasi ponsel."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "Pratinjau penuh aplikasi PickupRadar dengan data asli Milton Keynes"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "Dukungan — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "Bantuan PickupRadar: hubungi dukungan, laporkan masalah titik pengambilan, dan temukan jawaban tentang profil Radar, {radarPoints}, dan menghapus akun."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "Butuh bantuan? Kirim email tentang aplikasi, titik pengambilan, {radarPoints}, atau privasimu."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "Kontak"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "Hubungi dukungan"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "Kirim email untuk bantuan, ide, masalah titik pengambilan, atau pertanyaan privasi:"
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "Alamat surat bisnis"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "Hanya untuk surat. Email adalah cara tercepat menghubungi kami."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "Yang perlu disertakan"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "Jika kamu melaporkan masalah, beri tahu kami:"
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "Nama titik pengambilan"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "Wilayah atau kode pos, jika kamu tahu"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "Apa yang salah"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "Model ponselmu, jika masalahnya di aplikasi"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "Pertanyaan umum"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "Profil Radar dan email"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "Aplikasi memberimu profil Radar secara otomatis. Kamu tidak perlu masuk untuk memakai PickupRadar atau mendapat {radarPoints}. Menambahkan email bersifat opsional. Itu melindungi {radarPoints} jika kamu ganti atau setel ulang ponsel. Tanpa kata sandi. Aplikasi mengirim kode 6 digit lewat email."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} dan undangan"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "Kamu mendapat {radarPoints} untuk laporan waktu tunggu yang valid ({waitRp}, atau {neededRp} saat tertulis {reportNeeded}), bonus laporan pertama ({firstRp}), dan titik pengambilan yang kami setujui ({approvedRp}). Kamu bisa mengundang pengemudi dari {profile}. Kalian berdua butuh akun Radar yang dilindungi (tambahkan email). Temanmu memasukkan kodemu sebelum laporan waktu tunggu valid yang pertama. Saat temanmu membuat 3 laporan waktu tunggu yang valid, pada sedikitnya 2 hari berbeda (waktu UTC), di 2 titik pengambilan berbeda, masing-masing mendapat {referralRp}. {rewards} Kamu belum bisa menukar {radarPoints}."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "Pesan untuk pengemudi"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "{profile} punya {messages}: pengumuman, peringatan, dan pesan pribadi untuk kotamu atau profil Radar. Pesan lama atau yang dihapus mungkin tidak muncul lagi."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "Hapus akunmu"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "Hapus akun di aplikasi: {profile} → {deleteAccount}. Atau kirim email ke {email}. Jika kamu belum menambahkan email, aplikasi menampilkan {deleteProfile}. Lihat halaman {page} untuk langkahnya."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "Titik pengambilan tidak ada? Ketuk {suggest} di aplikasi. Ada yang salah? Ketuk {reportProblem}. Atau kirim email, kami akan memeriksanya."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "Akun aplikasi pengantaranmu"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "PickupRadar tidak terhubung ke akun Uber Eats, Deliveroo, Just Eat, atau aplikasi pengantaran lain milikmu. Kami tidak pernah meminta info masuk, kata sandi, detail akun, detail pelanggan, atau detail pesanan. Pengemudi hanya membagikan laporan pengambilan, seperti waktu tunggu dan masalah titik pengambilan."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "Coba PickupRadar sebelum aplikasi diluncurkan."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "Pratinjau langsung menampilkan titik pengambilan dan waktu tunggu asli di Milton Keynes. Melapor dan {radarPoints} hanya ada di aplikasi ponsel."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "Halaman tidak ditemukan — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "Halaman itu tidak ada di situs PickupRadar."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "Halaman ini di luar radar."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "Alamat itu tidak ada di situs PickupRadar. Halaman ini ada:"
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "Beranda"
+    }
+  }
+}

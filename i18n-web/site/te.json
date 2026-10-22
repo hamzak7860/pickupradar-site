@@ -1,0 +1,602 @@
+{
+  "language": "te",
+  "status": "machine",
+  "machineTranslatedBy": "Claude Opus 5.5",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "shared.skip": {
+      "en": "Skip to content",
+      "text": "విషయానికి వెళ్లండి"
+    },
+    "shared.homeLabel": {
+      "en": "PickupRadar home",
+      "text": "PickupRadar హోమ్"
+    },
+    "shared.navLabel": {
+      "en": "Site",
+      "text": "సైట్"
+    },
+    "shared.nav.privacy": {
+      "en": "Privacy",
+      "text": "గోప్యత"
+    },
+    "shared.nav.preview": {
+      "en": "Live preview",
+      "text": "లైవ్ ప్రివ్యూ"
+    },
+    "shared.footer.app": {
+      "en": "App",
+      "text": "యాప్"
+    },
+    "shared.footer.help": {
+      "en": "Help",
+      "text": "సహాయం"
+    },
+    "shared.footer.legal": {
+      "en": "Legal",
+      "text": "చట్టపరమైనది"
+    },
+    "shared.tagline": {
+      "en": "Know the wait before you walk in.",
+      "text": "లోపలికి వెళ్లే ముందు నిరీక్షణ సమయం తెలుసుకోండి."
+    },
+    "shared.footer.copyright": {
+      "en": "© 2026 PickupRadar. Independent and not affiliated with Uber Eats, Deliveroo or Just Eat.",
+      "text": "© 2026 PickupRadar. స్వతంత్రం. Uber Eats, Deliveroo లేదా Just Eat తో సంబంధం లేదు."
+    },
+    "shared.scale.aria": {
+      "en": "Wait ranges",
+      "text": "నిరీక్షణ పరిధి"
+    },
+    "shared.scale.quick": {
+      "en": "Quick",
+      "text": "వేగం"
+    },
+    "shared.scale.short": {
+      "en": "Short wait",
+      "text": "తక్కువ నిరీక్షణ"
+    },
+    "shared.scale.long": {
+      "en": "Long wait",
+      "text": "ఎక్కువ నిరీక్షణ"
+    },
+    "shared.scale.veryLong": {
+      "en": "Very long wait",
+      "text": "చాలా ఎక్కువ నిరీక్షణ"
+    },
+    "shared.scale.estimate": {
+      "en": "No recent reports? PickupRadar may show {likelyFast} or {likelySlow}:",
+      "text": "కొత్త నివేదిక లేదా? PickupRadar {likelyFast} లేదా {likelySlow} చూపించవచ్చు:"
+    },
+    "home.meta.title": {
+      "en": "PickupRadar (Pickup Radar): pickup wait times for delivery drivers in the UK",
+      "text": "PickupRadar (Pickup Radar): యునైటెడ్ కింగ్‌డమ్‌లో డ్రైవర్ల కోసం పికప్ నిరీక్షణ"
+    },
+    "home.meta.description": {
+      "en": "See how long drivers wait at restaurants and shops before you go in. For Uber Eats, Deliveroo and Just Eat drivers in the UK. No sign-up needed.",
+      "text": "మీరు లోపలికి వెళ్లే ముందు డ్రైవర్లు రెస్టారెంట్లు మరియు దుకాణాల్లో ఎంతసేపు వేచి ఉంటారో చూడండి. యునైటెడ్ కింగ్‌డమ్‌లోని Uber Eats, Deliveroo, Just Eat డ్రైవర్ల కోసం. సైన్ అప్ అవసరం లేదు."
+    },
+    "home.meta.imageAlt": {
+      "en": "PickupRadar. Know the wait before you walk in.",
+      "text": "PickupRadar. లోపలికి వెళ్లే ముందు నిరీక్షణ సమయం తెలుసుకోండి."
+    },
+    "home.hero.lede": {
+      "en": "Do you deliver for Uber Eats, Deliveroo or Just Eat? See recent pickup waits at restaurants and shops. Avoid long waits. Tap {reportWait} and earn {radarPoints}. No sign-up needed.",
+      "text": "మీరు Uber Eats, Deliveroo లేదా Just Eat కోసం డెలివరీ చేస్తున్నారా? రెస్టారెంట్, దుకాణ పికప్ పాయింట్లలో తాజా నిరీక్షణ చూడండి. ఎక్కువ నిరీక్షణను తప్పించుకోండి. {reportWait} నొక్కి {radarPoints} పొందండి. సైన్ అప్ అవసరం లేదు."
+    },
+    "home.hero.try": {
+      "en": "Try it with real data",
+      "text": "నిజమైన డేటాతో ప్రయత్నించండి"
+    },
+    "home.hero.availability": {
+      "en": "Availability",
+      "text": "అందుబాటు"
+    },
+    "home.hero.cities": {
+      "en": "Now in Milton Keynes. London is next.",
+      "text": "ఇప్పుడు Milton Keynes లో. తర్వాత London."
+    },
+    "home.hero.apps": {
+      "en": "The iPhone and Android apps are coming soon.",
+      "text": "iPhone, Android యాప్‌లు త్వరలో వస్తాయి."
+    },
+    "home.example.aria": {
+      "en": "Example PickupRadar Home screen with the {nearby} tab open, showing pickup points coloured by their wait",
+      "text": "{nearby} ట్యాబ్ తెరిచి ఉన్న PickupRadar హోమ్ స్క్రీన్ ఉదాహరణ. నిరీక్షణ ప్రకారం పికప్ పాయింట్లకు రంగు ఉంటుంది"
+    },
+    "home.example.banner": {
+      "en": "Example screen: sample waits, not live driver reports",
+      "text": "ఉదాహరణ స్క్రీన్: ఉదాహరణ నిరీక్షణ, డ్రైవర్ల లైవ్ నివేదిక కాదు"
+    },
+    "home.example.sampleWait": {
+      "en": "Sample wait",
+      "text": "ఉదాహరణ నిరీక్షణ"
+    },
+    "home.example.sampleEstimate": {
+      "en": "Sample estimate",
+      "text": "ఉదాహరణ అంచనా"
+    },
+    "home.example.evidence": {
+      "en": "1 report · 4m ago",
+      "text": "1 నివేదిక · 4 నిమిషాల క్రితం"
+    },
+    "home.example.caption": {
+      "en": "Example screen. These are sample wait times, not live reports. {live} with real data.",
+      "text": "ఉదాహరణ స్క్రీన్. ఇది ఉదాహరణ నిరీక్షణ, లైవ్ నివేదిక కాదు. నిజమైన డేటాతో {live}."
+    },
+    "home.example.live": {
+      "en": "Try the live preview",
+      "text": "లైవ్ ప్రివ్యూ ప్రయత్నించండి"
+    },
+    "home.scale.title": {
+      "en": "See how long you may wait.",
+      "text": "మీరు ఎంతసేపు వేచి ఉండవచ్చో చూడండి."
+    },
+    "home.scale.body": {
+      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
+      "text": "డ్రైవర్లు ఎంతసేపు వేచి ఉన్నారో నివేదిస్తారు. ప్రస్తుత నిరీక్షణ గత 2 గంటల నివేదికల నుంచి వస్తుంది. వేగమైన మరియు నెమ్మదైన పికప్ పాయింట్లను మీరు త్వరగా చూస్తారు."
+    },
+    "home.live.aria": {
+      "en": "Live PickupRadar app preview with real Milton Keynes data",
+      "text": "Milton Keynes నిజమైన డేటాతో PickupRadar యాప్ లైవ్ ప్రివ్యూ"
+    },
+    "home.live.title": {
+      "en": "Try PickupRadar with real Milton Keynes data.",
+      "text": "Milton Keynes నిజమైన డేటాతో PickupRadar ప్రయత్నించండి."
+    },
+    "home.live.body": {
+      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
+      "text": "Milton Keynes లోని నిజమైన పికప్ పాయింట్లు చూడండి. తాజా నిరీక్షణ చూడండి, లేదా {likelyFast} మరియు {likelySlow}. నివేదిక స్క్రీన్ ప్రయత్నించవచ్చు, కానీ ఏదీ పంపబడదు."
+    },
+    "home.try.tabLead": {
+      "en": "Pick a tab.",
+      "text": "ఒక ట్యాబ్ ఎంచుకోండి."
+    },
+    "home.try.tab": {
+      "en": "{lead} Use {nearby} to find pickup points close to you when location is on. Use {fast} and {slow} to check waits and estimates.",
+      "text": "{lead} లొకేషన్ ఆన్‌లో ఉన్నప్పుడు దగ్గరి పికప్ పాయింట్లు కనుగొనడానికి {nearby} ఉపయోగించండి. నిరీక్షణలు మరియు అంచనాలు చూడటానికి {fast} మరియు {slow} ఉపయోగించండి."
+    },
+    "home.try.searchLead": {
+      "en": "Search pickup points.",
+      "text": "ఒక పికప్ పాయింట్ కనుగొనండి."
+    },
+    "home.try.search": {
+      "en": "{lead} Try a name, area or postcode, like KFC or Bletchley.",
+      "text": "{lead} పేరు, ప్రాంతం లేదా పోస్ట్‌కోడ్ ప్రయత్నించండి, ఉదాహరణకు KFC లేదా Bletchley."
+    },
+    "home.try.openLead": {
+      "en": "Open a pickup point.",
+      "text": "ఒక పికప్ పాయింట్ తెరవండి."
+    },
+    "home.try.open": {
+      "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
+      "text": "{lead} {reportWait} స్క్రీన్ తెరుచుకుంటుంది. ఒక నిరీక్షణ ఎంచుకోండి. ఏదీ పంపబడదు."
+    },
+    "home.live.big": {
+      "en": "Open the big preview",
+      "text": "పెద్ద ప్రివ్యూ తెరవండి"
+    },
+    "home.signals.title": {
+      "en": "What you can see before you go in",
+      "text": "లోపలికి వెళ్లే ముందు మీరు చూసేది"
+    },
+    "home.signals.intro": {
+      "en": "You see the same labels in the app. Drivers report them, not the delivery apps.",
+      "text": "యాప్‌లో అదే లేబుల్స్ కనిపిస్తాయి. వాటిని నివేదించేది డ్రైవర్లు, డెలివరీ యాప్ కాదు."
+    },
+    "home.signals.current.body": {
+      "en": "Drivers choose a wait time. You see the current wait and how many drivers reported it in the last 2 hours.",
+      "text": "డ్రైవర్లు నిరీక్షణను ఎంచుకుంటారు. ప్రస్తుత నిరీక్షణను మరియు గత 2 గంటల్లో ఎంతమంది డ్రైవర్లు దాన్ని నివేదించారో మీరు చూస్తారు."
+    },
+    "home.signals.likely.title": {
+      "en": "{likelyFast} and {likelySlow}",
+      "text": "{likelyFast} మరియు {likelySlow}"
+    },
+    "home.signals.likely.body": {
+      "en": "Shown only when there are no recent reports. These are estimates, not live reports.",
+      "text": "కొత్త నివేదిక లేనప్పుడు మాత్రమే కనిపిస్తుంది. ఇది అంచనా, లైవ్ నివేదిక కాదు."
+    },
+    "home.signals.closed.pill": {
+      "en": "Reported closed recently",
+      "text": "ఇటీవల మూసివేశారని నివేదిక"
+    },
+    "home.signals.closed.title": {
+      "en": "{closedNow} or {notReceiving}",
+      "text": "{closedNow} లేదా {notReceiving}"
+    },
+    "home.signals.closed.body": {
+      "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
+      "text": "దీన్ని నివేదించడానికి డ్రైవర్లు {reportProblem} నొక్కుతారు. అక్కడికి వెళ్లే ముందు నివేదిక కనిపిస్తుంది."
+    },
+    "home.signals.tablet.body": {
+      "en": "See when drivers report that a restaurant's tablet or system is not working.",
+      "text": "రెస్టారెంట్ టాబ్లెట్ లేదా సిస్టమ్ పని చేయడం లేదని డ్రైవర్లు నివేదించినప్పుడు చూడండి."
+    },
+    "home.signals.arrival.title": {
+      "en": "Order starts after arrival",
+      "text": "మీరు చేరుకున్న తర్వాత ఆర్డర్ మొదలవుతుంది"
+    },
+    "home.signals.arrival.body": {
+      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
+      "text": "కొన్ని చోట్ల మీరు చేరుకున్న తర్వాతే ఆర్డర్ మొదలవుతుంది. నివేదిస్తున్నప్పుడు డ్రైవర్లు దీన్ని ఆన్ చేయవచ్చు."
+    },
+    "home.signals.missing.title": {
+      "en": "Missing or wrong pickup points",
+      "text": "లేని లేదా తప్పు పికప్ పాయింట్"
+    },
+    "home.signals.missing.body": {
+      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
+      "text": "పికప్ పాయింట్ లేదా? {suggest} నొక్కండి. ఏదైనా తప్పా? {reportProblem} నొక్కండి, తర్వాత {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} లేదా {closedPermanently}."
+    },
+    "home.how.intro": {
+      "en": "Three easy steps. Reporting takes a few seconds.",
+      "text": "మూడు సులభమైన దశలు. నివేదించడానికి కొన్ని సెకన్లు చాలు."
+    },
+    "home.how.step1.title": {
+      "en": "Open the app",
+      "text": "యాప్ తెరవండి"
+    },
+    "home.how.step1.body": {
+      "en": "No password. The app gives you a Radar profile automatically. You don't need to sign up.",
+      "text": "పాస్‌వర్డ్ అవసరం లేదు. యాప్ మీకు స్వయంచాలకంగా Radar ప్రొఫైల్ ఇస్తుంది. సైన్ అప్ అవసరం లేదు."
+    },
+    "home.how.step2.title": {
+      "en": "Check before you go in",
+      "text": "లోపలికి వెళ్లే ముందు చూడండి"
+    },
+    "home.how.step2.body": {
+      "en": "Find the pickup point. See the current wait, or {likelyFast} or {likelySlow} if there are no recent reports.",
+      "text": "పికప్ పాయింట్ కనుగొనండి. ప్రస్తుత నిరీక్షణ చూడండి, లేదా కొత్త నివేదిక లేకపోతే {likelyFast} లేదా {likelySlow}."
+    },
+    "home.how.step3.title": {
+      "en": "Report your wait",
+      "text": "మీ నిరీక్షణను నివేదించండి"
+    },
+    "home.how.step3.body": {
+      "en": "After you collect the order, tap {reportWait}. It takes seconds. Your report helps other drivers, and you earn {radarPoints}.",
+      "text": "ఆర్డర్ తీసుకున్న తర్వాత {reportWait} నొక్కండి. కొన్ని సెకన్లు చాలు. మీ నివేదిక ఇతర డ్రైవర్లకు సహాయపడుతుంది, మీకు {radarPoints} వస్తాయి."
+    },
+    "home.points.title": {
+      "en": "Earn {radarPoints}",
+      "text": "{radarPoints} పొందండి"
+    },
+    "home.points.body": {
+      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "{radarPoints} పొందడానికి {reportWait} నొక్కండి. ఖాతా లేకుండా మొదలుపెట్టవచ్చు. ఫోన్ మార్చినా లేదా రీసెట్ చేసినా సురక్షితంగా ఉండేలా {radarPoints}ను ఇమెయిల్‌తో రక్షించండి. పాస్‌వర్డ్ అవసరం లేదు. యాప్ 6 అంకెల కోడ్‌ను ఇమెయిల్ చేస్తుంది."
+    },
+    "home.points.noteSoon": {
+      "en": "Rewards coming soon.",
+      "text": "రివార్డులు త్వరలో వస్తాయి."
+    },
+    "home.points.note": {
+      "en": "{soon} You can't redeem {radarPoints} yet.",
+      "text": "{soon} మీరు ఇంకా {radarPoints} రీడీమ్ చేయలేరు."
+    },
+    "home.points.aria": {
+      "en": "How to earn {radarPoints}",
+      "text": "{radarPoints} ఎలా పొందాలి"
+    },
+    "home.points.neededLine": {
+      "en": "{reportNeeded}{help}",
+      "text": "{reportNeeded}{help}"
+    },
+    "home.points.neededHelp": {
+      "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
+      "text": "మీ దగ్గర ఉన్న అర్హమైన పికప్ పాయింట్, కొత్త నిరీక్షణ లేదు, {likelyFast} లేదా {likelySlow} లేదు. ఆ నివేదికకు మీకు 15 RP వస్తాయి, 10 కాదు."
+    },
+    "home.points.firstLine": {
+      "en": "{firstBonus}{help}",
+      "text": "{firstBonus}{help}"
+    },
+    "home.points.firstHelp": {
+      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
+      "text": "మొదటి చెల్లుబాటు అయ్యే నిరీక్షణ నివేదికపై అదనపు పాయింట్లు. అది కూడా {reportNeeded} అయితే మీకు మొత్తం 25 RP వస్తాయి."
+    },
+    "home.points.approvedLine": {
+      "en": "{approved}{help}",
+      "text": "{approved}{help}"
+    },
+    "home.points.approvedHelp": {
+      "en": "When we approve a pickup point you suggest",
+      "text": "మీరు సూచించిన పికప్ పాయింట్‌ను మేము ఆమోదించినప్పుడు"
+    },
+    "home.points.referralLine": {
+      "en": "{referral}{help}",
+      "text": "{referral}{help}"
+    },
+    "home.points.referralHelp": {
+      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
+      "text": "మీ స్నేహితుడు 3 చెల్లుబాటు అయ్యే నిరీక్షణ నివేదికలు చేసినప్పుడు, కనీసం 2 వేర్వేరు రోజుల్లో (UTC సమయం), 2 వేర్వేరు పికప్ పాయింట్ల వద్ద, మీ ఇద్దరికీ వస్తాయి. మీ ఇద్దరికీ రక్షిత Radar ఖాతా కావాలి (ఇమెయిల్ జోడించండి). మొదటి చెల్లుబాటు అయ్యే నిరీక్షణ నివేదికకు ముందు మీ స్నేహితుడు మీ కోడ్‌ను నమోదు చేయాలి."
+    },
+    "home.points.referralEach": {
+      "en": "{referralRp} each",
+      "text": "ఒక్కొక్కరికి {referralRp}"
+    },
+    "home.cities.body": {
+      "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
+      "text": "ఇవి యాప్‌లోని యునైటెడ్ కింగ్‌డమ్ నగరాలు. మీ నగరం కనిపించడం లేదా? యాప్‌లో అభ్యర్థించండి. లేదా {comingSoon} అయిన నగరంపై {notify} నొక్కండి. అది లైవ్ అయినప్పుడు మేము ఇమెయిల్ చేస్తాం."
+    },
+    "home.cities.live": {
+      "en": "Live now",
+      "text": "ఇప్పుడు లైవ్"
+    },
+    "home.trust.title": {
+      "en": "Not part of any delivery app",
+      "text": "ఏ డెలివరీ యాప్‌లో భాగం కాదు"
+    },
+    "home.trust.body": {
+      "en": "PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app. It never uses your accounts with them.",
+      "text": "PickupRadar స్వతంత్రం. ఇది Uber Eats, Deliveroo, Just Eat లేదా మరే డెలివరీ యాప్‌లో భాగం కాదు. అక్కడ మీ ఖాతాను ఎప్పుడూ ఉపయోగించదు."
+    },
+    "home.trust.privacy": {
+      "en": "Read the privacy policy",
+      "text": "గోప్యతా విధానం చదవండి"
+    },
+    "home.trust.loginLead": {
+      "en": "No delivery app logins.",
+      "text": "డెలివరీ యాప్ లాగిన్ లేదు."
+    },
+    "home.trust.login": {
+      "en": "{lead} We never ask for your Uber Eats, Deliveroo or Just Eat username or password.",
+      "text": "{lead} Uber Eats, Deliveroo లేదా Just Eat యూజర్‌నేమ్ లేదా పాస్‌వర్డ్ మేము ఎప్పుడూ అడగము."
+    },
+    "home.trust.detailsLead": {
+      "en": "No customer or order details.",
+      "text": "కస్టమర్ లేదా ఆర్డర్ వివరాలు లేవు."
+    },
+    "home.trust.details": {
+      "en": "{lead} No names, addresses or order numbers.",
+      "text": "{lead} పేరు, చిరునామా లేదా ఆర్డర్ నంబర్ లేదు."
+    },
+    "home.trust.skipLead": {
+      "en": "You can skip the delivery app.",
+      "text": "డెలివరీ యాప్‌ను దాటవేయవచ్చు."
+    },
+    "home.trust.skip": {
+      "en": "{lead} Choosing the delivery app is optional.",
+      "text": "{lead} డెలివరీ యాప్ ఎంచుకోవడం ఐచ్ఛికం."
+    },
+    "home.trust.controlLead": {
+      "en": "You are in control.",
+      "text": "నియంత్రణ మీదే."
+    },
+    "home.trust.control": {
+      "en": "{lead} Delete your account or Radar profile in the app at any time.",
+      "text": "{lead} యాప్‌లో ఖాతా లేదా Radar ప్రొఫైల్‌ను ఎప్పుడైనా తొలగించండి."
+    },
+    "home.faq.title": {
+      "en": "Questions from drivers",
+      "text": "డ్రైవర్ల ప్రశ్నలు"
+    },
+    "home.faq.account.q": {
+      "en": "Do I need an account?",
+      "text": "నాకు ఖాతా కావాలా?"
+    },
+    "home.faq.account.a": {
+      "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
+      "text": "వద్దు. యాప్ మీకు స్వయంచాలకంగా Radar ప్రొఫైల్ ఇస్తుంది. వెంటనే నిరీక్షణను నివేదించవచ్చు. {radarPoints} రక్షించడానికి తర్వాత ఇమెయిల్ జోడించండి. పాస్‌వర్డ్ అవసరం లేదు. యాప్ 6 అంకెల కోడ్‌ను ఇమెయిల్ చేస్తుంది."
+    },
+    "home.faq.where.q": {
+      "en": "Where does PickupRadar work?",
+      "text": "PickupRadar ఎక్కడ పని చేస్తుంది?"
+    },
+    "home.faq.where.a": {
+      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
+      "text": "PickupRadar ఇప్పుడు Milton Keynes లో పని చేస్తుంది. తర్వాత London. ఆ తర్వాత ఇంకా నగరాలు, Manchester, Birmingham, Leeds, Liverpool, Glasgow లాగా. {cities} చూడండి."
+    },
+    "home.faq.where.cities": {
+      "en": "all the cities",
+      "text": "అన్ని నగరాలు"
+    },
+    "home.faq.download.q": {
+      "en": "When can I download the app?",
+      "text": "యాప్‌ను ఎప్పుడు డౌన్‌లోడ్ చేయగలను?"
+    },
+    "home.faq.download.a": {
+      "en": "The iPhone and Android apps are coming soon. For now, the {preview} shows real Milton Keynes pickup points and waits.",
+      "text": "iPhone, Android యాప్‌లు త్వరలో వస్తాయి. ప్రస్తుతం {preview} Milton Keynes లోని నిజమైన పికప్ పాయింట్లు మరియు నిరీక్షణను చూపిస్తుంది."
+    },
+    "home.faq.download.link": {
+      "en": "live preview",
+      "text": "లైవ్ ప్రివ్యూ"
+    },
+    "home.faq.wait.q": {
+      "en": "How is the current wait worked out?",
+      "text": "ప్రస్తుత నిరీక్షణ ఎలా లెక్కిస్తారు?"
+    },
+    "home.faq.wait.a": {
+      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
+      "text": "ఇది గత 2 గంటల డ్రైవర్ నివేదికల నుంచి వస్తుంది. 2 గంటల కంటే పాత నివేదికలు ప్రస్తుత నిరీక్షణను మార్చవు."
+    },
+    "home.faq.likely.q": {
+      "en": "What do {likelyFast} and {likelySlow} mean?",
+      "text": "{likelyFast} మరియు {likelySlow} అంటే ఏమిటి?"
+    },
+    "home.faq.likely.a": {
+      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
+      "text": "అవి అంచనాలు, లైవ్ నివేదికలు కావు. కొత్త నిరీక్షణ నివేదిక లేనప్పుడు అవి కనిపిస్తాయి."
+    },
+    "home.faq.track.q": {
+      "en": "Does it track my location?",
+      "text": "ఇది నా లొకేషన్‌ను ట్రాక్ చేస్తుందా?"
+    },
+    "home.faq.track.a": {
+      "en": "No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the {privacy} for more.",
+      "text": "నేపథ్య ట్రాకింగ్ లేదు. మీరు యాప్ ఉపయోగించేటప్పుడు అది మీ లొకేషన్ ఉపయోగిస్తుంది, దగ్గరి పికప్ పాయింట్లు చూపించడానికి మరియు నివేదించేటప్పుడు మీరు పికప్ పాయింట్ వద్ద ఉన్నారో చూడటానికి. మీరు దాన్ని ఉపయోగించాలని ఎంచుకున్నప్పుడు మాత్రమే సైట్ లొకేషన్ అడుగుతుంది. మరింత తెలుసుకోవడానికి {privacy} చదవండి."
+    },
+    "home.faq.track.privacy": {
+      "en": "privacy policy",
+      "text": "గోప్యతా విధానం"
+    },
+    "home.faq.delete.q": {
+      "en": "How do I delete my data?",
+      "text": "నా డేటాను ఎలా తొలగించాలి?"
+    },
+    "home.faq.delete.a": {
+      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
+      "text": "యాప్‌లో {profile} తెరవండి. {deleteAccount} నొక్కండి. మీరు ఇమెయిల్ జోడించకపోతే {deleteProfile} నొక్కండి. మాకు ఇమెయిల్ కూడా చేయవచ్చు. దశల కోసం {page} చూడండి."
+    },
+    "home.closer.title": {
+      "en": "Explore Milton Keynes pickup points.",
+      "text": "Milton Keynes పికప్ పాయింట్లు చూడండి."
+    },
+    "home.closer.body": {
+      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
+      "text": "Milton Keynes లోని నిజమైన పికప్ పాయింట్లు చూడండి. ఒక చోటు కనుగొని నివేదిక స్క్రీన్ ప్రయత్నించండి. మీరు నొక్కేది ఏదీ పంపబడదు."
+    },
+    "home.closer.cta": {
+      "en": "Open the live preview",
+      "text": "లైవ్ ప్రివ్యూ తెరవండి"
+    },
+    "app.meta.title": {
+      "en": "Live app preview — PickupRadar",
+      "text": "యాప్ లైవ్ ప్రివ్యూ — PickupRadar"
+    },
+    "app.meta.description": {
+      "en": "Try the PickupRadar app with real Milton Keynes data. Look around, search for pickup points and see the report screen.",
+      "text": "Milton Keynes నిజమైన డేటాతో PickupRadar యాప్ ప్రయత్నించండి. చుట్టూ చూడండి, పికప్ పాయింట్ కనుగొనండి, నివేదిక స్క్రీన్ చూడండి."
+    },
+    "app.hero.lede": {
+      "en": "This is PickupRadar with real Milton Keynes data. Look around. Search for a pickup point and open it. Nothing you tap here is sent. You can only report in the mobile app.",
+      "text": "ఇది Milton Keynes నిజమైన డేటాతో PickupRadar. చుట్టూ చూడండి. ఒక పికప్ పాయింట్ కనుగొని తెరవండి. ఇక్కడ మీరు నొక్కేది ఏదీ పంపబడదు. ఫోన్ యాప్‌లో మాత్రమే నివేదించగలరు."
+    },
+    "app.preview.aria": {
+      "en": "Full PickupRadar app preview with real Milton Keynes data",
+      "text": "Milton Keynes నిజమైన డేటాతో PickupRadar యాప్ పూర్తి ప్రివ్యూ"
+    },
+    "support.meta.title": {
+      "en": "Support — PickupRadar",
+      "text": "మద్దతు — PickupRadar"
+    },
+    "support.meta.description": {
+      "en": "Get help with PickupRadar: contact support, report a pickup point problem, and find answers about your Radar profile, {radarPoints} and deleting your account.",
+      "text": "PickupRadar సహాయం: మద్దతును సంప్రదించండి, పికప్ పాయింట్ సమస్యను నివేదించండి, Radar ప్రొఫైల్, {radarPoints} మరియు ఖాతా తొలగింపు గురించి సమాధానాలు కనుగొనండి."
+    },
+    "support.hero.lede": {
+      "en": "Need help? Email us about the app, a pickup point, your {radarPoints} or your privacy.",
+      "text": "సహాయం కావాలా? యాప్, పికప్ పాయింట్, {radarPoints} లేదా మీ గోప్యత గురించి ఇమెయిల్ చేయండి."
+    },
+    "support.contact.aria": {
+      "en": "Contact",
+      "text": "సంప్రదించండి"
+    },
+    "support.contact.title": {
+      "en": "Contact support",
+      "text": "మద్దతును సంప్రదించండి"
+    },
+    "support.contact.body": {
+      "en": "Email us for help, ideas, pickup point problems or privacy questions:",
+      "text": "సహాయం, ఆలోచన, పికప్ పాయింట్ సమస్య లేదా గోప్యత ప్రశ్న కోసం ఇమెయిల్ చేయండి:"
+    },
+    "support.address.title": {
+      "en": "Business correspondence address",
+      "text": "వ్యాపార తపాలా చిరునామా"
+    },
+    "support.address.note": {
+      "en": "For letters only. Email is the fastest way to reach us.",
+      "text": "ఉత్తరాలకు మాత్రమే. మమ్మల్ని సంప్రదించడానికి ఇమెయిల్ అత్యంత వేగవంతమైన మార్గం."
+    },
+    "support.include.title": {
+      "en": "What to include",
+      "text": "ఏమి చేర్చాలి"
+    },
+    "support.include.body": {
+      "en": "If you report a problem, please tell us:",
+      "text": "సమస్యను నివేదిస్తుంటే మాకు చెప్పండి:"
+    },
+    "support.include.name": {
+      "en": "The pickup point name",
+      "text": "పికప్ పాయింట్ పేరు"
+    },
+    "support.include.area": {
+      "en": "The area or postcode, if you know it",
+      "text": "ప్రాంతం లేదా పోస్ట్‌కోడ్, తెలిస్తే"
+    },
+    "support.include.wrong": {
+      "en": "What went wrong",
+      "text": "ఏది తప్పు"
+    },
+    "support.include.phone": {
+      "en": "Your phone model, if the app has a problem",
+      "text": "సమస్య యాప్‌లో ఉంటే మీ ఫోన్ మోడల్"
+    },
+    "support.topics.title": {
+      "en": "Common questions",
+      "text": "తరచుగా అడిగే ప్రశ్నలు"
+    },
+    "support.topics.profile.title": {
+      "en": "Radar profile and email",
+      "text": "Radar ప్రొఫైల్ మరియు ఇమెయిల్"
+    },
+    "support.topics.profile.body": {
+      "en": "The app gives you a Radar profile automatically. You do not need to log in to use PickupRadar or earn {radarPoints}. Adding your email is optional. It protects your {radarPoints} if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
+      "text": "యాప్ మీకు స్వయంచాలకంగా Radar ప్రొఫైల్ ఇస్తుంది. PickupRadar ఉపయోగించడానికి లేదా {radarPoints} పొందడానికి సైన్ ఇన్ అవసరం లేదు. ఇమెయిల్ జోడించడం ఐచ్ఛికం. ఫోన్ మార్చినా లేదా రీసెట్ చేసినా అది {radarPoints}ను రక్షిస్తుంది. పాస్‌వర్డ్ అవసరం లేదు. యాప్ 6 అంకెల కోడ్‌ను ఇమెయిల్ చేస్తుంది."
+    },
+    "support.topics.points.title": {
+      "en": "{radarPoints} and referrals",
+      "text": "{radarPoints} మరియు ఆహ్వానాలు"
+    },
+    "support.topics.points.body": {
+      "en": "You earn {radarPoints} for valid wait reports ({waitRp}, or {neededRp} when it says {reportNeeded}), a first report bonus ({firstRp}) and pickup points we approve ({approvedRp}). You can invite a driver from {profile}. You both need protected Radar accounts (add your email). Your friend enters your code before their first valid wait report. When your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points, you each earn {referralRp}. {rewards} You can't redeem {radarPoints} yet.",
+      "text": "చెల్లుబాటు అయ్యే నిరీక్షణ నివేదికకు మీకు {radarPoints} వస్తాయి ({waitRp}, లేదా {reportNeeded} రాసి ఉన్నప్పుడు {neededRp}), మొదటి నివేదిక బోనస్ ({firstRp}) మరియు మేము ఆమోదించే పికప్ పాయింట్ ({approvedRp}). {profile} నుంచి డ్రైవర్‌ను ఆహ్వానించవచ్చు. మీ ఇద్దరికీ రక్షిత Radar ఖాతా కావాలి (ఇమెయిల్ జోడించండి). మొదటి చెల్లుబాటు అయ్యే నిరీక్షణ నివేదికకు ముందు మీ స్నేహితుడు మీ కోడ్‌ను నమోదు చేస్తాడు. మీ స్నేహితుడు 3 చెల్లుబాటు అయ్యే నిరీక్షణ నివేదికలు చేసినప్పుడు, కనీసం 2 వేర్వేరు రోజుల్లో (UTC సమయం), 2 వేర్వేరు పికప్ పాయింట్ల వద్ద, ఒక్కొక్కరికి {referralRp} వస్తాయి. {rewards} మీరు ఇంకా {radarPoints} రీడీమ్ చేయలేరు."
+    },
+    "support.topics.messages.title": {
+      "en": "Driver messages",
+      "text": "డ్రైవర్లకు సందేశాలు"
+    },
+    "support.topics.messages.body": {
+      "en": "{profile} has {messages}: announcements, alerts and personal messages for your city or Radar profile. Old or removed messages may no longer appear.",
+      "text": "{profile} లో {messages} ఉన్నాయి: మీ నగరం లేదా Radar ప్రొఫైల్ కోసం ప్రకటనలు, హెచ్చరికలు మరియు వ్యక్తిగత సందేశాలు. పాతవి లేదా తీసివేసినవి మళ్లీ కనిపించకపోవచ్చు."
+    },
+    "support.topics.delete.title": {
+      "en": "Delete your account",
+      "text": "మీ ఖాతాను తొలగించండి"
+    },
+    "support.topics.delete.body": {
+      "en": "Delete your account in the app: {profile} → {deleteAccount}. Or email {email}. If you did not add an email, the app shows {deleteProfile} instead. See the {page} page for the steps.",
+      "text": "యాప్‌లో ఖాతాను తొలగించండి: {profile} → {deleteAccount}. లేదా {email} కు ఇమెయిల్ చేయండి. మీరు ఇమెయిల్ జోడించకపోతే యాప్ {deleteProfile} చూపిస్తుంది. దశల కోసం {page} పేజీ చూడండి."
+    },
+    "support.topics.missing.body": {
+      "en": "Is a pickup point missing? Tap {suggest} in the app. Is one wrong? Tap {reportProblem}. Or email us and we will check it.",
+      "text": "పికప్ పాయింట్ లేదా? యాప్‌లో {suggest} నొక్కండి. ఏదైనా తప్పా? {reportProblem} నొక్కండి. లేదా ఇమెయిల్ చేయండి, మేము చూస్తాం."
+    },
+    "support.topics.delivery.title": {
+      "en": "Your delivery app accounts",
+      "text": "మీ డెలివరీ యాప్ ఖాతా"
+    },
+    "support.topics.delivery.body": {
+      "en": "PickupRadar does not connect to your Uber Eats, Deliveroo, Just Eat or other delivery app accounts. We never ask for your delivery app logins, passwords, account details, customer details or order details. Drivers only share pickup reports, like wait times and pickup point problems.",
+      "text": "PickupRadar మీ Uber Eats, Deliveroo, Just Eat లేదా మరే డెలివరీ యాప్ ఖాతాకు కనెక్ట్ కాదు. లాగిన్, పాస్‌వర్డ్, ఖాతా వివరాలు, కస్టమర్ వివరాలు లేదా ఆర్డర్ వివరాలు మేము ఎప్పుడూ అడగము. డ్రైవర్లు పంచుకునేది పికప్ నివేదికలు మాత్రమే, నిరీక్షణ మరియు పికప్ పాయింట్ సమస్యల లాగా."
+    },
+    "support.closer.title": {
+      "en": "Try PickupRadar before the app launches.",
+      "text": "యాప్ విడుదలకు ముందు PickupRadar ప్రయత్నించండి."
+    },
+    "support.closer.body": {
+      "en": "The live preview shows real Milton Keynes pickup points and waits. Reporting and {radarPoints} are only in the mobile app.",
+      "text": "లైవ్ ప్రివ్యూ Milton Keynes లోని నిజమైన పికప్ పాయింట్లు మరియు నిరీక్షణను చూపిస్తుంది. నివేదిక మరియు {radarPoints} ఫోన్ యాప్‌లో మాత్రమే ఉంటాయి."
+    },
+    "notfound.meta.title": {
+      "en": "Page not found — PickupRadar",
+      "text": "పేజీ కనిపించలేదు — PickupRadar"
+    },
+    "notfound.meta.description": {
+      "en": "That page is not on the PickupRadar website.",
+      "text": "ఆ పేజీ PickupRadar సైట్‌లో లేదు."
+    },
+    "notfound.title": {
+      "en": "This page is off the radar.",
+      "text": "ఈ పేజీ రాడార్ బయట ఉంది."
+    },
+    "notfound.body": {
+      "en": "That address isn't on the PickupRadar website. These pages are:",
+      "text": "ఆ చిరునామా PickupRadar సైట్‌లో లేదు. ఈ పేజీలు ఉన్నాయి:"
+    },
+    "notfound.home": {
+      "en": "Home",
+      "text": "హోమ్"
+    }
+  }
+}
