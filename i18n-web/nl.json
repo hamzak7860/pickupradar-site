@@ -1,0 +1,78 @@
+{
+  "language": "nl",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "Haal de app"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "Wachttijden en problemen melden kan alleen in de mobiele app van PickupRadar.\n\nDe preview op deze website is alleen om te bekijken."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "Krijg bericht zodra {city} beschikbaar is.\n\nLanceringsmeldingen stel je in de mobiele app in."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "Vraag PickupRadar aan in jouw stad.\n\nStadsaanvragen worden vanuit de mobiele app verstuurd."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "iPhone-app binnenkort"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android binnenkort"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "Download in de App Store"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Ontdek het op Google Play"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "Afhaalpunten bewaren kan in de mobiele app."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "Nog geen afhaalpunten"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "Geen actieve afhaalpunten gevonden in deze stad."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "Gebruik mijn locatie voor afhaalpunten in de buurt"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "Locatie opnieuw proberen"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "Locatie staat uit. Sta hem toe voor deze site in je browserinstellingen voor afstanden in de buurt, of kies een stad om PickupRadar te verkennen."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "Filters"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "PickupRadar-uitleg"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "Dia {number} van {total}"
+    }
+  }
+}

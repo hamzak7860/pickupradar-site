@@ -1,0 +1,78 @@
+{
+  "language": "ko",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "앱 받기"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "대기 시간과 문제 신고는 PickupRadar 모바일 앱에서만 할 수 있습니다.\n\n이 웹사이트의 미리보기는 보기 전용입니다."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "{city} 공개 시 알림 받기.\n\n출시 알림은 모바일 앱에서 설정합니다."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "내 도시에 PickupRadar를 요청하세요.\n\n도시 요청은 모바일 앱에서 보냅니다."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "iPhone 앱 곧 제공"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android 곧 제공"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "App Store에서 다운로드"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Google Play에서 다운로드"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "픽업 지점 저장은 모바일 앱에서 할 수 있습니다."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "아직 픽업 지점이 없습니다"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "이 도시에서 운영 중인 픽업 지점을 찾을 수 없습니다."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "내 위치로 근처 픽업 지점 보기"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "위치 다시 시도"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "위치가 꺼져 있습니다. 주변 거리를 보려면 브라우저 설정에서 이 사이트에 위치를 허용하거나, 도시를 선택해 PickupRadar를 둘러보세요."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "필터"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "PickupRadar 튜토리얼"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "{total}개 중 {number}번째 슬라이드"
+    }
+  }
+}

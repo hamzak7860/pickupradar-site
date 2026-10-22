@@ -1,0 +1,78 @@
+{
+  "language": "ceb",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "Kuhaa ang app"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "Sa PickupRadar mobile app ra pwede mag-report sa paghulat ug mga problema.\n\nAng preview niini nga website para lang tan-awon."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "Pahibalo-on ka kung live na ang {city}.\n\nAng mga pahibalo sa paglansad gi-set up sa mobile app."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "Pangayoa ang PickupRadar sa imong siyudad.\n\nAng mga hangyo sa siyudad ipadala gikan sa mobile app."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "Hapit na ang iPhone app"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Hapit na ang Android"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "I-download sa App Store"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Kuhaa kini sa Google Play"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "Ang pag-save sa mga pickup point anaa sa mobile app."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "Wala pay pickup point"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "Walay aktibo nga pickup point nga nakit-an niini nga siyudad."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "Gamita ang akong lokasyon aron makita ang duol nga mga pickup point"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "Sulayi pag-usab ang lokasyon"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "Naka-off ang lokasyon. Tugoti kini para niini nga site sa settings sa imong browser para sa duol nga gilay-on, o pagpili og siyudad aron i-browse ang PickupRadar."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "Mga filter"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "Tutorial sa PickupRadar"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "Slide {number} sa {total}"
+    }
+  }
+}

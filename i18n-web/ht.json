@@ -1,0 +1,78 @@
+{
+  "language": "ht",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "Jwenn aplikasyon an"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "Ou ka rapòte tan datant ak pwoblèm sèlman nan aplikasyon mobil PickupRadar la.\n\nApèsi sou sit entènèt sa a se pou gade sèlman."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "Resevwa yon avètisman lè {city} lanse.\n\nOu mete avètisman lansman yo nan aplikasyon mobil la."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "Mande PickupRadar nan vil ou.\n\nDemann vil yo voye nan aplikasyon mobil la."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "Aplikasyon iPhone ap vini byento"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android ap vini byento"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "Telechaje sou App Store"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Jwenn li sou Google Play"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "Ou ka sove pwen pou pran kòmand nan aplikasyon mobil la."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "Poko gen pwen pou pran kòmand"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "Pa jwenn okenn pwen pou pran kòmand ki aktif nan vil sa a."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "Sèvi ak lokalizasyon m pou wè pwen pou pran kòmand ki toupre"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "Eseye lokalizasyon an ankò"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "Lokalizasyon an dezaktive. Pèmèt li pou sit sa a nan paramèt navigatè ou pou distans toupre yo, oswa chwazi yon vil pou navige PickupRadar."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "Filt"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "Leson PickupRadar"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "Diapo {number} sou {total}"
+    }
+  }
+}

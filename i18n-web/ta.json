@@ -1,0 +1,78 @@
+{
+  "language": "ta",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "ஆப்பைப் பெறுங்கள்"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "காத்திருப்பு மற்றும் பிரச்சினைகளைப் புகாரளிப்பது PickupRadar மொபைல் ஆப்பில் மட்டுமே முடியும்.\n\nஇந்த இணையதளத்தில் உள்ள முன்னோட்டம் பார்ப்பதற்கு மட்டுமே."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "{city} தொடங்கியதும் அறிவிப்பைப் பெறுங்கள்.\n\nதொடக்க அறிவிப்புகள் மொபைல் ஆப்பில் அமைக்கப்படும்."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "உங்கள் நகரத்தில் PickupRadar-ஐக் கோருங்கள்.\n\nநகரக் கோரிக்கைகள் மொபைல் ஆப்பில் இருந்து அனுப்பப்படும்."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "iPhone ஆப் விரைவில்"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android விரைவில்"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "App Store-இல் பதிவிறக்குங்கள்"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Google Play-இல் பெறுங்கள்"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "பிக்கப் புள்ளிகளைச் சேமிப்பது மொபைல் ஆப்பில் கிடைக்கும்."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "இன்னும் பிக்கப் புள்ளிகள் இல்லை"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "இந்த நகரத்தில் செயலில் உள்ள பிக்கப் புள்ளிகள் எதுவும் கிடைக்கவில்லை."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "அருகிலுள்ள பிக்கப் புள்ளிகளைப் பார்க்க என் இருப்பிடத்தைப் பயன்படுத்து"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "இருப்பிடத்தை மீண்டும் முயற்சி செய்"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "இருப்பிடம் அணைக்கப்பட்டுள்ளது. அருகிலுள்ள தூரங்களுக்கு உலாவி அமைப்புகளில் இந்தத் தளத்தை அனுமதிக்கவும், அல்லது PickupRadar-ஐ உலாவ ஒரு நகரத்தைத் தேர்ந்தெடுக்கவும்."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "வடிகட்டிகள்"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "PickupRadar பயிற்சி"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "ஸ்லைடு {number} / {total}"
+    }
+  }
+}

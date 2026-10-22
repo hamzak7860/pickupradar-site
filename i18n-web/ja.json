@@ -1,0 +1,78 @@
+{
+  "language": "ja",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "アプリを入手"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "待ち時間や問題の報告は PickupRadar のモバイルアプリでのみ行えます。\n\nこのウェブサイトのプレビューは閲覧専用です。"
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "{city}の公開時に通知を受け取る。\n\n公開通知はモバイルアプリで設定します。"
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "あなたの都市に PickupRadar をリクエスト。\n\n都市のリクエストはモバイルアプリから送信します。"
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "iPhone アプリは近日公開"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android は近日公開"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "App Store からダウンロード"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Google Play で手に入れよう"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "受け取り場所の保存はモバイルアプリで利用できます。"
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "受け取り場所はまだありません"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "この都市で利用中の受け取り場所は見つかりませんでした。"
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "現在地を使って近くの受け取り場所を表示"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "位置情報を再試行"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "位置情報がオフです。近くの距離を表示するには、ブラウザの設定でこのサイトに位置情報を許可するか、都市を選んで PickupRadar を閲覧してください。"
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "フィルター"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "PickupRadar チュートリアル"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "スライド {number}/{total}"
+    }
+  }
+}

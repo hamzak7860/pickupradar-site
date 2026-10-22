@@ -1,0 +1,78 @@
+{
+  "language": "nb",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "Skaff appen"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "Du kan bare rapportere ventetid og problemer i PickupRadar-mobilappen.\n\nForhåndsvisningen på dette nettstedet er bare for visning."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "Få varsel når {city} lanseres.\n\nLanseringsvarsler settes opp i mobilappen."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "Be om PickupRadar i byen din.\n\nByforespørsler sendes fra mobilappen."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "iPhone-app kommer snart"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android kommer snart"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "Last ned i App Store"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Tilgjengelig på Google Play"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "Du kan lagre hentesteder i mobilappen."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "Ingen hentesteder ennå"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "Fant ingen aktive hentesteder i denne byen."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "Bruk posisjonen min for å se hentesteder i nærheten"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "Prøv posisjon igjen"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "Posisjon er av. Tillat den for dette nettstedet i nettleserinnstillingene for avstander i nærheten, eller velg en by for å bla i PickupRadar."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "Filtre"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "PickupRadar-veiledning"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "Lysbilde {number} av {total}"
+    }
+  }
+}

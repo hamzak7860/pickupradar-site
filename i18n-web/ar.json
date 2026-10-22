@@ -1,0 +1,78 @@
+{
+  "language": "ar",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "احصل على التطبيق"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "الإبلاغ عن أوقات الانتظار والمشكلات متاح فقط في تطبيق PickupRadar للهاتف.\n\nالمعاينة على هذا الموقع للعرض فقط."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "احصل على إشعار عند إطلاق الخدمة في {city}.\n\nيتم إعداد إشعارات الإطلاق في تطبيق الهاتف."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "اطلب PickupRadar في مدينتك.\n\nتُرسَل طلبات المدن من تطبيق الهاتف."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "تطبيق iPhone قريبًا"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android قريبًا"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "التنزيل من App Store"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "احصل عليه من Google Play"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "حفظ نقاط الاستلام متاح في تطبيق الهاتف."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "لا توجد نقاط استلام بعد"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "لم يتم العثور على نقاط استلام نشطة في هذه المدينة."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "استخدم موقعي لعرض نقاط الاستلام القريبة"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "حاول تحديد الموقع مرة أخرى"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "خدمة الموقع معطّلة. اسمح بها لهذا الموقع من إعدادات المتصفح لعرض المسافات القريبة، أو اختر مدينة لتصفّح PickupRadar."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "عوامل التصفية"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "شرح PickupRadar"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "الشريحة {number} من {total}"
+    }
+  }
+}

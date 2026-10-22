@@ -1,0 +1,78 @@
+{
+  "language": "zh-Hant",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "取得 App"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "回報等待時間和問題只能在 PickupRadar 手機 App 中進行。\n\n本網站上的預覽僅供瀏覽。"
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "在 {city} 上線時收到通知。\n\n上線通知需在手機 App 中設定。"
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "為你的城市申請 PickupRadar。\n\n城市申請需從手機 App 送出。"
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "iPhone App 即將推出"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android 即將推出"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "在 App Store 下載"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "立即在 Google Play 下載"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "收藏取餐點功能僅在手機 App 中提供。"
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "尚無取餐點"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "此城市找不到可用的取餐點。"
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "使用我的位置查看附近取餐點"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "重試定位"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "定位已關閉。請在瀏覽器設定中允許本網站使用定位以顯示附近距離，或選擇城市來瀏覽 PickupRadar。"
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "篩選"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "PickupRadar 教學"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "第 {number} 張，共 {total} 張"
+    }
+  }
+}

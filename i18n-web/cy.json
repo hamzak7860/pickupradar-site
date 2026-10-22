@@ -1,0 +1,78 @@
+{
+  "language": "cy",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "Cael yr ap"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "Dim ond yn ap symudol PickupRadar y gallwch adrodd am arosiadau a phroblemau.\n\nMae’r rhagolwg ar y wefan hon ar gyfer edrych yn unig."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "Cael gwybod pan fydd {city} yn mynd yn fyw.\n\nMae hysbysiadau lansio’n cael eu gosod yn yr ap symudol."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "Gofyn am PickupRadar yn eich dinas.\n\nMae ceisiadau dinas yn cael eu hanfon o’r ap symudol."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "Ap iPhone yn dod yn fuan"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android yn dod yn fuan"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "Lawrlwytho o’r App Store"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Ei gael ar Google Play"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "Mae cadw pwyntiau casglu ar gael yn yr ap symudol."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "Dim pwyntiau casglu eto"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "Ni chanfuwyd unrhyw bwyntiau casglu gweithredol yn y ddinas hon."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "Defnyddio fy lleoliad i weld pwyntiau casglu gerllaw"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "Rhoi cynnig ar leoliad eto"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "Mae lleoliad wedi’i ddiffodd. Caniatewch ef ar gyfer y wefan hon yng ngosodiadau eich porwr ar gyfer pellteroedd gerllaw, neu dewiswch ddinas i bori PickupRadar."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "Hidlwyr"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "Tiwtorial PickupRadar"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "Sleid {number} o {total}"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "language": "prs",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "دریافت برنامه"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "گزارش انتظار و مشکلات تنها در برنامهٔ موبایل PickupRadar ممکن است.\n\nپیش‌نمایش این ویب‌سایت تنها برای دیدن است."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "وقتی {city} فعال شد، باخبر شوید.\n\nاطلاعیه‌های آغاز در برنامهٔ موبایل تنظیم می‌شوند."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "PickupRadar را برای شهر خود درخواست کنید.\n\nدرخواست‌های شهر از برنامهٔ موبایل فرستاده می‌شوند."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "برنامهٔ iPhone به‌زودی"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android به‌زودی"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "دانلود از App Store"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "دریافت از Google Play"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "ذخیرهٔ نقاط تحویل در برنامهٔ موبایل ممکن است."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "هنوز نقطهٔ تحویلی نیست"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "هیچ نقطهٔ تحویل فعالی در این شهر پیدا نشد."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "استفاده از موقعیت من برای دیدن نقاط تحویل نزدیک"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "تلاش دوباره برای موقعیت"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "موقعیت‌مکانی خاموش است. برای نمایش فاصله‌های نزدیک، در تنظیمات مرورگر به این سایت اجازه دهید، یا برای مرور PickupRadar یک شهر را انتخاب کنید."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "فلترها"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "رهنمای PickupRadar"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "اسلاید {number} از {total}"
+    }
+  }
+}

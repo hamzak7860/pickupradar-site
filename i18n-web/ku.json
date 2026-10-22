@@ -1,0 +1,78 @@
+{
+  "language": "ku",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "Sepanê bistîne"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "Ragihandina dema bendê û pirsgirêkan tenê di sepana mobîl a PickupRadar de heye.\n\nPêşdîtina li vê malperê tenê ji bo xwendinê ye."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "Dema {city} çalak bû agahdar bibe.\n\nAgahdariyên destpêkê di sepana mobîl de têne danîn."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "PickupRadar ji bo bajarê xwe bixwaze.\n\nDaxwazên bajaran ji sepana mobîl têne şandin."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "Sepana iPhone di demeke nêzîk de"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android di demeke nêzîk de"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "Ji App Store daxe"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Ji Google Play bistîne"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "Tomarkirina xalên wergirtinê di sepana mobîl de heye."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "Hê xalên wergirtinê tune ne"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "Di vî bajarî de tu xala wergirtinê ya çalak nehat dîtin."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "Cihê min bikar bîne da ku xalên wergirtinê yên nêz bibînim"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "Cih dîsa biceribîne"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "Cih girtî ye. Ji bo dûrahiyên nêz di mîhengên gerokê de destûrê bide vê malperê, an bajarekî hilbijêre da ku li PickupRadar bigere."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "Parzûn"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "Rêberê PickupRadar"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "Slayt {number} ji {total}"
+    }
+  }
+}

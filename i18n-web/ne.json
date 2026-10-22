@@ -1,0 +1,78 @@
+{
+  "language": "ne",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "एप पाउनुहोस्"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "पर्खाइ र समस्याहरू रिपोर्ट गर्न PickupRadar मोबाइल एपमा मात्र सकिन्छ।\n\nयो वेबसाइटको पूर्वावलोकन हेर्नका लागि मात्र हो।"
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "{city} मा सुरु हुँदा सूचना पाउनुहोस्।\n\nसुरुवातका सूचनाहरू मोबाइल एपमा सेट गरिन्छन्।"
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "आफ्नो सहरमा PickupRadar माग्नुहोस्।\n\nसहरका अनुरोधहरू मोबाइल एपबाट पठाइन्छन्।"
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "iPhone एप चाँडै आउँदैछ"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android चाँडै आउँदैछ"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "App Store बाट डाउनलोड गर्नुहोस्"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Google Play मा पाउनुहोस्"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "पिकअप पोइन्ट सेभ गर्ने सुविधा मोबाइल एपमा उपलब्ध छ।"
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "अझै कुनै पिकअप पोइन्ट छैन"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "यो सहरमा कुनै सक्रिय पिकअप पोइन्ट भेटिएन।"
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "नजिकका पिकअप पोइन्ट हेर्न मेरो स्थान प्रयोग गर्नुहोस्"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "स्थान फेरि प्रयास गर्नुहोस्"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "स्थान बन्द छ। नजिकका दूरीहरूका लागि ब्राउजरको सेटिङमा यो साइटलाई अनुमति दिनुहोस्, वा PickupRadar ब्राउज गर्न एउटा सहर छान्नुहोस्।"
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "फिल्टरहरू"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "PickupRadar ट्युटोरियल"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "स्लाइड {number} / {total}"
+    }
+  }
+}

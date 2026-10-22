@@ -1,0 +1,78 @@
+{
+  "language": "lt",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "Gaukite programėlę"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "Pranešti apie laukimą ir problemas galima tik PickupRadar mobiliojoje programėlėje.\n\nŠios svetainės peržiūra skirta tik peržiūrėti."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "Gaukite žinią, kai pradėsime veikti: {city}.\n\nPaleidimo pranešimai nustatomi mobiliojoje programėlėje."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "Paprašykite PickupRadar savo mieste.\n\nMiestų užklausos siunčiamos iš mobiliosios programėlės."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "iPhone programėlė netrukus"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android netrukus"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "Atsisiųskite iš App Store"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Gaukite iš Google Play"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "Atsiėmimo vietas išsaugoti galima mobiliojoje programėlėje."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "Dar nėra atsiėmimo vietų"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "Šiame mieste aktyvių atsiėmimo vietų nerasta."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "Naudoti mano vietą netoliese esančioms atsiėmimo vietoms rodyti"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "Bandyti vietą dar kartą"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "Vietos nustatymas išjungtas. Leiskite jį šiai svetainei naršyklės nustatymuose, kad matytumėte atstumus netoliese, arba pasirinkite miestą PickupRadar naršyti."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "Filtrai"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "PickupRadar mokymas"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "Skaidrė {number} iš {total}"
+    }
+  }
+}

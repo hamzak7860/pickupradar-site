@@ -1,0 +1,78 @@
+{
+  "language": "ln",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "Zwa application"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "Koyebisa ngonga ya kozela mpe mikakatano esalemaka kaka na application ya telefone ya PickupRadar.\n\nBotali oyo na site web oyo ezali kaka mpo na kotala."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "Zwa nsango ntango {city} ebandi.\n\nBansango ya ebandeli ebongisamaka na application ya telefone."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "Senga PickupRadar na engumba na yo.\n\nBasenga ya bingumba etindamaka na application ya telefone."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "Application ya iPhone ekoya kala mingi te"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android ekoya kala mingi te"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "Kitisa na App Store"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Zwa yango na Google Play"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "Kobomba bisika ya kozwa ezali na application ya telefone."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "Bisika ya kozwa ezali naino te"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "Bisika ya kozwa oyo ezali kosala emononi te na engumba oyo."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "Salela esika na ngai mpo na komona bisika ya kozwa ya pene"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "Meka esika lisusu"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "Esika ekufi. Pesa site oyo nzela na baparamɛtɛlɛ ya navigateur na yo mpo na bantaka ya pene, to pona engumba mpo na kotala PickupRadar."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "Bafiltre"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "Mateya ya PickupRadar"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "Etando {number} na {total}"
+    }
+  }
+}

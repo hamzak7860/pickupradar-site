@@ -1,0 +1,78 @@
+{
+  "language": "id",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "Dapatkan aplikasi"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "Laporan waktu tunggu dan masalah hanya bisa dibuat di aplikasi seluler PickupRadar.\n\nPratinjau di situs web ini hanya untuk dilihat."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "Dapatkan pemberitahuan saat {city} aktif.\n\nPemberitahuan peluncuran diatur di aplikasi seluler."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "Minta PickupRadar di kota Anda.\n\nPermintaan kota dikirim dari aplikasi seluler."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "Aplikasi iPhone segera hadir"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android segera hadir"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "Unduh di App Store"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Temukan di Google Play"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "Menyimpan titik pengambilan tersedia di aplikasi seluler."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "Belum ada titik pengambilan"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "Tidak ada titik pengambilan aktif di kota ini."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "Gunakan lokasi saya untuk melihat titik pengambilan terdekat"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "Coba lokasi lagi"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "Lokasi nonaktif. Izinkan untuk situs ini di pengaturan browser Anda untuk jarak terdekat, atau pilih kota untuk menjelajahi PickupRadar."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "Filter"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "Tutorial PickupRadar"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "Slide {number} dari {total}"
+    }
+  }
+}

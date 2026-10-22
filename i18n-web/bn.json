@@ -1,0 +1,78 @@
+{
+  "language": "bn",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "অ্যাপটি নিন"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "অপেক্ষা ও সমস্যা রিপোর্ট করা শুধু PickupRadar মোবাইল অ্যাপে করা যায়।\n\nএই ওয়েবসাইটের প্রিভিউ শুধু দেখার জন্য।"
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "{city}-এ চালু হলে খবর পান।\n\nচালুর খবর মোবাইল অ্যাপে সেট করা হয়।"
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "আপনার শহরে PickupRadar চান।\n\nশহরের অনুরোধ মোবাইল অ্যাপ থেকে পাঠানো হয়।"
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "iPhone অ্যাপ শীঘ্রই আসছে"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android শীঘ্রই আসছে"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "App Store থেকে ডাউনলোড করুন"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Google Play-তে পান"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "পিকআপ পয়েন্ট সেভ করা মোবাইল অ্যাপে পাওয়া যায়।"
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "এখনও কোনো পিকআপ পয়েন্ট নেই"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "এই শহরে কোনো সক্রিয় পিকআপ পয়েন্ট পাওয়া যায়নি।"
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "কাছের পিকআপ পয়েন্ট দেখতে আমার লোকেশন ব্যবহার করুন"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "আবার লোকেশন চেষ্টা করুন"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "লোকেশন বন্ধ আছে। কাছের দূরত্ব দেখতে ব্রাউজারের সেটিংসে এই সাইটকে অনুমতি দিন, অথবা PickupRadar ব্রাউজ করতে একটি শহর বেছে নিন।"
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "ফিল্টার"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "PickupRadar টিউটোরিয়াল"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "স্লাইড {number} / {total}"
+    }
+  }
+}

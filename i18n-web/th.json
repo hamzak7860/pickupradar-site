@@ -1,0 +1,78 @@
+{
+  "language": "th",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "รับแอป"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "การรายงานเวลารอและปัญหาทำได้เฉพาะในแอปมือถือ PickupRadar เท่านั้น\n\nตัวอย่างบนเว็บไซต์นี้มีไว้สำหรับดูเท่านั้น"
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "รับการแจ้งเตือนเมื่อ {city} เปิดให้บริการ\n\nการแจ้งเตือนการเปิดตัวตั้งค่าได้ในแอปมือถือ"
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "ขอให้มี PickupRadar ในเมืองของคุณ\n\nคำขอเมืองส่งจากแอปมือถือ"
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "แอป iPhone เร็ว ๆ นี้"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android เร็ว ๆ นี้"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "ดาวน์โหลดบน App Store"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "ดาวน์โหลดบน Google Play"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "การบันทึกจุดรับสินค้าใช้ได้ในแอปมือถือ"
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "ยังไม่มีจุดรับสินค้า"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "ไม่พบจุดรับสินค้าที่เปิดใช้งานในเมืองนี้"
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "ใช้ตำแหน่งของฉันเพื่อดูจุดรับสินค้าใกล้เคียง"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "ลองระบุตำแหน่งอีกครั้ง"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "ตำแหน่งปิดอยู่ อนุญาตตำแหน่งสำหรับเว็บไซต์นี้ในการตั้งค่าเบราว์เซอร์เพื่อดูระยะทางใกล้เคียง หรือเลือกเมืองเพื่อเรียกดู PickupRadar"
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "ตัวกรอง"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "บทแนะนำ PickupRadar"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "สไลด์ {number} จาก {total}"
+    }
+  }
+}

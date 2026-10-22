@@ -1,0 +1,78 @@
+{
+  "language": "te",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "యాప్ పొందండి"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "నిరీక్షణ మరియు సమస్యలను నివేదించడం PickupRadar మొబైల్ యాప్‌లో మాత్రమే చేయగలరు.\n\nఈ వెబ్‌సైట్‌లోని ప్రివ్యూ చూడటానికి మాత్రమే."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "{city} ప్రారంభమైనప్పుడు తెలుసుకోండి.\n\nప్రారంభ నోటిఫికేషన్‌లు మొబైల్ యాప్‌లో సెట్ చేయబడతాయి."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "మీ నగరంలో PickupRadar కోసం అభ్యర్థించండి.\n\nనగర అభ్యర్థనలు మొబైల్ యాప్ నుండి పంపబడతాయి."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "iPhone యాప్ త్వరలో వస్తుంది"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android త్వరలో వస్తుంది"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "App Store నుండి డౌన్‌లోడ్ చేయండి"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Google Play లో పొందండి"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "పికప్ పాయింట్లను సేవ్ చేయడం మొబైల్ యాప్‌లో అందుబాటులో ఉంది."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "ఇంకా పికప్ పాయింట్లు లేవు"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "ఈ నగరంలో సక్రియ పికప్ పాయింట్లు ఏవీ కనుగొనబడలేదు."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "సమీప పికప్ పాయింట్లను చూడటానికి నా స్థానాన్ని ఉపయోగించండి"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "స్థానాన్ని మళ్లీ ప్రయత్నించండి"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "స్థానం ఆఫ్‌లో ఉంది. సమీప దూరాల కోసం బ్రౌజర్ సెట్టింగ్‌లలో ఈ సైట్‌ను అనుమతించండి, లేదా PickupRadar బ్రౌజ్ చేయడానికి ఒక నగరాన్ని ఎంచుకోండి."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "ఫిల్టర్‌లు"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "PickupRadar ట్యుటోరియల్"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "స్లయిడ్ {number} / {total}"
+    }
+  }
+}

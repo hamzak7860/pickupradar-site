@@ -1,0 +1,78 @@
+{
+  "language": "tr",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "Uygulamayı edinin"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "Bekleme süresi ve sorun bildirimi yalnızca PickupRadar mobil uygulamasında yapılabilir.\n\nBu web sitesindeki önizleme yalnızca görüntüleme içindir."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "{city} açıldığında haber alın.\n\nAçılış bildirimleri mobil uygulamada ayarlanır."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "Şehrinizde PickupRadar isteyin.\n\nŞehir talepleri mobil uygulamadan gönderilir."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "iPhone uygulaması yakında"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android yakında"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "App Store’dan İndirin"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Google Play’den Alın"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "Teslim alma noktalarını kaydetme mobil uygulamada kullanılabilir."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "Henüz teslim alma noktası yok"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "Bu şehirde etkin teslim alma noktası bulunamadı."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "Yakındaki teslim alma noktalarını görmek için konumumu kullan"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "Konumu tekrar dene"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "Konum kapalı. Yakındaki mesafeler için tarayıcı ayarlarından bu siteye izin verin veya PickupRadar’a göz atmak için bir şehir seçin."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "Filtreler"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "PickupRadar eğitimi"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "Slayt {number}/{total}"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "language": "si",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "යෙදුම ලබාගන්න"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "රැඳී සිටීම් සහ ගැටලු වාර්තා කළ හැක්කේ PickupRadar ජංගම යෙදුමේ පමණි.\n\nමෙම වෙබ් අඩවියේ පෙරදසුන බැලීමට පමණි."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "{city} ආරම්භ වූ විට දැනුම්දීම ලබාගන්න.\n\nආරම්භක දැනුම්දීම් ජංගම යෙදුමේ සකසනු ලැබේ."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "ඔබේ නගරයට PickupRadar ඉල්ලන්න.\n\nනගර ඉල්ලීම් ජංගම යෙදුමෙන් යවනු ලැබේ."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "iPhone යෙදුම ඉක්මනින්"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android ඉක්මනින්"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "App Store වෙතින් බාගන්න"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Google Play වෙතින් ලබාගන්න"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "රැගෙන යාමේ ස්ථාන සුරැකීම ජංගම යෙදුමේ ඇත."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "තවම රැගෙන යාමේ ස්ථාන නැත"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "මෙම නගරයේ සක්‍රිය රැගෙන යාමේ ස්ථාන හමු නොවීය."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "අසල රැගෙන යාමේ ස්ථාන බැලීමට මගේ ස්ථානය භාවිතා කරන්න"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "ස්ථානය නැවත උත්සාහ කරන්න"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "ස්ථානය අක්‍රියයි. ආසන්න දුර සඳහා බ්‍රවුසර සැකසුම් තුළ මෙම අඩවියට අවසර දෙන්න, නැතහොත් PickupRadar බ්‍රවුස් කිරීමට නගරයක් තෝරන්න."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "පෙරහන්"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "PickupRadar නිබන්ධනය"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "විනිවිදකය {number} / {total}"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "language": "om",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "Appicha argadhu"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "Eegumsaa fi rakkoo gabaasuun kan danda’amu appii moobaayilaa PickupRadar qofa keessatti.\n\nAgarsiisni marsariitii kana irratti ilaaluuf qofa."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "Yeroo {city} jalqabu beeksisa argadhu.\n\nBeeksisni jalqabaa appii moobaayilaa keessatti qindaa’a."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "Magaalaa keetti PickupRadar gaafadhu.\n\nGaaffiin magaalaa appii moobaayilaa irraa ergama."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "Appiin iPhone dhiyootti"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android dhiyootti"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "App Store irraa buufadhu"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Google Play irratti argadhu"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "Bakkeewwan fudhannaa kuusuun appii moobaayilaa keessatti ni argama."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "Ammatti bakkeewwan fudhannaa hin jiran"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "Magaalaa kana keessatti bakkeewwan fudhannaa hojii irra jiran hin argamne."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "Bakkeewwan fudhannaa dhiyoo ilaaluuf bakka koo fayyadami"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "Bakka irra deebi’ii yaali"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "Bakki cufameera. Fageenya dhiyoo argachuuf qindaa’ina birowuzarii keetii keessatti marsariitii kanaaf hayyami, yookiin PickupRadar ilaaluuf magaalaa filadhu."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "Calaltuuwwan"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "Qajeelfama PickupRadar"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "Fakkii {number} kan {total}"
+    }
+  }
+}

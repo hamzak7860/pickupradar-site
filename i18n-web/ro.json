@@ -1,0 +1,78 @@
+{
+  "language": "ro",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "Obține aplicația"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "Raportarea așteptărilor și a problemelor este disponibilă doar în aplicația mobilă PickupRadar.\n\nPrevizualizarea de pe acest site este doar pentru citire."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "Primește o notificare când {city} devine disponibil.\n\nNotificările de lansare se setează în aplicația mobilă."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "Cere PickupRadar în orașul tău.\n\nCererile de oraș se trimit din aplicația mobilă."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "Aplicația pentru iPhone vine în curând"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android vine în curând"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "Descarcă din App Store"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Disponibil pe Google Play"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "Salvarea punctelor de preluare este disponibilă în aplicația mobilă."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "Încă niciun punct de preluare"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "Nu s-au găsit puncte de preluare active în acest oraș."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "Folosește locația mea pentru punctele de preluare din apropiere"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "Încearcă din nou locația"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "Locația este dezactivată. Permite-o pentru acest site în setările browserului pentru distanțele din apropiere, sau alege un oraș pentru a explora PickupRadar."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "Filtre"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "Tutorial PickupRadar"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "Diapozitivul {number} din {total}"
+    }
+  }
+}

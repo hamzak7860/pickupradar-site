@@ -3,7 +3,7 @@
  * Website-only translations for the live preview (words that have no key in the app's
  * dictionaries). Kept apart from i18n/, which tools/build-translations.js generates from the app.
  *
- *   English source   WEB_TEXT in preview.js (always shown when no reviewed translation exists)
+ *   English source   WEB_TEXT in preview.js (shown when no published translation exists)
  *   For translators  i18n-web/source.en.json: every key with its English and a note
  *   Translations     i18n-web/<code>.json: one file per language
  *   Published list   i18n-web/manifest.json: only languages listed here are loaded by the site
@@ -12,12 +12,22 @@
  * only while that English still matches WEB_TEXT, so editing English never shows a stale
  * translation; the entry falls back to English until it is translated again.
  *
+ * A file's "status" says how far it has got, and the manifest repeats it as "quality":
+ *   draft     work in progress; never loaded by the site
+ *   machine   machine-translated, not checked by a person. "machineTranslatedBy" and
+ *             "machineTranslatedOn" say how it was made; "reviewedBy"/"reviewedOn" must stay empty.
+ *   reviewed  checked by a named person ("reviewedBy", "reviewedOn"). Use this when a native
+ *             speaker has checked the wording; it then replaces the machine translation.
+ * A machine file never overwrites a reviewed one.
+ *
  * Usage (from the pickupradar-site folder):
- *   node tools/web-translations.js --check            validate everything (exit 1 on any problem)
- *   node tools/web-translations.js --write-source     rewrite i18n-web/source.en.json from WEB_TEXT
- *   node tools/web-translations.js --template <code>  start i18n-web/<code>.json (status "draft")
- *   node tools/web-translations.js --publish <code>   add a reviewed, complete file to the manifest
- *   node tools/web-translations.js --unpublish <code> remove a language from the manifest
+ *   node tools/web-translations.js --check             validate everything (exit 1 on any problem)
+ *   node tools/web-translations.js --write-source      rewrite i18n-web/source.en.json from WEB_TEXT
+ *   node tools/web-translations.js --template <code>   start i18n-web/<code>.json (status "draft")
+ *   node tools/web-translations.js --import-machine <file.json> --by "<tool or model>" --on <yyyy-mm-dd>
+ *        write machine files from {"<code>": {"<key>": "<text>"}} (skips reviewed languages)
+ *   node tools/web-translations.js --publish <code|all> add complete machine or reviewed files to the manifest
+ *   node tools/web-translations.js --unpublish <code>  remove a language from the manifest
  */
 'use strict';
 
@@ -108,7 +118,7 @@ function validateFile(code, webText, codes) {
   }
   if (!codes.includes(code) || code === 'en') errors.push('not one of the app\'s non-English language codes');
   if (data.language !== code) errors.push('"language" must be "' + code + '"');
-  if (!['draft', 'reviewed'].includes(data.status)) errors.push('"status" must be "draft" or "reviewed"');
+  if (!['draft', 'machine', 'reviewed'].includes(data.status)) errors.push('"status" must be "draft", "machine" or "reviewed"');
   const strings = data.strings && typeof data.strings === 'object' ? data.strings : {};
   let translated = 0;
   for (const id of Object.keys(strings)) {
@@ -131,6 +141,11 @@ function validateFile(code, webText, codes) {
     if (text !== text.trim()) errors.push(id + ': leading or trailing spaces');
     if (/PickupRadar/.test(en) && !/PickupRadar/.test(text)) errors.push(id + ': keep the name PickupRadar');
     translated += 1;
+  }
+  if (data.status === 'machine') {
+    if (!data.machineTranslatedBy || !String(data.machineTranslatedBy).trim()) errors.push('"machineTranslatedBy" is required for a machine translation');
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(String(data.machineTranslatedOn || ''))) errors.push('"machineTranslatedOn" must be a date like 2026-10-22');
+    if ((data.reviewedBy && String(data.reviewedBy).trim()) || (data.reviewedOn && String(data.reviewedOn).trim())) errors.push('a machine translation must not name a reviewer');
   }
   if (data.status === 'reviewed') {
     if (!data.reviewedBy || !String(data.reviewedBy).trim()) errors.push('"reviewedBy" is required for a reviewed file');
@@ -177,10 +192,11 @@ function check() {
     const listed = manifest.languages[code];
     result.errors.forEach((error) => problems.push(code + ': ' + error));
     if (listed) {
-      if (result.data && result.data.status !== 'reviewed') problems.push(code + ': published but status is not "reviewed"');
+      if (!result.data || !['machine', 'reviewed'].includes(result.data.status)) problems.push(code + ': published but status is not "machine" or "reviewed"');
+      else if (listed.quality !== result.data.status) problems.push(code + ': manifest says "' + listed.quality + '" but the file says "' + result.data.status + '": run --publish ' + code);
       if (listed.v !== hashOf(path.join(DIR, code + '.json'))) problems.push(code + ': file changed since publishing: run --publish ' + code);
     }
-    rows.push(code + '  ' + (listed ? 'published' : (result.data && result.data.status) || '?') + '  ' + result.translated + '/' + Object.keys(webText).length + (result.warnings.length ? '  (' + result.warnings.length + ' notes)' : ''));
+    rows.push(code + '  ' + ((result.data && result.data.status) || '?') + (listed ? ', published' : '') + '  ' + result.translated + '/' + Object.keys(webText).length + (result.warnings.length ? '  (' + result.warnings.length + ' notes)' : ''));
   }
   console.log('Website-only keys: ' + Object.keys(webText).length + '. Translation files: ' + files.length + '. Published: ' + Object.keys(manifest.languages).length + '.');
   rows.forEach((row) => console.log('  ' + row));
@@ -202,7 +218,7 @@ function main() {
     console.log('Wrote i18n-web/source.en.json');
     return;
   }
-  if (!code) fail('Give a language code, for example: --template pt');
+  if (!code) fail('Give a language code or file, for example: --template pt');
   const webText = readWebText();
   const codes = appLanguageCodes();
   const file = path.join(DIR, code + '.json');
@@ -216,19 +232,62 @@ function main() {
     return;
   }
   if (command === '--publish') {
-    if (!fs.existsSync(file)) fail('i18n-web/' + code + '.json not found');
-    const result = validateFile(code, webText, codes);
-    const incomplete = result.warnings.filter((warning) => /not translated|English changed/.test(warning));
-    if (result.errors.length || incomplete.length || !result.data || result.data.status !== 'reviewed') {
-      result.errors.concat(incomplete).forEach((problem) => console.error('PROBLEM ' + code + ': ' + problem));
-      if (result.data && result.data.status !== 'reviewed') console.error('PROBLEM ' + code + ': status must be "reviewed"');
-      process.exit(1);
-    }
+    const targets = code === 'all' ? translationFiles() : [code];
     const manifest = readManifest();
-    manifest.languages[code] = { v: hashOf(file), keys: result.translated, reviewedOn: result.data.reviewedOn };
-    manifest.languages = Object.fromEntries(Object.entries(manifest.languages).sort(([a], [b]) => a.localeCompare(b)));
+    let failed = 0;
+    for (const target of targets) {
+      const targetFile = path.join(DIR, target + '.json');
+      if (!fs.existsSync(targetFile)) {
+        console.error('PROBLEM i18n-web/' + target + '.json not found');
+        failed += 1;
+        continue;
+      }
+      const result = validateFile(target, webText, codes);
+      const incomplete = result.warnings.filter((warning) => /not translated|English changed/.test(warning));
+      const status = result.data && result.data.status;
+      if (code === 'all' && status === 'draft') continue;
+      if (result.errors.length || incomplete.length || !['machine', 'reviewed'].includes(status)) {
+        result.errors.concat(incomplete).forEach((problem) => console.error('PROBLEM ' + target + ': ' + problem));
+        if (!['machine', 'reviewed'].includes(status)) console.error('PROBLEM ' + target + ': status must be "machine" or "reviewed"');
+        failed += 1;
+        continue;
+      }
+      manifest.languages[target] = {
+        v: hashOf(targetFile),
+        keys: result.translated,
+        quality: status,
+        date: status === 'reviewed' ? result.data.reviewedOn : result.data.machineTranslatedOn,
+      };
+      console.log('Published ' + target + ' (' + status + ', ' + result.translated + ' keys)');
+    }
+    manifest.languages = Object.fromEntries(Object.entries(manifest.languages).sort(([x], [y]) => x.localeCompare(y)));
     writeJson(MANIFEST_FILE, manifest);
-    console.log('Published ' + code + ' (' + result.translated + ' keys)');
+    if (failed) fail(failed + ' language(s) not published');
+    return;
+  }
+  if (command === '--import-machine') {
+    const input = readJson(path.resolve(code));
+    const by = args[args.indexOf('--by') + 1];
+    const on = args[args.indexOf('--on') + 1];
+    if (args.indexOf('--by') === -1 || !by || !by.trim()) fail('Give --by "<tool or model>"');
+    if (args.indexOf('--on') === -1 || !/^\d{4}-\d{2}-\d{2}$/.test(on || '')) fail('Give --on <yyyy-mm-dd>');
+    let written = 0;
+    for (const [lang, texts] of Object.entries(input)) {
+      if (!codes.includes(lang) || lang === 'en') fail(lang + ' is not one of the app\'s non-English language codes');
+      const target = path.join(DIR, lang + '.json');
+      if (fs.existsSync(target) && readJson(target).status === 'reviewed') {
+        console.log('Skipped ' + lang + ': it has a reviewed translation');
+        continue;
+      }
+      const strings = {};
+      for (const [id, en] of Object.entries(webText)) {
+        strings[id] = { en, text: typeof texts[id] === 'string' ? texts[id] : '' };
+      }
+      for (const id of Object.keys(texts)) if (!(id in webText)) fail(lang + ': unknown key ' + id);
+      writeJson(target, { language: lang, status: 'machine', machineTranslatedBy: by.trim(), machineTranslatedOn: on, reviewedBy: '', reviewedOn: '', strings });
+      written += 1;
+    }
+    console.log('Wrote ' + written + ' machine translation file(s). Run --check, then --publish all.');
     return;
   }
   if (command === '--unpublish') {

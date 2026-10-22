@@ -1,0 +1,78 @@
+{
+  "language": "de",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "Hol dir die App"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "Wartezeiten und Probleme kannst du nur in der PickupRadar-App melden.\n\nDie Vorschau auf dieser Website ist nur zum Ansehen."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "Lass dich benachrichtigen, wenn {city} startet.\n\nStart-Benachrichtigungen richtest du in der App ein."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "Frag PickupRadar für deine Stadt an.\n\nStadtanfragen werden aus der App gesendet."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "iPhone-App bald verfügbar"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android bald verfügbar"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "Laden im App Store"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Jetzt bei Google Play"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "Abholorte speichern kannst du in der App."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "Noch keine Abholorte"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "Keine aktiven Abholorte in dieser Stadt gefunden."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "Meinen Standort für Abholorte in der Nähe verwenden"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "Standort erneut versuchen"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "Standort ist aus. Erlaube ihn für diese Website in den Browser-Einstellungen für Entfernungen in der Nähe oder wähle eine Stadt, um PickupRadar zu durchsuchen."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "Filter"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "PickupRadar-Anleitung"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "Folie {number} von {total}"
+    }
+  }
+}

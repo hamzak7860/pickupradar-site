@@ -1,0 +1,78 @@
+{
+  "language": "ml",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "ആപ്പ് നേടുക"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "കാത്തിരിപ്പും പ്രശ്നങ്ങളും റിപ്പോർട്ട് ചെയ്യാൻ PickupRadar മൊബൈൽ ആപ്പിൽ മാത്രമേ കഴിയൂ.\n\nഈ വെബ്സൈറ്റിലെ പ്രിവ്യൂ കാണാൻ മാത്രമുള്ളതാണ്."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "{city} ആരംഭിക്കുമ്പോൾ അറിയിപ്പ് നേടുക.\n\nലോഞ്ച് അറിയിപ്പുകൾ മൊബൈൽ ആപ്പിലാണ് സജ്ജമാക്കുന്നത്."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "നിങ്ങളുടെ നഗരത്തിൽ PickupRadar ആവശ്യപ്പെടുക.\n\nനഗര അഭ്യർത്ഥനകൾ മൊബൈൽ ആപ്പിൽ നിന്നാണ് അയയ്ക്കുന്നത്."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "iPhone ആപ്പ് ഉടൻ വരുന്നു"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android ഉടൻ വരുന്നു"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "App Store-ൽ നിന്ന് ഡൗൺലോഡ് ചെയ്യുക"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Google Play-യിൽ നിന്ന് നേടുക"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "പിക്കപ്പ് പോയിന്റുകൾ സേവ് ചെയ്യുന്നത് മൊബൈൽ ആപ്പിൽ ലഭ്യമാണ്."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "ഇതുവരെ പിക്കപ്പ് പോയിന്റുകളില്ല"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "ഈ നഗരത്തിൽ സജീവമായ പിക്കപ്പ് പോയിന്റുകളൊന്നും കണ്ടെത്തിയില്ല."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "സമീപത്തെ പിക്കപ്പ് പോയിന്റുകൾ കാണാൻ എന്റെ സ്ഥാനം ഉപയോഗിക്കുക"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "സ്ഥാനം വീണ്ടും ശ്രമിക്കുക"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "സ്ഥാനം ഓഫാണ്. സമീപ ദൂരങ്ങൾക്കായി ബ്രൗസർ ക്രമീകരണങ്ങളിൽ ഈ സൈറ്റിന് അനുമതി നൽകുക, അല്ലെങ്കിൽ PickupRadar ബ്രൗസ് ചെയ്യാൻ ഒരു നഗരം തിരഞ്ഞെടുക്കുക."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "ഫിൽട്ടറുകൾ"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "PickupRadar ട്യൂട്ടോറിയൽ"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "സ്ലൈഡ് {number} / {total}"
+    }
+  }
+}

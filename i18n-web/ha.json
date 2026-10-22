@@ -1,0 +1,78 @@
+{
+  "language": "ha",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "Sami manhajar"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "Ana iya bayar da rahoton jira da matsaloli ne kawai a cikin manhajar wayar PickupRadar.\n\nSamfoti a wannan gidan yanar gizo don kallo ne kawai."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "Sami sanarwa lokacin da {city} ta fara aiki.\n\nAna saita sanarwar ƙaddamarwa a cikin manhajar wayar."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "Nemi PickupRadar a birninka.\n\nAna aika buƙatun birane daga manhajar wayar."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "Manhajar iPhone na zuwa nan ba da jimawa ba"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android na zuwa nan ba da jimawa ba"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "Sauke daga App Store"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Samu a Google Play"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "Ajiye wuraren ɗauka yana samuwa a cikin manhajar wayar."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "Babu wuraren ɗauka tukuna"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "Ba a sami wuraren ɗauka masu aiki a wannan birni ba."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "Yi amfani da wurina don ganin wuraren ɗauka na kusa"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "Sake gwada wuri"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "An kashe wuri. Ba wannan shafin izini a saitunan burauzarka don nisa na kusa, ko zaɓi birni don bincika PickupRadar."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "Matattara"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "Koyarwar PickupRadar"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "Shafi {number} cikin {total}"
+    }
+  }
+}

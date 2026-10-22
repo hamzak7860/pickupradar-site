@@ -1,0 +1,78 @@
+{
+  "language": "so",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "Hel app-ka"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "Ka warbixinta sugitaanka iyo dhibaatooyinka waxaa lagu sameyn karaa oo keliya app-ka mobilka ee PickupRadar.\n\nMuuqaalka horudhaca ah ee boggan waa daawasho oo keliya."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "Hel ogeysiis marka {city} la bilaabo.\n\nOgeysiisyada bilowga waxaa lagu dejiyaa app-ka mobilka."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "Codso PickupRadar magaaladaada.\n\nCodsiyada magaalooyinka waxaa laga diraa app-ka mobilka."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "App-ka iPhone dhawaan"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android dhawaan"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "Ka soo dejiso App Store"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Ka hel Google Play"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "Keydinta meelaha qaadista waxaa laga heli karaa app-ka mobilka."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "Wali ma jiraan meelo qaadis"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "Magaaladan lagama helin meelo qaadis oo shaqeynaya."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "Isticmaal goobtayda si aan u arko meelaha qaadista ee dhow"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "Isku day goobta mar kale"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "Goobta way damsan tahay. U oggolow boggan settings-ka browser-kaaga si aad u aragto masaafada dhow, ama dooro magaalo si aad u fiiriso PickupRadar."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "Shaandhaynta"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "Casharka PickupRadar"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "Bogga {number} ee {total}"
+    }
+  }
+}

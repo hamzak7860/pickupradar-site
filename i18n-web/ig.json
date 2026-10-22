@@ -1,0 +1,78 @@
+{
+  "language": "ig",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "Nweta ngwa ahụ"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "Ọ bụ naanị na ngwa ekwentị PickupRadar ka ị nwere ike ịkọ oge nchere na nsogbu.\n\nNlele dị na weebụsaịtị a bụ maka ilele naanị."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "Nweta ọkwa mgbe {city} malitere.\n\nA na-edozi ọkwa mmalite na ngwa ekwentị."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "Rịọ PickupRadar n’obodo gị.\n\nA na-ezipụ arịrịọ obodo site na ngwa ekwentị."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "Ngwa iPhone na-abịa n’oge na-adịghị anya"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android na-abịa n’oge na-adịghị anya"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "Budata na App Store"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Nweta ya na Google Play"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "Ịchekwa ebe mmịnye dị na ngwa ekwentị."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "Enwebeghị ebe mmịnye"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "Achọtaghị ebe mmịnye ọ bụla na-arụ ọrụ n’obodo a."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "Jiri ọnọdụ m hụ ebe mmịnye dị nso"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "Nwaa ọnọdụ ọzọ"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "Ọnọdụ gbanyụrụ. Kwe ka saịtị a jiri ya na ntọala ihe nchọgharị gị maka anya dị nso, ma ọ bụ họrọ obodo iji chọgharịa PickupRadar."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "Nzacha"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "Nkuzi PickupRadar"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "Slaịdị {number} n’ime {total}"
+    }
+  }
+}

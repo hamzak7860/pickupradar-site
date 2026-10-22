@@ -1,0 +1,78 @@
+{
+  "language": "wo",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "Am aplikasiyoŋ bi"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "Yégle waxtu xaar ak jafe-jafe dañu koy def rekk ci aplikasiyoŋ mobil PickupRadar.\n\nWone bi ci sit bii, ngir xool rekk la."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "Am yégle bu {city} tambalee.\n\nYégle yi dañu leen di defar ci aplikasiyoŋ mobil bi."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "Laajal PickupRadar ci sa dëkk.\n\nLaaj yu dëkk yi dañu leen di yónnee ci aplikasiyoŋ mobil bi."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "Aplikasiyoŋ iPhone dina ñëw ci kanam"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android dina ñëw ci kanam"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "Yebbi ko ci App Store"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Am ko ci Google Play"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "Denc bérébu jël yi, ci aplikasiyoŋ mobil bi rekk la."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "Amul bérébu jël ba tay"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "Amul bérébu jël buy dox ci dëkk bii."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "Jëfandikoo sama bërëb ngir gis bérébu jël yu jege"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "Jéemaat bërëb bi"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "Lokalisasiyoŋ bi tëju na. May ko ci sit bii ci paramétru sa navigatëer ngir gis diggante yu jege, walla tànnal benn dëkk ngir xool PickupRadar."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "Filtar yi"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "Njàngale PickupRadar"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "Wone {number} ci {total}"
+    }
+  }
+}

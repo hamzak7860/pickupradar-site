@@ -1,0 +1,78 @@
+{
+  "language": "ru",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "Получить приложение"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "Сообщать об ожидании и проблемах можно только в мобильном приложении PickupRadar.\n\nПредпросмотр на этом сайте доступен только для просмотра."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "Узнайте о запуске в городе {city}.\n\nУведомления о запуске настраиваются в мобильном приложении."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "Попросите PickupRadar в своём городе.\n\nЗапросы городов отправляются из мобильного приложения."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "Приложение для iPhone скоро"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android скоро"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "Загрузите в App Store"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Доступно в Google Play"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "Сохранять точки выдачи можно в мобильном приложении."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "Пока нет точек выдачи"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "В этом городе не найдено активных точек выдачи."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "Использовать моё местоположение для точек выдачи поблизости"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "Повторить геолокацию"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "Геолокация выключена. Разрешите её для этого сайта в настройках браузера, чтобы видеть расстояния поблизости, или выберите город для просмотра PickupRadar."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "Фильтры"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "Обучение PickupRadar"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "Слайд {number} из {total}"
+    }
+  }
+}

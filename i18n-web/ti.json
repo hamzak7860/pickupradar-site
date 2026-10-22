@@ -1,0 +1,78 @@
+{
+  "language": "ti",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "ኣፕ ረክብ"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "ናይ ምጽባይ ግዜን ጸገማትን ምሕባር ኣብ ናይ PickupRadar ሞባይል ኣፕ ጥራይ እዩ ዝከኣል።\n\nእቲ ኣብዚ መርበብ ሓበሬታ ዘሎ ቅድመ-ምርኢት ንምርኣይ ጥራይ እዩ።"
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "{city} ምስ ጀመረ ሓበሬታ ረክብ።\n\nናይ ምጅማር ሓበሬታታት ኣብ ሞባይል ኣፕ ይቕየሱ።"
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "ኣብ ከተማኻ PickupRadar ሕተት።\n\nናይ ከተማ ሕቶታት ካብ ሞባይል ኣፕ ይለኣኹ።"
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "ናይ iPhone ኣፕ ኣብ ቀረባ እዋን"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android ኣብ ቀረባ እዋን"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "ካብ App Store ኣውርድ"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "ካብ Google Play ረክብ"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "ናይ ምውሳድ ቦታታት ምዕቃብ ኣብ ሞባይል ኣፕ ይርከብ።"
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "ጌና ናይ ምውሳድ ቦታታት የለዉን"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "ኣብዚ ከተማ ንጡፍ ናይ ምውሳድ ቦታ ኣይተረኽበን።"
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "ቀረባ ናይ ምውሳድ ቦታታት ንምርኣይ ቦታይ ተጠቐም"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "ቦታ ደጊምካ ፈትን"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "ቦታ ተዓጽዩ ኣሎ። ንቀረባ ርሕቀታት ኣብ ቅንብራት ብራውዘርካ ነዚ መርበብ ፍቐደሉ፣ ወይ PickupRadar ንምድህሳስ ከተማ ምረጽ።"
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "መጻረዪታት"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "መምሃሪ PickupRadar"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "ስላይድ {number} ካብ {total}"
+    }
+  }
+}

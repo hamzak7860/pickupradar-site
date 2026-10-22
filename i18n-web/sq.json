@@ -1,0 +1,78 @@
+{
+  "language": "sq",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "Merr aplikacionin"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "Raportimi i pritjeve dhe problemeve është i mundur vetëm në aplikacionin celular PickupRadar.\n\nParapamja në këtë faqe është vetëm për lexim."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "Merr njoftim kur të nisim në {city}.\n\nNjoftimet e nisjes vendosen në aplikacionin celular."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "Kërko PickupRadar në qytetin tënd.\n\nKërkesat për qytete dërgohen nga aplikacioni celular."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "Aplikacioni për iPhone së shpejti"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android së shpejti"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "Shkarko në App Store"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Merre në Google Play"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "Ruajtja e pikave të marrjes është e disponueshme në aplikacionin celular."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "Ende asnjë pikë marrjeje"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "Nuk u gjet asnjë pikë marrjeje aktive në këtë qytet."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "Përdor vendndodhjen time për pikat e marrjes afër"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "Provo sërish vendndodhjen"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "Vendndodhja është e fikur. Lejoje për këtë faqe te cilësimet e shfletuesit për distancat afër, ose zgjidh një qytet për të shfletuar PickupRadar."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "Filtrat"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "Udhëzuesi i PickupRadar"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "Rrëshqitja {number} nga {total}"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "language": "el",
+  "status": "machine",
+  "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
+  "machineTranslatedOn": "2026-10-22",
+  "reviewedBy": "",
+  "reviewedOn": "",
+  "strings": {
+    "getApp.title": {
+      "en": "Get the app",
+      "text": "Αποκτήστε την εφαρμογή"
+    },
+    "getApp.body": {
+      "en": "Reporting waits and problems is only available in the PickupRadar mobile app.\n\nThe preview on this website is read-only.",
+      "text": "Η αναφορά αναμονής και προβλημάτων γίνεται μόνο στην εφαρμογή PickupRadar για κινητά.\n\nΗ προεπισκόπηση σε αυτόν τον ιστότοπο είναι μόνο για προβολή."
+    },
+    "getApp.cityAlert": {
+      "en": "Get a launch alert when {city} goes live.\n\nLaunch alerts are set up in the mobile app.",
+      "text": "Λάβετε ειδοποίηση όταν το {city} γίνει διαθέσιμο.\n\nΟι ειδοποιήσεις έναρξης ρυθμίζονται στην εφαρμογή για κινητά."
+    },
+    "getApp.cityRequest": {
+      "en": "Ask for PickupRadar in your city.\n\nCity requests are sent from the mobile app.",
+      "text": "Ζητήστε το PickupRadar στην πόλη σας.\n\nΤα αιτήματα πόλεων στέλνονται από την εφαρμογή για κινητά."
+    },
+    "store.iosSoon": {
+      "en": "iPhone app coming soon",
+      "text": "Εφαρμογή για iPhone σύντομα"
+    },
+    "store.androidSoon": {
+      "en": "Android coming soon",
+      "text": "Android σύντομα"
+    },
+    "store.ios": {
+      "en": "Download on the App Store",
+      "text": "Λήψη από το App Store"
+    },
+    "store.android": {
+      "en": "Get it on Google Play",
+      "text": "Διαθέσιμο στο Google Play"
+    },
+    "saved.appOnly": {
+      "en": "Saving pickup points is available in the mobile app.",
+      "text": "Η αποθήκευση σημείων παραλαβής είναι διαθέσιμη στην εφαρμογή για κινητά."
+    },
+    "home.noVenues.title": {
+      "en": "No pickup points yet",
+      "text": "Δεν υπάρχουν ακόμη σημεία παραλαβής"
+    },
+    "home.noVenues.body": {
+      "en": "No active pickup points found for this city.",
+      "text": "Δεν βρέθηκαν ενεργά σημεία παραλαβής σε αυτή την πόλη."
+    },
+    "location.useButton": {
+      "en": "Use my location to see nearby pickup points",
+      "text": "Χρήση της τοποθεσίας μου για κοντινά σημεία παραλαβής"
+    },
+    "location.retryButton": {
+      "en": "Try location again",
+      "text": "Δοκιμάστε ξανά την τοποθεσία"
+    },
+    "location.deniedBrowser": {
+      "en": "Location is off. Allow it for this site in your browser settings for nearby distances, or choose a city to browse PickupRadar.",
+      "text": "Η τοποθεσία είναι απενεργοποιημένη. Επιτρέψτε την για αυτόν τον ιστότοπο στις ρυθμίσεις του προγράμματος περιήγησης για κοντινές αποστάσεις ή επιλέξτε πόλη για να περιηγηθείτε στο PickupRadar."
+    },
+    "aria.filters": {
+      "en": "Filters",
+      "text": "Φίλτρα"
+    },
+    "aria.tutorial": {
+      "en": "PickupRadar tutorial",
+      "text": "Οδηγός PickupRadar"
+    },
+    "aria.slide": {
+      "en": "Slide {number} of {total}",
+      "text": "Διαφάνεια {number} από {total}"
+    }
+  }
+}
