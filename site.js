@@ -813,6 +813,68 @@
     }
   }
 
+  // While the sheet is open on a narrow screen, pin it to the visual viewport so
+  // the iPhone keyboard cannot cover the search field. Desktop keeps the CSS layout.
+  var langDialogViewportBound = false;
+
+  function langDialogIsNarrow() {
+    if (window.matchMedia) return !window.matchMedia('(min-width: 720px)').matches;
+    return window.innerWidth < 720;
+  }
+
+  function clearLangDialogViewport() {
+    dialog.style.top = '';
+    dialog.style.right = '';
+    dialog.style.bottom = '';
+    dialog.style.left = '';
+    dialog.style.width = '';
+    dialog.style.height = '';
+    panel.style.maxHeight = '';
+  }
+
+  function syncLangDialogViewport() {
+    var view = window.visualViewport;
+    if (dialog.hidden || !langDialogIsNarrow() || !view || !(view.width > 0) || !(view.height > 0)) {
+      clearLangDialogViewport();
+      return;
+    }
+    var top = view.offsetTop;
+    var left = view.offsetLeft;
+    dialog.style.top = top + 'px';
+    dialog.style.left = left + 'px';
+    dialog.style.right = 'auto';
+    dialog.style.bottom = 'auto';
+    dialog.style.width = view.width + 'px';
+    dialog.style.height = view.height + 'px';
+    var box = window.getComputedStyle(dialog);
+    var padTop = parseFloat(box.paddingTop) || 0;
+    var padBottom = parseFloat(box.paddingBottom) || 0;
+    var available = view.height - padTop - padBottom;
+    if (available < 0) available = 0;
+    // 640 matches the cap on .w-lang-panel.
+    panel.style.maxHeight = Math.min(640, available) + 'px';
+  }
+
+  function bindLangDialogViewport() {
+    if (langDialogViewportBound) return;
+    langDialogViewportBound = true;
+    window.addEventListener('resize', syncLangDialogViewport);
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener('resize', syncLangDialogViewport);
+      window.visualViewport.addEventListener('scroll', syncLangDialogViewport);
+    }
+  }
+
+  function unbindLangDialogViewport() {
+    if (!langDialogViewportBound) return;
+    langDialogViewportBound = false;
+    window.removeEventListener('resize', syncLangDialogViewport);
+    if (window.visualViewport) {
+      window.visualViewport.removeEventListener('resize', syncLangDialogViewport);
+      window.visualViewport.removeEventListener('scroll', syncLangDialogViewport);
+    }
+  }
+
   function openDialog(opener) {
     activeOpener = opener || activeOpener;
     moreExpanded = false;
@@ -824,6 +886,8 @@
     renderList();
     var selected = list.querySelector('[aria-selected="true"]');
     if (selected && selected.scrollIntoView) selected.scrollIntoView({ block: 'nearest' });
+    bindLangDialogViewport();
+    syncLangDialogViewport();
     search.focus();
   }
 
@@ -831,6 +895,8 @@
     if (dialog.hidden) return;
     dialog.hidden = true;
     document.body.classList.remove('w-lang-open');
+    unbindLangDialogViewport();
+    clearLangDialogViewport();
     var openers = document.querySelectorAll('[data-site-language-open]');
     for (var i = 0; i < openers.length; i++) openers[i].setAttribute('aria-expanded', 'false');
     if (activeOpener && document.contains(activeOpener)) activeOpener.focus();
@@ -852,7 +918,10 @@
     if (event.target === dialog) closeDialog();
   });
   closeButton.addEventListener('click', closeDialog);
-  search.addEventListener('input', function () { renderList(); });
+  search.addEventListener('input', function () {
+    renderList();
+    syncLangDialogViewport();
+  });
   document.addEventListener('keydown', function (event) {
     if (dialog.hidden) return;
     if (event.key === 'Escape') {
