@@ -68,6 +68,7 @@ const NOTES = {
   'aria.filters': 'Screen-reader label for the row Nearby / Fast / Slow / Saved. Not shown on screen.',
   'aria.tutorial': 'Screen-reader label for the tutorial screen. Not shown on screen.',
   'aria.slide': 'Screen-reader label for each tutorial dot. Keep {number} and {total}, for example "Slide 1 of 3".',
+  'share.copied': 'Short confirmation after the share message and venue link were copied (when the phone cannot open its share sheet). Two or three words, like "Link copied".',
 };
 
 function fail(message) {

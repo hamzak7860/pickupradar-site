@@ -2,7 +2,7 @@
   "language": "zh-Hans",
   "status": "machine",
   "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-10-23",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -73,6 +73,10 @@
     "aria.slide": {
       "en": "Slide {number} of {total}",
       "text": "第 {number} 张，共 {total} 张"
+    },
+    "share.copied": {
+      "en": "Link copied",
+      "text": "链接已复制"
     }
   }
 }

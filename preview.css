@@ -2694,3 +2694,30 @@
 /* Opened venue without a recent report: quieter than a live Current wait card. */
 .current-wait-card.current-wait-estimate { border-style: dashed; }
 .current-wait-label.current-wait-none { color: #89a0b8; }
+
+/* Share fallback: shown after the venue message is copied. */
+.share-toast {
+  position: absolute;
+  left: 50%;
+  bottom: 96px;
+  z-index: 40;
+  max-width: calc(100% - 40px);
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: #1f4a33;
+  color: #e9fff2;
+  font-size: 14px;
+  font-weight: 800;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 8px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.share-toast.show {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .share-toast { transition: none; }
+}

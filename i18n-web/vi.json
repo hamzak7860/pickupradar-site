@@ -2,7 +2,7 @@
   "language": "vi",
   "status": "machine",
   "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-10-23",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -73,6 +73,10 @@
     "aria.slide": {
       "en": "Slide {number} of {total}",
       "text": "Trang {number}/{total}"
+    },
+    "share.copied": {
+      "en": "Link copied",
+      "text": "Đã sao chép liên kết"
     }
   }
 }

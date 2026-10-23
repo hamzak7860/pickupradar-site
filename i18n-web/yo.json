@@ -2,7 +2,7 @@
   "language": "yo",
   "status": "machine",
   "machineTranslatedBy": "AI machine translation (Claude), not reviewed by a person",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-10-23",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -73,6 +73,10 @@
     "aria.slide": {
       "en": "Slide {number} of {total}",
       "text": "Àwòrán {number} nínú {total}"
+    },
+    "share.copied": {
+      "en": "Link copied",
+      "text": "A ti da ìjápọ̀ kọ"
     }
   }
 }

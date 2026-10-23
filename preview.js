@@ -365,6 +365,7 @@ function mountPickupRadarPreview(container, options) {
     'aria.filters': 'Filters',
     'aria.tutorial': 'PickupRadar tutorial',
     'aria.slide': 'Slide {number} of {total}',
+    'share.copied': 'Link copied',
   };
 
   // Until a website translation exists, these use the app's own sentence in other languages
@@ -2181,7 +2182,7 @@ function mountPickupRadarPreview(container, options) {
     const saveBtn = reportBody.querySelector('[data-save-venue]');
     if (saveBtn) saveBtn.addEventListener('click', openDownloadModal);
     const shareBtn = reportBody.querySelector('[data-share-venue]');
-    if (shareBtn) shareBtn.addEventListener('click', openDownloadModal);
+    if (shareBtn) shareBtn.addEventListener('click', options.deepLink ? shareVenue : openDownloadModal);
 
     const changeBtn = reportBody.querySelector('[data-report-change]');
     if (changeBtn) {
@@ -3162,6 +3163,119 @@ function mountPickupRadarPreview(container, options) {
     if (code !== 'en') setLanguage(code, { persist: Boolean(readSavedLanguage()) });
   })();
 
+  // ---- Sharing a pickup point (full live preview only) ----
+  // Venues with their own share page (made by tools/venue-pages.js) get /v/<id>/, which shows
+  // that venue's card in WhatsApp. Others get the direct live preview link, which still opens
+  // the venue. The list is read once in the background so the share sheet opens straight away.
+  const SITE_ORIGIN = 'https://pickupradar.co.uk';
+  let venuePageIds = null;
+  function loadVenuePageIds() {
+    if (venuePageIds || !options.deepLink) return;
+    venuePageIds = new Set();
+    fetch('/v/venues.json', { cache: 'no-cache' })
+      .then((response) => (response.ok ? response.json() : null))
+      .then((data) => {
+        if (data && data.venues) Object.keys(data.venues).forEach((id) => venuePageIds.add(id));
+      })
+      .catch(() => {
+        // Without the list, links use the direct live preview address.
+      });
+  }
+
+  function venueShareUrl(venue) {
+    if (venuePageIds && venuePageIds.has(venue.id)) return SITE_ORIGIN + '/v/' + venue.id + '/';
+    return SITE_ORIGIN + '/app.html?city=' + encodeURIComponent(venue.city || activeCity) + '&venue=' + venue.id;
+  }
+
+  // App: shareVenueCard (HomeScreen.tsx), with the same translated messages. The app's
+  // messages end with the homepage address; here it is replaced with the venue's own link.
+  function venueShareMessage(venue) {
+    const now = Date.now();
+    const name = VD.getVenueDisplayName(venue, activeCity, venueStats);
+    const area = String(VD.getVenueHomeLocationLabel(venue, venueStats, activeCity) || '').trim();
+    const label = area ? name + ' \u00B7 ' + area : name;
+    const reportMs = venue.lastReportAt ? new Date(venue.lastReportAt).getTime() : NaN;
+    const minutes = Number.isFinite(reportMs) ? Math.max(0, Math.floor((now - reportMs) / 60000)) : null;
+    let message;
+    if (WC.isLocallyLiveWait(venue, now) && minutes !== null) {
+      message = t('home.share.live', '{venue}\n{wait} pickup wait \u00B7 reported {time}\nhttps://pickupradar.co.uk', {
+        venue: label,
+        wait: waitRangeLabel(venue.currentWaitMinutes),
+        time: formatEvidenceTime(minutes),
+      });
+    } else {
+      // As on the opened venue: no estimate next to a closed or tablet/server report.
+      const status = venue.closedWarning || venue.systemDownWarning ? null : effectiveStatus(venue);
+      message = status === 'fast'
+        ? t('home.share.predictedFast', '{venue}\nEstimate: likely fast pickup\nhttps://pickupradar.co.uk', { venue: label })
+        : status === 'slow'
+          ? t('home.share.predictedSlow', '{venue}\nEstimate: likely slow pickup\nhttps://pickupradar.co.uk', { venue: label })
+          : t('home.share.noData', '{venue}\nCheck current pickup wait information\nhttps://pickupradar.co.uk', { venue: label });
+    }
+    const url = venueShareUrl(venue);
+    const home = /https:\/\/pickupradar\.co\.uk\/?(?=\s*$)/;
+    return home.test(message) ? message.replace(home, url) : message.replace(/\s+$/, '') + '\n' + url;
+  }
+
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      return navigator.clipboard.writeText(text).then(() => true, () => copyTextFallback(text));
+    }
+    return Promise.resolve(copyTextFallback(text));
+  }
+
+  function copyTextFallback(text) {
+    const area = document.createElement('textarea');
+    area.value = text;
+    area.setAttribute('readonly', '');
+    area.style.position = 'fixed';
+    area.style.opacity = '0';
+    document.body.appendChild(area);
+    area.select();
+    let ok = false;
+    try {
+      ok = document.execCommand('copy');
+    } catch (error) {
+      ok = false;
+    }
+    area.remove();
+    return ok;
+  }
+
+  let shareToastTimer = null;
+  function showShareToast() {
+    const screen = rootFind('.phone-screen');
+    if (!screen) return;
+    let toast = screen.querySelector('.share-toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.className = 'share-toast';
+      toast.setAttribute('role', 'status');
+      toast.setAttribute('aria-live', 'polite');
+      screen.appendChild(toast);
+    }
+    toast.textContent = webText('share.copied');
+    markWebLanguage(toast, 'share.copied');
+    toast.classList.add('show');
+    window.clearTimeout(shareToastTimer);
+    shareToastTimer = window.setTimeout(() => toast.classList.remove('show'), 2600);
+  }
+
+  // Read-only: sharing never sends a report, changes data or asks for location.
+  function shareVenue() {
+    const venue = currentReportVenue;
+    if (!venue) return;
+    const text = venueShareMessage(venue);
+    if (navigator.share) {
+      navigator.share({ text: text }).catch((error) => {
+        // Closing the share sheet is not an error. Anything else falls back to copying.
+        if (!error || error.name !== 'AbortError') copyText(text).then((ok) => { if (ok) showShareToast(); });
+      });
+      return;
+    }
+    copyText(text).then((ok) => { if (ok) showShareToast(); });
+  }
+
   function openDeepLinkVenue() {
     const id = deepLinkVenueId;
     deepLinkVenueId = null;
@@ -3187,6 +3301,8 @@ function mountPickupRadarPreview(container, options) {
       // Ignore: the venue is still open.
     }
   }
+
+  loadVenuePageIds();
 
   (async function initPreview() {
     try {
