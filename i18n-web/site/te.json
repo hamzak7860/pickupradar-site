@@ -130,26 +130,6 @@
       "en": "Try the live preview",
       "text": "లైవ్ ప్రివ్యూ ప్రయత్నించండి"
     },
-    "home.scale.title": {
-      "en": "See how long you may wait.",
-      "text": "మీరు ఎంతసేపు వేచి ఉండవచ్చో చూడండి."
-    },
-    "home.scale.body": {
-      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
-      "text": "డ్రైవర్లు ఎంతసేపు వేచి ఉన్నారో నివేదిస్తారు. ప్రస్తుత నిరీక్షణ గత 2 గంటల నివేదికల నుంచి వస్తుంది. వేగమైన మరియు నెమ్మదైన పికప్ పాయింట్లను మీరు త్వరగా చూస్తారు."
-    },
-    "home.live.aria": {
-      "en": "Live PickupRadar app preview with real Milton Keynes data",
-      "text": "Milton Keynes నిజమైన డేటాతో PickupRadar యాప్ లైవ్ ప్రివ్యూ"
-    },
-    "home.live.title": {
-      "en": "Try PickupRadar with real Milton Keynes data.",
-      "text": "Milton Keynes నిజమైన డేటాతో PickupRadar ప్రయత్నించండి."
-    },
-    "home.live.body": {
-      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
-      "text": "Milton Keynes లోని నిజమైన పికప్ పాయింట్లు చూడండి. తాజా నిరీక్షణ చూడండి, లేదా {likelyFast} మరియు {likelySlow}. నివేదిక స్క్రీన్ ప్రయత్నించవచ్చు, కానీ ఏదీ పంపబడదు."
-    },
     "home.try.tabLead": {
       "en": "Pick a tab.",
       "text": "ఒక ట్యాబ్ ఎంచుకోండి."
@@ -173,10 +153,6 @@
     "home.try.open": {
       "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
       "text": "{lead} {reportWait} స్క్రీన్ తెరుచుకుంటుంది. ఒక నిరీక్షణ ఎంచుకోండి. ఏదీ పంపబడదు."
-    },
-    "home.live.big": {
-      "en": "Open the big preview",
-      "text": "పెద్ద ప్రివ్యూ తెరవండి"
     },
     "home.signals.title": {
       "en": "What you can see before you go in",
@@ -210,25 +186,9 @@
       "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
       "text": "దీన్ని నివేదించడానికి డ్రైవర్లు {reportProblem} నొక్కుతారు. అక్కడికి వెళ్లే ముందు నివేదిక కనిపిస్తుంది."
     },
-    "home.signals.tablet.body": {
-      "en": "See when drivers report that a restaurant's tablet or system is not working.",
-      "text": "రెస్టారెంట్ టాబ్లెట్ లేదా సిస్టమ్ పని చేయడం లేదని డ్రైవర్లు నివేదించినప్పుడు చూడండి."
-    },
-    "home.signals.arrival.title": {
-      "en": "Order starts after arrival",
-      "text": "మీరు చేరుకున్న తర్వాత ఆర్డర్ మొదలవుతుంది"
-    },
-    "home.signals.arrival.body": {
-      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
-      "text": "కొన్ని చోట్ల మీరు చేరుకున్న తర్వాతే ఆర్డర్ మొదలవుతుంది. నివేదిస్తున్నప్పుడు డ్రైవర్లు దీన్ని ఆన్ చేయవచ్చు."
-    },
     "home.signals.missing.title": {
       "en": "Missing or wrong pickup points",
       "text": "లేని లేదా తప్పు పికప్ పాయింట్"
-    },
-    "home.signals.missing.body": {
-      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
-      "text": "పికప్ పాయింట్ లేదా? {suggest} నొక్కండి. ఏదైనా తప్పా? {reportProblem} నొక్కండి, తర్వాత {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} లేదా {closedPermanently}."
     },
     "home.how.intro": {
       "en": "Three easy steps. Reporting takes a few seconds.",
@@ -262,10 +222,6 @@
       "en": "Earn {radarPoints}",
       "text": "{radarPoints} పొందండి"
     },
-    "home.points.body": {
-      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
-      "text": "{radarPoints} పొందడానికి {reportWait} నొక్కండి. ఖాతా లేకుండా మొదలుపెట్టవచ్చు. ఫోన్ మార్చినా లేదా రీసెట్ చేసినా సురక్షితంగా ఉండేలా {radarPoints}ను ఇమెయిల్‌తో రక్షించండి. పాస్‌వర్డ్ అవసరం లేదు. యాప్ 6 అంకెల కోడ్‌ను ఇమెయిల్ చేస్తుంది."
-    },
     "home.points.noteSoon": {
       "en": "Rewards coming soon.",
       "text": "రివార్డులు త్వరలో వస్తాయి."
@@ -285,34 +241,6 @@
     "home.points.neededHelp": {
       "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
       "text": "మీ దగ్గర ఉన్న అర్హమైన పికప్ పాయింట్, కొత్త నిరీక్షణ లేదు, {likelyFast} లేదా {likelySlow} లేదు. ఆ నివేదికకు మీకు 15 RP వస్తాయి, 10 కాదు."
-    },
-    "home.points.firstLine": {
-      "en": "{firstBonus}{help}",
-      "text": "{firstBonus}{help}"
-    },
-    "home.points.firstHelp": {
-      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
-      "text": "మొదటి చెల్లుబాటు అయ్యే నిరీక్షణ నివేదికపై అదనపు పాయింట్లు. అది కూడా {reportNeeded} అయితే మీకు మొత్తం 25 RP వస్తాయి."
-    },
-    "home.points.approvedLine": {
-      "en": "{approved}{help}",
-      "text": "{approved}{help}"
-    },
-    "home.points.approvedHelp": {
-      "en": "When we approve a pickup point you suggest",
-      "text": "మీరు సూచించిన పికప్ పాయింట్‌ను మేము ఆమోదించినప్పుడు"
-    },
-    "home.points.referralLine": {
-      "en": "{referral}{help}",
-      "text": "{referral}{help}"
-    },
-    "home.points.referralHelp": {
-      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
-      "text": "మీ స్నేహితుడు 3 చెల్లుబాటు అయ్యే నిరీక్షణ నివేదికలు చేసినప్పుడు, కనీసం 2 వేర్వేరు రోజుల్లో (UTC సమయం), 2 వేర్వేరు పికప్ పాయింట్ల వద్ద, మీ ఇద్దరికీ వస్తాయి. మీ ఇద్దరికీ రక్షిత Radar ఖాతా కావాలి (ఇమెయిల్ జోడించండి). మొదటి చెల్లుబాటు అయ్యే నిరీక్షణ నివేదికకు ముందు మీ స్నేహితుడు మీ కోడ్‌ను నమోదు చేయాలి."
-    },
-    "home.points.referralEach": {
-      "en": "{referralRp} each",
-      "text": "ఒక్కొక్కరికి {referralRp}"
     },
     "home.cities.body": {
       "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
@@ -350,22 +278,6 @@
       "en": "{lead} No names, addresses or order numbers.",
       "text": "{lead} పేరు, చిరునామా లేదా ఆర్డర్ నంబర్ లేదు."
     },
-    "home.trust.skipLead": {
-      "en": "You can skip the delivery app.",
-      "text": "డెలివరీ యాప్‌ను దాటవేయవచ్చు."
-    },
-    "home.trust.skip": {
-      "en": "{lead} Choosing the delivery app is optional.",
-      "text": "{lead} డెలివరీ యాప్ ఎంచుకోవడం ఐచ్ఛికం."
-    },
-    "home.trust.controlLead": {
-      "en": "You are in control.",
-      "text": "నియంత్రణ మీదే."
-    },
-    "home.trust.control": {
-      "en": "{lead} Delete your account or Radar profile in the app at any time.",
-      "text": "{lead} యాప్‌లో ఖాతా లేదా Radar ప్రొఫైల్‌ను ఎప్పుడైనా తొలగించండి."
-    },
     "home.faq.title": {
       "en": "Questions from drivers",
       "text": "డ్రైవర్ల ప్రశ్నలు"
@@ -377,18 +289,6 @@
     "home.faq.account.a": {
       "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
       "text": "వద్దు. యాప్ మీకు స్వయంచాలకంగా Radar ప్రొఫైల్ ఇస్తుంది. వెంటనే నిరీక్షణను నివేదించవచ్చు. {radarPoints} రక్షించడానికి తర్వాత ఇమెయిల్ జోడించండి. పాస్‌వర్డ్ అవసరం లేదు. యాప్ 6 అంకెల కోడ్‌ను ఇమెయిల్ చేస్తుంది."
-    },
-    "home.faq.where.q": {
-      "en": "Where does PickupRadar work?",
-      "text": "PickupRadar ఎక్కడ పని చేస్తుంది?"
-    },
-    "home.faq.where.a": {
-      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
-      "text": "PickupRadar ఇప్పుడు Milton Keynes లో పని చేస్తుంది. తర్వాత London. ఆ తర్వాత ఇంకా నగరాలు, Manchester, Birmingham, Leeds, Liverpool, Glasgow లాగా. {cities} చూడండి."
-    },
-    "home.faq.where.cities": {
-      "en": "all the cities",
-      "text": "అన్ని నగరాలు"
     },
     "home.faq.download.q": {
       "en": "When can I download the app?",
@@ -402,22 +302,6 @@
       "en": "live preview",
       "text": "లైవ్ ప్రివ్యూ"
     },
-    "home.faq.wait.q": {
-      "en": "How is the current wait worked out?",
-      "text": "ప్రస్తుత నిరీక్షణ ఎలా లెక్కిస్తారు?"
-    },
-    "home.faq.wait.a": {
-      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
-      "text": "ఇది గత 2 గంటల డ్రైవర్ నివేదికల నుంచి వస్తుంది. 2 గంటల కంటే పాత నివేదికలు ప్రస్తుత నిరీక్షణను మార్చవు."
-    },
-    "home.faq.likely.q": {
-      "en": "What do {likelyFast} and {likelySlow} mean?",
-      "text": "{likelyFast} మరియు {likelySlow} అంటే ఏమిటి?"
-    },
-    "home.faq.likely.a": {
-      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
-      "text": "అవి అంచనాలు, లైవ్ నివేదికలు కావు. కొత్త నిరీక్షణ నివేదిక లేనప్పుడు అవి కనిపిస్తాయి."
-    },
     "home.faq.track.q": {
       "en": "Does it track my location?",
       "text": "ఇది నా లొకేషన్‌ను ట్రాక్ చేస్తుందా?"
@@ -429,22 +313,6 @@
     "home.faq.track.privacy": {
       "en": "privacy policy",
       "text": "గోప్యతా విధానం"
-    },
-    "home.faq.delete.q": {
-      "en": "How do I delete my data?",
-      "text": "నా డేటాను ఎలా తొలగించాలి?"
-    },
-    "home.faq.delete.a": {
-      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
-      "text": "యాప్‌లో {profile} తెరవండి. {deleteAccount} నొక్కండి. మీరు ఇమెయిల్ జోడించకపోతే {deleteProfile} నొక్కండి. మాకు ఇమెయిల్ కూడా చేయవచ్చు. దశల కోసం {page} చూడండి."
-    },
-    "home.closer.title": {
-      "en": "Explore Milton Keynes pickup points.",
-      "text": "Milton Keynes పికప్ పాయింట్లు చూడండి."
-    },
-    "home.closer.body": {
-      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
-      "text": "Milton Keynes లోని నిజమైన పికప్ పాయింట్లు చూడండి. ఒక చోటు కనుగొని నివేదిక స్క్రీన్ ప్రయత్నించండి. మీరు నొక్కేది ఏదీ పంపబడదు."
     },
     "home.closer.cta": {
       "en": "Open the live preview",

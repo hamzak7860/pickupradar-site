@@ -130,26 +130,6 @@
       "en": "Try the live preview",
       "text": "Prøv live-forhåndsvisningen"
     },
-    "home.scale.title": {
-      "en": "See how long you may wait.",
-      "text": "Se, hvor længe du kan vente."
-    },
-    "home.scale.body": {
-      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
-      "text": "Bude rapporterer, hvor længe de ventede. Den aktuelle ventetid kommer fra rapporter i de seneste 2 timer. Du kan hurtigt se hurtige og langsomme afhentningssteder."
-    },
-    "home.live.aria": {
-      "en": "Live PickupRadar app preview with real Milton Keynes data",
-      "text": "Live-forhåndsvisning af PickupRadar-appen med rigtige data fra Milton Keynes"
-    },
-    "home.live.title": {
-      "en": "Try PickupRadar with real Milton Keynes data.",
-      "text": "Prøv PickupRadar med rigtige data fra Milton Keynes."
-    },
-    "home.live.body": {
-      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
-      "text": "Se rigtige afhentningssteder i Milton Keynes. Tjek nye ventetider eller {likelyFast} og {likelySlow}. Du kan prøve rapportskærmen, men der sendes intet."
-    },
     "home.try.tabLead": {
       "en": "Pick a tab.",
       "text": "Vælg en fane."
@@ -173,10 +153,6 @@
     "home.try.open": {
       "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
       "text": "{lead} Skærmen {reportWait} åbner. Vælg en ventetid. Der sendes intet."
-    },
-    "home.live.big": {
-      "en": "Open the big preview",
-      "text": "Åbn den store forhåndsvisning"
     },
     "home.signals.title": {
       "en": "What you can see before you go in",
@@ -210,25 +186,9 @@
       "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
       "text": "Bude trykker på {reportProblem} for at rapportere det. Du ser rapporten, før du kører derhen."
     },
-    "home.signals.tablet.body": {
-      "en": "See when drivers report that a restaurant's tablet or system is not working.",
-      "text": "Se, når bude rapporterer, at en restaurants tablet eller system ikke virker."
-    },
-    "home.signals.arrival.title": {
-      "en": "Order starts after arrival",
-      "text": "Bestillingen starter efter ankomst"
-    },
-    "home.signals.arrival.body": {
-      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
-      "text": "Nogle steder starter først bestillingen, når du ankommer. Bude kan slå det til, når de rapporterer."
-    },
     "home.signals.missing.title": {
       "en": "Missing or wrong pickup points",
       "text": "Manglende eller forkerte afhentningssteder"
-    },
-    "home.signals.missing.body": {
-      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
-      "text": "Mangler et afhentningssted? Tryk på {suggest}. Er noget galt? Tryk på {reportProblem} og derefter {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} eller {closedPermanently}."
     },
     "home.how.intro": {
       "en": "Three easy steps. Reporting takes a few seconds.",
@@ -262,10 +222,6 @@
       "en": "Earn {radarPoints}",
       "text": "Optjen {radarPoints}"
     },
-    "home.points.body": {
-      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
-      "text": "Tryk på {reportWait} for at optjene {radarPoints}. Du kan starte uden en konto. Beskyt dine {radarPoints} med din e-mail, så de er sikre, hvis du skifter eller nulstiller din telefon. Intet kodeord. Appen sender dig en kode på 6 cifre."
-    },
     "home.points.noteSoon": {
       "en": "Rewards coming soon.",
       "text": "Belønninger kommer snart."
@@ -285,34 +241,6 @@
     "home.points.neededHelp": {
       "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
       "text": "Et egnet afhentningssted tæt på dig uden nylig ventetid og uden {likelyFast} eller {likelySlow}. Du får 15 RP for rapporten i stedet for 10."
-    },
-    "home.points.firstLine": {
-      "en": "{firstBonus}{help}",
-      "text": "{firstBonus}{help}"
-    },
-    "home.points.firstHelp": {
-      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
-      "text": "Ekstra point på din første gyldige ventetidsrapport. Hvis den også er {reportNeeded}, får du 25 RP i alt."
-    },
-    "home.points.approvedLine": {
-      "en": "{approved}{help}",
-      "text": "{approved}{help}"
-    },
-    "home.points.approvedHelp": {
-      "en": "When we approve a pickup point you suggest",
-      "text": "Når vi godkender et afhentningssted, du foreslår"
-    },
-    "home.points.referralLine": {
-      "en": "{referral}{help}",
-      "text": "{referral}{help}"
-    },
-    "home.points.referralHelp": {
-      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
-      "text": "I får det begge, når din ven laver 3 gyldige ventetidsrapporter på mindst 2 forskellige dage (UTC-tid) på 2 forskellige afhentningssteder. I skal begge have beskyttede Radar-konti (tilføj jeres e-mail). Din ven skal indtaste din kode før den første gyldige ventetidsrapport."
-    },
-    "home.points.referralEach": {
-      "en": "{referralRp} each",
-      "text": "{referralRp} hver"
     },
     "home.cities.body": {
       "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
@@ -350,22 +278,6 @@
       "en": "{lead} No names, addresses or order numbers.",
       "text": "{lead} Ingen navne, adresser eller ordrenumre."
     },
-    "home.trust.skipLead": {
-      "en": "You can skip the delivery app.",
-      "text": "Du kan springe leveringsappen over."
-    },
-    "home.trust.skip": {
-      "en": "{lead} Choosing the delivery app is optional.",
-      "text": "{lead} Det er valgfrit at vælge leveringsappen."
-    },
-    "home.trust.controlLead": {
-      "en": "You are in control.",
-      "text": "Du bestemmer."
-    },
-    "home.trust.control": {
-      "en": "{lead} Delete your account or Radar profile in the app at any time.",
-      "text": "{lead} Slet din konto eller Radar-profil i appen når som helst."
-    },
     "home.faq.title": {
       "en": "Questions from drivers",
       "text": "Spørgsmål fra bude"
@@ -377,18 +289,6 @@
     "home.faq.account.a": {
       "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
       "text": "Nej. Appen giver dig automatisk en Radar-profil. Du kan rapportere ventetider med det samme. Tilføj din e-mail senere for at beskytte dine {radarPoints}. Intet kodeord. Appen sender dig en kode på 6 cifre."
-    },
-    "home.faq.where.q": {
-      "en": "Where does PickupRadar work?",
-      "text": "Hvor virker PickupRadar?"
-    },
-    "home.faq.where.a": {
-      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
-      "text": "PickupRadar virker i Milton Keynes nu. London er næste. Derefter flere byer, for eksempel Manchester, Birmingham, Leeds, Liverpool og Glasgow. Se {cities}."
-    },
-    "home.faq.where.cities": {
-      "en": "all the cities",
-      "text": "alle byerne"
     },
     "home.faq.download.q": {
       "en": "When can I download the app?",
@@ -402,22 +302,6 @@
       "en": "live preview",
       "text": "live-forhåndsvisningen"
     },
-    "home.faq.wait.q": {
-      "en": "How is the current wait worked out?",
-      "text": "Hvordan udregnes den aktuelle ventetid?"
-    },
-    "home.faq.wait.a": {
-      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
-      "text": "Den kommer fra budrapporter i de seneste 2 timer. Rapporter, der er ældre end 2 timer, påvirker ikke den aktuelle ventetid."
-    },
-    "home.faq.likely.q": {
-      "en": "What do {likelyFast} and {likelySlow} mean?",
-      "text": "Hvad betyder {likelyFast} og {likelySlow}?"
-    },
-    "home.faq.likely.a": {
-      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
-      "text": "Det er vurderinger, ikke live-rapporter. De vises, når der ikke er nye ventetidsrapporter."
-    },
     "home.faq.track.q": {
       "en": "Does it track my location?",
       "text": "Sporer den min placering?"
@@ -429,22 +313,6 @@
     "home.faq.track.privacy": {
       "en": "privacy policy",
       "text": "privatlivspolitikken"
-    },
-    "home.faq.delete.q": {
-      "en": "How do I delete my data?",
-      "text": "Hvordan sletter jeg mine data?"
-    },
-    "home.faq.delete.a": {
-      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
-      "text": "Åbn {profile} i appen. Tryk på {deleteAccount}. Hvis du ikke har tilføjet en e-mail, skal du trykke på {deleteProfile}. Du kan også skrive til os. Se {page} for trinnene."
-    },
-    "home.closer.title": {
-      "en": "Explore Milton Keynes pickup points.",
-      "text": "Udforsk afhentningssteder i Milton Keynes."
-    },
-    "home.closer.body": {
-      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
-      "text": "Udforsk rigtige afhentningssteder i Milton Keynes. Søg efter et sted, og prøv rapportskærmen. Der sendes intet af det, du trykker på."
     },
     "home.closer.cta": {
       "en": "Open the live preview",

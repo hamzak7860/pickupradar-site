@@ -130,26 +130,6 @@
       "en": "Try the live preview",
       "text": "Vyzkoušej živý náhled"
     },
-    "home.scale.title": {
-      "en": "See how long you may wait.",
-      "text": "Podívej se, jak dlouho můžeš čekat."
-    },
-    "home.scale.body": {
-      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
-      "text": "Kurýři hlásí, jak dlouho čekali. Aktuální čekání pochází z hlášení za poslední 2 hodiny. Rychle uvidíš rychlá a pomalá místa vyzvednutí."
-    },
-    "home.live.aria": {
-      "en": "Live PickupRadar app preview with real Milton Keynes data",
-      "text": "Živý náhled aplikace PickupRadar se skutečnými daty z Milton Keynes"
-    },
-    "home.live.title": {
-      "en": "Try PickupRadar with real Milton Keynes data.",
-      "text": "Vyzkoušej PickupRadar se skutečnými daty z Milton Keynes."
-    },
-    "home.live.body": {
-      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
-      "text": "Podívej se na skutečná místa vyzvednutí v Milton Keynes. Zkontroluj nedávné čekání nebo {likelyFast} a {likelySlow}. Obrazovku hlášení můžeš vyzkoušet, ale nic se neodešle."
-    },
     "home.try.tabLead": {
       "en": "Pick a tab.",
       "text": "Vyber kartu."
@@ -173,10 +153,6 @@
     "home.try.open": {
       "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
       "text": "{lead} Otevře se obrazovka {reportWait}. Vyber čas čekání. Nic se neodešle."
-    },
-    "home.live.big": {
-      "en": "Open the big preview",
-      "text": "Otevřít velký náhled"
     },
     "home.signals.title": {
       "en": "What you can see before you go in",
@@ -210,25 +186,9 @@
       "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
       "text": "Kurýři klepnou na {reportProblem}, aby to nahlásili. Hlášení uvidíš, než tam pojedeš."
     },
-    "home.signals.tablet.body": {
-      "en": "See when drivers report that a restaurant's tablet or system is not working.",
-      "text": "Podívej se, když kurýři nahlásí, že tablet nebo systém restaurace nefunguje."
-    },
-    "home.signals.arrival.title": {
-      "en": "Order starts after arrival",
-      "text": "Objednávka začíná po příchodu"
-    },
-    "home.signals.arrival.body": {
-      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
-      "text": "Některá místa začnou objednávku až když přijedeš. Kurýři to mohou při hlášení zapnout."
-    },
     "home.signals.missing.title": {
       "en": "Missing or wrong pickup points",
       "text": "Chybějící nebo špatná místa vyzvednutí"
-    },
-    "home.signals.missing.body": {
-      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
-      "text": "Chybí místo vyzvednutí? Klepni na {suggest}. Něco nesedí? Klepni na {reportProblem} a pak {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} nebo {closedPermanently}."
     },
     "home.how.intro": {
       "en": "Three easy steps. Reporting takes a few seconds.",
@@ -262,10 +222,6 @@
       "en": "Earn {radarPoints}",
       "text": "Získej {radarPoints}"
     },
-    "home.points.body": {
-      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
-      "text": "Klepni na {reportWait} a získej {radarPoints}. Můžeš začít bez účtu. Ochraň {radarPoints} e-mailem, ať zůstanou v bezpečí, když vyměníš nebo resetuješ telefon. Bez hesla. Aplikace ti pošle kód o 6 číslicích e-mailem."
-    },
     "home.points.noteSoon": {
       "en": "Rewards coming soon.",
       "text": "Odměny již brzy."
@@ -285,34 +241,6 @@
     "home.points.neededHelp": {
       "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
       "text": "Vhodné místo vyzvednutí blízko tebe bez nedávného čekání a bez {likelyFast} nebo {likelySlow}. Za hlášení dostaneš 15 RP místo 10."
-    },
-    "home.points.firstLine": {
-      "en": "{firstBonus}{help}",
-      "text": "{firstBonus}{help}"
-    },
-    "home.points.firstHelp": {
-      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
-      "text": "Body navíc za první platné hlášení čekání. Když je zároveň {reportNeeded}, dostaneš celkem 25 RP."
-    },
-    "home.points.approvedLine": {
-      "en": "{approved}{help}",
-      "text": "{approved}{help}"
-    },
-    "home.points.approvedHelp": {
-      "en": "When we approve a pickup point you suggest",
-      "text": "Když schválíme místo vyzvednutí, které navrhneš"
-    },
-    "home.points.referralLine": {
-      "en": "{referral}{help}",
-      "text": "{referral}{help}"
-    },
-    "home.points.referralHelp": {
-      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
-      "text": "Dostanete to oba, když kamarád udělá 3 platná hlášení čekání alespoň ve 2 různých dnech (čas UTC) na 2 různých místech vyzvednutí. Oba potřebujete chráněné účty Radar (přidejte e-mail). Kamarád musí zadat tvůj kód před prvním platným hlášením čekání."
-    },
-    "home.points.referralEach": {
-      "en": "{referralRp} each",
-      "text": "{referralRp} každý"
     },
     "home.cities.body": {
       "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
@@ -350,22 +278,6 @@
       "en": "{lead} No names, addresses or order numbers.",
       "text": "{lead} Žádná jména, adresy ani čísla objednávek."
     },
-    "home.trust.skipLead": {
-      "en": "You can skip the delivery app.",
-      "text": "Rozvážkovou aplikaci můžeš přeskočit."
-    },
-    "home.trust.skip": {
-      "en": "{lead} Choosing the delivery app is optional.",
-      "text": "{lead} Volba rozvážkové aplikace je dobrovolná."
-    },
-    "home.trust.controlLead": {
-      "en": "You are in control.",
-      "text": "Rozhoduješ ty."
-    },
-    "home.trust.control": {
-      "en": "{lead} Delete your account or Radar profile in the app at any time.",
-      "text": "{lead} Účet nebo profil Radar můžeš v aplikaci kdykoli smazat."
-    },
     "home.faq.title": {
       "en": "Questions from drivers",
       "text": "Otázky kurýrů"
@@ -377,18 +289,6 @@
     "home.faq.account.a": {
       "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
       "text": "Ne. Aplikace ti automaticky dá profil Radar. Čekání můžeš hlásit hned. Aby sis ochránil {radarPoints}, přidej e-mail později. Bez hesla. Aplikace ti pošle kód o 6 číslicích e-mailem."
-    },
-    "home.faq.where.q": {
-      "en": "Where does PickupRadar work?",
-      "text": "Kde PickupRadar funguje?"
-    },
-    "home.faq.where.a": {
-      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
-      "text": "PickupRadar teď funguje v Milton Keynes. Další je London. Pak další města, třeba Manchester, Birmingham, Leeds, Liverpool a Glasgow. Podívej se na {cities}."
-    },
-    "home.faq.where.cities": {
-      "en": "all the cities",
-      "text": "všechna města"
     },
     "home.faq.download.q": {
       "en": "When can I download the app?",
@@ -402,22 +302,6 @@
       "en": "live preview",
       "text": "živý náhled"
     },
-    "home.faq.wait.q": {
-      "en": "How is the current wait worked out?",
-      "text": "Jak se počítá aktuální čekání?"
-    },
-    "home.faq.wait.a": {
-      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
-      "text": "Pochází z hlášení kurýrů za poslední 2 hodiny. Hlášení starší než 2 hodiny aktuální čekání nemění."
-    },
-    "home.faq.likely.q": {
-      "en": "What do {likelyFast} and {likelySlow} mean?",
-      "text": "Co znamenají {likelyFast} a {likelySlow}?"
-    },
-    "home.faq.likely.a": {
-      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
-      "text": "Jsou to odhady, ne živá hlášení. Objeví se, když nejsou nová hlášení čekání."
-    },
     "home.faq.track.q": {
       "en": "Does it track my location?",
       "text": "Sleduje moji polohu?"
@@ -429,22 +313,6 @@
     "home.faq.track.privacy": {
       "en": "privacy policy",
       "text": "zásadách ochrany soukromí"
-    },
-    "home.faq.delete.q": {
-      "en": "How do I delete my data?",
-      "text": "Jak smažu svá data?"
-    },
-    "home.faq.delete.a": {
-      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
-      "text": "V aplikaci otevři {profile}. Klepni na {deleteAccount}. Pokud jsi nepřidal e-mail, klepni na {deleteProfile}. Můžeš nám taky napsat. Kroky najdeš na {page}."
-    },
-    "home.closer.title": {
-      "en": "Explore Milton Keynes pickup points.",
-      "text": "Prozkoumej místa vyzvednutí v Milton Keynes."
-    },
-    "home.closer.body": {
-      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
-      "text": "Prozkoumej skutečná místa vyzvednutí v Milton Keynes. Vyhledej místo a vyzkoušej obrazovku hlášení. Nic, na co klepneš, se neodešle."
     },
     "home.closer.cta": {
       "en": "Open the live preview",

@@ -130,26 +130,6 @@
       "en": "Try the live preview",
       "text": "Pêşdîtina zindî biceribîne"
     },
-    "home.scale.title": {
-      "en": "See how long you may wait.",
-      "text": "Bibîne dibe ku tu çiqas bisekinî."
-    },
-    "home.scale.body": {
-      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
-      "text": "Ajokar radigihînin ku çiqas sekinîn. Dema bendê ya niha ji raporên 2 saetên dawî tê. Tu zû dibînî kîjan xala wergirtinê bilez e û kîjan hêdî ye."
-    },
-    "home.live.aria": {
-      "en": "Live PickupRadar app preview with real Milton Keynes data",
-      "text": "Pêşdîtina zindî ya sepana PickupRadar bi daneyên rast ên Milton Keynes"
-    },
-    "home.live.title": {
-      "en": "Try PickupRadar with real Milton Keynes data.",
-      "text": "PickupRadar bi daneyên rast ên Milton Keynes biceribîne."
-    },
-    "home.live.body": {
-      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
-      "text": "Xalên wergirtinê yên rast li Milton Keynes bibîne. Dema bendê ya nû bibîne, an {likelyFast} û {likelySlow}. Tu dikarî ekrana raporê biceribînî, lê tiştek naçe."
-    },
     "home.try.tabLead": {
       "en": "Pick a tab.",
       "text": "Hilpekînekê hilbijêre."
@@ -173,10 +153,6 @@
     "home.try.open": {
       "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
       "text": "{lead} Ekrana {reportWait} vedibe. Demeke bendê hilbijêre. Tiştek naçe."
-    },
-    "home.live.big": {
-      "en": "Open the big preview",
-      "text": "Pêşdîtina mezin veke"
     },
     "home.signals.title": {
       "en": "What you can see before you go in",
@@ -210,25 +186,9 @@
       "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
       "text": "Ajokar {reportProblem} ditikînin da ku vê ragihînin. Tu raporê berî ku biçî wir dibînî."
     },
-    "home.signals.tablet.body": {
-      "en": "See when drivers report that a restaurant's tablet or system is not working.",
-      "text": "Bibîne dema ajokar radigihînin ku tableta an pergala restorantê naxebite."
-    },
-    "home.signals.arrival.title": {
-      "en": "Order starts after arrival",
-      "text": "Siparîş piştî ku tu digihîjî dest pê dike"
-    },
-    "home.signals.arrival.body": {
-      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
-      "text": "Hin cih siparîşê tenê dema tu digihîjî dest pê dikin. Ajokar dikarin vê di dema ragihandinê de vekin."
-    },
     "home.signals.missing.title": {
       "en": "Missing or wrong pickup points",
       "text": "Xala wergirtinê ya winda an şaş"
-    },
-    "home.signals.missing.body": {
-      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
-      "text": "Xala wergirtinê tune? {suggest} bitikîne. Tiştek şaş e? {reportProblem} bitikîne, paşê {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} an {closedPermanently}."
     },
     "home.how.intro": {
       "en": "Three easy steps. Reporting takes a few seconds.",
@@ -262,10 +222,6 @@
       "en": "Earn {radarPoints}",
       "text": "{radarPoints} bistîne"
     },
-    "home.points.body": {
-      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
-      "text": "{reportWait} bitikîne da ku {radarPoints} bistînî. Tu dikarî bê hesab dest pê bikî. {radarPoints} bi e-nameyê biparêze da ku ewle bimînin heke tu têlefonê biguherînî an vegerînî. Bê şîfre. Sepan kodeke 6-reqemî bi e-nameyê dişîne."
-    },
     "home.points.noteSoon": {
       "en": "Rewards coming soon.",
       "text": "Xelat dê werin."
@@ -285,34 +241,6 @@
     "home.points.neededHelp": {
       "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
       "text": "Xaleke wergirtinê ya guncaw nêzî te, bê dema bendê ya nû, û bê {likelyFast} an {likelySlow}. Tu ji bo wê raporê 15 RP distînî, ne 10."
-    },
-    "home.points.firstLine": {
-      "en": "{firstBonus}{help}",
-      "text": "{firstBonus}{help}"
-    },
-    "home.points.firstHelp": {
-      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
-      "text": "Xalên zêde li ser rapora yekem a derbasdar a dema bendê. Heke ew {reportNeeded} jî be, tu bi tevahî 25 RP distînî."
-    },
-    "home.points.approvedLine": {
-      "en": "{approved}{help}",
-      "text": "{approved}{help}"
-    },
-    "home.points.approvedHelp": {
-      "en": "When we approve a pickup point you suggest",
-      "text": "Dema em xala wergirtinê ya ku te pêşniyar kiriye pesend dikin"
-    },
-    "home.points.referralLine": {
-      "en": "{referral}{help}",
-      "text": "{referral}{help}"
-    },
-    "home.points.referralHelp": {
-      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
-      "text": "Hûn herdu distînin dema hevalê te 3 raporên derbasdar ên dema bendê çêdike, li ser herî kêm 2 rojên cuda (dema UTC), li 2 xalên wergirtinê yên cuda. Divê herdu hesabên Radar ên parastî hebin (e-nameyê lê zêde bike). Divê hevalê te koda te berî rapora yekem a derbasdar a dema bendê binivîse."
-    },
-    "home.points.referralEach": {
-      "en": "{referralRp} each",
-      "text": "{referralRp} her yek"
     },
     "home.cities.body": {
       "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
@@ -350,22 +278,6 @@
       "en": "{lead} No names, addresses or order numbers.",
       "text": "{lead} Bê nav, navnîşan an hejmara siparîşê."
     },
-    "home.trust.skipLead": {
-      "en": "You can skip the delivery app.",
-      "text": "Tu dikarî sepana radestkirinê derbas bikî."
-    },
-    "home.trust.skip": {
-      "en": "{lead} Choosing the delivery app is optional.",
-      "text": "{lead} Hilbijartina sepana radestkirinê vebijarkî ye."
-    },
-    "home.trust.controlLead": {
-      "en": "You are in control.",
-      "text": "Kontrol bi te ye."
-    },
-    "home.trust.control": {
-      "en": "{lead} Delete your account or Radar profile in the app at any time.",
-      "text": "{lead} Her dem hesab an profîla Radar di sepanê de jê bibe."
-    },
     "home.faq.title": {
       "en": "Questions from drivers",
       "text": "Pirsên ajokaran"
@@ -377,18 +289,6 @@
     "home.faq.account.a": {
       "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
       "text": "Na. Sepan bixweber profîleke Radar dide te. Tu dikarî dema bendê tavilê ragihînî. Ji bo parastina {radarPoints}, paşê e-nameyê lê zêde bike. Bê şîfre. Sepan kodeke 6-reqemî bi e-nameyê dişîne."
-    },
-    "home.faq.where.q": {
-      "en": "Where does PickupRadar work?",
-      "text": "PickupRadar li ku dixebite?"
-    },
-    "home.faq.where.a": {
-      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
-      "text": "PickupRadar niha li Milton Keynes dixebite. Piştre London. Paşê bêtir bajar, wekî Manchester, Birmingham, Leeds, Liverpool û Glasgow. {cities} bibîne."
-    },
-    "home.faq.where.cities": {
-      "en": "all the cities",
-      "text": "hemû bajar"
     },
     "home.faq.download.q": {
       "en": "When can I download the app?",
@@ -402,22 +302,6 @@
       "en": "live preview",
       "text": "pêşdîtina zindî"
     },
-    "home.faq.wait.q": {
-      "en": "How is the current wait worked out?",
-      "text": "Dema bendê ya niha çawa tê hesibandin?"
-    },
-    "home.faq.wait.a": {
-      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
-      "text": "Ew ji raporên ajokaran di 2 saetên dawî de tê. Raporên ji 2 saetan kevntir dema bendê ya niha naguherînin."
-    },
-    "home.faq.likely.q": {
-      "en": "What do {likelyFast} and {likelySlow} mean?",
-      "text": "{likelyFast} û {likelySlow} tê çi wateyê?"
-    },
-    "home.faq.likely.a": {
-      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
-      "text": "Ev texmîn in, ne raporên zindî. Dema raporeke nû ya dema bendê tune be xuya dibin."
-    },
     "home.faq.track.q": {
       "en": "Does it track my location?",
       "text": "Gelo ew cihê min dişopîne?"
@@ -429,22 +313,6 @@
     "home.faq.track.privacy": {
       "en": "privacy policy",
       "text": "polîtîkaya nepeniyê"
-    },
-    "home.faq.delete.q": {
-      "en": "How do I delete my data?",
-      "text": "Ez çawa daneyên xwe jê dibim?"
-    },
-    "home.faq.delete.a": {
-      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
-      "text": "Di sepanê de {profile} veke. {deleteAccount} bitikîne. Heke te e-name lê nezêde kiriye, {deleteProfile} bitikîne. Tu dikarî e-name jî ji me re bişînî. Gavên wê li {page} bibîne."
-    },
-    "home.closer.title": {
-      "en": "Explore Milton Keynes pickup points.",
-      "text": "Xalên wergirtinê yên Milton Keynes bibîne."
-    },
-    "home.closer.body": {
-      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
-      "text": "Xalên wergirtinê yên rast li Milton Keynes bibîne. Cihakî bibîne û ekrana raporê biceribîne. Tiştê ku tu ditikînî naçe."
     },
     "home.closer.cta": {
       "en": "Open the live preview",

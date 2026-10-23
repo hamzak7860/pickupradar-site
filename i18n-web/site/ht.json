@@ -130,26 +130,6 @@
       "en": "Try the live preview",
       "text": "Eseye preview an dirèk la"
     },
-    "home.scale.title": {
-      "en": "See how long you may wait.",
-      "text": "Wè konbyen tan ou ka tann."
-    },
-    "home.scale.body": {
-      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
-      "text": "Chofè yo rapòte konbyen tan yo tann. Tan datant kounye a a soti nan rapò nan 2 dènye èdtan yo. Ou wè vit ki pwen pou pran kòmand ki rapid ak ki ralanti."
-    },
-    "home.live.aria": {
-      "en": "Live PickupRadar app preview with real Milton Keynes data",
-      "text": "Preview an dirèk aplikasyon PickupRadar ak done reyèl Milton Keynes"
-    },
-    "home.live.title": {
-      "en": "Try PickupRadar with real Milton Keynes data.",
-      "text": "Eseye PickupRadar ak done reyèl Milton Keynes."
-    },
-    "home.live.body": {
-      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
-      "text": "Wè vrè pwen pou pran kòmand nan Milton Keynes. Gade dènye tan datant yo, oswa {likelyFast} ak {likelySlow}. Ou ka eseye ekran rapò a, men anyen pa voye."
-    },
     "home.try.tabLead": {
       "en": "Pick a tab.",
       "text": "Chwazi yon onglet."
@@ -173,10 +153,6 @@
     "home.try.open": {
       "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
       "text": "{lead} Ekran {reportWait} la ouvri. Chwazi yon tan datant. Anyen pa voye."
-    },
-    "home.live.big": {
-      "en": "Open the big preview",
-      "text": "Ouvri gwo preview a"
     },
     "home.signals.title": {
       "en": "What you can see before you go in",
@@ -210,25 +186,9 @@
       "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
       "text": "Chofè yo tape {reportProblem} pou rapòte sa. Ou wè rapò a anvan ou kondwi ale la."
     },
-    "home.signals.tablet.body": {
-      "en": "See when drivers report that a restaurant's tablet or system is not working.",
-      "text": "Wè lè chofè yo rapòte tablèt oswa sistèm restoran an pa mache."
-    },
-    "home.signals.arrival.title": {
-      "en": "Order starts after arrival",
-      "text": "Kòmand lan kòmanse lè ou rive"
-    },
-    "home.signals.arrival.body": {
-      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
-      "text": "Gen kèk kote ki kòmanse kòmand lan sèlman lè ou rive. Chofè yo ka limen sa pandan y ap rapòte."
-    },
     "home.signals.missing.title": {
       "en": "Missing or wrong pickup points",
       "text": "Pwen pou pran kòmand ki manke oswa ki pa bon"
-    },
-    "home.signals.missing.body": {
-      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
-      "text": "Pwen pou pran kòmand lan pa la? Tape {suggest}. Gen yon bagay ki pa bon? Tape {reportProblem}, epi {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} oswa {closedPermanently}."
     },
     "home.how.intro": {
       "en": "Three easy steps. Reporting takes a few seconds.",
@@ -262,10 +222,6 @@
       "en": "Earn {radarPoints}",
       "text": "Touche {radarPoints}"
     },
-    "home.points.body": {
-      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
-      "text": "Tape {reportWait} pou touche {radarPoints}. Ou ka kòmanse san kont. Pwoteje {radarPoints} ou yo ak yon imèl pou yo an sekirite si ou chanje oswa reset telefòn ou. Pa gen modpas. Aplikasyon an voye yon kòd 6 chif pa imèl."
-    },
     "home.points.noteSoon": {
       "en": "Rewards coming soon.",
       "text": "Rekonpans yo ap vini."
@@ -285,34 +241,6 @@
     "home.points.neededHelp": {
       "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
       "text": "Yon pwen pou pran kòmand ki kalifye toupre ou, san nouvo tan datant, epi san {likelyFast} oswa {likelySlow}. Ou touche 15 RP pou rapò sa a, olye de 10."
-    },
-    "home.points.firstLine": {
-      "en": "{firstBonus}{help}",
-      "text": "{firstBonus}{help}"
-    },
-    "home.points.firstHelp": {
-      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
-      "text": "Pwen siplemantè sou premye rapò tan datant valab la. Si li se {reportNeeded} tou, ou touche 25 RP an total."
-    },
-    "home.points.approvedLine": {
-      "en": "{approved}{help}",
-      "text": "{approved}{help}"
-    },
-    "home.points.approvedHelp": {
-      "en": "When we approve a pickup point you suggest",
-      "text": "Lè nou apwouve pwen pou pran kòmand ou sijere a"
-    },
-    "home.points.referralLine": {
-      "en": "{referral}{help}",
-      "text": "{referral}{help}"
-    },
-    "home.points.referralHelp": {
-      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
-      "text": "Nou toude touche lè zanmi ou fè 3 rapò tan datant valab, nan omwen 2 jou diferan (lè UTC), nan 2 pwen pou pran kòmand diferan. Nou toude bezwen yon kont Radar pwoteje (ajoute yon imèl). Zanmi ou dwe antre kòd ou a anvan premye rapò tan datant valab la."
-    },
-    "home.points.referralEach": {
-      "en": "{referralRp} each",
-      "text": "{referralRp} chak"
     },
     "home.cities.body": {
       "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
@@ -350,22 +278,6 @@
       "en": "{lead} No names, addresses or order numbers.",
       "text": "{lead} Pa gen non, adrès oswa nimewo kòmand."
     },
-    "home.trust.skipLead": {
-      "en": "You can skip the delivery app.",
-      "text": "Ou ka sote aplikasyon livrezon an."
-    },
-    "home.trust.skip": {
-      "en": "{lead} Choosing the delivery app is optional.",
-      "text": "{lead} Chwazi aplikasyon livrezon an se yon opsyon."
-    },
-    "home.trust.controlLead": {
-      "en": "You are in control.",
-      "text": "Se ou ki kontwole."
-    },
-    "home.trust.control": {
-      "en": "{lead} Delete your account or Radar profile in the app at any time.",
-      "text": "{lead} Efase kont lan oswa pwofil Radar la nan aplikasyon an nenpòt lè."
-    },
     "home.faq.title": {
       "en": "Questions from drivers",
       "text": "Kesyon chofè yo"
@@ -377,18 +289,6 @@
     "home.faq.account.a": {
       "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
       "text": "Non. Aplikasyon an ba ou yon pwofil Radar otomatikman. Ou ka rapòte tan datant touswit. Pou pwoteje {radarPoints}, ajoute yon imèl pita. Pa gen modpas. Aplikasyon an voye yon kòd 6 chif pa imèl."
-    },
-    "home.faq.where.q": {
-      "en": "Where does PickupRadar work?",
-      "text": "Ki kote PickupRadar mache?"
-    },
-    "home.faq.where.a": {
-      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
-      "text": "PickupRadar mache nan Milton Keynes kounye a. Apre sa, London. Epi plis vil, tankou Manchester, Birmingham, Leeds, Liverpool ak Glasgow. Gade {cities}."
-    },
-    "home.faq.where.cities": {
-      "en": "all the cities",
-      "text": "tout vil yo"
     },
     "home.faq.download.q": {
       "en": "When can I download the app?",
@@ -402,22 +302,6 @@
       "en": "live preview",
       "text": "preview an dirèk"
     },
-    "home.faq.wait.q": {
-      "en": "How is the current wait worked out?",
-      "text": "Kijan yo kalkile tan datant kounye a a?"
-    },
-    "home.faq.wait.a": {
-      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
-      "text": "Li soti nan rapò chofè yo nan 2 dènye èdtan yo. Rapò ki gen plis pase 2 èdtan pa chanje tan datant kounye a a."
-    },
-    "home.faq.likely.q": {
-      "en": "What do {likelyFast} and {likelySlow} mean?",
-      "text": "Kisa {likelyFast} ak {likelySlow} vle di?"
-    },
-    "home.faq.likely.a": {
-      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
-      "text": "Se estimasyon, pa rapò an dirèk. Yo parèt lè pa gen nouvo rapò tan datant."
-    },
     "home.faq.track.q": {
       "en": "Does it track my location?",
       "text": "Èske li swiv kote mwen ye?"
@@ -429,22 +313,6 @@
     "home.faq.track.privacy": {
       "en": "privacy policy",
       "text": "règleman konfidansyalite a"
-    },
-    "home.faq.delete.q": {
-      "en": "How do I delete my data?",
-      "text": "Kijan pou mwen efase done mwen yo?"
-    },
-    "home.faq.delete.a": {
-      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
-      "text": "Nan aplikasyon an, ouvri {profile}. Tape {deleteAccount}. Si ou pa ajoute imèl, tape {deleteProfile}. Ou ka voye yon imèl tou. Gade {page} pou etap yo."
-    },
-    "home.closer.title": {
-      "en": "Explore Milton Keynes pickup points.",
-      "text": "Eksplore pwen pou pran kòmand Milton Keynes yo."
-    },
-    "home.closer.body": {
-      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
-      "text": "Eksplore vrè pwen pou pran kòmand nan Milton Keynes. Chèche yon kote epi eseye ekran rapò a. Anyen ou tape pa voye."
     },
     "home.closer.cta": {
       "en": "Open the live preview",

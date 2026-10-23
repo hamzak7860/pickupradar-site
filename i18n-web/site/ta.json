@@ -130,26 +130,6 @@
       "en": "Try the live preview",
       "text": "நேரடி முன்னோட்டத்தை முயல்க"
     },
-    "home.scale.title": {
-      "en": "See how long you may wait.",
-      "text": "நீங்கள் எவ்வளவு காத்திருக்கலாம் என்று பாருங்கள்."
-    },
-    "home.scale.body": {
-      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
-      "text": "ஓட்டுநர்கள் எவ்வளவு காத்திருந்தார்கள் என்று புகாரளிக்கிறார்கள். தற்போதைய காத்திருப்பு கடந்த 2 மணி நேரப் புகார்களிலிருந்து வருகிறது. விரைவான மற்றும் மெதுவான பிக்அப்களை விரைவில் பார்க்கலாம்."
-    },
-    "home.live.aria": {
-      "en": "Live PickupRadar app preview with real Milton Keynes data",
-      "text": "Milton Keynes உண்மையான தரவுடன் PickupRadar செயலி நேரடி முன்னோட்டம்"
-    },
-    "home.live.title": {
-      "en": "Try PickupRadar with real Milton Keynes data.",
-      "text": "Milton Keynes உண்மையான தரவுடன் PickupRadar ஐ முயல்க."
-    },
-    "home.live.body": {
-      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
-      "text": "Milton Keynes இல் உண்மையான பிக்அப் புள்ளிகளைப் பாருங்கள். சமீபத்திய காத்திருப்புகளைப் பாருங்கள், அல்லது {likelyFast} மற்றும் {likelySlow}. புகார் திரையை முயலலாம், ஆனால் எதுவும் அனுப்பப்படாது."
-    },
     "home.try.tabLead": {
       "en": "Pick a tab.",
       "text": "ஒரு தாவலைத் தேர்ந்தெடுங்கள்."
@@ -173,10 +153,6 @@
     "home.try.open": {
       "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
       "text": "{lead} {reportWait} திரை திறக்கும். ஒரு காத்திருப்பு நேரத்தைத் தேர்ந்தெடுங்கள். எதுவும் அனுப்பப்படாது."
-    },
-    "home.live.big": {
-      "en": "Open the big preview",
-      "text": "பெரிய முன்னோட்டத்தைத் திற"
     },
     "home.signals.title": {
       "en": "What you can see before you go in",
@@ -210,25 +186,9 @@
       "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
       "text": "ஓட்டுநர்கள் இதைப் புகாரளிக்க {reportProblem} தட்டுகிறார்கள். அங்கு செல்வதற்கு முன் அவர்களின் புகாரைப் பார்க்கிறீர்கள்."
     },
-    "home.signals.tablet.body": {
-      "en": "See when drivers report that a restaurant's tablet or system is not working.",
-      "text": "ஒரு உணவகத்தின் டேப்லெட் அல்லது அமைப்பு வேலை செய்யவில்லை என்று ஓட்டுநர்கள் புகாரளிக்கும்போது பாருங்கள்."
-    },
-    "home.signals.arrival.title": {
-      "en": "Order starts after arrival",
-      "text": "ஆர்டர் வந்த பிறகு தொடங்கும்"
-    },
-    "home.signals.arrival.body": {
-      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
-      "text": "சில இடங்கள் நீங்கள் வந்த பிறகே ஆர்டரைத் தொடங்குகின்றன. ஓட்டுநர்கள் புகாரளிக்கும்போது இதை இயக்கலாம்."
-    },
     "home.signals.missing.title": {
       "en": "Missing or wrong pickup points",
       "text": "காணாமல் போன அல்லது தவறான பிக்அப் புள்ளிகள்"
-    },
-    "home.signals.missing.body": {
-      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
-      "text": "பிக்அப் புள்ளி இல்லையா? {suggest} தட்டுங்கள். ஏதோ தவறா? {reportProblem} தட்டி, பிறகு {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} அல்லது {closedPermanently}."
     },
     "home.how.intro": {
       "en": "Three easy steps. Reporting takes a few seconds.",
@@ -262,10 +222,6 @@
       "en": "Earn {radarPoints}",
       "text": "{radarPoints} பெறுங்கள்"
     },
-    "home.points.body": {
-      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
-      "text": "{radarPoints} பெற {reportWait} தட்டுங்கள். கணக்கு இல்லாமல் தொடங்கலாம். தொலைபேசியை மாற்றினாலோ மீட்டமைத்தாலோ பாதுகாப்பாக இருக்க, மின்னஞ்சலால் உங்கள் {radarPoints} பாதுகாக்கவும். கடவுச்சொல் தேவையில்லை. செயலி 6 இலக்கக் குறியீட்டை மின்னஞ்சலில் அனுப்புகிறது."
-    },
     "home.points.noteSoon": {
       "en": "Rewards coming soon.",
       "text": "வெகுமதிகள் விரைவில்."
@@ -285,34 +241,6 @@
     "home.points.neededHelp": {
       "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
       "text": "உங்களுக்கு அருகில் தகுதியான பிக்அப் புள்ளி, சமீபத்திய காத்திருப்பு இல்லாமல் {likelyFast} அல்லது {likelySlow} இல்லாமல். புகாருக்கு 10க்கு பதிலாக 15 RP கிடைக்கும்."
-    },
-    "home.points.firstLine": {
-      "en": "{firstBonus}{help}",
-      "text": "{firstBonus}{help}"
-    },
-    "home.points.firstHelp": {
-      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
-      "text": "முதல் செல்லுபடியான காத்திருப்புப் புகாரில் கூடுதல் புள்ளிகள். அது {reportNeeded} ஆகவும் இருந்தால் மொத்தம் 25 RP பெறுவீர்கள்."
-    },
-    "home.points.approvedLine": {
-      "en": "{approved}{help}",
-      "text": "{approved}{help}"
-    },
-    "home.points.approvedHelp": {
-      "en": "When we approve a pickup point you suggest",
-      "text": "நீங்கள் பரிந்துரைக்கும் பிக்அப் புள்ளியை நாங்கள் அங்கீகரிக்கும்போது"
-    },
-    "home.points.referralLine": {
-      "en": "{referral}{help}",
-      "text": "{referral}{help}"
-    },
-    "home.points.referralHelp": {
-      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
-      "text": "உங்கள் நண்பர் குறைந்தது 2 வெவ்வேறு நாட்களில் (UTC நேரம்), 2 வெவ்வேறு பிக்அப் புள்ளிகளில் 3 செல்லுபடியான காத்திருப்புப் புகார்கள் செய்தால் இருவரும் பெறுவீர்கள். இருவருக்கும் பாதுகாக்கப்பட்ட Radar கணக்குகள் வேண்டும் (மின்னஞ்சலைச் சேர்க்கவும்). நண்பர் முதல் செல்லுபடியான காத்திருப்புப் புகாருக்கு முன் உங்கள் குறியீட்டை உள்ளிட வேண்டும்."
-    },
-    "home.points.referralEach": {
-      "en": "{referralRp} each",
-      "text": "ஒவ்வொருவருக்கும் {referralRp}"
     },
     "home.cities.body": {
       "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
@@ -350,22 +278,6 @@
       "en": "{lead} No names, addresses or order numbers.",
       "text": "{lead} பெயர்கள், முகவரிகள் அல்லது ஆர்டர் எண்கள் இல்லை."
     },
-    "home.trust.skipLead": {
-      "en": "You can skip the delivery app.",
-      "text": "டெலிவரி செயலியைத் தவிர்க்கலாம்."
-    },
-    "home.trust.skip": {
-      "en": "{lead} Choosing the delivery app is optional.",
-      "text": "{lead} டெலிவரி செயலியைத் தேர்ந்தெடுப்பது விருப்பமானது."
-    },
-    "home.trust.controlLead": {
-      "en": "You are in control.",
-      "text": "கட்டுப்பாடு உங்களிடம்."
-    },
-    "home.trust.control": {
-      "en": "{lead} Delete your account or Radar profile in the app at any time.",
-      "text": "{lead} செயலியில் எந்த நேரத்திலும் உங்கள் கணக்கு அல்லது Radar சுயவிவரத்தை நீக்குங்கள்."
-    },
     "home.faq.title": {
       "en": "Questions from drivers",
       "text": "ஓட்டுநர்களின் கேள்விகள்"
@@ -377,18 +289,6 @@
     "home.faq.account.a": {
       "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
       "text": "இல்லை. செயலி தானாக Radar சுயவிவரத்தைத் தருகிறது. உடனே காத்திருப்புகளைப் புகாரளிக்கலாம். உங்கள் {radarPoints} பாதுகாக்க பின்னர் மின்னஞ்சலைச் சேர்க்கவும். கடவுச்சொல் தேவையில்லை. செயலி 6 இலக்கக் குறியீட்டை மின்னஞ்சலில் அனுப்புகிறது."
-    },
-    "home.faq.where.q": {
-      "en": "Where does PickupRadar work?",
-      "text": "PickupRadar எங்கே வேலை செய்கிறது?"
-    },
-    "home.faq.where.a": {
-      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
-      "text": "PickupRadar இப்போது Milton Keynes இல் வேலை செய்கிறது. அடுத்து London. பிறகு மேலும் நகரங்கள், Manchester, Birmingham, Leeds, Liverpool மற்றும் Glasgow போல. {cities} பாருங்கள்."
-    },
-    "home.faq.where.cities": {
-      "en": "all the cities",
-      "text": "அனைத்து நகரங்களும்"
     },
     "home.faq.download.q": {
       "en": "When can I download the app?",
@@ -402,22 +302,6 @@
       "en": "live preview",
       "text": "நேரடி முன்னோட்டம்"
     },
-    "home.faq.wait.q": {
-      "en": "How is the current wait worked out?",
-      "text": "தற்போதைய காத்திருப்பு எப்படிக் கணக்கிடப்படுகிறது?"
-    },
-    "home.faq.wait.a": {
-      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
-      "text": "அது கடந்த 2 மணி நேர ஓட்டுநர் புகார்களிலிருந்து வருகிறது. 2 மணி நேரத்திற்குப் பழைய புகார்கள் தற்போதைய காத்திருப்பைப் பாதிக்காது."
-    },
-    "home.faq.likely.q": {
-      "en": "What do {likelyFast} and {likelySlow} mean?",
-      "text": "{likelyFast} மற்றும் {likelySlow} என்றால் என்ன?"
-    },
-    "home.faq.likely.a": {
-      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
-      "text": "இவை மதிப்பீடுகள், நேரடி புகார்கள் அல்ல. சமீபத்திய காத்திருப்புப் புகார்கள் இல்லாதபோது தோன்றும்."
-    },
     "home.faq.track.q": {
       "en": "Does it track my location?",
       "text": "என் இருப்பிடத்தைக் கண்காணிக்கிறதா?"
@@ -429,22 +313,6 @@
     "home.faq.track.privacy": {
       "en": "privacy policy",
       "text": "தனியுரிமைக் கொள்கை"
-    },
-    "home.faq.delete.q": {
-      "en": "How do I delete my data?",
-      "text": "என் தரவை எப்படி நீக்குவது?"
-    },
-    "home.faq.delete.a": {
-      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
-      "text": "செயலியில் {profile} திறக்கவும். {deleteAccount} தட்டவும். மின்னஞ்சல் சேர்க்கவில்லை என்றால் {deleteProfile} தட்டவும். எங்களுக்கு மின்னஞ்சலும் செய்யலாம். படிகளுக்கு {page} பாருங்கள்."
-    },
-    "home.closer.title": {
-      "en": "Explore Milton Keynes pickup points.",
-      "text": "Milton Keynes பிக்அப் புள்ளிகளை ஆராயுங்கள்."
-    },
-    "home.closer.body": {
-      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
-      "text": "Milton Keynes இல் உண்மையான பிக்அப் புள்ளிகளை ஆராயுங்கள். ஒரு இடத்தைத் தேடி புகார் திரையை முயல்க. நீங்கள் தட்டுவது எதுவும் அனுப்பப்படாது."
     },
     "home.closer.cta": {
       "en": "Open the live preview",

@@ -130,26 +130,6 @@
       "en": "Try the live preview",
       "text": "തത്സമയ പ്രിവ്യൂ ശ്രമിക്കുക"
     },
-    "home.scale.title": {
-      "en": "See how long you may wait.",
-      "text": "നിങ്ങൾ എത്ര നേരം കാത്തിരിക്കേണ്ടി വന്നേക്കാം എന്ന് കാണുക."
-    },
-    "home.scale.body": {
-      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
-      "text": "ഡ്രൈവർമാർ എത്ര നേരം കാത്തിരുന്നുവെന്ന് റിപ്പോർട്ട് ചെയ്യുന്നു. നിലവിലെ കാത്തിരിപ്പ് കഴിഞ്ഞ 2 മണിക്കൂറിലെ റിപ്പോർട്ടുകളിൽ നിന്നാണ്. വേഗമുള്ളതും വേഗം കുറഞ്ഞതുമായ പിക്കപ്പ് പോയിന്റുകൾ നിങ്ങൾ പെട്ടെന്ന് കാണുന്നു."
-    },
-    "home.live.aria": {
-      "en": "Live PickupRadar app preview with real Milton Keynes data",
-      "text": "Milton Keynes യഥാർത്ഥ ഡാറ്റയുള്ള PickupRadar ആപ്പിന്റെ തത്സമയ പ്രിവ്യൂ"
-    },
-    "home.live.title": {
-      "en": "Try PickupRadar with real Milton Keynes data.",
-      "text": "Milton Keynes യഥാർത്ഥ ഡാറ്റ ഉപയോഗിച്ച് PickupRadar ശ്രമിക്കുക."
-    },
-    "home.live.body": {
-      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
-      "text": "Milton Keynes-ലെ യഥാർത്ഥ പിക്കപ്പ് പോയിന്റുകൾ കാണുക. ഏറ്റവും പുതിയ കാത്തിരിപ്പ് കാണുക, അല്ലെങ്കിൽ {likelyFast} ഉം {likelySlow} ഉം. റിപ്പോർട്ട് സ്ക്രീൻ ശ്രമിക്കാം, പക്ഷേ ഒന്നും അയയ്ക്കില്ല."
-    },
     "home.try.tabLead": {
       "en": "Pick a tab.",
       "text": "ഒരു ടാബ് തിരഞ്ഞെടുക്കുക."
@@ -173,10 +153,6 @@
     "home.try.open": {
       "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
       "text": "{lead} {reportWait} സ്ക്രീൻ തുറക്കും. ഒരു കാത്തിരിപ്പ് തിരഞ്ഞെടുക്കുക. ഒന്നും അയയ്ക്കില്ല."
-    },
-    "home.live.big": {
-      "en": "Open the big preview",
-      "text": "വലിയ പ്രിവ്യൂ തുറക്കുക"
     },
     "home.signals.title": {
       "en": "What you can see before you go in",
@@ -210,25 +186,9 @@
       "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
       "text": "ഇത് റിപ്പോർട്ട് ചെയ്യാൻ ഡ്രൈവർമാർ {reportProblem} ടാപ്പ് ചെയ്യുന്നു. അവിടെ പോകുന്നതിന് മുമ്പ് റിപ്പോർട്ട് കാണാം."
     },
-    "home.signals.tablet.body": {
-      "en": "See when drivers report that a restaurant's tablet or system is not working.",
-      "text": "റെസ്റ്റോറന്റ് ടാബ്‌ലെറ്റോ സിസ്റ്റമോ പ്രവർത്തിക്കുന്നില്ലെന്ന് ഡ്രൈവർമാർ റിപ്പോർട്ട് ചെയ്യുമ്പോൾ കാണുക."
-    },
-    "home.signals.arrival.title": {
-      "en": "Order starts after arrival",
-      "text": "നിങ്ങൾ എത്തിയ ശേഷമാണ് ഓർഡർ തുടങ്ങുന്നത്"
-    },
-    "home.signals.arrival.body": {
-      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
-      "text": "ചില സ്ഥലങ്ങൾ നിങ്ങൾ എത്തിയ ശേഷം മാത്രമേ ഓർഡർ തുടങ്ങൂ. റിപ്പോർട്ട് ചെയ്യുമ്പോൾ ഡ്രൈവർമാർക്ക് ഇത് ഓൺ ചെയ്യാം."
-    },
     "home.signals.missing.title": {
       "en": "Missing or wrong pickup points",
       "text": "കാണാതായ അല്ലെങ്കിൽ തെറ്റായ പിക്കപ്പ് പോയിന്റ്"
-    },
-    "home.signals.missing.body": {
-      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
-      "text": "പിക്കപ്പ് പോയിന്റ് ഇല്ലേ? {suggest} ടാപ്പ് ചെയ്യുക. എന്തെങ്കിലും തെറ്റാണോ? {reportProblem} ടാപ്പ് ചെയ്യുക, പിന്നെ {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} അല്ലെങ്കിൽ {closedPermanently}."
     },
     "home.how.intro": {
       "en": "Three easy steps. Reporting takes a few seconds.",
@@ -262,10 +222,6 @@
       "en": "Earn {radarPoints}",
       "text": "{radarPoints} നേടുക"
     },
-    "home.points.body": {
-      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
-      "text": "{radarPoints} നേടാൻ {reportWait} ടാപ്പ് ചെയ്യുക. അക്കൗണ്ട് ഇല്ലാതെ തുടങ്ങാം. ഫോൺ മാറ്റുകയോ റീസെറ്റ് ചെയ്യുകയോ ചെയ്താൽ സുരക്ഷിതമാകാൻ {radarPoints} ഇമെയിൽ ഉപയോഗിച്ച് സംരക്ഷിക്കുക. പാസ്‌വേഡ് വേണ്ട. ആപ്പ് 6 അക്ക കോഡ് ഇമെയിൽ ചെയ്യും."
-    },
     "home.points.noteSoon": {
       "en": "Rewards coming soon.",
       "text": "റിവാർഡുകൾ ഉടൻ വരും."
@@ -285,34 +241,6 @@
     "home.points.neededHelp": {
       "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
       "text": "നിങ്ങളുടെ അടുത്തുള്ള യോഗ്യമായ പിക്കപ്പ് പോയിന്റ്, പുതിയ കാത്തിരിപ്പ് ഇല്ല, {likelyFast} അല്ലെങ്കിൽ {likelySlow} ഇല്ല. ആ റിപ്പോർട്ടിന് നിങ്ങൾക്ക് 15 RP ലഭിക്കും, 10 അല്ല."
-    },
-    "home.points.firstLine": {
-      "en": "{firstBonus}{help}",
-      "text": "{firstBonus}{help}"
-    },
-    "home.points.firstHelp": {
-      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
-      "text": "ആദ്യത്തെ സാധുവായ കാത്തിരിപ്പ് റിപ്പോർട്ടിലെ അധിക പോയിന്റുകൾ. അതും {reportNeeded} ആണെങ്കിൽ നിങ്ങൾക്ക് ആകെ 25 RP ലഭിക്കും."
-    },
-    "home.points.approvedLine": {
-      "en": "{approved}{help}",
-      "text": "{approved}{help}"
-    },
-    "home.points.approvedHelp": {
-      "en": "When we approve a pickup point you suggest",
-      "text": "നിങ്ങൾ നിർദ്ദേശിച്ച പിക്കപ്പ് പോയിന്റ് ഞങ്ങൾ അംഗീകരിക്കുമ്പോൾ"
-    },
-    "home.points.referralLine": {
-      "en": "{referral}{help}",
-      "text": "{referral}{help}"
-    },
-    "home.points.referralHelp": {
-      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
-      "text": "നിങ്ങളുടെ സുഹൃത്ത് 3 സാധുവായ കാത്തിരിപ്പ് റിപ്പോർട്ടുകൾ ചെയ്യുമ്പോൾ, കുറഞ്ഞത് 2 വ്യത്യസ്ത ദിവസങ്ങളിൽ (UTC സമയം), 2 വ്യത്യസ്ത പിക്കപ്പ് പോയിന്റുകളിൽ, നിങ്ങൾ രണ്ടുപേർക്കും ലഭിക്കും. നിങ്ങൾ രണ്ടുപേർക്കും സംരക്ഷിത Radar അക്കൗണ്ട് വേണം (ഇമെയിൽ ചേർക്കുക). ആദ്യത്തെ സാധുവായ കാത്തിരിപ്പ് റിപ്പോർട്ടിന് മുമ്പ് നിങ്ങളുടെ സുഹൃത്ത് നിങ്ങളുടെ കോഡ് നൽകണം."
-    },
-    "home.points.referralEach": {
-      "en": "{referralRp} each",
-      "text": "ഓരോരുത്തർക്കും {referralRp}"
     },
     "home.cities.body": {
       "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
@@ -350,22 +278,6 @@
       "en": "{lead} No names, addresses or order numbers.",
       "text": "{lead} പേര്, വിലാസം അല്ലെങ്കിൽ ഓർഡർ നമ്പർ ഇല്ല."
     },
-    "home.trust.skipLead": {
-      "en": "You can skip the delivery app.",
-      "text": "ഡെലിവറി ആപ്പ് ഒഴിവാക്കാം."
-    },
-    "home.trust.skip": {
-      "en": "{lead} Choosing the delivery app is optional.",
-      "text": "{lead} ഡെലിവറി ആപ്പ് തിരഞ്ഞെടുക്കുന്നത് ഐച്ഛികമാണ്."
-    },
-    "home.trust.controlLead": {
-      "en": "You are in control.",
-      "text": "നിയന്ത്രണം നിങ്ങൾക്കാണ്."
-    },
-    "home.trust.control": {
-      "en": "{lead} Delete your account or Radar profile in the app at any time.",
-      "text": "{lead} ആപ്പിലെ അക്കൗണ്ടോ Radar പ്രൊഫൈലോ എപ്പോൾ വേണമെങ്കിലും ഇല്ലാതാക്കുക."
-    },
     "home.faq.title": {
       "en": "Questions from drivers",
       "text": "ഡ്രൈവർമാരുടെ ചോദ്യങ്ങൾ"
@@ -377,18 +289,6 @@
     "home.faq.account.a": {
       "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
       "text": "വേണ്ട. ആപ്പ് നിങ്ങൾക്ക് സ്വയമേവ ഒരു Radar പ്രൊഫൈൽ തരും. ഉടൻ കാത്തിരിപ്പ് റിപ്പോർട്ട് ചെയ്യാം. {radarPoints} സംരക്ഷിക്കാൻ പിന്നീട് ഇമെയിൽ ചേർക്കുക. പാസ്‌വേഡ് വേണ്ട. ആപ്പ് 6 അക്ക കോഡ് ഇമെയിൽ ചെയ്യും."
-    },
-    "home.faq.where.q": {
-      "en": "Where does PickupRadar work?",
-      "text": "PickupRadar എവിടെ പ്രവർത്തിക്കും?"
-    },
-    "home.faq.where.a": {
-      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
-      "text": "PickupRadar ഇപ്പോൾ Milton Keynes-ൽ പ്രവർത്തിക്കുന്നു. അടുത്തത് London. പിന്നെ കൂടുതൽ നഗരങ്ങൾ, Manchester, Birmingham, Leeds, Liverpool, Glasgow പോലെ. {cities} കാണുക."
-    },
-    "home.faq.where.cities": {
-      "en": "all the cities",
-      "text": "എല്ലാ നഗരങ്ങളും"
     },
     "home.faq.download.q": {
       "en": "When can I download the app?",
@@ -402,22 +302,6 @@
       "en": "live preview",
       "text": "തത്സമയ പ്രിവ്യൂ"
     },
-    "home.faq.wait.q": {
-      "en": "How is the current wait worked out?",
-      "text": "നിലവിലെ കാത്തിരിപ്പ് എങ്ങനെ കണക്കാക്കുന്നു?"
-    },
-    "home.faq.wait.a": {
-      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
-      "text": "കഴിഞ്ഞ 2 മണിക്കൂറിലെ ഡ്രൈവർ റിപ്പോർട്ടുകളിൽ നിന്നാണ്. 2 മണിക്കൂറിൽ പഴയ റിപ്പോർട്ടുകൾ നിലവിലെ കാത്തിരിപ്പ് മാറ്റില്ല."
-    },
-    "home.faq.likely.q": {
-      "en": "What do {likelyFast} and {likelySlow} mean?",
-      "text": "{likelyFast} ഉം {likelySlow} ഉം എന്താണ് അർത്ഥമാക്കുന്നത്?"
-    },
-    "home.faq.likely.a": {
-      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
-      "text": "അവ കണക്കുകൂട്ടലുകളാണ്, തത്സമയ റിപ്പോർട്ടുകളല്ല. പുതിയ കാത്തിരിപ്പ് റിപ്പോർട്ട് ഇല്ലെങ്കിൽ അവ കാണും."
-    },
     "home.faq.track.q": {
       "en": "Does it track my location?",
       "text": "ഇത് എന്റെ ലൊക്കേഷൻ ട്രാക്ക് ചെയ്യുന്നുണ്ടോ?"
@@ -429,22 +313,6 @@
     "home.faq.track.privacy": {
       "en": "privacy policy",
       "text": "സ്വകാര്യതാ നയം"
-    },
-    "home.faq.delete.q": {
-      "en": "How do I delete my data?",
-      "text": "എന്റെ ഡാറ്റ എങ്ങനെ ഇല്ലാതാക്കാം?"
-    },
-    "home.faq.delete.a": {
-      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
-      "text": "ആപ്പിൽ {profile} തുറക്കുക. {deleteAccount} ടാപ്പ് ചെയ്യുക. നിങ്ങൾ ഇമെയിൽ ചേർത്തിട്ടില്ലെങ്കിൽ {deleteProfile} ടാപ്പ് ചെയ്യുക. ഞങ്ങൾക്ക് ഇമെയിൽ ചെയ്യാം. ഘട്ടങ്ങൾക്ക് {page} കാണുക."
-    },
-    "home.closer.title": {
-      "en": "Explore Milton Keynes pickup points.",
-      "text": "Milton Keynes പിക്കപ്പ് പോയിന്റുകൾ നോക്കുക."
-    },
-    "home.closer.body": {
-      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
-      "text": "Milton Keynes-ലെ യഥാർത്ഥ പിക്കപ്പ് പോയിന്റുകൾ നോക്കുക. ഒരു സ്ഥലം കണ്ടെത്തി റിപ്പോർട്ട് സ്ക്രീൻ ശ്രമിക്കുക. നിങ്ങൾ ടാപ്പ് ചെയ്യുന്നതൊന്നും അയയ്ക്കില്ല."
     },
     "home.closer.cta": {
       "en": "Open the live preview",

@@ -130,26 +130,6 @@
       "en": "Try the live preview",
       "text": "Tijaabi horudhaca tooska ah"
     },
-    "home.scale.title": {
-      "en": "See how long you may wait.",
-      "text": "Eeg inta aad sugi karto."
-    },
-    "home.scale.body": {
-      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
-      "text": "Darawaladu waxay sheegaan intay sugeen. Sugida hadda waxay ka timaadaa warbixinada 2 saacadood ee u dambeeyay. Si dhakhso ah ayaad u arki kartaa meelaha qaadista ee degdega ah iyo kuwa gaabiska ah."
-    },
-    "home.live.aria": {
-      "en": "Live PickupRadar app preview with real Milton Keynes data",
-      "text": "Horudhac toos ah oo app PickupRadar ah oo leh xog dhab ah oo Milton Keynes"
-    },
-    "home.live.title": {
-      "en": "Try PickupRadar with real Milton Keynes data.",
-      "text": "Tijaabi PickupRadar xog dhab ah oo Milton Keynes."
-    },
-    "home.live.body": {
-      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
-      "text": "Eeg meelo qaadis dhab ah oo Milton Keynes ah. Hubi sugitaanka dhow, ama {likelyFast} iyo {likelySlow}. Waxaad tijaabin kartaa shaashadda warbixinta, laakiin waxba lama diro."
-    },
     "home.try.tabLead": {
       "en": "Pick a tab.",
       "text": "Dooro tab."
@@ -173,10 +153,6 @@
     "home.try.open": {
       "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
       "text": "{lead} Shaashadda {reportWait} ayaa furmaysa. Dooro wakhti sugitaan. Waxba lama diro."
-    },
-    "home.live.big": {
-      "en": "Open the big preview",
-      "text": "Fur horudhaca weyn"
     },
     "home.signals.title": {
       "en": "What you can see before you go in",
@@ -210,25 +186,9 @@
       "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
       "text": "Darawaladu waxay taabtaan {reportProblem} si ay u sheegaan. Warbixinta waxaad arkaa ka hor intaadan u kaxayn."
     },
-    "home.signals.tablet.body": {
-      "en": "See when drivers report that a restaurant's tablet or system is not working.",
-      "text": "Eeg marka darawaladu sheegaan in tablet-ka ama nidaamka maqaayaddu aanu shaqaynayn."
-    },
-    "home.signals.arrival.title": {
-      "en": "Order starts after arrival",
-      "text": "Dalabku wuxuu bilaabmaa kadib imaanshaha"
-    },
-    "home.signals.arrival.body": {
-      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
-      "text": "Meelaha qaar dalabka waxay bilaabaan markaad timaado. Darawaladu way shidi karaan markay warbixinayaan."
-    },
     "home.signals.missing.title": {
       "en": "Missing or wrong pickup points",
       "text": "Meelo qaadis oo maqan ama qaldan"
-    },
-    "home.signals.missing.body": {
-      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
-      "text": "Meel qaadis ma maqan tahay? Taabo {suggest}. Wax ma qaldan yihiin? Taabo {reportProblem}, kadib {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} ama {closedPermanently}."
     },
     "home.how.intro": {
       "en": "Three easy steps. Reporting takes a few seconds.",
@@ -262,10 +222,6 @@
       "en": "Earn {radarPoints}",
       "text": "Hel {radarPoints}"
     },
-    "home.points.body": {
-      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
-      "text": "Taabo {reportWait} si aad u hesho {radarPoints}. Waad bilaabi kartaa xisaab la'aan. Ku ilaali {radarPoints} iimaylkaaga, si ay u badbaadaan haddii aad bedesho ama aad dib u dejiso telefoonka. Eray sir looma baahna. App-ku wuxuu kuu soo diraa koodh 6 lambar ah iimayl ahaan."
-    },
     "home.points.noteSoon": {
       "en": "Rewards coming soon.",
       "text": "Abaalmarinno dhowaan."
@@ -285,34 +241,6 @@
     "home.points.neededHelp": {
       "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
       "text": "Meel qaadis oo u qalanta oo kuu dhow, sugitaan dhow lahayn, {likelyFast} ama {likelySlow} lahayn. Warbixinta waxaad ku heshaa 15 RP halkii 10."
-    },
-    "home.points.firstLine": {
-      "en": "{firstBonus}{help}",
-      "text": "{firstBonus}{help}"
-    },
-    "home.points.firstHelp": {
-      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
-      "text": "Dhibco dheeraad ah warbixintaada sugitaanka ee saxda ah ee koowaad. Haddii ay sidoo kale tahay {reportNeeded}, waxaad wadarta ku heshaa 25 RP."
-    },
-    "home.points.approvedLine": {
-      "en": "{approved}{help}",
-      "text": "{approved}{help}"
-    },
-    "home.points.approvedHelp": {
-      "en": "When we approve a pickup point you suggest",
-      "text": "Markaan oggolaano meel qaadis aad soo jeedisay"
-    },
-    "home.points.referralLine": {
-      "en": "{referral}{help}",
-      "text": "{referral}{help}"
-    },
-    "home.points.referralHelp": {
-      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
-      "text": "Midkiin ba wuu helaa marka saaxiibkaa sameeyo 3 warbixin oo sugitaan sax ah, ugu yaraan 2 maalmood oo kala duwan (waqtiga UTC), 2 meelood oo qaadis ah oo kala duwan. Labadiinnuba waxaad u baahan tihiin xisaabo Radar oo la ilaaliyay (ku dar iimaylka). Saaxiibkaa waa inuu geliyaa koodhkaaga ka hor warbixinta sugitaanka ee saxda ah ee koowaad."
-    },
-    "home.points.referralEach": {
-      "en": "{referralRp} each",
-      "text": "{referralRp} midkiiba"
     },
     "home.cities.body": {
       "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
@@ -350,22 +278,6 @@
       "en": "{lead} No names, addresses or order numbers.",
       "text": "{lead} Magacyo, cinwaanno ama nambar dalab ma jiraan."
     },
-    "home.trust.skipLead": {
-      "en": "You can skip the delivery app.",
-      "text": "Waad ka boodi kartaa app-ka gaarsiinta."
-    },
-    "home.trust.skip": {
-      "en": "{lead} Choosing the delivery app is optional.",
-      "text": "{lead} Doorashada app-ka gaarsiinta waa ikhtiyaar."
-    },
-    "home.trust.controlLead": {
-      "en": "You are in control.",
-      "text": "Adiga ayaa xukuma."
-    },
-    "home.trust.control": {
-      "en": "{lead} Delete your account or Radar profile in the app at any time.",
-      "text": "{lead} Xisaabta ama astaanta Radar ka tirtir app-ka wakhti kasta."
-    },
     "home.faq.title": {
       "en": "Questions from drivers",
       "text": "Su'aalaha darawalada"
@@ -377,18 +289,6 @@
     "home.faq.account.a": {
       "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
       "text": "Maya. App-ku wuxuu si toos ah ku siinayaa astaanta Radar. Sugitaanka isla markiiba waad sheegi kartaa. Si aad u ilaaliso {radarPoints}, iimaylka dib u dar. Eray sir looma baahna. App-ku wuxuu kuu soo diraa koodh 6 lambar ah iimayl ahaan."
-    },
-    "home.faq.where.q": {
-      "en": "Where does PickupRadar work?",
-      "text": "PickupRadar xaggee buu ka shaqeeyaa?"
-    },
-    "home.faq.where.a": {
-      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
-      "text": "PickupRadar hadda wuxuu ka shaqeeyaa Milton Keynes. Xigta waa London. Kadib magaalooyin kale, sida Manchester, Birmingham, Leeds, Liverpool iyo Glasgow. Eeg {cities}."
-    },
-    "home.faq.where.cities": {
-      "en": "all the cities",
-      "text": "dhammaan magaalooyinka"
     },
     "home.faq.download.q": {
       "en": "When can I download the app?",
@@ -402,22 +302,6 @@
       "en": "live preview",
       "text": "horudhaca tooska ah"
     },
-    "home.faq.wait.q": {
-      "en": "How is the current wait worked out?",
-      "text": "Sidee loo xisaabiyaa sugida hadda?"
-    },
-    "home.faq.wait.a": {
-      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
-      "text": "Waxay ka timaadaa warbixinada darawalada ee 2 saacadood ee u dambeeyay. Warbixinada ka weyn 2 saacadood ma beddelaan sugida hadda."
-    },
-    "home.faq.likely.q": {
-      "en": "What do {likelyFast} and {likelySlow} mean?",
-      "text": "Maxay yihiin {likelyFast} iyo {likelySlow}?"
-    },
-    "home.faq.likely.a": {
-      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
-      "text": "Kuwani waa qiyaas, ma aha warbixin toos ah. Waxay soo baxaan marka warbixin sugitaan dhow aanay jirin."
-    },
     "home.faq.track.q": {
       "en": "Does it track my location?",
       "text": "Ma daba gashaa goobtayda?"
@@ -429,22 +313,6 @@
     "home.faq.track.privacy": {
       "en": "privacy policy",
       "text": "siyaasadda asturnaanta"
-    },
-    "home.faq.delete.q": {
-      "en": "How do I delete my data?",
-      "text": "Sideen u tirtiraa xogtayda?"
-    },
-    "home.faq.delete.a": {
-      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
-      "text": "App-ka, fur {profile}. Taabo {deleteAccount}. Haddii aadan ku darin iimayl, taabo {deleteProfile}. Waxaad sidoo kale noo soo diri kartaa iimayl. Eeg {page} tallaabooyinka."
-    },
-    "home.closer.title": {
-      "en": "Explore Milton Keynes pickup points.",
-      "text": "Baadh meelaha qaadista ee Milton Keynes."
-    },
-    "home.closer.body": {
-      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
-      "text": "Baadh meelo qaadis dhab ah oo Milton Keynes ah. Raadi meel oo tijaabi shaashadda warbixinta. Waxa aad taabato lama diro."
     },
     "home.closer.cta": {
       "en": "Open the live preview",

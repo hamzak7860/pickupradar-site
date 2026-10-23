@@ -31,7 +31,7 @@
   </script>
   <link rel="preload" href="/assets/fonts/archivo-latin-variable.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="preview.css?v=20261021g" />
-  <link rel="stylesheet" href="/site.css?v=20261023a" />
+  <link rel="stylesheet" href="/site.css?v=20261023b" />
 </head>
 <body class="page-home" data-site-i18n-page>
   <a class="w-skip" href="#main" data-site-i18n="shared.skip">Skip to content</a>
@@ -69,7 +69,7 @@
             Avoid long waits. Tap Report wait and earn RadarPoints. No sign-up needed.
           </p>
           <div class="w-actions">
-            <a class="w-btn w-btn-go" href="#try-it" data-site-i18n="home.hero.try">Try it with real data</a>
+            <a class="w-btn w-btn-go" href="/app.html" data-site-i18n="home.hero.try">Try it with real data</a>
             <a class="w-btn w-btn-quiet" href="#how-it-works" data-site-i18n="shared.term.how">How it works</a>
           </div>
           <ul class="w-meta" data-site-i18n-aria="home.hero.availability" aria-label="Availability">
@@ -116,56 +116,8 @@
                 </div>
               </div>
             </div>
-            <figcaption class="w-example-caption" data-site-i18n="home.example.caption">Example screen. These are sample wait times, not live reports. <a href="#try-it" data-site-slot="live" data-site-i18n="home.example.live">Try the live preview</a> with real data.</figcaption>
+            <figcaption class="w-example-caption" data-site-i18n="home.example.caption">Example screen. These are sample wait times, not live reports. <a href="/app.html" data-site-slot="live" data-site-i18n="home.example.live">Try the live preview</a> with real data.</figcaption>
           </figure>
-        </div>
-      </div>
-    </section>
-
-    <section class="w-scale-band" aria-labelledby="scale-title">
-      <div class="w-wrap w-scale-grid">
-        <div>
-          <h2 class="w-h2" id="scale-title" data-site-i18n="home.scale.title">See how long you may wait.</h2>
-          <p class="w-text" data-site-i18n="home.scale.body">
-            Drivers report how long they waited. The current wait comes from reports in the last 2 hours.
-            You can see fast and slow pickups quickly.
-          </p>
-        </div>
-        <div>
-          <ul class="w-scale" data-site-i18n-aria="shared.scale.aria" aria-label="Wait ranges">
-            <li><span class="w-bar"></span><strong data-site-i18n="shared.term.under5">&lt;5 min</strong><span data-site-i18n="shared.scale.quick">Quick</span></li>
-            <li><span class="w-bar"></span><strong data-site-i18n="shared.term.fiveToTen">5&ndash;10 min</strong><span data-site-i18n="shared.scale.short">Short wait</span></li>
-            <li><span class="w-bar"></span><strong data-site-i18n="shared.term.tenToFifteen">10&ndash;15 min</strong><span data-site-i18n="shared.scale.long">Long wait</span></li>
-            <li><span class="w-bar"></span><strong data-site-i18n="shared.term.fifteenPlus">15+ min</strong><span data-site-i18n="shared.scale.veryLong">Very long wait</span></li>
-          </ul>
-          <div class="w-estimates">
-            <span data-site-i18n="shared.scale.estimate">No recent reports? PickupRadar may show Likely fast or Likely slow:</span>
-            <span class="w-pill w-pill-fast" data-site-i18n="shared.term.likelyFast">Likely fast</span>
-            <span class="w-pill w-pill-slow" data-site-i18n="shared.term.likelySlow">Likely slow</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="w-section w-live" id="try-it" aria-labelledby="live-title">
-      <div class="w-wrap w-live-grid">
-        <div class="w-live-copy">
-          <h2 class="w-h2" id="live-title" data-site-i18n="home.live.title">Try PickupRadar with real Milton Keynes data.</h2>
-          <p class="w-text" data-site-i18n="home.live.body">
-            See real pickup points in Milton Keynes. Check recent waits, or Likely fast and Likely slow.
-            You can try the report screen, but nothing is sent.
-          </p>
-          <ol class="w-try">
-            <li><span data-site-i18n="home.try.tab"><strong data-site-slot="lead" data-site-i18n="home.try.tabLead">Pick a tab.</strong> Use Nearby to find pickup points close to you when location is on. Use Fast and Slow to check waits and estimates.</span></li>
-            <li><span data-site-i18n="home.try.search"><strong data-site-slot="lead" data-site-i18n="home.try.searchLead">Search pickup points.</strong> Try a name, area or postcode, like KFC or Bletchley.</span></li>
-            <li><span data-site-i18n="home.try.open"><strong data-site-slot="lead" data-site-i18n="home.try.openLead">Open a pickup point.</strong> The Report wait screen opens. Choose a wait time. Nothing is sent.</span></li>
-          </ol>
-          <div class="w-actions">
-            <a class="w-btn w-btn-quiet" href="/app.html" data-site-i18n="home.live.big">Open the big preview</a>
-          </div>
-        </div>
-        <div class="w-stage">
-          <div id="live-preview" data-site-i18n-aria="home.live.aria" aria-label="Live PickupRadar app preview with real Milton Keynes data"></div>
         </div>
       </div>
     </section>
@@ -207,36 +159,6 @@
               </div>
             </div>
           </li>
-          <li class="w-signal">
-            <span class="w-icon" style="--tone:#e7a85b;--tone-bg:rgba(231,168,91,0.11);--tone-line:rgba(231,168,91,0.38)"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M7 2.5h10a2.5 2.5 0 0 1 2.5 2.5v14a2.5 2.5 0 0 1-2.5 2.5H7A2.5 2.5 0 0 1 4.5 19V5A2.5 2.5 0 0 1 7 2.5zm0 2a.5.5 0 0 0-.5.5v11.5h11V5a.5.5 0 0 0-.5-.5zm5 13.2a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2z"/></svg></span>
-            <div>
-              <div class="w-signal-ui"><span class="w-pill w-pill-warn" data-site-i18n="shared.term.systemIssue">Tablet/server issue reported</span></div>
-              <div>
-                <h3 class="w-h3" data-site-i18n="shared.term.systemIssue">Tablet/server issue reported</h3>
-                <p data-site-i18n="home.signals.tablet.body">See when drivers report that a restaurant's tablet or system is not working.</p>
-              </div>
-            </div>
-          </li>
-          <li class="w-signal">
-            <span class="w-icon" style="--tone:#ffb6ba;--tone-bg:rgba(255,182,186,0.09);--tone-line:rgba(255,182,186,0.3)"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M8.2 2.3v7.1c0 1.1-.8 2-1.9 2.2V21H4.6v-9.4c-1.1-.2-1.9-1.1-1.9-2.2V2.3h1.6v6.1h1.2V2.3h1.5v6.1h1.2V2.3zm8.1 0c2.2 0 3.9 3.3 3.9 7.1s-1.7 7.1-3.9 7.1V21h-1.7V2.3h1.7z"/></svg></span>
-            <div>
-              <div class="w-signal-ui"><span class="w-pill w-pill-warn" data-site-i18n="shared.term.madeOnArrival">Made when driver arrives</span></div>
-              <div>
-                <h3 class="w-h3" data-site-i18n="home.signals.arrival.title">Order starts after arrival</h3>
-                <p data-site-i18n="home.signals.arrival.body">Some places only start the order when you arrive. Drivers can turn this on when they report.</p>
-              </div>
-            </div>
-          </li>
-          <li class="w-signal">
-            <span class="w-icon" style="--tone:#8fd0ff;--tone-bg:rgba(143,208,255,0.11);--tone-line:rgba(143,208,255,0.35)"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2.2A6.8 6.8 0 0 0 5.2 9c0 4.9 5.3 10.7 6.3 11.6a.8.8 0 0 0 1 0C13.5 19.7 18.8 13.9 18.8 9A6.8 6.8 0 0 0 12 2.2zm.9 3.3v2.6h2.6v1.8h-2.6v2.6h-1.8V9.9H8.5V8.1h2.6V5.5z"/></svg></span>
-            <div>
-              <div class="w-signal-ui"><span class="w-pill w-pill-rp" data-site-i18n="shared.term.suggest">Suggest pickup point</span></div>
-              <div>
-                <h3 class="w-h3" data-site-i18n="home.signals.missing.title">Missing or wrong pickup points</h3>
-                <p data-site-i18n="home.signals.missing.body">Missing a pickup point? Tap Suggest pickup point. Something wrong? Tap Report a problem, then Other issue: Wrong address, Wrong branch/name, Duplicate venue or Permanently closed.</p>
-              </div>
-            </div>
-          </li>
         </ul>
       </div>
     </section>
@@ -269,18 +191,11 @@
       <div class="w-wrap w-points-grid">
         <div>
           <h2 class="w-h2" id="points-title" data-site-i18n="home.points.title">Earn RadarPoints</h2>
-          <p class="w-text" data-site-i18n="home.points.body">
-            Tap Report wait to earn RadarPoints. You can start without an account. Protect your RadarPoints with your email,
-            so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.
-          </p>
           <p class="w-note"><span data-site-i18n="home.points.note"><strong data-site-slot="soon" data-site-i18n="home.points.noteSoon">Rewards coming soon.</strong> You can't redeem RadarPoints yet.</span></p>
         </div>
         <ul class="w-ledger" data-site-i18n-aria="home.points.aria" aria-label="How to earn RadarPoints">
           <li><span data-site-i18n="shared.term.waitReport">Valid wait report</span><span class="w-pill w-pill-rp" data-site-i18n="shared.term.waitRp">+10 RP</span></li>
           <li><span data-site-i18n="home.points.neededLine">Report needed<small data-site-slot="help" data-site-i18n="home.points.neededHelp">An eligible pickup point near you with no recent wait and no Likely fast or Likely slow. You earn 15 RP for the report instead of 10.</small></span><span class="w-pill w-pill-rp" data-site-i18n="shared.term.neededRp">+15 RP</span></li>
-          <li><span data-site-i18n="home.points.firstLine">First report bonus<small data-site-slot="help" data-site-i18n="home.points.firstHelp">Extra points on your first valid wait report. If it is also Report needed, you earn 25 RP in total.</small></span><span class="w-pill w-pill-rp" data-site-i18n="shared.term.firstRp">+10 RP extra</span></li>
-          <li><span data-site-i18n="home.points.approvedLine">Pickup point approved<small data-site-slot="help" data-site-i18n="home.points.approvedHelp">When we approve a pickup point you suggest</small></span><span class="w-pill w-pill-rp" data-site-i18n="shared.term.approvedRp">+20 RP</span></li>
-          <li><span data-site-i18n="home.points.referralLine">Driver referral<small data-site-slot="help" data-site-i18n="home.points.referralHelp">You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.</small></span><span class="w-pill w-pill-rp" data-site-i18n="home.points.referralEach">+50 RP each</span></li>
         </ul>
       </div>
     </section>
@@ -346,14 +261,6 @@
             <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M9.6 16.6 5.3 12.3l-1.4 1.4 5.7 5.7L20.1 8.9l-1.4-1.4z"/></svg>
             <span data-site-i18n="home.trust.details"><strong data-site-slot="lead" data-site-i18n="home.trust.detailsLead">No customer or order details.</strong> No names, addresses or order numbers.</span>
           </li>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M9.6 16.6 5.3 12.3l-1.4 1.4 5.7 5.7L20.1 8.9l-1.4-1.4z"/></svg>
-            <span data-site-i18n="home.trust.skip"><strong data-site-slot="lead" data-site-i18n="home.trust.skipLead">You can skip the delivery app.</strong> Choosing the delivery app is optional.</span>
-          </li>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M9.6 16.6 5.3 12.3l-1.4 1.4 5.7 5.7L20.1 8.9l-1.4-1.4z"/></svg>
-            <span data-site-i18n="home.trust.control"><strong data-site-slot="lead" data-site-i18n="home.trust.controlLead">You are in control.</strong> Delete your account or Radar profile in the app at any time.</span>
-          </li>
         </ul>
       </div>
     </section>
@@ -367,42 +274,17 @@
             <div><p data-site-i18n="home.faq.account.a">No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your RadarPoints, add your email later. No password needed. The app emails you a 6-digit code.</p></div>
           </details>
           <details>
-            <summary data-site-i18n="home.faq.where.q">Where does PickupRadar work?</summary>
-            <div><p data-site-i18n="home.faq.where.a">PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See <a href="#cities" data-site-slot="cities" data-site-i18n="home.faq.where.cities">all the cities</a>.</p></div>
-          </details>
-          <details>
             <summary data-site-i18n="home.faq.download.q">When can I download the app?</summary>
             <div><p data-site-i18n="home.faq.download.a">The iPhone and Android apps are coming soon. For now, the <a href="/app.html" data-site-slot="preview" data-site-i18n="home.faq.download.link">live preview</a> shows real Milton Keynes pickup points and waits.</p></div>
-          </details>
-          <details>
-            <summary data-site-i18n="home.faq.wait.q">How is the current wait worked out?</summary>
-            <div><p data-site-i18n="home.faq.wait.a">It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.</p></div>
-          </details>
-          <details>
-            <summary data-site-i18n="home.faq.likely.q">What do Likely fast and Likely slow mean?</summary>
-            <div><p data-site-i18n="home.faq.likely.a">These are estimates, not live reports. They appear when there are no recent wait reports.</p></div>
           </details>
           <details>
             <summary data-site-i18n="home.faq.track.q">Does it track my location?</summary>
             <div><p data-site-i18n="home.faq.track.a">No background tracking. The app uses your location while you use it, to show nearby pickup points and check you are at a pickup point when reporting. The website asks for location only when you choose to use it. Read the <a href="/privacy.html" data-site-slot="privacy" data-site-i18n="home.faq.track.privacy">privacy policy</a> for more.</p></div>
           </details>
-          <details>
-            <summary data-site-i18n="home.faq.delete.q">How do I delete my data?</summary>
-            <div><p data-site-i18n="home.faq.delete.a">In the app, open Profile. Tap Delete account. If you did not add an email, tap Delete Radar profile. You can also email us. See <a href="/delete-account.html" data-site-slot="page" data-site-i18n="shared.term.deleteAccount">Delete account</a> for the steps.</p></div>
-          </details>
         </div>
       </div>
     </section>
 
-    <section class="w-wrap" aria-labelledby="closer-title">
-      <div class="w-closer">
-        <h2 class="w-h2" id="closer-title" data-site-i18n="home.closer.title">Explore Milton Keynes pickup points.</h2>
-        <p class="w-text" data-site-i18n="home.closer.body">Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.</p>
-        <div class="w-actions">
-          <a class="w-btn w-btn-go" href="/app.html" data-site-i18n="home.closer.cta">Open the live preview</a>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="w-footer">
@@ -442,15 +324,6 @@
   </footer>
 
   <script src="pickupradar-logic.js?v=5dcfec4"></script>
-  <script src="/site.js?v=20261023a"></script>
-  <script src="preview.js?v=20261022c"></script>
-  <script>
-    mountPickupRadarPreview(document.getElementById('live-preview'), {
-      compact: true,
-      resetOnLoad: true,
-      howItWorksScrollTo: '#how-it-works',
-      supportMode: 'link',
-    });
-  </script>
+  <script src="/site.js?v=20261023b"></script>
 </body>
 </html>

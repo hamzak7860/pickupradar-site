@@ -130,26 +130,6 @@
       "en": "Try the live preview",
       "text": "Gezaako okulaba obulamu"
     },
-    "home.scale.title": {
-      "en": "See how long you may wait.",
-      "text": "Laba obudde ki bw'oyinza okulinda."
-    },
-    "home.scale.body": {
-      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
-      "text": "Ba draywa baloopa bbanga ki lwe balinda. Obudde bw'okulinda obwa kati buva mu lipoota ez'essaawa 2 eziyise. Olabira amangu ebifo eby'okuyingiza ebyangu n'ebigenda mpola."
-    },
-    "home.live.aria": {
-      "en": "Live PickupRadar app preview with real Milton Keynes data",
-      "text": "Okulaba obulamu kw'app ya PickupRadar n'ebikwata ku bituufu ebya Milton Keynes"
-    },
-    "home.live.title": {
-      "en": "Try PickupRadar with real Milton Keynes data.",
-      "text": "Gezaako PickupRadar n'ebikwata ku bituufu ebya Milton Keynes."
-    },
-    "home.live.body": {
-      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
-      "text": "Laba ebifo eby'okuyingiza ebya ddala mu Milton Keynes. Kebera obudde obupya obw'okulinda, oba {likelyFast} ne {likelySlow}. Oyinz'okugezesa olutimbe lw'okuloopa, naye tewali kintu kigenda."
-    },
     "home.try.tabLead": {
       "en": "Pick a tab.",
       "text": "Londa tabu."
@@ -173,10 +153,6 @@
     "home.try.open": {
       "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
       "text": "{lead} Olutimbe {reportWait} lugulawo. Londa obudde bw'okulinda. Tewali kintu kigenda."
-    },
-    "home.live.big": {
-      "en": "Open the big preview",
-      "text": "Ggulawo okulaba okunene"
     },
     "home.signals.title": {
       "en": "What you can see before you go in",
@@ -210,25 +186,9 @@
       "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
       "text": "Ba draywa banyiga {reportProblem} okuloopa kino. Olaba lipoota nga tonnagenda eyo."
     },
-    "home.signals.tablet.body": {
-      "en": "See when drivers report that a restaurant's tablet or system is not working.",
-      "text": "Laba nga ba draywa baloopa nti tabuleti oba sisitemu ya restulooni teyikola."
-    },
-    "home.signals.arrival.title": {
-      "en": "Order starts after arrival",
-      "text": "Ooda etandika ng'otuuse"
-    },
-    "home.signals.arrival.body": {
-      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
-      "text": "Ebifo ebimu bitandika ooda lwokka ng'otuuse. Ba draywa bayinza okukukoleesa nga baloopa."
-    },
     "home.signals.missing.title": {
       "en": "Missing or wrong pickup points",
       "text": "Ekifo ky'okuyingiza ekibula oba ekikyamu"
-    },
-    "home.signals.missing.body": {
-      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
-      "text": "Ekifo ky'okuyingiza tekiriwo? Nyiga {suggest}. Waliwo ekikyamu? Nyiga {reportProblem}, oluvannyuma {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} oba {closedPermanently}."
     },
     "home.how.intro": {
       "en": "Three easy steps. Reporting takes a few seconds.",
@@ -262,10 +222,6 @@
       "en": "Earn {radarPoints}",
       "text": "Funa {radarPoints}"
     },
-    "home.points.body": {
-      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
-      "text": "Nyiga {reportWait} ofune {radarPoints}. Oyinz'okutandika nga tolina akawunti. Kuuma {radarPoints} n'email basigale bulungi bw'okyusa oba nga oddiza essimu. Tewali kkoodi. App eweereza kkoodi ey'ennamba 6 ku email."
-    },
     "home.points.noteSoon": {
       "en": "Rewards coming soon.",
       "text": "Ebirabo bijja."
@@ -285,34 +241,6 @@
     "home.points.neededHelp": {
       "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
       "text": "Ekifo ky'okuyingiza ekituukiridde okumpi naawe, tewali budde bupya obw'okulinda, era tewali {likelyFast} oba {likelySlow}. Ofuna 15 RP ku lipoota eyo, si 10."
-    },
-    "home.points.firstLine": {
-      "en": "{firstBonus}{help}",
-      "text": "{firstBonus}{help}"
-    },
-    "home.points.firstHelp": {
-      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
-      "text": "Obubonero obw'okwongerako ku lipoota esooka entuufu ey'okulinda. Bw'eba era {reportNeeded}, ofuna 25 RP omugatte."
-    },
-    "home.points.approvedLine": {
-      "en": "{approved}{help}",
-      "text": "{approved}{help}"
-    },
-    "home.points.approvedHelp": {
-      "en": "When we approve a pickup point you suggest",
-      "text": "Bwe tukkiriza ekifo ky'okuyingiza kye wasemba"
-    },
-    "home.points.referralLine": {
-      "en": "{referral}{help}",
-      "text": "{referral}{help}"
-    },
-    "home.points.referralHelp": {
-      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
-      "text": "Mmwe bombi mufuna bwe mukwano gwo akola lipoota 3 entuufu ez'okulinda, ku nnaku ez'enjawulo waakiri 2 (essaawa ya UTC), ku bifo eby'okuyingiza eby'enjawulo 2. Mmwe bombi mwetaaga akawunti za Radar ezikuumiddwa (yongerako email). Mukwano gwo alina okuteeka kkoodi yo nga tannakola lipoota esooka entuufu ey'okulinda."
-    },
-    "home.points.referralEach": {
-      "en": "{referralRp} each",
-      "text": "{referralRp} buli omu"
     },
     "home.cities.body": {
       "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
@@ -350,22 +278,6 @@
       "en": "{lead} No names, addresses or order numbers.",
       "text": "{lead} Tewali linnya, endagiriro oba ennamba y'ooda."
     },
-    "home.trust.skipLead": {
-      "en": "You can skip the delivery app.",
-      "text": "Oyinza okubuuka app y'okutuusa."
-    },
-    "home.trust.skip": {
-      "en": "{lead} Choosing the delivery app is optional.",
-      "text": "{lead} Okulonda app y'okutuusa ky'oyagala."
-    },
-    "home.trust.controlLead": {
-      "en": "You are in control.",
-      "text": "Ggwe ofuga."
-    },
-    "home.trust.control": {
-      "en": "{lead} Delete your account or Radar profile in the app at any time.",
-      "text": "{lead} Sangula akawunti oba purofayiro ya Radar mu app essaawa yonna."
-    },
     "home.faq.title": {
       "en": "Questions from drivers",
       "text": "Ebibuuzo bya ba draywa"
@@ -377,18 +289,6 @@
     "home.faq.account.a": {
       "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
       "text": "Nedda. App ekuwa purofayiro ya Radar yokka. Oyinza okuloopa obudde bw'okulinda amangu. Okukuuma {radarPoints}, yongerako email oluvannyuma. Tewali kkoodi. App eweereza kkoodi ey'ennamba 6 ku email."
-    },
-    "home.faq.where.q": {
-      "en": "Where does PickupRadar work?",
-      "text": "PickupRadar akola wa?"
-    },
-    "home.faq.where.a": {
-      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
-      "text": "PickupRadar akola mu Milton Keynes kati. Eddako London. Oluvannyuma ebibuga ebirala, ng'ekyokulabirako Manchester, Birmingham, Leeds, Liverpool ne Glasgow. Laba {cities}."
-    },
-    "home.faq.where.cities": {
-      "en": "all the cities",
-      "text": "ebibuga byonna"
     },
     "home.faq.download.q": {
       "en": "When can I download the app?",
@@ -402,22 +302,6 @@
       "en": "live preview",
       "text": "okulaba obulamu"
     },
-    "home.faq.wait.q": {
-      "en": "How is the current wait worked out?",
-      "text": "Obudde bw'okulinda obwa kati bubalibwa butya?"
-    },
-    "home.faq.wait.a": {
-      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
-      "text": "Buva mu lipoota za ba draywa ez'essaawa 2 eziyise. Lipoota ezisinga essaawa 2 tezikyusa budde bw'okulinda obwa kati."
-    },
-    "home.faq.likely.q": {
-      "en": "What do {likelyFast} and {likelySlow} mean?",
-      "text": "{likelyFast} ne {likelySlow} kitegeeza ki?"
-    },
-    "home.faq.likely.a": {
-      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
-      "text": "Kuteebereza, si lipoota z'obulamu. Birabika nga tewali lipoota mpya ey'okulinda."
-    },
     "home.faq.track.q": {
       "en": "Does it track my location?",
       "text": "Kino kigoberera ekifo kyange?"
@@ -429,22 +313,6 @@
     "home.faq.track.privacy": {
       "en": "privacy policy",
       "text": "enkola y'ebyekyama"
-    },
-    "home.faq.delete.q": {
-      "en": "How do I delete my data?",
-      "text": "Nsangula data yange ntya?"
-    },
-    "home.faq.delete.a": {
-      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
-      "text": "Mu app, ggulawo {profile}. Nyiga {deleteAccount}. Bw'oba tonnayongerako email, nyiga {deleteProfile}. Oyinza n'okutuwandiikira email. Laba {page} okumanya emitendera."
-    },
-    "home.closer.title": {
-      "en": "Explore Milton Keynes pickup points.",
-      "text": "Noonya ebifo eby'okuyingiza mu Milton Keynes."
-    },
-    "home.closer.body": {
-      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
-      "text": "Noonya ebifo eby'okuyingiza ebya ddala mu Milton Keynes. Noonya ekifo era ogezeese olutimbe lw'okuloopa. Kyonna ky'onyiga tekigenda."
     },
     "home.closer.cta": {
       "en": "Open the live preview",

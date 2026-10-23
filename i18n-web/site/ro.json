@@ -130,26 +130,6 @@
       "en": "Try the live preview",
       "text": "Încearcă previzualizarea live"
     },
-    "home.scale.title": {
-      "en": "See how long you may wait.",
-      "text": "Vezi cât poți aștepta."
-    },
-    "home.scale.body": {
-      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
-      "text": "Șoferii raportează cât au așteptat. Așteptarea curentă vine din rapoartele din ultimele 2 ore. Poți vedea rapid preluările rapide și lente."
-    },
-    "home.live.aria": {
-      "en": "Live PickupRadar app preview with real Milton Keynes data",
-      "text": "Previzualizare live a aplicației PickupRadar cu date reale din Milton Keynes"
-    },
-    "home.live.title": {
-      "en": "Try PickupRadar with real Milton Keynes data.",
-      "text": "Încearcă PickupRadar cu date reale din Milton Keynes."
-    },
-    "home.live.body": {
-      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
-      "text": "Vezi puncte de preluare reale din Milton Keynes. Verifică așteptările recente, sau {likelyFast} și {likelySlow}. Poți încerca ecranul de raportare, dar nu se trimite nimic."
-    },
     "home.try.tabLead": {
       "en": "Pick a tab.",
       "text": "Alege o filă."
@@ -173,10 +153,6 @@
     "home.try.open": {
       "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
       "text": "{lead} Se deschide ecranul {reportWait}. Alege un timp de așteptare. Nu se trimite nimic."
-    },
-    "home.live.big": {
-      "en": "Open the big preview",
-      "text": "Deschide previzualizarea mare"
     },
     "home.signals.title": {
       "en": "What you can see before you go in",
@@ -210,25 +186,9 @@
       "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
       "text": "Șoferii ating {reportProblem} ca să raporteze asta. Vezi raportul înainte să conduci acolo."
     },
-    "home.signals.tablet.body": {
-      "en": "See when drivers report that a restaurant's tablet or system is not working.",
-      "text": "Vezi când șoferii raportează că tableta sau sistemul unui restaurant nu funcționează."
-    },
-    "home.signals.arrival.title": {
-      "en": "Order starts after arrival",
-      "text": "Comanda începe după sosire"
-    },
-    "home.signals.arrival.body": {
-      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
-      "text": "Unele locuri încep comanda abia când ajungi. Șoferii pot activa asta când raportează."
-    },
     "home.signals.missing.title": {
       "en": "Missing or wrong pickup points",
       "text": "Puncte de preluare lipsă sau greșite"
-    },
-    "home.signals.missing.body": {
-      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
-      "text": "Lipsește un punct de preluare? Atinge {suggest}. Ceva greșit? Atinge {reportProblem}, apoi {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} sau {closedPermanently}."
     },
     "home.how.intro": {
       "en": "Three easy steps. Reporting takes a few seconds.",
@@ -262,10 +222,6 @@
       "en": "Earn {radarPoints}",
       "text": "Câștigă {radarPoints}"
     },
-    "home.points.body": {
-      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
-      "text": "Atinge {reportWait} ca să câștigi {radarPoints}. Poți începe fără cont. Protejează-ți {radarPoints} cu e-mailul, ca să rămână în siguranță dacă schimbi sau resetezi telefonul. Fără parolă. Aplicația îți trimite pe e-mail un cod de 6 cifre."
-    },
     "home.points.noteSoon": {
       "en": "Rewards coming soon.",
       "text": "Recompense în curând."
@@ -285,34 +241,6 @@
     "home.points.neededHelp": {
       "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
       "text": "Un punct de preluare eligibil aproape de tine, fără așteptare recentă și fără {likelyFast} sau {likelySlow}. Câștigi 15 RP pentru raport, în loc de 10."
-    },
-    "home.points.firstLine": {
-      "en": "{firstBonus}{help}",
-      "text": "{firstBonus}{help}"
-    },
-    "home.points.firstHelp": {
-      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
-      "text": "Puncte extra la primul raport de așteptare valid. Dacă este și {reportNeeded}, câștigi 25 RP în total."
-    },
-    "home.points.approvedLine": {
-      "en": "{approved}{help}",
-      "text": "{approved}{help}"
-    },
-    "home.points.approvedHelp": {
-      "en": "When we approve a pickup point you suggest",
-      "text": "Când aprobăm un punct de preluare pe care îl sugerezi"
-    },
-    "home.points.referralLine": {
-      "en": "{referral}{help}",
-      "text": "{referral}{help}"
-    },
-    "home.points.referralHelp": {
-      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
-      "text": "Fiecare câștigă când prietenul tău face 3 rapoarte de așteptare valide, în cel puțin 2 zile diferite (ora UTC), la 2 puncte de preluare diferite. Amândoi aveți nevoie de conturi Radar protejate (adăugați e-mailul). Prietenul tău trebuie să introducă codul tău înainte de primul raport de așteptare valid."
-    },
-    "home.points.referralEach": {
-      "en": "{referralRp} each",
-      "text": "{referralRp} fiecare"
     },
     "home.cities.body": {
       "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
@@ -350,22 +278,6 @@
       "en": "{lead} No names, addresses or order numbers.",
       "text": "{lead} Fără nume, adrese sau numere de comandă."
     },
-    "home.trust.skipLead": {
-      "en": "You can skip the delivery app.",
-      "text": "Poți sări peste aplicația de livrare."
-    },
-    "home.trust.skip": {
-      "en": "{lead} Choosing the delivery app is optional.",
-      "text": "{lead} Alegerea aplicației de livrare este opțională."
-    },
-    "home.trust.controlLead": {
-      "en": "You are in control.",
-      "text": "Tu ai controlul."
-    },
-    "home.trust.control": {
-      "en": "{lead} Delete your account or Radar profile in the app at any time.",
-      "text": "{lead} Șterge contul sau profilul Radar din aplicație oricând."
-    },
     "home.faq.title": {
       "en": "Questions from drivers",
       "text": "Întrebări de la șoferi"
@@ -377,18 +289,6 @@
     "home.faq.account.a": {
       "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
       "text": "Nu. Aplicația îți dă automat un profil Radar. Poți raporta așteptări imediat. Ca să-ți protejezi {radarPoints}, adaugă e-mailul mai târziu. Fără parolă. Aplicația îți trimite pe e-mail un cod de 6 cifre."
-    },
-    "home.faq.where.q": {
-      "en": "Where does PickupRadar work?",
-      "text": "Unde funcționează PickupRadar?"
-    },
-    "home.faq.where.a": {
-      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
-      "text": "PickupRadar funcționează acum în Milton Keynes. Urmează London. Apoi mai multe orașe, precum Manchester, Birmingham, Leeds, Liverpool și Glasgow. Vezi {cities}."
-    },
-    "home.faq.where.cities": {
-      "en": "all the cities",
-      "text": "toate orașele"
     },
     "home.faq.download.q": {
       "en": "When can I download the app?",
@@ -402,22 +302,6 @@
       "en": "live preview",
       "text": "previzualizarea live"
     },
-    "home.faq.wait.q": {
-      "en": "How is the current wait worked out?",
-      "text": "Cum se calculează așteptarea curentă?"
-    },
-    "home.faq.wait.a": {
-      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
-      "text": "Vine din rapoartele șoferilor din ultimele 2 ore. Rapoartele mai vechi de 2 ore nu afectează așteptarea curentă."
-    },
-    "home.faq.likely.q": {
-      "en": "What do {likelyFast} and {likelySlow} mean?",
-      "text": "Ce înseamnă {likelyFast} și {likelySlow}?"
-    },
-    "home.faq.likely.a": {
-      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
-      "text": "Sunt estimări, nu rapoarte live. Apar când nu există rapoarte recente de așteptare."
-    },
     "home.faq.track.q": {
       "en": "Does it track my location?",
       "text": "Îmi urmărește locația?"
@@ -429,22 +313,6 @@
     "home.faq.track.privacy": {
       "en": "privacy policy",
       "text": "politica de confidențialitate"
-    },
-    "home.faq.delete.q": {
-      "en": "How do I delete my data?",
-      "text": "Cum îmi șterg datele?"
-    },
-    "home.faq.delete.a": {
-      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
-      "text": "În aplicație, deschide {profile}. Atinge {deleteAccount}. Dacă nu ai adăugat un e-mail, atinge {deleteProfile}. Ne poți scrie și pe e-mail. Vezi {page} pentru pași."
-    },
-    "home.closer.title": {
-      "en": "Explore Milton Keynes pickup points.",
-      "text": "Explorează punctele de preluare din Milton Keynes."
-    },
-    "home.closer.body": {
-      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
-      "text": "Explorează puncte de preluare reale din Milton Keynes. Caută un loc și încearcă ecranul de raportare. Nimic din ce atingi nu se trimite."
     },
     "home.closer.cta": {
       "en": "Open the live preview",

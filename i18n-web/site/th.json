@@ -130,26 +130,6 @@
       "en": "Try the live preview",
       "text": "ลองตัวอย่างสด"
     },
-    "home.scale.title": {
-      "en": "See how long you may wait.",
-      "text": "ดูว่าคุณอาจต้องรอนานแค่ไหน"
-    },
-    "home.scale.body": {
-      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
-      "text": "คนขับรายงานว่าตัวเองรอนานเท่าไร เวลารอปัจจุบันมาจากรายงานใน 2 ชั่วโมงล่าสุด คุณเห็นจุดรับสินค้าที่เร็วและช้าได้เร็ว"
-    },
-    "home.live.aria": {
-      "en": "Live PickupRadar app preview with real Milton Keynes data",
-      "text": "ตัวอย่างสดของแอป PickupRadar ด้วยข้อมูลจริงจาก Milton Keynes"
-    },
-    "home.live.title": {
-      "en": "Try PickupRadar with real Milton Keynes data.",
-      "text": "ลอง PickupRadar ด้วยข้อมูลจริงจาก Milton Keynes"
-    },
-    "home.live.body": {
-      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
-      "text": "ดูจุดรับสินค้าจริงใน Milton Keynes ตรวจเวลารอล่าสุด หรือ {likelyFast} และ {likelySlow} คุณลองหน้าจอรายงานได้ แต่จะไม่มีการส่งข้อมูล"
-    },
     "home.try.tabLead": {
       "en": "Pick a tab.",
       "text": "เลือกแท็บ"
@@ -173,10 +153,6 @@
     "home.try.open": {
       "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
       "text": "{lead} หน้าจอ {reportWait} จะเปิดขึ้น เลือกเวลารอ จะไม่มีการส่งข้อมูล"
-    },
-    "home.live.big": {
-      "en": "Open the big preview",
-      "text": "เปิดตัวอย่างขนาดใหญ่"
     },
     "home.signals.title": {
       "en": "What you can see before you go in",
@@ -210,25 +186,9 @@
       "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
       "text": "คนขับแตะ {reportProblem} เพื่อรายงานเรื่องนี้ คุณเห็นรายงานก่อนขับรถไปที่นั่น"
     },
-    "home.signals.tablet.body": {
-      "en": "See when drivers report that a restaurant's tablet or system is not working.",
-      "text": "ดูเมื่อคนขับรายงานว่าแท็บเล็ตหรือระบบของร้านอาหารใช้ไม่ได้"
-    },
-    "home.signals.arrival.title": {
-      "en": "Order starts after arrival",
-      "text": "ออเดอร์เริ่มหลังคุณมาถึง"
-    },
-    "home.signals.arrival.body": {
-      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
-      "text": "บางร้านเริ่มทำออเดอร์เมื่อคุณมาถึงเท่านั้น คนขับเปิดตัวเลือกนี้ได้ตอนรายงาน"
-    },
     "home.signals.missing.title": {
       "en": "Missing or wrong pickup points",
       "text": "จุดรับสินค้าที่หายไปหรือไม่ถูกต้อง"
-    },
-    "home.signals.missing.body": {
-      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
-      "text": "ไม่มีจุดรับสินค้า? แตะ {suggest} มีอะไรผิด? แตะ {reportProblem} แล้วเลือก {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} หรือ {closedPermanently}"
     },
     "home.how.intro": {
       "en": "Three easy steps. Reporting takes a few seconds.",
@@ -262,10 +222,6 @@
       "en": "Earn {radarPoints}",
       "text": "รับ {radarPoints}"
     },
-    "home.points.body": {
-      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
-      "text": "แตะ {reportWait} เพื่อรับ {radarPoints} เริ่มได้โดยไม่มีบัญชี ปกป้อง {radarPoints} ด้วยอีเมล เพื่อให้ปลอดภัยถ้าคุณเปลี่ยนหรือรีเซ็ตโทรศัพท์ ไม่ต้องใช้รหัสผ่าน แอปส่งรหัส 6 หลักทางอีเมล"
-    },
     "home.points.noteSoon": {
       "en": "Rewards coming soon.",
       "text": "รางวัลจะมาเร็ว ๆ นี้"
@@ -285,34 +241,6 @@
     "home.points.neededHelp": {
       "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
       "text": "จุดรับสินค้าที่เข้าเงื่อนไขใกล้คุณ ไม่มีเวลารอล่าสุด และไม่มี {likelyFast} หรือ {likelySlow} คุณได้ 15 RP สำหรับรายงานนี้ แทนที่จะได้ 10"
-    },
-    "home.points.firstLine": {
-      "en": "{firstBonus}{help}",
-      "text": "{firstBonus}{help}"
-    },
-    "home.points.firstHelp": {
-      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
-      "text": "แต้มพิเศษสำหรับรายงานเวลารอที่ถูกต้องครั้งแรก ถ้าเป็น {reportNeeded} ด้วย คุณได้รวม 25 RP"
-    },
-    "home.points.approvedLine": {
-      "en": "{approved}{help}",
-      "text": "{approved}{help}"
-    },
-    "home.points.approvedHelp": {
-      "en": "When we approve a pickup point you suggest",
-      "text": "เมื่อเราอนุมัติจุดรับสินค้าที่คุณแนะนำ"
-    },
-    "home.points.referralLine": {
-      "en": "{referral}{help}",
-      "text": "{referral}{help}"
-    },
-    "home.points.referralHelp": {
-      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
-      "text": "คุณทั้งคู่ได้เมื่อเพื่อนทำรายงานเวลารอที่ถูกต้อง 3 ครั้ง ในอย่างน้อย 2 วันต่างกัน (เวลา UTC) ที่จุดรับสินค้า 2 แห่งที่ต่างกัน คุณทั้งคู่ต้องมีบัญชี Radar ที่ป้องกันไว้ (ใส่อีเมล) เพื่อนต้องใส่รหัสของคุณก่อนรายงานเวลารอที่ถูกต้องครั้งแรก"
-    },
-    "home.points.referralEach": {
-      "en": "{referralRp} each",
-      "text": "คนละ {referralRp}"
     },
     "home.cities.body": {
       "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
@@ -350,22 +278,6 @@
       "en": "{lead} No names, addresses or order numbers.",
       "text": "{lead} ไม่มีชื่อ ที่อยู่ หรือเลขออเดอร์"
     },
-    "home.trust.skipLead": {
-      "en": "You can skip the delivery app.",
-      "text": "คุณข้ามแอปส่งของได้"
-    },
-    "home.trust.skip": {
-      "en": "{lead} Choosing the delivery app is optional.",
-      "text": "{lead} การเลือกแอปส่งของเป็นทางเลือก"
-    },
-    "home.trust.controlLead": {
-      "en": "You are in control.",
-      "text": "คุณเป็นคนควบคุม"
-    },
-    "home.trust.control": {
-      "en": "{lead} Delete your account or Radar profile in the app at any time.",
-      "text": "{lead} ลบบัญชีหรือโปรไฟล์ Radar ในแอปได้ทุกเมื่อ"
-    },
     "home.faq.title": {
       "en": "Questions from drivers",
       "text": "คำถามจากคนขับ"
@@ -377,18 +289,6 @@
     "home.faq.account.a": {
       "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
       "text": "ไม่ต้อง แอปสร้างโปรไฟล์ Radar ให้โดยอัตโนมัติ คุณรายงานเวลารอได้ทันที เพื่อปกป้อง {radarPoints} ให้ใส่อีเมลทีหลัง ไม่ต้องใช้รหัสผ่าน แอปส่งรหัส 6 หลักทางอีเมล"
-    },
-    "home.faq.where.q": {
-      "en": "Where does PickupRadar work?",
-      "text": "PickupRadar ใช้ได้ที่ไหน"
-    },
-    "home.faq.where.a": {
-      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
-      "text": "ตอนนี้ PickupRadar ใช้ได้ที่ Milton Keynes ต่อไปคือ London จากนั้นมีเมืองเพิ่ม เช่น Manchester, Birmingham, Leeds, Liverpool และ Glasgow ดู {cities}"
-    },
-    "home.faq.where.cities": {
-      "en": "all the cities",
-      "text": "ทุกเมือง"
     },
     "home.faq.download.q": {
       "en": "When can I download the app?",
@@ -402,22 +302,6 @@
       "en": "live preview",
       "text": "ตัวอย่างสด"
     },
-    "home.faq.wait.q": {
-      "en": "How is the current wait worked out?",
-      "text": "เวลารอปัจจุบันคิดอย่างไร"
-    },
-    "home.faq.wait.a": {
-      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
-      "text": "มาจากรายงานของคนขับใน 2 ชั่วโมงล่าสุด รายงานที่เก่ากว่า 2 ชั่วโมงไม่เปลี่ยนเวลารอปัจจุบัน"
-    },
-    "home.faq.likely.q": {
-      "en": "What do {likelyFast} and {likelySlow} mean?",
-      "text": "{likelyFast} และ {likelySlow} หมายถึงอะไร"
-    },
-    "home.faq.likely.a": {
-      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
-      "text": "เป็นค่าประมาณ ไม่ใช่รายงานสด จะขึ้นเมื่อไม่มีรายงานเวลารอล่าสุด"
-    },
     "home.faq.track.q": {
       "en": "Does it track my location?",
       "text": "ติดตามตำแหน่งของฉันไหม"
@@ -429,22 +313,6 @@
     "home.faq.track.privacy": {
       "en": "privacy policy",
       "text": "นโยบายความเป็นส่วนตัว"
-    },
-    "home.faq.delete.q": {
-      "en": "How do I delete my data?",
-      "text": "ลบข้อมูลของฉันอย่างไร"
-    },
-    "home.faq.delete.a": {
-      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
-      "text": "ในแอป เปิด {profile} แตะ {deleteAccount} ถ้าไม่ได้ใส่อีเมล ให้แตะ {deleteProfile} คุณส่งอีเมลหาเราได้ ดูขั้นตอนที่ {page}"
-    },
-    "home.closer.title": {
-      "en": "Explore Milton Keynes pickup points.",
-      "text": "ดูจุดรับสินค้าใน Milton Keynes"
-    },
-    "home.closer.body": {
-      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
-      "text": "ดูจุดรับสินค้าจริงใน Milton Keynes ค้นหาสถานที่แล้วลองหน้าจอรายงาน สิ่งที่คุณแตะจะไม่ถูกส่ง"
     },
     "home.closer.cta": {
       "en": "Open the live preview",

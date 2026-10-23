@@ -130,26 +130,6 @@
       "en": "Try the live preview",
       "text": "लाइभ प्रिभ्यू प्रयास गर्नुहोस्"
     },
-    "home.scale.title": {
-      "en": "See how long you may wait.",
-      "text": "तपाईं कति पर्खन सक्नुहुन्छ हेर्नुहोस्."
-    },
-    "home.scale.body": {
-      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
-      "text": "ड्राइभरहरूले कति पर्खे भनेर रिपोर्ट गर्छन्। हालको पर्खाइ पछिल्लो 2 घण्टाका रिपोर्टबाट आउँछ। छिटो र ढिलो पिकअप चाँडै देख्न सक्नुहुन्छ."
-    },
-    "home.live.aria": {
-      "en": "Live PickupRadar app preview with real Milton Keynes data",
-      "text": "Milton Keynes को वास्तविक डाटासँग PickupRadar एपको लाइभ प्रिभ्यू"
-    },
-    "home.live.title": {
-      "en": "Try PickupRadar with real Milton Keynes data.",
-      "text": "Milton Keynes को वास्तविक डाटासँग PickupRadar प्रयास गर्नुहोस्."
-    },
-    "home.live.body": {
-      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
-      "text": "Milton Keynes मा वास्तविक पिकअप पोइन्ट हेर्नुहोस्। हालैको पर्खाइ जाँच गर्नुहोस्, वा {likelyFast} र {likelySlow}। रिपोर्ट स्क्रिन प्रयास गर्न सक्नुहुन्छ, तर केही पठाइँदैन."
-    },
     "home.try.tabLead": {
       "en": "Pick a tab.",
       "text": "एउटा ट्याब छान्नुहोस्."
@@ -173,10 +153,6 @@
     "home.try.open": {
       "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
       "text": "{lead} {reportWait} स्क्रिन खुल्छ। पर्खाइको समय छान्नुहोस्। केही पठाइँदैन."
-    },
-    "home.live.big": {
-      "en": "Open the big preview",
-      "text": "ठूलो प्रिभ्यू खोल्नुहोस्"
     },
     "home.signals.title": {
       "en": "What you can see before you go in",
@@ -210,25 +186,9 @@
       "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
       "text": "ड्राइभरहरूले यो रिपोर्ट गर्न {reportProblem} थिच्छन्। त्यहाँ जानुअघि तपाईं उनीहरूको रिपोर्ट देख्नुहुन्छ."
     },
-    "home.signals.tablet.body": {
-      "en": "See when drivers report that a restaurant's tablet or system is not working.",
-      "text": "ड्राइभरहरूले रेस्टुरेन्टको ट्याब्लेट वा सिस्टम काम नगर्ने रिपोर्ट गर्दा हेर्नुहोस्."
-    },
-    "home.signals.arrival.title": {
-      "en": "Order starts after arrival",
-      "text": "अर्डर पुगेपछि सुरु हुन्छ"
-    },
-    "home.signals.arrival.body": {
-      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
-      "text": "केही ठाउँले तपाईं पुगेपछि मात्र अर्डर सुरु गर्छन्। ड्राइभरहरूले रिपोर्ट गर्दा यो अन गर्न सक्छन्."
-    },
     "home.signals.missing.title": {
       "en": "Missing or wrong pickup points",
       "text": "हराएका वा गलत पिकअप पोइन्ट"
-    },
-    "home.signals.missing.body": {
-      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
-      "text": "पिकअप पोइन्ट छैन? {suggest} थिच्नुहोस्। केही गलत छ? {reportProblem} थिच्नुहोस्, त्यसपछि {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} वा {closedPermanently}।"
     },
     "home.how.intro": {
       "en": "Three easy steps. Reporting takes a few seconds.",
@@ -262,10 +222,6 @@
       "en": "Earn {radarPoints}",
       "text": "{radarPoints} कमाउनुहोस्"
     },
-    "home.points.body": {
-      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
-      "text": "{radarPoints} कमाउन {reportWait} थिच्नुहोस्। खाता बिना सुरु गर्न सक्नुहुन्छ। फोन बदल्दा वा रिसेट गर्दा सुरक्षित रहून् भनेर इमेलले आफ्ना {radarPoints} जोगाउनुहोस्। पासवर्ड चाहिँदैन। एपले इमेलमा 6 अङ्कको कोड पठाउँछ."
-    },
     "home.points.noteSoon": {
       "en": "Rewards coming soon.",
       "text": "पुरस्कार चाँडै आउँदैछन्."
@@ -285,34 +241,6 @@
     "home.points.neededHelp": {
       "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
       "text": "तपाईं नजिक योग्य पिकअप पोइन्ट, हालैको पर्खाइ नभएको र {likelyFast} वा {likelySlow} नभएको। रिपोर्टमा 10 को सट्टा 15 RP पाउनुहुन्छ."
-    },
-    "home.points.firstLine": {
-      "en": "{firstBonus}{help}",
-      "text": "{firstBonus}{help}"
-    },
-    "home.points.firstHelp": {
-      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
-      "text": "पहिलो मान्य पर्खाइ रिपोर्टमा थप पोइन्ट। यदि त्यो {reportNeeded} पनि हो भने जम्मा 25 RP पाउनुहुन्छ."
-    },
-    "home.points.approvedLine": {
-      "en": "{approved}{help}",
-      "text": "{approved}{help}"
-    },
-    "home.points.approvedHelp": {
-      "en": "When we approve a pickup point you suggest",
-      "text": "तपाईंले सुझाएको पिकअप पोइन्ट हामीले स्वीकृत गर्दा"
-    },
-    "home.points.referralLine": {
-      "en": "{referral}{help}",
-      "text": "{referral}{help}"
-    },
-    "home.points.referralHelp": {
-      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
-      "text": "तपाईंको साथीले कम्तीमा 2 फरक दिनमा (UTC समय), 2 फरक पिकअप पोइन्टमा 3 मान्य पर्खाइ रिपोर्ट गर्दा दुवैले पाउनुहुन्छ। दुवैलाई सुरक्षित Radar खाता चाहिन्छ (इमेल थप्नुहोस्)। साथीले पहिलो मान्य पर्खाइ रिपोर्टअघि तपाईंको कोड हाल्नुपर्छ."
-    },
-    "home.points.referralEach": {
-      "en": "{referralRp} each",
-      "text": "प्रत्येक {referralRp}"
     },
     "home.cities.body": {
       "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
@@ -350,22 +278,6 @@
       "en": "{lead} No names, addresses or order numbers.",
       "text": "{lead} नाम, ठेगाना वा अर्डर नम्बर छैन."
     },
-    "home.trust.skipLead": {
-      "en": "You can skip the delivery app.",
-      "text": "डेलिभरी एप छोड्न सक्नुहुन्छ."
-    },
-    "home.trust.skip": {
-      "en": "{lead} Choosing the delivery app is optional.",
-      "text": "{lead} डेलिभरी एप छान्नु वैकल्पिक हो."
-    },
-    "home.trust.controlLead": {
-      "en": "You are in control.",
-      "text": "नियन्त्रण तपाईंसँग छ."
-    },
-    "home.trust.control": {
-      "en": "{lead} Delete your account or Radar profile in the app at any time.",
-      "text": "{lead} एपमा जुनसुकै बेला आफ्नो खाता वा Radar प्रोफाइल मेटाउनुहोस्."
-    },
     "home.faq.title": {
       "en": "Questions from drivers",
       "text": "ड्राइभरका प्रश्न"
@@ -377,18 +289,6 @@
     "home.faq.account.a": {
       "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
       "text": "होइन। एपले स्वचालित Radar प्रोफाइल दिन्छ। तुरुन्त पर्खाइ रिपोर्ट गर्न सक्नुहुन्छ। आफ्ना {radarPoints} जोगाउन पछि इमेल थप्नुहोस्। पासवर्ड चाहिँदैन। एपले इमेलमा 6 अङ्कको कोड पठाउँछ."
-    },
-    "home.faq.where.q": {
-      "en": "Where does PickupRadar work?",
-      "text": "PickupRadar कहाँ चल्छ?"
-    },
-    "home.faq.where.a": {
-      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
-      "text": "PickupRadar अहिले Milton Keynes मा चल्छ। अर्को London हो। त्यसपछि थप सहर, जस्तै Manchester, Birmingham, Leeds, Liverpool र Glasgow। हेर्नुहोस् {cities}।"
-    },
-    "home.faq.where.cities": {
-      "en": "all the cities",
-      "text": "सबै सहर"
     },
     "home.faq.download.q": {
       "en": "When can I download the app?",
@@ -402,22 +302,6 @@
       "en": "live preview",
       "text": "लाइभ प्रिभ्यू"
     },
-    "home.faq.wait.q": {
-      "en": "How is the current wait worked out?",
-      "text": "हालको पर्खाइ कसरी निस्कन्छ?"
-    },
-    "home.faq.wait.a": {
-      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
-      "text": "यो पछिल्लो 2 घण्टाका ड्राइभर रिपोर्टबाट आउँछ। 2 घण्टाभन्दा पुराना रिपोर्टले हालको पर्खाइलाई असर गर्दैनन्."
-    },
-    "home.faq.likely.q": {
-      "en": "What do {likelyFast} and {likelySlow} mean?",
-      "text": "{likelyFast} र {likelySlow} को अर्थ के हो?"
-    },
-    "home.faq.likely.a": {
-      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
-      "text": "यी अनुमान हुन्, लाइभ रिपोर्ट होइनन्। हालैको पर्खाइ रिपोर्ट नभए देखिन्छन्."
-    },
     "home.faq.track.q": {
       "en": "Does it track my location?",
       "text": "के यसले मेरो लोकेसन ट्र्याक गर्छ?"
@@ -429,22 +313,6 @@
     "home.faq.track.privacy": {
       "en": "privacy policy",
       "text": "गोपनीयता नीति"
-    },
-    "home.faq.delete.q": {
-      "en": "How do I delete my data?",
-      "text": "आफ्नो डाटा कसरी मेटाउने?"
-    },
-    "home.faq.delete.a": {
-      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
-      "text": "एपमा {profile} खोल्नुहोस्। {deleteAccount} थिच्नुहोस्। इमेल नथपेको भए {deleteProfile} थिच्नुहोस्। हामीलाई इमेल पनि गर्न सक्नुहुन्छ। चरणका लागि {page} हेर्नुहोस्."
-    },
-    "home.closer.title": {
-      "en": "Explore Milton Keynes pickup points.",
-      "text": "Milton Keynes का पिकअप पोइन्ट हेर्नुहोस्."
-    },
-    "home.closer.body": {
-      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
-      "text": "Milton Keynes का वास्तविक पिकअप पोइन्ट हेर्नुहोस्। ठाउँ खोज्नुहोस् र रिपोर्ट स्क्रिन प्रयास गर्नुहोस्। थिच्नुभएको केही पठाइँदैन."
     },
     "home.closer.cta": {
       "en": "Open the live preview",

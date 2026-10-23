@@ -130,26 +130,6 @@
       "en": "Try the live preview",
       "text": "ライブプレビューを試す"
     },
-    "home.scale.title": {
-      "en": "See how long you may wait.",
-      "text": "どれくらい待つかを確認できます。"
-    },
-    "home.scale.body": {
-      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
-      "text": "ドライバーが待った時間を報告します。現在の待ち時間は直近 2 時間の報告から決まります。早い受け取り場所と遅い受け取り場所をすぐに見分けられます。"
-    },
-    "home.live.aria": {
-      "en": "Live PickupRadar app preview with real Milton Keynes data",
-      "text": "Milton Keynes の実データを使った PickupRadar アプリのライブプレビュー"
-    },
-    "home.live.title": {
-      "en": "Try PickupRadar with real Milton Keynes data.",
-      "text": "Milton Keynes の実データで PickupRadar を試します。"
-    },
-    "home.live.body": {
-      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
-      "text": "Milton Keynes の実際の受け取り場所を見られます。最近の待ち時間、または {likelyFast} と {likelySlow} を確認できます。報告画面は試せますが、何も送信されません。"
-    },
     "home.try.tabLead": {
       "en": "Pick a tab.",
       "text": "タブを選びます。"
@@ -173,10 +153,6 @@
     "home.try.open": {
       "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
       "text": "{lead} {reportWait} の画面が開きます。待ち時間を選びます。何も送信されません。"
-    },
-    "home.live.big": {
-      "en": "Open the big preview",
-      "text": "大きいプレビューを開く"
     },
     "home.signals.title": {
       "en": "What you can see before you go in",
@@ -210,25 +186,9 @@
       "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
       "text": "ドライバーは {reportProblem} をタップして報告します。向かう前にその報告を見られます。"
     },
-    "home.signals.tablet.body": {
-      "en": "See when drivers report that a restaurant's tablet or system is not working.",
-      "text": "レストランのタブレットやシステムが動いていない、とドライバーが報告したときに分かります。"
-    },
-    "home.signals.arrival.title": {
-      "en": "Order starts after arrival",
-      "text": "到着後に注文の準備が始まる"
-    },
-    "home.signals.arrival.body": {
-      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
-      "text": "到着してから注文を始める店があります。ドライバーは報告時にこれをオンにできます。"
-    },
     "home.signals.missing.title": {
       "en": "Missing or wrong pickup points",
       "text": "ない受け取り場所、または間違った受け取り場所"
-    },
-    "home.signals.missing.body": {
-      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
-      "text": "受け取り場所がない場合は {suggest} をタップします。何か違う場合は {reportProblem}、次に {otherIssue}: {wrongAddress}、{wrongBranch}、{duplicate}、{closedPermanently}。"
     },
     "home.how.intro": {
       "en": "Three easy steps. Reporting takes a few seconds.",
@@ -262,10 +222,6 @@
       "en": "Earn {radarPoints}",
       "text": "{radarPoints} を獲得"
     },
-    "home.points.body": {
-      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
-      "text": "{reportWait} をタップして {radarPoints} を獲得します。アカウントがなくても始められます。携帯電話を変えても初期化しても残るよう、メールで {radarPoints} を守ります。パスワードは不要です。アプリが 6 桁のコードをメールで送ります。"
-    },
     "home.points.noteSoon": {
       "en": "Rewards coming soon.",
       "text": "特典は近日公開。"
@@ -285,34 +241,6 @@
     "home.points.neededHelp": {
       "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
       "text": "近くにあり、最近の待ち時間がなく、{likelyFast} も {likelySlow} もない対象の受け取り場所です。その報告では 10 ではなく 15 RP を獲得します。"
-    },
-    "home.points.firstLine": {
-      "en": "{firstBonus}{help}",
-      "text": "{firstBonus}{help}"
-    },
-    "home.points.firstHelp": {
-      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
-      "text": "最初の有効な待ち時間報告の追加ポイントです。それが {reportNeeded} でもある場合、合計 25 RP を獲得します。"
-    },
-    "home.points.approvedLine": {
-      "en": "{approved}{help}",
-      "text": "{approved}{help}"
-    },
-    "home.points.approvedHelp": {
-      "en": "When we approve a pickup point you suggest",
-      "text": "提案した受け取り場所を承認したとき"
-    },
-    "home.points.referralLine": {
-      "en": "{referral}{help}",
-      "text": "{referral}{help}"
-    },
-    "home.points.referralHelp": {
-      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
-      "text": "友だちが有効な待ち時間報告を 3 件、少なくとも 2 日（UTC 時間）、2 か所の受け取り場所で行うと、それぞれ獲得できます。両方に保護された Radar アカウントが必要です（メールを追加）。友だちは最初の有効な待ち時間報告の前にあなたのコードを入力する必要があります。"
-    },
-    "home.points.referralEach": {
-      "en": "{referralRp} each",
-      "text": "それぞれ {referralRp}"
     },
     "home.cities.body": {
       "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
@@ -350,22 +278,6 @@
       "en": "{lead} No names, addresses or order numbers.",
       "text": "{lead} 名前、住所、注文番号はありません。"
     },
-    "home.trust.skipLead": {
-      "en": "You can skip the delivery app.",
-      "text": "配達アプリは選べなくても大丈夫です。"
-    },
-    "home.trust.skip": {
-      "en": "{lead} Choosing the delivery app is optional.",
-      "text": "{lead} 配達アプリの選択は任意です。"
-    },
-    "home.trust.controlLead": {
-      "en": "You are in control.",
-      "text": "操作はあなたが決めます。"
-    },
-    "home.trust.control": {
-      "en": "{lead} Delete your account or Radar profile in the app at any time.",
-      "text": "{lead} アカウントや Radar プロフィールはアプリでいつでも削除できます。"
-    },
     "home.faq.title": {
       "en": "Questions from drivers",
       "text": "ドライバーからの質問"
@@ -377,18 +289,6 @@
     "home.faq.account.a": {
       "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
       "text": "不要です。アプリが Radar プロフィールを自動で作ります。待ち時間はすぐに報告できます。{radarPoints} を守るには、あとからメールを追加します。パスワードは不要です。アプリが 6 桁のコードをメールで送ります。"
-    },
-    "home.faq.where.q": {
-      "en": "Where does PickupRadar work?",
-      "text": "PickupRadar はどこで使えますか。"
-    },
-    "home.faq.where.a": {
-      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
-      "text": "PickupRadar は現在 Milton Keynes で使えます。次は London です。そのあと Manchester、Birmingham、Leeds、Liverpool、Glasgow などの都市です。{cities} を見てください。"
-    },
-    "home.faq.where.cities": {
-      "en": "all the cities",
-      "text": "すべての都市"
     },
     "home.faq.download.q": {
       "en": "When can I download the app?",
@@ -402,22 +302,6 @@
       "en": "live preview",
       "text": "ライブプレビュー"
     },
-    "home.faq.wait.q": {
-      "en": "How is the current wait worked out?",
-      "text": "現在の待ち時間はどう決まりますか。"
-    },
-    "home.faq.wait.a": {
-      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
-      "text": "直近 2 時間のドライバーの報告から決まります。2 時間より古い報告は現在の待ち時間に影響しません。"
-    },
-    "home.faq.likely.q": {
-      "en": "What do {likelyFast} and {likelySlow} mean?",
-      "text": "{likelyFast} と {likelySlow} は何ですか。"
-    },
-    "home.faq.likely.a": {
-      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
-      "text": "見積もりであり、ライブ報告ではありません。最近の待ち時間報告がないときに表示されます。"
-    },
     "home.faq.track.q": {
       "en": "Does it track my location?",
       "text": "位置情報を追跡しますか。"
@@ -429,22 +313,6 @@
     "home.faq.track.privacy": {
       "en": "privacy policy",
       "text": "プライバシーポリシー"
-    },
-    "home.faq.delete.q": {
-      "en": "How do I delete my data?",
-      "text": "データはどう削除しますか。"
-    },
-    "home.faq.delete.a": {
-      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
-      "text": "アプリで {profile} を開きます。{deleteAccount} をタップします。メールを追加していない場合は {deleteProfile} をタップします。メールで連絡することもできます。手順は {page} を見てください。"
-    },
-    "home.closer.title": {
-      "en": "Explore Milton Keynes pickup points.",
-      "text": "Milton Keynes の受け取り場所を見る。"
-    },
-    "home.closer.body": {
-      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
-      "text": "Milton Keynes の実際の受け取り場所を見られます。場所を検索し、報告画面を試せます。タップしても送信されません。"
     },
     "home.closer.cta": {
       "en": "Open the live preview",

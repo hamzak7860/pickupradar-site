@@ -130,26 +130,6 @@
       "en": "Try the live preview",
       "text": "සජීවී පෙරදසුන උත්සාහ කරන්න"
     },
-    "home.scale.title": {
-      "en": "See how long you may wait.",
-      "text": "ඔබ කොපමණ වේලාවක් රැඳී සිටිය හැකිද බලන්න."
-    },
-    "home.scale.body": {
-      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
-      "text": "රියදුරන් තමන් කොපමණ වේලාවක් රැඳී සිටියාද වාර්තා කරයි. වත්මන් රැඳීම පැය 2 ඇතුළත වාර්තාවලින් එයි. ඉක්මන් සහ මන්දගාමී රැගෙන යාමේ ස්ථාන ඔබ ඉක්මනින් දකී."
-    },
-    "home.live.aria": {
-      "en": "Live PickupRadar app preview with real Milton Keynes data",
-      "text": "Milton Keynes සැබෑ දත්ත සහිත PickupRadar යෙදුමේ සජීවී පෙරදසුන"
-    },
-    "home.live.title": {
-      "en": "Try PickupRadar with real Milton Keynes data.",
-      "text": "Milton Keynes සැබෑ දත්ත සමඟ PickupRadar උත්සාහ කරන්න."
-    },
-    "home.live.body": {
-      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
-      "text": "Milton Keynes හි සැබෑ රැගෙන යාමේ ස්ථාන බලන්න. නවතම රැඳීම බලන්න, නැතහොත් {likelyFast} සහ {likelySlow}. වාර්තා තිරය උත්සාහ කළ හැක, නමුත් කිසිවක් යවන්නේ නැත."
-    },
     "home.try.tabLead": {
       "en": "Pick a tab.",
       "text": "ටැබයක් තෝරන්න."
@@ -173,10 +153,6 @@
     "home.try.open": {
       "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
       "text": "{lead} {reportWait} තිරය විවෘත වේ. රැඳීමක් තෝරන්න. කිසිවක් යවන්නේ නැත."
-    },
-    "home.live.big": {
-      "en": "Open the big preview",
-      "text": "විශාල පෙරදසුන විවෘත කරන්න"
     },
     "home.signals.title": {
       "en": "What you can see before you go in",
@@ -210,25 +186,9 @@
       "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
       "text": "රියදුරන් මෙය වාර්තා කිරීමට {reportProblem} තට්ටු කරයි. එහි යාමට පෙර ඔබ වාර්තාව දකී."
     },
-    "home.signals.tablet.body": {
-      "en": "See when drivers report that a restaurant's tablet or system is not working.",
-      "text": "අවන්හලේ ටැබ්ලටය හෝ පද්ධතිය ක්‍රියා නොකරන බව රියදුරන් වාර්තා කරන විට බලන්න."
-    },
-    "home.signals.arrival.title": {
-      "en": "Order starts after arrival",
-      "text": "ඔබ පැමිණි පසු ඇණවුම ආරම්භ වේ"
-    },
-    "home.signals.arrival.body": {
-      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
-      "text": "සමහර ස්ථාන ඇණවුම ආරම්භ කරන්නේ ඔබ පැමිණි පසු පමණි. වාර්තා කරන අතරතුර රියදුරන්ට මෙය ක්‍රියාත්මක කළ හැක."
-    },
     "home.signals.missing.title": {
       "en": "Missing or wrong pickup points",
       "text": "අස්ථානගත හෝ වැරදි රැගෙන යාමේ ස්ථානය"
-    },
-    "home.signals.missing.body": {
-      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
-      "text": "රැගෙන යාමේ ස්ථානය නැද්ද? {suggest} තට්ටු කරන්න. යමක් වැරදියිද? {reportProblem} තට්ටු කරන්න, පසුව {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} හෝ {closedPermanently}."
     },
     "home.how.intro": {
       "en": "Three easy steps. Reporting takes a few seconds.",
@@ -262,10 +222,6 @@
       "en": "Earn {radarPoints}",
       "text": "{radarPoints} ලබාගන්න"
     },
-    "home.points.body": {
-      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
-      "text": "{radarPoints} ලබාගැනීමට {reportWait} තට්ටු කරන්න. ගිණුමක් නැතිව ආරම්භ කළ හැක. දුරකථනය මාරු කළහොත් හෝ යළි සැකසුවහොත් ආරක්ෂිත වීමට {radarPoints} ඊමේල් එකකින් ආරක්ෂා කරන්න. මුරපදයක් නැත. යෙදුම ඉලක්කම් 6 කේතයක් ඊමේල් කරයි."
-    },
     "home.points.noteSoon": {
       "en": "Rewards coming soon.",
       "text": "ත්‍යාග ඉක්මනින් එයි."
@@ -285,34 +241,6 @@
     "home.points.neededHelp": {
       "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
       "text": "ඔබ අසල සුදුසු රැගෙන යාමේ ස්ථානයක්, නව රැඳීමක් නැත, {likelyFast} හෝ {likelySlow} නැත. එම වාර්තාවට ඔබට 15 RP ලැබේ, 10 නොවේ."
-    },
-    "home.points.firstLine": {
-      "en": "{firstBonus}{help}",
-      "text": "{firstBonus}{help}"
-    },
-    "home.points.firstHelp": {
-      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
-      "text": "පළමු වලංගු රැඳීමේ වාර්තාවට අමතර ලකුණු. එය {reportNeeded} ද නම්, ඔබට මුළු 25 RP ලැබේ."
-    },
-    "home.points.approvedLine": {
-      "en": "{approved}{help}",
-      "text": "{approved}{help}"
-    },
-    "home.points.approvedHelp": {
-      "en": "When we approve a pickup point you suggest",
-      "text": "ඔබ යෝජනා කළ රැගෙන යාමේ ස්ථානය අපි අනුමත කළ විට"
-    },
-    "home.points.referralLine": {
-      "en": "{referral}{help}",
-      "text": "{referral}{help}"
-    },
-    "home.points.referralHelp": {
-      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
-      "text": "ඔබේ මිතුරා වලංගු රැඳීමේ වාර්තා 3 ක් කළ විට, අවම වශයෙන් වෙනස් දින 2 කදී (UTC වේලාව), වෙනස් රැගෙන යාමේ ස්ථාන 2 කදී, ඔබ දෙදෙනාටම ලැබේ. ඔබ දෙදෙනාටම ආරක්ෂිත Radar ගිණුමක් අවශ්‍යයි (ඊමේල් එකක් එක් කරන්න). පළමු වලංගු රැඳීමේ වාර්තාවට පෙර ඔබේ මිතුරා ඔබේ කේතය ඇතුළත් කළ යුතුය."
-    },
-    "home.points.referralEach": {
-      "en": "{referralRp} each",
-      "text": "එක් අයෙකුට {referralRp}"
     },
     "home.cities.body": {
       "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
@@ -350,22 +278,6 @@
       "en": "{lead} No names, addresses or order numbers.",
       "text": "{lead} නම්, ලිපින හෝ ඇණවුම් අංක නැත."
     },
-    "home.trust.skipLead": {
-      "en": "You can skip the delivery app.",
-      "text": "බෙදාහැරීමේ යෙදුම මඟ හැරිය හැක."
-    },
-    "home.trust.skip": {
-      "en": "{lead} Choosing the delivery app is optional.",
-      "text": "{lead} බෙදාහැරීමේ යෙදුම තෝරා ගැනීම විකල්පයකි."
-    },
-    "home.trust.controlLead": {
-      "en": "You are in control.",
-      "text": "පාලනය ඔබ සතුය."
-    },
-    "home.trust.control": {
-      "en": "{lead} Delete your account or Radar profile in the app at any time.",
-      "text": "{lead} ඕනෑම වේලාවක යෙදුමේ ගිණුම හෝ Radar පැතිකඩ මකන්න."
-    },
     "home.faq.title": {
       "en": "Questions from drivers",
       "text": "රියදුරන්ගේ ප්‍රශ්න"
@@ -377,18 +289,6 @@
     "home.faq.account.a": {
       "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
       "text": "නැත. යෙදුම ඔබට ස්වයංක්‍රීයව Radar පැතිකඩක් දෙයි. ඔබට වහාම රැඳීම වාර්තා කළ හැක. {radarPoints} ආරක්ෂා කිරීමට පසුව ඊමේල් එකක් එක් කරන්න. මුරපදයක් නැත. යෙදුම ඉලක්කම් 6 කේතයක් ඊමේල් කරයි."
-    },
-    "home.faq.where.q": {
-      "en": "Where does PickupRadar work?",
-      "text": "PickupRadar ක්‍රියා කරන්නේ කොහේද?"
-    },
-    "home.faq.where.a": {
-      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
-      "text": "PickupRadar දැන් Milton Keynes හි ක්‍රියා කරයි. ඊළඟට London. පසුව තව නගර, Manchester, Birmingham, Leeds, Liverpool සහ Glasgow වැනි. {cities} බලන්න."
-    },
-    "home.faq.where.cities": {
-      "en": "all the cities",
-      "text": "සියලු නගර"
     },
     "home.faq.download.q": {
       "en": "When can I download the app?",
@@ -402,22 +302,6 @@
       "en": "live preview",
       "text": "සජීවී පෙරදසුන"
     },
-    "home.faq.wait.q": {
-      "en": "How is the current wait worked out?",
-      "text": "වත්මන් රැඳීම ගණනය වන්නේ කෙසේද?"
-    },
-    "home.faq.wait.a": {
-      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
-      "text": "එය පැය 2 ඇතුළත රියදුරු වාර්තාවලින් එයි. පැය 2 කට වඩා පැරණි වාර්තා වත්මන් රැඳීම වෙනස් නොකරයි."
-    },
-    "home.faq.likely.q": {
-      "en": "What do {likelyFast} and {likelySlow} mean?",
-      "text": "{likelyFast} සහ {likelySlow} යන්නෙන් අදහස් කරන්නේ කුමක්ද?"
-    },
-    "home.faq.likely.a": {
-      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
-      "text": "ඒවා ඇස්තමේන්තුය, සජීවී වාර්තා නොවේ. නව රැඳීමේ වාර්තාවක් නැති විට ඒවා පෙනේ."
-    },
     "home.faq.track.q": {
       "en": "Does it track my location?",
       "text": "මෙය මගේ ස්ථානය ලුහුබඳිනවාද?"
@@ -429,22 +313,6 @@
     "home.faq.track.privacy": {
       "en": "privacy policy",
       "text": "පෞද්ගලිකත්ව ප්‍රතිපත්තිය"
-    },
-    "home.faq.delete.q": {
-      "en": "How do I delete my data?",
-      "text": "මගේ දත්ත මකන්නේ කෙසේද?"
-    },
-    "home.faq.delete.a": {
-      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
-      "text": "යෙදුමේ {profile} විවෘත කරන්න. {deleteAccount} තට්ටු කරන්න. ඔබ ඊමේල් එකක් එක් කර නැත්නම් {deleteProfile} තට්ටු කරන්න. අපට ඊමේල් කළත් හැක. පියවර සඳහා {page} බලන්න."
-    },
-    "home.closer.title": {
-      "en": "Explore Milton Keynes pickup points.",
-      "text": "Milton Keynes රැගෙන යාමේ ස්ථාන බලන්න."
-    },
-    "home.closer.body": {
-      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
-      "text": "Milton Keynes හි සැබෑ රැගෙන යාමේ ස්ථාන බලන්න. ස්ථානයක් සොයා වාර්තා තිරය උත්සාහ කරන්න. ඔබ තට්ටු කරන කිසිවක් යවන්නේ නැත."
     },
     "home.closer.cta": {
       "en": "Open the live preview",

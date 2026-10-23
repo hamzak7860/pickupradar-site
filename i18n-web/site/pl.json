@@ -130,26 +130,6 @@
       "en": "Try the live preview",
       "text": "Wypróbuj podgląd na żywo"
     },
-    "home.scale.title": {
-      "en": "See how long you may wait.",
-      "text": "Zobacz, jak długo możesz czekać."
-    },
-    "home.scale.body": {
-      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
-      "text": "Kierowcy zgłaszają, jak długo czekali. Aktualny czas oczekiwania pochodzi ze zgłoszeń z ostatnich 2 godzin. Szybko zobaczysz szybkie i wolne odbiory."
-    },
-    "home.live.aria": {
-      "en": "Live PickupRadar app preview with real Milton Keynes data",
-      "text": "Podgląd aplikacji PickupRadar na żywo z prawdziwymi danymi z Milton Keynes"
-    },
-    "home.live.title": {
-      "en": "Try PickupRadar with real Milton Keynes data.",
-      "text": "Wypróbuj PickupRadar na prawdziwych danych z Milton Keynes."
-    },
-    "home.live.body": {
-      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
-      "text": "Zobacz prawdziwe punkty odbioru w Milton Keynes. Sprawdź ostatnie oczekiwania albo {likelyFast} i {likelySlow}. Możesz wypróbować ekran zgłoszenia, ale nic nie jest wysyłane."
-    },
     "home.try.tabLead": {
       "en": "Pick a tab.",
       "text": "Wybierz kartę."
@@ -173,10 +153,6 @@
     "home.try.open": {
       "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
       "text": "{lead} Otwiera się ekran {reportWait}. Wybierz czas oczekiwania. Nic nie jest wysyłane."
-    },
-    "home.live.big": {
-      "en": "Open the big preview",
-      "text": "Otwórz duży podgląd"
     },
     "home.signals.title": {
       "en": "What you can see before you go in",
@@ -210,25 +186,9 @@
       "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
       "text": "Kierowcy stukają {reportProblem}, aby to zgłosić. Widzisz zgłoszenie, zanim tam pojedziesz."
     },
-    "home.signals.tablet.body": {
-      "en": "See when drivers report that a restaurant's tablet or system is not working.",
-      "text": "Zobacz, gdy kierowcy zgłaszają, że tablet lub system restauracji nie działa."
-    },
-    "home.signals.arrival.title": {
-      "en": "Order starts after arrival",
-      "text": "Zamówienie zaczyna się po przyjeździe"
-    },
-    "home.signals.arrival.body": {
-      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
-      "text": "Niektóre lokale zaczynają zamówienie dopiero, gdy przyjedziesz. Kierowcy mogą to włączyć przy zgłoszeniu."
-    },
     "home.signals.missing.title": {
       "en": "Missing or wrong pickup points",
       "text": "Brakujące lub błędne punkty odbioru"
-    },
-    "home.signals.missing.body": {
-      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
-      "text": "Brakuje punktu odbioru? Stuknij {suggest}. Coś jest nie tak? Stuknij {reportProblem}, potem {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} lub {closedPermanently}."
     },
     "home.how.intro": {
       "en": "Three easy steps. Reporting takes a few seconds.",
@@ -262,10 +222,6 @@
       "en": "Earn {radarPoints}",
       "text": "Zdobywaj {radarPoints}"
     },
-    "home.points.body": {
-      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
-      "text": "Stuknij {reportWait}, aby zdobyć {radarPoints}. Możesz zacząć bez konta. Chroń {radarPoints} e-mailem, żeby były bezpieczne, gdy zmienisz lub zresetujesz telefon. Bez hasła. Aplikacja wysyła e-mailem kod 6-cyfrowy."
-    },
     "home.points.noteSoon": {
       "en": "Rewards coming soon.",
       "text": "Nagrody wkrótce."
@@ -285,34 +241,6 @@
     "home.points.neededHelp": {
       "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
       "text": "Kwalifikujący się punkt odbioru w pobliżu, bez niedawnego oczekiwania i bez {likelyFast} ani {likelySlow}. Za zgłoszenie dostajesz 15 RP zamiast 10."
-    },
-    "home.points.firstLine": {
-      "en": "{firstBonus}{help}",
-      "text": "{firstBonus}{help}"
-    },
-    "home.points.firstHelp": {
-      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
-      "text": "Dodatkowe punkty za pierwsze ważne zgłoszenie oczekiwania. Jeśli jest też {reportNeeded}, dostajesz łącznie 25 RP."
-    },
-    "home.points.approvedLine": {
-      "en": "{approved}{help}",
-      "text": "{approved}{help}"
-    },
-    "home.points.approvedHelp": {
-      "en": "When we approve a pickup point you suggest",
-      "text": "Gdy zatwierdzimy punkt odbioru, który zasugerujesz"
-    },
-    "home.points.referralLine": {
-      "en": "{referral}{help}",
-      "text": "{referral}{help}"
-    },
-    "home.points.referralHelp": {
-      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
-      "text": "Każde z Was dostaje je, gdy znajomy zrobi 3 ważne zgłoszenia oczekiwania, w co najmniej 2 różne dni (czas UTC), w 2 różnych punktach odbioru. Oboje potrzebujecie chronionych kont Radar (dodajcie e-mail). Znajomy musi wpisać Twój kod przed pierwszym ważnym zgłoszeniem oczekiwania."
-    },
-    "home.points.referralEach": {
-      "en": "{referralRp} each",
-      "text": "{referralRp} każde"
     },
     "home.cities.body": {
       "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
@@ -350,22 +278,6 @@
       "en": "{lead} No names, addresses or order numbers.",
       "text": "{lead} Bez imion, adresów i numerów zamówień."
     },
-    "home.trust.skipLead": {
-      "en": "You can skip the delivery app.",
-      "text": "Możesz pominąć aplikację dostawczą."
-    },
-    "home.trust.skip": {
-      "en": "{lead} Choosing the delivery app is optional.",
-      "text": "{lead} Wybór aplikacji dostawczej jest opcjonalny."
-    },
-    "home.trust.controlLead": {
-      "en": "You are in control.",
-      "text": "To Ty decydujesz."
-    },
-    "home.trust.control": {
-      "en": "{lead} Delete your account or Radar profile in the app at any time.",
-      "text": "{lead} Usuń konto lub profil Radar w aplikacji w dowolnym momencie."
-    },
     "home.faq.title": {
       "en": "Questions from drivers",
       "text": "Pytania kierowców"
@@ -377,18 +289,6 @@
     "home.faq.account.a": {
       "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
       "text": "Nie. Aplikacja automatycznie daje Ci profil Radar. Możesz od razu zgłaszać oczekiwania. Aby chronić {radarPoints}, dodaj e-mail później. Bez hasła. Aplikacja wysyła e-mailem kod 6-cyfrowy."
-    },
-    "home.faq.where.q": {
-      "en": "Where does PickupRadar work?",
-      "text": "Gdzie działa PickupRadar?"
-    },
-    "home.faq.where.a": {
-      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
-      "text": "PickupRadar działa teraz w Milton Keynes. Następne: London. Potem kolejne miasta, na przykład Manchester, Birmingham, Leeds, Liverpool i Glasgow. Zobacz {cities}."
-    },
-    "home.faq.where.cities": {
-      "en": "all the cities",
-      "text": "wszystkie miasta"
     },
     "home.faq.download.q": {
       "en": "When can I download the app?",
@@ -402,22 +302,6 @@
       "en": "live preview",
       "text": "podgląd na żywo"
     },
-    "home.faq.wait.q": {
-      "en": "How is the current wait worked out?",
-      "text": "Jak liczony jest aktualny czas oczekiwania?"
-    },
-    "home.faq.wait.a": {
-      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
-      "text": "Pochodzi ze zgłoszeń kierowców z ostatnich 2 godzin. Zgłoszenia starsze niż 2 godziny nie wpływają na aktualny czas oczekiwania."
-    },
-    "home.faq.likely.q": {
-      "en": "What do {likelyFast} and {likelySlow} mean?",
-      "text": "Co oznaczają {likelyFast} i {likelySlow}?"
-    },
-    "home.faq.likely.a": {
-      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
-      "text": "To oszacowania, nie zgłoszenia na żywo. Pojawiają się, gdy nie ma nowych zgłoszeń oczekiwania."
-    },
     "home.faq.track.q": {
       "en": "Does it track my location?",
       "text": "Czy śledzi moją lokalizację?"
@@ -429,22 +313,6 @@
     "home.faq.track.privacy": {
       "en": "privacy policy",
       "text": "polityce prywatności"
-    },
-    "home.faq.delete.q": {
-      "en": "How do I delete my data?",
-      "text": "Jak usunąć moje dane?"
-    },
-    "home.faq.delete.a": {
-      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
-      "text": "W aplikacji otwórz {profile}. Stuknij {deleteAccount}. Jeśli nie dodałeś e-maila, stuknij {deleteProfile}. Możesz też napisać do nas. Zobacz {page}, aby poznać kroki."
-    },
-    "home.closer.title": {
-      "en": "Explore Milton Keynes pickup points.",
-      "text": "Przeglądaj punkty odbioru w Milton Keynes."
-    },
-    "home.closer.body": {
-      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
-      "text": "Przeglądaj prawdziwe punkty odbioru w Milton Keynes. Wyszukaj miejsce i wypróbuj ekran zgłoszenia. Nic, czego dotkniesz, nie jest wysyłane."
     },
     "home.closer.cta": {
       "en": "Open the live preview",

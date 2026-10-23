@@ -130,26 +130,6 @@
       "en": "Try the live preview",
       "text": "Sulayi ang live nga preview"
     },
-    "home.scale.title": {
-      "en": "See how long you may wait.",
-      "text": "Tan-awa kung unsa ka dugay tingali ka maghulat."
-    },
-    "home.scale.body": {
-      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
-      "text": "Gi-report sa mga drayber kung unsa ka dugay sila naghulat. Ang karon nga oras sa paghulat gikan sa mga report sa miaging 2 ka oras. Dali nimong makita ang paspas ug hinay nga pickup point."
-    },
-    "home.live.aria": {
-      "en": "Live PickupRadar app preview with real Milton Keynes data",
-      "text": "Live nga preview sa app sa PickupRadar gamit ang tinuod nga data sa Milton Keynes"
-    },
-    "home.live.title": {
-      "en": "Try PickupRadar with real Milton Keynes data.",
-      "text": "Sulayi ang PickupRadar gamit ang tinuod nga data sa Milton Keynes."
-    },
-    "home.live.body": {
-      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
-      "text": "Tan-awa ang tinuod nga pickup point sa Milton Keynes. Tan-awa ang pinakabag-ong oras sa paghulat, o ang {likelyFast} ug {likelySlow}. Mahimo nimong sulayan ang screen sa report, apan walay mapadala."
-    },
     "home.try.tabLead": {
       "en": "Pick a tab.",
       "text": "Pilia ang tab."
@@ -173,10 +153,6 @@
     "home.try.open": {
       "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
       "text": "{lead} Moabli ang screen nga {reportWait}. Pilia ang oras sa paghulat. Walay mapadala."
-    },
-    "home.live.big": {
-      "en": "Open the big preview",
-      "text": "Ablihi ang dako nga preview"
     },
     "home.signals.title": {
       "en": "What you can see before you go in",
@@ -210,25 +186,9 @@
       "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
       "text": "Gi-tap sa mga drayber ang {reportProblem} aron i-report kini. Makita nimo ang report sa dili pa ka moadto didto."
     },
-    "home.signals.tablet.body": {
-      "en": "See when drivers report that a restaurant's tablet or system is not working.",
-      "text": "Tan-awa kung gi-report sa mga drayber nga dili molihok ang tablet o sistema sa restawran."
-    },
-    "home.signals.arrival.title": {
-      "en": "Order starts after arrival",
-      "text": "Magsugod ang order kung moabot ka"
-    },
-    "home.signals.arrival.body": {
-      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
-      "text": "Ang ubang lugar magsugod lang sa order kung moabot ka. Mahimo kining i-on sa mga drayber samtang nag-report."
-    },
     "home.signals.missing.title": {
       "en": "Missing or wrong pickup points",
       "text": "Nawala o sayop nga pickup point"
-    },
-    "home.signals.missing.body": {
-      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
-      "text": "Wala ang pickup point? I-tap ang {suggest}. Adunay sayop? I-tap ang {reportProblem}, unya ang {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} o {closedPermanently}."
     },
     "home.how.intro": {
       "en": "Three easy steps. Reporting takes a few seconds.",
@@ -262,10 +222,6 @@
       "en": "Earn {radarPoints}",
       "text": "Makakuha og {radarPoints}"
     },
-    "home.points.body": {
-      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
-      "text": "I-tap ang {reportWait} aron makakuha og {radarPoints}. Mahimo kang magsugod nga walay account. Protektahi ang {radarPoints} gamit ang email aron luwas kung mag-ilis o mag-reset ka sa telepono. Walay password. Magpadala ang app og 6-digit nga code pinaagi sa email."
-    },
     "home.points.noteSoon": {
       "en": "Rewards coming soon.",
       "text": "Moabot na ang mga reward."
@@ -285,34 +241,6 @@
     "home.points.neededHelp": {
       "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
       "text": "Usa ka kuwalipikado nga pickup point duol kanimo, walay bag-ong oras sa paghulat, ug walay {likelyFast} o {likelySlow}. Makakuha ka og 15 RP para nianang report, imbes nga 10."
-    },
-    "home.points.firstLine": {
-      "en": "{firstBonus}{help}",
-      "text": "{firstBonus}{help}"
-    },
-    "home.points.firstHelp": {
-      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
-      "text": "Dugang nga puntos sa unang balidong report sa paghulat. Kung {reportNeeded} usab kana, makakuha ka og 25 RP sa kinatibuk-an."
-    },
-    "home.points.approvedLine": {
-      "en": "{approved}{help}",
-      "text": "{approved}{help}"
-    },
-    "home.points.approvedHelp": {
-      "en": "When we approve a pickup point you suggest",
-      "text": "Kung among aprobahan ang pickup point nga imong gisugyot"
-    },
-    "home.points.referralLine": {
-      "en": "{referral}{help}",
-      "text": "{referral}{help}"
-    },
-    "home.points.referralHelp": {
-      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
-      "text": "Makakuha kamo niini kung ang imong higala mohimo og 3 ka balidong report sa paghulat, sa labing menos 2 ka lainlaing adlaw (oras sa UTC), sa 2 ka lainlaing pickup point. Kinahanglan kamong duha adunay protektadong Radar account (dugangi og email). Kinahanglan isulod sa imong higala ang imong code sa wala pa ang unang balidong report sa paghulat."
-    },
-    "home.points.referralEach": {
-      "en": "{referralRp} each",
-      "text": "{referralRp} matag usa"
     },
     "home.cities.body": {
       "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
@@ -350,22 +278,6 @@
       "en": "{lead} No names, addresses or order numbers.",
       "text": "{lead} Walay ngalan, adres o numero sa order."
     },
-    "home.trust.skipLead": {
-      "en": "You can skip the delivery app.",
-      "text": "Mahimo nimong laktawan ang delivery app."
-    },
-    "home.trust.skip": {
-      "en": "{lead} Choosing the delivery app is optional.",
-      "text": "{lead} Opsiyonal ang pagpili sa delivery app."
-    },
-    "home.trust.controlLead": {
-      "en": "You are in control.",
-      "text": "Ikaw ang nagkontrol."
-    },
-    "home.trust.control": {
-      "en": "{lead} Delete your account or Radar profile in the app at any time.",
-      "text": "{lead} I-delete ang account o Radar profile sa app bisan kanus-a."
-    },
     "home.faq.title": {
       "en": "Questions from drivers",
       "text": "Mga pangutana sa drayber"
@@ -377,18 +289,6 @@
     "home.faq.account.a": {
       "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
       "text": "Dili. Awtomatikong hatagan ka sa app og Radar profile. Mahimo kang mag-report sa oras sa paghulat dayon. Aron maprotektahan ang {radarPoints}, dugangi og email unya. Walay password. Magpadala ang app og 6-digit nga code pinaagi sa email."
-    },
-    "home.faq.where.q": {
-      "en": "Where does PickupRadar work?",
-      "text": "Asa molihok ang PickupRadar?"
-    },
-    "home.faq.where.a": {
-      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
-      "text": "Molihok ang PickupRadar sa Milton Keynes karon. Sunod ang London. Unya daghang lungsod, sama sa Manchester, Birmingham, Leeds, Liverpool ug Glasgow. Tan-awa ang {cities}."
-    },
-    "home.faq.where.cities": {
-      "en": "all the cities",
-      "text": "tanan nga lungsod"
     },
     "home.faq.download.q": {
       "en": "When can I download the app?",
@@ -402,22 +302,6 @@
       "en": "live preview",
       "text": "live nga preview"
     },
-    "home.faq.wait.q": {
-      "en": "How is the current wait worked out?",
-      "text": "Giunsa pagkalkula ang karon nga oras sa paghulat?"
-    },
-    "home.faq.wait.a": {
-      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
-      "text": "Gikan kini sa mga report sa drayber sa miaging 2 ka oras. Ang mga report nga mas tigulang pa sa 2 ka oras dili mag-usab sa karon nga oras sa paghulat."
-    },
-    "home.faq.likely.q": {
-      "en": "What do {likelyFast} and {likelySlow} mean?",
-      "text": "Unsa ang gipasabot sa {likelyFast} ug {likelySlow}?"
-    },
-    "home.faq.likely.a": {
-      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
-      "text": "Mga banabana kini, dili live nga report. Motungha kini kung walay bag-ong report sa paghulat."
-    },
     "home.faq.track.q": {
       "en": "Does it track my location?",
       "text": "Gisubay ba niini ang akong lokasyon?"
@@ -429,22 +313,6 @@
     "home.faq.track.privacy": {
       "en": "privacy policy",
       "text": "polisiya sa privacy"
-    },
-    "home.faq.delete.q": {
-      "en": "How do I delete my data?",
-      "text": "Unsaon nako pag-delete sa akong data?"
-    },
-    "home.faq.delete.a": {
-      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
-      "text": "Sa app, ablihi ang {profile}. I-tap ang {deleteAccount}. Kung wala ka magdugang og email, i-tap ang {deleteProfile}. Mahimo usab kang mag-email kanamo. Tan-awa ang {page} para sa mga lakang."
-    },
-    "home.closer.title": {
-      "en": "Explore Milton Keynes pickup points.",
-      "text": "Susihon ang mga pickup point sa Milton Keynes."
-    },
-    "home.closer.body": {
-      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
-      "text": "Susihon ang tinuod nga pickup point sa Milton Keynes. Pangitaa ang lugar ug sulayi ang screen sa report. Walay mapadala sa bisan unsa nimong i-tap."
     },
     "home.closer.cta": {
       "en": "Open the live preview",

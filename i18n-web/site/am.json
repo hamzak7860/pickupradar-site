@@ -130,26 +130,6 @@
       "en": "Try the live preview",
       "text": "ቀጥታ ቅድመ እይታውን ይሞክሩ"
     },
-    "home.scale.title": {
-      "en": "See how long you may wait.",
-      "text": "ምን ያህል ሊጠብቁ እንደሚችሉ ይመልከቱ።"
-    },
-    "home.scale.body": {
-      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
-      "text": "ሹፌሮች ምን ያህል እንደጠበቁ ይናገራሉ። የአሁኑ መጠበቅ ካለፉት 2 ሰዓታት ሪፖርቶች ይመጣል። ፈጣን እና ቀርፋፋ የመውሰጃ ቦታዎችን በፍጥነት ያያሉ።"
-    },
-    "home.live.aria": {
-      "en": "Live PickupRadar app preview with real Milton Keynes data",
-      "text": "በእውነተኛ የ Milton Keynes መረጃ የ PickupRadar መተግበሪያ ቀጥታ ቅድመ እይታ"
-    },
-    "home.live.title": {
-      "en": "Try PickupRadar with real Milton Keynes data.",
-      "text": "PickupRadarን በእውነተኛ የ Milton Keynes መረጃ ይሞክሩ።"
-    },
-    "home.live.body": {
-      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
-      "text": "በ Milton Keynes ያሉ እውነተኛ የመውሰጃ ቦታዎችን ይመልከቱ። የቅርብ ጊዜ መጠበቅን ይመልከቱ፣ ወይም {likelyFast} እና {likelySlow}። የሪፖርት ማያውን መሞከር ይችላሉ፣ ነገር ግን ምንም አይላክም።"
-    },
     "home.try.tabLead": {
       "en": "Pick a tab.",
       "text": "ትር ይምረጡ።"
@@ -173,10 +153,6 @@
     "home.try.open": {
       "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
       "text": "{lead} የ {reportWait} ማያ ይከፈታል። የመጠበቅ ጊዜ ይምረጡ። ምንም አይላክም።"
-    },
-    "home.live.big": {
-      "en": "Open the big preview",
-      "text": "ትልቁን ቅድመ እይታ ይክፈቱ"
     },
     "home.signals.title": {
       "en": "What you can see before you go in",
@@ -210,25 +186,9 @@
       "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
       "text": "ሹፌሮች ይህን ለመናገር {reportProblem}ን ይነካሉ። ወደዚያ ከመሄድዎ በፊት ሪፖርቱን ያያሉ።"
     },
-    "home.signals.tablet.body": {
-      "en": "See when drivers report that a restaurant's tablet or system is not working.",
-      "text": "ሹፌሮች የምግብ ቤቱ ታብሌት ወይም ስርዓት አይሰራም ሲሉ ይመልከቱ።"
-    },
-    "home.signals.arrival.title": {
-      "en": "Order starts after arrival",
-      "text": "ትዕዛዙ እርስዎ ከደረሱ በኋላ ይጀምራል"
-    },
-    "home.signals.arrival.body": {
-      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
-      "text": "አንዳንድ ቦታዎች ትዕዛዙን እርስዎ ከደረሱ በኋላ ብቻ ይጀምራሉ። ሹፌሮች ሲናገሩ ይህን ማብራት ይችላሉ።"
-    },
     "home.signals.missing.title": {
       "en": "Missing or wrong pickup points",
       "text": "የጠፋ ወይም የተሳሳተ የመውሰጃ ቦታ"
-    },
-    "home.signals.missing.body": {
-      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
-      "text": "የመውሰጃ ቦታው የለም? {suggest}ን ይንኩ። የሆነ ነገር ተሳስቷል? {reportProblem}ን ይንኩ፣ ከዚያ {otherIssue}፦ {wrongAddress}፣ {wrongBranch}፣ {duplicate} ወይም {closedPermanently}።"
     },
     "home.how.intro": {
       "en": "Three easy steps. Reporting takes a few seconds.",
@@ -262,10 +222,6 @@
       "en": "Earn {radarPoints}",
       "text": "{radarPoints} ያግኙ"
     },
-    "home.points.body": {
-      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
-      "text": "{radarPoints} ለማግኘት {reportWait}ን ይንኩ። ያለ መለያ መጀመር ይችላሉ። ስልክ ቢቀይሩ ወይም ቢያስጀምሩ ደህንነቱ እንዲጠበቅ {radarPoints}ን በኢሜይል ይጠብቁ። የይለፍ ቃል የለም። መተግበሪያው የ 6 አሃዝ ኮድ በኢሜይል ይልካል።"
-    },
     "home.points.noteSoon": {
       "en": "Rewards coming soon.",
       "text": "ሽልማቶች በቅርቡ ይመጣሉ።"
@@ -285,34 +241,6 @@
     "home.points.neededHelp": {
       "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
       "text": "በአቅራቢያዎ ያለ ብቁ የመውሰጃ ቦታ፣ አዲስ መጠበቅ የለውም፣ {likelyFast} ወይም {likelySlow} የለውም። ለዚያ ሪፖርት 15 RP ያገኛሉ፣ 10 አይደለም።"
-    },
-    "home.points.firstLine": {
-      "en": "{firstBonus}{help}",
-      "text": "{firstBonus}{help}"
-    },
-    "home.points.firstHelp": {
-      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
-      "text": "በመጀመሪያው ትክክለኛ የመጠበቅ ሪፖርት ላይ ተጨማሪ ነጥቦች። እሱም {reportNeeded} ከሆነ በጠቅላላ 25 RP ያገኛሉ።"
-    },
-    "home.points.approvedLine": {
-      "en": "{approved}{help}",
-      "text": "{approved}{help}"
-    },
-    "home.points.approvedHelp": {
-      "en": "When we approve a pickup point you suggest",
-      "text": "የጠቆሙትን የመውሰጃ ቦታ ስናጸድቅ"
-    },
-    "home.points.referralLine": {
-      "en": "{referral}{help}",
-      "text": "{referral}{help}"
-    },
-    "home.points.referralHelp": {
-      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
-      "text": "ጓደኛዎ 3 ትክክለኛ የመጠበቅ ሪፖርቶች ሲያደርግ፣ ቢያንስ በ 2 የተለያዩ ቀናት (UTC ሰዓት)፣ በ 2 የተለያዩ የመውሰጃ ቦታዎች፣ ሁለታችሁም ታገኛላችሁ። ሁለታችሁም የተጠበቀ የ Radar መለያ ያስፈልጋችኋል (ኢሜይል ይጨምሩ)። ጓደኛዎ ኮድዎን ከመጀመሪያው ትክክለኛ የመጠበቅ ሪፖርት በፊት ማስገባት አለበት።"
-    },
-    "home.points.referralEach": {
-      "en": "{referralRp} each",
-      "text": "ለእያንዳንዱ {referralRp}"
     },
     "home.cities.body": {
       "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
@@ -350,22 +278,6 @@
       "en": "{lead} No names, addresses or order numbers.",
       "text": "{lead} ስም፣ አድራሻ ወይም የትዕዛዝ ቁጥር የለም።"
     },
-    "home.trust.skipLead": {
-      "en": "You can skip the delivery app.",
-      "text": "የማድረስ መተግበሪያውን መዝለል ይችላሉ።"
-    },
-    "home.trust.skip": {
-      "en": "{lead} Choosing the delivery app is optional.",
-      "text": "{lead} የማድረስ መተግበሪያ መምረጥ አማራጭ ነው።"
-    },
-    "home.trust.controlLead": {
-      "en": "You are in control.",
-      "text": "ቁጥጥሩ የእርስዎ ነው።"
-    },
-    "home.trust.control": {
-      "en": "{lead} Delete your account or Radar profile in the app at any time.",
-      "text": "{lead} በመተግበሪያው ውስጥ መለያውን ወይም የ Radar መገለጫውን በማንኛውም ጊዜ ይሰርዙ።"
-    },
     "home.faq.title": {
       "en": "Questions from drivers",
       "text": "የሹፌሮች ጥያቄዎች"
@@ -377,18 +289,6 @@
     "home.faq.account.a": {
       "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
       "text": "አይ። መተግበሪያው በራስ-ሰር የ Radar መገለጫ ይሰጥዎታል። ወዲያውኑ መጠበቅን መናገር ይችላሉ። {radarPoints}ን ለመጠበቅ በኋላ ኢሜይል ይጨምሩ። የይለፍ ቃል የለም። መተግበሪያው የ 6 አሃዝ ኮድ በኢሜይል ይልካል።"
-    },
-    "home.faq.where.q": {
-      "en": "Where does PickupRadar work?",
-      "text": "PickupRadar የት ይሰራል?"
-    },
-    "home.faq.where.a": {
-      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
-      "text": "PickupRadar አሁን በ Milton Keynes ይሰራል። ቀጣዩ London ነው። ከዚያ ተጨማሪ ከተሞች፣ እንደ Manchester፣ Birmingham፣ Leeds፣ Liverpool እና Glasgow። {cities}ን ይመልከቱ።"
-    },
-    "home.faq.where.cities": {
-      "en": "all the cities",
-      "text": "ሁሉም ከተሞች"
     },
     "home.faq.download.q": {
       "en": "When can I download the app?",
@@ -402,22 +302,6 @@
       "en": "live preview",
       "text": "ቀጥታ ቅድመ እይታ"
     },
-    "home.faq.wait.q": {
-      "en": "How is the current wait worked out?",
-      "text": "የአሁኑ መጠበቅ እንዴት ይሰላል?"
-    },
-    "home.faq.wait.a": {
-      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
-      "text": "ካለፉት 2 ሰዓታት የሹፌር ሪፖርቶች ይመጣል። ከ 2 ሰዓት በላይ የቆዩ ሪፖርቶች የአሁኑን መጠበቅ አይቀይሩም።"
-    },
-    "home.faq.likely.q": {
-      "en": "What do {likelyFast} and {likelySlow} mean?",
-      "text": "{likelyFast} እና {likelySlow} ምን ማለት ነው?"
-    },
-    "home.faq.likely.a": {
-      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
-      "text": "ግምቶች ናቸው፣ ቀጥታ ሪፖርቶች አይደሉም። አዲስ የመጠበቅ ሪፖርት በሌለ ጊዜ ይታያሉ።"
-    },
     "home.faq.track.q": {
       "en": "Does it track my location?",
       "text": "አካባቢዬን ይከታተላል?"
@@ -429,22 +313,6 @@
     "home.faq.track.privacy": {
       "en": "privacy policy",
       "text": "የግላዊነት ፖሊሲ"
-    },
-    "home.faq.delete.q": {
-      "en": "How do I delete my data?",
-      "text": "መረጃዬን እንዴት እሰርዛለሁ?"
-    },
-    "home.faq.delete.a": {
-      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
-      "text": "በመተግበሪያው ውስጥ {profile}ን ይክፈቱ። {deleteAccount}ን ይንኩ። ኢሜይል ካልጨመሩ {deleteProfile}ን ይንኩ። ኢሜይልም ሊልኩልን ይችላሉ። ደረጃዎቹን በ {page} ይመልከቱ።"
-    },
-    "home.closer.title": {
-      "en": "Explore Milton Keynes pickup points.",
-      "text": "በ Milton Keynes ያሉ የመውሰጃ ቦታዎችን ይመልከቱ።"
-    },
-    "home.closer.body": {
-      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
-      "text": "በ Milton Keynes ያሉ እውነተኛ የመውሰጃ ቦታዎችን ይመልከቱ። ቦታ ያግኙ እና የሪፖርት ማያውን ይሞክሩ። የሚነኩት ምንም አይላክም።"
     },
     "home.closer.cta": {
       "en": "Open the live preview",

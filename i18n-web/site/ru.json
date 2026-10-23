@@ -130,26 +130,6 @@
       "en": "Try the live preview",
       "text": "Попробуйте живой предпросмотр"
     },
-    "home.scale.title": {
-      "en": "See how long you may wait.",
-      "text": "Посмотрите, сколько вы можете ждать."
-    },
-    "home.scale.body": {
-      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
-      "text": "Курьеры сообщают, сколько они ждали. Текущее ожидание берётся из отчётов за последние 2 часа. Вы быстро видите быстрые и медленные точки выдачи."
-    },
-    "home.live.aria": {
-      "en": "Live PickupRadar app preview with real Milton Keynes data",
-      "text": "Живой предпросмотр приложения PickupRadar с реальными данными Milton Keynes"
-    },
-    "home.live.title": {
-      "en": "Try PickupRadar with real Milton Keynes data.",
-      "text": "Попробуйте PickupRadar с реальными данными Milton Keynes."
-    },
-    "home.live.body": {
-      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
-      "text": "Смотрите настоящие точки выдачи в Milton Keynes. Проверьте недавнее ожидание или {likelyFast} и {likelySlow}. Можно открыть экран отчёта, но ничего не отправляется."
-    },
     "home.try.tabLead": {
       "en": "Pick a tab.",
       "text": "Выберите вкладку."
@@ -173,10 +153,6 @@
     "home.try.open": {
       "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
       "text": "{lead} Откроется экран {reportWait}. Выберите время ожидания. Ничего не отправляется."
-    },
-    "home.live.big": {
-      "en": "Open the big preview",
-      "text": "Открыть большой предпросмотр"
     },
     "home.signals.title": {
       "en": "What you can see before you go in",
@@ -210,25 +186,9 @@
       "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
       "text": "Курьеры нажимают {reportProblem}, чтобы сообщить об этом. Вы видите отчёт до поездки туда."
     },
-    "home.signals.tablet.body": {
-      "en": "See when drivers report that a restaurant's tablet or system is not working.",
-      "text": "Смотрите, когда курьеры сообщают, что планшет или система ресторана не работает."
-    },
-    "home.signals.arrival.title": {
-      "en": "Order starts after arrival",
-      "text": "Заказ начинают после прибытия"
-    },
-    "home.signals.arrival.body": {
-      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
-      "text": "Некоторые места начинают заказ только когда вы приезжаете. Курьеры могут включить это при отчёте."
-    },
     "home.signals.missing.title": {
       "en": "Missing or wrong pickup points",
       "text": "Нет точки выдачи или она указана неверно"
-    },
-    "home.signals.missing.body": {
-      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
-      "text": "Нет точки выдачи? Нажмите {suggest}. Что-то не так? Нажмите {reportProblem}, затем {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} или {closedPermanently}."
     },
     "home.how.intro": {
       "en": "Three easy steps. Reporting takes a few seconds.",
@@ -262,10 +222,6 @@
       "en": "Earn {radarPoints}",
       "text": "Получайте {radarPoints}"
     },
-    "home.points.body": {
-      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
-      "text": "Нажмите {reportWait}, чтобы получить {radarPoints}. Можно начать без аккаунта. Защитите {radarPoints} электронной почтой, чтобы они сохранились, если вы смените или сбросите телефон. Пароль не нужен. Приложение пришлёт код из 6 цифр на почту."
-    },
     "home.points.noteSoon": {
       "en": "Rewards coming soon.",
       "text": "Награды скоро."
@@ -285,34 +241,6 @@
     "home.points.neededHelp": {
       "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
       "text": "Подходящая точка выдачи рядом с вами, без недавнего ожидания и без {likelyFast} или {likelySlow}. За отчёт вы получаете 15 RP вместо 10."
-    },
-    "home.points.firstLine": {
-      "en": "{firstBonus}{help}",
-      "text": "{firstBonus}{help}"
-    },
-    "home.points.firstHelp": {
-      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
-      "text": "Дополнительные баллы за первый действительный отчёт об ожидании. Если это ещё и {reportNeeded}, вы получаете всего 25 RP."
-    },
-    "home.points.approvedLine": {
-      "en": "{approved}{help}",
-      "text": "{approved}{help}"
-    },
-    "home.points.approvedHelp": {
-      "en": "When we approve a pickup point you suggest",
-      "text": "Когда мы одобряем предложенную вами точку выдачи"
-    },
-    "home.points.referralLine": {
-      "en": "{referral}{help}",
-      "text": "{referral}{help}"
-    },
-    "home.points.referralHelp": {
-      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
-      "text": "Вы оба получаете их, когда друг делает 3 действительных отчёта об ожидании, минимум в 2 разных дня (время UTC), на 2 разных точках выдачи. Вам обоим нужны защищённые аккаунты Radar (добавьте почту). Друг должен ввести ваш код до первого действительного отчёта об ожидании."
-    },
-    "home.points.referralEach": {
-      "en": "{referralRp} each",
-      "text": "{referralRp} каждому"
     },
     "home.cities.body": {
       "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
@@ -350,22 +278,6 @@
       "en": "{lead} No names, addresses or order numbers.",
       "text": "{lead} Без имён, адресов и номеров заказов."
     },
-    "home.trust.skipLead": {
-      "en": "You can skip the delivery app.",
-      "text": "Приложение доставки можно пропустить."
-    },
-    "home.trust.skip": {
-      "en": "{lead} Choosing the delivery app is optional.",
-      "text": "{lead} Выбор приложения доставки необязателен."
-    },
-    "home.trust.controlLead": {
-      "en": "You are in control.",
-      "text": "Вы сами решаете."
-    },
-    "home.trust.control": {
-      "en": "{lead} Delete your account or Radar profile in the app at any time.",
-      "text": "{lead} Удалите аккаунт или профиль Radar в приложении в любой момент."
-    },
     "home.faq.title": {
       "en": "Questions from drivers",
       "text": "Вопросы курьеров"
@@ -377,18 +289,6 @@
     "home.faq.account.a": {
       "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
       "text": "Нет. Приложение само создаёт профиль Radar. Сообщать об ожидании можно сразу. Чтобы защитить {radarPoints}, добавьте почту позже. Пароль не нужен. Приложение пришлёт код из 6 цифр на почту."
-    },
-    "home.faq.where.q": {
-      "en": "Where does PickupRadar work?",
-      "text": "Где работает PickupRadar?"
-    },
-    "home.faq.where.a": {
-      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
-      "text": "PickupRadar сейчас работает в Milton Keynes. Дальше London. Затем другие города, например Manchester, Birmingham, Leeds, Liverpool и Glasgow. Смотрите {cities}."
-    },
-    "home.faq.where.cities": {
-      "en": "all the cities",
-      "text": "все города"
     },
     "home.faq.download.q": {
       "en": "When can I download the app?",
@@ -402,22 +302,6 @@
       "en": "live preview",
       "text": "живой предпросмотр"
     },
-    "home.faq.wait.q": {
-      "en": "How is the current wait worked out?",
-      "text": "Как считается текущее ожидание?"
-    },
-    "home.faq.wait.a": {
-      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
-      "text": "Оно берётся из отчётов курьеров за последние 2 часа. Отчёты старше 2 часов не влияют на текущее ожидание."
-    },
-    "home.faq.likely.q": {
-      "en": "What do {likelyFast} and {likelySlow} mean?",
-      "text": "Что означают {likelyFast} и {likelySlow}?"
-    },
-    "home.faq.likely.a": {
-      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
-      "text": "Это оценки, а не живые отчёты. Они появляются, когда нет свежих отчётов об ожидании."
-    },
     "home.faq.track.q": {
       "en": "Does it track my location?",
       "text": "Отслеживает ли оно моё местоположение?"
@@ -429,22 +313,6 @@
     "home.faq.track.privacy": {
       "en": "privacy policy",
       "text": "политике конфиденциальности"
-    },
-    "home.faq.delete.q": {
-      "en": "How do I delete my data?",
-      "text": "Как удалить мои данные?"
-    },
-    "home.faq.delete.a": {
-      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
-      "text": "В приложении откройте {profile}. Нажмите {deleteAccount}. Если вы не добавили почту, нажмите {deleteProfile}. Можно также написать нам. Шаги смотрите на {page}."
-    },
-    "home.closer.title": {
-      "en": "Explore Milton Keynes pickup points.",
-      "text": "Посмотрите точки выдачи в Milton Keynes."
-    },
-    "home.closer.body": {
-      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
-      "text": "Посмотрите настоящие точки выдачи в Milton Keynes. Найдите место и попробуйте экран отчёта. Ничего из того, что вы нажимаете, не отправляется."
     },
     "home.closer.cta": {
       "en": "Open the live preview",

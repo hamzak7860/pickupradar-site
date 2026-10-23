@@ -130,26 +130,6 @@
       "en": "Try the live preview",
       "text": "Próbáld ki az élő előnézetet"
     },
-    "home.scale.title": {
-      "en": "See how long you may wait.",
-      "text": "Nézd meg, mennyit várhatsz."
-    },
-    "home.scale.body": {
-      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
-      "text": "A futárok jelentik, mennyit vártak. A jelenlegi várakozás az elmúlt 2 óra jelentéseiből jön. Gyorsan látod a gyors és a lassú átvételi pontokat."
-    },
-    "home.live.aria": {
-      "en": "Live PickupRadar app preview with real Milton Keynes data",
-      "text": "A PickupRadar alkalmazás élő előnézete valós Milton Keynes adatokkal"
-    },
-    "home.live.title": {
-      "en": "Try PickupRadar with real Milton Keynes data.",
-      "text": "Próbáld ki a PickupRadart valós Milton Keynes adatokkal."
-    },
-    "home.live.body": {
-      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
-      "text": "Nézd meg a valódi átvételi pontokat Milton Keynesben. Ellenőrizd a friss várakozást, vagy a {likelyFast} és {likelySlow} jelzést. Kipróbálhatod a jelentés képernyőt, de semmi nem megy el."
-    },
     "home.try.tabLead": {
       "en": "Pick a tab.",
       "text": "Válassz egy lapot."
@@ -173,10 +153,6 @@
     "home.try.open": {
       "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
       "text": "{lead} Megnyílik a {reportWait} képernyő. Válassz várakozási időt. Semmi nem megy el."
-    },
-    "home.live.big": {
-      "en": "Open the big preview",
-      "text": "Nagy előnézet megnyitása"
     },
     "home.signals.title": {
       "en": "What you can see before you go in",
@@ -210,25 +186,9 @@
       "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
       "text": "A futárok a {reportProblem} gombra koppintanak, hogy ezt jelentsék. A jelentést azelőtt látod, hogy odamennél."
     },
-    "home.signals.tablet.body": {
-      "en": "See when drivers report that a restaurant's tablet or system is not working.",
-      "text": "Nézd meg, amikor a futárok jelzik, hogy egy étterem táblagépe vagy rendszere nem működik."
-    },
-    "home.signals.arrival.title": {
-      "en": "Order starts after arrival",
-      "text": "A rendelés érkezés után indul"
-    },
-    "home.signals.arrival.body": {
-      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
-      "text": "Néhány hely csak akkor kezdi a rendelést, amikor megérkezel. A futárok jelentéskor bekapcsolhatják."
-    },
     "home.signals.missing.title": {
       "en": "Missing or wrong pickup points",
       "text": "Hiányzó vagy hibás átvételi pontok"
-    },
-    "home.signals.missing.body": {
-      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
-      "text": "Hiányzik egy átvételi pont? Koppints a {suggest} gombra. Valami nem stimmel? Koppints a {reportProblem} gombra, majd a {otherIssue} lehetőségre: {wrongAddress}, {wrongBranch}, {duplicate} vagy {closedPermanently}."
     },
     "home.how.intro": {
       "en": "Three easy steps. Reporting takes a few seconds.",
@@ -262,10 +222,6 @@
       "en": "Earn {radarPoints}",
       "text": "Szerezz {radarPoints} pontot"
     },
-    "home.points.body": {
-      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
-      "text": "Koppints a {reportWait} gombra, hogy {radarPoints} pontot szerezz. Fiók nélkül is kezdhetsz. Védd a {radarPoints} pontjaidat e-maillel, hogy megmaradjanak, ha telefont cserélsz vagy visszaállítod. Nincs jelszó. Az alkalmazás 6 számjegyű kódot küld e-mailben."
-    },
     "home.points.noteSoon": {
       "en": "Rewards coming soon.",
       "text": "A jutalmak hamarosan jönnek."
@@ -285,34 +241,6 @@
     "home.points.neededHelp": {
       "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
       "text": "Megfelelő átvételi pont a közeledben, friss várakozás nélkül, {likelyFast} vagy {likelySlow} nélkül. A jelentésért 15 RP-t kapsz 10 helyett."
-    },
-    "home.points.firstLine": {
-      "en": "{firstBonus}{help}",
-      "text": "{firstBonus}{help}"
-    },
-    "home.points.firstHelp": {
-      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
-      "text": "Plusz pontok az első érvényes várakozásjelentésért. Ha az egyben {reportNeeded} is, összesen 25 RP-t kapsz."
-    },
-    "home.points.approvedLine": {
-      "en": "{approved}{help}",
-      "text": "{approved}{help}"
-    },
-    "home.points.approvedHelp": {
-      "en": "When we approve a pickup point you suggest",
-      "text": "Amikor jóváhagyjuk az általad javasolt átvételi pontot"
-    },
-    "home.points.referralLine": {
-      "en": "{referral}{help}",
-      "text": "{referral}{help}"
-    },
-    "home.points.referralHelp": {
-      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
-      "text": "Mindketten megkapjátok, ha a barátod 3 érvényes várakozásjelentést készít legalább 2 különböző napon (UTC idő), 2 különböző átvételi ponton. Mindkettőtöknek védett Radar fiók kell (adjátok meg az e-mailt). A barátodnak a kódodat az első érvényes várakozásjelentés előtt kell megadnia."
-    },
-    "home.points.referralEach": {
-      "en": "{referralRp} each",
-      "text": "{referralRp} fejenként"
     },
     "home.cities.body": {
       "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
@@ -350,22 +278,6 @@
       "en": "{lead} No names, addresses or order numbers.",
       "text": "{lead} Nincs név, cím vagy rendelésszám."
     },
-    "home.trust.skipLead": {
-      "en": "You can skip the delivery app.",
-      "text": "A kézbesítő alkalmazást kihagyhatod."
-    },
-    "home.trust.skip": {
-      "en": "{lead} Choosing the delivery app is optional.",
-      "text": "{lead} A kézbesítő alkalmazás választása nem kötelező."
-    },
-    "home.trust.controlLead": {
-      "en": "You are in control.",
-      "text": "Te döntesz."
-    },
-    "home.trust.control": {
-      "en": "{lead} Delete your account or Radar profile in the app at any time.",
-      "text": "{lead} A fiókodat vagy a Radar profilodat bármikor törölheted az alkalmazásban."
-    },
     "home.faq.title": {
       "en": "Questions from drivers",
       "text": "Futárok kérdései"
@@ -377,18 +289,6 @@
     "home.faq.account.a": {
       "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
       "text": "Nem. Az alkalmazás automatikusan ad egy Radar profilt. A várakozást azonnal jelentheted. A {radarPoints} védelméhez később add meg az e-mailt. Nincs jelszó. Az alkalmazás 6 számjegyű kódot küld e-mailben."
-    },
-    "home.faq.where.q": {
-      "en": "Where does PickupRadar work?",
-      "text": "Hol működik a PickupRadar?"
-    },
-    "home.faq.where.a": {
-      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
-      "text": "A PickupRadar most Milton Keynesben működik. Következő: London. Utána több város, például Manchester, Birmingham, Leeds, Liverpool és Glasgow. Nézd meg: {cities}."
-    },
-    "home.faq.where.cities": {
-      "en": "all the cities",
-      "text": "az összes város"
     },
     "home.faq.download.q": {
       "en": "When can I download the app?",
@@ -402,22 +302,6 @@
       "en": "live preview",
       "text": "élő előnézet"
     },
-    "home.faq.wait.q": {
-      "en": "How is the current wait worked out?",
-      "text": "Hogyan számolják a jelenlegi várakozást?"
-    },
-    "home.faq.wait.a": {
-      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
-      "text": "A futárok elmúlt 2 órában küldött jelentéseiből jön. A 2 óránál régebbi jelentések nem változtatják a jelenlegi várakozást."
-    },
-    "home.faq.likely.q": {
-      "en": "What do {likelyFast} and {likelySlow} mean?",
-      "text": "Mit jelent a {likelyFast} és a {likelySlow}?"
-    },
-    "home.faq.likely.a": {
-      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
-      "text": "Ezek becslések, nem élő jelentések. Akkor jelennek meg, ha nincs friss várakozásjelentés."
-    },
     "home.faq.track.q": {
       "en": "Does it track my location?",
       "text": "Követi a helyzetemet?"
@@ -429,22 +313,6 @@
     "home.faq.track.privacy": {
       "en": "privacy policy",
       "text": "adatvédelmi szabályzat"
-    },
-    "home.faq.delete.q": {
-      "en": "How do I delete my data?",
-      "text": "Hogyan törlöm az adataimat?"
-    },
-    "home.faq.delete.a": {
-      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
-      "text": "Az alkalmazásban nyisd meg: {profile}. Koppints: {deleteAccount}. Ha nem adtál meg e-mailt, koppints: {deleteProfile}. Írhatsz nekünk is. A lépéseket itt találod: {page}."
-    },
-    "home.closer.title": {
-      "en": "Explore Milton Keynes pickup points.",
-      "text": "Nézd meg Milton Keynes átvételi pontjait."
-    },
-    "home.closer.body": {
-      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
-      "text": "Nézd meg Milton Keynes valódi átvételi pontjait. Keress egy helyet, és próbáld ki a jelentés képernyőt. Amit megkoppintasz, az nem megy el."
     },
     "home.closer.cta": {
       "en": "Open the live preview",

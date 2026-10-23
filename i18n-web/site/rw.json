@@ -130,26 +130,6 @@
       "en": "Try the live preview",
       "text": "Gerageza igaragaza ry'ako kanya"
     },
-    "home.scale.title": {
-      "en": "See how long you may wait.",
-      "text": "Reba igihe ushobora gutegereza."
-    },
-    "home.scale.body": {
-      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
-      "text": "Abashoferi batanga raporo y'igihe bategereje. Igihe cyo gutegereza kiriho kiva mu raporo z'amasaha 2 ashize. Ubona vuba ahafatirwa byihuse n'ahafatirwa bigenda buhoro."
-    },
-    "home.live.aria": {
-      "en": "Live PickupRadar app preview with real Milton Keynes data",
-      "text": "Igaragaza ry'ako kanya rya porogaramu PickupRadar n'amakuru y'ukuri ya Milton Keynes"
-    },
-    "home.live.title": {
-      "en": "Try PickupRadar with real Milton Keynes data.",
-      "text": "Gerageza PickupRadar n'amakuru y'ukuri ya Milton Keynes."
-    },
-    "home.live.body": {
-      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
-      "text": "Reba ahafatirwa nyakuri i Milton Keynes. Reba igihe gishya cyo gutegereza, cyangwa {likelyFast} na {likelySlow}. Ushobora kugerageza ikidirishya cya raporo, ariko nta kintu cyoherezwa."
-    },
     "home.try.tabLead": {
       "en": "Pick a tab.",
       "text": "Hitamo tabu."
@@ -173,10 +153,6 @@
     "home.try.open": {
       "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
       "text": "{lead} Ikidirishya {reportWait} gifunguka. Hitamo igihe cyo gutegereza. Nta kintu cyoherezwa."
-    },
-    "home.live.big": {
-      "en": "Open the big preview",
-      "text": "Fungura igaragaza rinini"
     },
     "home.signals.title": {
       "en": "What you can see before you go in",
@@ -210,25 +186,9 @@
       "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
       "text": "Abashoferi bakanda {reportProblem} kugira ngo babitange. Ubona raporo mbere yo kujya hariya."
     },
-    "home.signals.tablet.body": {
-      "en": "See when drivers report that a restaurant's tablet or system is not working.",
-      "text": "Reba iyo abashoferi batanga ko tablette cyangwa sisitemu ya resitora idakora."
-    },
-    "home.signals.arrival.title": {
-      "en": "Order starts after arrival",
-      "text": "Iteka ritangira nyuma yo kugera"
-    },
-    "home.signals.arrival.body": {
-      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
-      "text": "Ahantu hamwe hatangira iteka gusa nyuma yo kugera. Abashoferi barashobora kubikoresha mugihe batanga raporo."
-    },
     "home.signals.missing.title": {
       "en": "Missing or wrong pickup points",
       "text": "Ahafatirwa habuze cyangwa hatari neza"
-    },
-    "home.signals.missing.body": {
-      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
-      "text": "Ahafatirwa ntihariho? Kanda {suggest}. Hari ikitagenze neza? Kanda {reportProblem}, hanyuma {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} cyangwa {closedPermanently}."
     },
     "home.how.intro": {
       "en": "Three easy steps. Reporting takes a few seconds.",
@@ -262,10 +222,6 @@
       "en": "Earn {radarPoints}",
       "text": "Bona {radarPoints}"
     },
-    "home.points.body": {
-      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
-      "text": "Kanda {reportWait} kugira ngo ubone {radarPoints}. Ushobora gutangira utagira konti. Rinza {radarPoints} ukoresheje imeri kugira ngo zibe mu mutekano niba uhinduye cyangwa usubiza telefoni. Nta ijambo ry'ibanga. Porogaramu yohereza kode y'imibare 6 kuri imeri."
-    },
     "home.points.noteSoon": {
       "en": "Rewards coming soon.",
       "text": "Ibihembo biraza."
@@ -285,34 +241,6 @@
     "home.points.neededHelp": {
       "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
       "text": "Ahafatirwa hujuje ibisabwa hafi yawe, nta gihe gishya cyo gutegereza, kandi nta {likelyFast} cyangwa {likelySlow}. Ubona 15 RP kuri iyo raporo, si 10."
-    },
-    "home.points.firstLine": {
-      "en": "{firstBonus}{help}",
-      "text": "{firstBonus}{help}"
-    },
-    "home.points.firstHelp": {
-      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
-      "text": "Amanota y'inyongera kuri raporo ya mbere yemewe y'igihe cyo gutegereza. Niba ari na {reportNeeded}, ubona 25 RP byose."
-    },
-    "home.points.approvedLine": {
-      "en": "{approved}{help}",
-      "text": "{approved}{help}"
-    },
-    "home.points.approvedHelp": {
-      "en": "When we approve a pickup point you suggest",
-      "text": "Iyo twemeje ahafatirwa wasabye"
-    },
-    "home.points.referralLine": {
-      "en": "{referral}{help}",
-      "text": "{referral}{help}"
-    },
-    "home.points.referralHelp": {
-      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
-      "text": "Mwembi mubibona iyo inshuti yawe ikora raporo 3 zemewe z'igihe cyo gutegereza, byibuze ku minsi 2 itandukanye (igihe cya UTC), ahantu 2 hatandukanye hafatirwa. Mwembi mukeneye konti ya Radar irinzwe (ongeraho imeri). Inshuti yawe igomba kwandika kode yawe mbere ya raporo ya mbere yemewe y'igihe cyo gutegereza."
-    },
-    "home.points.referralEach": {
-      "en": "{referralRp} each",
-      "text": "{referralRp} buri wese"
     },
     "home.cities.body": {
       "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
@@ -350,22 +278,6 @@
       "en": "{lead} No names, addresses or order numbers.",
       "text": "{lead} Nta zina, aderesi cyangwa nimero y'iteka."
     },
-    "home.trust.skipLead": {
-      "en": "You can skip the delivery app.",
-      "text": "Ushobora gusimbuka porogaramu yo gutanga."
-    },
-    "home.trust.skip": {
-      "en": "{lead} Choosing the delivery app is optional.",
-      "text": "{lead} Guhitamo porogaramu yo gutanga ni ubushake."
-    },
-    "home.trust.controlLead": {
-      "en": "You are in control.",
-      "text": "Ni wowe ufite ububasha."
-    },
-    "home.trust.control": {
-      "en": "{lead} Delete your account or Radar profile in the app at any time.",
-      "text": "{lead} Siba konti cyangwa umwirondoro wa Radar muri porogaramu igihe icyo ari cyo cyose."
-    },
     "home.faq.title": {
       "en": "Questions from drivers",
       "text": "Ibibazo by'abashoferi"
@@ -377,18 +289,6 @@
     "home.faq.account.a": {
       "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
       "text": "Oya. Porogaramu iguha umwirondoro wa Radar ubwayo. Ushobora gutanga igihe cyo gutegereza ako kanya. Kugira ngo urinze {radarPoints}, ongeraho imeri nyuma. Nta ijambo ry'ibanga. Porogaramu yohereza kode y'imibare 6 kuri imeri."
-    },
-    "home.faq.where.q": {
-      "en": "Where does PickupRadar work?",
-      "text": "PickupRadar ikora he?"
-    },
-    "home.faq.where.a": {
-      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
-      "text": "PickupRadar ikora i Milton Keynes ubu. Hakurikira London. Hanyuma imijyi myinshi, nk'urugero Manchester, Birmingham, Leeds, Liverpool na Glasgow. Reba {cities}."
-    },
-    "home.faq.where.cities": {
-      "en": "all the cities",
-      "text": "imijyi yose"
     },
     "home.faq.download.q": {
       "en": "When can I download the app?",
@@ -402,22 +302,6 @@
       "en": "live preview",
       "text": "igaragaza ry'ako kanya"
     },
-    "home.faq.wait.q": {
-      "en": "How is the current wait worked out?",
-      "text": "Igihe cyo gutegereza kiriho gibarwa gute?"
-    },
-    "home.faq.wait.a": {
-      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
-      "text": "Kiva mu raporo z'abashoferi mu masaha 2 ashize. Raporo zirenze amasaha 2 ntizihindura igihe cyo gutegereza kiriho."
-    },
-    "home.faq.likely.q": {
-      "en": "What do {likelyFast} and {likelySlow} mean?",
-      "text": "{likelyFast} na {likelySlow} bisobanura iki?"
-    },
-    "home.faq.likely.a": {
-      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
-      "text": "Ni ibyegeranyo, si raporo z'ako kanya. Bigaragara iyo nta raporo nshya y'igihe cyo gutegereza."
-    },
     "home.faq.track.q": {
       "en": "Does it track my location?",
       "text": "Ikurikirana aho ndi?"
@@ -429,22 +313,6 @@
     "home.faq.track.privacy": {
       "en": "privacy policy",
       "text": "politiki y'ibanga"
-    },
-    "home.faq.delete.q": {
-      "en": "How do I delete my data?",
-      "text": "Nasiba amakuru yanjye nte?"
-    },
-    "home.faq.delete.a": {
-      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
-      "text": "Muri porogaramu, fungura {profile}. Kanda {deleteAccount}. Niba utongeyeho imeri, kanda {deleteProfile}. Ushobora kandi kutwandikira imeri. Reba {page} kugira ngo umenye intambwe."
-    },
-    "home.closer.title": {
-      "en": "Explore Milton Keynes pickup points.",
-      "text": "Shakisha ahafatirwa i Milton Keynes."
-    },
-    "home.closer.body": {
-      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
-      "text": "Shakisha ahafatirwa nyakuri i Milton Keynes. Shakisha ahantu ukagerageze ikidirishya cya raporo. Icyo ukanda nticyoherezwa."
     },
     "home.closer.cta": {
       "en": "Open the live preview",

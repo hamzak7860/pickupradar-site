@@ -130,26 +130,6 @@
       "en": "Try the live preview",
       "text": "Kokeile live-esikatselua"
     },
-    "home.scale.title": {
-      "en": "See how long you may wait.",
-      "text": "Katso, kuinka kauan saatat odottaa."
-    },
-    "home.scale.body": {
-      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
-      "text": "Lähetit ilmoittavat, kuinka kauan odottivat. Nykyinen odotus tulee viimeisten 2 tunnin ilmoituksista. Näet nopeasti nopeat ja hitaat noutopisteet."
-    },
-    "home.live.aria": {
-      "en": "Live PickupRadar app preview with real Milton Keynes data",
-      "text": "PickupRadar-sovelluksen live-esikatselu Milton Keynesin oikeilla tiedoilla"
-    },
-    "home.live.title": {
-      "en": "Try PickupRadar with real Milton Keynes data.",
-      "text": "Kokeile PickupRadaria Milton Keynesin oikeilla tiedoilla."
-    },
-    "home.live.body": {
-      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
-      "text": "Katso oikeita noutopisteitä Milton Keynesissä. Tarkista tuoreet odotukset tai {likelyFast} ja {likelySlow}. Voit kokeilla ilmoitusnäyttöä, mutta mitään ei lähetetä."
-    },
     "home.try.tabLead": {
       "en": "Pick a tab.",
       "text": "Valitse välilehti."
@@ -173,10 +153,6 @@
     "home.try.open": {
       "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
       "text": "{lead} Näyttö {reportWait} avautuu. Valitse odotusaika. Mitään ei lähetetä."
-    },
-    "home.live.big": {
-      "en": "Open the big preview",
-      "text": "Avaa suuri esikatselu"
     },
     "home.signals.title": {
       "en": "What you can see before you go in",
@@ -210,25 +186,9 @@
       "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
       "text": "Lähetit napauttavat {reportProblem} ilmoittaakseen tästä. Näet ilmoituksen ennen kuin ajat sinne."
     },
-    "home.signals.tablet.body": {
-      "en": "See when drivers report that a restaurant's tablet or system is not working.",
-      "text": "Näe, kun lähetit ilmoittavat, että ravintolan tabletti tai järjestelmä ei toimi."
-    },
-    "home.signals.arrival.title": {
-      "en": "Order starts after arrival",
-      "text": "Tilaus alkaa saapumisen jälkeen"
-    },
-    "home.signals.arrival.body": {
-      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
-      "text": "Jotkin paikat aloittavat tilauksen vasta kun saavut. Lähetit voivat laittaa tämän päälle ilmoittaessaan."
-    },
     "home.signals.missing.title": {
       "en": "Missing or wrong pickup points",
       "text": "Puuttuvat tai väärät noutopisteet"
-    },
-    "home.signals.missing.body": {
-      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
-      "text": "Puuttuuko noutopiste? Napauta {suggest}. Onko jokin vialla? Napauta {reportProblem} ja sitten {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} tai {closedPermanently}."
     },
     "home.how.intro": {
       "en": "Three easy steps. Reporting takes a few seconds.",
@@ -262,10 +222,6 @@
       "en": "Earn {radarPoints}",
       "text": "Ansaitse {radarPoints}"
     },
-    "home.points.body": {
-      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
-      "text": "Napauta {reportWait} ansaitaksesi {radarPoints}. Voit aloittaa ilman tiliä. Suojaa {radarPoints} sähköpostillasi, jotta ne säilyvät, jos vaihdat tai nollaat puhelimen. Ei salasanaa. Sovellus lähettää 6-numeroisen koodin sähköpostitse."
-    },
     "home.points.noteSoon": {
       "en": "Rewards coming soon.",
       "text": "Palkinnot tulossa pian."
@@ -285,34 +241,6 @@
     "home.points.neededHelp": {
       "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
       "text": "Sopiva noutopiste lähelläsi, ilman tuoretta odotusta eikä {likelyFast} tai {likelySlow}. Saat ilmoituksesta 15 RP eikä 10."
-    },
-    "home.points.firstLine": {
-      "en": "{firstBonus}{help}",
-      "text": "{firstBonus}{help}"
-    },
-    "home.points.firstHelp": {
-      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
-      "text": "Lisäpisteet ensimmäisestä kelvollisesta odotusilmoituksesta. Jos se on myös {reportNeeded}, saat yhteensä 25 RP."
-    },
-    "home.points.approvedLine": {
-      "en": "{approved}{help}",
-      "text": "{approved}{help}"
-    },
-    "home.points.approvedHelp": {
-      "en": "When we approve a pickup point you suggest",
-      "text": "Kun hyväksymme ehdottamasi noutopisteen"
-    },
-    "home.points.referralLine": {
-      "en": "{referral}{help}",
-      "text": "{referral}{help}"
-    },
-    "home.points.referralHelp": {
-      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
-      "text": "Saatte sen molemmat, kun ystäväsi tekee 3 kelvollista odotusilmoitusta vähintään 2 eri päivänä (UTC-aika) 2 eri noutopisteessä. Tarvitsette molemmat suojatut Radar-tilit (lisätkää sähköposti). Ystäväsi pitää syöttää koodisi ennen ensimmäistä kelvollista odotusilmoitusta."
-    },
-    "home.points.referralEach": {
-      "en": "{referralRp} each",
-      "text": "{referralRp} kummallekin"
     },
     "home.cities.body": {
       "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
@@ -350,22 +278,6 @@
       "en": "{lead} No names, addresses or order numbers.",
       "text": "{lead} Ei nimiä, osoitteita tai tilausnumeroita."
     },
-    "home.trust.skipLead": {
-      "en": "You can skip the delivery app.",
-      "text": "Voit ohittaa toimitussovelluksen."
-    },
-    "home.trust.skip": {
-      "en": "{lead} Choosing the delivery app is optional.",
-      "text": "{lead} Toimitussovelluksen valinta on vapaaehtoista."
-    },
-    "home.trust.controlLead": {
-      "en": "You are in control.",
-      "text": "Sinä päätät."
-    },
-    "home.trust.control": {
-      "en": "{lead} Delete your account or Radar profile in the app at any time.",
-      "text": "{lead} Poista tilisi tai Radar-profiilisi sovelluksessa milloin tahansa."
-    },
     "home.faq.title": {
       "en": "Questions from drivers",
       "text": "Lähettien kysymyksiä"
@@ -377,18 +289,6 @@
     "home.faq.account.a": {
       "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
       "text": "Et. Sovellus antaa Radar-profiilin automaattisesti. Voit ilmoittaa odotuksia heti. Lisää sähköposti myöhemmin suojataksesi {radarPoints}. Ei salasanaa. Sovellus lähettää 6-numeroisen koodin sähköpostitse."
-    },
-    "home.faq.where.q": {
-      "en": "Where does PickupRadar work?",
-      "text": "Missä PickupRadar toimii?"
-    },
-    "home.faq.where.a": {
-      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
-      "text": "PickupRadar toimii nyt Milton Keynesissä. Seuraavaksi London. Sitten lisää kaupunkeja, kuten Manchester, Birmingham, Leeds, Liverpool ja Glasgow. Katso {cities}."
-    },
-    "home.faq.where.cities": {
-      "en": "all the cities",
-      "text": "kaikki kaupungit"
     },
     "home.faq.download.q": {
       "en": "When can I download the app?",
@@ -402,22 +302,6 @@
       "en": "live preview",
       "text": "live-esikatselu"
     },
-    "home.faq.wait.q": {
-      "en": "How is the current wait worked out?",
-      "text": "Miten nykyinen odotus lasketaan?"
-    },
-    "home.faq.wait.a": {
-      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
-      "text": "Se tulee lähettien ilmoituksista viimeisten 2 tunnin ajalta. Yli 2 tuntia vanhat ilmoitukset eivät vaikuta nykyiseen odotukseen."
-    },
-    "home.faq.likely.q": {
-      "en": "What do {likelyFast} and {likelySlow} mean?",
-      "text": "Mitä {likelyFast} ja {likelySlow} tarkoittavat?"
-    },
-    "home.faq.likely.a": {
-      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
-      "text": "Ne ovat arvioita, eivät live-ilmoituksia. Ne näkyvät, kun tuoreita odotusilmoituksia ei ole."
-    },
     "home.faq.track.q": {
       "en": "Does it track my location?",
       "text": "Seuraako se sijaintiani?"
@@ -429,22 +313,6 @@
     "home.faq.track.privacy": {
       "en": "privacy policy",
       "text": "tietosuojakäytäntö"
-    },
-    "home.faq.delete.q": {
-      "en": "How do I delete my data?",
-      "text": "Miten poistan tietoni?"
-    },
-    "home.faq.delete.a": {
-      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
-      "text": "Avaa sovelluksessa {profile}. Napauta {deleteAccount}. Jos et lisännyt sähköpostia, napauta {deleteProfile}. Voit myös lähettää meille sähköpostia. Katso vaiheet kohdasta {page}."
-    },
-    "home.closer.title": {
-      "en": "Explore Milton Keynes pickup points.",
-      "text": "Tutustu Milton Keynesin noutopisteisiin."
-    },
-    "home.closer.body": {
-      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
-      "text": "Tutustu Milton Keynesin oikeisiin noutopisteisiin. Hae paikkaa ja kokeile ilmoitusnäyttöä. Mitään napauttamaasi ei lähetetä."
     },
     "home.closer.cta": {
       "en": "Open the live preview",

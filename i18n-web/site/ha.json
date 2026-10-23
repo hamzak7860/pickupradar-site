@@ -130,26 +130,6 @@
       "en": "Try the live preview",
       "text": "Gwada duban kai tsaye"
     },
-    "home.scale.title": {
-      "en": "See how long you may wait.",
-      "text": "Duba tsawon lokacin da za ka iya jira."
-    },
-    "home.scale.body": {
-      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
-      "text": "Direbobi suna bayar da rahoton tsawon lokacin da suka jira. Lokacin jira na yanzu yana zuwa daga rahotanni a cikin awanni 2 da suka wuce. Kana ganin wuraren ɗauka masu sauri da masu jinkiri da sauri."
-    },
-    "home.live.aria": {
-      "en": "Live PickupRadar app preview with real Milton Keynes data",
-      "text": "Duban kai tsaye na manhajar PickupRadar da bayanan gaskiya na Milton Keynes"
-    },
-    "home.live.title": {
-      "en": "Try PickupRadar with real Milton Keynes data.",
-      "text": "Gwada PickupRadar da bayanan gaskiya na Milton Keynes."
-    },
-    "home.live.body": {
-      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
-      "text": "Duba wuraren ɗauka na gaskiya a Milton Keynes. Duba sabon lokacin jira, ko {likelyFast} da {likelySlow}. Kana iya gwada allon rahoto, amma babu abin da ake aikawa."
-    },
     "home.try.tabLead": {
       "en": "Pick a tab.",
       "text": "Zaɓi shafi."
@@ -173,10 +153,6 @@
     "home.try.open": {
       "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
       "text": "{lead} Allon {reportWait} zai buɗe. Zaɓi lokacin jira. Babu abin da ake aikawa."
-    },
-    "home.live.big": {
-      "en": "Open the big preview",
-      "text": "Buɗe babban dubawa"
     },
     "home.signals.title": {
       "en": "What you can see before you go in",
@@ -210,25 +186,9 @@
       "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
       "text": "Direbobi suna danna {reportProblem} don bayar da rahoton wannan. Kana ganin rahoton kafin ka tafi can."
     },
-    "home.signals.tablet.body": {
-      "en": "See when drivers report that a restaurant's tablet or system is not working.",
-      "text": "Duba idan direbobi suka bayar da rahoton cewa allon ko tsarin gidan abinci baya aiki."
-    },
-    "home.signals.arrival.title": {
-      "en": "Order starts after arrival",
-      "text": "Oda tana farawa bayan ka iso"
-    },
-    "home.signals.arrival.body": {
-      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
-      "text": "Wasu wurare suna fara oda ne kawai bayan ka iso. Direbobi na iya kunna wannan yayin bayar da rahoto."
-    },
     "home.signals.missing.title": {
       "en": "Missing or wrong pickup points",
       "text": "Wuri na ɗauka da ya ɓace ko kuskure"
-    },
-    "home.signals.missing.body": {
-      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
-      "text": "Babu wuri na ɗauka? Danna {suggest}. Akwai kuskure? Danna {reportProblem}, sannan {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} ko {closedPermanently}."
     },
     "home.how.intro": {
       "en": "Three easy steps. Reporting takes a few seconds.",
@@ -262,10 +222,6 @@
       "en": "Earn {radarPoints}",
       "text": "Samu {radarPoints}"
     },
-    "home.points.body": {
-      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
-      "text": "Danna {reportWait} don samun {radarPoints}. Kana iya farawa ba tare da asusu ba. Kare {radarPoints} da imel don su kasance cikin aminci idan ka canza ko sake saita waya. Babu kalmar sirri. Manhaja tana aika lambar lamba 6 ta imel."
-    },
     "home.points.noteSoon": {
       "en": "Rewards coming soon.",
       "text": "Kyaututtuka na zuwa."
@@ -285,34 +241,6 @@
     "home.points.neededHelp": {
       "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
       "text": "Wuri na ɗauka da ya cancanci kusa da kai, babu sabon lokacin jira, kuma babu {likelyFast} ko {likelySlow}. Kana samun 15 RP don wannan rahoto, ba 10 ba."
-    },
-    "home.points.firstLine": {
-      "en": "{firstBonus}{help}",
-      "text": "{firstBonus}{help}"
-    },
-    "home.points.firstHelp": {
-      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
-      "text": "Ƙarin maki a kan rahoton jira na farko mai inganci. Idan shi ma {reportNeeded} ne, kana samun 25 RP gaba ɗaya."
-    },
-    "home.points.approvedLine": {
-      "en": "{approved}{help}",
-      "text": "{approved}{help}"
-    },
-    "home.points.approvedHelp": {
-      "en": "When we approve a pickup point you suggest",
-      "text": "Lokacin da muka amince da wuri na ɗauka da ka gabatar"
-    },
-    "home.points.referralLine": {
-      "en": "{referral}{help}",
-      "text": "{referral}{help}"
-    },
-    "home.points.referralHelp": {
-      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
-      "text": "Ku duka kuna samu idan abokinka ya yi rahotannin jira 3 masu inganci, aƙalla a ranaku 2 daban-daban (lokacin UTC), a wuraren ɗauka 2 daban-daban. Ku duka kuna buƙatar asusun Radar mai kariya (ƙara imel). Abokinka dole ne ya shigar da lambarka kafin rahoton jira na farko mai inganci."
-    },
-    "home.points.referralEach": {
-      "en": "{referralRp} each",
-      "text": "{referralRp} kowane ɗaya"
     },
     "home.cities.body": {
       "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
@@ -350,22 +278,6 @@
       "en": "{lead} No names, addresses or order numbers.",
       "text": "{lead} Babu suna, adireshin ko lambar oda."
     },
-    "home.trust.skipLead": {
-      "en": "You can skip the delivery app.",
-      "text": "Kana iya tsallake manhajar isarwa."
-    },
-    "home.trust.skip": {
-      "en": "{lead} Choosing the delivery app is optional.",
-      "text": "{lead} Zaɓar manhajar isarwa zaɓi ne."
-    },
-    "home.trust.controlLead": {
-      "en": "You are in control.",
-      "text": "Kai kake da iko."
-    },
-    "home.trust.control": {
-      "en": "{lead} Delete your account or Radar profile in the app at any time.",
-      "text": "{lead} Share asusu ko bayanin Radar a cikin manhaja a kowane lokaci."
-    },
     "home.faq.title": {
       "en": "Questions from drivers",
       "text": "Tambayoyin direbobi"
@@ -377,18 +289,6 @@
     "home.faq.account.a": {
       "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
       "text": "A'a. Manhaja tana ba ka bayanin Radar kai tsaye. Kana iya bayar da rahoton lokacin jira nan take. Don kare {radarPoints}, ƙara imel daga baya. Babu kalmar sirri. Manhaja tana aika lambar lamba 6 ta imel."
-    },
-    "home.faq.where.q": {
-      "en": "Where does PickupRadar work?",
-      "text": "Ina PickupRadar ke aiki?"
-    },
-    "home.faq.where.a": {
-      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
-      "text": "PickupRadar yana aiki a Milton Keynes yanzu. Na gaba London ne. Sannan ƙarin garuruwa, kamar Manchester, Birmingham, Leeds, Liverpool da Glasgow. Duba {cities}."
-    },
-    "home.faq.where.cities": {
-      "en": "all the cities",
-      "text": "dukkan garuruwa"
     },
     "home.faq.download.q": {
       "en": "When can I download the app?",
@@ -402,22 +302,6 @@
       "en": "live preview",
       "text": "duban kai tsaye"
     },
-    "home.faq.wait.q": {
-      "en": "How is the current wait worked out?",
-      "text": "Ta yaya ake ƙididdige lokacin jira na yanzu?"
-    },
-    "home.faq.wait.a": {
-      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
-      "text": "Yana zuwa daga rahotannin direbobi a cikin awanni 2 da suka wuce. Rahotannin da suka wuce awanni 2 ba sa canza lokacin jira na yanzu."
-    },
-    "home.faq.likely.q": {
-      "en": "What do {likelyFast} and {likelySlow} mean?",
-      "text": "Mene ne {likelyFast} da {likelySlow}?"
-    },
-    "home.faq.likely.a": {
-      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
-      "text": "Kiyasai ne, ba rahotanni kai tsaye ba. Suna bayyana idan babu sabon rahoton lokacin jira."
-    },
     "home.faq.track.q": {
       "en": "Does it track my location?",
       "text": "Shin yana bin wurina?"
@@ -429,22 +313,6 @@
     "home.faq.track.privacy": {
       "en": "privacy policy",
       "text": "manufar sirri"
-    },
-    "home.faq.delete.q": {
-      "en": "How do I delete my data?",
-      "text": "Ta yaya zan share bayanana?"
-    },
-    "home.faq.delete.a": {
-      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
-      "text": "A cikin manhaja, buɗe {profile}. Danna {deleteAccount}. Idan ba ka ƙara imel ba, danna {deleteProfile}. Kana iya kuma aika mana imel. Duba {page} don matakan."
-    },
-    "home.closer.title": {
-      "en": "Explore Milton Keynes pickup points.",
-      "text": "Bincika wuraren ɗauka a Milton Keynes."
-    },
-    "home.closer.body": {
-      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
-      "text": "Bincika wuraren ɗauka na gaskiya a Milton Keynes. Nemi wuri ka gwada allon rahoto. Babu abin da ka danna da ake aikawa."
     },
     "home.closer.cta": {
       "en": "Open the live preview",

@@ -130,26 +130,6 @@
       "en": "Try the live preview",
       "text": "লাইভ প্রিভিউ চেষ্টা করুন"
     },
-    "home.scale.title": {
-      "en": "See how long you may wait.",
-      "text": "দেখুন আপনি কতক্ষণ অপেক্ষা করতে পারেন।"
-    },
-    "home.scale.body": {
-      "en": "Drivers report how long they waited. The current wait comes from reports in the last 2 hours. You can see fast and slow pickups quickly.",
-      "text": "ড্রাইভাররা জানান তারা কতক্ষণ অপেক্ষা করেছেন। বর্তমান অপেক্ষা আসে গত 2 ঘণ্টার রিপোর্ট থেকে। দ্রুত ও ধীর পিকআপ তাড়াতাড়ি দেখতে পারেন।"
-    },
-    "home.live.aria": {
-      "en": "Live PickupRadar app preview with real Milton Keynes data",
-      "text": "Milton Keynes-এর আসল ডেটা দিয়ে PickupRadar অ্যাপের লাইভ প্রিভিউ"
-    },
-    "home.live.title": {
-      "en": "Try PickupRadar with real Milton Keynes data.",
-      "text": "Milton Keynes-এর আসল ডেটা দিয়ে PickupRadar চেষ্টা করুন।"
-    },
-    "home.live.body": {
-      "en": "See real pickup points in Milton Keynes. Check recent waits, or {likelyFast} and {likelySlow}. You can try the report screen, but nothing is sent.",
-      "text": "Milton Keynes-এ আসল পিকআপ পয়েন্ট দেখুন। সাম্প্রতিক অপেক্ষা দেখুন, অথবা {likelyFast} ও {likelySlow}। রিপোর্ট স্ক্রিন চেষ্টা করতে পারেন, কিন্তু কিছু পাঠানো হয় না।"
-    },
     "home.try.tabLead": {
       "en": "Pick a tab.",
       "text": "একটি ট্যাব বেছে নিন।"
@@ -173,10 +153,6 @@
     "home.try.open": {
       "en": "{lead} The {reportWait} screen opens. Choose a wait time. Nothing is sent.",
       "text": "{lead} {reportWait} স্ক্রিন খোলে। একটি অপেক্ষার সময় বেছে নিন। কিছু পাঠানো হয় না।"
-    },
-    "home.live.big": {
-      "en": "Open the big preview",
-      "text": "বড় প্রিভিউ খুলুন"
     },
     "home.signals.title": {
       "en": "What you can see before you go in",
@@ -210,25 +186,9 @@
       "en": "Drivers tap {reportProblem} to report this. You see their report before you drive there.",
       "text": "ড্রাইভাররা এটি রিপোর্ট করতে {reportProblem} ট্যাপ করেন। সেখানে যাওয়ার আগে আপনি তাদের রিপোর্ট দেখেন।"
     },
-    "home.signals.tablet.body": {
-      "en": "See when drivers report that a restaurant's tablet or system is not working.",
-      "text": "দেখুন যখন ড্রাইভাররা রিপোর্ট করেন যে কোনো রেস্তোরাঁর ট্যাবলেট বা সিস্টেম কাজ করছে না।"
-    },
-    "home.signals.arrival.title": {
-      "en": "Order starts after arrival",
-      "text": "পৌঁছানোর পর অর্ডার শুরু হয়"
-    },
-    "home.signals.arrival.body": {
-      "en": "Some places only start the order when you arrive. Drivers can turn this on when they report.",
-      "text": "কিছু জায়গা আপনি পৌঁছালেই অর্ডার শুরু করে। ড্রাইভাররা রিপোর্ট করার সময় এটি চালু করতে পারেন।"
-    },
     "home.signals.missing.title": {
       "en": "Missing or wrong pickup points",
       "text": "হারানো বা ভুল পিকআপ পয়েন্ট"
-    },
-    "home.signals.missing.body": {
-      "en": "Missing a pickup point? Tap {suggest}. Something wrong? Tap {reportProblem}, then {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} or {closedPermanently}.",
-      "text": "পিকআপ পয়েন্ট নেই? {suggest} ট্যাপ করুন। কিছু ভুল? {reportProblem} ট্যাপ করুন, তারপর {otherIssue}: {wrongAddress}, {wrongBranch}, {duplicate} বা {closedPermanently}।"
     },
     "home.how.intro": {
       "en": "Three easy steps. Reporting takes a few seconds.",
@@ -262,10 +222,6 @@
       "en": "Earn {radarPoints}",
       "text": "{radarPoints} অর্জন করুন"
     },
-    "home.points.body": {
-      "en": "Tap {reportWait} to earn {radarPoints}. You can start without an account. Protect your {radarPoints} with your email, so they are safe if you change or reset your phone. No password needed. The app emails you a 6-digit code.",
-      "text": "{radarPoints} অর্জন করতে {reportWait} ট্যাপ করুন। অ্যাকাউন্ট ছাড়াই শুরু করতে পারেন। ফোন বদলালে বা রিসেট করলে নিরাপদ থাকুক, তাই ইমেইল দিয়ে {radarPoints} সুরক্ষিত করুন। পাসওয়ার্ড লাগে না। অ্যাপ ইমেইলে 6 অঙ্কের কোড পাঠায়।"
-    },
     "home.points.noteSoon": {
       "en": "Rewards coming soon.",
       "text": "রিওয়ার্ড শিগগিরই আসছে।"
@@ -285,34 +241,6 @@
     "home.points.neededHelp": {
       "en": "An eligible pickup point near you with no recent wait and no {likelyFast} or {likelySlow}. You earn 15 RP for the report instead of 10.",
       "text": "আপনার কাছে যোগ্য পিকআপ পয়েন্ট, সাম্প্রতিক অপেক্ষা নেই এবং {likelyFast} বা {likelySlow} নেই। রিপোর্টে 10-এর বদলে 15 RP পাবেন।"
-    },
-    "home.points.firstLine": {
-      "en": "{firstBonus}{help}",
-      "text": "{firstBonus}{help}"
-    },
-    "home.points.firstHelp": {
-      "en": "Extra points on your first valid wait report. If it is also {reportNeeded}, you earn 25 RP in total.",
-      "text": "প্রথম বৈধ অপেক্ষা রিপোর্টে অতিরিক্ত পয়েন্ট। যদি সেটি {reportNeeded}ও হয়, মোট 25 RP পাবেন।"
-    },
-    "home.points.approvedLine": {
-      "en": "{approved}{help}",
-      "text": "{approved}{help}"
-    },
-    "home.points.approvedHelp": {
-      "en": "When we approve a pickup point you suggest",
-      "text": "আপনার প্রস্তাবিত পিকআপ পয়েন্ট আমরা অনুমোদন করলে"
-    },
-    "home.points.referralLine": {
-      "en": "{referral}{help}",
-      "text": "{referral}{help}"
-    },
-    "home.points.referralHelp": {
-      "en": "You each earn it when your friend makes 3 valid wait reports, on at least 2 different days (UTC time), at 2 different pickup points. You both need protected Radar accounts (add your email). Your friend must enter your code before their first valid wait report.",
-      "text": "আপনার বন্ধু কমপক্ষে 2 ভিন্ন দিনে (UTC সময়), 2 ভিন্ন পিকআপ পয়েন্টে 3টি বৈধ অপেক্ষা রিপোর্ট করলে আপনারা দুজনেই পান। দুজনেরই সুরক্ষিত Radar অ্যাকাউন্ট লাগে (ইমেইল যোগ করুন)। বন্ধুকে প্রথম বৈধ অপেক্ষা রিপোর্টের আগে আপনার কোড দিতে হবে।"
-    },
-    "home.points.referralEach": {
-      "en": "{referralRp} each",
-      "text": "প্রত্যেকে {referralRp}"
     },
     "home.cities.body": {
       "en": "These are the UK cities in the app. Can't find your city? Request it in the app. Or tap {notify} on a {comingSoon} city. We'll email you when it's live.",
@@ -350,22 +278,6 @@
       "en": "{lead} No names, addresses or order numbers.",
       "text": "{lead} নাম, ঠিকানা বা অর্ডার নম্বর নেই।"
     },
-    "home.trust.skipLead": {
-      "en": "You can skip the delivery app.",
-      "text": "ডেলিভারি অ্যাপ বাদ দিতে পারেন।"
-    },
-    "home.trust.skip": {
-      "en": "{lead} Choosing the delivery app is optional.",
-      "text": "{lead} ডেলিভারি অ্যাপ বেছে নেওয়া ঐচ্ছিক।"
-    },
-    "home.trust.controlLead": {
-      "en": "You are in control.",
-      "text": "নিয়ন্ত্রণ আপনার হাতে।"
-    },
-    "home.trust.control": {
-      "en": "{lead} Delete your account or Radar profile in the app at any time.",
-      "text": "{lead} অ্যাপে যেকোনো সময় আপনার অ্যাকাউন্ট বা Radar প্রোফাইল মুছুন।"
-    },
     "home.faq.title": {
       "en": "Questions from drivers",
       "text": "ড্রাইভারদের প্রশ্ন"
@@ -377,18 +289,6 @@
     "home.faq.account.a": {
       "en": "No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your {radarPoints}, add your email later. No password needed. The app emails you a 6-digit code.",
       "text": "না। অ্যাপ নিজে থেকেই একটি Radar প্রোফাইল দেয়। সঙ্গে সঙ্গে অপেক্ষা রিপোর্ট করতে পারেন। আপনার {radarPoints} সুরক্ষিত করতে পরে ইমেইল যোগ করুন। পাসওয়ার্ড লাগে না। অ্যাপ ইমেইলে 6 অঙ্কের কোড পাঠায়।"
-    },
-    "home.faq.where.q": {
-      "en": "Where does PickupRadar work?",
-      "text": "PickupRadar কোথায় কাজ করে?"
-    },
-    "home.faq.where.a": {
-      "en": "PickupRadar works in Milton Keynes now. London is next. Then more cities, like Manchester, Birmingham, Leeds, Liverpool and Glasgow. See {cities}.",
-      "text": "PickupRadar এখন Milton Keynes-এ কাজ করে। পরবর্তী London। তারপর আরও শহর, যেমন Manchester, Birmingham, Leeds, Liverpool ও Glasgow। দেখুন {cities}।"
-    },
-    "home.faq.where.cities": {
-      "en": "all the cities",
-      "text": "সব শহর"
     },
     "home.faq.download.q": {
       "en": "When can I download the app?",
@@ -402,22 +302,6 @@
       "en": "live preview",
       "text": "লাইভ প্রিভিউ"
     },
-    "home.faq.wait.q": {
-      "en": "How is the current wait worked out?",
-      "text": "বর্তমান অপেক্ষা কীভাবে বের হয়?"
-    },
-    "home.faq.wait.a": {
-      "en": "It comes from driver reports in the last 2 hours. Reports older than 2 hours do not affect the current wait.",
-      "text": "এটি গত 2 ঘণ্টার ড্রাইভার রিপোর্ট থেকে আসে। 2 ঘণ্টার বেশি পুরনো রিপোর্ট বর্তমান অপেক্ষায় প্রভাব ফেলে না।"
-    },
-    "home.faq.likely.q": {
-      "en": "What do {likelyFast} and {likelySlow} mean?",
-      "text": "{likelyFast} ও {likelySlow} মানে কী?"
-    },
-    "home.faq.likely.a": {
-      "en": "These are estimates, not live reports. They appear when there are no recent wait reports.",
-      "text": "এগুলো অনুমান, লাইভ রিপোর্ট নয়। সাম্প্রতিক অপেক্ষা রিপোর্ট না থাকলে দেখা যায়।"
-    },
     "home.faq.track.q": {
       "en": "Does it track my location?",
       "text": "এটি কি আমার লোকেশন ট্র্যাক করে?"
@@ -429,22 +313,6 @@
     "home.faq.track.privacy": {
       "en": "privacy policy",
       "text": "গোপনীয়তা নীতি"
-    },
-    "home.faq.delete.q": {
-      "en": "How do I delete my data?",
-      "text": "আমার ডেটা কীভাবে মুছব?"
-    },
-    "home.faq.delete.a": {
-      "en": "In the app, open {profile}. Tap {deleteAccount}. If you did not add an email, tap {deleteProfile}. You can also email us. See {page} for the steps.",
-      "text": "অ্যাপে {profile} খুলুন। {deleteAccount} ট্যাপ করুন। ইমেইল যোগ না করলে {deleteProfile} ট্যাপ করুন। আমাদের ইমেইলও করতে পারেন। ধাপগুলোর জন্য {page} দেখুন।"
-    },
-    "home.closer.title": {
-      "en": "Explore Milton Keynes pickup points.",
-      "text": "Milton Keynes-এর পিকআপ পয়েন্ট দেখুন।"
-    },
-    "home.closer.body": {
-      "en": "Explore real pickup points in Milton Keynes. Search for a place and try the report screen. Nothing you tap is sent.",
-      "text": "Milton Keynes-এ আসল পিকআপ পয়েন্ট দেখুন। একটি জায়গা খুঁজুন এবং রিপোর্ট স্ক্রিন চেষ্টা করুন। আপনি যা ট্যাপ করেন তা পাঠানো হয় না।"
     },
     "home.closer.cta": {
       "en": "Open the live preview",
