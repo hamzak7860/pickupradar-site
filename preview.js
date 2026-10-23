@@ -712,6 +712,17 @@ function mountPickupRadarPreview(container, options) {
   let lastStatsRefreshAt = 0;
   // Tutorial (app.html only): true while the tutorial or the location screen is showing.
   let onboardingActive = false;
+  // Shared venue link: /app.html?city=<city>&venue=<venue id> opens that pickup point.
+  // Only on pages that ask for it (the full live preview), and only a real venue id.
+  let deepLinkVenueId = (function readDeepLinkVenue() {
+    if (!options.deepLink) return null;
+    try {
+      const id = new URLSearchParams(window.location.search).get('venue');
+      return id && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(id) ? id.toLowerCase() : null;
+    } catch (error) {
+      return null;
+    }
+  })();
   let activeDialog = null;
   let dialogReturnFocus = null;
   let dialogReturnSelector = null;
@@ -3110,7 +3121,8 @@ function mountPickupRadarPreview(container, options) {
     });
   }
 
-  if (options.tutorial && !tutorialAlreadySeen()) {
+  // A shared venue link goes straight to the venue. The tutorial stays unseen for next time.
+  if (options.tutorial && !tutorialAlreadySeen() && !deepLinkVenueId) {
     onboardingActive = true;
     setupTutorial();
     loadTutorialImages(onboardingScreen);
@@ -3132,6 +3144,32 @@ function mountPickupRadarPreview(container, options) {
     if (code !== 'en') setLanguage(code, { persist: Boolean(readSavedLanguage()) });
   })();
 
+  function openDeepLinkVenue() {
+    const id = deepLinkVenueId;
+    deepLinkVenueId = null;
+    if (!id) return;
+    // Take the venue out of the address, so Back and reloading show the normal Home screen.
+    try {
+      const url = new URL(window.location.href);
+      url.searchParams.delete('venue');
+      history.replaceState(history.state, '', url.pathname + url.search + url.hash);
+    } catch (error) {
+      // Ignore: the venue still opens.
+    }
+    // Inactive or unknown venues simply stay on Home with the latest list.
+    if (!venueStats.some((item) => item.id === id)) return;
+    openReportWait(id, 'home');
+    // Bring the phone into view, below the sticky site header.
+    try {
+      const header = document.querySelector('[data-site-header]');
+      const offset = header ? header.getBoundingClientRect().height + 8 : 0;
+      const top = container.getBoundingClientRect().top + window.scrollY - offset;
+      if (top > 0) window.scrollTo(0, top);
+    } catch (error) {
+      // Ignore: the venue is still open.
+    }
+  }
+
   (async function initPreview() {
     try {
       liveCities = await loadLiveCities();
@@ -3145,6 +3183,7 @@ function mountPickupRadarPreview(container, options) {
         if (options.resetOnLoad) resetPreviewHome();
         else if (history.state && history.state.prPreview) applyPreviewHistory(history.state);
         setupLocation();
+        openDeepLinkVenue();
       }
       startLiveUpdates();
       startLiveTimers();

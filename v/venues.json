@@ -1,0 +1,23 @@
+{
+  "about": "Venue share pages made by tools/venue-pages.js. Do not edit by hand.",
+  "venues": {
+    "1cf2dd25-189d-41d5-8542-5997320d72d9": {
+      "name": "KFC",
+      "area": "Westcroft",
+      "city": "Milton Keynes",
+      "v": "520bfbcd63"
+    },
+    "7c4fbd14-f370-4034-b269-4cec25437a51": {
+      "name": "McDonald's",
+      "area": "Central MK · Midsummer Boulevard",
+      "city": "Milton Keynes",
+      "v": "b4006f18a3"
+    },
+    "85bcec65-528b-42da-ba73-d6602c6b7b9f": {
+      "name": "Tesco Express",
+      "area": "Old Farm Park",
+      "city": "Milton Keynes",
+      "v": "725bc65b0e"
+    }
+  }
+}
