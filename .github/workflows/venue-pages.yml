@@ -1,0 +1,131 @@
+# Venue share pages (v/<venue-id>/) for WhatsApp and other link previews.
+#
+# Test run (default): Actions > Venue share pages > Run workflow. It builds every
+# page and image from public venue data and uploads them as a download
+# ("venue-pages") for review. Nothing is committed.
+#
+# Publish: run it again with "Commit the pages" ticked. It commits only what changed,
+# then asks GitHub Pages to rebuild the site. (A commit made by a workflow does not
+# start a Pages build by itself, so the workflow requests one, the same as a push.)
+#
+# Safety: the build stops without changes if the venue list looks incomplete
+# (API error, totals that do not add up, far fewer venues than before, or more
+# than 10 pages / 5% of a city's pages to remove).
+#
+# Daily updates: after a test run and a publish have been checked, remove the #
+# in front of the two schedule lines below.
+
+name: Venue share pages
+
+on:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: Commit the pages to main (leave unticked for a test run)
+        type: boolean
+        default: false
+  # schedule:
+  #   - cron: '17 4 * * *' # every day at 04:17 UTC
+
+concurrency:
+  group: venue-pages
+  cancel-in-progress: false
+
+permissions: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Only used to draw the 1200x630 images. Not saved in the repository.
+      - name: Install Playwright
+        run: |
+          npm install --no-save --no-package-lock playwright@1.55.0
+          npx playwright install --with-deps chromium
+
+      # Uses the public venue list (the same public key as the live preview).
+      - name: Build venue pages
+        run: node tools/venue-pages.js --fetch --images --prune
+
+      - name: Check venue pages
+        run: node tools/venue-pages.js --check
+
+      - name: Summary
+        run: |
+          pages=$(find v -mindepth 1 -maxdepth 1 -type d | wc -l)
+          size=$(du -sh v | cut -f1)
+          changed=$(git status --porcelain -- v | wc -l)
+          {
+            echo "### Venue share pages"
+            echo "- Pages: $pages"
+            echo "- Size of v/: $size"
+            echo "- Files changed compared with main: $changed"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: venue-pages
+          path: v/
+          retention-days: 7
+          if-no-files-found: error
+
+  publish:
+    needs: build
+    if: github.event_name == 'schedule' || inputs.publish
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      pages: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Replace v/ with the new pages
+        run: rm -rf v
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: venue-pages
+          path: v/
+
+      - name: Commit only if something changed
+        run: |
+          git add -A v
+          if git diff --cached --quiet; then
+            echo "No changes to venue pages."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Venue share pages: update from public venue list"
+          git push
+          echo "pushed=yes" >> "$GITHUB_ENV"
+
+      # Same effect as pushing to main: GitHub Pages rebuilds from the latest commit.
+      - name: Ask GitHub Pages to rebuild
+        if: env.pushed == 'yes'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api -X POST "repos/${{ github.repository }}/pages/builds" --jq .status
+          head=$(git rev-parse HEAD)
+          for i in $(seq 1 30); do
+            sleep 10
+            build=$(gh api "repos/${{ github.repository }}/pages/builds/latest" --jq '.status + " " + .commit')
+            echo "Pages build: $build"
+            if [ "$build" = "built $head" ]; then exit 0; fi
+            if [ "$status" = "errored" ]; then exit 1; fi
+          done
+          echo "The Pages build did not finish in 5 minutes. Check Actions > pages-build-deployment."
+          exit 1
