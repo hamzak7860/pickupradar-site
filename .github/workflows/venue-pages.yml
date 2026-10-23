@@ -12,8 +12,9 @@
 # (API error, totals that do not add up, far fewer venues than before, or more
 # than 10 pages / 5% of a city's pages to remove).
 #
-# Daily updates: after a test run and a publish have been checked, remove the #
-# in front of the two schedule lines below.
+# Daily: runs every morning and publishes only what changed (new, renamed or
+# no-longer-active venues). If the safety checks stop a run, nothing is changed
+# and GitHub emails the repository owner that the run failed.
 
 name: Venue share pages
 
@@ -24,8 +25,8 @@ on:
         description: Commit the pages to main (leave unticked for a test run)
         type: boolean
         default: false
-  # schedule:
-  #   - cron: '17 4 * * *' # every day at 04:17 UTC
+  schedule:
+    - cron: '17 4 * * *' # every day at 04:17 UTC (05:17 UK summer time)
 
 concurrency:
   group: venue-pages
@@ -40,11 +41,11 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           persist-credentials: false
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
 
@@ -73,7 +74,7 @@ jobs:
             echo "- Files changed compared with main: $changed"
           } >> "$GITHUB_STEP_SUMMARY"
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         with:
           name: venue-pages
           path: v/
@@ -89,12 +90,12 @@ jobs:
       contents: write
       pages: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Replace v/ with the new pages
         run: rm -rf v
 
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v7
         with:
           name: venue-pages
           path: v/
