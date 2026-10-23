@@ -33,6 +33,9 @@
  *   --prune    with --fetch and no --only: delete pages of venues that are no
  *              longer active in those cities (used by the GitHub workflow).
  *              Without it nothing is deleted; the venues are listed instead.
+ *   --allow-large-removal  let --prune remove more than 10 pages (or 5% of a
+ *              city's pages) in one run. Without it the run stops before
+ *              writing anything, in case the venue list was incomplete.
  *   --check    check v/ against v/venues.json without writing anything.
  *
  * Files are only written when their content changes, and images are only
@@ -64,6 +67,7 @@ function args() {
     else if (k === '--images') out.images = true;
     else if (k === '--check') out.check = true;
     else if (k === '--prune') out.prune = true;
+    else if (k === '--allow-large-removal') out.allowLargeRemoval = true;
     else throw new Error('Unknown option ' + k);
   }
   if (!out.cities.length) out.cities = liveCities();
@@ -107,20 +111,32 @@ function publicKey() {
   return { url: url[1], key: key[1] };
 }
 
+// Reads every active venue in a city, page by page. The API also reports the total
+// number of matching rows; the run stops if the pages do not add up to that total.
 async function fetchVenues(city) {
   const { url, key } = publicKey();
   const rows = [];
+  let total = null;
   for (let offset = 0; ; offset += 1000) {
     const res = await fetch(
       url + '/rest/v1/venues?select=' + FIELDS + '&city=eq.' + encodeURIComponent(city) +
         '&is_active=eq.true&order=id.asc&limit=1000&offset=' + offset,
-      { headers: { apikey: key, Authorization: 'Bearer ' + key } }
+      { headers: { apikey: key, Authorization: 'Bearer ' + key, Prefer: 'count=exact' } }
     );
-    if (!res.ok) throw new Error('Venue request failed (' + res.status + ')');
+    if (!res.ok) throw new Error(city + ': venue request failed (' + res.status + ')');
     const page = await res.json();
+    if (!Array.isArray(page)) throw new Error(city + ': unexpected venue response');
+    const range = (res.headers && res.headers.get && res.headers.get('content-range')) || '';
+    const m = range.match(/\/(\d+)$/);
+    if (!m) throw new Error(city + ': the API did not report the venue total');
+    if (total === null) total = Number(m[1]);
+    else if (Number(m[1]) !== total) throw new Error(city + ': the venue total changed during the run; try again');
     rows.push.apply(rows, page);
     if (page.length < 1000) break;
   }
+  if (rows.length !== total) throw new Error(city + ': got ' + rows.length + ' venues but the API reported ' + total);
+  if (new Set(rows.map((v) => v.id)).size !== rows.length) throw new Error(city + ': duplicate venues in the response');
+  if (!rows.length) throw new Error(city + ': no active venues returned; stopping so no pages are removed');
   return rows;
 }
 
@@ -315,6 +331,24 @@ async function main() {
   if (opt.from) venues = JSON.parse(fs.readFileSync(path.resolve(opt.from), 'utf8'));
   else for (const city of opt.cities) venues = venues.concat(await fetchVenues(city));
   venues = venues.filter((v) => v && v.is_active !== false && ID_RE.test(String(v.id)) && v.city);
+
+  // Safety checks against an incomplete venue list, before anything is written.
+  const before = readManifest().venues || {};
+  if (opt.fetch && !opt.only) {
+    for (const city of opt.cities) {
+      const had = Object.keys(before).filter((id) => before[id].city === city);
+      const now = new Set(venues.filter((v) => v.city === city).map((v) => v.id));
+      const leaving = had.filter((id) => !now.has(id)).length;
+      const limit = Math.max(10, Math.ceil(had.length * 0.05));
+      if (had.length >= 20 && now.size < had.length * 0.5) {
+        throw new Error(city + ': only ' + now.size + ' active venues now, ' + had.length + ' pages before. Stopping without changes.');
+      }
+      if (opt.prune && leaving > limit && !opt.allowLargeRemoval) {
+        throw new Error(city + ': ' + leaving + ' venues would be removed (limit ' + limit + '). Stopping without changes. ' +
+          'If this is expected, run again with --allow-large-removal.');
+      }
+    }
+  }
 
   const byCity = {};
   venues.forEach((v) => (byCity[v.city] = byCity[v.city] || []).push(v));

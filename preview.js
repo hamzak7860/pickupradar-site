@@ -1870,7 +1870,10 @@ function mountPickupRadarPreview(container, options) {
     } else {
       // No recent report: show the same estimate the Home card shows (Likely fast or Likely slow),
       // labelled Estimate. Venues without an estimate say No recent wait, as on Home.
-      const status = effectiveStatus(venue);
+      // A recent closed or tablet/server report comes first: no estimate is shown with it,
+      // so an estimate never suggests the venue is working normally.
+      const warned = venue.closedWarning || venue.systemDownWarning;
+      const status = warned ? null : effectiveStatus(venue);
       const estimatePill = status === 'fast' ? WC.LIKELY_FAST_WAIT_PILL : status === 'slow' ? WC.LIKELY_SLOW_WAIT_PILL : null;
       currentWaitHtml =
         '<div class="details-gap"></div>' +
