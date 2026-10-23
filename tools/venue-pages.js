@@ -8,7 +8,7 @@
  *   v/<venue-id>/index.html   small page with the venue's own link-preview tags
  *                             (title, description, image). It sends visitors
  *                             straight on to the live preview for that venue.
- *   v/<venue-id>/card.png     1200x630 link-preview image: venue name and area.
+ *   v/<venue-id>/card.jpg     1200x630 link-preview image: venue name and area.
  *                             It never shows a wait, because WhatsApp and other
  *                             apps keep a saved copy of the preview.
  *   v/venues.json             list of generated venues (id -> name, area, city).
@@ -18,7 +18,7 @@
  * same rules the app and the live preview use (pickupradar-logic.js).
  *
  * Usage:
- *   node tools/venue-pages.js --fetch [--city "Milton Keynes"] [--only <id,id>] [--images]
+ *   node tools/venue-pages.js --fetch [--city "Milton Keynes"] [--only <id,id>] [--images] [--prune]
  *   node tools/venue-pages.js --from venues.json [--only <id,id>] [--images]
  *   node tools/venue-pages.js --check
  *
@@ -27,12 +27,16 @@
  *   --from     read venues from a JSON file (an array of venue rows) instead.
  *   --only     only write pages for these venue ids (the others are still used
  *              to tell same-name venues apart, as in the app).
- *   --images   also draw card.png with Playwright (npm install playwright).
+ *   --city     a live city (repeatable). Default: the live cities in preview.js (SITE_CITIES).
+ *   --images   also draw card.jpg with Playwright (npm install playwright).
  *              Without it, existing images are kept and new venues get none.
+ *   --prune    with --fetch and no --only: delete pages of venues that are no
+ *              longer active in those cities (used by the GitHub workflow).
+ *              Without it nothing is deleted; the venues are listed instead.
  *   --check    check v/ against v/venues.json without writing anything.
  *
- * The script never deletes. Venues that are no longer active are listed at the
- * end with the git command to remove them.
+ * Files are only written when their content changes, and images are only
+ * redrawn when the venue name, area, city, icon or card design changes.
  */
 
 const fs = require('fs');
@@ -44,7 +48,7 @@ const SITE = path.resolve(__dirname, '..');
 const OUT = path.join(SITE, 'v');
 const MANIFEST = path.join(OUT, 'venues.json');
 const ORIGIN = 'https://pickupradar.co.uk';
-const DEFAULT_CITIES = ['Milton Keynes'];
+const DESIGN = 2; // Change this to redraw every image after a card design change.
 const ID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/;
 const FIELDS = 'id,name,area,brand,branch,address,postcode,city,zone,venue_type,is_active';
 
@@ -59,10 +63,31 @@ function args() {
     else if (k === '--only') out.only = new Set(String(a[++i] || '').split(',').map((s) => s.trim().toLowerCase()).filter(Boolean));
     else if (k === '--images') out.images = true;
     else if (k === '--check') out.check = true;
+    else if (k === '--prune') out.prune = true;
     else throw new Error('Unknown option ' + k);
   }
-  if (!out.cities.length) out.cities = DEFAULT_CITIES.slice();
+  if (!out.cities.length) out.cities = liveCities();
   return out;
+}
+
+function liveCities() {
+  const src = fs.readFileSync(path.join(SITE, 'preview.js'), 'utf8');
+  const m = src.match(/const SITE_CITIES = (\[[^\]]*\]);/);
+  if (!m) throw new Error('Could not find SITE_CITIES in preview.js');
+  const list = vm.runInNewContext(m[1]);
+  if (!Array.isArray(list) || !list.length) throw new Error('SITE_CITIES is empty');
+  return list.map(String);
+}
+
+// Write only when the content changes, so unchanged pages are not touched.
+function writeIfChanged(file, content) {
+  try {
+    if (fs.readFileSync(file, 'utf8') === content) return false;
+  } catch (error) {
+    // New file.
+  }
+  fs.writeFileSync(file, content);
+  return true;
 }
 
 function loadLogic() {
@@ -120,7 +145,7 @@ function pageHtml(info, imageVersion) {
   const title = info.area ? info.name + ' · ' + info.area : info.name;
   const desc = 'Check the latest pickup wait at ' + info.name + ', ' + place + ', on PickupRadar.';
   const self = ORIGIN + '/v/' + info.id + '/';
-  const image = self + 'card.png?v=' + imageVersion;
+  const image = self + 'card.jpg?v=' + imageVersion;
   const target = liveUrl(info);
   return `<!doctype html>
 <html lang="en-GB">
@@ -139,7 +164,7 @@ function pageHtml(info, imageVersion) {
   <meta property="og:title" content="${esc(title)}" />
   <meta property="og:description" content="${esc(place + ' · Check the latest pickup wait.')}" />
   <meta property="og:image" content="${esc(image)}" />
-  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="${esc('PickupRadar: ' + info.name + ', ' + place)}" />
@@ -249,7 +274,7 @@ async function drawImages(jobs) {
   for (const info of jobs) {
     await page.setContent(cardHtml(info, icons, logo, font));
     await page.waitForSelector('body[data-ready="1"]');
-    await page.screenshot({ path: path.join(OUT, info.id, 'card.png'), type: 'png' });
+    await page.screenshot({ path: path.join(OUT, info.id, 'card.jpg'), type: 'jpeg', quality: 88 });
     drawn++;
   }
   await browser.close();
@@ -271,7 +296,8 @@ function check() {
   const folders = fs.existsSync(OUT) ? fs.readdirSync(OUT).filter((n) => ID_RE.test(n)) : [];
   for (const id of listed) {
     if (!fs.existsSync(path.join(OUT, id, 'index.html'))) problems.push(id + ': listed but v/' + id + '/index.html is missing');
-    if (!fs.existsSync(path.join(OUT, id, 'card.png'))) problems.push(id + ': card.png is missing');
+    if (!fs.existsSync(path.join(OUT, id, 'card.jpg'))) problems.push(id + ': card.jpg is missing');
+    if (fs.existsSync(path.join(OUT, id, 'card.png'))) problems.push(id + ': old card.png is still there (git rm v/' + id + '/card.png)');
   }
   for (const id of folders) if (!manifest.venues[id]) problems.push(id + ': folder is not in v/venues.json');
   problems.forEach((p) => console.log('PROBLEM ' + p));
@@ -298,23 +324,38 @@ async function main() {
   fs.mkdirSync(OUT, { recursive: true });
 
   const written = [];
+  let changedPages = 0;
   const toDraw = [];
   for (const venue of venues) {
     if (opt.only && !opt.only.has(venue.id)) continue;
     const info = describe(logic, venue, byCity[venue.city]);
     if (!info.name) continue;
-    const version = hash(JSON.stringify([info.name, info.area, info.city, info.icon, 1]));
+    const version = hash(JSON.stringify([info.name, info.area, info.city, info.icon, DESIGN]));
     const dir = path.join(OUT, info.id);
     fs.mkdirSync(dir, { recursive: true });
-    fs.writeFileSync(path.join(dir, 'index.html'), pageHtml(info, version));
+    if (writeIfChanged(path.join(dir, 'index.html'), pageHtml(info, version))) changedPages++;
     const old = manifest.venues[info.id];
-    const hasImage = fs.existsSync(path.join(dir, 'card.png'));
+    const hasImage = fs.existsSync(path.join(dir, 'card.jpg'));
     if (opt.images && (!hasImage || !old || old.v !== version)) toDraw.push(info);
     manifest.venues[info.id] = { name: info.name, area: info.area, city: info.city, v: version };
     written.push(info);
   }
 
   const drawn = toDraw.length ? await drawImages(toDraw) : 0;
+
+  // Pages for venues that are no longer active in these cities.
+  const fullRun = opt.fetch && !opt.only;
+  const active = new Set(venues.map((v) => v.id));
+  const stale = fullRun
+    ? Object.keys(manifest.venues).filter((id) => !active.has(id) && opt.cities.includes(manifest.venues[id].city))
+    : [];
+  if (opt.prune && fullRun) {
+    stale.forEach((id) => fs.rmSync(path.join(OUT, id), { recursive: true, force: true }));
+  }
+  // Old PNG images from the prototype (now JPEG).
+  if (opt.prune && opt.images) {
+    written.forEach((i) => fs.rmSync(path.join(OUT, i.id, 'card.png'), { force: true }));
+  }
 
   // Forget venues whose folder was removed (for example with git rm -r v/<id>).
   Object.keys(manifest.venues).forEach((id) => {
@@ -323,19 +364,17 @@ async function main() {
 
   const sorted = {};
   Object.keys(manifest.venues).sort().forEach((id) => (sorted[id] = manifest.venues[id]));
-  fs.writeFileSync(MANIFEST, JSON.stringify({ about: 'Venue share pages made by tools/venue-pages.js. Do not edit by hand.', venues: sorted }, null, 2) + '\n');
+  writeIfChanged(MANIFEST, JSON.stringify({ about: 'Venue share pages made by tools/venue-pages.js. Do not edit by hand.', venues: sorted }, null, 2) + '\n');
 
-  console.log('Wrote ' + written.length + ' venue pages, drew ' + drawn + ' images.');
-  written.forEach((i) => console.log('  ' + ORIGIN + '/v/' + i.id + '/  ' + i.name + (i.area ? ' · ' + i.area : '')));
+  console.log('Venues: ' + venues.length + ' active in ' + opt.cities.join(', ') + '. Pages: ' + written.length + ' (' + changedPages + ' changed). Images drawn: ' + drawn + '.');
+  if (written.length <= 10) written.forEach((i) => console.log('  ' + ORIGIN + '/v/' + i.id + '/  ' + i.name + (i.area ? ' · ' + i.area : '')));
 
-  if (!opt.only && opt.fetch) {
-    const active = new Set(venues.map((v) => v.id));
-    const stale = Object.keys(sorted).filter((id) => !active.has(id) && opt.cities.includes(sorted[id].city));
-    if (stale.length) {
-      console.log('\nNo longer active (the pages still open the live preview, which shows the city list):');
-      stale.forEach((id) => console.log('  git rm -r v/' + id + '   # ' + sorted[id].name + ' · ' + sorted[id].area));
-      console.log('Then remove those ids from v/venues.json, or re-run this script after deleting the folders.');
-    }
+  if (stale.length && !opt.prune) {
+    console.log('\nNo longer active. Their pages still open the live preview, which shows the Home list:');
+    stale.forEach((id) => console.log('  git rm -r v/' + id + '   # ' + sorted[id].name + ' · ' + sorted[id].area));
+    console.log('Then re-run this script, or run it with --prune.');
+  } else if (stale.length) {
+    console.log('Removed ' + stale.length + ' pages of venues that are no longer active.');
   }
 }
 

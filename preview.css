@@ -2690,3 +2690,7 @@
 .preview-modal-layer *::after {
   box-sizing: border-box;
 }
+
+/* Opened venue without a recent report: quieter than a live Current wait card. */
+.current-wait-card.current-wait-estimate { border-style: dashed; }
+.current-wait-label.current-wait-none { color: #89a0b8; }

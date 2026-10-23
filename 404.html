@@ -2,6 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
+  <script>
+    // A venue share link without a page (/v/<venue id>/): open that venue in the live preview.
+    (function () {
+      var m = location.pathname.match(/^\/v\/([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})\/?$/i);
+      if (m) location.replace('/app.html?venue=' + m[1].toLowerCase());
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title data-site-i18n="notfound.meta.title">Page not found — PickupRadar</title>
   <meta name="description" data-site-i18n="notfound.meta.description" content="That page is not on the PickupRadar website." />
@@ -90,7 +97,7 @@
     </div>
   </footer>
 
-  <script src="pickupradar-logic.js?v=5dcfec4"></script>
+  <script src="/pickupradar-logic.js?v=5dcfec4"></script>
   <script src="/site.js?v=20261023b"></script>
 </body>
 </html>

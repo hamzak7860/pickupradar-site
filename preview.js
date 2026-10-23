@@ -1867,6 +1867,21 @@ function mountPickupRadarPreview(container, options) {
         '<span class="current-wait-pill" dir="ltr" style="background:' + pill.backgroundColor + ';color:' + pill.color + ';">' +
         escapeHtml(waitRangeLabel(venue.currentWaitMinutes)) +
         '</span></div></div>';
+    } else {
+      // No recent report: show the same estimate the Home card shows (Likely fast or Likely slow),
+      // labelled Estimate. Venues without an estimate say No recent wait, as on Home.
+      const status = effectiveStatus(venue);
+      const estimatePill = status === 'fast' ? WC.LIKELY_FAST_WAIT_PILL : status === 'slow' ? WC.LIKELY_SLOW_WAIT_PILL : null;
+      currentWaitHtml =
+        '<div class="details-gap"></div>' +
+        '<div class="current-wait-card current-wait-estimate">' +
+        (estimatePill
+          ? '<div class="current-wait-row"><span class="current-wait-label">' + escapeHtml(t('onboarding.slide2.estimateLabel', 'Estimate')) + '</span>' +
+            '<span class="current-wait-pill" style="background:' + estimatePill.backgroundColor + ';color:' + estimatePill.color + ';">' +
+            escapeHtml(status === 'fast' ? t('home.likelyFast', 'Likely fast') : t('home.likelySlow', 'Likely slow')) +
+            '</span></div>'
+          : '<div class="current-wait-row"><span class="current-wait-label current-wait-none">' + escapeHtml(t('home.noRecentWait', 'No recent wait')) + '</span></div>') +
+        '</div>';
     }
 
     const waitTiles = WAIT_BUCKETS.map(function (bucket) {
