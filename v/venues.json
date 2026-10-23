@@ -1,23 +1,4601 @@
 {
   "about": "Venue share pages made by tools/venue-pages.js. Do not edit by hand.",
   "venues": {
+    "00270b0b-0f7f-4390-9764-6ec46b64128e": {
+      "name": "European Food Centre",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "6568e9b9c9"
+    },
+    "007008fa-d071-4475-95ce-106988c748aa": {
+      "name": "Wok Unit",
+      "area": "New Bradwell",
+      "city": "Milton Keynes",
+      "v": "62dad55c74"
+    },
+    "00ab8371-ddcf-4696-b3b2-b8eabe4b8528": {
+      "name": "Brasserie Blanc",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "2b223c3691"
+    },
+    "01b54996-1cdc-4888-9439-2ac671e2c97c": {
+      "name": "Morley's",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "bab16b5998"
+    },
+    "01df3c80-8432-4742-9b42-76eb5f3bb3cd": {
+      "name": "Sunats Kebab",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "156863b8a4"
+    },
+    "02595624-e243-45a2-b754-3b584a513adc": {
+      "name": "Nour Maison Brasserie",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "65738d6a89"
+    },
+    "027ed287-31e8-44a4-ac7d-81ca23c40928": {
+      "name": "Costa Coffee",
+      "area": "Central MK · Midsummer Boulevard",
+      "city": "Milton Keynes",
+      "v": "511f970cb5"
+    },
+    "030be5bc-c41b-469f-994e-84554fdc2b5e": {
+      "name": "P31 Cafe",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "3e38acfd6e"
+    },
+    "03814ab7-a3ae-4179-82c6-d81e47f7ec6b": {
+      "name": "Deep Blue Fish & Chips",
+      "area": "Woburn Sands",
+      "city": "Milton Keynes",
+      "v": "7ac25cd4ec"
+    },
+    "043ab053-ffab-4692-976d-db65462b689c": {
+      "name": "Nando's",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "49bd42ac5b"
+    },
+    "04457283-1bd3-4267-87b7-c753abbf1424": {
+      "name": "Broughton Minimart Ltd (United Minimart)",
+      "area": "Broughton",
+      "city": "Milton Keynes",
+      "v": "bd7d39d86f"
+    },
+    "049e7211-7bb4-48ef-918d-eadb6678140b": {
+      "name": "Poundland",
+      "area": "Westcroft",
+      "city": "Milton Keynes",
+      "v": "3d45bb467c"
+    },
+    "053dafbe-d1df-439f-ad20-739b50e60203": {
+      "name": "Cheesecake To Go",
+      "area": "Cheviot Crescent",
+      "city": "Milton Keynes",
+      "v": "399bcfcd52"
+    },
+    "05a93bb8-cc84-4bb2-81d7-36a3c6e2b9f9": {
+      "name": "Londis",
+      "area": "Old Stratford",
+      "city": "Milton Keynes",
+      "v": "0c85614325"
+    },
+    "05b15f77-7664-46ad-ac8c-a4cb5f0a0b7e": {
+      "name": "Testimony",
+      "area": "Fishermead",
+      "city": "Milton Keynes",
+      "v": "4b825b0f8e"
+    },
+    "060741f6-343a-4063-8eb9-8e75590c6054": {
+      "name": "Mr Beans Coffee House",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "a2bace8b9b"
+    },
+    "06baaf3e-ebac-4ccb-b890-94bc35529fd0": {
+      "name": "Ottoman Kitchen",
+      "area": "Woburn Sands",
+      "city": "Milton Keynes",
+      "v": "867d3f8c95"
+    },
+    "06cbaecb-b9c4-4e53-b055-2198546b0666": {
+      "name": "Foodie Mama Restaurant/Café",
+      "area": "Stantonbury",
+      "city": "Milton Keynes",
+      "v": "b9e740ba6f"
+    },
+    "06d28d5e-6a84-4210-b255-e8f0b41a70c5": {
+      "name": "Co-op",
+      "area": "Woburn Sands",
+      "city": "Milton Keynes",
+      "v": "80fb521c5f"
+    },
+    "074672fd-7efc-47f2-8d2c-b0f7c2057b5f": {
+      "name": "Cricketers",
+      "area": "Oldbrook",
+      "city": "Milton Keynes",
+      "v": "605c72dfae"
+    },
+    "0747c726-6ace-42cd-80a2-fb9aea1d9412": {
+      "name": "Gai Fong",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "dbc3ed7d14"
+    },
+    "08122a38-8b27-4ca6-bdbe-ad96196dcb3d": {
+      "name": "Wild Bean Cafe",
+      "area": "Newport Road",
+      "city": "Milton Keynes",
+      "v": "a5b3570d27"
+    },
+    "0832073d-44e1-4b44-a9fa-94aa72f3906d": {
+      "name": "Flootes",
+      "area": "Woburn",
+      "city": "Milton Keynes",
+      "v": "5a26da3446"
+    },
+    "08561dcf-e2a4-4953-b06d-80a98a4b15d4": {
+      "name": "Londis",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "dabcc60f6f"
+    },
+    "085f1ead-5e9c-419b-a132-a851bc71092d": {
+      "name": "Smashburger",
+      "area": "Kingston",
+      "city": "Milton Keynes",
+      "v": "e3c96d458a"
+    },
+    "087816fd-cb5f-4ebe-b22b-a562e2c160aa": {
+      "name": "Black Horse Gt Linford",
+      "area": "Great Linford",
+      "city": "Milton Keynes",
+      "v": "81c410f6c0"
+    },
+    "0907de9c-fbfb-4332-b750-29f897226340": {
+      "name": "Taste&Smile",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "17b858df0a"
+    },
+    "0913c72a-bfde-441a-afbe-77b46f0b0213": {
+      "name": "Creams",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "e13e489b87"
+    },
+    "0934e60a-218b-42ed-95fd-67ddfe1f0e5d": {
+      "name": "Rose of India",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "d60260de2b"
+    },
+    "0937c1f8-62c2-4d4e-8865-2aa6d1c13641": {
+      "name": "Golden Curry",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "e03219a226"
+    },
+    "09f14e1c-2349-4d46-aa41-9c6666f9ebf2": {
+      "name": "Sushi Papa",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "83de7d4d16"
+    },
+    "0a947786-a241-4ac0-a079-be57ffc81cea": {
+      "name": "Bikash Foods",
+      "area": "Oldbrook",
+      "city": "Milton Keynes",
+      "v": "cd72e8f7cd"
+    },
+    "0c159e04-27c9-418d-bd9a-ad41aa5abb4e": {
+      "name": "Premier",
+      "area": "Bletchley · Chepstow Drive",
+      "city": "Milton Keynes",
+      "v": "f146d2cf3d"
+    },
+    "0c3d62a7-2dbb-408d-92ca-2ce8ec5145ad": {
+      "name": "De Eiscreme Projekt",
+      "area": "Angus Way",
+      "city": "Milton Keynes",
+      "v": "25bc91a842"
+    },
+    "0c74f2b6-57ff-4586-9cd2-ccaa7bcf54bd": {
+      "name": "Ness Café MK",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "bd827c2bfd"
+    },
+    "0cac65bf-cbc9-4cfa-8de3-d5f123d4f051": {
+      "name": "Burger King",
+      "area": "Central MK · Portway",
+      "city": "Milton Keynes",
+      "v": "7269905a4c"
+    },
+    "0d2453d1-4f0e-4e17-a038-ee85075927f1": {
+      "name": "The Birch",
+      "area": "Woburn",
+      "city": "Milton Keynes",
+      "v": "5ead894379"
+    },
+    "0d63ecb5-009b-4a2c-94f5-fe73ee405695": {
+      "name": "5 Akhis Express",
+      "area": "Crownhill",
+      "city": "Milton Keynes",
+      "v": "fdfcd01a5b"
+    },
+    "0d770547-c021-4460-b4b2-6f977291d6d6": {
+      "name": "Shenley Lodge Local Store",
+      "area": "Shenley Lodge",
+      "city": "Milton Keynes",
+      "v": "ed5d459a8f"
+    },
+    "0dee52ab-2813-43e9-a8da-cce7259d05c7": {
+      "name": "Oodles Wok",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "578303cd45"
+    },
+    "0e3202ff-2388-4927-be3e-e68a7cc45590": {
+      "name": "Wolverton Supermarket",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "3cd6889b7b"
+    },
+    "0e7189f9-6211-4945-afb7-095607308c35": {
+      "name": "Anatolian Kebabs",
+      "area": "Tilbrook",
+      "city": "Milton Keynes",
+      "v": "d6e5ff9e0d"
+    },
+    "0f0b0b98-5962-4f58-b9b9-d3c5188369b5": {
+      "name": "Costa Coffee",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "e1c08ab81c"
+    },
+    "10011788-6002-4f91-9ed3-421afcf9c67d": {
+      "name": "Taco Bell",
+      "area": "Central MK · Marlborough Gate",
+      "city": "Milton Keynes",
+      "v": "479a67b62d"
+    },
+    "105a5f92-fe49-4323-b109-13e2d5b034d6": {
+      "name": "Coffee Crowd",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "9f041ea981"
+    },
+    "10d9ccd1-212d-456b-a49b-07f447a4ee0a": {
+      "name": "Best Kebab",
+      "area": "Beanhill",
+      "city": "Milton Keynes",
+      "v": "70f5a5fd1d"
+    },
+    "111525b3-6db0-41fb-b11f-fac9b8d1818b": {
+      "name": "Premier",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "6ef6c20bc1"
+    },
+    "1151777d-a924-4e25-a3bb-d29d329a23f6": {
+      "name": "Burger King",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "b2a1a1eb4d"
+    },
+    "117a09fd-bb33-4242-b62d-878e45adc796": {
+      "name": "Joyes Chicken",
+      "area": "Walnut Tree",
+      "city": "Milton Keynes",
+      "v": "c145ca6a5e"
+    },
+    "11802442-e7b5-4df9-ad50-5edf1f6398dc": {
+      "name": "Co-op",
+      "area": "Newport Pagnell · High Street",
+      "city": "Milton Keynes",
+      "v": "345bd193a3"
+    },
+    "11bc4fdb-73ec-4abe-9d28-555c64c95ad5": {
+      "name": "Papa Johns Pizza",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "2351ff718e"
+    },
+    "12e28d7e-1312-41ac-a9a8-846c52644ba5": {
+      "name": "Smoke & Pepper",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "973a1d98e8"
+    },
+    "13acdb72-1e1f-4180-8100-325cd7c9deda": {
+      "name": "Neath Hill Fish & Chip Shop",
+      "area": "Neath Hill",
+      "city": "Milton Keynes",
+      "v": "697b18922a"
+    },
+    "14aff588-52cf-484f-b33d-2faacb901b5a": {
+      "name": "Starbucks",
+      "area": "Central MK · Elder Gate",
+      "city": "Milton Keynes",
+      "v": "18c1ea2530"
+    },
+    "15fdbab9-7125-4f42-a638-630da77f1d05": {
+      "name": "Mniam Mniam Kebab",
+      "area": "Furzton",
+      "city": "Milton Keynes",
+      "v": "9421911908"
+    },
+    "16092e47-dbf0-471f-9f12-39ed47d6d5e5": {
+      "name": "Grills & Peri-Peri Chicken",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "a808bca45d"
+    },
+    "161772cc-4735-4bf0-906e-98ba99639b41": {
+      "name": "Bean In Stony",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "557145cd9d"
+    },
+    "161933e7-5b22-419e-ab43-957f618fdbf7": {
+      "name": "HK Flavor",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "9f86b90d13"
+    },
+    "1654343f-27db-4b06-8504-9c974faf3747": {
+      "name": "Costa Coffee",
+      "area": "Central MK · Sunset Walk",
+      "city": "Milton Keynes",
+      "v": "a074d94e8b"
+    },
+    "165c00db-1f3a-4928-afbe-729d557dcf7a": {
+      "name": "Bengal Spice Restaurant",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "ea3d77f1f3"
+    },
+    "16a7bbdb-2e6f-4d3b-9fba-5692fee64225": {
+      "name": "Purple Mango",
+      "area": "Walnut Tree",
+      "city": "Milton Keynes",
+      "v": "f373f48b14"
+    },
+    "18229315-8b55-4b59-a48e-81e792e0eb70": {
+      "name": "KFC",
+      "area": "Wavendon",
+      "city": "Milton Keynes",
+      "v": "6ab123ce6e"
+    },
+    "182a19be-4576-431a-af27-202d5d1f0078": {
+      "name": "MK Food and Wine",
+      "area": "Shenley Church End",
+      "city": "Milton Keynes",
+      "v": "c568851e63"
+    },
+    "18e06323-1331-4766-9343-5fa7f9a7efa7": {
+      "name": "House Of Chicken",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "0abfa33e58"
+    },
+    "1913239d-423c-4209-a133-bd5fb57a9e7a": {
+      "name": "Chocoberry",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "e1e99c1786"
+    },
+    "19233c5f-8986-4052-8b7b-dcc67c1be735": {
+      "name": "Canal Street Coffee",
+      "area": "Campbell Park",
+      "city": "Milton Keynes",
+      "v": "74c5bb720f"
+    },
+    "19f16ba1-e6a5-4adf-bf89-43ca5d856bc1": {
+      "name": "Five Guys",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "41c354694f"
+    },
+    "1a502f68-a255-4c13-b060-e43eec44cf88": {
+      "name": "The Green Room",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "14a2ef370a"
+    },
+    "1aa7dd1a-dc22-49f3-bb4f-360f099b5533": {
+      "name": "Sunnyside Up Café",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "f47b02e476"
+    },
+    "1acf0418-27f5-4716-b5f5-9803d995a84b": {
+      "name": "Panku",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "0fe9a5f367"
+    },
+    "1ae65aaf-3673-42ad-9402-ba3b3762db16": {
+      "name": "Kebab Van (Daily Kebab)",
+      "area": "Kingston",
+      "city": "Milton Keynes",
+      "v": "117466e054"
+    },
+    "1b0629c0-6b88-4ca9-a2bb-ae7fd393815b": {
+      "name": "Napoli Fish Bar",
+      "area": "New Bradwell",
+      "city": "Milton Keynes",
+      "v": "678eb626c2"
+    },
+    "1bc9a708-6eb7-41d4-85eb-15a9da57191f": {
+      "name": "Cornerstone Cafe",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "ab5c4e3293"
+    },
+    "1cc0879e-f3e0-44f3-a8e5-7f757e6a6ed2": {
+      "name": "Jalori Indian Cuisine",
+      "area": "Woburn Sands",
+      "city": "Milton Keynes",
+      "v": "0b2be811d0"
+    },
+    "1cd25a05-0047-4046-9833-d3fdfc35c68b": {
+      "name": "Talk n Tikka",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "5d041a6fc0"
+    },
     "1cf2dd25-189d-41d5-8542-5997320d72d9": {
       "name": "KFC",
       "area": "Westcroft",
       "city": "Milton Keynes",
-      "v": "520bfbcd63"
+      "v": "4cc9f10371"
+    },
+    "1d4c3f11-8a7e-4eb3-ae21-404dc1b807f6": {
+      "name": "Lidl",
+      "area": "Blakelands",
+      "city": "Milton Keynes",
+      "v": "33dd4cedb1"
+    },
+    "1d5ec566-f2e1-4b92-8b67-ad72e37ccd33": {
+      "name": "Calcutta Brasserie",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "e14a0e400c"
+    },
+    "1d820283-e058-456d-9996-63c9c012bf83": {
+      "name": "MK Fish & Pizza",
+      "area": "Great Linford",
+      "city": "Milton Keynes",
+      "v": "fd1fe28eb2"
+    },
+    "1db6e6d8-8eca-4e63-a5fa-b2e5fd4e7836": {
+      "name": "Best Kebab",
+      "area": "Fishermead",
+      "city": "Milton Keynes",
+      "v": "f3acf9a457"
+    },
+    "1dd39bea-0cb7-4fef-8cef-b48b21076ce3": {
+      "name": "Egg O’clock Japanese Street Food",
+      "area": "Wavendon",
+      "city": "Milton Keynes",
+      "v": "ffd2bba4a8"
+    },
+    "1e086dfd-3653-4bc8-bcfe-33a707e12d88": {
+      "name": "Dragon Boat Chinese Takeaway",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "d3b02ae444"
+    },
+    "1e3afed8-d51e-45e5-b00f-093435879001": {
+      "name": "KFC",
+      "area": "Stacey Bushes",
+      "city": "Milton Keynes",
+      "v": "c84b3fedd1"
+    },
+    "1e470126-f4d5-40ba-9b97-d58731632fe2": {
+      "name": "The Residence Bar & Kitchen",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "ae81e99918"
+    },
+    "1e6e0f3f-8dbe-4bd2-8e43-7d63b8553b39": {
+      "name": "Annies Jerk That Makes You Twerk",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "2b4f1a48e8"
+    },
+    "1ee9b287-c1dd-47d5-91a4-cbc78c224722": {
+      "name": "Bargain Booze",
+      "area": "Shenley Church End",
+      "city": "Milton Keynes",
+      "v": "ca5e43813e"
+    },
+    "1f6c71cf-c973-40bf-9daf-a515b7a2af1b": {
+      "name": "Woburn Sands Convenience Store",
+      "area": "Woburn Sands",
+      "city": "Milton Keynes",
+      "v": "be07de1bee"
+    },
+    "1f6f7027-70fd-4d1e-82bc-1c7dd4b06738": {
+      "name": "Woburn Coffee House",
+      "area": "Woburn",
+      "city": "Milton Keynes",
+      "v": "8eda00cc68"
+    },
+    "1f8dff29-bbf6-4ea3-8fdd-541541ce6941": {
+      "name": "MK Munchbox",
+      "area": "Shenley Church End",
+      "city": "Milton Keynes",
+      "v": "b1d049985f"
+    },
+    "1f9a8697-54fb-47d0-87d4-37e645e55924": {
+      "name": "D’Oro 24",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "61f1cefa92"
+    },
+    "2055f98e-5409-45f0-9913-18b2e0222a32": {
+      "name": "Capital Food Center",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "ee6c3a0da3"
+    },
+    "217c0aff-cba0-4e02-866c-06e2378a73b5": {
+      "name": "Izmir Restaurant",
+      "area": "Kingston",
+      "city": "Milton Keynes",
+      "v": "8b5001fa0f"
+    },
+    "21bad652-3cfb-48c8-b2f6-e839cf5cd436": {
+      "name": "Lake Street Coffee",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "7cf7d396bb"
+    },
+    "21be1701-2fc8-4aac-881d-4e7492686e03": {
+      "name": "The Aromas",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "c25dff4197"
+    },
+    "21e6f8ef-92a8-430f-b7ae-a2596ae72aed": {
+      "name": "Parrilla Argentinian Steak House",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "7a5001b7b8"
+    },
+    "226ef5b9-72e6-4595-9e15-3eaf17273ca4": {
+      "name": "Crispy Dosa",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "4ca515eb0e"
+    },
+    "22895aeb-22b1-4edc-9531-07f9b76830b4": {
+      "name": "The Three Trees",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "10da47a283"
+    },
+    "22c589b2-7d68-46e9-9e61-2f71e3a0cd17": {
+      "name": "Layaly Lounge",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "77b3f37ebf"
+    },
+    "22d5b864-df4a-421e-86ea-d7224349f376": {
+      "name": "Friars Fish & Chips",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "cbb97464e0"
+    },
+    "23c77f55-de5c-431e-8147-0b120137c042": {
+      "name": "Super Kebab Pizza",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "a23d07660f"
+    },
+    "23e50d93-8366-4c45-b13d-37fe19249f83": {
+      "name": "Eastern Express",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "7ee4e9f914"
+    },
+    "24ab8b55-cad7-4fab-82e4-7168dc8b84c1": {
+      "name": "Lilly Cafe",
+      "area": "Whitehouse",
+      "city": "Milton Keynes",
+      "v": "de50809c89"
+    },
+    "24db6c23-c27c-4649-9faa-c9a605a1614b": {
+      "name": "Tesco Express",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "edc94f1790"
+    },
+    "25054825-5ae4-40b3-860a-2744b89168e7": {
+      "name": "PizzaExpress",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "086bbe353c"
+    },
+    "25544e79-f782-4343-8a2c-557cc7df7e88": {
+      "name": "Triple Bite MK",
+      "area": "Netherfield",
+      "city": "Milton Keynes",
+      "v": "c6b4a9d4e4"
+    },
+    "2562abfe-bccb-4c7c-81ce-917d18d53c76": {
+      "name": "First Class Chinese Restaurant",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "0ff43a9489"
+    },
+    "25a531d5-b71c-4b33-b744-4c932c74c2df": {
+      "name": "Heelands Takeaway",
+      "area": "Heelands",
+      "city": "Milton Keynes",
+      "v": "59100677c3"
+    },
+    "263381cf-4597-4ad2-bad8-c8e6b2162b63": {
+      "name": "Budgens",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "036eac9721"
+    },
+    "26a25bef-7331-48dc-9604-f4f16286d3fb": {
+      "name": "Fishermead Convenience Store",
+      "area": "Fishermead",
+      "city": "Milton Keynes",
+      "v": "5a779d7381"
+    },
+    "26e39283-1ba0-4488-96b8-39cceef2b146": {
+      "name": "Rashan Pani",
+      "area": "Brooklands",
+      "city": "Milton Keynes",
+      "v": "379780c66a"
+    },
+    "26e83ab1-d84c-4939-8056-e8227c822a39": {
+      "name": "Tesco Express",
+      "area": "Walnut Tree",
+      "city": "Milton Keynes",
+      "v": "d71c25758a"
+    },
+    "2729c14b-e573-4610-bf4a-7a8b80428ed3": {
+      "name": "Fireaway Pizza",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "832f509775"
+    },
+    "27643683-8e1b-4424-87d3-2f0b9a357195": {
+      "name": "The Weathercock",
+      "area": "Woburn Sands",
+      "city": "Milton Keynes",
+      "v": "e06625b480"
+    },
+    "277db3f4-d8ce-4cbd-bc7c-a25d4263486b": {
+      "name": "Co-op",
+      "area": "Broughton · Tanfield Lane",
+      "city": "Milton Keynes",
+      "v": "4f7b99dc4e"
+    },
+    "2798b017-f92d-4b62-9caa-4badc71b74f3": {
+      "name": "East Ocean",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "d792ac0a11"
+    },
+    "28000e6a-784b-4d2b-b402-6f4c607cc343": {
+      "name": "Morrisco Local",
+      "area": "Walnut Tree",
+      "city": "Milton Keynes",
+      "v": "15f9699739"
+    },
+    "29c3f6d7-f1f6-41a4-b251-28eaba0af532": {
+      "name": "ASK Italian",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "03d8431bce"
+    },
+    "2a2ac5ee-e2be-4313-81b4-1a37b2e00c4f": {
+      "name": "Shenley Kebab",
+      "area": "Kelvin Drive",
+      "city": "Milton Keynes",
+      "v": "45602651f4"
+    },
+    "2ab58f6e-75b0-45ab-84e1-260dece2d10c": {
+      "name": "Elia Café",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "a164ee9752"
+    },
+    "2af89b75-1b40-44f1-b54d-7a5389c5ef2a": {
+      "name": "The Sky Kitchen",
+      "area": "Tongwell",
+      "city": "Milton Keynes",
+      "v": "809d5b867b"
+    },
+    "2b380ed9-1de0-4bbc-9934-af661386c598": {
+      "name": "Taco Bell",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "dbfe36e27c"
+    },
+    "2d60aceb-7de8-45af-93a1-356da982d5c1": {
+      "name": "Subway",
+      "area": "Eaglestone",
+      "city": "Milton Keynes",
+      "v": "5c3d05c791"
+    },
+    "2e00d0d4-6f70-4da1-a4b3-fb5e3b8d7924": {
+      "name": "Braai Shack Restaurant",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "6dcbb6c117"
+    },
+    "2e10d52a-9d59-4482-bae4-48488c7ad559": {
+      "name": "Taco Bell",
+      "area": "Central MK · Elder Gate",
+      "city": "Milton Keynes",
+      "v": "ad5e3f767c"
+    },
+    "2e16ff5d-de18-456a-b9f6-aedaff511a2d": {
+      "name": "SweetAwe",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "2514dbfdd8"
+    },
+    "2eaf30ae-cf5c-4bc9-884f-706cfbfaef08": {
+      "name": "Home Bargains",
+      "area": "Kingston",
+      "city": "Milton Keynes",
+      "v": "ca600b3c20"
+    },
+    "2f546e75-5604-4537-bf95-3afa9c033e16": {
+      "name": "Tasty Bites",
+      "area": "Linford Wood",
+      "city": "Milton Keynes",
+      "v": "60cd954921"
+    },
+    "300ce66f-2d87-48be-bcbe-707ad626a27d": {
+      "name": "Spice Village MK",
+      "area": "Shenley Church End",
+      "city": "Milton Keynes",
+      "v": "f7bf447d27"
+    },
+    "304d3558-fc84-4836-996d-79dcde25745f": {
+      "name": "Sainsbury's",
+      "area": "Shenley Church End",
+      "city": "Milton Keynes",
+      "v": "15017a6fde"
+    },
+    "3069b06c-794e-4f47-8bbf-256bb0b9b47b": {
+      "name": "GORDONI Coffee Cake Snacks",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "d8ed2d1f80"
+    },
+    "30905b92-65a8-4d0f-8f7c-237cbf0e61b2": {
+      "name": "Woburn Fort",
+      "area": "Woburn Sands",
+      "city": "Milton Keynes",
+      "v": "9428673c6e"
+    },
+    "30d213d8-7eef-42a4-ab16-adf2763be421": {
+      "name": "The Nags Head",
+      "area": "Great Linford",
+      "city": "Milton Keynes",
+      "v": "2dbcb4848f"
+    },
+    "311cb40b-ac0a-4f76-8343-6b40ecfae516": {
+      "name": "Subway",
+      "area": "Central MK · Mortimer Square",
+      "city": "Milton Keynes",
+      "v": "b71ec1d70f"
+    },
+    "31401ba8-64f5-4af5-883c-e408a5940e3e": {
+      "name": "McDonald's",
+      "area": "Westcroft",
+      "city": "Milton Keynes",
+      "v": "bfc011d474"
+    },
+    "331a30de-3e6a-46e7-b4bc-564501fcc34b": {
+      "name": "The Whisk Kitchen & Bar",
+      "area": "Woburn Sands",
+      "city": "Milton Keynes",
+      "v": "92806a4f9c"
+    },
+    "33626665-47f4-4212-8f5b-b43b9e503480": {
+      "name": "Romanelli Ristorante & Pizzeria",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "aac9d3aca1"
+    },
+    "339cdd48-83ed-48b4-a287-c78e5e7aed70": {
+      "name": "Premier",
+      "area": "Brooklands",
+      "city": "Milton Keynes",
+      "v": "81d51c03c4"
+    },
+    "33e2d781-5ac0-4c5d-b6d1-2ae8c2254144": {
+      "name": "Romanelli Takeaway",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "f12a9e369f"
+    },
+    "33e4eda6-f959-477e-8189-5b2de5e66ae5": {
+      "name": "Tesco Cafe",
+      "area": "Kingston · 1 Winchester Circle",
+      "city": "Milton Keynes",
+      "v": "a43c0d83e8"
+    },
+    "33fd4fc4-7b65-4326-b096-4cc8df498256": {
+      "name": "Londis",
+      "area": "Central MK · 380b Midsummer Boulevard",
+      "city": "Milton Keynes",
+      "v": "90d395ccf0"
+    },
+    "349e9034-ddab-4af1-acc8-dd6dc47044d5": {
+      "name": "The Countryman",
+      "area": "Bradwell Common",
+      "city": "Milton Keynes",
+      "v": "41f906fd0a"
+    },
+    "3548868e-9529-487d-9285-b41bce268940": {
+      "name": "Mini Market",
+      "area": "Bradwell Common",
+      "city": "Milton Keynes",
+      "v": "4bc5040ca4"
+    },
+    "35f06a59-6ff2-4a7e-a60a-e9891d2488d8": {
+      "name": "Tim Hortons",
+      "area": "Kingston",
+      "city": "Milton Keynes",
+      "v": "617055d615"
+    },
+    "360cba89-3f03-4377-9e4b-ba0356e33a4a": {
+      "name": "Subway",
+      "area": "Bletchley · Queensway",
+      "city": "Milton Keynes",
+      "v": "8ad3943296"
+    },
+    "3620124c-42ae-49f9-a974-d287feaaccff": {
+      "name": "Frog & Nightgown",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "d3a6d6e680"
+    },
+    "36d9b05b-e123-4eb7-b5d2-e9e57ce23935": {
+      "name": "Subway",
+      "area": "Shenley Church End",
+      "city": "Milton Keynes",
+      "v": "64ffa5db1e"
+    },
+    "37bd3040-eda1-4ee0-86a7-c199dea05900": {
+      "name": "Smoky Boys",
+      "area": "Kingston",
+      "city": "Milton Keynes",
+      "v": "d7172740b1"
+    },
+    "37cf5f4f-b4ba-4b48-b920-344ade7b2759": {
+      "name": "Tasty Turkish Kebab",
+      "area": "Netherfield",
+      "city": "Milton Keynes",
+      "v": "dcfc9e0dbf"
+    },
+    "37d08a2c-43a8-4c32-874d-110eab8ef34b": {
+      "name": "One Stop",
+      "area": "Two Mile Ash",
+      "city": "Milton Keynes",
+      "v": "5887aad564"
+    },
+    "3803d168-ce9e-477e-b2b3-10960075a99f": {
+      "name": "Strudwicks",
+      "area": "Oldbrook",
+      "city": "Milton Keynes",
+      "v": "0c56ff2b73"
+    },
+    "389638d1-aa0b-482d-b875-cf301ad778b1": {
+      "name": "Las Iguanas",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "2e8b612990"
+    },
+    "38a3dd19-ec07-4070-a484-c1d11550a759": {
+      "name": "Oleevo Pizza",
+      "area": "Broughton",
+      "city": "Milton Keynes",
+      "v": "ebfcc9216b"
+    },
+    "39a09884-91df-4f87-8b08-1679b70c9a2c": {
+      "name": "The Big Kebab",
+      "area": "Wymbush",
+      "city": "Milton Keynes",
+      "v": "f0f202b9e1"
+    },
+    "39bd9ed5-9119-4e5d-8491-932d2ca24c8c": {
+      "name": "Dynamite Wings",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "824759e37d"
+    },
+    "39ca6519-957f-4560-ab5b-09556206231d": {
+      "name": "The Sandwich Shack",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "86f62384c3"
+    },
+    "39dfa0e1-7a3e-4d4e-a2de-ab3f019827a7": {
+      "name": "Sunats Kebabs",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "edd2b5d838"
+    },
+    "3a28df15-0914-4326-a1e7-bf52a45b21f4": {
+      "name": "Costa Coffee Drive Thru",
+      "area": "Linford Wood",
+      "city": "Milton Keynes",
+      "v": "9d89701f74"
+    },
+    "3a46885a-7d83-40a9-ad4e-14438043ae2a": {
+      "name": "Kam Tong Garden",
+      "area": "Great Holm",
+      "city": "Milton Keynes",
+      "v": "9dce1e9a72"
+    },
+    "3a888020-1c36-4dbe-9d8f-8a4ddbb8ae2d": {
+      "name": "LoopyLous Cakes & Bakes",
+      "area": "Netherfield",
+      "city": "Milton Keynes",
+      "v": "694abe4316"
+    },
+    "3ab16275-bfee-4d2d-9146-5dee65474051": {
+      "name": "Papa Johns Pizza",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "3c9068b00d"
+    },
+    "3b4254c5-d44a-4815-b229-421bac6337f2": {
+      "name": "Fir Tree Inn",
+      "area": "Woburn Sands",
+      "city": "Milton Keynes",
+      "v": "e22670e482"
+    },
+    "3b428cf2-96ca-4aef-87e6-2d81981fdc7d": {
+      "name": "Peri Peri Original",
+      "area": "Brooklands",
+      "city": "Milton Keynes",
+      "v": "58f405f0fe"
+    },
+    "3b6309f9-2770-4548-967d-4cc8cf97d97a": {
+      "name": "McDonald's",
+      "area": "Little Brickhill",
+      "city": "Milton Keynes",
+      "v": "4332dace70"
+    },
+    "3b6a1e35-50d4-46c3-ace3-fb89c02b24e4": {
+      "name": "Papa J's Indian Restaurant",
+      "area": "Oxley Park",
+      "city": "Milton Keynes",
+      "v": "38e5b579aa"
+    },
+    "3ba43254-91e6-4669-9c66-9e4f17e8cc62": {
+      "name": "Tesco Express",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "6cada8e558"
+    },
+    "3bb5a7a2-bcb4-4583-ace1-8b9b50e3d34e": {
+      "name": "Mister Law",
+      "area": "Netherfield",
+      "city": "Milton Keynes",
+      "v": "3236dd0906"
+    },
+    "3bd97cf6-5da0-47c2-823f-77f69b1544a2": {
+      "name": "Welcome Stratford Park",
+      "area": "Addington Avenue",
+      "city": "Milton Keynes",
+      "v": "3f4273b1aa"
+    },
+    "3c62ef7d-b39f-4e8b-ac05-fe48416337ed": {
+      "name": "Papa’s Wok Chinese Takeaway",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "9a70e1c02c"
+    },
+    "3c82ad41-50f8-44d3-9069-a5122e78255e": {
+      "name": "Best Stony Kebab House",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "f107ce14ac"
+    },
+    "3d978af2-62cb-4062-acd6-2ffa20363eac": {
+      "name": "ABR Station Xpress",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "077d1b6ce8"
+    },
+    "3d98ea71-2566-483d-9e7b-f05c39e283af": {
+      "name": "Pepe's",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "76caef0d8d"
+    },
+    "3da21707-7d96-4758-99fc-5a75b45e42e3": {
+      "name": "Central Oriental",
+      "area": "Alston Drive",
+      "city": "Milton Keynes",
+      "v": "3a0ff7dd4a"
+    },
+    "3db1d604-03fa-4bd8-b17a-72cce68bc65f": {
+      "name": "Hay Barn Cafe",
+      "area": "Galley Lane",
+      "city": "Milton Keynes",
+      "v": "9faccfe48f"
+    },
+    "3ddbca47-e73c-47ee-a58b-f2f6ed25f677": {
+      "name": "Malavoglia",
+      "area": "Emerson Valley",
+      "city": "Milton Keynes",
+      "v": "77994ff390"
+    },
+    "3e245220-91ba-4cf4-91f4-60571856b473": {
+      "name": "Gourmet Burger Joint",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "7e6417f593"
+    },
+    "3ef42add-b4f2-409e-884f-013a50a26c79": {
+      "name": "Murati's Pizzeria",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "6ab06cf38c"
+    },
+    "3ef869eb-128d-4a1f-92fb-ae9f4f4c5647": {
+      "name": "Fourteen Sky Bar & Restaurant",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "79d17217a6"
+    },
+    "3efa1b52-a63d-4e39-aa53-b5269ec84619": {
+      "name": "The DOSA Company",
+      "area": "Shenley Church End",
+      "city": "Milton Keynes",
+      "v": "d374a37624"
+    },
+    "4042f9fd-0d2d-4aa7-8a96-148ae9a91477": {
+      "name": "Grand Sultan",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "5711ca5fb7"
+    },
+    "40c43f20-a86c-44b0-b2e7-ec0d9598fb57": {
+      "name": "Nando's",
+      "area": "Central MK · Marlborough Gate",
+      "city": "Milton Keynes",
+      "v": "4bf20dc327"
+    },
+    "40d8f007-fe48-4435-8984-0807379a8054": {
+      "name": "Simply Good",
+      "area": "Grange Farm",
+      "city": "Milton Keynes",
+      "v": "7362f531f1"
+    },
+    "4102ea65-8eb6-4f42-b292-6afe53a736df": {
+      "name": "Newport News",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "d90ced75c1"
+    },
+    "410d038d-33d6-49fd-8520-057461faf8b4": {
+      "name": "The Coal Hatch",
+      "area": "Woburn Sands",
+      "city": "Milton Keynes",
+      "v": "70f968ee86"
+    },
+    "4155615e-c4c8-42ca-b132-55a094d3a63a": {
+      "name": "Lodge Farm Cafe",
+      "area": "Castlethorpe",
+      "city": "Milton Keynes",
+      "v": "e9eb591db8"
+    },
+    "4165c90b-8900-449f-82a1-beb5cdb60e03": {
+      "name": "Londis",
+      "area": "Stony Stratford · Barford",
+      "city": "Milton Keynes",
+      "v": "374c8f9cc0"
+    },
+    "416c1f22-93e9-4b0f-86e1-2cbed76ea2d7": {
+      "name": "MK Viet Kitchen",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "d48b03109d"
+    },
+    "41af197e-58de-416c-af6b-3ae7fbd65e63": {
+      "name": "Tesco Express",
+      "area": "Woburn Sands",
+      "city": "Milton Keynes",
+      "v": "317bba6b0d"
+    },
+    "41af39dc-dc3e-4191-85c7-8c70f3b090e2": {
+      "name": "BP Chicheley Park Simply Food",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "6376625760"
+    },
+    "41f95c9c-2247-4f81-b151-6fe762e4b984": {
+      "name": "Spudalicious",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "df4331bdc6"
+    },
+    "4214679f-58aa-4f99-b3d8-17863e3e0b4f": {
+      "name": "MyPersonalChef.Online",
+      "area": "Kingston",
+      "city": "Milton Keynes",
+      "v": "eb4e1b5363"
+    },
+    "4278b34c-5aa9-4c1f-ae44-6f01c09d0f62": {
+      "name": "Kardamom Lounge",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "eef1f09b48"
+    },
+    "42f71f3f-ad48-4bea-a925-dc917802d957": {
+      "name": "Popeyes",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "4b3c7e6bb7"
+    },
+    "4310707d-d7ff-42f0-9614-88d7525d69a1": {
+      "name": "Nirvana Indian Fusion",
+      "area": "Buckingham Road",
+      "city": "Milton Keynes",
+      "v": "d5c499e556"
+    },
+    "43775c1e-dbc8-4e9e-8431-c7a39d50d5f8": {
+      "name": "Co-op",
+      "area": "Neath Hill",
+      "city": "Milton Keynes",
+      "v": "edfe3ed7c2"
+    },
+    "43ae4802-326b-46ae-b503-efba3eaccf3f": {
+      "name": "Pizza Hut",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "313b13572e"
+    },
+    "43fcc204-a7e5-46ac-acd5-a4533161a119": {
+      "name": "Stony's Bistro",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "9877987bfe"
+    },
+    "4475f0dc-84c6-4e2b-b2aa-12ba056f4f34": {
+      "name": "New Rajdouth",
+      "area": "Emerson Valley",
+      "city": "Milton Keynes",
+      "v": "c8cbad7ad3"
+    },
+    "44a6cb32-4e1a-43fd-b953-de1cf22a7cf2": {
+      "name": "Tesco",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "1a9c88070f"
+    },
+    "450c4859-44fe-41d1-8ab7-2af605b9ccba": {
+      "name": "Mother Hubbard's",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "73a684ac91"
+    },
+    "452fa927-3716-49d9-8c72-4f27a239d2b3": {
+      "name": "Wingstop",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "7bc9d7d98f"
+    },
+    "4532539e-6347-4cbb-87f2-41cf3814e885": {
+      "name": "Papa Luigi Dial-a-Pizza",
+      "area": "Stacey Bushes",
+      "city": "Milton Keynes",
+      "v": "9070e3ffc6"
+    },
+    "45d8c441-ef6b-42cb-8b75-212f2d9851fc": {
+      "name": "Premier",
+      "area": "Wolverton · Church Street",
+      "city": "Milton Keynes",
+      "v": "72f34b79db"
+    },
+    "45dd3ecd-0caa-46b5-accc-5808247aefd7": {
+      "name": "Think Food Cafe",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "0626c26634"
+    },
+    "462beac0-b3e7-4472-acdc-2b156b646c01": {
+      "name": "Smarts",
+      "area": "Bletchley · Melrose Avenue",
+      "city": "Milton Keynes",
+      "v": "6eaa8e75ce"
+    },
+    "47ac59f3-d777-4ce2-a6b2-74dd3a666730": {
+      "name": "Ole Tapas Bar",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "33d2b391ee"
+    },
+    "47e7f663-625f-425e-b1c0-e7e5a0243991": {
+      "name": "Monkston Park Kebab",
+      "area": "Monkston Park",
+      "city": "Milton Keynes",
+      "v": "bf9237a80e"
+    },
+    "483f35e2-940b-432b-a469-4124f15228c7": {
+      "name": "New City Kebab Van",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "c301bf5814"
+    },
+    "4891f7c6-8acd-4cf2-830d-5c943d817cd1": {
+      "name": "Yummy Yummy Chinese Take-Away",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "792245303d"
+    },
+    "48c794ed-426c-44c0-9368-b2944467a727": {
+      "name": "The Golden Fry",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "8fb2b7636f"
+    },
+    "49cf7288-7660-4aa0-9130-a3e3719532b5": {
+      "name": "Spiceloop",
+      "area": "Broughton",
+      "city": "Milton Keynes",
+      "v": "719c76b105"
+    },
+    "49fcde03-e47a-4f47-82f6-fbe832bada56": {
+      "name": "The Grange Indian Restaurant",
+      "area": "Grange Farm",
+      "city": "Milton Keynes",
+      "v": "4600ca2c76"
+    },
+    "4a0fb7ca-64b8-4a30-be0b-60d235c8b81c": {
+      "name": "What The Truck - MK",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "c60b7cabae"
+    },
+    "4a52760f-264d-4b5e-889a-ac5af247df91": {
+      "name": "Phillyz MK",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "55854ac658"
+    },
+    "4a78d654-9b89-440b-a93e-17c43727425c": {
+      "name": "Capadocia Turkish Restaurant",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "720cbbcff6"
+    },
+    "4b81f85d-e7f3-4aaa-a55d-2f0792d10d21": {
+      "name": "Rose & Crown",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "19e2532b2a"
+    },
+    "4bf3bd3f-8d72-4011-a57b-0467e0a97985": {
+      "name": "Banana Tree",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "8cd30d4ccf"
+    },
+    "4c06770b-5c25-460f-9e5a-5738cf93ef37": {
+      "name": "Pizza Go Go",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "172b71dcbf"
+    },
+    "4c5e7be9-5e2d-4fd0-a1fb-ee23c05b93fb": {
+      "name": "The Food Warehouse by Iceland",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "b24a82b155"
+    },
+    "4c72dc9a-3850-4d5f-a74f-0ee157beb817": {
+      "name": "Five Guys",
+      "area": "Central MK · Midsummer Boulevard",
+      "city": "Milton Keynes",
+      "v": "074fa1320d"
+    },
+    "4cf59935-2f81-4cf0-af63-1572138df352": {
+      "name": "Market Mealz",
+      "area": "Oldbrook",
+      "city": "Milton Keynes",
+      "v": "104e9032de"
+    },
+    "4d18148f-209e-4383-a2de-8474de606754": {
+      "name": "You Want Beef?",
+      "area": "Brooklands",
+      "city": "Milton Keynes",
+      "v": "e8632ab57d"
+    },
+    "4dd281c9-bb39-4f00-9eb8-1b635546869b": {
+      "name": "Iceland Supermarket",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "6316ee4a71"
+    },
+    "4e59dcc2-d2c5-4ff5-9123-99afe1698d8d": {
+      "name": "Sal's Hot Chicken",
+      "area": "Crownhill",
+      "city": "Milton Keynes",
+      "v": "409a7b128f"
+    },
+    "4e7ad170-3d2c-49f8-b62d-b2f44cce9a55": {
+      "name": "McDonald's",
+      "area": "Linford Wood",
+      "city": "Milton Keynes",
+      "v": "0f9a6d8223"
+    },
+    "4ec5f8bc-30c5-4359-888e-0cd8b1fd4564": {
+      "name": "Subway",
+      "area": "Kingston",
+      "city": "Milton Keynes",
+      "v": "00183fd928"
+    },
+    "4fa4f824-0f58-4770-a246-9ff04bf59f0c": {
+      "name": "Village Food Centre (Butchers, Fruit & Veg, International Supermarket, Grocery Store Wolverton)",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "f472a3f132"
+    },
+    "4fd4c3a3-9694-42a4-bd26-db85bf39b60a": {
+      "name": "Ashland Fish Bar",
+      "area": "Ashland",
+      "city": "Milton Keynes",
+      "v": "35a8e39153"
+    },
+    "4fd917da-d069-4e16-ad6d-b1958e7e2a00": {
+      "name": "Bogota Coffee Company",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "53d2fb7c5f"
+    },
+    "4fec3565-81f1-4fa9-b1c3-8b938b9967ee": {
+      "name": "Oldbrook Convenience Store (Handy General Store)",
+      "area": "Oldbrook",
+      "city": "Milton Keynes",
+      "v": "99a1c70d26"
+    },
+    "4ff52737-583d-4383-ae7e-ca6720b4b451": {
+      "name": "Morrisons",
+      "area": "Westcroft",
+      "city": "Milton Keynes",
+      "v": "086cf0c8b2"
+    },
+    "50435319-ece1-40a5-b2d5-ffdbd300016d": {
+      "name": "The Galleon Old",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "449eb7c878"
+    },
+    "50561e1d-efa8-4e2e-a6ca-aa27e8392d24": {
+      "name": "Kebab Centre",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "dcaccdc94e"
+    },
+    "50a5f27b-bbef-473f-9800-431ca79fb39f": {
+      "name": "Sora Lounge",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "2a1697b8c1"
+    },
+    "50be2afd-7f56-4b9e-87e8-e338577c57a5": {
+      "name": "Eating Greek MK",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "d22af09eb6"
+    },
+    "50d3d130-eb84-48f6-9ad6-7d08f1d37c24": {
+      "name": "Tesco Express",
+      "area": "Furzton",
+      "city": "Milton Keynes",
+      "v": "80d95bbbdf"
+    },
+    "51004aab-f144-4ba4-9f4e-10dc38f5c17a": {
+      "name": "Burger King",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "f8c13e3dc0"
+    },
+    "5106f09e-6caf-424a-99d9-b33c336e4a03": {
+      "name": "Moores Fish & Chips",
+      "area": "Monkston Park",
+      "city": "Milton Keynes",
+      "v": "faad6ab8c5"
+    },
+    "5143abe5-f591-4751-a54d-bbe280861db0": {
+      "name": "wokexpressmk",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "650723c306"
+    },
+    "514fe829-6f17-4a4b-976e-47ebce89e215": {
+      "name": "Sabeeh Mini Market",
+      "area": "Fishermead",
+      "city": "Milton Keynes",
+      "v": "f6299019a5"
+    },
+    "5168c2cf-9680-4d59-9246-82161b96ec5d": {
+      "name": "Saf's Kitchen",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "54922d14b5"
+    },
+    "517c2120-f3b3-44dc-be89-073436d25149": {
+      "name": "Howe & Co Quality Fish & Chips",
+      "area": "Little Horwood",
+      "city": "Milton Keynes",
+      "v": "2e1da9cf42"
+    },
+    "51b4c999-00a8-44fe-b6ab-dab346d18b96": {
+      "name": "Budgens",
+      "area": "Campbell Park",
+      "city": "Milton Keynes",
+      "v": "d0acdcf648"
+    },
+    "52743e52-5ff7-4c29-a7c3-379e5172bcb0": {
+      "name": "Big Boyz Pizza",
+      "area": "New Bradwell",
+      "city": "Milton Keynes",
+      "v": "15cf087781"
+    },
+    "52a198c1-c507-4e7f-b213-078e33edf5ba": {
+      "name": "Slim Chickens",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "ae6dd596f1"
+    },
+    "5313e6c5-b942-4806-b7af-26fbb8d552ec": {
+      "name": "Panda Town",
+      "area": "Newton Leys",
+      "city": "Milton Keynes",
+      "v": "3dc7c59fea"
+    },
+    "53141d82-8405-4481-92f8-886180807879": {
+      "name": "Sams Chinese Takeaway",
+      "area": "Peartree Bridge",
+      "city": "Milton Keynes",
+      "v": "ea6668c6f6"
+    },
+    "5355f06b-3735-4772-af5e-cd08f7192ad9": {
+      "name": "Simpsons Chicken & Peri Peri",
+      "area": "Heelands",
+      "city": "Milton Keynes",
+      "v": "2b4bd583cf"
+    },
+    "53cd29f4-c6fb-4c0a-9aac-05d1421c5e88": {
+      "name": "Premier",
+      "area": "Wolverton · The Square",
+      "city": "Milton Keynes",
+      "v": "3823bf723a"
+    },
+    "558ed0a3-843c-40a5-897f-5381300f55de": {
+      "name": "Red Jalapeno Wraps",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "785c793b20"
+    },
+    "55efb8d6-376e-4b59-a73f-29518f43dbaf": {
+      "name": "Tesco Extra",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "0f647d87f8"
+    },
+    "5853267c-266d-43ea-8e0e-58d2019b9c05": {
+      "name": "Tuk Tuk Thai",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "db8f90ff26"
+    },
+    "58768ea9-640e-4c00-bd8f-ac4d6c5f376d": {
+      "name": "XLN Takeaway Hot Food",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "047ed59b4b"
+    },
+    "5886458b-eba5-41b5-946a-565a74f609de": {
+      "name": "Africafe Coffee",
+      "area": "Netherfield",
+      "city": "Milton Keynes",
+      "v": "7fbff8dee7"
+    },
+    "589e6e02-aa23-41a3-abde-23c2bc959552": {
+      "name": "Wingers",
+      "area": "Crownhill",
+      "city": "Milton Keynes",
+      "v": "0db20c2e70"
+    },
+    "5924f8e6-a8a2-4cd6-9ef6-47c7f9340eb0": {
+      "name": "The Broughton",
+      "area": "Broughton",
+      "city": "Milton Keynes",
+      "v": "6e45755f91"
+    },
+    "59c8dcf6-2f7e-42c0-b49f-f11c41cde229": {
+      "name": "McDonald's",
+      "area": "Central MK · Portway",
+      "city": "Milton Keynes",
+      "v": "6545be325e"
+    },
+    "59febfa8-4ed8-4ce7-ad4a-064924c06840": {
+      "name": "KFC",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "2e71f114b4"
+    },
+    "5a1e4fe0-6812-49b5-bac4-608860b1b4bf": {
+      "name": "Melis",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "f3e22ba187"
+    },
+    "5a8bb7e5-5c8c-4208-a324-b6562b32ad0f": {
+      "name": "Nonna's",
+      "area": "Woburn Sands",
+      "city": "Milton Keynes",
+      "v": "d7d1374694"
+    },
+    "5b073839-1921-4422-884f-90c84ea5516f": {
+      "name": "Bar + Block Steakhouse",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "6b865bb9dc"
+    },
+    "5b39114a-a371-4886-b87e-7a9899f24240": {
+      "name": "Costa Coffee",
+      "area": "Kingston",
+      "city": "Milton Keynes",
+      "v": "68c2ce3471"
+    },
+    "5bcbb1ca-6f52-43d2-805f-628e78167278": {
+      "name": "Indian Ricepot",
+      "area": "Eaglestone",
+      "city": "Milton Keynes",
+      "v": "fef71a1424"
+    },
+    "5caf84a8-364f-4919-9fb5-504bf5748f94": {
+      "name": "Cafe Sen",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "e3b54f482b"
+    },
+    "5cfb2332-1e41-4dea-b905-6760ca8e29dd": {
+      "name": "Royal Wok",
+      "area": "Summerson Road",
+      "city": "Milton Keynes",
+      "v": "59d46823c3"
+    },
+    "5d710886-c013-4740-9216-0e55adde9ebe": {
+      "name": "Greggs",
+      "area": "Central MK · Silbury Arcade",
+      "city": "Milton Keynes",
+      "v": "66244a728c"
+    },
+    "5d93f3bd-b698-47a4-a98b-59c48920a16a": {
+      "name": "Dessert Island & Cafe MK",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "e301ec8541"
+    },
+    "5ded916f-7edc-43ed-a6e0-042386097762": {
+      "name": "Cosy Club",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "373fe669ff"
+    },
+    "5df3722b-fa2e-4845-81be-d29ba7250212": {
+      "name": "Nando's",
+      "area": "Kingston",
+      "city": "Milton Keynes",
+      "v": "72a7ad69dd"
+    },
+    "5eb69791-24db-4245-a54b-d9c42601e59c": {
+      "name": "Treat Street",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "0e1a804025"
+    },
+    "5eb92784-0687-4235-a94d-5a7c805e9779": {
+      "name": "HomeGround Café MK",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "13ffd64e04"
+    },
+    "5eb97437-e1b2-4569-90f4-e5cf47a63fa8": {
+      "name": "Hide & Seek Café Bar",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "c42dc62a7c"
+    },
+    "5ed965d8-3bd9-4bb3-9cd4-413b0290bf2f": {
+      "name": "Willen Fish Bar & Take Away",
+      "area": "Willen",
+      "city": "Milton Keynes",
+      "v": "7ff1eb4c0b"
+    },
+    "5f1ad41e-15ee-4203-9670-b969a92cb842": {
+      "name": "Vbubble",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "a7464c1dec"
+    },
+    "5fca573e-ee73-421f-ac54-f097ca6fa2d3": {
+      "name": "Costa Coffee Drive Thru",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "c050cd0c50"
+    },
+    "60ad156a-75ab-4fed-9578-b42772d606f0": {
+      "name": "Furzton Kebab Van",
+      "area": "Furzton",
+      "city": "Milton Keynes",
+      "v": "844a8ca009"
+    },
+    "60b27855-f322-4351-9d17-cd545ae7db57": {
+      "name": "Legend One",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "276eaafe46"
+    },
+    "60c25bf4-94b5-4004-bbd0-e2b9dc9fec25": {
+      "name": "Subway",
+      "area": "Central MK · Elder Gate",
+      "city": "Milton Keynes",
+      "v": "5c7ad2795f"
+    },
+    "625dfc72-325d-46d8-be13-90d0cd56abb9": {
+      "name": "Sainsbury's Local",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "f6503ebafd"
+    },
+    "62bdddb2-e164-4aee-a90c-473b9a9d812e": {
+      "name": "South India Food",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "e5ca3adefc"
+    },
+    "62c42be6-8ce8-48f7-9ba0-977c03e81869": {
+      "name": "Caketastic",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "de07c5c167"
+    },
+    "62c8eade-ab4b-425b-befe-43e36a06b05d": {
+      "name": "Old China Takeaway",
+      "area": "Giffard Park",
+      "city": "Milton Keynes",
+      "v": "4eabbd7f56"
+    },
+    "62cced2f-85fd-4ebb-9725-c059b845b2cb": {
+      "name": "Jfs City Takeaway",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "94729c8905"
+    },
+    "62fa5674-3c50-4e32-a460-6d440d5cf239": {
+      "name": "House of Sliders",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "ad206ac833"
+    },
+    "63371612-112c-4eb8-9377-db66983ec28c": {
+      "name": "Morrisons Petrol Station",
+      "area": "Westcroft",
+      "city": "Milton Keynes",
+      "v": "716675175f"
+    },
+    "637c2520-907a-47b1-9dc4-8ef64e9e2ead": {
+      "name": "French Affaire",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "61a689cdbb"
+    },
+    "640c4cc4-5eb8-4296-a229-1ed0d3ea90eb": {
+      "name": "Nana's Kitchen",
+      "area": "Walnut Tree",
+      "city": "Milton Keynes",
+      "v": "7f79de69bc"
+    },
+    "644e1fc9-9da2-4c3a-bf8a-f7b021d13ebd": {
+      "name": "Waite & Rose Café",
+      "area": "Oakgrove",
+      "city": "Milton Keynes",
+      "v": "b1aff58667"
+    },
+    "64868efd-2bf1-49b3-a43b-94f5aebb2049": {
+      "name": "MK (Guna) Dosa Corner",
+      "area": "Bradwell Common",
+      "city": "Milton Keynes",
+      "v": "498e04ea56"
+    },
+    "65bdd4a4-26d5-4cbe-aebe-9d678f45a0f1": {
+      "name": "Hickory's Smokehouse",
+      "area": "Caldecotte",
+      "city": "Milton Keynes",
+      "v": "fcf6ce9e98"
+    },
+    "66588162-8981-4022-9360-35425c8c0619": {
+      "name": "The Fat Pizza",
+      "area": "Monkston Park",
+      "city": "Milton Keynes",
+      "v": "fe30f12f69"
+    },
+    "66c6ae25-c939-44d7-89a3-c14da7f0e7ef": {
+      "name": "M&S Simply Food",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "976ec0aa12"
+    },
+    "66cbfb8b-a244-4ae3-b339-4a25c8646c6d": {
+      "name": "Best Original Kebab",
+      "area": "Merlewood Drive",
+      "city": "Milton Keynes",
+      "v": "7c87a95951"
+    },
+    "671dfa18-ccc0-46ec-a944-b9b564bc2370": {
+      "name": "The Winery",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "73e26346e7"
+    },
+    "67f8b550-d2b8-416d-b3d4-1646cefce6f4": {
+      "name": "Premier",
+      "area": "Bletchley · Water Eaton Road",
+      "city": "Milton Keynes",
+      "v": "6b0ff0fea7"
+    },
+    "686b5f5b-f99a-4f37-a715-6c20e526a8d7": {
+      "name": "Kafila Indian",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "4966e958f7"
+    },
+    "68980395-f6f1-4e54-881f-2ec49c0bbc23": {
+      "name": "A Pizza This",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "ff20df28fa"
+    },
+    "68b7df2d-4bb7-4798-a9cb-f4097fc44f21": {
+      "name": "3 Stax",
+      "area": "Broughton",
+      "city": "Milton Keynes",
+      "v": "ac4ff831ca"
+    },
+    "690db622-6d66-49ed-b4c2-336128e0a2f5": {
+      "name": "Oriental GoGo",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "57e9b3c4b3"
+    },
+    "69c72f6b-f66e-4736-a2fe-42e4a74e9a50": {
+      "name": "Jimmy's Killer Prawns",
+      "area": "Kingston",
+      "city": "Milton Keynes",
+      "v": "d437cd74ac"
+    },
+    "69e10209-a503-428e-93c0-d8361e055df8": {
+      "name": "Costa Coffee",
+      "area": "Bletchley · Stadium Way W",
+      "city": "Milton Keynes",
+      "v": "ce8757bcaf"
+    },
+    "6a4e9f0d-854a-437c-aa7b-afc54180c98e": {
+      "name": "The Caribbean Hut",
+      "area": "Kingston",
+      "city": "Milton Keynes",
+      "v": "9dfcb56146"
+    },
+    "6a542f51-9902-4d95-9aea-e4c766d3a2b2": {
+      "name": "Pastasimo",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "32de8b2af4"
+    },
+    "6a9cfd01-2ffb-4cad-8be1-205f4f90f852": {
+      "name": "Imperial Garden",
+      "area": "Davy Avenue",
+      "city": "Milton Keynes",
+      "v": "b125e451bb"
+    },
+    "6af162de-c81e-498d-b86a-540ba43797ec": {
+      "name": "Milk & Beans Coffee Roasters",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "446ca6811d"
+    },
+    "6bd0327b-8603-4c56-95f1-b8ea512ca41a": {
+      "name": "Lahori Vibes",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "3f80313456"
+    },
+    "6bebbdc3-23c5-473c-8098-b12996a3f4e6": {
+      "name": "The Crown Inn",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "a97bbf7527"
+    },
+    "6c775309-8eb3-4890-aaca-8fec9cace475": {
+      "name": "Market Hill Greengrocers",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "d29075c7ba"
+    },
+    "6cf4b2de-173e-44b7-abb2-47ae6da970ef": {
+      "name": "New Mandarin @Pub",
+      "area": "Bradwell Common",
+      "city": "Milton Keynes",
+      "v": "0a04555cc1"
+    },
+    "6d1182bf-4e81-4eed-a515-03354640fabd": {
+      "name": "Fratelli Italian Restaurant",
+      "area": "Woburn",
+      "city": "Milton Keynes",
+      "v": "39c6d04b15"
+    },
+    "6d1d603e-8fac-4eb0-91a9-a0f175281c09": {
+      "name": "KFC",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "4c9719b065"
+    },
+    "6d2d7e9c-3f57-46a5-b644-974fc3feb06d": {
+      "name": "Howe & Co 77 - Mobile Fish and Chips",
+      "area": "Little Horwood",
+      "city": "Milton Keynes",
+      "v": "d1bd1534d2"
+    },
+    "6d82ec1d-e7b8-4847-a4e3-f4f93ff9e8dd": {
+      "name": "IDLI",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "ff7962e719"
+    },
+    "6d9324e0-8fed-4667-9ae3-f9600ffb6ca0": {
+      "name": "New Hong Kong",
+      "area": "Emerson Valley",
+      "city": "Milton Keynes",
+      "v": "b60f9d487d"
+    },
+    "6e63b3d8-a356-4e07-b3b4-d6738733852c": {
+      "name": "QR Cook Chinese Takeaway & Asian Cuisine",
+      "area": "New Bradwell",
+      "city": "Milton Keynes",
+      "v": "53cfc6b1bd"
+    },
+    "6e683242-1faa-403b-82c2-f0a98aef9f5b": {
+      "name": "Pepe's",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "7872adf51d"
+    },
+    "6ee5e5ed-841c-4742-a761-7facad54e046": {
+      "name": "Maaya Indian Kitchen & Bar",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "3538e218bb"
+    },
+    "6f48f5d6-7186-4808-9866-451f2edae602": {
+      "name": "Ali’s Kebab",
+      "area": "Tinkers Bridge",
+      "city": "Milton Keynes",
+      "v": "e17dc78396"
+    },
+    "6f7ff444-7ecf-4afd-87b7-51e2774629ae": {
+      "name": "Netherfield Kebab Van",
+      "area": "Netherfield",
+      "city": "Milton Keynes",
+      "v": "da39b7046f"
+    },
+    "6fa0706f-68f2-4b18-8ce9-65e922fc11ab": {
+      "name": "Nasz Sklep Polish Grocery",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "308412de9d"
+    },
+    "6fb91f4b-3843-4d54-8f3a-c17eb2f40e2b": {
+      "name": "The Italian Sul Lago",
+      "area": "Furzton",
+      "city": "Milton Keynes",
+      "v": "cd701f32d2"
+    },
+    "7019bd21-cb16-4459-9b76-56e0c0a9d9f8": {
+      "name": "Jasmine Indian Cuisine",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "e3fc8a3968"
+    },
+    "706a02fd-a357-4bc8-a5f3-00c032f474bd": {
+      "name": "Rashan Pani",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "5506edddd9"
+    },
+    "70902a9a-3599-4179-b88b-f0d3f84aa77f": {
+      "name": "RJ Local Store",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "82402323f8"
+    },
+    "70a0e6c5-0403-4a8a-9f5e-df4bb5cccbcc": {
+      "name": "Eastern Spice",
+      "area": "Summerson Road",
+      "city": "Milton Keynes",
+      "v": "5bda2b9a15"
+    },
+    "71b5f2f3-011f-4501-8013-288b30c34a9e": {
+      "name": "Taste of MouAksha",
+      "area": "Dahl Drive",
+      "city": "Milton Keynes",
+      "v": "2d4d254f43"
+    },
+    "71ec6ead-b04b-40ed-8073-5f62200a71f1": {
+      "name": "Gurkha Mart",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "e387322e26"
+    },
+    "72118755-025d-48d9-a817-40d263339388": {
+      "name": "Piri Fino Brooklands Square",
+      "area": "Brooklands",
+      "city": "Milton Keynes",
+      "v": "22c6d7e058"
+    },
+    "722166b6-be3b-4567-88f5-c1ee3189f845": {
+      "name": "Bletchley Bakery & Cafe",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "2e307a649a"
+    },
+    "7221d407-51a5-438d-88df-ef6a46df36d2": {
+      "name": "The Cross Keys",
+      "area": "Woolstone",
+      "city": "Milton Keynes",
+      "v": "ba0c874b86"
+    },
+    "727f961a-dbf4-401b-87b0-9af982029271": {
+      "name": "Westfriers",
+      "area": "Westcroft",
+      "city": "Milton Keynes",
+      "v": "e5a458d69f"
+    },
+    "72eebbf9-ba76-401b-818f-7327995e3cb5": {
+      "name": "Caffè Nero",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "2159c8a6da"
+    },
+    "73af54c1-e59b-4ceb-9aaa-943eb8246c83": {
+      "name": "BP",
+      "area": "Emerson Valley",
+      "city": "Milton Keynes",
+      "v": "43f10a923e"
+    },
+    "74044f03-0cd2-4138-8036-8d811003a646": {
+      "name": "Greggs",
+      "area": "Kingston · Winchester Circle",
+      "city": "Milton Keynes",
+      "v": "f36655fd28"
+    },
+    "7415e57b-5104-4fb6-8618-a0a7cde54eac": {
+      "name": "Old Beams",
+      "area": "Shenley Lodge",
+      "city": "Milton Keynes",
+      "v": "941d3642a7"
+    },
+    "7459a66a-8123-4683-8c0c-1cd0ebdde175": {
+      "name": "Esquires Coffee Milton Keynes (Glebe Farm)",
+      "area": "Payne Road",
+      "city": "Milton Keynes",
+      "v": "e988d66273"
+    },
+    "74b80596-af8c-4790-a911-39c15fd83f78": {
+      "name": "Bunz",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "f22a958dda"
+    },
+    "751fd6cb-697d-4357-a2b6-ba491ed9bc05": {
+      "name": "Chill Out Bakes",
+      "area": "Tattenhoe",
+      "city": "Milton Keynes",
+      "v": "c50e782863"
+    },
+    "75ba1f5c-b7fe-418f-aafb-41436018b89a": {
+      "name": "Delhi Tadka",
+      "area": "Broughton",
+      "city": "Milton Keynes",
+      "v": "624d1552b6"
+    },
+    "75c1fc7a-ce5a-401a-9f8d-7ec3ddc6c225": {
+      "name": "Seacourt Fish Bar",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "f441d51410"
+    },
+    "7612b7d7-c86e-4ade-beed-4fea3ec9541d": {
+      "name": "Sumac Room",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "b195f5362d"
+    },
+    "768efd09-22d3-4cf0-a0a4-2a358536b9c7": {
+      "name": "Caron's Cakery",
+      "area": "Monkston",
+      "city": "Milton Keynes",
+      "v": "09abcf10f0"
+    },
+    "7754a89e-2484-4d5f-b136-4cda87fe6282": {
+      "name": "One Stop",
+      "area": "Emerson Valley",
+      "city": "Milton Keynes",
+      "v": "b3a05b3bd8"
+    },
+    "77795013-d14d-48da-b2b9-cccba5b23a09": {
+      "name": "No.8 Caffe",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "485b1801d4"
+    },
+    "77aa703c-a8fd-475d-9e22-24730ca102de": {
+      "name": "Cafe Cleo",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "bf87fd5570"
+    },
+    "781a6d5e-c895-477a-a23b-39b20a02a011": {
+      "name": "TastyMK",
+      "area": "Broughton",
+      "city": "Milton Keynes",
+      "v": "bafa3ade00"
+    },
+    "7879ac44-cf3d-4fc6-9173-c537d247c5b0": {
+      "name": "The Eight Belles",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "a3a9fbaaab"
+    },
+    "78b669fc-d650-42b5-8d86-a65a444daf39": {
+      "name": "Favorite Chicken & Ribs",
+      "area": "Netherfield",
+      "city": "Milton Keynes",
+      "v": "094ec49fdb"
+    },
+    "791fa230-c0e8-4446-b6a1-584ad5d47538": {
+      "name": "Ye Olde Swan",
+      "area": "Newport Road",
+      "city": "Milton Keynes",
+      "v": "574e87f034"
+    },
+    "79550f4a-1431-424f-a652-e152b2c860c6": {
+      "name": "Fenny Fish Bar",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "a10bda23fb"
+    },
+    "79df6516-39e4-4821-8dd8-9d9b3c6055b1": {
+      "name": "The Dolphin",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "2545d82f23"
+    },
+    "7a48a485-b08d-491d-8a1c-7379258abeea": {
+      "name": "Silver Sea Chinese",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "32138369ae"
+    },
+    "7a4e0bdb-3519-4cea-ad01-1e1b0c1bfe6d": {
+      "name": "Lidl",
+      "area": "Fen Street",
+      "city": "Milton Keynes",
+      "v": "2fc1f08bcf"
+    },
+    "7add3cc7-d587-4373-8071-dae411a93dce": {
+      "name": "The Red House",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "b15c9a639b"
+    },
+    "7ae848e9-315c-449a-91a6-112c379a0347": {
+      "name": "Kingfisher",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "970fc387c1"
+    },
+    "7b128df7-d75a-41c2-976a-2dbd00284921": {
+      "name": "The Hidden Cafe",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "bc737d9ddd"
+    },
+    "7b26e662-8c82-4ba4-a39f-0b03b40f5449": {
+      "name": "Patel Supermart",
+      "area": "Broughton",
+      "city": "Milton Keynes",
+      "v": "b9b04c073d"
+    },
+    "7b43a6fe-4cf1-466e-8fc1-07a34cb7e6c5": {
+      "name": "Ceylon Cafe",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "182629dab1"
+    },
+    "7b5c16ab-e1d1-4250-992f-17886c5fe0f7": {
+      "name": "Pasha Turkish Grill Restaurant",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "947abb7c55"
+    },
+    "7c16c2f6-93f3-4e94-b585-2fba23796b89": {
+      "name": "Calabria Coffee MK",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "cf4dda51f8"
+    },
+    "7c3caf05-8df1-48a1-9981-f59b831916b6": {
+      "name": "Maria's Fish Bar",
+      "area": "Two Mile Ash",
+      "city": "Milton Keynes",
+      "v": "08967ae05c"
     },
     "7c4fbd14-f370-4034-b269-4cec25437a51": {
       "name": "McDonald's",
       "area": "Central MK · Midsummer Boulevard",
       "city": "Milton Keynes",
-      "v": "b4006f18a3"
+      "v": "70d80cfbba"
+    },
+    "7ca5903f-c34d-4da8-a36a-9cba7a86a892": {
+      "name": "Nisa",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "27e14edc7e"
+    },
+    "7cd52080-f7e1-4c17-9238-a0c8e0a75fcc": {
+      "name": "Great Choice Convenience Store",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "cb11848905"
+    },
+    "7d2c90c5-19c4-4f99-9eed-133a78ff65d8": {
+      "name": "Tickford Street Convenience Store",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "d51c3d3911"
+    },
+    "7d38fbb8-e045-407b-b8f2-828df3842139": {
+      "name": "Morrisco's Peri Peri",
+      "area": "Walnut Tree",
+      "city": "Milton Keynes",
+      "v": "de912cb522"
+    },
+    "7df251c6-fee3-483a-b3f8-a47d262cdf4c": {
+      "name": "Browns",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "f4d661eac0"
+    },
+    "7e59b087-7050-40db-b573-d453d2744c29": {
+      "name": "T&I Kebab",
+      "area": "Cairngorm Gate",
+      "city": "Milton Keynes",
+      "v": "dcb2dda585"
+    },
+    "7e8b7d17-28a5-496f-a218-cd061b6505dd": {
+      "name": "Wok Warrior",
+      "area": "Grange Farm",
+      "city": "Milton Keynes",
+      "v": "1fbda44f13"
+    },
+    "7ed1b7c8-a525-474e-bbd0-05a39b6bcce0": {
+      "name": "ASDA Supermarket",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "9ca8582909"
+    },
+    "7eee87db-a132-4520-940e-ab809ebc1724": {
+      "name": "Tesco Express",
+      "area": "Giffard Park",
+      "city": "Milton Keynes",
+      "v": "004f36d92e"
+    },
+    "7f222ba0-ea85-4486-9e72-636463b87a4f": {
+      "name": "Swan",
+      "area": "Woburn Sands",
+      "city": "Milton Keynes",
+      "v": "71197185aa"
+    },
+    "80be76c8-e908-4e95-b718-726ae3c3fb67": {
+      "name": "Grounds Café Howe Park Wood",
+      "area": "Westcroft",
+      "city": "Milton Keynes",
+      "v": "0df5dfabb7"
+    },
+    "80e04327-de27-46d8-a18f-337679bde703": {
+      "name": "Woburn Sands Kebab & Pizza",
+      "area": "Woburn Sands",
+      "city": "Milton Keynes",
+      "v": "bf207585b1"
+    },
+    "80e99e0e-b3ee-4ddd-9ff1-392b450864e4": {
+      "name": "Chick'N'Wingz",
+      "area": "Eaglestone",
+      "city": "Milton Keynes",
+      "v": "476aa2dcef"
+    },
+    "8158c205-2fe2-49e6-9e20-5b426d8def8b": {
+      "name": "Gyros Bay",
+      "area": "Monkston Park",
+      "city": "Milton Keynes",
+      "v": "074ccf9cee"
+    },
+    "8172827c-e59a-4ef3-86e0-c9574fb760c7": {
+      "name": "One Stop",
+      "area": "Bradwell Common",
+      "city": "Milton Keynes",
+      "v": "84eb9c6b65"
+    },
+    "81c374bf-f82c-4159-973a-9f88d33b76e9": {
+      "name": "Big Mama's Soft Play Cafe",
+      "area": "Shenley Brook End",
+      "city": "Milton Keynes",
+      "v": "4480c1db5a"
+    },
+    "823b2565-7b72-48ac-92fe-d48b235b5598": {
+      "name": "Harvester Fountain",
+      "area": "Loughton",
+      "city": "Milton Keynes",
+      "v": "854b8a8076"
+    },
+    "8267478d-8bfc-4823-9b26-37dc08347b89": {
+      "name": "B & K News Convenience Store",
+      "area": "Conniburrow",
+      "city": "Milton Keynes",
+      "v": "9be12eb297"
+    },
+    "828bda90-f416-45d9-8fc5-87857d844404": {
+      "name": "North Furzton Fish Bar",
+      "area": "Furzton",
+      "city": "Milton Keynes",
+      "v": "dab899ff0d"
+    },
+    "82b9add7-3478-4a91-b212-0829390a95fb": {
+      "name": "Foodie Cottage",
+      "area": "Woburn Sands",
+      "city": "Milton Keynes",
+      "v": "261474cbc1"
+    },
+    "83260b40-b0a9-4f05-b33d-f8b4e48799f5": {
+      "name": "MK Fat Kebab",
+      "area": "Monkston Park",
+      "city": "Milton Keynes",
+      "v": "14469209f6"
+    },
+    "833f8e60-4cdd-4093-aa64-0213d7288a8f": {
+      "name": "Co-op",
+      "area": "Monkston Park",
+      "city": "Milton Keynes",
+      "v": "0dea487345"
+    },
+    "83e97a66-b9fd-4907-be9f-5da4ceb060dd": {
+      "name": "Cocos Coffee House",
+      "area": "New Bradwell",
+      "city": "Milton Keynes",
+      "v": "8c239654bd"
+    },
+    "841cbfd2-9b4c-466a-9960-b71d6426a75d": {
+      "name": "Caprinos Pizza",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "c52535c457"
+    },
+    "842ad499-537c-4dc8-b1d8-bd93fff1add6": {
+      "name": "Greggs",
+      "area": "Bletchley · Queensway",
+      "city": "Milton Keynes",
+      "v": "77a6494a2d"
+    },
+    "847c5be9-9253-4368-80ee-9848832d24ab": {
+      "name": "Greggs",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "3453867680"
+    },
+    "84a0185c-8af5-4105-b515-c268f0bbb14b": {
+      "name": "Subway",
+      "area": "Netherfield",
+      "city": "Milton Keynes",
+      "v": "c979f8ce99"
+    },
+    "8558d092-52cd-4e9d-949c-e4d87a5e19d4": {
+      "name": "Turing Key",
+      "area": "Newton Leys",
+      "city": "Milton Keynes",
+      "v": "d80f293d66"
+    },
+    "858976e6-3463-4c79-8c75-0edbf24d1f40": {
+      "name": "Londis",
+      "area": "Stony Stratford · London Road",
+      "city": "Milton Keynes",
+      "v": "ec7b52e6ed"
+    },
+    "8596a3ae-d2dd-49b5-876b-cdd63422836e": {
+      "name": "Stony Express",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "a2612def75"
+    },
+    "85b57ee7-5268-40cc-bd75-a7c3c4c0a3da": {
+      "name": "Good Food 4 U",
+      "area": "New Bradwell",
+      "city": "Milton Keynes",
+      "v": "5b786c5d41"
     },
     "85bcec65-528b-42da-ba73-d6602c6b7b9f": {
       "name": "Tesco Express",
       "area": "Old Farm Park",
       "city": "Milton Keynes",
-      "v": "725bc65b0e"
+      "v": "120add3cb2"
+    },
+    "85cfb9f8-8564-4f2b-8de3-c22707a91eb9": {
+      "name": "Frosts Garden Centre",
+      "area": "Woburn Sands",
+      "city": "Milton Keynes",
+      "v": "4330778dbb"
+    },
+    "862a2a8f-3959-43e5-af9c-0174d9cd9968": {
+      "name": "Selekt Chicken",
+      "area": "Old Stratford",
+      "city": "Milton Keynes",
+      "v": "f40ce8f194"
+    },
+    "865faead-3d6b-4392-b930-2b9bc53ee048": {
+      "name": "Lambdens of Woburn Café & Bistro",
+      "area": "Woburn",
+      "city": "Milton Keynes",
+      "v": "04e8d3a259"
+    },
+    "86f039ac-a13f-45ac-af3c-50b5fa025e1e": {
+      "name": "Hut 4 Cafe",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "75abce3589"
+    },
+    "86fbd1e1-a5f7-4bbc-9ec2-adc42c0b7b95": {
+      "name": "Shenley Cakery",
+      "area": "Shenley Brook End",
+      "city": "Milton Keynes",
+      "v": "b0c3d5c1db"
+    },
+    "8725afd2-8d2f-477f-8056-cf6c00413616": {
+      "name": "Sanpra",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "7e3a489cdb"
+    },
+    "87930336-2b5d-4b2e-b4a1-def89ed5b8d4": {
+      "name": "Londis",
+      "area": "Central MK · Childs Way",
+      "city": "Milton Keynes",
+      "v": "5bbbb6c5cc"
+    },
+    "87ab7da0-7876-43f6-bd50-53fc646e8035": {
+      "name": "12th Street Burgers & Shakes",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "3097441a2d"
+    },
+    "8809a717-4a24-4bad-abe5-68006f784266": {
+      "name": "Queens Supermarket",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "9d576b1a3c"
+    },
+    "8819e72f-e483-47b0-96ec-e0733eb52c1e": {
+      "name": "Clocktower",
+      "area": "Emerson Valley",
+      "city": "Milton Keynes",
+      "v": "59d8f13f4f"
+    },
+    "882b8a31-be5e-4c13-95a5-610db949ea92": {
+      "name": "Shayona Sweets & Savouries",
+      "area": "Broughton",
+      "city": "Milton Keynes",
+      "v": "3f8c9c41f6"
+    },
+    "8836c36c-e477-46af-832d-3ecd5c2c91f5": {
+      "name": "Moores Fish and Chips",
+      "area": "Oxley Park",
+      "city": "Milton Keynes",
+      "v": "70ad44389d"
+    },
+    "886c2ef2-0d6d-46ab-a258-b8bc2ec16a04": {
+      "name": "Chinese Chef Chinese Takeaway",
+      "area": "Walnut Tree",
+      "city": "Milton Keynes",
+      "v": "e03ec4ed6e"
+    },
+    "887cd1e0-418c-4d05-b1c0-d5d7dc6f3358": {
+      "name": "Tim Hortons",
+      "area": "Westcroft",
+      "city": "Milton Keynes",
+      "v": "5b1038145b"
+    },
+    "88cb7d74-5bc3-4f72-a986-18825fc35368": {
+      "name": "Rai",
+      "area": "Woburn",
+      "city": "Milton Keynes",
+      "v": "951092f544"
+    },
+    "8a0bbdde-6feb-4bd4-b436-bab4a27aa790": {
+      "name": "ASDA Supermarket",
+      "area": "Stantonbury",
+      "city": "Milton Keynes",
+      "v": "871e059119"
+    },
+    "8a21b2e4-83bf-4a15-9d07-7f887b2205fd": {
+      "name": "KFC M1 North Services",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "28013b2e89"
+    },
+    "8a3a4f79-e9cb-4ecd-9645-94f721b1cb5f": {
+      "name": "Apollonia Greek Cuisine",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "bd6a459a6c"
+    },
+    "8a76b3a1-c384-4324-b47a-e845c9ff7835": {
+      "name": "Selekt Chicken",
+      "area": "Broughton",
+      "city": "Milton Keynes",
+      "v": "d738446472"
+    },
+    "8b54d6da-7993-4b42-a8ed-2743767e52ee": {
+      "name": "MK Breakfast and Desserts",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "9727d11d85"
+    },
+    "8b742a29-e558-4f5a-ba08-31239f160c1e": {
+      "name": "Greggs",
+      "area": "Kingston",
+      "city": "Milton Keynes",
+      "v": "6bf1b81646"
+    },
+    "8bf0280b-25de-45f6-a559-11612516ec17": {
+      "name": "Eagles Jerk & Grill",
+      "area": "Eaglestone",
+      "city": "Milton Keynes",
+      "v": "e75520b988"
+    },
+    "8cd815b4-f279-4ab7-a54a-ce787ec87bfe": {
+      "name": "KFC M1 South Services",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "e0940499b8"
+    },
+    "8cd8c588-09b7-4bd2-84ca-6024a9c13191": {
+      "name": "Kassia",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "a9aaa74d58"
+    },
+    "8d23f972-4b4b-4007-8129-3d44335e9d78": {
+      "name": "The Village Plaice",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "ef47f0d3a3"
+    },
+    "8d3ec1dd-d2bc-4596-8fd9-5507371e1860": {
+      "name": "Sainsbury's Local",
+      "area": "Eagle Farm",
+      "city": "Milton Keynes",
+      "v": "e1c46a4cea"
+    },
+    "8dc32c76-1986-4e43-805f-af66ef0fbc17": {
+      "name": "Londis",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "aa416bbc24"
+    },
+    "8e196b27-e2fc-4ae8-a350-cbd537823382": {
+      "name": "Pico Bar & Restaurant",
+      "area": "Walnut Tree",
+      "city": "Milton Keynes",
+      "v": "6031cf6c63"
+    },
+    "8e3c941e-56a2-4ce7-85aa-c2aa42bef48f": {
+      "name": "Emerton News",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "7aeb652869"
+    },
+    "8e80306f-0346-4c7f-82ec-2957ed732be5": {
+      "name": "Cake Inn",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "60c44eb3a8"
+    },
+    "8fe0621b-f4dd-4291-b619-808c0b8281bb": {
+      "name": "Khyber Chefs",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "c916d42509"
+    },
+    "9069d31f-b4cc-4d9e-a38a-33df3772bbdf": {
+      "name": "The House Of Dough",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "133f80fc9a"
+    },
+    "908e9460-32de-4cac-8ede-e4b191cea96e": {
+      "name": "Bollywood Express",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "1fac8a456d"
+    },
+    "90b86ba4-a532-4ac7-9f95-7714e4eaf117": {
+      "name": "Hoo Hing",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "6474be388c"
+    },
+    "91345855-35b4-437a-8f56-ec44213eced8": {
+      "name": "SPUD5",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "e4f513ea84"
+    },
+    "91a63394-0fc2-4555-92e3-20de2926d609": {
+      "name": "Pizza Go Go",
+      "area": "Greenleys",
+      "city": "Milton Keynes",
+      "v": "e993143ebb"
+    },
+    "91e24d36-8670-4c9d-819f-5b0be01dfd75": {
+      "name": "The Red Lion",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "ce10cad41f"
+    },
+    "921961b2-f2a7-40fe-81f4-bad172a09461": {
+      "name": "Spice Bar",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "a5130d3ed4"
+    },
+    "927dadc8-8ff5-4a5c-ab1d-9b62aa49a1e4": {
+      "name": "Costa Coffee",
+      "area": "Ada Walk",
+      "city": "Milton Keynes",
+      "v": "8b54f062dc"
+    },
+    "92c3d883-d0b7-4a9d-91d0-4d1be411cf5f": {
+      "name": "Eagle Pizza",
+      "area": "Shenley Church End",
+      "city": "Milton Keynes",
+      "v": "eba25bbbf0"
+    },
+    "92c76e9e-6e2b-4df1-931a-770a777d98df": {
+      "name": "Sankalp - The Taste Of India",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "8d78b45b39"
+    },
+    "93042f88-e7ba-4158-a248-33235f610ebe": {
+      "name": "Krust Pizza",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "4b38b7ccac"
+    },
+    "9348021e-cff8-42c5-a80e-4029cf697908": {
+      "name": "Meals By Malik",
+      "area": "Stantonbury",
+      "city": "Milton Keynes",
+      "v": "df080b3279"
+    },
+    "937fb061-3b1a-43bf-be39-c8de3f44c00b": {
+      "name": "Premier",
+      "area": "Bletchley · Buckingham Road",
+      "city": "Milton Keynes",
+      "v": "751b9366d7"
+    },
+    "93871eb3-97c5-4a7b-b42c-dbef1a653bef": {
+      "name": "Royal Pizza",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "1a0460e7d9"
+    },
+    "93cd3a6e-6c38-4cf3-827a-b7fdd4dbb64b": {
+      "name": "Cafe Latte",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "2a2903acbf"
+    },
+    "94382292-7fc0-4eb5-856f-f7f3cbd79dc3": {
+      "name": "Moores Fish & Chips",
+      "area": "Newton Leys",
+      "city": "Milton Keynes",
+      "v": "c467b6e4ed"
+    },
+    "94be1f4e-69cc-4e6e-8568-0339bdc264a8": {
+      "name": "Waitrose & Partners",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "dd6d641379"
+    },
+    "94e30c7c-46a5-448a-8f20-413c4739f683": {
+      "name": "Miller & Carter",
+      "area": "Shenley Church End",
+      "city": "Milton Keynes",
+      "v": "673fde4922"
+    },
+    "959a991f-0b9d-4780-b97a-35dc417912ae": {
+      "name": "Dilli Heart",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "8faae3f61b"
+    },
+    "962a2964-3c89-4675-af72-8fa039ea4521": {
+      "name": "Mrs Mac's Sweet Treats",
+      "area": "Woburn Sands",
+      "city": "Milton Keynes",
+      "v": "1644facfc7"
+    },
+    "96dab0c4-784e-45a7-a70d-4994cb9db1a5": {
+      "name": "Greek Souvlaki",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "4875e85dc7"
+    },
+    "974a3e7d-a878-48de-8bce-524f48410e2a": {
+      "name": "HWY51 - Philly Cheesesteaks",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "6d5151db11"
+    },
+    "9762f4dd-a487-4233-a3c9-3b0805e10496": {
+      "name": "Panda Takeaway",
+      "area": "New Bradwell",
+      "city": "Milton Keynes",
+      "v": "144cbe9542"
+    },
+    "9779bb52-5dd2-485a-b6fd-f75b0b7cef88": {
+      "name": "Woburn Country Foods",
+      "area": "Woburn Sands",
+      "city": "Milton Keynes",
+      "v": "7251b3242f"
+    },
+    "977a84c3-b7bb-4a49-b873-914248fceab8": {
+      "name": "One Stop",
+      "area": "Springfield",
+      "city": "Milton Keynes",
+      "v": "7f56d08d65"
+    },
+    "97b6f864-b05f-46d1-a755-0e67fd2553b1": {
+      "name": "Costa Coffee",
+      "area": "Eaglestone",
+      "city": "Milton Keynes",
+      "v": "f22ee37918"
+    },
+    "97ca61ea-399b-4a5e-b405-9418c85e9b75": {
+      "name": "Bazaar Foods",
+      "area": "Winterhill",
+      "city": "Milton Keynes",
+      "v": "b767d398d2"
+    },
+    "97ee3adc-f915-427a-8084-bf977c462d5d": {
+      "name": "H's Kebabs",
+      "area": "Bradwell",
+      "city": "Milton Keynes",
+      "v": "ffe90f5d46"
+    },
+    "97f667e9-f67f-42ea-83e2-703c9ec18768": {
+      "name": "Margo's",
+      "area": "Woburn",
+      "city": "Milton Keynes",
+      "v": "4830fc7ac7"
+    },
+    "989be790-e195-480b-a174-2bc7722166f5": {
+      "name": "Boss Pizza",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "6242cf1e97"
+    },
+    "98b6286a-924d-4dec-bc66-c78d176ec3ea": {
+      "name": "Craft & Skewers",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "dcc9872e76"
+    },
+    "9955eacb-c557-4b25-823b-a33eeed6ca38": {
+      "name": "Eastern Paradise",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "70545ac4e4"
+    },
+    "99b27f1d-6e28-4d31-8bcd-658c55364761": {
+      "name": "Giardino 14 Coffee",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "b595e2da0e"
+    },
+    "99f6f91b-d77d-4af2-9f39-371838334760": {
+      "name": "Sweet Affaire",
+      "area": "Oldbrook",
+      "city": "Milton Keynes",
+      "v": "feb7e8bbb8"
+    },
+    "9a479d75-5a92-437b-855b-d246142aec3e": {
+      "name": "Galley Hill Peri Peri",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "841fde39fb"
+    },
+    "9b222a6f-e29a-44f3-8494-07666ef01f94": {
+      "name": "Hot Chicks Wing",
+      "area": "Coffee Hall",
+      "city": "Milton Keynes",
+      "v": "8d22654788"
+    },
+    "9b5123c2-bc07-4fa7-9760-bf3561d35ec9": {
+      "name": "Waitrose & Partners",
+      "area": "Oakgrove",
+      "city": "Milton Keynes",
+      "v": "893ba44ec9"
+    },
+    "9b6d3544-5ebc-49f0-994a-2cb360f0be0b": {
+      "name": "XLN TakeAway",
+      "area": "Fishermead",
+      "city": "Milton Keynes",
+      "v": "88bdf84554"
+    },
+    "9b9b3fe8-65d6-4654-96d2-0aa907f95237": {
+      "name": "Enfes Restaurant",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "937ce81b69"
+    },
+    "9bc1843b-c947-46b5-bd22-609d5583ed9a": {
+      "name": "Central Co-op Food",
+      "area": "Payne Road",
+      "city": "Milton Keynes",
+      "v": "1881ea3b9e"
+    },
+    "9c48eec8-a0e2-458f-a115-a9afb3094286": {
+      "name": "Ocean Fish & Pizza",
+      "area": "Beanhill",
+      "city": "Milton Keynes",
+      "v": "3b6078ba7d"
+    },
+    "9cbc781e-b442-4167-9db9-b62711e6f8cf": {
+      "name": "Taipan",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "45007169d7"
+    },
+    "9cc55132-e48b-4188-a0ff-fb0a38dac07e": {
+      "name": "DiahCuisine Nigerian Street Food",
+      "area": "Caldecotte",
+      "city": "Milton Keynes",
+      "v": "9ab3b12cfe"
+    },
+    "9ce64ae1-91b7-4559-ba35-6a1d6f559ddc": {
+      "name": "MM Tiramisu Layer Cake",
+      "area": "Broughton",
+      "city": "Milton Keynes",
+      "v": "4be95a5b5b"
+    },
+    "9d09028a-53ec-488a-b6ca-20bd486596ad": {
+      "name": "Panzini Restaurant & Bar",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "03cf1ade0e"
+    },
+    "9dd32b99-9bed-4475-896b-aaf2564cef0d": {
+      "name": "Wing Kingz",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "72a60c9b59"
+    },
+    "9e70e365-4d85-4b07-b432-aae6d889bba7": {
+      "name": "Burger King",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "9f6304fd63"
+    },
+    "9ec764ec-960d-4708-a5e6-3e851df38b60": {
+      "name": "Co-op",
+      "area": "Emerson Valley",
+      "city": "Milton Keynes",
+      "v": "28417ffe3a"
+    },
+    "9f23a8fd-6053-45b8-9a08-719b3e9c9d3e": {
+      "name": "Amigos Burgers & Shakes",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "40bd3a5cd8"
+    },
+    "9fcb01db-633d-463c-af0d-b94f9d1050d0": {
+      "name": "Chui Yuen Chinese & Fish n Chips",
+      "area": "Newton Longville",
+      "city": "Milton Keynes",
+      "v": "856588fbf1"
+    },
+    "a00aa7ea-2c39-49d2-b3da-c0c42e8a536c": {
+      "name": "Vatisserie",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "32fe1397cb"
+    },
+    "a06cdec3-c168-4c88-83ac-b5c3618c4b0d": {
+      "name": "Chopstix North (Welcome Break)",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "176ee942f9"
+    },
+    "a10836b5-9ba2-4dc7-8732-3202a8f26969": {
+      "name": "MK Peri Peri Pizza and Chicken",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "e3135187ef"
+    },
+    "a23a9f98-f29b-42cb-ab56-f5c58246a6a8": {
+      "name": "Cake Secret",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "1b67c4cf23"
+    },
+    "a26a44b5-c4da-463b-bae8-f5b669d56447": {
+      "name": "Broughton Halal Butcher",
+      "area": "Broughton",
+      "city": "Milton Keynes",
+      "v": "f5d18d3bc6"
+    },
+    "a2ccbfb3-f63e-4829-a5d5-89b7aea16615": {
+      "name": "Warbler on the Wharf",
+      "area": "Frobisher Gate",
+      "city": "Milton Keynes",
+      "v": "7f3fc390d3"
+    },
+    "a2eaa4e4-94cc-4ce2-8c9a-da91368b9da3": {
+      "name": "Taste Of Paradise",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "a4c65e2e7e"
+    },
+    "a34b4a69-2ce2-4750-8679-c11c989e53bc": {
+      "name": "Cafe W",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "b73b1c9a52"
+    },
+    "a4464ce6-1f54-4813-9898-de2dfb579961": {
+      "name": "MK Seafood Market",
+      "area": "Fishermead",
+      "city": "Milton Keynes",
+      "v": "0a7e25a8b7"
+    },
+    "a4b5eceb-03ce-4529-81d1-0ef653e952ee": {
+      "name": "Sabeeh Mini Market - Meat, Seafood",
+      "area": "Fishermead",
+      "city": "Milton Keynes",
+      "v": "7cd569e7c6"
+    },
+    "a4b66aee-77c0-4419-8d7b-33411ba081ea": {
+      "name": "Tesco Express",
+      "area": "Oxley Park",
+      "city": "Milton Keynes",
+      "v": "586424cd00"
+    },
+    "a4fb495d-bba2-4900-bdc7-ecbb8714c712": {
+      "name": "Grill Fried Chicken",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "82ef50644d"
+    },
+    "a4fe4843-adff-4bcc-9bd0-d73e73493dff": {
+      "name": "German Doner Kebab",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "9270af63d2"
+    },
+    "a55d73f1-df96-46f5-bd74-7002c9ed8197": {
+      "name": "Nickys Store Best-one",
+      "area": "Bradville",
+      "city": "Milton Keynes",
+      "v": "e2d1b6afaa"
+    },
+    "a56d99a6-4f1d-4245-bcce-c73bdd056256": {
+      "name": "Istanbul Kebabs",
+      "area": "New Bradwell",
+      "city": "Milton Keynes",
+      "v": "95fcc7fce2"
+    },
+    "a574bbf2-9c9d-4c85-95bf-b5ffab613881": {
+      "name": "Favorite Chicken",
+      "area": "Great Linford",
+      "city": "Milton Keynes",
+      "v": "96e8eaa65f"
+    },
+    "a66be8b8-eba5-4e57-b3ec-74d9985a3b9e": {
+      "name": "Your Co-op Food",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "0ce3242773"
+    },
+    "a678e765-05f7-4678-8365-1d5075d9373f": {
+      "name": "Lidl",
+      "area": "Oldbrook",
+      "city": "Milton Keynes",
+      "v": "0f650ff82a"
+    },
+    "a6eaf839-7c1a-4d7f-84bd-4e046b08a99f": {
+      "name": "Kaz's Kitchen",
+      "area": "Stacey Bushes",
+      "city": "Milton Keynes",
+      "v": "1bbde9afd2"
+    },
+    "a70b125c-efad-49f9-beb6-58d8e87eed13": {
+      "name": "Bonisa Bistro & Cafe",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "c53730b6f6"
+    },
+    "a74d1ce0-e07c-44b2-abad-02c3b6e23ff0": {
+      "name": "Broughton Fish and Chips",
+      "area": "Broughton",
+      "city": "Milton Keynes",
+      "v": "34717b602d"
+    },
+    "a759fad9-f295-4d51-83d6-a520a8d37ab5": {
+      "name": "Premier",
+      "area": "Crownhill",
+      "city": "Milton Keynes",
+      "v": "ab909c37a9"
+    },
+    "a7a42094-2d1f-43d7-89af-93962220ee3c": {
+      "name": "Open Kitchen Take Away",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "e83c1447f0"
+    },
+    "a81529bb-c356-48d9-9d04-78cce252a7a5": {
+      "name": "Broughton Hotel",
+      "area": "Broughton",
+      "city": "Milton Keynes",
+      "v": "dc13c6d5c4"
+    },
+    "a9bfa9fb-f563-4121-a373-3dd206524f15": {
+      "name": "Patley Indian",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "425682a05c"
+    },
+    "a9c88907-1436-4424-8f16-f86318782a79": {
+      "name": "Sushi Daily",
+      "area": "Oakgrove",
+      "city": "Milton Keynes",
+      "v": "a30edd7bb3"
+    },
+    "aa248fca-983c-4ca4-9af5-2c6804502958": {
+      "name": "Nando's",
+      "area": "Central MK · Midsummer Boulevard",
+      "city": "Milton Keynes",
+      "v": "6b28aa0fbb"
+    },
+    "aa267ffd-9074-43b5-82ce-327fbe24490d": {
+      "name": "Himalaya Tandoori",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "78f1548ce1"
+    },
+    "aa278436-9648-4042-a3bc-d77165c1f8d8": {
+      "name": "Star Kebab",
+      "area": "Conniburrow",
+      "city": "Milton Keynes",
+      "v": "1a503144ee"
+    },
+    "aa2b50a7-cf7c-4a9f-89ce-6107df3c9dab": {
+      "name": "Cafe Latte",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "0a6409ce64"
+    },
+    "aa355edf-08a0-4168-adb9-3ed1992d4dda": {
+      "name": "Longdan",
+      "area": "Bradwell Common",
+      "city": "Milton Keynes",
+      "v": "91ccac5ccf"
+    },
+    "ab2907d8-566d-4970-8810-238283728821": {
+      "name": "Costa Coffee",
+      "area": "Bradwell Common",
+      "city": "Milton Keynes",
+      "v": "ec84d3a59f"
+    },
+    "ab3d7be4-83a0-4278-a751-a73971dab951": {
+      "name": "Starbucks",
+      "area": "Kingston",
+      "city": "Milton Keynes",
+      "v": "0a3f9ed3b5"
+    },
+    "ac34d333-76a8-43ed-b6da-e02ff175c47f": {
+      "name": "Broughton Neighbourhood Store",
+      "area": "Broughton",
+      "city": "Milton Keynes",
+      "v": "f3874b640f"
+    },
+    "ac53f6be-2627-4a49-9fb3-8015384abc92": {
+      "name": "Co-op",
+      "area": "Netherfield",
+      "city": "Milton Keynes",
+      "v": "0a0a62b392"
+    },
+    "acc8ce72-4322-4436-b8ec-683b6dbaefea": {
+      "name": "The Little Oven of Joy",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "5faec486c2"
+    },
+    "ad16c186-6274-4996-9ffb-eebb17786038": {
+      "name": "Emerson Valley Kebab House",
+      "area": "Emerson Valley",
+      "city": "Milton Keynes",
+      "v": "aca74a308b"
+    },
+    "ad4962ad-c364-4559-b108-86370a34fc12": {
+      "name": "Cake Box",
+      "area": "Brooklands",
+      "city": "Milton Keynes",
+      "v": "313226e0f2"
+    },
+    "add9291e-c2cc-4567-b93e-229009f6d467": {
+      "name": "Chaiiwala",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "56e08f7bf3"
+    },
+    "ae57a126-d148-4aad-8b56-efc4ee1b72de": {
+      "name": "Papa Johns Pizza",
+      "area": "Northfield Drive",
+      "city": "Milton Keynes",
+      "v": "1399ada554"
+    },
+    "ae918277-3df3-4f7b-a26b-8c27c6788a18": {
+      "name": "Mii & U Oriental",
+      "area": "Alston Drive",
+      "city": "Milton Keynes",
+      "v": "76c4b40c9b"
+    },
+    "aea045b7-c678-4ec2-b32c-87ac0683f718": {
+      "name": "Konger Bakery",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "b085133908"
+    },
+    "af55c524-fff2-4240-a49f-a899c853191a": {
+      "name": "McDonald's",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "371a55f1bc"
+    },
+    "b0637811-dfc9-4d32-a840-b53a282c25b7": {
+      "name": "WYLD Dining",
+      "area": "Whaddon",
+      "city": "Milton Keynes",
+      "v": "42e447c14e"
+    },
+    "b0afdadc-6dcf-4612-a008-61cd29cddbfc": {
+      "name": "Sizzlers Street Food",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "f2d1ca43d2"
+    },
+    "b1320dc0-7664-4a59-8e0b-6fc7c5a7676e": {
+      "name": "7IndianSpices",
+      "area": "Argus Way",
+      "city": "Milton Keynes",
+      "v": "dfc5029ae0"
+    },
+    "b15a9d62-79d7-4cc4-9432-1ef11c965d6a": {
+      "name": "Mezbaan Restaurant",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "13d8d738b1"
+    },
+    "b1780a19-95bd-43ff-b8f8-8eff5acb74f1": {
+      "name": "Kaspa's",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "b8864c3560"
+    },
+    "b18cf870-dc61-4a28-a7cf-0dff7b6967dd": {
+      "name": "M&S Simply Food",
+      "area": "Newport Road",
+      "city": "Milton Keynes",
+      "v": "9c93c4f656"
+    },
+    "b198b4f4-1665-4bbe-952b-f4cd95f9b833": {
+      "name": "American Food Mart",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "f18f4c4100"
+    },
+    "b1aa6690-0468-45a4-a46d-d65761f89ac3": {
+      "name": "The Bakehouse",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "d763bc3446"
+    },
+    "b2055351-4912-42e2-812f-3724b958a248": {
+      "name": "The Woodside Cafe",
+      "area": "Linford Wood",
+      "city": "Milton Keynes",
+      "v": "fb9c2e9bfa"
+    },
+    "b25eaa9e-3a8a-4f16-93c5-3a6b865a811c": {
+      "name": "Dinajpur",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "d59972c002"
+    },
+    "b279b91a-3086-4a1c-9ff4-3f27929fba61": {
+      "name": "MK Chinese",
+      "area": "Great Linford",
+      "city": "Milton Keynes",
+      "v": "e156902442"
+    },
+    "b2ee819d-b03d-4e27-bf12-dc6f30cc56cc": {
+      "name": "Bill’s Milton Keynes Restaurant",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "9e30f13a0e"
+    },
+    "b2fb6c45-3e7b-4209-9d5a-5311b6c2a80d": {
+      "name": "Subway",
+      "area": "Central MK · Marlborough Gate",
+      "city": "Milton Keynes",
+      "v": "397f785a5a"
+    },
+    "b30270da-6b40-4151-b4b4-95c43e573ff5": {
+      "name": "Tanddo",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "89a752db85"
+    },
+    "b3a5e175-a08a-49b4-bb10-34500769f744": {
+      "name": "Greek Grill Cafe",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "dd35497f2c"
+    },
+    "b46be2de-6558-42e0-ad5f-df6adc964b5f": {
+      "name": "Murati's Pizzeria",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "51674f0ed5"
+    },
+    "b486491e-a739-4a8d-970c-1cf2aaa9eac9": {
+      "name": "Hong Kong Chinese Food",
+      "area": "Furzton",
+      "city": "Milton Keynes",
+      "v": "8dd739762c"
+    },
+    "b4da1e5c-b932-4555-8555-844fbb080262": {
+      "name": "Kways Kitchen",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "1660960a9d"
+    },
+    "b4dc0d90-d529-4a22-8120-7b2f72aa1f17": {
+      "name": "Edi Kebab",
+      "area": "Crownhill",
+      "city": "Milton Keynes",
+      "v": "2977bb7517"
+    },
+    "b5a0e563-c620-4a6a-a7c8-582a043a65fb": {
+      "name": "Indian Chefs",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "c116cbb3ca"
+    },
+    "b5b9a15a-bb55-402a-bbcd-83cf4158d883": {
+      "name": "Krish Convenience Store",
+      "area": "New Bradwell",
+      "city": "Milton Keynes",
+      "v": "5e362341d4"
+    },
+    "b5f51642-c9b4-4b25-bedd-5420e0829ceb": {
+      "name": "Tesco Express",
+      "area": "Heelands",
+      "city": "Milton Keynes",
+      "v": "4ace594c24"
+    },
+    "b62caf79-094e-474b-82a6-fba718a36dcb": {
+      "name": "Voongs Chinese Restaurant",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "3b6ec256cd"
+    },
+    "b6334f36-c53b-4349-95a7-be798d146897": {
+      "name": "One Stop",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "2fad747617"
+    },
+    "b634f55f-c89a-4332-bf4d-c948577f2080": {
+      "name": "Bamboo Cottage",
+      "area": "Old Stratford",
+      "city": "Milton Keynes",
+      "v": "6a9adb313b"
+    },
+    "b63c0958-3321-46c1-80d3-7b2eb3c8cb70": {
+      "name": "Morrisons Cafe",
+      "area": "Westcroft",
+      "city": "Milton Keynes",
+      "v": "68ed1999a3"
+    },
+    "b8332790-3769-4740-9a32-a22ee16f4705": {
+      "name": "Tesco Petrol Station",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "d09da33e2c"
+    },
+    "b85dde58-0775-4846-abe7-58b7f6016be0": {
+      "name": "Creamy Pure Bakes",
+      "area": "Monkston Park",
+      "city": "Milton Keynes",
+      "v": "db5a962e87"
+    },
+    "b8f55600-7bda-486e-87a3-358c866d9c3a": {
+      "name": "Premier",
+      "area": "Stacey Bushes",
+      "city": "Milton Keynes",
+      "v": "15e35c1461"
+    },
+    "b985a731-f431-48b1-975e-b46a0ffd28d8": {
+      "name": "Dragon Bay",
+      "area": "Crownhill",
+      "city": "Milton Keynes",
+      "v": "2dc7acb739"
+    },
+    "ba2dce0c-b437-4dae-92fe-2300572d6820": {
+      "name": "PizzaExpress",
+      "area": "Central MK · Midsummer Boulevard",
+      "city": "Milton Keynes",
+      "v": "c8be9150f3"
+    },
+    "ba34f771-c007-4771-9260-8c23beedc7b9": {
+      "name": "Starbucks",
+      "area": "Central MK · Elder Gate",
+      "city": "Milton Keynes",
+      "v": "18c1ea2530"
+    },
+    "bab23cb8-d65b-4341-8f9f-d8c3a5594e97": {
+      "name": "Tesco Express",
+      "area": "Bletchley · Buckingham Road",
+      "city": "Milton Keynes",
+      "v": "e897e3b42a"
+    },
+    "bb43dab9-53f4-4dc4-b72d-15bc74afc346": {
+      "name": "TDC (Tandoori Desi Chai)",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "c6b16778b3"
+    },
+    "bb90a996-b894-4ab1-8c7c-ff4561ce2524": {
+      "name": "Batch'd",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "bd18521ae3"
+    },
+    "bc0e10f0-ed47-454e-9d6e-a510dbc8bd0e": {
+      "name": "Greggs",
+      "area": "Central MK · Midsummer Boulevard",
+      "city": "Milton Keynes",
+      "v": "38ae5a0119"
+    },
+    "bc81c22b-9590-417f-aaf6-a0fd9de81fde": {
+      "name": "Charcoal Kitchen MK",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "92dc1060d3"
+    },
+    "bcbb152d-607f-4aa6-bb1c-95bdc282aee5": {
+      "name": "Greggs",
+      "area": "Bradwell Common",
+      "city": "Milton Keynes",
+      "v": "e4c723ac87"
+    },
+    "bd1a213e-a255-47e3-820a-11be651b7d10": {
+      "name": "Peri Peri Original",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "4d78764fa3"
+    },
+    "bdc7c504-ea58-43a4-8498-f0b8b1cd4aa7": {
+      "name": "Purple Spice MK",
+      "area": "Oxley Park",
+      "city": "Milton Keynes",
+      "v": "8dbf75e4d2"
+    },
+    "be22ecd5-f36d-47a9-957f-fc5a99ccf3d6": {
+      "name": "Co-op",
+      "area": "Newport Pagnell · Wordsworth Avenue",
+      "city": "Milton Keynes",
+      "v": "ee06f80f72"
+    },
+    "be3b9dff-4b9f-479f-8e88-67e0a23ec75b": {
+      "name": "DiNapoli",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "0edc1e5053"
+    },
+    "be782664-aa29-4614-8bbc-13166f11d421": {
+      "name": "Palm",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "d7c05b5944"
+    },
+    "bf1e1f4b-c2a0-4c1b-9088-223e7ced77d7": {
+      "name": "Cafe Espresso",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "5d80c5086b"
+    },
+    "bf39214e-1222-4860-9adc-dc8e8bf63c6a": {
+      "name": "Red Rose Kebab",
+      "area": "Tattenhoe",
+      "city": "Milton Keynes",
+      "v": "fd193e9060"
+    },
+    "bf469500-dcd5-4e45-9a60-b69fdc3908b7": {
+      "name": "Giovanni's Downtown Gelato",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "b096f5aeb2"
+    },
+    "bf74da4e-d358-46fb-9104-69d1503a7c2f": {
+      "name": "Royal Grill & Sweets",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "d6d1e7caed"
+    },
+    "bf98fe1a-1f0f-44ec-b5f3-68636ca1c202": {
+      "name": "Enyos Cuisine",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "ab44f5fcab"
+    },
+    "bf9fe194-fae1-40af-a1b2-eed348ea34f1": {
+      "name": "Ganges Lounge",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "81f5484f81"
+    },
+    "c0068b12-4be6-4df9-81f0-c4d29817ba4e": {
+      "name": "Neath Hill Restaurant",
+      "area": "Neath Hill",
+      "city": "Milton Keynes",
+      "v": "8a3be3976c"
+    },
+    "c07c2fbd-f3ae-4ae0-84e0-cfc9d6b7b6b2": {
+      "name": "Costa Coffee",
+      "area": "Westcroft",
+      "city": "Milton Keynes",
+      "v": "f18a851da3"
+    },
+    "c0abcdd3-ab25-4624-a985-bab50c0f36ec": {
+      "name": "The Inn on the Lake",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "b0a55337b7"
+    },
+    "c10f6189-bb12-451b-bf6f-be63a11c880c": {
+      "name": "Peter's Chinese",
+      "area": "Coffee Hall",
+      "city": "Milton Keynes",
+      "v": "d9196376ec"
+    },
+    "c1863190-3767-4ae1-bcf8-15b2a0bda614": {
+      "name": "One Stop",
+      "area": "Campbell Park",
+      "city": "Milton Keynes",
+      "v": "89cf5a48fd"
+    },
+    "c1a4da9f-a1a5-4446-bcd4-3169e8fd7c15": {
+      "name": "Mile Zero Coffee",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "711cd5213a"
+    },
+    "c1b106f8-ccc3-447e-b9fe-a9e389eba170": {
+      "name": "The Camphill Cafe",
+      "area": "Japonica Lane",
+      "city": "Milton Keynes",
+      "v": "9ce068ad12"
+    },
+    "c1b7573a-b23a-401d-a89c-bd8d0f370c20": {
+      "name": "Tesco Express",
+      "area": "Bletchley · Melrose Avenue",
+      "city": "Milton Keynes",
+      "v": "ac55ec82b1"
+    },
+    "c1c5ce77-b03d-4fe1-9f69-9fdc1d8ede42": {
+      "name": "Feta & Olive",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "d7363b24ac"
+    },
+    "c1f468a9-0c1e-4355-80a6-173396fcc970": {
+      "name": "OPA MK",
+      "area": "Peartree Bridge",
+      "city": "Milton Keynes",
+      "v": "1a6ca7b2d0"
+    },
+    "c1f61b51-f1d3-43e4-ace5-8db7999e47b0": {
+      "name": "ASDA Supercentre",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "6914cdb92b"
+    },
+    "c23cf122-1b50-4de8-a909-608a97536e75": {
+      "name": "SRDS Tamil & Indian Cuisine (Take away and Catering)",
+      "area": "Summerson Court",
+      "city": "Milton Keynes",
+      "v": "c2314eee4a"
+    },
+    "c25e438c-73a7-437e-93ad-2128dc4695fe": {
+      "name": "Greggs",
+      "area": "Bletchley · Bletcham Way",
+      "city": "Milton Keynes",
+      "v": "3b11c6555e"
+    },
+    "c269d0ab-d4ef-4fd6-9b07-d5cdb7bf6709": {
+      "name": "Tawny Owl",
+      "area": "Walnut Tree",
+      "city": "Milton Keynes",
+      "v": "ffe97edc4e"
+    },
+    "c29eecf7-46f9-4121-9329-84dffbf32049": {
+      "name": "Royal Thai",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "70aefe838b"
+    },
+    "c30ad63c-1e4b-4422-bd86-2497feda6653": {
+      "name": "The Greedy Italian",
+      "area": "Woburn Sands",
+      "city": "Milton Keynes",
+      "v": "dc34c52747"
+    },
+    "c3472be8-6e1f-4069-96ae-af76434f6c3d": {
+      "name": "ASDA Supermarket",
+      "area": "Newton Leys",
+      "city": "Milton Keynes",
+      "v": "7c94d1f731"
+    },
+    "c3538ad6-55a1-4858-8aa3-1083cf4e0c7a": {
+      "name": "Chicken & Pizza Palace",
+      "area": "Netherfield",
+      "city": "Milton Keynes",
+      "v": "66610a9982"
+    },
+    "c35693de-9364-446b-b975-39227d7ed24e": {
+      "name": "Olive Tree Turkish Mediterranean Restaurant and Bar",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "4543145eb6"
+    },
+    "c51dc0fb-8962-455f-ad27-f69c90532894": {
+      "name": "Blossom Room",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "ac9ad29de2"
+    },
+    "c573a97f-8989-44cc-9408-daea21d2de34": {
+      "name": "Noor Indian Takeaway",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "26a4202ebf"
+    },
+    "c5cc9a76-ddad-439c-94dd-a6a9bb6261e8": {
+      "name": "Tesco Express",
+      "area": "Shenley Brook End",
+      "city": "Milton Keynes",
+      "v": "9d5b950ae0"
+    },
+    "c5e57a68-c7bf-4453-a895-33537a5b723b": {
+      "name": "The Game Changer Kitchen",
+      "area": "Giffard Park",
+      "city": "Milton Keynes",
+      "v": "16fe9eaa62"
+    },
+    "c5fcc305-a395-44ee-b5dc-33b82d13be18": {
+      "name": "Frosts - The Market Eatery",
+      "area": "Woburn Sands",
+      "city": "Milton Keynes",
+      "v": "ac6a5620aa"
+    },
+    "c723890c-0be2-43cf-983f-3ee8e63ab7cc": {
+      "name": "Starbucks",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "122626ba01"
+    },
+    "c76a45f4-bd5d-4556-ba2a-c20fa2426b7a": {
+      "name": "Yuma’s Kitchen",
+      "area": "Crownhill",
+      "city": "Milton Keynes",
+      "v": "0afa3611e1"
+    },
+    "c7a347d5-8585-49b1-97f0-ce4c2d1b104b": {
+      "name": "Kerala Hub Restaurant",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "1c9b99aef3"
+    },
+    "c7bace58-cf76-4ebd-9459-322bc7e5ba9b": {
+      "name": "Mayyam's Kitchen",
+      "area": "Walnut Tree",
+      "city": "Milton Keynes",
+      "v": "83e1502764"
+    },
+    "c7c10e3a-9166-4840-b185-596dabc974d6": {
+      "name": "Premier",
+      "area": "Broughton · Tanfield Lane",
+      "city": "Milton Keynes",
+      "v": "5ef2db4486"
+    },
+    "c85eb9e4-812d-45c5-96cf-e20e4dbcbd46": {
+      "name": "Shake a Shake",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "227c5bbae1"
+    },
+    "c865a8e5-0232-4e82-86c0-f974cc8768b5": {
+      "name": "Cafe Mediterraneo Bar",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "97ae4d6be6"
+    },
+    "c9401e5d-a9f8-40d9-8edd-e3bdd9ca1039": {
+      "name": "McDonald's",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "76a5409789"
+    },
+    "c954bebb-4c3f-42bb-952f-bfce61beee50": {
+      "name": "Fenny Stratford Convenience Store Premmier Express",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "7307580247"
+    },
+    "c962f86b-acb9-41b8-b9af-9f64d1b20411": {
+      "name": "Mumbai Swaad",
+      "area": "Broughton",
+      "city": "Milton Keynes",
+      "v": "fdb250d277"
+    },
+    "c9d178b3-a6e4-41ab-89d2-17ee4c60c296": {
+      "name": "Sainsbury's Local",
+      "area": "Willen",
+      "city": "Milton Keynes",
+      "v": "d84db96e86"
+    },
+    "ca5b7142-0577-4a7f-9841-7705826b0e21": {
+      "name": "Pronto Pizza",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "be21d61ba1"
+    },
+    "ca6499f4-e3e1-4235-9c1b-832d5efcf703": {
+      "name": "Biryani Dum",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "293c36cf8e"
+    },
+    "cb1157c5-59bb-437d-8702-452d8163ed85": {
+      "name": "McDonald's",
+      "area": "Kingston",
+      "city": "Milton Keynes",
+      "v": "9c7d6ca0ad"
+    },
+    "cbd64882-4c17-4163-8154-40ae7ecf0a0e": {
+      "name": "Co-op",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "d4d947f0bf"
+    },
+    "cc36916c-7bf6-4f2d-aae6-cbef4e54d6ab": {
+      "name": "By Doner",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "76666588e9"
+    },
+    "cc52f171-2c05-458b-a62d-7feb6b406882": {
+      "name": "Oodles Chinese",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "3308fc5f67"
+    },
+    "cc650074-90d3-4558-a42e-9ef9740c0651": {
+      "name": "Amore Bakery",
+      "area": "Woburn Sands",
+      "city": "Milton Keynes",
+      "v": "96f95c3dad"
+    },
+    "cd38f278-ca95-4b2f-8008-3204ed4e28d6": {
+      "name": "Evergreen Foods",
+      "area": "Fishermead",
+      "city": "Milton Keynes",
+      "v": "b3c5cb6206"
+    },
+    "cd5be24e-6a25-452a-8847-df2c43557120": {
+      "name": "Swan Inn, MK",
+      "area": "Middleton",
+      "city": "Milton Keynes",
+      "v": "28e202f489"
+    },
+    "cd68ed67-4e9a-4d72-b12f-47c701fc252b": {
+      "name": "DaVinci",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "f52de85161"
+    },
+    "cdbe1a78-53bb-46ac-855f-0dbb78aee243": {
+      "name": "MoKitchen",
+      "area": "Broughton",
+      "city": "Milton Keynes",
+      "v": "a7591e8157"
+    },
+    "cdf9e35e-e311-4bcb-a08d-ed6080106c9b": {
+      "name": "Indulge Cafe",
+      "area": "Oxley Park",
+      "city": "Milton Keynes",
+      "v": "419b4020ab"
+    },
+    "ce120e6c-7dd6-4744-8085-537b0c2bb7b2": {
+      "name": "Par Off Licence",
+      "area": "New Bradwell",
+      "city": "Milton Keynes",
+      "v": "0170781d54"
+    },
+    "cefc9ca9-6a66-4eb4-bd93-61b0fbbd4840": {
+      "name": "Massala Indian Takeaway",
+      "area": "Peartree Bridge",
+      "city": "Milton Keynes",
+      "v": "66c9bafaaa"
+    },
+    "cf45092e-9ac0-49e9-945f-519ae0a6a035": {
+      "name": "Aven Convenience Store",
+      "area": "Great Linford",
+      "city": "Milton Keynes",
+      "v": "fb450e11e9"
+    },
+    "d00a69f5-dd60-4ef7-94f8-920348913323": {
+      "name": "McDonald's",
+      "area": "Central MK · Marlborough Gate",
+      "city": "Milton Keynes",
+      "v": "dffc65cca7"
+    },
+    "d013cbfd-6446-4092-bd88-bc1574a96895": {
+      "name": "MK Fried Chicken",
+      "area": "Ashland",
+      "city": "Milton Keynes",
+      "v": "db00bdf9a3"
+    },
+    "d02bb176-1c62-4ea0-8878-e4508843b5d8": {
+      "name": "Farmfoods",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "2ccaedf93b"
+    },
+    "d07c1261-62da-4d85-bc73-43ba649ea7a2": {
+      "name": "Subway",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "76875ca331"
+    },
+    "d0bd51e9-f156-449f-83ec-2fff1718e030": {
+      "name": "Auris Restaurant & Lounge",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "2efd1f1b37"
+    },
+    "d0ef6fda-1138-40c0-a147-4620c3a7abc9": {
+      "name": "Fabrice Brasserie",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "29d32eef5f"
+    },
+    "d10d2015-f90a-4135-8b30-28b0c5fe89e8": {
+      "name": "Welcome Kents Hill",
+      "area": "Kents Hill",
+      "city": "Milton Keynes",
+      "v": "25777cb964"
+    },
+    "d12eb535-423b-4092-854d-a8eb932bdf5f": {
+      "name": "Moza Indian Restaurant",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "042a9c1f37"
+    },
+    "d14ae8c4-1a05-4b9f-842a-9bc19f496465": {
+      "name": "M&S Simply Food",
+      "area": "Emerson Valley",
+      "city": "Milton Keynes",
+      "v": "88b7fc78b1"
+    },
+    "d29bc8d9-75c5-4392-bc83-d64c5d761e12": {
+      "name": "Fat Twins MK",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "aebf1d2210"
+    },
+    "d2bcd7f4-b9cd-4d84-85dd-8ff7d9bb7779": {
+      "name": "Sainsbury's Local",
+      "area": "Brooklands",
+      "city": "Milton Keynes",
+      "v": "0b86257223"
+    },
+    "d34a8c27-650a-40ce-a758-f63bf87584b2": {
+      "name": "Miss Havishams Tea Shop",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "4d5b674b43"
+    },
+    "d3894c19-3633-4d51-849b-3f4d55cdd743": {
+      "name": "Kings Comfort Food",
+      "area": "Fishermead",
+      "city": "Milton Keynes",
+      "v": "7d4f72fc85"
+    },
+    "d421f464-00f9-4495-a707-5379dee6a482": {
+      "name": "City Store",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "c89418e340"
+    },
+    "d42c7c26-a3f9-4f9f-baaa-af86b894bf49": {
+      "name": "Greggs",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "a1f54fd34d"
+    },
+    "d43841a4-39b1-4c21-a19e-8c6912012b67": {
+      "name": "Tandoori Hut",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "35fec72c7f"
+    },
+    "d44c5068-1029-4927-8ddf-96e68f8124b3": {
+      "name": "Tickford Superstore",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "14b2b23f62"
+    },
+    "d4b06659-94e0-4f60-a965-b22f0faed9b5": {
+      "name": "Chip N Sail",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "1f684ade55"
+    },
+    "d4eb0a83-18c6-46ac-812f-439a3338ba93": {
+      "name": "Krishna’s Kitchen",
+      "area": "Great Holm",
+      "city": "Milton Keynes",
+      "v": "4cfbb8f617"
+    },
+    "d5473848-3095-433f-85c7-53e7894a4b16": {
+      "name": "YO! Tesco Kiosk",
+      "area": "Kingston",
+      "city": "Milton Keynes",
+      "v": "9451b51d17"
+    },
+    "d547e6ca-bca9-463f-84f6-42a0e241338a": {
+      "name": "Shah's Halal Food",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "7f18b59aba"
+    },
+    "d5865f85-fb35-45f5-bd04-3d39348202ce": {
+      "name": "Premier",
+      "area": "Ashland",
+      "city": "Milton Keynes",
+      "v": "8df82119a5"
+    },
+    "d5c3a356-54b2-40a6-964f-474faa5d0c00": {
+      "name": "Flavors of Home",
+      "area": "Oxley Park",
+      "city": "Milton Keynes",
+      "v": "07960bcdf0"
+    },
+    "d6911665-5ddc-4e5f-9a71-94e09149b688": {
+      "name": "Londis",
+      "area": "Grafton Street",
+      "city": "Milton Keynes",
+      "v": "a09149540b"
+    },
+    "d7828c25-5592-45e5-a8e1-5230a7cbadf6": {
+      "name": "The Oligarch",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "00729d2ae4"
+    },
+    "d79a39d1-dd85-4076-b7ae-8f225c838777": {
+      "name": "Hà Nôi Vietnamese Pan-Asian Restaurant & Cocktail Bar",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "5097954e0f"
+    },
+    "d7a50cff-7c37-42b7-a297-3d158341e5f5": {
+      "name": "Papa Lui Pizza Company",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "4b8a3329a7"
+    },
+    "d7c4ff12-d771-42ca-9732-867100c9b09e": {
+      "name": "Burnt Oak",
+      "area": "Shenley Brook End",
+      "city": "Milton Keynes",
+      "v": "7c08164f17"
+    },
+    "d7e3ffb0-4e91-40dc-9632-08c38649d92e": {
+      "name": "Casa Cento Italian Restaurant",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "0ebdb17ead"
+    },
+    "d8486ce9-02ef-4c49-a3ee-d42e656c0bc1": {
+      "name": "Subway",
+      "area": "Stacey Bushes",
+      "city": "Milton Keynes",
+      "v": "302cad87d4"
+    },
+    "d9460f5c-f776-410c-b8aa-4562bd3e753a": {
+      "name": "Dum on the Run",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "ab0c825f69"
+    },
+    "d98e4f3f-b3b3-492e-8152-ac4ea3fa522d": {
+      "name": "Chicken Village (Bletchley Chicken Shop,Nagah Kebab,Shatkora Donner,Bengali,Hala Fast Food,Curry)",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "d6a6ba6c4b"
+    },
+    "d9a99e14-2c72-4d06-abf5-f0c1f74da544": {
+      "name": "Kolkata Restaurant",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "73069c313f"
+    },
+    "d9bcbe29-e6be-471f-b6ae-1efee78ded8e": {
+      "name": "Sattvic Foods",
+      "area": "Stacey Bushes",
+      "city": "Milton Keynes",
+      "v": "ddb5a506a2"
+    },
+    "d9c25bc6-1a81-4d44-accb-c201258a29c2": {
+      "name": "Papa Johns Pizza",
+      "area": "Oldbrook",
+      "city": "Milton Keynes",
+      "v": "b9122f9045"
+    },
+    "d9df1f0a-7823-4071-a1da-b4307b8b7074": {
+      "name": "Premier",
+      "area": "Newport Pagnell · High Street",
+      "city": "Milton Keynes",
+      "v": "4d616e8cb9"
+    },
+    "dafa8b1d-313e-40c8-9176-5e71cc5cca74": {
+      "name": "OKIEDOKI",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "b89f46ca4f"
+    },
+    "db890afb-0f98-469a-ab5f-1acb642ec4c4": {
+      "name": "Tesco Extra",
+      "area": "Kingston",
+      "city": "Milton Keynes",
+      "v": "6c2a56eba7"
+    },
+    "dc4b9b14-d5be-454b-a4bb-6eeece3ab973": {
+      "name": "Jerk N Rum",
+      "area": "Tattenhoe",
+      "city": "Milton Keynes",
+      "v": "24b0c8ad02"
+    },
+    "dc57fe1c-9d37-4258-a641-b7494c161a55": {
+      "name": "Burger King",
+      "area": "Bletchley · Stadium Way W",
+      "city": "Milton Keynes",
+      "v": "ad213467a3"
+    },
+    "dca493c3-ff8e-4a01-931a-d814c5c1923c": {
+      "name": "Bake Life Patisserie",
+      "area": "Milton Keynes",
+      "city": "Milton Keynes",
+      "v": "53d155bc8b"
+    },
+    "dd65f1b8-e143-4bf3-8528-dbf276271050": {
+      "name": "The George Pub",
+      "area": "Little Brickhill",
+      "city": "Milton Keynes",
+      "v": "cf85aae94d"
+    },
+    "dd815229-6ed3-4e9b-b3a7-fce2b3b11600": {
+      "name": "Desy Fast Food",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "8ebbdcd180"
+    },
+    "dd83f642-7999-4e78-ba9e-307dbd922fce": {
+      "name": "Tattenhoe Sports Pavilion Cafe",
+      "area": "Tattenhoe",
+      "city": "Milton Keynes",
+      "v": "aa3265cde2"
+    },
+    "dd9e8b20-0af1-4821-9f46-d59a2f49162d": {
+      "name": "Premier",
+      "area": "Broughton · Bodmin Place",
+      "city": "Milton Keynes",
+      "v": "100db56987"
+    },
+    "dde1358b-a292-448f-a2b5-c7e181adecbc": {
+      "name": "Kokoro",
+      "area": "Kingston",
+      "city": "Milton Keynes",
+      "v": "d19572d730"
+    },
+    "dec805fc-9498-4280-af48-adac5f00c339": {
+      "name": "Costa Coffee",
+      "area": "Brooklands",
+      "city": "Milton Keynes",
+      "v": "bfd7928b88"
+    },
+    "decc5a93-08d7-41e7-94d9-0d2a97e7bb64": {
+      "name": "Ozzies Kebabs",
+      "area": "Great Holm",
+      "city": "Milton Keynes",
+      "v": "c69d15bd56"
+    },
+    "ded9a7f6-7b88-4b01-86ed-d0ee0ba4d3dc": {
+      "name": "Tots and Dots",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "731b9dd4d2"
+    },
+    "df07f32b-938c-491c-9029-e07482204f24": {
+      "name": "Vero",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "99f43414cd"
+    },
+    "df792cb1-8bc9-4cc4-9ff7-f771f55e99ca": {
+      "name": "Namji",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "eb318eec08"
+    },
+    "e0069631-bdec-4fda-b741-b3a1ca3e97e7": {
+      "name": "Smarts",
+      "area": "Bletchley · Queensway",
+      "city": "Milton Keynes",
+      "v": "c09b888c1d"
+    },
+    "e01fc2b1-4bc6-4dc3-896d-8014968ea42f": {
+      "name": "Co-op",
+      "area": "Kingsmead",
+      "city": "Milton Keynes",
+      "v": "139d0ff69f"
+    },
+    "e08a219c-e9c2-448e-932f-499a71b24ca5": {
+      "name": "Nando's",
+      "area": "Central MK · Queens Court",
+      "city": "Milton Keynes",
+      "v": "4c905f9285"
+    },
+    "e0a399c8-22b9-42f5-8ea6-b3cd59a0e8d4": {
+      "name": "Surabi Restaurant",
+      "area": "Conniburrow",
+      "city": "Milton Keynes",
+      "v": "8e48009273"
+    },
+    "e1289e1c-3152-4d93-bf3e-aa2cc957473c": {
+      "name": "Captain Ridley's Shooting Party",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "7b023b449a"
+    },
+    "e1449348-f643-477d-bc55-c988647565ab": {
+      "name": "5 Akhis",
+      "area": "Peartree Bridge",
+      "city": "Milton Keynes",
+      "v": "1649a343b4"
+    },
+    "e149de9d-9b0e-47de-9775-0c4f127d81c8": {
+      "name": "Tesco Express",
+      "area": "Tinkers Bridge",
+      "city": "Milton Keynes",
+      "v": "50bf637e16"
+    },
+    "e172f0ec-8fd8-4579-b1e4-0181b57335de": {
+      "name": "Spicy Madras",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "690ad1953e"
+    },
+    "e193d0f2-9617-41be-ad47-c8e6ba4041b1": {
+      "name": "Great Gelato",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "05bf87de6e"
+    },
+    "e1a12dbd-c332-4bbb-883a-2cdc7c6cb8a3": {
+      "name": "Poffleys Bread",
+      "area": "Emerson Valley",
+      "city": "Milton Keynes",
+      "v": "7545226076"
+    },
+    "e1a960f0-8505-473b-ac11-79beda90b880": {
+      "name": "Londis",
+      "area": "Central MK · 82 Midsummer Boulevard",
+      "city": "Milton Keynes",
+      "v": "e1d481e75c"
+    },
+    "e1cb2e4e-d7aa-4072-a609-08d6be5ba178": {
+      "name": "The Good Friend",
+      "area": "Furzton",
+      "city": "Milton Keynes",
+      "v": "0dd0e89da2"
+    },
+    "e2495b01-84ea-4b32-8629-fdd7f0373602": {
+      "name": "New China Garden",
+      "area": "Neath Hill",
+      "city": "Milton Keynes",
+      "v": "8e6d95a087"
+    },
+    "e2641b17-6e41-41df-8e15-b20376b501f2": {
+      "name": "Lidl",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "4a022ab899"
+    },
+    "e2849647-edc6-413b-8e6b-412b3f595e31": {
+      "name": "Howe & Co - Van 22 + 55",
+      "area": "Little Horwood",
+      "city": "Milton Keynes",
+      "v": "853dc0bd31"
+    },
+    "e2937abf-f7fe-49cb-b29c-6b1aed39574b": {
+      "name": "Tokyo Bay",
+      "area": "Oxley Park",
+      "city": "Milton Keynes",
+      "v": "3da0592aac"
+    },
+    "e29f7f44-0541-4844-9f7f-2fd1fc816ac9": {
+      "name": "Baja Cantina",
+      "area": "Westcroft",
+      "city": "Milton Keynes",
+      "v": "209710ea5d"
+    },
+    "e30229a0-1d79-4131-9bc6-20c70f11c204": {
+      "name": "Nachy Burgers",
+      "area": "Walnut Tree",
+      "city": "Milton Keynes",
+      "v": "c930ba5cad"
+    },
+    "e332cfde-e51c-4f73-9134-cb991afb3f99": {
+      "name": "Takeaway 4 U",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "4cf2dd00f2"
+    },
+    "e38a1961-8bc9-484c-b4a3-70c3c8c590cd": {
+      "name": "Turkish Food Supermarket",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "23a1560177"
+    },
+    "e5562438-cb66-4960-afbc-d8407bb5a062": {
+      "name": "Peri Peri Original",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "41d13eeb3a"
+    },
+    "e791cbe8-2306-4f42-8d4e-cd49a8dfb5d0": {
+      "name": "Strawberry Local",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "489e407ebc"
+    },
+    "e8539914-b2d9-4a64-9485-67ad0179ca66": {
+      "name": "The Cinnamon Kitchen & Bar Srilankan and Indian",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "7ca696b975"
+    },
+    "e8a2b8cf-473c-4a6c-beee-076359e99a9d": {
+      "name": "Premier",
+      "area": "Old Stratford",
+      "city": "Milton Keynes",
+      "v": "5ca13151e7"
+    },
+    "e8a3d9e4-99e6-4150-bde1-e03104900bd1": {
+      "name": "Cluck'd",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "dbedfb2fd5"
+    },
+    "e8ea58e8-65c0-4971-a59c-7ccd629617de": {
+      "name": "Cake Box",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "a01b157627"
+    },
+    "e92403cb-3517-442c-9f30-2c622e9c6c6b": {
+      "name": "Patel Chat Chaska",
+      "area": "Broughton",
+      "city": "Milton Keynes",
+      "v": "cc2cf90da0"
+    },
+    "e953f0e8-cd6d-446b-8a15-243cf7ea001f": {
+      "name": "The Prince Albert",
+      "area": "Bradwell",
+      "city": "Milton Keynes",
+      "v": "7669ad35e1"
+    },
+    "e96038b0-0384-41c6-91a2-5bbb8c7316dd": {
+      "name": "George’s Fish & Kebab Bar",
+      "area": "Fullers Slade",
+      "city": "Milton Keynes",
+      "v": "0f0c940ef7"
+    },
+    "ea1d8d88-a0f0-4272-a49b-0a2129d48d6e": {
+      "name": "The Protein Bar",
+      "area": "Winterhill",
+      "city": "Milton Keynes",
+      "v": "474dba4b09"
+    },
+    "ea5ba482-29ec-4b8c-9c91-30528450e92e": {
+      "name": "Starbucks",
+      "area": "Central MK · Marlborough Gate",
+      "city": "Milton Keynes",
+      "v": "fc18d562da"
+    },
+    "ea7b4c84-1236-42b5-9471-36658750cd95": {
+      "name": "Onur Kebab",
+      "area": "Oldbrook",
+      "city": "Milton Keynes",
+      "v": "96b0fdb135"
+    },
+    "ebbb6e78-63b1-4f19-98b3-be8d3ade654b": {
+      "name": "Wolverton House",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "ef8229c6da"
+    },
+    "ec314646-6809-436c-9e3a-5af9f33b8ad2": {
+      "name": "Bismi Cash & Carry",
+      "area": "Netherfield",
+      "city": "Milton Keynes",
+      "v": "ecda620f80"
+    },
+    "ec361e31-d929-47db-97d1-11d219f71f36": {
+      "name": "Farthing Brothers Coffee House",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "0a17335b10"
+    },
+    "ec4368b9-7d70-4131-92b7-21e255b96997": {
+      "name": "S Deen Kebabish",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "e4e2446bf6"
+    },
+    "ec4b5f5b-3adc-46a8-8888-177768dfaa8c": {
+      "name": "David's Childhood Desserts",
+      "area": "Monkston",
+      "city": "Milton Keynes",
+      "v": "f11880891b"
+    },
+    "ecb68eb7-e8a6-4c27-9570-2bc070add93d": {
+      "name": "Al Fairoz",
+      "area": "Netherfield",
+      "city": "Milton Keynes",
+      "v": "059cd95dfe"
+    },
+    "ecf51af8-0cf4-41b7-9f55-0a2909d94a15": {
+      "name": "Co-op",
+      "area": "Grange Farm",
+      "city": "Milton Keynes",
+      "v": "99a5c14685"
+    },
+    "ed61329d-929f-40e5-a948-19c475967cf1": {
+      "name": "Caffè Nero",
+      "area": "Kingston",
+      "city": "Milton Keynes",
+      "v": "8d9bd4a987"
+    },
+    "edb453ca-3da6-4157-b520-5e4c3499e7b5": {
+      "name": "Delicious Kebab",
+      "area": "Conniburrow",
+      "city": "Milton Keynes",
+      "v": "3758412d62"
+    },
+    "ee1ecb8b-00b0-4879-b26a-8101ee52630f": {
+      "name": "PAR Corner Convenience Store",
+      "area": "New Bradwell",
+      "city": "Milton Keynes",
+      "v": "8862724300"
+    },
+    "eec75c47-1030-4b9e-aa35-8aabe920efce": {
+      "name": "Bollywood Junction",
+      "area": "Oldbrook",
+      "city": "Milton Keynes",
+      "v": "6b22d32d2f"
+    },
+    "ef212d4e-c9f1-407c-955b-d00826e7e983": {
+      "name": "Bak'r Shek",
+      "area": "Wolverton",
+      "city": "Milton Keynes",
+      "v": "473b7f96c7"
+    },
+    "ef3c963e-97e7-4bdb-8c3a-fad8cbea296c": {
+      "name": "ASIA WOK Halal Chinese, Oriental, Thai, Asian Restaurant",
+      "area": "Netherfield",
+      "city": "Milton Keynes",
+      "v": "58eab0931a"
+    },
+    "ef6f6cd4-a807-48fb-ad98-b30b6c9a01da": {
+      "name": "Morrisons",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "0390a15cc7"
+    },
+    "ef9e1405-dfb7-496f-96bb-03117137c0d4": {
+      "name": "Co-op",
+      "area": "Broughton · Bodmin Place",
+      "city": "Milton Keynes",
+      "v": "834f42afa0"
+    },
+    "efbaf28b-4d24-478d-a55d-b05f3196f349": {
+      "name": "Newport Kebab and Pizza",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "1cf7478afa"
+    },
+    "f05c3f94-ae71-4bfb-8c05-6d00744d46bf": {
+      "name": "King Kebab",
+      "area": "Bradwell Common",
+      "city": "Milton Keynes",
+      "v": "d192631660"
+    },
+    "f088b170-60fd-42eb-8e49-dd51800a028c": {
+      "name": "MK Curry Corner",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "a51dd7b21f"
+    },
+    "f0ac748c-9944-448a-b321-888f20dab061": {
+      "name": "Grill Junction",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "845c0e05fb"
+    },
+    "f106e368-30c3-4d04-acb4-40848e87e8b4": {
+      "name": "Netherfield Wine & Spirit",
+      "area": "Netherfield",
+      "city": "Milton Keynes",
+      "v": "31f3362485"
+    },
+    "f155dfd4-508c-498a-aa62-3b63de596a11": {
+      "name": "Noodle King",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "ef02a8eff8"
+    },
+    "f19a6747-5665-419a-86f8-013bb994d9b2": {
+      "name": "Cafe Expresso",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "52994687e4"
+    },
+    "f2235387-68fd-4570-aeae-7af2e8752831": {
+      "name": "Simpsons Chicken",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "01591bed8f"
+    },
+    "f2b4c2a0-14c0-40b0-baf3-719f935b8793": {
+      "name": "JK Rooster",
+      "area": "New Bradwell",
+      "city": "Milton Keynes",
+      "v": "46dc3431fc"
+    },
+    "f37b3a92-d9a9-4a8d-9e32-bf2c3e546469": {
+      "name": "MENOUAR Pizza",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "c256a99ebc"
+    },
+    "f37b7e09-33cb-48f6-b6a8-4f6e86f64efb": {
+      "name": "Bekash Restaurant",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "5aa8f194f4"
+    },
+    "f37cf652-6eb6-4832-a3cf-3d53829ad7e5": {
+      "name": "Seoul Chikin",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "8d67bba780"
+    },
+    "f3d852b8-6620-4054-b4e2-077ae59909d3": {
+      "name": "Walnut Tree Traditional Fish & Chips",
+      "area": "Walnut Tree",
+      "city": "Milton Keynes",
+      "v": "3888197589"
+    },
+    "f3f3ed9e-f55c-4e26-b90c-22eb9bac9b77": {
+      "name": "Upper Regency Cafe & Bistro",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "a931b16f8a"
+    },
+    "f47fbbbc-9336-4601-b726-97e9be8714e4": {
+      "name": "Ego At The Flying Fox, Woburn",
+      "area": "Sheep Lane",
+      "city": "Milton Keynes",
+      "v": "fb55ed993d"
+    },
+    "f49f9bd9-801e-432a-8470-3cf70a0c4438": {
+      "name": "Eddie Kebab",
+      "area": "Whitehouse",
+      "city": "Milton Keynes",
+      "v": "0795a34469"
+    },
+    "f4af4f54-b369-4b5d-8be1-5a0f38838ba7": {
+      "name": "Mister Tea's Cafe",
+      "area": "Fenny Stratford",
+      "city": "Milton Keynes",
+      "v": "150624b202"
+    },
+    "f52af8e4-61c3-4105-812e-0f6408facc8f": {
+      "name": "Ryan's Breakfast & Kebab Van",
+      "area": "Northfield Drive",
+      "city": "Milton Keynes",
+      "v": "5cdc1f7c0a"
+    },
+    "f54db9c0-0b0b-4d0a-8f95-ae4ccb29d0a4": {
+      "name": "Prince George",
+      "area": "Tattenhoe",
+      "city": "Milton Keynes",
+      "v": "93aadb94a8"
+    },
+    "f5c4d396-2d7b-408e-8d3b-323db999996d": {
+      "name": "Greggs",
+      "area": "Central MK · Childs Way",
+      "city": "Milton Keynes",
+      "v": "1d89622ce8"
+    },
+    "f60d1548-29fe-4e82-8927-3c468091f343": {
+      "name": "Chunkeez",
+      "area": "Crownhill",
+      "city": "Milton Keynes",
+      "v": "d9a0d040fc"
+    },
+    "f640c69b-cc94-45f9-aaec-fea4d598d82c": {
+      "name": "PizzaExpress",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "02e0880f07"
+    },
+    "f6f331fb-af07-443f-9435-e5381f8cea0e": {
+      "name": "Elefant Café",
+      "area": "Winterhill",
+      "city": "Milton Keynes",
+      "v": "b92ef48503"
+    },
+    "f7852ee5-96c4-4702-869e-190edae74ecb": {
+      "name": "Costa Coffee",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "d44fcb0853"
+    },
+    "f786aa9f-8c56-41e7-acbd-b00e7105e3f4": {
+      "name": "Starbucks",
+      "area": "Central MK · Silbury Boulevard",
+      "city": "Milton Keynes",
+      "v": "9c39ccc4b7"
+    },
+    "f7b6dc87-562b-4427-bcdd-413e23ba9d79": {
+      "name": "Indian Curry House",
+      "area": "Summerson Court",
+      "city": "Milton Keynes",
+      "v": "4a6b4349ae"
+    },
+    "f7c53b3c-78e6-4b3b-b4e7-459857246601": {
+      "name": "Lussmanns Brasserie",
+      "area": "Woburn",
+      "city": "Milton Keynes",
+      "v": "8dc21f7520"
+    },
+    "f807a1c8-eaca-45c6-9920-85b5d9a5bd51": {
+      "name": "Furzton Convenience Store, Best-One",
+      "area": "Furzton",
+      "city": "Milton Keynes",
+      "v": "f164342d5f"
+    },
+    "f80c5f43-9bcb-479d-8e64-faa11e5bc796": {
+      "name": "Bombay Cuisine",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "a0db956f1b"
+    },
+    "f832bbe7-8462-47fb-8d1f-d929814b5103": {
+      "name": "Local KG Store",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "04e2a6a27a"
+    },
+    "f8ef5dd4-1228-4610-814a-fce50c42893c": {
+      "name": "One Stop",
+      "area": "Coffee Hall",
+      "city": "Milton Keynes",
+      "v": "6f6990a4ed"
+    },
+    "f9660a20-e2d6-44dd-bb6b-8372ce4b7336": {
+      "name": "Londis",
+      "area": "Central MK · Silbury Boulevard",
+      "city": "Milton Keynes",
+      "v": "58b036597a"
+    },
+    "f9709671-dd0e-48bc-814b-21b30f4d445a": {
+      "name": "Krispy Foods",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "53163f00f1"
+    },
+    "f98744f7-18d0-4326-a067-99cffc7ab4b2": {
+      "name": "The Calzone Kitchen",
+      "area": "Mill Lane",
+      "city": "Milton Keynes",
+      "v": "9f8d1a1094"
+    },
+    "f9ea1c90-3c31-4aac-a758-3dd8e12e26f8": {
+      "name": "The Nut And Squirrel",
+      "area": "Westcroft",
+      "city": "Milton Keynes",
+      "v": "2e9334d54b"
+    },
+    "fa1ca40c-73ef-4559-9422-9c4c310455db": {
+      "name": "Toppings",
+      "area": "Emerson Valley",
+      "city": "Milton Keynes",
+      "v": "77d9fe7677"
+    },
+    "fa5237dd-e608-42fd-8df3-92f4afc0f064": {
+      "name": "Smarts",
+      "area": "Stony Stratford",
+      "city": "Milton Keynes",
+      "v": "6b606bae5b"
+    },
+    "fb055549-4b7b-44ea-bbc6-ca6216bd827b": {
+      "name": "St Mary's Chippy",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "40afcde8f4"
+    },
+    "fb877655-bd53-462c-828f-4902f2357474": {
+      "name": "Co-op",
+      "area": "Fishermead",
+      "city": "Milton Keynes",
+      "v": "2842b6851b"
+    },
+    "fb88396a-211e-4bc4-acbc-74b8c2452b63": {
+      "name": "ASDA Petrol Station",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "1fef1efd37"
+    },
+    "fbdb33fd-aad0-4cb8-bc7a-0db6cef69e18": {
+      "name": "Premier",
+      "area": "Newport Pagnell · Wolverton Road",
+      "city": "Milton Keynes",
+      "v": "27cb1f747d"
+    },
+    "fc7ddc0f-1cbe-4b7f-bce6-1b36363a8389": {
+      "name": "Morrisons Daily",
+      "area": "Portway",
+      "city": "Milton Keynes",
+      "v": "4263e795be"
+    },
+    "fd0d9adf-57c3-4edc-a47b-9b6ce1e2a274": {
+      "name": "Good Times Cafe",
+      "area": "Monkston",
+      "city": "Milton Keynes",
+      "v": "d4f3f9cfee"
+    },
+    "fd123896-a6d9-437c-bd4d-1811ed672416": {
+      "name": "T.SWEETMAP",
+      "area": "Campbell Park",
+      "city": "Milton Keynes",
+      "v": "72f7ff8487"
+    },
+    "fdf5548d-4425-4153-a6f1-4452b3e097a2": {
+      "name": "Tesco Cafe",
+      "area": "Kingston · 23 Winchester Circle",
+      "city": "Milton Keynes",
+      "v": "2f7feb9423"
+    },
+    "fe256273-87d1-4d64-bbf5-bbc497b0dc79": {
+      "name": "Tealighted",
+      "area": "Brooklands",
+      "city": "Milton Keynes",
+      "v": "0e80fa1d7c"
+    },
+    "fe3e3869-034f-42d2-bb17-d526f5d41e67": {
+      "name": "Keshav Mart",
+      "area": "Shenley Brook End",
+      "city": "Milton Keynes",
+      "v": "b9752a4f71"
+    },
+    "fec1fd31-2176-4e8a-a952-dc226f4aafcd": {
+      "name": "St. Mary's Chinese",
+      "area": "Oxley Park",
+      "city": "Milton Keynes",
+      "v": "59970443c4"
+    },
+    "ff394033-abd4-437e-8198-88719c3ffefa": {
+      "name": "CoffeeBarre",
+      "area": "Central MK",
+      "city": "Milton Keynes",
+      "v": "4dd6a8e66e"
+    },
+    "ff4afe18-3e16-426e-a2ef-7102709aa258": {
+      "name": "Afghan Chopan Restaurant",
+      "area": "Bletchley",
+      "city": "Milton Keynes",
+      "v": "48d8b3dd38"
+    },
+    "ffaf9731-62f5-46cc-9af4-8ba75d196498": {
+      "name": "Rowleys Cafe",
+      "area": "Mill Lane",
+      "city": "Milton Keynes",
+      "v": "c3e9aee734"
+    },
+    "ffcadc91-de22-408f-8d28-a74f368c174c": {
+      "name": "WHSmith Southbound",
+      "area": "Newport Pagnell",
+      "city": "Milton Keynes",
+      "v": "9653054092"
     }
   }
 }
