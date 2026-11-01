@@ -309,7 +309,7 @@ function mountPickupRadarPreview(container, options) {
   // ---- Language (app: lib/i18n.tsx + lib/translations, built by tools/build-translations.js) ----
   // i18n/<code>.json are the app's own dictionaries. Missing keys fall back to English.
   const I18N_STORAGE_KEY = 'pickupradar_language_v1';
-  const I18N_VERSION = '5dcfec4';
+  const I18N_VERSION = 'ad1c900';
   const I18N_BASE = options.i18nBase || 'i18n/';
   const RTL_CODES = (CC && CC.RTL_LANGUAGE_CODES) || ['ur', 'ar', 'fa', 'ps', 'prs'];
   const LANGUAGE_ENTRIES = CC && CC.getAllLanguageEntries
@@ -3207,7 +3207,7 @@ function mountPickupRadarPreview(container, options) {
     const minutes = Number.isFinite(reportMs) ? Math.max(0, Math.floor((now - reportMs) / 60000)) : null;
     let message;
     if (WC.isLocallyLiveWait(venue, now) && minutes !== null) {
-      message = t('home.share.live', '{venue}\n{wait} pickup wait \u00B7 reported {time}\nhttps://pickupradar.co.uk', {
+      message = t('home.share.live', '{venue}\n{wait} wait \u00B7 reported {time}\nhttps://pickupradar.co.uk', {
         venue: label,
         wait: waitRangeLabel(venue.currentWaitMinutes),
         time: formatEvidenceTime(minutes),
@@ -3216,10 +3216,10 @@ function mountPickupRadarPreview(container, options) {
       // As on the opened venue: no estimate next to a closed or tablet/server report.
       const status = venue.closedWarning || venue.systemDownWarning ? null : effectiveStatus(venue);
       message = status === 'fast'
-        ? t('home.share.predictedFast', '{venue}\nEstimate: likely fast pickup\nhttps://pickupradar.co.uk', { venue: label })
+        ? t('home.share.predictedFast', '{venue}\nEstimate: likely fast\nhttps://pickupradar.co.uk', { venue: label })
         : status === 'slow'
-          ? t('home.share.predictedSlow', '{venue}\nEstimate: likely slow pickup\nhttps://pickupradar.co.uk', { venue: label })
-          : t('home.share.noData', '{venue}\nCheck current pickup wait information\nhttps://pickupradar.co.uk', { venue: label });
+          ? t('home.share.predictedSlow', '{venue}\nEstimate: likely slow\nhttps://pickupradar.co.uk', { venue: label })
+          : t('home.share.noData', '{venue}\nCheck the latest pickup wait\nhttps://pickupradar.co.uk', { venue: label });
     }
     const url = venueShareUrl(venue);
     const home = /https:\/\/pickupradar\.co\.uk\/?(?=\s*$)/;

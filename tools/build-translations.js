@@ -21,7 +21,7 @@ const path = require('path');
 const vm = require('vm');
 const { execFileSync } = require('child_process');
 
-const DEFAULT_COMMIT = '5dcfec4';
+const DEFAULT_COMMIT = 'ad1c900';
 const OUTPUT_DIR = path.resolve(__dirname, '..', 'i18n');
 
 function parseArgs(argv) {
