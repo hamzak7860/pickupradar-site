@@ -958,6 +958,12 @@ function mountPickupRadarPreview(container, options) {
     });
   }
 
+  // App (HomeScreen.tsx): a venue with a recent closed or tablet/server report is not listed on
+  // Fast or Slow because of an estimate alone. Venues with a live report are listed as before.
+  function isWarned(venue) {
+    return Boolean(venue.closedWarning || venue.systemDownWarning);
+  }
+
   function getVisibleVenues(filter) {
     const venues = venueStats;
 
@@ -968,7 +974,7 @@ function mountPickupRadarPreview(container, options) {
       const wanted = filter === 'Fast' ? 'fast' : 'slow';
       const live = venues.filter((venue) => venue.currentWaitMinutes !== null && effectiveStatus(venue) === wanted);
       const predicted = venues
-        .filter((venue) => venue.currentWaitMinutes === null && effectiveStatus(venue) === wanted)
+        .filter((venue) => venue.currentWaitMinutes === null && effectiveStatus(venue) === wanted && !isWarned(venue))
         .map((venue) => ({ ...venue, isPredictedFallback: true }));
       return sortByFastSlowRelevance([...live, ...predicted]).slice(0, HOME_TAB_LIMITS[filter]);
     }
@@ -991,7 +997,7 @@ function mountPickupRadarPreview(container, options) {
         .filter((venue) => venue.currentWaitMinutes !== null && effectiveStatus(venue) === 'fast')
         .sort((a, b) => (a.currentWaitMinutes ?? Infinity) - (b.currentWaitMinutes ?? Infinity));
       const fallbackFast = venues
-        .filter((venue) => venue.currentWaitMinutes === null && effectiveStatus(venue) === 'fast')
+        .filter((venue) => venue.currentWaitMinutes === null && effectiveStatus(venue) === 'fast' && !isWarned(venue))
         .slice(0, Math.min(CURATED_FALLBACK_LIMIT, Math.max(0, HOME_TAB_LIMITS.Fast - liveFast.length)))
         .map((venue) => ({ ...venue, isPredictedFallback: true }));
       return [...liveFast, ...fallbackFast].slice(0, HOME_TAB_LIMITS.Fast);
@@ -1002,7 +1008,7 @@ function mountPickupRadarPreview(container, options) {
         .filter((venue) => venue.currentWaitMinutes !== null && effectiveStatus(venue) === 'slow')
         .sort((a, b) => (b.currentWaitMinutes ?? -1) - (a.currentWaitMinutes ?? -1));
       const fallbackSlow = venues
-        .filter((venue) => venue.currentWaitMinutes === null && effectiveStatus(venue) === 'slow')
+        .filter((venue) => venue.currentWaitMinutes === null && effectiveStatus(venue) === 'slow' && !isWarned(venue))
         .slice(0, Math.min(CURATED_FALLBACK_LIMIT, Math.max(0, HOME_TAB_LIMITS.Slow - liveSlow.length)))
         .map((venue) => ({ ...venue, isPredictedFallback: true }));
       return [...liveSlow, ...fallbackSlow].slice(0, HOME_TAB_LIMITS.Slow);
@@ -1094,7 +1100,10 @@ function mountPickupRadarPreview(container, options) {
         escapeHtml(GEO.formatDistance(item.distanceMiles, distanceUnit())) +
         '</span>'
       : '';
-    const pill = waitBadgeText
+    // App: showPredictionPill. The estimate pill is hidden next to a closed or tablet/server
+    // report. Report needed (below) still uses waitBadgeText, so it is unchanged.
+    const showPill = Boolean(waitBadgeText) && (hasRealWaitData || !isWarned(item));
+    const pill = showPill
       ? '<span class="wait-badge"' + (hasRealWaitData ? ' dir="ltr"' : '') + ' style="background:' + waitColors.backgroundColor + ';color:' + waitColors.color + ';">' +
         escapeHtml(waitBadgeText) +
         '</span>'
