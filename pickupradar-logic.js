@@ -4,10 +4,10 @@
  * The PickupRadar mobile app's own venue display, prediction, wait-colour and
  * city/country modules, bundled for the website preview.
  *
- * Source:   pickupradar-app @ 5dcfec43ee1d9e7452d214181db4902eb7759b45
+ * Source:   pickupradar-app @ bd8bb9f657d37d928929fcf490a1a3923111cc27
  * Files:    lib/countryConfig.ts, lib/geo.ts, lib/liveCitySelection.ts, lib/waitColors.ts, lib/venuePrediction.ts, lib/venueDisplay.ts
  * Compiler: TypeScript 5.9.3 (transpileModule, CommonJS, ES2019)
- * Rebuild:  node tools/build-logic.js --commit 5dcfec4
+ * Rebuild:  node tools/build-logic.js --commit bd8bb9f
  * Check:    node tools/build-logic.js --check
  *
  * Exposes window.PickupRadarLogic = { commit, countryConfig, geo, liveCitySelection, waitColors, venuePrediction, venueDisplay }.
@@ -2045,6 +2045,7 @@
     exports.stripPostcodeFromAddress = stripPostcodeFromAddress;
     exports.uniqueLocationParts = uniqueLocationParts;
     exports.applyChainBrandCleanup = applyChainBrandCleanup;
+    exports.stripDisplayNameNoise = stripDisplayNameNoise;
     exports.getVenueDisplayName = getVenueDisplayName;
     exports.removeRedundantAddressSegments = removeRedundantAddressSegments;
     exports.formatHomeAreaForDisplay = formatHomeAreaForDisplay;
@@ -2697,29 +2698,40 @@
         })
             .join('');
     }
-    /** ASDA keeps verified store format from the name (or branch field); never invent. */
+    /**
+     * ASDA display name. The area/street line tells branches apart (and two
+     * venues with the same name in the same area also get the street):
+     *   - "ASDA Express"        — Express convenience format (verified in name/branch)
+     *   - "ASDA Petrol Station" — forecourt without a verified Express shop; rename the
+     *                             venue to "Asda Express …" in admin once verified
+     *   - "ASDA Cafe" / "George at ASDA" / "ASDA Living" / "ASDA On the Move" — kept
+     *   - "ASDA"                — supermarkets, superstores and supercentres
+     * Never invents a format that is not in the venue's own name or branch.
+     */
     function applyAsdaDisplayName(rawName, branch) {
         const norm = normalizeBrandText(rawName);
         // First whole word only — "Cafe Asda Express" / "The ASDA Coffee Shop" / "Asdaq" stay.
         if (!/^asda(?:\s|$)/.test(norm))
             return null;
         const formats = [
-            { test: /\bsupercentre\b/, label: 'Supercentre' },
-            { test: /\bsuperstore\b/, label: 'Superstore' },
-            { test: /\bsupermarket\b/, label: 'Supermarket' },
-            { test: /\bexpress\b/, label: 'Express' },
-            { test: /\bpetrol\s+station\b/, label: 'Petrol Station' },
+            // Non-grocery storefronts keep their own format, never plain "ASDA".
+            { test: /\bcafe\b/, label: 'ASDA Cafe' },
+            { test: /\bgeorge\b/, label: 'George at ASDA' },
+            { test: /\bliving\b/, label: 'ASDA Living' },
+            { test: /\bexpress\b/, label: 'ASDA Express' },
+            { test: /\bon\s+the\s+move\b/, label: 'ASDA On the Move' },
+            { test: /\bpetrol\s+station\b/, label: 'ASDA Petrol Station' },
         ];
         const nameNorm = normalizeBrandText(rawName);
         for (const format of formats) {
             if (format.test.test(nameNorm))
-                return `ASDA ${format.label}`;
+                return format.label;
         }
         const branchNorm = normalizeBrandText(branch !== null && branch !== void 0 ? branch : '');
         if (branchNorm) {
             for (const format of formats) {
                 if (format.test.test(branchNorm))
-                    return `ASDA ${format.label}`;
+                    return format.label;
             }
         }
         return 'ASDA';
@@ -3247,15 +3259,59 @@
             removedBranchSuffix,
         };
     }
+    /**
+     * Display-only noise removal, applied before every other name rule (never to
+     * admin-edited names). Each rule only removes text that is not part of a
+     * brand name:
+     *   - emoji and trademark symbols ("Pichiiz Burgers & Tacos 🍔🌮", "goosefoot®")
+     *   - company-registration words inside a name ("Los Primos Inc Grocery",
+     *     "Broughton Minimart Ltd (United Minimart)")
+     *   - customer instructions ("- CARRY OUT ONLY", "(Ghost Kitchen: NO WALK INS)",
+     *     "(Take away and Catering)", "-Free parking for customers")
+     *   - bracketed lists of what is sold, i.e. 2+ separators
+     *     ("Halal Inn (Pizza, Wings & Grilled Chicken)"; "(Hong Kong Market)" stays)
+     * If a rule would leave fewer than 3 letters, the original is kept.
+     */
+    // Plain code-point ranges (no \p{} classes) so every JS engine, incl. Hermes, handles it.
+    const NAME_EMOJI_RE = /[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\uFE0F\u200D\u20E3]/gu;
+    const NAME_TRADEMARK_RE = /[®™©]/g;
+    const NAME_COMPANY_WORD_RE = /(\S)\s+(?:uk\s+)?(?:ltd|limited|inc|llc|plc)\.?(?=\s+\S)/gi;
+    const NAME_INSTRUCTION_WORDS = '(?:only|walk[- ]?ins?|parking|ghost\\s+kitchen|carry[- ]?out|catering)';
+    const NAME_INSTRUCTION_PAREN_RE = new RegExp(`\\s*\\([^)]*\\b${NAME_INSTRUCTION_WORDS}\\b[^)]*\\)`, 'gi');
+    const NAME_INSTRUCTION_TAIL_RE = new RegExp(`\\s*[-–—]\\s*[^-–—()]*\\b${NAME_INSTRUCTION_WORDS}\\b[^-–—()]*$`, 'i');
+    const NAME_PAREN_RE = /\s*\(([^)]*)\)/g;
+    /** A bracket that lists what is sold: at least two separators (",", "&", "and"). */
+    function isListParenthetical(inner) {
+        const separators = (inner.match(/,|&|\band\b/gi) || []).length;
+        return separators >= 2;
+    }
+    function countLetters(value) {
+        // ASCII letters plus any non-ASCII character (accented, Arabic, CJK…).
+        return (value.match(/[A-Za-z]|[^\x00-\x7F]/g) || []).length;
+    }
+    function stripDisplayNameNoise(name) {
+        let out = name;
+        const apply = (next) => {
+            const tidy = next.replace(/\s{2,}/g, ' ').replace(/\s+([,)])/g, '$1').trim();
+            if (countLetters(tidy) >= 3)
+                out = tidy;
+        };
+        apply(out.replace(NAME_EMOJI_RE, '').replace(NAME_TRADEMARK_RE, ''));
+        apply(out.replace(NAME_COMPANY_WORD_RE, '$1'));
+        apply(out.replace(NAME_INSTRUCTION_PAREN_RE, ''));
+        apply(out.replace(NAME_INSTRUCTION_TAIL_RE, ''));
+        apply(out.replace(NAME_PAREN_RE, (whole, inner) => (isListParenthetical(inner) ? '' : whole)));
+        return out;
+    }
     /** Base display name without peer-collision branch restoration. */
     function computeBaseDisplayName(venue, selectedArea) {
         var _a;
         const city = selectedArea.trim();
-        const original = venue.name.trim();
         const area = ((_a = venue.area) !== null && _a !== void 0 ? _a : '').trim();
         if (venue.admin_edited_at && String(venue.admin_edited_at).trim()) {
-            return { name: original, removedBranchSuffix: null };
+            return { name: venue.name.trim(), removedBranchSuffix: null };
         }
+        const original = stripDisplayNameNoise(venue.name.trim());
         const asda = applyAsdaDisplayName(original, venue.branch);
         if (asda)
             return { name: asda, removedBranchSuffix: null };
@@ -4279,7 +4335,7 @@
   };
 
   var api = Object.freeze({
-    commit: "5dcfec43ee1d9e7452d214181db4902eb7759b45",
+    commit: "bd8bb9f657d37d928929fcf490a1a3923111cc27",
     countryConfig: req("./countryConfig"),
     geo: req("./geo"),
     liveCitySelection: req("./liveCitySelection"),

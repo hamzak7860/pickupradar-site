@@ -21,7 +21,7 @@ const fs = require('fs');
 const path = require('path');
 const { execFileSync } = require('child_process');
 
-const DEFAULT_COMMIT = '5dcfec4';
+const DEFAULT_COMMIT = 'bd8bb9f';
 const OUTPUT_FILE = path.resolve(__dirname, '..', 'pickupradar-logic.js');
 
 // Bundled modules, in load order. Keys are the ids used by the app's imports.
