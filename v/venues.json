@@ -62,10 +62,10 @@
       "v": "49bd42ac5b"
     },
     "04457283-1bd3-4267-87b7-c753abbf1424": {
-      "name": "Broughton Minimart Ltd (United Minimart)",
+      "name": "Broughton Minimart (United Minimart)",
       "area": "Broughton",
       "city": "Milton Keynes",
-      "v": "bd7d39d86f"
+      "v": "c9a190d486"
     },
     "049e7211-7bb4-48ef-918d-eadb6678140b": {
       "name": "Poundland",
@@ -321,9 +321,9 @@
     },
     "14aff588-52cf-484f-b33d-2faacb901b5a": {
       "name": "Starbucks",
-      "area": "Central MK · Elder Gate",
+      "area": "MK Central Station",
       "city": "Milton Keynes",
-      "v": "18c1ea2530"
+      "v": "4c26307969"
     },
     "15fdbab9-7125-4f42-a638-630da77f1d05": {
       "name": "Mniam Mniam Kebab",
@@ -1352,10 +1352,10 @@
       "v": "00183fd928"
     },
     "4fa4f824-0f58-4770-a246-9ff04bf59f0c": {
-      "name": "Village Food Centre (Butchers, Fruit & Veg, International Supermarket, Grocery Store Wolverton)",
+      "name": "Village Food Centre",
       "area": "Wolverton",
       "city": "Milton Keynes",
-      "v": "f472a3f132"
+      "v": "0390ce610a"
     },
     "4fd4c3a3-9694-42a4-bd26-db85bf39b60a": {
       "name": "Ashland Fish Bar",
@@ -1958,10 +1958,10 @@
       "v": "e387322e26"
     },
     "72118755-025d-48d9-a817-40d263339388": {
-      "name": "Piri Fino Brooklands Square",
+      "name": "Piri Fino",
       "area": "Brooklands",
       "city": "Milton Keynes",
-      "v": "22c6d7e058"
+      "v": "9c157befda"
     },
     "722166b6-be3b-4567-88f5-c1ee3189f845": {
       "name": "Bletchley Bakery & Cafe",
@@ -2210,10 +2210,10 @@
       "v": "1fbda44f13"
     },
     "7ed1b7c8-a525-474e-bbd0-05a39b6bcce0": {
-      "name": "ASDA Supermarket",
+      "name": "ASDA",
       "area": "Wolverton",
       "city": "Milton Keynes",
-      "v": "9ca8582909"
+      "v": "a90a6da7fd"
     },
     "7eee87db-a132-4520-940e-ab809ebc1724": {
       "name": "Tesco Express",
@@ -2450,10 +2450,10 @@
       "v": "951092f544"
     },
     "8a0bbdde-6feb-4bd4-b436-bab4a27aa790": {
-      "name": "ASDA Supermarket",
+      "name": "ASDA",
       "area": "Stantonbury",
       "city": "Milton Keynes",
-      "v": "871e059119"
+      "v": "d1330970fb"
     },
     "8a21b2e4-83bf-4a15-9d07-7f887b2205fd": {
       "name": "KFC M1 North Services",
@@ -3291,9 +3291,9 @@
     },
     "ba34f771-c007-4771-9260-8c23beedc7b9": {
       "name": "Starbucks",
-      "area": "Central MK · Elder Gate",
+      "area": "Elder Gate",
       "city": "Milton Keynes",
-      "v": "18c1ea2530"
+      "v": "be9cd89020"
     },
     "bab23cb8-d65b-4341-8f9f-d8c3a5594e97": {
       "name": "Tesco Express",
@@ -3458,16 +3458,16 @@
       "v": "1a6ca7b2d0"
     },
     "c1f61b51-f1d3-43e4-ace5-8db7999e47b0": {
-      "name": "ASDA Supercentre",
+      "name": "ASDA",
       "area": "Bletchley",
       "city": "Milton Keynes",
-      "v": "6914cdb92b"
+      "v": "4a64ce9848"
     },
     "c23cf122-1b50-4de8-a909-608a97536e75": {
-      "name": "SRDS Tamil & Indian Cuisine (Take away and Catering)",
+      "name": "SRDS Tamil & Indian Cuisine",
       "area": "Summerson Court",
       "city": "Milton Keynes",
-      "v": "c2314eee4a"
+      "v": "8f5f0a99b7"
     },
     "c25e438c-73a7-437e-93ad-2128dc4695fe": {
       "name": "Greggs",
@@ -3494,10 +3494,10 @@
       "v": "dc34c52747"
     },
     "c3472be8-6e1f-4069-96ae-af76434f6c3d": {
-      "name": "ASDA Supermarket",
+      "name": "ASDA",
       "area": "Newton Leys",
       "city": "Milton Keynes",
-      "v": "7c94d1f731"
+      "v": "196f0f79c1"
     },
     "c3538ad6-55a1-4858-8aa3-1083cf4e0c7a": {
       "name": "Chicken & Pizza Palace",
@@ -3590,10 +3590,10 @@
       "v": "76a5409789"
     },
     "c954bebb-4c3f-42bb-952f-bfce61beee50": {
-      "name": "Fenny Stratford Convenience Store Premmier Express",
+      "name": "Premier",
       "area": "Fenny Stratford",
       "city": "Milton Keynes",
-      "v": "7307580247"
+      "v": "a621816d9e"
     },
     "c962f86b-acb9-41b8-b9af-9f64d1b20411": {
       "name": "Mumbai Swaad",
@@ -3884,10 +3884,10 @@
       "v": "ab0c825f69"
     },
     "d98e4f3f-b3b3-492e-8152-ac4ea3fa522d": {
-      "name": "Chicken Village (Bletchley Chicken Shop,Nagah Kebab,Shatkora Donner,Bengali,Hala Fast Food,Curry)",
+      "name": "Chicken Village",
       "area": "Bletchley",
       "city": "Milton Keynes",
-      "v": "d6a6ba6c4b"
+      "v": "f819925402"
     },
     "d9a99e14-2c72-4d06-abf5-f0c1f74da544": {
       "name": "Kolkata Restaurant",
@@ -3939,9 +3939,9 @@
     },
     "dca493c3-ff8e-4a01-931a-d814c5c1923c": {
       "name": "Bake Life Patisserie",
-      "area": "Milton Keynes",
+      "area": "Eagle Farm South",
       "city": "Milton Keynes",
-      "v": "53d155bc8b"
+      "v": "8b68c1f6b6"
     },
     "dd65f1b8-e143-4bf3-8528-dbf276271050": {
       "name": "The George Pub",
