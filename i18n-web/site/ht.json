@@ -2,7 +2,7 @@
   "language": "ht",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "Paj dakèy"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "Sou paj sa a"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "Dènye mizajou: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "Politik Konfidansyalite"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "Politik Konfidansyalite — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "Politik Konfidansyalite PickupRadar."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "Seksyon politik konfidansyalite a"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "Rezime a ak tit seksyon yo tradui. Politik konfidansyalite konplè a an anglè, e se vèsyon anglè a ki ofisyèl."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "Rezime"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "Ki moun nou ye"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "Enfòmasyon nou kolekte ak kijan nou itilize yo"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "Sa nou pa mande w"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "Baz legal nou yo (Wayòm Ini)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "Avèk ki moun nou pataje enfòmasyon"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "Transfè entènasyonal"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "Konbyen tan nou kenbe enfòmasyon"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "Chwa ak dwa ou"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "Sekirite"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "Timoun"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "Chanjman nan politik sa a"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "Kontak"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar ede chofè livrezon wè ak rapòte tan datant pou pran kòmand ak pwoblèm nan kote yo."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "Ou ka navige san ou pa kreye yon kont. Aplikasyon an kreye yon pwofil Radar anonim pou telefòn ou, e kont ak imèl la opsyonèl."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "Si w pèmèt lokalizasyon, aplikasyon an sèvi avè l pandan w ap itilize l: pou klase pwen pou pran kòmand ki toupre yo, detekte vil ou epi verifye ou nan kote a lè w voye yon rapò an dirèk. Nou pa sove lokalizasyon w ak rapò w yo."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "Pwen pou pran kòmand ou sove yo rete nan telefòn ou."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "Nou pa vann enfòmasyon pèsonèl ou, e aplikasyon an pa gen okenn tracker piblisite oswa analiz."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "Ou ka efase pwofil Radar ou oswa kont ou nan aplikasyon an, oswa mande nou pa imèl. Gade {link}."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "Efase kont ou oswa done ou — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "Kijan pou efase kont PickupRadar ou, pwofil Radar ou ak done ki asosye yo, menm san aplikasyon an."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "Seksyon pou efase kont"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "Efase kont ou oswa done ou"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "Paj sa a eksplike kijan pou efase kont PickupRadar ou, pwofil Radar ou ak done ki lye ak yo, menm si ou pa gen aplikasyon an ankò. Se Hamza Khan ki devlope PickupRadar."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "Efase nan aplikasyon an (pi rapid)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "Louvri PickupRadar."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "Tape {profile} anba ekran Akèy la."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "Desann epi tape {deleteAccount} si ou te pwoteje RadarPoints ou ak imèl ou, oswa {deleteProfile} si ou pa t fè sa."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "Tape {confirm} pou konfime."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "Efasman an kòmanse touswit. Apre sa, aplikasyon an kreye yon nouvo pwofil Radar anonim nan telefòn ou."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "Mande nou efase kont imèl ou"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "Si ou te pwoteje RadarPoints ou ak adrès imèl ou epi ou pa ka itilize aplikasyon an:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "Ekri {email} {from}, ak sijè “{subject}”."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "apati adrès imèl ki sou kont PickupRadar ou"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "N ap reponn adrès sa a pou konfime demann lan anvan nou efase anyen."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "Si w ekri apati yon lòt adrès, n ap bezwen konfime se ou ki kontwole adrès imèl kont lan. Nou p ap janm mande w yon modpas oswa yon kòd pou konekte. Pa voye kòd ou ban nou."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "Pwofil Radar anonim"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "Si ou pa t janm ajoute yon adrès imèl, pwofil Radar ou lye sèlman ak yon ID o aza ki sove nan aplikasyon an sou telefòn ou. Pi bon fason pou efase l se nan aplikasyon an, ak etap ki anwo yo."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "Lè w efase aplikasyon an, sa retire ID sa a nan telefòn ou, men sa {not} efase dosye ki sou sèvè nou yo."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "pa"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "Se sèlman apati telefòn kote yo te kreye yon pwofil anonim ou ka pwouve se pou ou li ye, avèk ID o aza a ak kòd sekrè ki sove nan aplikasyon an. Detay tankou yon non Radar, yon vil oswa dat ou te itilize aplikasyon an pa ka pwouve yon pwofil se pou ou, paske lòt moun ka konnen yo. Kidonk si ou pa gen aplikasyon an ankò, nou ka pa kapab efase yon pwofil anonim. Ou ka toujou ekri {email}, e n ap eksplike w sa nou ka fè."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "Imèl avètisman lansman nan vil"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "Ou ka retire yon avètisman lansman nan aplikasyon an, oswa ekri nou apati adrès ou te itilize pou enskri a, e n ap efase enskripsyon pou adrès sa a. Imèl avètisman lansman yo efase otomatikman tou, jan sa eksplike nan {privacy} nou an."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "Sa ki efase"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "Pwofil Radar ou, non Radar ou, RadarPoints ou ak istorik kontribisyon ou"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "Koneksyon ak imèl ou, si ou te gen yon kont imèl"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "Lyen ant ID aparèy telefòn ou ak pwofil ou"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "Kòd envitasyon ou yo, ak eta li oswa rejte mesaj nan aplikasyon an"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "Enskripsyon avètisman lansman ki lye ak pwofil ou oswa telefòn ou"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "Nòt sou rapò pwoblèm, rapò eta ak sijesyon kote ki lye ak pwofil ou"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "Sa ki ka kenbe"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, tankou tan datant, rapò eta kote yo ak etikèt, ak sijesyon kote: ID aparèy la nan dosye ki lye ak pwofil ou ranplase ak yon valè o aza, konsa yo pa konekte ak pwofil ou ankò nan baz done nou. Yo toujou gen detay tankou kote a ak lè a, kidonk yo dezidantifye, yo pa konplètman anonim. Nou ka kenbe yo pou yo kontinye ede lòt chofè."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "Ansyen rapò"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "{lead} ki te konsène w, san pwofil ou."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "Dosye envitasyon"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead} pou kont imèl (yon referans entèn kont lan, ID aparèy la, yon kopi melanje nan yon sèl sans kòd sekrè telefòn nan ak dat), pou efasman an ka fini an sekirite epi pou nou ka montre li te fèt."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "Yon dosye efasman minimal"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: founisè baz done nou an kenbe kopi sekirite chak jou pandan 7 jou, kidonk enfòmasyon ki efase ka rete nan yon kopi sekirite jiska 7 jou."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "Kopi sekirite"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "{lead} sou demann ou, pou tout tan nou bezwen yo pou trete l."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "Imèl sipò"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "Gade {privacy} nou an pou tout detay sou konbyen tan nou kenbe enfòmasyon ak lòt dwa ou."
     }
   }
 }

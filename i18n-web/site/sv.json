@@ -2,7 +2,7 @@
   "language": "sv",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "Startsida"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "På den här sidan"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "Senast uppdaterad: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "Integritetspolicy"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "Integritetspolicy — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "PickupRadars integritetspolicy."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "Avsnitt i integritetspolicyn"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "Sammanfattningen och avsnittsrubrikerna är översatta. Hela integritetspolicyn är på engelska, och den engelska versionen är den officiella."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "Sammanfattning"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "Vilka vi är"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "Vilka uppgifter vi samlar in och hur vi använder dem"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "Det här frågar vi inte efter"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "Vår rättsliga grund (Storbritannien)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "Vilka vi delar uppgifter med"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "Internationella överföringar"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "Hur länge vi sparar uppgifter"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "Dina val och rättigheter"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "Säkerhet"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "Barn"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "Ändringar i policyn"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "Kontakt"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar hjälper budförare att se och rapportera väntetider vid upphämtning och problem på hämtställen."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "Du kan använda appen utan konto. Appen skapar en anonym Radar-profil för din telefon, och ett e-postkonto är valfritt."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "Om du tillåter platsåtkomst använder appen den bara medan du använder den: för att sortera närliggande hämtställen, avgöra din stad och kontrollera att du är på plats när du skickar en liverapport. Vi sparar inte din plats tillsammans med dina rapporter."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "Dina sparade hämtställen finns kvar på din telefon."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "Vi säljer inte dina personuppgifter, och appen har inga spårare för reklam eller analys."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "Du kan radera din Radar-profil eller ditt konto i appen, eller be oss om det via e-post. Se {link}."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "Radera ditt konto eller dina data — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "Så raderar du ditt PickupRadar-konto, din Radar-profil och tillhörande data, även utan appen."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "Avsnitt om kontoradering"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "Radera ditt konto eller dina data"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "Den här sidan förklarar hur du raderar ditt PickupRadar-konto, din Radar-profil och data som är kopplade till dem, även om du inte längre har appen. PickupRadar utvecklas av Hamza Khan."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "Radera i appen (snabbast)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "Öppna PickupRadar."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "Tryck på {profile} längst ned på startskärmen."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "Rulla ned och tryck på {deleteAccount} om du har skyddat dina RadarPoints med e-post, annars på {deleteProfile}."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "Tryck på {confirm} för att bekräfta."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "Raderingen börjar direkt. Därefter startar appen en ny anonym Radar-profil på din telefon."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "Be oss radera ditt e-postkonto"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "Om du har skyddat dina RadarPoints med en e-postadress och inte kan använda appen:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "Mejla {email} {from}, med ämnet ”{subject}”."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "från e-postadressen som hör till ditt PickupRadar-konto"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "Vi svarar till den adressen för att bekräfta begäran innan vi raderar något."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "Om du skriver från en annan adress måste vi bekräfta att du har tillgång till kontots e-postadress. Vi ber aldrig om lösenord eller inloggningskod. Skicka inte din kod till oss."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "Anonyma Radar-profiler"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "Om du aldrig har lagt till en e-postadress är din Radar-profil bara kopplad till ett slumpmässigt ID som sparats i appen på din telefon. Det enklaste sättet att radera den är i appen, med stegen ovan."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "Om du tar bort appen försvinner det ID:t från telefonen, men det {not} uppgifter på våra servrar."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "raderar inte"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "Ägarskap till en anonym profil kan bara visas från telefonen där den skapades, med det slumpmässiga ID:t och den hemliga koden som sparats i appen. Uppgifter som Radar-namn, stad eller datum då du använt appen bevisar inte att profilen är din, eftersom andra också kan känna till dem. Om du inte längre har appen kan vi därför kanske inte radera en anonym profil. Du kan ändå mejla {email} så förklarar vi vad vi kan göra."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "Mejl om lansering i städer"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "Du kan återkalla en lanseringsavisering i appen, eller mejla oss från adressen du anmälde dig med, så raderar vi anmälningarna för den adressen. Mejl för lanseringsaviseringar raderas också automatiskt, enligt vår {privacy}."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "Vad som raderas"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "Din Radar-profil, ditt Radar-namn, dina RadarPoints och din bidragshistorik"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "Din e-postinloggning, om du hade ett e-postkonto"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "Kopplingar mellan telefonens enhets-ID och din profil"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "Dina värvningskoder samt läst- eller stängt-status för appmeddelanden"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "Anmälningar till lanseringsaviseringar som är kopplade till din profil eller telefon"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "Anteckningar i problemrapporter, statusrapporter och förslag på hämtställen som är kopplade till din profil"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "Vad som kan sparas"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, till exempel väntetider, statusrapporter och taggar för hämtställen samt förslag på hämtställen: enhets-ID:t i poster som är kopplade till din profil ersätts med ett slumpmässigt värde, så att de inte längre är kopplade till din profil i vår databas. De innehåller fortfarande uppgifter som hämtställe och tid och är därför avidentifierade, inte helt anonyma. De kan sparas för att fortsätta hjälpa andra förare."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "Tidigare rapporter"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "{lead} som du var delaktig i, utan din profil."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "Värvningsuppgifter"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead} för e-postkonton (en intern kontoreferens, enhets-ID, en envägskrypterad kopia av telefonens hemliga kod samt datum), så att raderingen kan slutföras säkert och visas ha skett."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "En minimal raderingspost"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: vår databasleverantör sparar dagliga säkerhetskopior i 7 dagar, så raderade uppgifter kan finnas kvar i en säkerhetskopia i upp till 7 dagar."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "Säkerhetskopior"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "{lead} om din begäran, så länge som behövs för att hantera den."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "Supportmejl"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "Fullständig information om hur länge vi sparar uppgifter och om dina övriga rättigheter finns i vår {privacy}."
     }
   }
 }

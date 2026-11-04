@@ -2,7 +2,7 @@
   "language": "so",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "Bogga hore"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "Waxa boggan ku jira"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "Markii ugu dambeysay ee la cusbooneysiiyay: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "Siyaasadda asturnaanta"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "Siyaasadda asturnaanta — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "Siyaasadda asturnaanta ee PickupRadar."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "Qaybaha siyaasadda asturnaanta"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "Soo koobidda iyo cinwaannada qaybaha waa la turjumay. Siyaasadda asturnaanta oo dhammaystiran waxay ku qoran tahay Ingiriisi, nuqulka Ingiriisiguna waa kan rasmiga ah."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "Soo koobid"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "Annagu waa ayo"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "Macluumaadka aan ururino iyo sida aan u isticmaalno"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "Waxa aanan ku weydiinin"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "Saldhigyadayada sharci (UK)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "Cidda aan macluumaadka la wadaagno"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "Wareejinta caalamiga ah"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "Muddada aan haynno macluumaadka"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "Doorashooyinkaaga iyo xuquuqdaada"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "Amniga"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "Carruurta"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "Isbeddellada siyaasaddan"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "Nala soo xiriir"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar waxay darawallada keenista ka caawisaa inay arkaan oo ka warbixiyaan waqtiyada sugitaanka qaadashada iyo dhibaatooyinka goobaha."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "Waad daalacan kartaa adigoon akoon lahayn. Abka wuxuu taleefankaaga u sameeyaa astaan Radar oo qarsoodi ah, akoonka iimaylkuna waa ikhtiyaari."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "Haddii aad oggolaato goobta, abku wuxuu isticmaalaa oo keliya inta aad isticmaalayso: si uu u habeeyo goobaha qaadashada ee kuu dhow, u ogaado magaaladaada, una hubiyo inaad joogto goobta marka aad dirayso warbixin toos ah. Goobtaada kuma kaydino warbixinnadaada."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "Goobaha qaadashada ee aad kaydisay waxay ku jiraan taleefankaaga."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "Ma iibinno macluumaadkaaga gaarka ah, abkuna ma laha raadiyeyaal xayeysiis ama falanqeyn."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "Waxaad tirtiri kartaa astaantaada Radar ama akoonkaaga gudaha abka, ama iimayl nooga codso. Eeg {link}."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "Tirtir akoonkaaga ama xogtaada — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "Sida loo tirtiro akoonkaaga PickupRadar, astaanta Radar iyo xogta la xiriirta, xitaa abka la'aantiis."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "Qaybaha tirtirka akoonka"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "Tirtir akoonkaaga ama xogtaada"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "Boggan wuxuu sharxayaa sida loo tirtiro akoonkaaga PickupRadar, astaantaada Radar iyo xogta ku xiran, xitaa haddii aanad abka haysan. PickupRadar waxaa sameeyay Hamza Khan."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "Ku tirtir abka gudihiisa (tan ugu dhakhsaha badan)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "Fur PickupRadar."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "Taabo {profile} xagga hoose ee shaashadda hore."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "Hoos u dhaadhac oo taabo {deleteAccount} haddii aad RadarPoints-kaaga ku sugtay iimayl, haddii kale {deleteProfile}."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "Taabo {confirm} si aad u xaqiijiso."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "Tirtirku isla markiiba wuu bilaabmaa. Kadib abku wuxuu taleefankaaga ka bilaabaa astaan Radar oo qarsoodi ah oo cusub."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "Naga codso inaan tirtirno akoonkaaga iimaylka"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "Haddii aad RadarPoints-kaaga ku sugtay ciwaan iimayl oo aadan isticmaali karin abka:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "U dir iimayl {email} {from}, mawduuca “{subject}”."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "adigoo ka diraya ciwaanka iimaylka ee akoonkaaga PickupRadar"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "Waxaan ku jawaabi doonnaa ciwaankaas si aan u xaqiijino codsiga ka hor intaanan waxba tirtirin."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "Haddii aad ka qorto ciwaan kale, waxaan u baahan doonnaa inaan xaqiijino inaad maamusho ciwaanka iimaylka akoonka. Weligeen kuma weydiin doonno furaha sirta ah ama koodhka galitaanka. Ha noo soo dirin koodhkaaga."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "Astaamaha Radar ee qarsoodiga ah"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "Haddii aanad weligaa ku darin ciwaan iimayl, astaantaada Radar waxay ku xiran tahay oo keliya aqoonsi aan kala sooc lahayn oo ku kaydsan abka taleefankaaga. Habka ugu fudud ee loo tirtiro waa gudaha abka, adigoo raacaya tallaabooyinka kore."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "Tirtiridda abka waxay aqoonsigaas ka saartaa taleefankaaga, laakiin {not} diiwaannada ku jira server-yadayada."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "ma tirtirto"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "Lahaanshaha astaan qarsoodi ah waxaa lagu caddeyn karaa oo keliya taleefanka lagu sameeyay, iyadoo la isticmaalayo aqoonsiga aan kala soocnayn iyo koodhka sirta ah ee ku kaydsan abka. Faahfaahinta sida magaca Radar, magaalada ama taariikhaha aad isticmaashay abka ma caddeynayso in astaantu taada tahay, sababtoo ah dad kale ayaa laga yaabaa inay ogaadaan. Sidaas darteed, haddii aanad abka haysan, waxaa laga yaabaa inaanan tirtiri karin astaan qarsoodi ah. Weli waxaad iimayl u diri kartaa {email} waxaanan kuu sharxi doonnaa waxa aan qaban karno."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "Iimaylada ogeysiiska furitaanka magaalada"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "Waxaad ka noqon kartaa ogeysiiska furitaanka gudaha abka, ama iimayl noogu soo dir ciwaanka aad isku diiwaangelisay, waxaanan tirtiri doonnaa diiwaangelinta ciwaankaas. Iimaylada ogeysiiska furitaanka si toos ah ayaa sidoo kale loo tirtiraa, sida ay sharaxayso {privacy} -ayadu."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "Waxa la tirtiro"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "Astaantaada Radar, magaca Radar, RadarPoints iyo taariikhda kaqaybgalka"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "Galitaankaaga iimaylka, haddii aad lahayd akoon iimayl"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "Xiriirka u dhexeeya aqoonsiga qalabka taleefankaaga iyo astaantaada"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "Koodhadhkaaga gudbinta, iyo xaaladda la akhriyay ama la xiray ee fariimaha abka"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "Diiwaangelinta ogeysiiska furitaanka magaalada ee ku xiran astaantaada ama taleefankaaga"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "Qoraallada ku jira warbixinnada dhibaatada, warbixinnada xaaladda iyo soo jeedinta goobaha ee ku xiran astaantaada"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "Waxa la hayn karo"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, sida waqtiyada sugitaanka, warbixinnada xaaladda iyo calaamadaha goobaha, iyo soo jeedinta goobaha: aqoonsiga qalabka ee diiwaannada ku xiran astaantaada waxaa lagu beddelaa qiime aan kala soocnayn, sidaas darteed xogtayada kuma xirna astaantaada mar dambe. Weli waxay leeyihiin faahfaahin sida goobta iyo waqtiga, sidaas darteed aqoonsiga waa laga saaray, laakiin gebi ahaanba qarsoodi ma aha. Waa la hayn karaa si ay u sii caawiyaan darawallada kale."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "Warbixinnadii hore"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "{lead} aad ka qayb qaadatay, astaantaada la'aanteed."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "Diiwaannada gudbinta"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead} akoonnada iimaylka (tixraac gudaha ah oo akoonka, aqoonsiga qalabka, nuqul hal dhinac loo sir-qariyay oo koodhka sirta ah ee taleefanka, iyo taariikhaha), si tirtirka loo dhammaystiro si ammaan ah loona muujiyo inuu dhacay."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "Diiwaan tirtir oo ugu yar"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: bixiyaha xogtayada wuxuu hayaa kayd maalinle ah 7 maalmood, sidaas darteed macluumaadka la tirtiray waxay ku jiri karaan kayd ilaa 7 maalmood."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "Kaydka"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "{lead} ku saabsan codsigaaga, inta loogu baahan yahay in la xalliyo."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "Iimaylada taageerada"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "Faahfaahin buuxda oo ku saabsan muddada aan haynno macluumaadka iyo xuquuqdaada kale, eeg {privacy} -ayada."
     }
   }
 }

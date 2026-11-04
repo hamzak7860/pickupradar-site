@@ -2,7 +2,7 @@
   "language": "ru",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "Главная"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "На этой странице"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "Последнее обновление: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "Политика конфиденциальности"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "Политика конфиденциальности — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "Политика конфиденциальности PickupRadar."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "Разделы политики конфиденциальности"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "Краткое содержание и заголовки разделов переведены. Полная политика конфиденциальности составлена на английском языке, и официальной является английская версия."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "Кратко"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "Кто мы"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "Какие данные мы собираем и как их используем"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "Чего мы не запрашиваем"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "Наши правовые основания (Великобритания)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "С кем мы делимся данными"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "Международная передача данных"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "Как долго мы храним данные"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "Ваш выбор и ваши права"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "Безопасность"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "Дети"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "Изменения этой политики"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "Контакты"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar помогает курьерам видеть время ожидания при получении заказов и проблемы заведений, а также сообщать о них."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "Пользоваться приложением можно без аккаунта. Приложение создаёт для вашего телефона анонимный профиль Radar, а аккаунт с электронной почтой необязателен."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "Если вы разрешите доступ к геопозиции, приложение использует её только во время работы: чтобы сортировать ближайшие точки выдачи, определять ваш город и проверять, что вы находитесь у заведения, когда отправляете отчёт в реальном времени. Мы не сохраняем вашу геопозицию вместе с отчётами."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "Сохранённые точки выдачи хранятся только на вашем телефоне."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "Мы не продаём ваши персональные данные, а в приложении нет рекламных или аналитических трекеров."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "Вы можете удалить свой профиль Radar или аккаунт в приложении либо попросить нас об этом по электронной почте. См. {link}."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "Удаление аккаунта или данных — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "Как удалить аккаунт PickupRadar, профиль Radar и связанные данные, в том числе без приложения."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "Разделы об удалении аккаунта"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "Удаление аккаунта или данных"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "На этой странице объясняется, как удалить ваш аккаунт PickupRadar, профиль Radar и связанные с ними данные, в том числе если приложения у вас больше нет. Разработчик PickupRadar — Hamza Khan."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "Удаление в приложении (быстрее всего)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "Откройте PickupRadar."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "Нажмите {profile} внизу главного экрана."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "Прокрутите вниз и нажмите {deleteAccount}, если вы защитили свои RadarPoints электронной почтой, или {deleteProfile}, если нет."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "Нажмите {confirm}, чтобы подтвердить."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "Удаление начинается сразу. После этого приложение создаёт на вашем телефоне новый анонимный профиль Radar."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "Попросите нас удалить аккаунт с электронной почтой"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "Если вы защитили свои RadarPoints адресом электронной почты и не можете пользоваться приложением:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "Напишите на {email} {from} с темой «{subject}»."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "с адреса электронной почты, указанного в вашем аккаунте PickupRadar"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "Мы ответим на этот адрес, чтобы подтвердить запрос, прежде чем что-либо удалять."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "Если вы пишете с другого адреса, нам нужно будет убедиться, что адрес электронной почты аккаунта принадлежит вам. Мы никогда не попросим пароль или код для входа. Не отправляйте нам свой код."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "Анонимные профили Radar"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "Если вы никогда не добавляли адрес электронной почты, ваш профиль Radar связан только со случайным идентификатором, сохранённым в приложении на вашем телефоне. Проще всего удалить его в приложении, следуя шагам выше."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "Удаление приложения стирает этот идентификатор с вашего телефона, но {not} записи на наших серверах."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "не удаляет"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "Владение анонимным профилем можно подтвердить только с телефона, на котором он был создан, — с помощью случайного идентификатора и секретного кода, сохранённых в приложении. Такие данные, как имя Radar, город или даты использования приложения, не доказывают, что профиль ваш, потому что их могут знать и другие люди. Поэтому, если приложения у вас больше нет, мы, возможно, не сможем удалить анонимный профиль. Вы всё равно можете написать на {email}, и мы объясним, что можем сделать."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "Письма об открытии в городах"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "Вы можете отменить уведомление об открытии в приложении или написать нам с адреса, указанного при подписке, и мы удалим подписки для этого адреса. Письма об открытии также удаляются автоматически, как описано в нашей {privacy}."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "Что удаляется"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "Ваш профиль Radar, имя Radar, RadarPoints и история участия"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "Ваш вход по электронной почте, если у вас был такой аккаунт"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "Связи между идентификатором устройства вашего телефона и вашим профилем"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "Ваши реферальные коды и статус прочтения или скрытия сообщений в приложении"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "Подписки на уведомления об открытии, связанные с вашим профилем или телефоном"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "Заметки в отчётах о проблемах, отчётах о статусе и предложениях заведений, связанных с вашим профилем"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "Что может сохраниться"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, например время ожидания, отчёты о статусе заведений, метки и предложения заведений: идентификатор устройства в записях, связанных с вашим профилем, заменяется случайным значением, поэтому в нашей базе данных они больше не связаны с вашим профилем. В них по-прежнему есть такие сведения, как заведение и время, поэтому они обезличены, но не полностью анонимны. Их могут хранить, чтобы они продолжали помогать другим курьерам."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "Прошлые отчёты"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "{lead} с вашим участием, без вашего профиля."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "Реферальные записи"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead} для аккаунтов с электронной почтой (внутренняя ссылка на аккаунт, идентификатор устройства, необратимо зашифрованная копия секретного кода телефона и даты), чтобы удаление можно было безопасно завершить и подтвердить."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "Минимальная запись об удалении"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: наш провайдер базы данных хранит ежедневные резервные копии 7 дней, поэтому удалённые данные могут оставаться в резервной копии до 7 дней."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "Резервные копии"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "{lead} по вашему запросу — столько, сколько нужно для его обработки."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "Письма в поддержку"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "Подробнее о сроках хранения данных и других ваших правах — в нашей {privacy}."
     }
   }
 }

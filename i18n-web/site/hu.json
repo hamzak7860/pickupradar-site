@@ -2,7 +2,7 @@
   "language": "hu",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "Kezdőlap"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "Ezen az oldalon"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "Utoljára frissítve: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "Adatvédelmi irányelvek"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "Adatvédelmi irányelvek — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "A PickupRadar adatvédelmi irányelvei."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "Az adatvédelmi irányelvek részei"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "Az összefoglaló és a részcímek le vannak fordítva. A teljes adatvédelmi irányelvek angol nyelvűek, és a hivatalos változat az angol."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "Összefoglaló"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "Kik vagyunk"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "Milyen adatokat gyűjtünk, és hogyan használjuk őket"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "Mit nem kérünk"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "Jogalapjaink (Egyesült Királyság)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "Kivel osztunk meg adatokat"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "Nemzetközi adattovábbítás"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "Meddig őrizzük az adatokat"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "Választási lehetőségeid és jogaid"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "Biztonság"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "Gyermekek"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "Az irányelvek módosítása"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "Kapcsolat"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "A PickupRadar segít a futároknak látni és jelenteni az átvételi várakozási időket és a helyszíni problémákat."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "Fiók nélkül is böngészhetsz. Az alkalmazás névtelen Radar-profilt hoz létre a telefonodhoz, az e-mail-fiók pedig nem kötelező."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "Ha engedélyezed a helyadatokat, az alkalmazás csak használat közben használja őket: a közeli átvételi pontok rendezéséhez, a városod megállapításához és annak ellenőrzéséhez, hogy a helyszínen vagy, amikor élő jelentést küldesz. A helyadataidat nem mentjük a jelentéseiddel együtt."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "A mentett átvételi pontjaid a telefonodon maradnak."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "Nem adjuk el a személyes adataidat, és az alkalmazásban nincs reklám- vagy elemzőkövető."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "A Radar-profilodat vagy fiókodat törölheted az alkalmazásban, vagy e-mailben kérheted tőlünk. Lásd: {link}."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "Fiók vagy adatok törlése — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "Hogyan törölheted a PickupRadar-fiókodat, a Radar-profilodat és a kapcsolódó adatokat, az alkalmazás nélkül is."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "A fióktörlés részei"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "Fiók vagy adatok törlése"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "Ez az oldal elmagyarázza, hogyan törölheted a PickupRadar-fiókodat, a Radar-profilodat és a hozzájuk kapcsolódó adatokat, akkor is, ha már nincs meg az alkalmazás. A PickupRadart Hamza Khan fejleszti."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "Törlés az alkalmazásban (leggyorsabb)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "Nyisd meg a PickupRadart."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "Koppints a(z) {profile} elemre a kezdőképernyő alján."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "Görgess le, és koppints a(z) {deleteAccount} elemre, ha e-maillel védted a RadarPoints pontjaidat, egyébként a(z) {deleteProfile} elemre."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "A megerősítéshez koppints a(z) {confirm} elemre."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "A törlés azonnal elindul. Ezután az alkalmazás új névtelen Radar-profilt indít a telefonodon."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "Kérd tőlünk az e-mail-fiókod törlését"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "Ha e-mail-címmel védted a RadarPoints pontjaidat, és nem tudod használni az alkalmazást:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "Írj a(z) {email} címre {from}, „{subject}” tárggyal."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "a PickupRadar-fiókodhoz tartozó e-mail-címről"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "Mielőtt bármit törölnénk, erre a címre válaszolva megerősítjük a kérést."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "Ha másik címről írsz, ellenőriznünk kell, hogy te kezeled-e a fiók e-mail-címét. Soha nem kérünk jelszót vagy bejelentkezési kódot. Ne küldd el nekünk a kódodat."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "Névtelen Radar-profilok"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "Ha soha nem adtál meg e-mail-címet, a Radar-profilod csak egy véletlenszerű azonosítóhoz kapcsolódik, amelyet a telefonodon lévő alkalmazás tárol. A törlés legegyszerűbb módja az alkalmazásban, a fenti lépésekkel."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "Az alkalmazás törlése eltávolítja ezt az azonosítót a telefonodról, de a szervereinken lévő adatokat {not}."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "nem törli"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "Egy névtelen profil tulajdonjoga csak arról a telefonról igazolható, amelyen létrehozták, az alkalmazásban tárolt véletlenszerű azonosítóval és titkos kóddal. Az olyan adatok, mint a Radar-név, a város vagy az alkalmazás használatának dátumai, nem bizonyítják, hogy a profil a tiéd, mert mások is ismerhetik őket. Ezért ha már nincs meg az alkalmazás, előfordulhat, hogy nem tudjuk törölni a névtelen profilt. Ettől még írhatsz a(z) {email} címre, és elmondjuk, mit tehetünk."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "Városindulási értesítő e-mailek"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "Az indulási értesítőt visszavonhatod az alkalmazásban, vagy írj nekünk arról a címről, amellyel feliratkoztál, és töröljük az adott cím feliratkozásait. Az indulási értesítők e-mail-címei automatikusan is törlődnek, ahogy az {privacy} leírja."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "Mi törlődik"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "A Radar-profilod, a Radar-neved, a RadarPoints pontjaid és a hozzájárulási előzményeid"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "Az e-mailes bejelentkezésed, ha volt e-mail-fiókod"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "A telefonod eszközazonosítója és a profilod közötti kapcsolatok"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "Az ajánlókódjaid, valamint az alkalmazásüzenetek olvasott vagy bezárt állapota"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "A profilodhoz vagy telefonodhoz kapcsolódó városindulási értesítő-feliratkozások"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "A profilodhoz kapcsolódó problémajelentések, állapotjelentések és helyszínjavaslatok megjegyzései"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "Mi maradhat meg"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, például várakozási idők, helyszíni állapotjelentések és címkék, valamint helyszínjavaslatok: a profilodhoz kapcsolódó rekordokban az eszközazonosítót véletlenszerű érték váltja fel, így adatbázisunkban már nem kapcsolódnak a profilodhoz. Továbbra is tartalmaznak olyan adatokat, mint a helyszín és az időpont, ezért azonosításra alkalmatlanná tettek, de nem teljesen névtelenek. Megőrizhetjük őket, hogy továbbra is segítsék a többi futárt."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "Korábbi jelentések"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "{lead}, amelyekben részt vettél, a profilod nélkül."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "Ajánlási adatok"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead} az e-mail-fiókokhoz (belső fiókhivatkozás, eszközazonosító, a telefon titkos kódjának egyirányúan titkosított másolata és dátumok), hogy a törlés biztonságosan befejezhető és igazolható legyen."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "Minimális törlési nyilvántartás"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: adatbázis-szolgáltatónk 7 napig őrzi a napi biztonsági mentéseket, így a törölt adatok legfeljebb 7 napig megmaradhatnak egy mentésben."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "Biztonsági mentések"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "{lead} a kérésedről, amíg a kezeléséhez szükséges."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "Ügyfélszolgálati e-mailek"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "Az adatok megőrzési idejéről és további jogaidról az {privacy} tartalmaz részletes tájékoztatást."
     }
   }
 }

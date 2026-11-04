@@ -2,7 +2,7 @@
   "language": "ja",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "ホーム"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "このページの内容"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "最終更新日：{date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "プライバシーポリシー"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "プライバシーポリシー — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "PickupRadar のプライバシーポリシー。"
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "プライバシーポリシーの項目"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "要約と各項目の見出しは翻訳されています。プライバシーポリシーの全文は英語で、英語版が正式版です。"
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "要約"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "運営者について"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "収集する情報とその利用方法"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "お尋ねしない情報"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "法的根拠（英国）"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "情報の共有先"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "国外への移転"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "情報の保存期間"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "選択肢とお客様の権利"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "セキュリティ"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "お子様について"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "本ポリシーの変更"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "お問い合わせ"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar は、配達ドライバーが受け取り時の待ち時間や店舗の問題を確認・報告できるようにするアプリです。"
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "アカウントなしで閲覧できます。アプリはお使いのスマートフォン用に匿名の Radar プロフィールを作成します。メールアカウントは任意です。"
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "位置情報を許可した場合、アプリは使用中にのみ位置情報を使います。近くの受け取り場所の並べ替え、都市の判定、リアルタイム報告を送る際に店舗にいることの確認のためです。位置情報を報告と一緒に保存することはありません。"
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "保存した受け取り場所はお使いのスマートフォンにのみ保存されます。"
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "個人情報を販売することはなく、アプリには広告や分析用のトラッカーはありません。"
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "Radar プロフィールやアカウントはアプリ内で削除できるほか、メールで削除を依頼することもできます。{link}をご覧ください。"
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "アカウントまたはデータの削除 — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "アプリがなくても、PickupRadar アカウント、Radar プロフィール、関連データを削除する方法。"
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "アカウント削除の項目"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "アカウントまたはデータの削除"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "このページでは、アプリが手元になくなった場合も含め、PickupRadar アカウント、Radar プロフィール、関連データを削除する方法を説明します。PickupRadar は Hamza Khan が開発しています。"
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "アプリで削除する（最速）"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "PickupRadar を開きます。"
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "ホーム画面下部の {profile} をタップします。"
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "下にスクロールし、RadarPoints をメールで保護している場合は {deleteAccount}、そうでない場合は {deleteProfile} をタップします。"
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "{confirm} をタップして確定します。"
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "削除はすぐに始まります。その後、アプリはスマートフォンで新しい匿名の Radar プロフィールを開始します。"
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "メールアカウントの削除を依頼する"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "RadarPoints をメールアドレスで保護していて、アプリを使えない場合："
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "{from}、件名「{subject}」で {email} にメールしてください。"
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "PickupRadar アカウントに登録したメールアドレスから"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "削除の前に、そのアドレス宛てに返信して依頼内容を確認します。"
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "別のアドレスから連絡された場合は、アカウントのメールアドレスをご本人が管理していることを確認する必要があります。パスワードやログインコードを尋ねることは決してありません。コードは送らないでください。"
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "匿名の Radar プロフィール"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "メールアドレスを追加したことがない場合、Radar プロフィールはスマートフォンのアプリに保存されたランダムな ID とだけ結び付いています。上記の手順でアプリ内から削除するのが最も簡単です。"
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "アプリを削除するとその ID はスマートフォンから消えますが、当社サーバー上の記録は{not}。"
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "削除されません"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "匿名プロフィールの所有は、それを作成したスマートフォンから、アプリに保存されたランダムな ID と秘密のコードによってのみ証明できます。Radar 名、都市、アプリの利用日などは他人も知り得るため、プロフィールがご本人のものである証明にはなりません。そのため、アプリがお手元にない場合、匿名プロフィールを削除できないことがあります。それでも {email} にメールいただければ、対応できることをご説明します。"
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "都市での提供開始のお知らせメール"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "提供開始のお知らせはアプリ内で取り消せます。または登録に使ったアドレスからメールいただければ、そのアドレスの登録を削除します。お知らせ用のメールアドレスは、{privacy}に記載のとおり自動的にも削除されます。"
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "削除されるもの"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "Radar プロフィール、Radar 名、RadarPoints、投稿履歴"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "メールアカウントをお持ちの場合は、メールでのログイン"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "スマートフォンのデバイス ID とプロフィールとの結び付き"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "紹介コード、およびアプリ内メッセージの既読・非表示の状態"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "プロフィールやスマートフォンに結び付いた提供開始のお知らせの登録"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "プロフィールに結び付いた問題報告、状況報告、店舗の提案に含まれるメモ"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "保持される可能性があるもの"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}（待ち時間、店舗の状況報告やタグ、店舗の提案など）：プロフィールに結び付いた記録のデバイス ID はランダムな値に置き換えられ、当社データベース上でプロフィールとの結び付きはなくなります。店舗や時刻などの情報は残るため、完全な匿名ではなく、個人を特定できない状態のデータです。他のドライバーの役に立ち続けるよう保持されることがあります。"
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "過去の報告"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "ご自身が関わった{lead}（プロフィールは含みません）。"
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "紹介の記録"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead}（メールアカウントの場合。内部のアカウント参照、デバイス ID、スマートフォンの秘密コードを一方向に暗号化したもの、日付）。削除を安全に完了し、実施したことを示すためです。"
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "最小限の削除記録"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}：当社のデータベース事業者は日次バックアップを 7 日間保持するため、削除された情報が最大 7 日間バックアップに残ることがあります。"
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "バックアップ"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "ご依頼に関する{lead}（対応に必要な期間）。"
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "サポートへのメール"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "情報の保存期間やその他の権利の詳細は、{privacy}をご覧ください。"
     }
   }
 }

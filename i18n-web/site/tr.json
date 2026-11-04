@@ -2,7 +2,7 @@
   "language": "tr",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "Ana sayfa"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "Bu sayfada"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "Son güncelleme: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "Gizlilik politikası"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "Gizlilik politikası — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "PickupRadar gizlilik politikası."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "Gizlilik politikası bölümleri"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "Özet ve bölüm başlıkları çevrilmiştir. Gizlilik politikasının tamamı İngilizcedir ve resmî sürüm İngilizce sürümdür."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "Özet"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "Biz kimiz"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "Hangi bilgileri topluyoruz ve nasıl kullanıyoruz"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "Sizden istemediklerimiz"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "Hukuki dayanaklarımız (Birleşik Krallık)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "Bilgileri kimlerle paylaşıyoruz"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "Uluslararası aktarımlar"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "Bilgileri ne kadar süre saklıyoruz"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "Seçenekleriniz ve haklarınız"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "Güvenlik"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "Çocuklar"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "Bu politikadaki değişiklikler"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "İletişim"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar, teslimat sürücülerinin teslim alma bekleme sürelerini ve mekân sorunlarını görmesine ve bildirmesine yardımcı olur."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "Hesap olmadan gezinebilirsiniz. Uygulama telefonunuz için anonim bir Radar profili oluşturur; e-posta hesabı isteğe bağlıdır."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "Konum iznini verirseniz uygulama konumu yalnızca kullanım sırasında kullanır: yakındaki teslim alma noktalarını sıralamak, şehrinizi belirlemek ve canlı bildirim gönderirken mekânda olduğunuzu kontrol etmek için. Konumunuzu bildirimlerinizle birlikte kaydetmeyiz."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "Kaydettiğiniz teslim alma noktaları telefonunuzda kalır."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "Kişisel bilgilerinizi satmayız ve uygulamada reklam veya analiz izleyicisi yoktur."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "Radar profilinizi veya hesabınızı uygulamada silebilir ya da e-postayla bizden isteyebilirsiniz. Bkz. {link}."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "Hesabınızı veya verilerinizi silin — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "PickupRadar hesabınızı, Radar profilinizi ve ilgili verileri, uygulama olmadan da nasıl silebilirsiniz."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "Hesap silme bölümleri"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "Hesabınızı veya verilerinizi silin"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "Bu sayfa, artık uygulamanız olmasa bile PickupRadar hesabınızı, Radar profilinizi ve bunlarla bağlantılı verileri nasıl sileceğinizi açıklar. PickupRadar, Hamza Khan tarafından geliştirilmiştir."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "Uygulamada silin (en hızlısı)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "PickupRadar'ı açın."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "Ana ekranın altındaki {profile} seçeneğine dokunun."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "Aşağı kaydırın ve RadarPoints'inizi e-postayla güvenceye aldıysanız {deleteAccount}, almadıysanız {deleteProfile} seçeneğine dokunun."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "Onaylamak için {confirm} seçeneğine dokunun."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "Silme işlemi hemen başlar. Ardından uygulama telefonunuzda yeni bir anonim Radar profili başlatır."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "E-posta hesabınızı silmemizi isteyin"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "RadarPoints'inizi bir e-posta adresiyle güvenceye aldıysanız ve uygulamayı kullanamıyorsanız:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "{from} {email} adresine “{subject}” konulu bir e-posta gönderin."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "PickupRadar hesabınızdaki e-posta adresinden"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "Herhangi bir şeyi silmeden önce isteği doğrulamak için o adrese yanıt vereceğiz."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "Başka bir adresten yazarsanız, hesabın e-posta adresini kontrol ettiğinizi doğrulamamız gerekir. Asla şifre veya giriş kodu istemeyiz. Kodunuzu bize göndermeyin."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "Anonim Radar profilleri"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "Hiç e-posta adresi eklemediyseniz Radar profiliniz yalnızca telefonunuzdaki uygulamada kayıtlı rastgele bir kimliğe bağlıdır. Silmenin en kolay yolu, yukarıdaki adımlarla uygulamadır."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "Uygulamayı silmek o kimliği telefonunuzdan kaldırır, ancak sunucularımızdaki kayıtları {not}."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "silmez"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "Anonim bir profilin sahipliği yalnızca oluşturulduğu telefondan, uygulamada kayıtlı rastgele kimlik ve gizli kodla kanıtlanabilir. Radar adı, şehir veya uygulamayı kullandığınız tarihler gibi bilgiler profilin size ait olduğunu kanıtlamaz, çünkü başkaları da bunları bilebilir. Bu nedenle artık uygulamanız yoksa anonim bir profili silemeyebiliriz. Yine de {email} adresine yazabilirsiniz; neler yapabileceğimizi açıklarız."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "Şehir açılış bildirimi e-postaları"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "Açılış bildirimini uygulamada geri çekebilir ya da kaydolduğunuz adresten bize e-posta gönderebilirsiniz; o adresin kayıtlarını sileriz. Açılış bildirimi e-postaları {privacy} içinde açıklandığı gibi otomatik olarak da silinir."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "Neler silinir"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "Radar profiliniz, Radar adınız, RadarPoints'iniz ve katkı geçmişiniz"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "E-posta hesabınız varsa e-postayla girişiniz"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "Telefonunuzun cihaz kimliği ile profiliniz arasındaki bağlantılar"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "Davet kodlarınız ve uygulama mesajlarının okundu ya da kapatıldı durumu"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "Profilinize veya telefonunuza bağlı şehir açılış bildirimi kayıtları"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "Profilinize bağlı sorun bildirimleri, durum bildirimleri ve mekân önerilerindeki notlar"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "Neler saklanabilir"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}; örneğin bekleme süreleri, mekân durum bildirimleri ve etiketleri ile mekân önerileri: Profilinize bağlı kayıtlardaki cihaz kimliği rastgele bir değerle değiştirilir, böylece veritabanımızda artık profilinize bağlı olmazlar. Hâlâ mekân ve saat gibi ayrıntılar içerdiklerinden tamamen anonim değil, kimliksizleştirilmiştir. Diğer sürücülere yardımcı olmaya devam etmeleri için saklanabilirler."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "Geçmiş bildirimler"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "Yer aldığınız {lead}, profiliniz olmadan."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "Davet kayıtları"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "E-posta hesapları için {lead} (dahili bir hesap referansı, cihaz kimliği, telefonun gizli kodunun tek yönlü şifrelenmiş bir kopyası ve tarihler); böylece silme işlemi güvenle tamamlanabilir ve yapıldığı gösterilebilir."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "Asgari bir silme kaydı"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: Veritabanı sağlayıcımız günlük yedekleri 7 gün saklar, bu nedenle silinen bilgiler bir yedekte en fazla 7 gün kalabilir."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "Yedekler"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "İsteğinizle ilgili {lead}, işlemek için gerektiği süre boyunca."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "Destek e-postaları"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "Bilgileri ne kadar süre sakladığımız ve diğer haklarınızla ilgili tüm ayrıntılar için {privacy} sayfamıza bakın."
     }
   }
 }

@@ -2,7 +2,7 @@
   "language": "sm",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "Aiga"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "I lenei itulau"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "Na faafou mulimuli: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "Faiga faavae o le le faalauaiteleina"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "Faiga faavae o le le faalauaiteleina — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "Faiga faavae o le le faalauaiteleina a PickupRadar."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "Vaega o le faiga faavae o le le faalauaiteleina"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "Ua faaliliuina le aotelega ma ulutala o vaega. O le faiga faavae atoa o le le faalauaiteleina o loo i le gagana Peretania, ma o le lomiga Peretania o le lomiga aloaia lea."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "Aotelega"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "O ai i matou"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "O faamatalaga matou te aoina ma le auala matou te faaaogaina ai"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "Mea matou te le fesiligia"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "O matou faavae faaletulafono (UK)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "O ai matou te faasoa i ai faamatalaga"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "Felauaiga faavaomalo"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "O le umi matou te teuina ai faamatalaga"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "Au filifiliga ma aia tatau"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "Saogalemu"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "Tamaiti"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "Suiga i lenei faiga faavae"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "Faafesootai"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "E fesoasoani PickupRadar i aveta'avale momoli e vaai ma lipoti le umi o le faatali i le pikiina o oka ma faafitauli i nofoaga."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "E mafai ona e su'esu'e e aunoa ma se teugatupe. E faia e le app se talaaga Radar e le o faailoa le igoa mo lau telefoni, ma o le teugatupe imeli e filifili."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "Afai e te faatagaina le nofoaga, e faaaoga e le app pe a e faaaogaina: e faasologa ai nofoaga piki lata ane, iloa lou aai, ma siaki o loo e i le nofoaga pe a e auina atu se lipoti tuusao. Matou te le teuina lou nofoaga faatasi ma au lipoti."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "O nofoaga piki na e teuina e tumau i lau telefoni."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "Matou te le faatauina atu au faamatalaga patino, ma e leai ni mea e mulimuli i faasalalauga po o suesuega i le app."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "E mafai ona e tape lau talaaga Radar po o lau teugatupe i le app, pe imeli mai e talosaga mai ia i matou. Tagai {link}."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "Tape lau teugatupe po o faamaumauga — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "Le auala e tape ai lau teugatupe PickupRadar, talaaga Radar ma faamaumauga e fesootai, e oo lava e aunoa ma le app."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "Vaega o le tapeina o le teugatupe"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "Tape lau teugatupe po o faamaumauga"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "O lenei itulau e faamatala ai le auala e tape ai lau teugatupe PickupRadar, lau talaaga Radar ma faamaumauga e fesootai i ai, e tusa lava pe ua le o toe i ai le app ia te oe. O PickupRadar na fausia e Hamza Khan."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "Tape i le app (sili ona vave)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "Tatala PickupRadar."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "Oomi {profile} i le pito i lalo o le lau autu."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "Taavale i lalo ma oomi {deleteAccount} pe afai na e puipuia au RadarPoints i se imeli, pe {deleteProfile} pe afai e leai."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "Oomi {confirm} e faamautu ai."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "E amata loa le tapeina. Ona amata lea e le app se talaaga Radar fou e le faailoa le igoa i lau telefoni."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "Talosaga mai ia i matou e tape lau teugatupe imeli"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "Afai na e puipuia au RadarPoints i se tuatusi imeli ma e le mafai ona e faaaogaina le app:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "Imeli atu i le {email} {from}, ma le ulutala “{subject}”."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "mai le tuatusi imeli o lau teugatupe PickupRadar"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "Matou te tali atu i lena tuatusi e faamautu ai le talosaga ae le i tapeina se mea."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "Afai e te tusi mai i se isi tuatusi, e tatau ona matou faamautu o oe o loo pulea le tuatusi imeli o le teugatupe. Matou te le fesili lava mo se upu faataga po o se numera e ulufale ai. Aua le auina mai lau numera."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "Talaaga Radar e le faailoa le igoa"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "Afai e te lei faaopoopoina lava se tuatusi imeli, o lau talaaga Radar e fesootai na o se ID faafuasei o loo teu i le app i lau telefoni. O le auala sili ona faigofie e tape ai o le app, i laasaga o loo i luga."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "O le tapeina o le app e aveese ai lena ID mai lau telefoni, ae {not} faamaumauga i a matou server."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "e le tapeina ai"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "E na o le telefoni na faia ai e mafai ona faamaonia ai le umiaina o se talaaga e le faailoa le igoa, i le faaaogaina o le ID faafuasei ma le numera lilo o loo teu i le app. O faamatalaga e pei o le igoa Radar, aai po o aso na e faaaogaina ai le app e le faamaonia ai o lau talaaga, aua e ono iloa foi e isi. O lea, afai ua le o toe ia te oe le app, atonu e le mafai ona matou tapeina se talaaga e le faailoa le igoa. E mafai lava ona e imeli i le {email} ma matou te faamatala atu le mea e mafai ona matou faia."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "Imeli o faailoga o le amataga i aai"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "E mafai ona e toe aveese se faailoga o le amataga i le app, pe imeli mai i le tuatusi na e lesitala ai ma matou te tapeina lesitalaga mo lena tuatusi. E tapeina foi imeli o faailoga o le amataga e le masini, e pei ona faamatala i la matou {privacy}."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "Mea e tapeina"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "Lau talaaga Radar, igoa Radar, RadarPoints ma le talafaasolopito o au sao"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "Lou ulufale i le imeli, pe afai sa i ai sau teugatupe imeli"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "Sootaga i le va o le ID o le masini o lau telefoni ma lau talaaga"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "Au numera faasino, ma le tulaga faitau pe tapuni o savali a le app"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "Lesitalaga o faailoga o le amataga e fesootai ma lau talaaga po o lau telefoni"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "Faamatalaga i lipoti o faafitauli, lipoti o tulaga ma fautuaga o nofoaga e fesootai ma lau talaaga"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "Mea e ono teuina"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, e pei o taimi faatali, lipoti o tulaga ma faailoga o nofoaga, ma fautuaga o nofoaga: o le ID o le masini i faamaumauga e fesootai ma lau talaaga e suia i se tau faafuasei, o lea i la matou faamaumauga ua le o toe fesootai ai ma lau talaaga. O loo i ai pea faamatalaga e pei o le nofoaga ma le taimi, o lea ua aveese ai le faailoaina, ae le o le faailoa atoatoa le igoa. E ono teuina ina ia faaauau pea ona fesoasoani i isi aveta'avale."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "Lipoti ua mavae"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "{lead} sa e auai ai, e aunoa ma lau talaaga."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "Faamaumauga o faasinoga"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead} mo teugatupe imeli (o se faasinoga i totonu o le teugatupe, ID o le masini, se kopi ua faalilolilo i le tasi itu o le numera lilo a le telefoni, ma aso), ina ia mafai ona faauma ma le saogalemu le tapeina ma faaali na tupu."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "Se faamaumauga laititi o le tapeina"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: e teuina e le matou kamupani faamaumauga kopi faaleaso mo aso e 7, o lea e ono tumau ai faamatalaga ua tapeina i se kopi mo aso e oo atu i le 7."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "Kopi faaleoleo"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "{lead} e uiga i lau talaaga, mo le umi e manaomia e faatino ai."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "Imeli i le lagolago"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "Mo faamatalaga atoa e uiga i le umi matou te teuina ai faamatalaga ma au isi aia tatau, tagai i la matou {privacy}."
     }
   }
 }

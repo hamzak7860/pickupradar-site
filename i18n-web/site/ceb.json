@@ -2,7 +2,7 @@
   "language": "ceb",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "Home"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "Niini nga panid"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "Katapusang gi-update: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "Palisiya sa privacy"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "Palisiya sa privacy — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "Palisiya sa privacy sa PickupRadar."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "Mga seksyon sa palisiya sa privacy"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "Gihubad ang summary ug mga ulohan sa seksyon. Naa sa English ang tibuok palisiya sa privacy, ug ang bersyon sa English ang opisyal nga bersyon."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "Summary"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "Kinsa kami"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "Unsang impormasyon ang among kolektahon ug unsaon namo kini paggamit"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "Unsa ang dili namo pangayoon"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "Among legal nga basehan (UK)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "Kang kinsa namo ipaambit ang impormasyon"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "Internasyonal nga pagbalhin"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "Unsa kadugay namo tipigan ang impormasyon"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "Imong mga pagpili ug katungod"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "Seguridad"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "Mga bata"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "Mga kausaban niini nga palisiya"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "Kontaka kami"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "Gitabangan sa PickupRadar ang mga delivery driver nga makita ug ma-report ang oras sa paghulat sa pickup ug mga problema sa venue."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "Makabrowse ka bisan walay account. Maghimo ang app og anonymous nga Radar profile para sa imong phone, ug opsyonal ang email account."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "Kon tugotan nimo ang lokasyon, gamiton lang kini sa app samtang gigamit nimo kini: aron ihan-ay ang duol nga mga pickup spot, mailhan ang imong siyudad, ug masusi nga naa ka sa venue kon magpadala og live nga report. Dili namo i-save ang imong lokasyon uban sa imong mga report."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "Ang imong na-save nga mga pickup spot magpabilin sa imong phone."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "Dili namo ibaligya ang imong personal nga impormasyon, ug walay advertising o analytics tracker ang app."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "Mahimo nimong i-delete ang imong Radar profile o account sa app, o i-email kami aron himoon kini. Tan-awa ang {link}."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "I-delete ang imong account o data — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "Unsaon pag-delete sa imong PickupRadar account, Radar profile ug may kalabotang data, bisan walay app."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "Mga seksyon sa pag-delete sa account"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "I-delete ang imong account o data"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "Gipatin-aw niini nga panid unsaon pag-delete sa imong PickupRadar account, Radar profile ug data nga konektado niini, bisan wala na nimo ang app. Ang PickupRadar gihimo ni Hamza Khan."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "I-delete sa app (pinakadali)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "Ablihi ang PickupRadar."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "I-tap ang {profile} sa ubos sa home screen."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "Pag-scroll paubos ug i-tap ang {deleteAccount} kon giprotektahan nimo ang imong RadarPoints gamit ang email, o {deleteProfile} kon wala."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "I-tap ang {confirm} aron kumpirmahon."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "Magsugod dayon ang pag-delete. Pagkahuman, magsugod ang app og bag-ong anonymous nga Radar profile sa imong phone."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "Hangyoa kami nga i-delete ang imong email account"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "Kon giprotektahan nimo ang imong RadarPoints gamit ang email address ug dili nimo magamit ang app:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "Pag-email sa {email} {from}, nga adunay subject nga “{subject}”."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "gikan sa email address sa imong PickupRadar account"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "Motubag kami sa maong address aron kumpirmahon ang hangyo sa dili pa kami mag-delete og bisan unsa."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "Kon mosulat ka gikan sa laing address, kinahanglan namong kumpirmahon nga ikaw ang nagkontrol sa email address sa account. Dili gayod kami mangayo og password o sign-in code. Ayaw ipadala kanamo ang imong code."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "Mga anonymous nga Radar profile"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "Kon wala ka gayod magdugang og email address, ang imong Radar profile konektado lang sa random nga ID nga na-save sa app sa imong phone. Ang pinakasayon nga paagi sa pag-delete niini mao ang sa app, gamit ang mga lakang sa ibabaw."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "Ang pag-delete sa app mokuha sa maong ID gikan sa imong phone, apan {not} ang mga rekord sa among mga server."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "dili kini mo-delete"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "Ang pagpanag-iya sa anonymous nga profile mapamatud-an lang gikan sa phone nga naghimo niini, gamit ang random nga ID ug secret code nga na-save sa app. Ang mga detalye sama sa Radar name, siyudad o mga petsa sa paggamit nimo sa app dili makapamatuod nga imo ang profile, kay mahibaloan usab kini sa uban. Busa kon wala na nimo ang app, basin dili namo ma-delete ang anonymous nga profile. Mahimo ka gihapong mo-email sa {email} ug among ipatin-aw kon unsa ang among mahimo."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "Mga email sa alerto sa paglunsad sa siyudad"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "Mahimo nimong bawion ang alerto sa paglunsad sa app, o i-email kami gikan sa address nga imong gigamit sa pag-sign up ug among i-delete ang mga sign-up alang niana nga address. Awtomatiko usab nga ma-delete ang mga email sa alerto sa paglunsad, sama sa gipatin-aw sa among {privacy}."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "Unsa ang ma-delete"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "Ang imong Radar profile, Radar name, RadarPoints ug kasaysayan sa kontribusyon"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "Ang imong email sign-in, kon aduna kay email account"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "Mga link tali sa device ID sa imong phone ug sa imong profile"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "Ang imong mga referral code, ug ang status nga nabasa o gisirad-an sa mga mensahe sa app"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "Mga sign-up sa alerto sa paglunsad sa siyudad nga konektado sa imong profile o phone"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "Mga nota sa mga report sa problema, status report ug sugyot nga venue nga konektado sa imong profile"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "Unsa ang mahimong tipigan"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, sama sa oras sa paghulat, status report ug tag sa venue, ug sugyot nga venue: ang device ID sa mga rekord nga konektado sa imong profile ilisan og random nga value, busa sa among database dili na kini konektado sa imong profile. Aduna pa kini mga detalye sama sa venue ug oras, busa de-identified kini, dili hingpit nga anonymous. Mahimo kining tipigan aron magpadayon sa pagtabang sa ubang driver."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "Mga nangaging report"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "{lead} nga imong giapilan, nga wala ang imong profile."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "Mga referral record"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead} alang sa mga email account (usa ka internal nga reference sa account, ang device ID, usa ka one-way nga naka-encrypt nga kopya sa secret code sa phone, ug mga petsa), aron luwas nga mahuman ang pag-delete ug mapakita nga nahitabo kini."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "Usa ka minimal nga rekord sa pag-delete"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: ang among database provider nagtipig og adlaw-adlaw nga backup sulod sa 7 ka adlaw, busa ang na-delete nga impormasyon mahimong magpabilin sa backup hangtod sa 7 ka adlaw."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "Mga backup"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "{lead} bahin sa imong hangyo, samtang gikinahanglan aron atimanon kini."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "Mga email sa support"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "Para sa kompletong detalye kon unsa kadugay namo tipigan ang impormasyon ug ang uban nimong mga katungod, tan-awa ang among {privacy}."
     }
   }
 }

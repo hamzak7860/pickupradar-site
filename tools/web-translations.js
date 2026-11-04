@@ -196,8 +196,8 @@ function translationFiles() {
 const SITE_DIR = path.join(DIR, 'site');
 const SITE_SOURCE_FILE = path.join(DIR, 'site-source.en.json');
 const SITE_MANIFEST_FILE = path.join(SITE_DIR, 'manifest.json');
-const SITE_PAGES = ['index.html', 'app.html', 'support.html', '404.html'];
-const ENGLISH_ONLY_PAGES = ['privacy.html', 'delete-account.html'];
+const SITE_PAGES = ['index.html', 'app.html', 'support.html', '404.html', 'privacy.html', 'delete-account.html'];
+const ENGLISH_ONLY_PAGES = []; // privacy.html and delete-account.html joined the site catalog on 3 Nov 2026
 const SITE_ABOUT = 'English source for the PickupRadar website pages. Translate "en" into the language. Keep {placeholders}, PickupRadar, city names, brand names and email addresses. Keys with "app" come from the app dictionary and must not be translated here. "appSlots" insert those app phrases. "domSlots" are link or bold phrases that stay in the page.';
 const VOID_TAGS = { area: 1, base: 1, br: 1, col: 1, embed: 1, hr: 1, img: 1, input: 1, link: 1, meta: 1, source: 1, track: 1, wbr: 1 };
 

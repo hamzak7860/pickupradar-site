@@ -2,7 +2,7 @@
   "language": "el",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "Αρχική"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "Σε αυτή τη σελίδα"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "Τελευταία ενημέρωση: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "Πολιτική απορρήτου"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "Πολιτική απορρήτου — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "Πολιτική απορρήτου του PickupRadar."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "Ενότητες της πολιτικής απορρήτου"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "Η σύνοψη και οι τίτλοι των ενοτήτων είναι μεταφρασμένοι. Η πλήρης πολιτική απορρήτου είναι στα αγγλικά και η αγγλική έκδοση είναι η επίσημη."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "Σύνοψη"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "Ποιοι είμαστε"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "Ποια στοιχεία συλλέγουμε και πώς τα χρησιμοποιούμε"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "Τι δεν ζητάμε"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "Οι νομικές μας βάσεις (Ηνωμένο Βασίλειο)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "Με ποιους μοιραζόμαστε στοιχεία"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "Διεθνείς διαβιβάσεις"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "Πόσο καιρό διατηρούμε τα στοιχεία"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "Οι επιλογές και τα δικαιώματά σας"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "Ασφάλεια"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "Παιδιά"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "Αλλαγές στην πολιτική"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "Επικοινωνία"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "Το PickupRadar βοηθά τους διανομείς να βλέπουν και να αναφέρουν χρόνους αναμονής κατά την παραλαβή και προβλήματα στα καταστήματα."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "Μπορείτε να περιηγηθείτε χωρίς λογαριασμό. Η εφαρμογή δημιουργεί ένα ανώνυμο προφίλ Radar για το τηλέφωνό σας, και ο λογαριασμός με email είναι προαιρετικός."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "Αν επιτρέψετε την πρόσβαση στην τοποθεσία, η εφαρμογή τη χρησιμοποιεί μόνο όσο τη χρησιμοποιείτε: για να ταξινομεί τα κοντινά σημεία παραλαβής, να εντοπίζει την πόλη σας και να ελέγχει ότι βρίσκεστε στο κατάστημα όταν στέλνετε αναφορά σε πραγματικό χρόνο. Δεν αποθηκεύουμε την τοποθεσία σας μαζί με τις αναφορές σας."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "Τα αποθηκευμένα σημεία παραλαβής σας παραμένουν στο τηλέφωνό σας."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "Δεν πουλάμε τα προσωπικά σας στοιχεία και η εφαρμογή δεν έχει διαφημιστικούς ή αναλυτικούς ιχνηλάτες."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "Μπορείτε να διαγράψετε το προφίλ Radar ή τον λογαριασμό σας στην εφαρμογή ή να μας το ζητήσετε με email. Δείτε {link}."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "Διαγραφή λογαριασμού ή δεδομένων — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "Πώς να διαγράψετε τον λογαριασμό PickupRadar, το προφίλ Radar και τα σχετικά δεδομένα, ακόμη και χωρίς την εφαρμογή."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "Ενότητες διαγραφής λογαριασμού"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "Διαγραφή λογαριασμού ή δεδομένων"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "Αυτή η σελίδα εξηγεί πώς να διαγράψετε τον λογαριασμό σας στο PickupRadar, το προφίλ Radar και τα δεδομένα που συνδέονται με αυτά, ακόμη και αν δεν έχετε πια την εφαρμογή. Το PickupRadar αναπτύσσεται από τον Hamza Khan."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "Διαγραφή στην εφαρμογή (το πιο γρήγορο)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "Ανοίξτε το PickupRadar."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "Πατήστε {profile} στο κάτω μέρος της αρχικής οθόνης."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "Κάντε κύλιση προς τα κάτω και πατήστε {deleteAccount} αν έχετε προστατέψει τους RadarPoints σας με email, αλλιώς {deleteProfile}."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "Πατήστε {confirm} για επιβεβαίωση."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "Η διαγραφή ξεκινά αμέσως. Στη συνέχεια η εφαρμογή ξεκινά ένα νέο ανώνυμο προφίλ Radar στο τηλέφωνό σας."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "Ζητήστε μας να διαγράψουμε τον λογαριασμό email σας"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "Αν έχετε προστατέψει τους RadarPoints σας με διεύθυνση email και δεν μπορείτε να χρησιμοποιήσετε την εφαρμογή:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "Στείλτε email στο {email} {from}, με θέμα «{subject}»."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "από τη διεύθυνση email του λογαριασμού σας στο PickupRadar"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "Θα απαντήσουμε σε αυτή τη διεύθυνση για να επιβεβαιώσουμε το αίτημα πριν διαγράψουμε οτιδήποτε."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "Αν γράψετε από άλλη διεύθυνση, θα πρέπει να επιβεβαιώσουμε ότι ελέγχετε τη διεύθυνση email του λογαριασμού. Δεν θα ζητήσουμε ποτέ κωδικό πρόσβασης ή κωδικό σύνδεσης. Μη μας στέλνετε τον κωδικό σας."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "Ανώνυμα προφίλ Radar"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "Αν δεν προσθέσατε ποτέ διεύθυνση email, το προφίλ Radar σας συνδέεται μόνο με ένα τυχαίο αναγνωριστικό αποθηκευμένο στην εφαρμογή του τηλεφώνου σας. Ο πιο εύκολος τρόπος να το διαγράψετε είναι στην εφαρμογή, με τα παραπάνω βήματα."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "Η διαγραφή της εφαρμογής αφαιρεί αυτό το αναγνωριστικό από το τηλέφωνό σας, αλλά {not} τις εγγραφές στους διακομιστές μας."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "δεν διαγράφει"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "Η κυριότητα ενός ανώνυμου προφίλ μπορεί να αποδειχθεί μόνο από το τηλέφωνο στο οποίο δημιουργήθηκε, με το τυχαίο αναγνωριστικό και τον μυστικό κωδικό που είναι αποθηκευμένα στην εφαρμογή. Στοιχεία όπως το όνομα Radar, η πόλη ή οι ημερομηνίες χρήσης της εφαρμογής δεν αποδεικνύουν ότι το προφίλ είναι δικό σας, επειδή μπορεί να τα γνωρίζουν και άλλοι. Γι' αυτό, αν δεν έχετε πια την εφαρμογή, ίσως δεν μπορέσουμε να διαγράψουμε ένα ανώνυμο προφίλ. Μπορείτε πάντως να στείλετε email στο {email} και θα σας εξηγήσουμε τι μπορούμε να κάνουμε."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "Email ειδοποιήσεων έναρξης σε πόλεις"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "Μπορείτε να ανακαλέσετε μια ειδοποίηση έναρξης στην εφαρμογή ή να μας στείλετε email από τη διεύθυνση με την οποία εγγραφήκατε, και θα διαγράψουμε τις εγγραφές αυτής της διεύθυνσης. Τα email των ειδοποιήσεων έναρξης διαγράφονται επίσης αυτόματα, όπως εξηγεί η {privacy} μας."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "Τι διαγράφεται"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "Το προφίλ Radar, το όνομα Radar, οι RadarPoints και το ιστορικό συνεισφορών σας"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "Η σύνδεσή σας με email, αν είχατε λογαριασμό email"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "Οι συνδέσεις μεταξύ του αναγνωριστικού συσκευής του τηλεφώνου σας και του προφίλ σας"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "Οι κωδικοί παραπομπής σας και η κατάσταση ανάγνωσης ή απόρριψης των μηνυμάτων της εφαρμογής"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "Οι εγγραφές σε ειδοποιήσεις έναρξης που συνδέονται με το προφίλ ή το τηλέφωνό σας"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "Σημειώσεις σε αναφορές προβλημάτων, αναφορές κατάστασης και προτάσεις καταστημάτων που συνδέονται με το προφίλ σας"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "Τι μπορεί να διατηρηθεί"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, όπως χρόνοι αναμονής, αναφορές κατάστασης και ετικέτες καταστημάτων, καθώς και προτάσεις καταστημάτων: το αναγνωριστικό συσκευής στις εγγραφές που συνδέονται με το προφίλ σας αντικαθίσταται με τυχαία τιμή, ώστε στη βάση δεδομένων μας να μη συνδέονται πια με το προφίλ σας. Εξακολουθούν να περιέχουν στοιχεία όπως το κατάστημα και η ώρα, επομένως είναι αποπροσδιορισμένες και όχι πλήρως ανώνυμες. Μπορεί να διατηρηθούν ώστε να συνεχίσουν να βοηθούν άλλους διανομείς."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "Προηγούμενες αναφορές"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "{lead} στις οποίες συμμετείχατε, χωρίς το προφίλ σας."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "Εγγραφές παραπομπών"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead} για λογαριασμούς email (μια εσωτερική αναφορά λογαριασμού, το αναγνωριστικό συσκευής, ένα μονόδρομα κρυπτογραφημένο αντίγραφο του μυστικού κωδικού του τηλεφώνου και ημερομηνίες), ώστε η διαγραφή να ολοκληρωθεί με ασφάλεια και να μπορεί να αποδειχθεί ότι έγινε."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "Μια ελάχιστη εγγραφή διαγραφής"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: ο πάροχος της βάσης δεδομένων μας διατηρεί ημερήσια αντίγραφα ασφαλείας για 7 ημέρες, οπότε οι διαγραμμένες πληροφορίες μπορεί να παραμείνουν σε αντίγραφο ασφαλείας έως 7 ημέρες."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "Αντίγραφα ασφαλείας"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "{lead} σχετικά με το αίτημά σας, για όσο χρειάζεται για τον χειρισμό του."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "Email προς την υποστήριξη"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "Για πλήρεις λεπτομέρειες σχετικά με το πόσο καιρό διατηρούμε τα στοιχεία και τα άλλα δικαιώματά σας, δείτε την {privacy} μας."
     }
   }
 }

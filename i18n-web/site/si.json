@@ -2,7 +2,7 @@
   "language": "si",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "මුල් පිටුව"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "මෙම පිටුවේ"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "අවසන් වරට යාවත්කාලීන කළේ: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "රහස්‍යතා ප්‍රතිපත්තිය"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "රහස්‍යතා ප්‍රතිපත්තිය — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "PickupRadar රහස්‍යතා ප්‍රතිපත්තිය."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "රහස්‍යතා ප්‍රතිපත්තියේ කොටස්"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "සාරාංශය සහ කොටස් මාතෘකා පරිවර්තනය කර ඇත. සම්පූර්ණ රහස්‍යතා ප්‍රතිපත්තිය ඉංග්‍රීසියෙන් ඇති අතර, නිල අනුවාදය ඉංග්‍රීසි අනුවාදයයි."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "සාරාංශය"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "අපි කවුද"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "අප එකතු කරන තොරතුරු සහ ඒවා භාවිත කරන ආකාරය"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "අප නොඉල්ලන දේ"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "අපගේ නීතිමය පදනම් (එක්සත් රාජධානිය)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "අප තොරතුරු බෙදා ගන්නේ කා සමඟද"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "ජාත්‍යන්තර මාරු කිරීම්"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "අප තොරතුරු කොපමණ කාලයක් තබා ගන්නේද"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "ඔබේ තේරීම් සහ අයිතිවාසිකම්"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "ආරක්ෂාව"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "ළමයින්"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "මෙම ප්‍රතිපත්තියේ වෙනස්කම්"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "සම්බන්ධ වන්න"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar බෙදාහැරීමේ රියදුරන්ට ඇණවුම් ලබා ගැනීමේදී රැඳී සිටින කාලය සහ ස්ථානවල ගැටලු බැලීමට සහ වාර්තා කිරීමට උදව් කරයි."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "ගිණුමක් නොමැතිව බ්‍රවුස් කළ හැක. යෙදුම ඔබේ දුරකථනය සඳහා නිර්නාමික Radar පැතිකඩක් සාදයි; ඊමේල් ගිණුම අත්‍යවශ්‍ය නොවේ."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "ඔබ ස්ථානයට අවසර දෙන්නේ නම්, යෙදුම එය භාවිත කරන්නේ භාවිතයේදී පමණි: අසල ඇති ලබා ගැනීමේ ස්ථාන පෙළගැස්වීමට, ඔබේ නගරය හඳුනා ගැනීමට, සහ සජීවී වාර්තාවක් යවන විට ඔබ ස්ථානයේ සිටින බව පරීක්ෂා කිරීමට. ඔබේ ස්ථානය වාර්තා සමඟ අප සුරකින්නේ නැත."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "ඔබ සුරැකි ලබා ගැනීමේ ස්ථාන ඔබේ දුරකථනයේම පවතී."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "අප ඔබේ පුද්ගලික තොරතුරු විකුණන්නේ නැති අතර, යෙදුමේ දැන්වීම් හෝ විශ්ලේෂණ ලුහුබඳින්නන් නැත."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "ඔබට යෙදුම තුළ ඔබේ Radar පැතිකඩ හෝ ගිණුම මකා දැමිය හැක, නැතහොත් ඊමේල් කර අපෙන් ඉල්ලිය හැක. {link} බලන්න."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "ඔබේ ගිණුම හෝ දත්ත මකන්න — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "යෙදුම නොමැතිව වුවද ඔබේ PickupRadar ගිණුම, Radar පැතිකඩ සහ අදාළ දත්ත මකා දමන ආකාරය."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "ගිණුම මකා දැමීමේ කොටස්"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "ඔබේ ගිණුම හෝ දත්ත මකන්න"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "ඔබට තවදුරටත් යෙදුම නොමැති වුවද, ඔබේ PickupRadar ගිණුම, Radar පැතිකඩ සහ ඒවාට සම්බන්ධ දත්ත මකා දමන ආකාරය මෙම පිටුව පැහැදිලි කරයි. PickupRadar සංවර්ධනය කළේ Hamza Khan ය."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "යෙදුමේ මකන්න (වේගවත්ම)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "PickupRadar විවෘත කරන්න."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "මුල් තිරයේ පහළ ඇති {profile} තට්ටු කරන්න."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "පහළට අනුචලනය කර, ඔබ RadarPoints ඊමේල් මගින් ආරක්ෂා කර ඇත්නම් {deleteAccount}, නැතිනම් {deleteProfile} තට්ටු කරන්න."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "තහවුරු කිරීමට {confirm} තට්ටු කරන්න."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "මකා දැමීම වහාම ආරම්භ වේ. ඉන්පසු යෙදුම ඔබේ දුරකථනයේ නව නිර්නාමික Radar පැතිකඩක් ආරම්භ කරයි."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "ඔබේ ඊමේල් ගිණුම මකන ලෙස අපෙන් ඉල්ලන්න"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "ඔබ RadarPoints ඊමේල් ලිපිනයකින් ආරක්ෂා කර ඇති අතර යෙදුම භාවිත කළ නොහැකි නම්:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "{from} {email} වෙත “{subject}” යන මාතෘකාව සමඟ ඊමේල් කරන්න."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "ඔබේ PickupRadar ගිණුමේ ඊමේල් ලිපිනයෙන්"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "කිසිවක් මකා දැමීමට පෙර ඉල්ලීම තහවුරු කිරීමට අප එම ලිපිනයට පිළිතුරු දෙන්නෙමු."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "ඔබ වෙනත් ලිපිනයකින් ලියන්නේ නම්, ගිණුමේ ඊමේල් ලිපිනය ඔබේ පාලනයේ ඇති බව අප තහවුරු කළ යුතුය. අප කිසිදා මුරපදයක් හෝ පුරනය වීමේ කේතයක් ඉල්ලන්නේ නැත. ඔබේ කේතය අපට එවන්න එපා."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "නිර්නාමික Radar පැතිකඩ"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "ඔබ කිසිදා ඊමේල් ලිපිනයක් එක් කර නොමැති නම්, ඔබේ Radar පැතිකඩ සම්බන්ධ වී ඇත්තේ දුරකථන යෙදුමේ සුරැකි අහඹු ID එකකට පමණි. එය මකා දැමීමට පහසුම ක්‍රමය ඉහත පියවර අනුගමනය කර යෙදුමේදීය."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "යෙදුම මකා දැමීමෙන් එම ID ඔබේ දුරකථනයෙන් ඉවත් වේ, නමුත් අපගේ සේවාදායකවල ඇති වාර්තා {not}."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "මැකෙන්නේ නැත"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "නිර්නාමික පැතිකඩක හිමිකාරිත්වය ඔප්පු කළ හැක්කේ එය සෑදූ දුරකථනයෙන් පමණි, යෙදුමේ සුරැකි අහඹු ID සහ රහස් කේතය භාවිතයෙන්. Radar නම, නගරය හෝ යෙදුම භාවිත කළ දින වැනි විස්තර අන් අයටද දැනගත හැකි බැවින්, පැතිකඩ ඔබේ බව ඒවායින් ඔප්පු නොවේ. එබැවින් ඔබට තවදුරටත් යෙදුම නොමැති නම්, නිර්නාමික පැතිකඩක් මකා දැමීමට අපට නොහැකි විය හැක. එසේ වුවද ඔබට {email} වෙත ඊමේල් කළ හැකි අතර, අපට කළ හැකි දේ අප පැහැදිලි කරන්නෙමු."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "නගර දියත් කිරීමේ දැනුම්දීම් ඊමේල්"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "ඔබට යෙදුමේ දියත් කිරීමේ දැනුම්දීම ඉල්ලා අස්කර ගත හැක, නැතහොත් ලියාපදිංචි වූ ලිපිනයෙන් අපට ඊමේල් කළහොත් එම ලිපිනයේ ලියාපදිංචි කිරීම් අප මකා දමන්නෙමු. අපගේ {privacy} හි පැහැදිලි කර ඇති පරිදි දියත් කිරීමේ දැනුම්දීම් ඊමේල් ස්වයංක්‍රීයවද මකා දැමේ."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "මැකෙන දේ"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "ඔබේ Radar පැතිකඩ, Radar නම, RadarPoints සහ දායකත්ව ඉතිහාසය"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "ඔබට ඊමේල් ගිණුමක් තිබුණේ නම්, ඔබේ ඊමේල් පුරනය වීම"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "ඔබේ දුරකථනයේ උපාංග ID සහ පැතිකඩ අතර සබැඳි"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "ඔබේ යොමු කේත, සහ යෙදුම් පණිවිඩවල කියවූ හෝ වැසූ තත්ත්වය"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "ඔබේ පැතිකඩ හෝ දුරකථනයට සම්බන්ධ නගර දියත් කිරීමේ දැනුම්දීම් ලියාපදිංචි කිරීම්"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "ඔබේ පැතිකඩට සම්බන්ධ ගැටලු වාර්තා, තත්ත්ව වාර්තා සහ ස්ථාන යෝජනාවල සටහන්"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "තබා ගත හැකි දේ"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, උදා. රැඳී සිටින කාලය, ස්ථානවල තත්ත්ව වාර්තා සහ ටැග්, සහ ස්ථාන යෝජනා: ඔබේ පැතිකඩට සම්බන්ධ වාර්තාවල උපාංග ID අහඹු අගයකින් ප්‍රතිස්ථාපනය කරන බැවින්, අපගේ දත්ත ගබඩාවේ ඒවා තවදුරටත් ඔබේ පැතිකඩට සම්බන්ධ නොවේ. ඒවායේ තවමත් ස්ථානය සහ වේලාව වැනි විස්තර ඇති බැවින් ඒවා හඳුනාගැනීම් ඉවත් කළ ඒවා මිස සම්පූර්ණයෙන් නිර්නාමික නොවේ. අනෙක් රියදුරන්ට දිගටම උදව් කිරීමට ඒවා තබා ගත හැක."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "පෙර වාර්තා"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "ඔබ සහභාගී වූ {lead}, ඔබේ පැතිකඩ නොමැතිව."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "යොමු වාර්තා"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "ඊමේල් ගිණුම් සඳහා {lead} (අභ්‍යන්තර ගිණුම් යොමුවක්, උපාංග ID, දුරකථනයේ රහස් කේතයේ ඒක-දිශා සංකේතනය කළ පිටපතක් සහ දින), මකා දැමීම ආරක්ෂිතව සම්පූර්ණ කිරීමට සහ එය සිදු වූ බව පෙන්වීමට."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "අවම මකා දැමීමේ වාර්තාවක්"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: අපගේ දත්ත ගබඩා සපයන්නා දෛනික උපස්ථ දින 7ක් තබා ගනී, එබැවින් මකා දැමූ තොරතුරු දින 7ක් දක්වා උපස්ථයක පැවතිය හැක."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "උපස්ථ"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "ඔබේ ඉල්ලීම පිළිබඳ {lead}, එය හැසිරවීමට අවශ්‍ය කාලය දක්වා."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "සහාය ඊමේල්"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "අප තොරතුරු කොපමණ කාලයක් තබා ගන්නේද සහ ඔබේ අනෙකුත් අයිතිවාසිකම් පිළිබඳ සම්පූර්ණ විස්තර සඳහා අපගේ {privacy} බලන්න."
     }
   }
 }

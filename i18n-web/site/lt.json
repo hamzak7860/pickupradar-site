@@ -2,7 +2,7 @@
   "language": "lt",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "Pradžia"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "Šiame puslapyje"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "Paskutinį kartą atnaujinta: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "Privatumo politika"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "Privatumo politika — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "PickupRadar privatumo politika."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "Privatumo politikos skyriai"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "Santrauka ir skyrių antraštės išverstos. Visa privatumo politika yra anglų kalba, o oficiali yra anglų kalbos versija."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "Santrauka"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "Kas mes esame"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "Kokią informaciją renkame ir kaip ją naudojame"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "Ko neprašome"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "Mūsų teisiniai pagrindai (JK)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "Su kuo dalijamės informacija"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "Tarptautinis perdavimas"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "Kiek laiko saugome informaciją"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "Jūsų pasirinkimai ir teisės"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "Saugumas"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "Vaikai"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "Šios politikos pakeitimai"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "Kontaktai"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar padeda pristatymo vairuotojams matyti ir pranešti apie laukimo laiką atsiimant užsakymus ir vietų problemas."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "Galite naršyti be paskyros. Programėlė sukuria anoniminį Radar profilį jūsų telefonui, o el. pašto paskyra neprivaloma."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "Jei leisite naudoti vietą, programėlė ją naudoja tik kol ja naudojatės: kad surikiuotų netoliese esančias atsiėmimo vietas, nustatytų jūsų miestą ir patikrintų, ar esate vietoje, kai siunčiate tiesioginį pranešimą. Jūsų vietos kartu su pranešimais nesaugome."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "Išsaugotos atsiėmimo vietos lieka jūsų telefone."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "Neparduodame jūsų asmeninės informacijos, o programėlėje nėra reklamos ar analitikos sekiklių."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "Savo Radar profilį ar paskyrą galite ištrinti programėlėje arba paprašyti mūsų el. paštu. Žr. {link}."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "Ištrinkite paskyrą ar duomenis — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "Kaip ištrinti PickupRadar paskyrą, Radar profilį ir susijusius duomenis, net ir be programėlės."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "Paskyros ištrynimo skyriai"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "Ištrinkite paskyrą ar duomenis"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "Šiame puslapyje paaiškinama, kaip ištrinti PickupRadar paskyrą, Radar profilį ir su jais susijusius duomenis, net jei programėlės nebeturite. PickupRadar kuria Hamza Khan."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "Ištrinkite programėlėje (greičiausia)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "Atidarykite PickupRadar."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "Bakstelėkite {profile} pagrindinio ekrano apačioje."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "Slinkite žemyn ir bakstelėkite {deleteAccount}, jei savo RadarPoints apsaugojote el. paštu, arba {deleteProfile}, jei ne."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "Bakstelėkite {confirm}, kad patvirtintumėte."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "Ištrynimas prasideda iš karto. Po to programėlė jūsų telefone sukuria naują anoniminį Radar profilį."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "Paprašykite mūsų ištrinti jūsų el. pašto paskyrą"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "Jei savo RadarPoints apsaugojote el. pašto adresu ir negalite naudotis programėle:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "Parašykite {email} {from}, tema „{subject}“."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "iš savo PickupRadar paskyros el. pašto adreso"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "Prieš ką nors ištrindami atsakysime tuo adresu, kad patvirtintume prašymą."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "Jei rašote iš kito adreso, turėsime patvirtinti, kad valdote paskyros el. pašto adresą. Niekada neprašysime slaptažodžio ar prisijungimo kodo. Nesiųskite mums savo kodo."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "Anoniminiai Radar profiliai"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "Jei niekada nepridėjote el. pašto adreso, jūsų Radar profilis susietas tik su atsitiktiniu ID, išsaugotu programėlėje jūsų telefone. Lengviausia jį ištrinti programėlėje, atliekant aukščiau nurodytus veiksmus."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "Ištrynus programėlę, tas ID pašalinamas iš telefono, tačiau įrašai mūsų serveriuose {not}."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "neištrinami"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "Anoniminio profilio nuosavybę galima įrodyti tik iš telefono, kuriame jis buvo sukurtas, naudojant programėlėje išsaugotą atsitiktinį ID ir slaptą kodą. Tokie duomenys kaip Radar vardas, miestas ar programėlės naudojimo datos neįrodo, kad profilis jūsų, nes juos gali žinoti ir kiti. Todėl jei programėlės nebeturite, galime nepajėgti ištrinti anoniminio profilio. Vis tiek galite parašyti {email}, ir paaiškinsime, ką galime padaryti."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "Laiškai apie paleidimą miestuose"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "Pranešimą apie paleidimą galite atšaukti programėlėje arba parašyti mums iš adreso, kuriuo užsiregistravote, ir ištrinsime to adreso registracijas. Pranešimų apie paleidimą el. pašto adresai taip pat ištrinami automatiškai, kaip paaiškinta mūsų {privacy}."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "Kas ištrinama"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "Jūsų Radar profilis, Radar vardas, RadarPoints ir indėlio istorija"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "Jūsų prisijungimas el. paštu, jei turėjote el. pašto paskyrą"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "Ryšiai tarp jūsų telefono įrenginio ID ir jūsų profilio"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "Jūsų rekomendacijų kodai ir programėlės žinučių perskaitymo ar uždarymo būsena"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "Registracijos pranešimams apie paleidimą, susietos su jūsų profiliu ar telefonu"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "Pastabos problemų pranešimuose, būsenos pranešimuose ir vietų pasiūlymuose, susietuose su jūsų profiliu"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "Kas gali būti išsaugota"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, pavyzdžiui, laukimo laikas, vietų būsenos pranešimai ir žymos bei vietų pasiūlymai: įrenginio ID su jūsų profiliu susietuose įrašuose pakeičiamas atsitiktine reikšme, todėl mūsų duomenų bazėje jie nebėra susieti su jūsų profiliu. Juose vis dar yra tokios informacijos kaip vieta ir laikas, todėl jie nuasmeninti, bet ne visiškai anoniminiai. Jie gali būti saugomi, kad ir toliau padėtų kitiems vairuotojams."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "Ankstesni pranešimai"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "{lead}, kuriuose dalyvavote, be jūsų profilio."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "Rekomendacijų įrašai"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead} el. pašto paskyroms (vidinė paskyros nuoroda, įrenginio ID, vienpusiškai užšifruota telefono slapto kodo kopija ir datos), kad ištrynimą būtų galima saugiai užbaigti ir įrodyti, jog jis įvyko."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "Minimalus ištrynimo įrašas"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: mūsų duomenų bazės paslaugų teikėjas kasdienes atsargines kopijas saugo 7 dienas, todėl ištrinta informacija atsarginėje kopijoje gali išlikti iki 7 dienų."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "Atsarginės kopijos"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "{lead} dėl jūsų prašymo – tiek, kiek reikia jam išnagrinėti."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "Laiškai pagalbos tarnybai"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "Išsamiau apie tai, kiek laiko saugome informaciją, ir apie kitas jūsų teises skaitykite mūsų {privacy}."
     }
   }
 }

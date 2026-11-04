@@ -2,7 +2,7 @@
   "language": "ga",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "Baile"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "Ar an leathanach seo"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "Nuashonraithe go deireanach: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "Beartas príobháideachais"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "Beartas príobháideachais — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "Beartas príobháideachais PickupRadar."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "Ranna an bheartais príobháideachais"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "Tá an achoimre agus ceannteidil na rannóg aistrithe. Tá an beartas príobháideachais iomlán i mBéarla, agus is é an leagan Béarla an leagan oifigiúil."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "Achoimre"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "Cé sinn féin"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "Cén fhaisnéis a bhailímid agus conas a úsáidimid í"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "An rud nach n-iarraimid"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "Ár mbunús dlí (an Ríocht Aontaithe)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "Cé leis a roinnimid faisnéis"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "Aistrithe idirnáisiúnta"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "Cá fhad a choinnímid faisnéis"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "Do roghanna agus do chearta"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "Slándáil"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "Leanaí"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "Athruithe ar an mbeartas seo"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "Teagmháil"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "Cabhraíonn PickupRadar le tiománaithe seachadta amanna feithimh bailiúcháin agus fadhbanna ionad a fheiceáil agus a thuairisciú."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "Is féidir leat brabhsáil gan chuntas. Cruthaíonn an aip próifíl Radar gan ainm do d'fhón, agus is roghnach cuntas ríomhphoist."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "Má cheadaíonn tú suíomh, ní úsáideann an aip é ach fad atá tú á húsáid: chun pointí bailiúcháin in aice láimhe a shórtáil, do chathair a aithint agus a sheiceáil go bhfuil tú ag an ionad nuair a sheolann tú tuairisc bheo. Ní shábhálaimid do shuíomh le do thuairiscí."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "Fanann na pointí bailiúcháin a shábháil tú ar d'fhón."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "Ní dhíolaimid d'fhaisnéis phearsanta, agus níl aon rianaire fógraíochta ná anailísíochta san aip."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "Is féidir leat do phróifíl Radar nó do chuntas a scriosadh san aip, nó ríomhphost a sheoladh chugainn á iarraidh. Féach {link}."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "Scrios do chuntas nó do shonraí — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "Conas do chuntas PickupRadar, do phróifíl Radar agus sonraí gaolmhara a scriosadh, fiú gan an aip."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "Ranna scriosadh cuntais"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "Scrios do chuntas nó do shonraí"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "Míníonn an leathanach seo conas do chuntas PickupRadar, do phróifíl Radar agus na sonraí atá nasctha leo a scriosadh, fiú mura bhfuil an aip agat a thuilleadh. Is é Hamza Khan a d'fhorbair PickupRadar."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "Scrios san aip (is tapúla)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "Oscail PickupRadar."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "Tapáil {profile} ag bun an scáileáin bhaile."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "Scrollaigh síos agus tapáil {deleteAccount} má chosain tú do RadarPoints le ríomhphost, nó {deleteProfile} mura ndearna."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "Tapáil {confirm} le deimhniú."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "Tosaíonn an scriosadh láithreach. Ina dhiaidh sin tosaíonn an aip próifíl Radar nua gan ainm ar d'fhón."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "Iarr orainn do chuntas ríomhphoist a scriosadh"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "Má chosain tú do RadarPoints le seoladh ríomhphoist agus nach féidir leat an aip a úsáid:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "Seol ríomhphost chuig {email} {from}, leis an ábhar “{subject}”."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "ón seoladh ríomhphoist atá ar do chuntas PickupRadar"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "Freagróimid an seoladh sin chun an t-iarratas a dheimhniú sula scriosfaimid aon rud."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "Má scríobhann tú ó sheoladh eile, beidh orainn a dheimhniú go bhfuil smacht agat ar sheoladh ríomhphoist an chuntais. Ní iarrfaimid pasfhocal ná cód síniú isteach go deo. Ná seol do chód chugainn."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "Próifílí Radar gan ainm"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "Mura ndearna tú seoladh ríomhphoist a chur leis riamh, níl do phróifíl Radar nasctha ach le ID randamach atá sábháilte san aip ar d'fhón. Is é an bealach is éasca chun í a scriosadh ná san aip, leis na céimeanna thuas."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "Baintear an ID sin de d'fhón nuair a scriostar an aip, ach {not} taifid ar ár bhfreastalaithe."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "ní scriostar"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "Ní féidir úinéireacht próifíle gan ainm a chruthú ach ón bhfón ar a cruthaíodh í, ag úsáid an ID randamaigh agus an chóid rúnda atá sábháilte san aip. Ní chruthaíonn sonraí ar nós ainm Radar, cathair nó dátaí úsáide na haipe gur leatsa an phróifíl, mar d'fhéadfadh daoine eile iad a bheith ar eolas acu freisin. Mar sin, mura bhfuil an aip agat a thuilleadh, b'fhéidir nach mbeimid in ann próifíl gan ainm a scriosadh. Is féidir leat ríomhphost a sheoladh chuig {email} mar sin féin agus míneoimid cad is féidir linn a dhéanamh."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "Ríomhphoist foláirimh seolta i gcathracha"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "Is féidir leat foláireamh seolta a tharraingt siar san aip, nó ríomhphost a sheoladh chugainn ón seoladh lenar chláraigh tú agus scriosfaimid na clárúcháin don seoladh sin. Scriostar ríomhphoist foláirimh seolta go huathoibríoch freisin, mar a mhíníonn ár {privacy}."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "Cad a scriostar"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "Do phróifíl Radar, d'ainm Radar, do RadarPoints agus do stair rannpháirtíochta"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "Do shíniú isteach le ríomhphost, má bhí cuntas ríomhphoist agat"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "Naisc idir ID gléis d'fhóin agus do phróifíl"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "Do chóid atreoraithe, agus stádas léite nó dúnta theachtaireachtaí na haipe"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "Clárúcháin foláirimh seolta atá nasctha le do phróifíl nó le d'fhón"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "Nótaí ar thuairiscí fadhbanna, tuairiscí stádais agus moltaí ionad atá nasctha le do phróifíl"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "Cad is féidir a choinneáil"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, mar shampla amanna feithimh, tuairiscí stádais agus clibeanna ionad, agus moltaí ionad: cuirtear luach randamach in ionad an ID gléis i dtaifid atá nasctha le do phróifíl, ionas nach bhfuil siad nasctha le do phróifíl inár mbunachar sonraí a thuilleadh. Tá sonraí fós iontu ar nós ionad agus am, mar sin tá siad díshainaitheanta, ní go hiomlán gan ainm. Féadfar iad a choinneáil ionas go leanfaidh siad ag cabhrú le tiománaithe eile."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "Tuairiscí roimhe seo"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "{lead} a raibh tú páirteach iontu, gan do phróifíl."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "Taifid atreoraithe"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead} do chuntais ríomhphoist (tagairt inmheánach cuntais, an ID gléis, cóip aontreo-chriptithe de chód rúnda an fhóin, agus dátaí), ionas gur féidir an scriosadh a chríochnú go sábháilte agus a léiriú gur tharla sé."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "Taifead íosta scriosta"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: coinníonn ár soláthraí bunachar sonraí cúltacaí laethúla ar feadh 7 lá, mar sin d'fhéadfadh faisnéis scriosta fanacht i gcúltaca ar feadh suas le 7 lá."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "Cúltacaí"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "{lead} faoi d'iarratas, chomh fada agus is gá chun é a láimhseáil."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "Ríomhphoist tacaíochta"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "Le haghaidh sonraí iomlána faoi cá fhad a choinnímid faisnéis agus faoi do chearta eile, féach ár {privacy}."
     }
   }
 }

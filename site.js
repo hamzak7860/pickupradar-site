@@ -66,7 +66,7 @@
     line('shared.skip', 'Skip to content', 'Skip link at the start of every translated page. Not shown until it is focused.');
     line('shared.homeLabel', 'PickupRadar home', 'Accessible name for the PickupRadar logo link. Keep the name PickupRadar.');
     line('shared.navLabel', 'Site', 'Accessible name for the header navigation. Not shown on screen.');
-    line('shared.nav.privacy', 'Privacy', 'Header and footer link to the privacy policy. The policy page itself stays in English.');
+    line('shared.nav.privacy', 'Privacy', 'Header and footer link to the privacy policy.');
     line('shared.nav.preview', 'Live preview', 'Header button and footer link to the live preview page.');
     line('shared.footer.app', 'App', 'Footer heading above the preview and how-it-works links.');
     line('shared.footer.help', 'Help', 'Footer heading above support and the email address.');
@@ -182,6 +182,79 @@
     line('notfound.title', 'This page is off the radar.', 'Heading on the not-found page.');
     line('notfound.body', 'That address isn\'t on the PickupRadar website. These pages are:', 'Text on the not-found page. Keep PickupRadar.');
     line('notfound.home', 'Home', 'Button back to the homepage.');
+    // Privacy policy and delete-account pages (privacy.html, delete-account.html). The delete
+    // page is fully translated. On the privacy page only the title, headings, summary and the
+    // notice are translated; the detailed policy stays in English, which is the official version.
+    app('shared.term.deletePermanently', 'Delete permanently', 'radar.delete.confirm', appLabel);
+    line('legal.toc.title', 'On this page', 'Heading above the list of sections on the privacy and delete-account pages.');
+    line('legal.updated', 'Last updated: {date}', 'Date line under the page title. {date} is the date, written by the browser in the page language.', { domSlots: ['date'] });
+    line('legal.privacyPolicy', 'Privacy Policy', 'Title of the privacy policy page and links to it.');
+    line('privacy.meta.title', 'Privacy Policy — PickupRadar', 'Browser title of the privacy policy page. Keep PickupRadar.');
+    line('privacy.meta.description', 'Privacy Policy for PickupRadar.', 'Search description of the privacy policy page. Keep PickupRadar.');
+    line('privacy.toc.aria', 'Privacy policy sections', 'Accessible name for the list of sections. Not shown on screen.');
+    line('privacy.notice', 'The summary and section headings are translated. The full privacy policy is in English, which is the official version.', 'Notice at the top of the privacy policy, shown only in translated languages. Say clearly that the English text is the official version.');
+    line('privacy.h.summary', 'Summary', 'Privacy policy section heading.');
+    line('privacy.h.who', 'Who we are', 'Privacy policy section heading.');
+    line('privacy.h.collect', 'Information we collect and how we use it', 'Privacy policy section heading.');
+    line('privacy.h.dontAsk', 'What we don’t ask for', 'Privacy policy section heading.');
+    line('privacy.h.legalBases', 'Our legal bases (UK)', 'Privacy policy section heading. UK is the United Kingdom (UK data protection law).');
+    line('privacy.h.share', 'Who we share information with', 'Privacy policy section heading.');
+    line('privacy.h.transfers', 'International transfers', 'Privacy policy section heading (personal data sent to other countries).');
+    line('privacy.h.retention', 'How long we keep information', 'Privacy policy section heading.');
+    line('privacy.h.rights', 'Your choices and rights', 'Privacy policy section heading (privacy rights).');
+    line('privacy.h.security', 'Security', 'Privacy policy section heading.');
+    line('privacy.h.children', 'Children', 'Privacy policy section heading.');
+    line('privacy.h.changes', 'Changes to this policy', 'Privacy policy section heading.');
+    line('privacy.h.contact', 'Contact', 'Privacy policy section heading.');
+    line('privacy.sum.what', 'PickupRadar helps delivery drivers see and report pickup wait times and venue problems.', 'Privacy summary point. Keep PickupRadar. Translate the meaning exactly.');
+    line('privacy.sum.account', 'You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.', 'Privacy summary point. Keep Radar as a name. Translate the meaning exactly.');
+    line('privacy.sum.location', 'If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.', 'Privacy summary point. Translate the meaning exactly: location is used only while the app is in use, and is not saved with reports.');
+    line('privacy.sum.saved', 'Your saved pickup points stay on your phone.', 'Privacy summary point.');
+    line('privacy.sum.noSale', 'We do not sell your personal information and the app contains no advertising or analytics trackers.', 'Privacy summary point. Translate the meaning exactly.');
+    line('privacy.sum.delete', 'You can delete your Radar profile or account in the app, or ask us by email. See {link}.', 'Privacy summary point. {link} is the link to the delete-account page.', { domSlots: ['link'] });
+    line('delete.meta.title', 'Delete your account or data — PickupRadar', 'Browser title of the delete-account page. Keep PickupRadar.');
+    line('delete.meta.description', 'How to delete your PickupRadar account, Radar profile and associated data, including without the app.', 'Search description of the delete-account page. Keep PickupRadar and Radar.');
+    line('delete.toc.aria', 'Delete account sections', 'Accessible name for the list of sections. Not shown on screen.');
+    line('delete.h1', 'Delete your account or data', 'Title of the delete-account page, also used as a link to it.');
+    line('delete.lead', 'This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.', 'Introduction. Keep PickupRadar, Radar and the name Hamza Khan.');
+    line('delete.app.title', 'Delete in the app (quickest)', 'Section heading.');
+    line('delete.app.step1', 'Open PickupRadar.', 'Step 1.');
+    line('delete.app.step2', 'Tap {profile} at the bottom of the Home screen.', 'Step 2. {profile} is the app button name, shown in bold.', { domSlots: ['profile'] });
+    line('delete.app.step3', 'Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.', 'Step 3. {deleteAccount} and {deleteProfile} are the app button names, shown in bold. Keep RadarPoints.', { domSlots: ['deleteAccount', 'deleteProfile'] });
+    line('delete.app.step4', 'Tap {confirm} to confirm.', 'Step 4. {confirm} is the app button name, shown in bold.', { domSlots: ['confirm'] });
+    line('delete.app.after', 'Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.', 'Text after the steps. Keep Radar.');
+    line('delete.email.title', 'Ask us to delete your email account', 'Section heading.');
+    line('delete.email.intro', 'If you protected your RadarPoints with your email address and cannot use the app:', 'Introduction to the email steps. Keep RadarPoints.');
+    line('delete.email.step1', 'Email {email} {from}, with the subject “{subject}”.', 'Email step. {email} is the support address, {from} is the bold phrase, {subject} is the email subject and stays in English. Use the quotation marks of your language.', { domSlots: ['email', 'from', 'subject'] });
+    line('delete.email.from', 'from the email address on your PickupRadar account', 'Bold phrase inside the email step: send the email from the account’s own address. Keep PickupRadar.');
+    line('delete.email.step2', 'We will reply to that address to confirm the request before deleting anything.', 'Email step.');
+    line('delete.email.other', 'If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.', 'Security warning. Translate the meaning exactly: we never ask for a password or code.');
+    line('delete.anon.title', 'Anonymous Radar profiles', 'Section heading. Keep Radar.');
+    line('delete.anon.p1', 'If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.', 'Keep Radar.');
+    line('delete.anon.p2', 'Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.', '{not} is the word "not" in bold. If your language needs the negative elsewhere, keep {not} on the word that makes the sentence negative.', { domSlots: ['not'] });
+    line('delete.anon.not', 'not', 'The bold negative word inside the sentence about deleting the app.');
+    line('delete.anon.p3', 'Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.', '{email} is the support address. Keep Radar. Translate the meaning exactly.', { domSlots: ['email'] });
+    line('delete.alerts.title', 'City launch alert emails', 'Section heading.');
+    line('delete.alerts.body', 'You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.', '{privacy} is the link to the privacy policy.', { domSlots: ['privacy'] });
+    line('delete.deleted.title', 'What is deleted', 'Section heading.');
+    line('delete.deleted.profile', 'Your Radar profile, Radar name, RadarPoints and contribution history', 'List item. Keep Radar and RadarPoints.');
+    line('delete.deleted.email', 'Your email sign-in, if you had an email account', 'List item.');
+    line('delete.deleted.links', 'The links between your phone’s device ID and your profile', 'List item.');
+    line('delete.deleted.referrals', 'Your referral codes, and your read or dismissed status for in-app messages', 'List item.');
+    line('delete.deleted.alerts', 'City launch alert sign-ups linked to your profile or phone', 'List item.');
+    line('delete.deleted.notes', 'Notes on the problem reports, status reports and venue suggestions linked to your profile', 'List item.');
+    line('delete.kept.title', 'What may be kept', 'Section heading.');
+    line('delete.kept.reports', '{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.', '{lead} is the bold start. Translate the meaning exactly: de-identified, not fully anonymous.', { domSlots: ['lead'] });
+    line('delete.kept.reportsLead', 'Past reports', 'Bold start of the list item.');
+    line('delete.kept.referrals', '{lead} that involved you, without your profile.', '{lead} is the bold start.', { domSlots: ['lead'] });
+    line('delete.kept.referralsLead', 'Referral records', 'Bold start of the list item.');
+    line('delete.kept.receipt', '{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.', '{lead} is the bold start. Translate the meaning exactly.', { domSlots: ['lead'] });
+    line('delete.kept.receiptLead', 'A minimal deletion record', 'Bold start of the list item.');
+    line('delete.kept.backups', '{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.', '{lead} is the bold start. Keep the number 7.', { domSlots: ['lead'] });
+    line('delete.kept.backupsLead', 'Backups', 'Bold start of the list item.');
+    line('delete.kept.support', '{lead} about your request, for as long as we need them to deal with it.', '{lead} is the bold start.', { domSlots: ['lead'] });
+    line('delete.kept.supportLead', 'Support emails', 'Bold start of the list item.');
+    line('delete.kept.more', 'See our {privacy} for full details of how long we keep information and your other rights.', '{privacy} is the link to the privacy policy.', { domSlots: ['privacy'] });
     return text;
   })()
   /* SITE_TEXT_END */
@@ -561,10 +634,28 @@
     }
   }
 
+  // Legal pages: dates in the page language, and notes shown only in translated languages.
+  function renderLegal(page) {
+    var dates = document.querySelectorAll('[data-site-date]');
+    for (var d = 0; d < dates.length; d++) {
+      var iso = dates[d].getAttribute('datetime');
+      var value = iso ? new Date(iso + 'T12:00:00Z') : null;
+      if (!value || isNaN(value.getTime())) continue;
+      try {
+        dates[d].textContent = new Intl.DateTimeFormat(page === 'en' ? 'en-GB' : page, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' }).format(value);
+      } catch (error) {
+        // Unknown locale in this browser: keep the English date.
+      }
+    }
+    var notes = document.querySelectorAll('[data-site-translated-only]');
+    for (var n = 0; n < notes.length; n++) notes[n].hidden = page === 'en';
+  }
+
   function render() {
     // English until this language's website translation is published. Structured data stays
     // en-GB: the pages have one English URL each.
     var page = pageLanguage();
+    renderLegal(page);
     document.documentElement.lang = page;
     document.documentElement.dir = page !== 'en' && isRtl(page) ? 'rtl' : 'ltr';
     // The homepage example is a fixed left-to-right mock. Translated labels set their own

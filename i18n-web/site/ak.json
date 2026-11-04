@@ -2,7 +2,7 @@
   "language": "ak",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "Fie"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "Wɔ krataafa yi so"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "Nsakrae a etwa toɔ: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "Kokoamsɛm nhyehyɛe"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "Kokoamsɛm nhyehyɛe — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "PickupRadar kokoamsɛm nhyehyɛe."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "Kokoamsɛm nhyehyɛe no afa"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "Wɔakyerɛ ase tiawa no ne afa no ti ahorow. Kokoamsɛm nhyehyɛe no nyinaa wɔ Borɔfo kasa mu, na Borɔfo kasa mu deɛ no ne deɛ ɛyɛ nokorɛ."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "Tiawa"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "Yɛn ne hwan"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "Nsɛm a yɛboaboa ano ne sɛnea yɛde di dwuma"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "Deɛ yɛmmisa"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "Yɛn mmara nnyinasoɔ (UK)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "Wɔn a yɛne wɔn kyɛ nsɛm"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "Nsɛm a yɛde kɔ amannɔne"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "Berɛ dodoɔ a yɛkora nsɛm"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "Wo nhyehyɛe ne wo hokwan"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "Ahobammɔ"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "Mmofra"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "Nsakrae wɔ nhyehyɛe yi mu"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "Kasa kyerɛ yɛn"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar boa adeɛ-de-kɔ kafo ahwɛfoɔ ma wɔhunu na wɔbɔ amanneɛ fa berɛ a wɔtwɛn ansa na wɔafa nneɛma ne ɔhaw a ɛwɔ beaeɛ ho."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "Wobɛtumi ahwehwɛ a wonni akawnt. App no yɛ Radar profaele a enni din ma wo fon, na imeel akawnt yɛ wo ara apɛdeɛ."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "Sɛ woma ho kwan ma wo beaeɛ a, app no de di dwuma berɛ a woredi ho dwuma nko ara: de hyehyɛ beaeɛ a wɔfa nneɛma a ɛbɛn, de hunu wo kuropɔn, na de hwɛ sɛ wowɔ beaeɛ hɔ berɛ a woresoma amanneɛbɔ ntɛm ara. Yɛnkora wo beaeɛ ne wo amanneɛbɔ nkaa."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "Beaeɛ a wode asie a wɔfa nneɛma no tena wo fon so."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "Yɛntɔn wo ankasa wo nsɛm, na app no nni dwadie anaa nhwehwɛmu akyidifoɔ biara."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "Wobɛtumi ayi wo Radar profaele anaa wo akawnt afiri app no mu, anaa wobɛtumi de imeel abisa yɛn. Hwɛ {link}."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "Yi wo akawnt anaa wo data firi hɔ — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "Sɛnea wobɛyi wo PickupRadar akawnt, Radar profaele ne data a ɛfa ho afiri hɔ, sɛ wonni app no mpo a."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "Akawnt yiyi ho afa"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "Yi wo akawnt anaa wo data firi hɔ"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "Krataafa yi kyerɛkyerɛ sɛnea wobɛyi wo PickupRadar akawnt, wo Radar profaele ne data a ɛbɔ wɔn ho afiri hɔ, sɛ wonni app no bio mpo a. Hamza Khan na ɔyɛɛ PickupRadar."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "Yi firi app no mu (ɛyɛ ntɛm paa)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "Bue PickupRadar."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "Mia {profile} wɔ fie skrin no ase."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "Twe kɔ fam na mia {deleteAccount} sɛ wode imeel abɔ wo RadarPoints ho ban a, anyɛ saa a mia {deleteProfile}."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "Mia {confirm} de si so dua."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "Yiyi no fi aseɛ ntɛm ara. Ɛno akyi no app no fi Radar profaele foforɔ a enni din ase wɔ wo fon so."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "Bisa yɛn ma yɛnyi wo imeel akawnt"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "Sɛ wode imeel address abɔ wo RadarPoints ho ban na wontumi mfa app no nni dwuma a:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "Fa imeel kɔ {email} {from}, na ne asɛmti nyɛ “{subject}”."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "firi imeel address a ɛwɔ wo PickupRadar akawnt so"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "Yɛbɛma address no mmuaeɛ de asi abisadeɛ no so dua ansa na yɛayi biribiara."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "Sɛ wofiri address foforɔ so kyerɛw a, ɛsɛ sɛ yɛhunu sɛ wo na wodi akawnt no imeel address no so. Yɛremmisa password anaa sign-in koodu da. Mmfa wo koodu mmrɛ yɛn."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "Radar profaele a enni din"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "Sɛ wonnyaa imeel address mmfaa nkaa da a, wo Radar profaele no bɔ ID a ɛyɛ akwanhyia a wɔde asie wɔ app no mu wɔ wo fon so nko ara ho. Ɛkwan a ɛyɛ mmerɛ sene biara a wobɛfa so ayi no ne app no mu, a wode anammɔn a ɛwɔ soro no bɛdi dwuma."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "Sɛ woyi app no a, ɛyi ID no firi wo fon so, nanso {not} nkrataa a ɛwɔ yɛn server so."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "ɛnnyi"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "Wɔbɛtumi akyerɛ sɛ profaele a enni din yɛ wo dea firi fon a wɔde yɛɛ no so nko ara, de ID a ɛyɛ akwanhyia ne kokoam koodu a wɔde asie wɔ app no mu di dwuma. Nsɛm te sɛ Radar din, kuropɔn anaa nna a wode app no dii dwuma nkyerɛ sɛ profaele no yɛ wo dea, ɛfiri sɛ afoforɔ nso bɛtumi ahu. Enti sɛ wonni app no bio a, ebia yɛrentumi nyi profaele a enni din no. Nanso wobɛtumi de imeel akɔ {email} na yɛbɛkyerɛkyerɛ deɛ yɛbɛtumi ayɛ."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "Kuropɔn mu ahyɛaseɛ ho amanneɛbɔ imeel"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "Wobɛtumi atwe ahyɛaseɛ amanneɛbɔ no firi app no mu, anaa wode imeel firi address a wode kyerɛw wo din no so bɛba yɛn hɔ na yɛbɛyi address no din kyerɛw. Wɔyi ahyɛaseɛ amanneɛbɔ imeel no nso ankasa, sɛnea yɛn {privacy} kyerɛkyerɛ mu no."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "Deɛ wɔyi"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "Wo Radar profaele, Radar din, RadarPoints ne deɛ woaboa ho abakɔsɛm"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "Wo imeel sign-in, sɛ na wowɔ imeel akawnt a"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "Nkitahodie a ɛda wo fon device ID ne wo profaele ntam"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "Wo referral koodu, ne app nkrasɛm a woakenkan anaa woato mu tebea"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "Ahyɛaseɛ amanneɛbɔ din kyerɛw a ɛbɔ wo profaele anaa wo fon ho"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "Nsɛm a wɔkyerɛw wɔ ɔhaw amanneɛbɔ, tebea amanneɛbɔ ne beaeɛ ho nyansahyɛ a ɛbɔ wo profaele ho so"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "Deɛ wɔbɛtumi akora so"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, te sɛ twɛn berɛ, beaeɛ tebea amanneɛbɔ ne nsɛnkyerɛnne, ne beaeɛ ho nyansahyɛ: wɔde boɔ a ɛyɛ akwanhyia si device ID a ɛwɔ nkrataa a ɛbɔ wo profaele ho no ananmu, enti wɔ yɛn database mu no ɛmmɔ wo profaele ho bio. Nsɛm te sɛ beaeɛ ne berɛ da so wɔ mu, enti wɔayi nipa nsɛnkyerɛnne afiri mu, nanso ɛnyɛ deɛ enni din koraa. Wɔbɛtumi akora so sɛnea ɛbɛkɔ so aboa kafo ahwɛfoɔ afoforɔ."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "Amanneɛbɔ a atwam"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "{lead} a wokaa ho bi, a wo profaele nka ho."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "Referral nkrataa"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead} ma imeel akawnt (akawnt kyerɛwtohɔ a ɛwɔ mu, device ID, fon no kokoam koodu kɔpi a wɔde ɔkwan baako akyerɛw ahintaw, ne nna), sɛnea yiyi no bɛwie wɔ ahobammɔ mu na wɔatumi akyerɛ sɛ ɛkɔɔ so."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "Yiyi ho kyerɛwtohɔ ketewaa bi"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: yɛn database ɔmaefoɔ kora da biara backup nna 7, enti nsɛm a wɔayi no bɛtumi atena backup mu akosi nna 7."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "Backup"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "{lead} a ɛfa wo abisadeɛ ho, berɛ dodoɔ a ɛho hia de adi ho dwuma."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "Mmoa imeel"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "Sɛ wopɛ nsɛm nyinaa a ɛfa berɛ dodoɔ a yɛkora nsɛm ne wo hokwan afoforɔ ho a, hwɛ yɛn {privacy}."
     }
   }
 }

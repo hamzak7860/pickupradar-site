@@ -2,7 +2,7 @@
   "language": "bn",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "হোম"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "এই পৃষ্ঠায়"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "সর্বশেষ আপডেট: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "গোপনীয়তা নীতি"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "গোপনীয়তা নীতি — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "PickupRadar-এর গোপনীয়তা নীতি।"
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "গোপনীয়তা নীতির অংশগুলো"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "সারাংশ ও অংশের শিরোনামগুলো অনুবাদ করা হয়েছে। সম্পূর্ণ গোপনীয়তা নীতি ইংরেজিতে, আর ইংরেজি সংস্করণটিই অফিসিয়াল।"
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "সারাংশ"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "আমরা কারা"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "আমরা কোন তথ্য সংগ্রহ করি ও কীভাবে ব্যবহার করি"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "আমরা যা চাই না"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "আমাদের আইনি ভিত্তি (যুক্তরাজ্য)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "আমরা কার সঙ্গে তথ্য শেয়ার করি"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "আন্তর্জাতিক স্থানান্তর"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "আমরা কতদিন তথ্য রাখি"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "আপনার পছন্দ ও অধিকার"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "নিরাপত্তা"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "শিশু"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "এই নীতির পরিবর্তন"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "যোগাযোগ"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar ডেলিভারি ড্রাইভারদের পিকআপের অপেক্ষার সময় ও ভেন্যুর সমস্যা দেখতে ও রিপোর্ট করতে সাহায্য করে।"
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "অ্যাকাউন্ট না খুলেই আপনি ব্রাউজ করতে পারেন। অ্যাপটি আপনার ফোনের জন্য একটি বেনামি Radar প্রোফাইল তৈরি করে, আর ইমেল অ্যাকাউন্ট ঐচ্ছিক।"
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "আপনি লোকেশনের অনুমতি দিলে, অ্যাপ ব্যবহারের সময়ই অ্যাপটি তা ব্যবহার করে: কাছের পিকআপ পয়েন্ট সাজাতে, আপনার শহর শনাক্ত করতে এবং লাইভ রিপোর্ট পাঠানোর সময় আপনি ভেন্যুতে আছেন কি না তা যাচাই করতে। আমরা আপনার রিপোর্টের সঙ্গে আপনার লোকেশন সংরক্ষণ করি না।"
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "আপনার সংরক্ষিত পিকআপ পয়েন্টগুলো আপনার ফোনেই থাকে।"
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "আমরা আপনার ব্যক্তিগত তথ্য বিক্রি করি না, এবং অ্যাপে কোনো বিজ্ঞাপন বা অ্যানালিটিক্স ট্র্যাকার নেই।"
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "আপনি অ্যাপে আপনার Radar প্রোফাইল বা অ্যাকাউন্ট মুছে ফেলতে পারেন, অথবা ইমেলে আমাদের বলতে পারেন। দেখুন {link}।"
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "আপনার অ্যাকাউন্ট বা ডেটা মুছে ফেলুন — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "অ্যাপ ছাড়াও কীভাবে আপনার PickupRadar অ্যাকাউন্ট, Radar প্রোফাইল ও সংশ্লিষ্ট ডেটা মুছবেন।"
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "অ্যাকাউন্ট মুছে ফেলার অংশগুলো"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "আপনার অ্যাকাউন্ট বা ডেটা মুছে ফেলুন"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "এই পৃষ্ঠায় ব্যাখ্যা করা হয়েছে কীভাবে আপনার PickupRadar অ্যাকাউন্ট, আপনার Radar প্রোফাইল এবং সেগুলোর সঙ্গে যুক্ত ডেটা মুছবেন, এমনকি আপনার কাছে অ্যাপটি আর না থাকলেও। PickupRadar তৈরি করেছেন Hamza Khan।"
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "অ্যাপে মুছুন (সবচেয়ে দ্রুত)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "PickupRadar খুলুন।"
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "হোম স্ক্রিনের নিচে {profile}-এ ট্যাপ করুন।"
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "নিচে স্ক্রল করুন এবং আপনি ইমেল দিয়ে আপনার RadarPoints সুরক্ষিত করে থাকলে {deleteAccount}-এ, না করলে {deleteProfile}-এ ট্যাপ করুন।"
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "নিশ্চিত করতে {confirm}-এ ট্যাপ করুন।"
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "মুছে ফেলা সঙ্গে সঙ্গে শুরু হয়। এরপর অ্যাপটি আপনার ফোনে একটি নতুন বেনামি Radar প্রোফাইল শুরু করে।"
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "আপনার ইমেল অ্যাকাউন্ট মুছতে আমাদের বলুন"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "আপনি যদি ইমেল ঠিকানা দিয়ে আপনার RadarPoints সুরক্ষিত করে থাকেন এবং অ্যাপ ব্যবহার করতে না পারেন:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "{from} {email}-এ ইমেল করুন, বিষয় দিন “{subject}”।"
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "আপনার PickupRadar অ্যাকাউন্টের ইমেল ঠিকানা থেকে"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "কিছু মোছার আগে অনুরোধটি নিশ্চিত করতে আমরা সেই ঠিকানায় উত্তর দেব।"
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "আপনি অন্য ঠিকানা থেকে লিখলে, অ্যাকাউন্টের ইমেল ঠিকানাটি আপনার নিয়ন্ত্রণে আছে কি না তা আমাদের নিশ্চিত করতে হবে। আমরা কখনো পাসওয়ার্ড বা সাইন-ইন কোড চাইব না। আপনার কোড আমাদের পাঠাবেন না।"
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "বেনামি Radar প্রোফাইল"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "আপনি কখনো ইমেল ঠিকানা যোগ না করে থাকলে, আপনার Radar প্রোফাইল শুধু আপনার ফোনের অ্যাপে সংরক্ষিত একটি র‍্যান্ডম আইডির সঙ্গে যুক্ত। এটি মোছার সবচেয়ে সহজ উপায় হলো উপরের ধাপগুলো অনুসরণ করে অ্যাপে মোছা।"
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "অ্যাপ মুছে ফেললে আপনার ফোন থেকে সেই আইডি সরে যায়, কিন্তু আমাদের সার্ভারের রেকর্ড {not}।"
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "মোছে না"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "একটি বেনামি প্রোফাইলের মালিকানা শুধু সেই ফোন থেকেই প্রমাণ করা যায় যেখানে সেটি তৈরি হয়েছিল, অ্যাপে সংরক্ষিত র‍্যান্ডম আইডি ও গোপন কোড ব্যবহার করে। Radar নাম, শহর বা আপনি কবে অ্যাপ ব্যবহার করেছেন তা দিয়ে প্রোফাইলটি আপনার বলে প্রমাণ হয় না, কারণ অন্যরাও এসব জানতে পারে। তাই আপনার কাছে অ্যাপটি আর না থাকলে আমরা হয়তো বেনামি প্রোফাইল মুছতে পারব না। তবু আপনি {email}-এ ইমেল করতে পারেন, আমরা জানাব কী করা সম্ভব।"
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "শহরে চালুর সতর্কবার্তা ইমেল"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "আপনি অ্যাপে চালুর সতর্কবার্তা প্রত্যাহার করতে পারেন, অথবা যে ঠিকানা দিয়ে সাইন আপ করেছিলেন সেখান থেকে আমাদের ইমেল করলে আমরা সেই ঠিকানার সাইন-আপগুলো মুছে দেব। চালুর সতর্কবার্তার ইমেলগুলো স্বয়ংক্রিয়ভাবেও মুছে যায়, যেমন আমাদের {privacy}-তে ব্যাখ্যা করা আছে।"
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "যা মুছে ফেলা হয়"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "আপনার Radar প্রোফাইল, Radar নাম, RadarPoints ও অবদানের ইতিহাস"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "আপনার ইমেল সাইন-ইন, যদি আপনার ইমেল অ্যাকাউন্ট থাকে"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "আপনার ফোনের ডিভাইস আইডি ও আপনার প্রোফাইলের মধ্যকার সংযোগ"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "আপনার রেফারেল কোড, এবং অ্যাপের বার্তাগুলোর পড়া বা বাতিল করা অবস্থা"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "আপনার প্রোফাইল বা ফোনের সঙ্গে যুক্ত শহরে চালুর সতর্কবার্তার সাইন-আপ"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "আপনার প্রোফাইলের সঙ্গে যুক্ত সমস্যা রিপোর্ট, স্ট্যাটাস রিপোর্ট ও ভেন্যু প্রস্তাবের নোট"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "যা রেখে দেওয়া হতে পারে"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, যেমন অপেক্ষার সময়, ভেন্যুর স্ট্যাটাস রিপোর্ট ও ট্যাগ, এবং ভেন্যু প্রস্তাব: আপনার প্রোফাইলের সঙ্গে যুক্ত রেকর্ডের ডিভাইস আইডি একটি র‍্যান্ডম মান দিয়ে বদলে দেওয়া হয়, ফলে আমাদের ডেটাবেসে সেগুলো আর আপনার প্রোফাইলের সঙ্গে যুক্ত থাকে না। এগুলোতে তখনো ভেন্যু ও সময়ের মতো তথ্য থাকে, তাই এগুলো পরিচয়বিহীন করা, পুরোপুরি বেনামি নয়। অন্য ড্রাইভারদের সাহায্য করতে এগুলো রাখা হতে পারে।"
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "আগের রিপোর্ট"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "আপনি জড়িত ছিলেন এমন {lead}, আপনার প্রোফাইল ছাড়া।"
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "রেফারেল রেকর্ড"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "ইমেল অ্যাকাউন্টের জন্য {lead} (একটি অভ্যন্তরীণ অ্যাকাউন্ট রেফারেন্স, ডিভাইস আইডি, ফোনের গোপন কোডের একমুখী এলোমেলো কপি ও তারিখ), যাতে মুছে ফেলা নিরাপদে শেষ করা যায় এবং তা হয়েছে বলে দেখানো যায়।"
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "একটি ন্যূনতম মুছে ফেলার রেকর্ড"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: আমাদের ডেটাবেস প্রদানকারী প্রতিদিনের ব্যাকআপ 7 দিন রাখে, তাই মুছে ফেলা তথ্য সর্বোচ্চ 7 দিন পর্যন্ত ব্যাকআপে থেকে যেতে পারে।"
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "ব্যাকআপ"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "আপনার অনুরোধ সম্পর্কে {lead}, তা সামলাতে যতদিন দরকার ততদিন।"
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "সাপোর্ট ইমেল"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "আমরা কতদিন তথ্য রাখি এবং আপনার অন্যান্য অধিকার সম্পর্কে সম্পূর্ণ বিবরণের জন্য আমাদের {privacy} দেখুন।"
     }
   }
 }

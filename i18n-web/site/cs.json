@@ -2,7 +2,7 @@
   "language": "cs",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "Domů"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "Na této stránce"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "Naposledy aktualizováno: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "Zásady ochrany osobních údajů"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "Zásady ochrany osobních údajů — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "Zásady ochrany osobních údajů PickupRadar."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "Oddíly zásad ochrany osobních údajů"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "Shrnutí a nadpisy oddílů jsou přeložené. Úplné zásady ochrany osobních údajů jsou v angličtině a oficiální je anglická verze."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "Shrnutí"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "Kdo jsme"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "Jaké údaje shromažďujeme a jak je používáme"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "Co po vás nežádáme"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "Naše právní základy (Spojené království)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "S kým údaje sdílíme"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "Mezinárodní předávání"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "Jak dlouho údaje uchováváme"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "Vaše možnosti a práva"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "Zabezpečení"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "Děti"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "Změny těchto zásad"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "Kontakt"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar pomáhá řidičům rozvozu vidět a hlásit čekací doby při vyzvednutí a problémy na místech."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "Aplikaci můžete používat bez účtu. Aplikace pro váš telefon vytvoří anonymní profil Radar a e-mailový účet je volitelný."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "Pokud povolíte přístup k poloze, aplikace ji používá jen během používání: k řazení blízkých míst vyzvednutí, zjištění vašeho města a ověření, že jste na místě, když odesíláte hlášení v reálném čase. Vaši polohu s hlášeními neukládáme."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "Vaše uložená místa vyzvednutí zůstávají ve vašem telefonu."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "Vaše osobní údaje neprodáváme a aplikace neobsahuje žádné reklamní ani analytické sledovače."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "Svůj profil Radar nebo účet můžete smazat v aplikaci nebo nás o to požádat e-mailem. Viz {link}."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "Smazání účtu nebo dat — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "Jak smazat účet PickupRadar, profil Radar a související data, i bez aplikace."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "Oddíly o smazání účtu"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "Smazání účtu nebo dat"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "Tato stránka vysvětluje, jak smazat účet PickupRadar, profil Radar a data s nimi spojená, i když už aplikaci nemáte. PickupRadar vyvíjí Hamza Khan."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "Smazání v aplikaci (nejrychlejší)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "Otevřete PickupRadar."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "Klepněte na {profile} v dolní části domovské obrazovky."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "Posuňte se dolů a klepněte na {deleteAccount}, pokud jste své RadarPoints zabezpečili e-mailem, jinak na {deleteProfile}."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "Potvrďte klepnutím na {confirm}."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "Mazání začne okamžitě. Poté aplikace ve vašem telefonu založí nový anonymní profil Radar."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "Požádejte nás o smazání e-mailového účtu"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "Pokud jste své RadarPoints zabezpečili e-mailovou adresou a nemůžete aplikaci používat:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "Napište na {email} {from}, s předmětem „{subject}“."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "z e-mailové adresy vašeho účtu PickupRadar"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "Než cokoli smažeme, odpovíme na tuto adresu, abychom žádost potvrdili."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "Pokud píšete z jiné adresy, musíme ověřit, že máte přístup k e-mailové adrese účtu. Nikdy nebudeme žádat heslo ani přihlašovací kód. Svůj kód nám neposílejte."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "Anonymní profily Radar"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "Pokud jste nikdy nepřidali e-mailovou adresu, je váš profil Radar spojen jen s náhodným ID uloženým v aplikaci ve vašem telefonu. Nejjednodušší je smazat ho v aplikaci podle výše uvedených kroků."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "Smazáním aplikace se toto ID z telefonu odstraní, ale záznamy na našich serverech se tím {not}."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "nesmažou"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "Vlastnictví anonymního profilu lze prokázat pouze z telefonu, na kterém byl vytvořen, pomocí náhodného ID a tajného kódu uložených v aplikaci. Údaje jako jméno Radar, město nebo data používání aplikace neprokazují, že profil patří vám, protože je mohou znát i jiní. Pokud už aplikaci nemáte, nemusíme proto anonymní profil dokázat smazat. Přesto nám můžete napsat na {email} a vysvětlíme, co můžeme udělat."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "E-maily o spuštění ve městech"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "Upozornění na spuštění můžete zrušit v aplikaci, nebo nám napište z adresy, kterou jste použili při registraci, a registrace pro tuto adresu smažeme. E-maily pro upozornění na spuštění se také mažou automaticky, jak vysvětlují naše {privacy}."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "Co se smaže"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "Váš profil Radar, jméno Radar, RadarPoints a historie příspěvků"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "Vaše přihlášení e-mailem, pokud jste měli e-mailový účet"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "Propojení mezi ID zařízení vašeho telefonu a vaším profilem"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "Vaše doporučovací kódy a stav přečtení nebo zavření zpráv v aplikaci"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "Registrace k upozorněním na spuštění spojené s vaším profilem nebo telefonem"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "Poznámky v hlášeních problémů, hlášeních stavu a návrzích míst spojených s vaším profilem"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "Co může být zachováno"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, například čekací doby, hlášení stavu a štítky míst a návrhy míst: ID zařízení v záznamech spojených s vaším profilem se nahradí náhodnou hodnotou, takže v naší databázi již nejsou s vaším profilem propojeny. Stále obsahují údaje jako místo a čas, proto jsou deidentifikované, nikoli zcela anonymní. Mohou být zachovány, aby dál pomáhaly ostatním řidičům."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "Dřívější hlášení"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "{lead}, kterých jste se účastnili, bez vašeho profilu."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "Záznamy o doporučení"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead} u e-mailových účtů (interní odkaz na účet, ID zařízení, jednosměrně zašifrovaná kopie tajného kódu telefonu a data), aby bylo možné smazání bezpečně dokončit a prokázat."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "Minimální záznam o smazání"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: náš poskytovatel databáze uchovává denní zálohy 7 dní, takže smazané údaje mohou v záloze zůstat až 7 dní."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "Zálohy"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "{lead} týkající se vaší žádosti, po dobu nutnou k jejímu vyřízení."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "E-maily podpoře"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "Podrobnosti o tom, jak dlouho údaje uchováváme, a o vašich dalších právech najdete v našich {privacy}."
     }
   }
 }

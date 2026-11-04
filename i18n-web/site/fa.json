@@ -2,7 +2,7 @@
   "language": "fa",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "خانه"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "در این صفحه"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "آخرین به‌روزرسانی: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "سیاست حریم خصوصی"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "سیاست حریم خصوصی — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "سیاست حریم خصوصی PickupRadar."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "بخش‌های سیاست حریم خصوصی"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "خلاصه و عنوان بخش‌ها ترجمه شده‌اند. متن کامل سیاست حریم خصوصی به انگلیسی است و نسخهٔ انگلیسی نسخهٔ رسمی است."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "خلاصه"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "ما چه کسی هستیم"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "چه اطلاعاتی جمع‌آوری می‌کنیم و چگونه از آن استفاده می‌کنیم"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "آنچه از شما نمی‌خواهیم"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "مبانی قانونی ما (بریتانیا)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "اطلاعات را با چه کسانی به اشتراک می‌گذاریم"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "انتقال‌های بین‌المللی"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "اطلاعات را چه مدت نگه می‌داریم"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "انتخاب‌ها و حقوق شما"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "امنیت"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "کودکان"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "تغییرات این سیاست"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "تماس"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar به رانندگان پیک کمک می‌کند زمان انتظار برای تحویل گرفتن سفارش و مشکلات محل‌ها را ببینند و گزارش کنند."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "می‌توانید بدون حساب کاربری مرور کنید. برنامه برای تلفن شما یک نمایهٔ ناشناس Radar می‌سازد و حساب ایمیلی اختیاری است."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "اگر اجازهٔ دسترسی به مکان را بدهید، برنامه فقط هنگام استفاده از آن بهره می‌برد: برای مرتب کردن نقاط تحویل نزدیک، تشخیص شهر شما و بررسی اینکه هنگام ارسال گزارش زنده در محل هستید. مکان شما را همراه گزارش‌هایتان ذخیره نمی‌کنیم."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "نقاط تحویلی که ذخیره کرده‌اید روی تلفن شما می‌مانند."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "اطلاعات شخصی شما را نمی‌فروشیم و برنامه هیچ ردیاب تبلیغاتی یا تحلیلی ندارد."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "می‌توانید نمایهٔ Radar یا حساب خود را در برنامه حذف کنید یا با ایمیل از ما بخواهید. ببینید {link}."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "حذف حساب یا داده‌ها — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "چگونه حساب PickupRadar، نمایهٔ Radar و داده‌های مرتبط را حذف کنید، حتی بدون برنامه."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "بخش‌های حذف حساب"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "حذف حساب یا داده‌ها"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "این صفحه توضیح می‌دهد چگونه حساب PickupRadar، نمایهٔ Radar و داده‌های مرتبط با آن‌ها را حذف کنید، حتی اگر دیگر برنامه را ندارید. PickupRadar را Hamza Khan ساخته است."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "حذف در برنامه (سریع‌ترین راه)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "PickupRadar را باز کنید."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "روی {profile} در پایین صفحهٔ اصلی بزنید."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "به پایین بروید و اگر RadarPoints خود را با ایمیل محافظت کرده‌اید روی {deleteAccount} و در غیر این صورت روی {deleteProfile} بزنید."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "برای تأیید روی {confirm} بزنید."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "حذف بلافاصله آغاز می‌شود. پس از آن برنامه یک نمایهٔ ناشناس جدید Radar روی تلفن شما می‌سازد."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "از ما بخواهید حساب ایمیلی شما را حذف کنیم"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "اگر RadarPoints خود را با یک نشانی ایمیل محافظت کرده‌اید و نمی‌توانید از برنامه استفاده کنید:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "{from} به {email} ایمیل بزنید، با موضوع «{subject}»."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "از نشانی ایمیل حساب PickupRadar خود"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "پیش از حذف هر چیزی، برای تأیید درخواست به همان نشانی پاسخ می‌دهیم."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "اگر از نشانی دیگری بنویسید، باید تأیید کنیم که نشانی ایمیل حساب در اختیار شماست. هرگز رمز عبور یا کد ورود نمی‌خواهیم. کد خود را برای ما نفرستید."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "نمایه‌های ناشناس Radar"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "اگر هرگز نشانی ایمیل اضافه نکرده‌اید، نمایهٔ Radar شما فقط به یک شناسهٔ تصادفی ذخیره‌شده در برنامهٔ تلفنتان وصل است. ساده‌ترین راه حذف آن، انجام مراحل بالا در برنامه است."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "حذف برنامه آن شناسه را از تلفن شما پاک می‌کند، اما سوابق روی سرورهای ما را {not}."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "حذف نمی‌کند"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "مالکیت یک نمایهٔ ناشناس فقط از تلفنی که آن را ساخته، با شناسهٔ تصادفی و کد مخفی ذخیره‌شده در برنامه، قابل اثبات است. جزئیاتی مانند نام Radar، شهر یا تاریخ‌های استفاده از برنامه ثابت نمی‌کنند که نمایه متعلق به شماست، زیرا دیگران هم ممکن است آن‌ها را بدانند. بنابراین اگر دیگر برنامه را ندارید، ممکن است نتوانیم نمایهٔ ناشناس را حذف کنیم. همچنان می‌توانید به {email} ایمیل بزنید تا توضیح دهیم چه کاری از ما برمی‌آید."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "ایمیل‌های اطلاع‌رسانی راه‌اندازی در شهرها"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "می‌توانید اطلاع‌رسانی راه‌اندازی را در برنامه لغو کنید، یا از نشانی‌ای که با آن ثبت‌نام کرده‌اید به ما ایمیل بزنید تا ثبت‌نام‌های آن نشانی را حذف کنیم. ایمیل‌های اطلاع‌رسانی راه‌اندازی همچنین به‌طور خودکار حذف می‌شوند، همان‌طور که در {privacy} ما آمده است."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "چه چیزی حذف می‌شود"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "نمایهٔ Radar، نام Radar، RadarPoints و سابقهٔ مشارکت شما"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "ورود با ایمیل، اگر حساب ایمیلی داشته‌اید"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "پیوندهای میان شناسهٔ دستگاه تلفن شما و نمایه‌تان"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "کدهای معرفی شما و وضعیت خوانده‌شده یا بسته‌شدهٔ پیام‌های برنامه"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "ثبت‌نام‌های اطلاع‌رسانی راه‌اندازی مرتبط با نمایه یا تلفن شما"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "یادداشت‌های گزارش‌های مشکل، گزارش‌های وضعیت و پیشنهادهای محل مرتبط با نمایهٔ شما"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "چه چیزی ممکن است نگه داشته شود"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}، مانند زمان‌های انتظار، گزارش‌های وضعیت و برچسب‌های محل‌ها و پیشنهادهای محل: شناسهٔ دستگاه در سوابق مرتبط با نمایهٔ شما با یک مقدار تصادفی جایگزین می‌شود، بنابراین در پایگاه دادهٔ ما دیگر به نمایهٔ شما مرتبط نیستند. این سوابق همچنان جزئیاتی مانند محل و زمان دارند، پس هویت‌زدایی شده‌اند، نه کاملاً ناشناس. ممکن است نگه داشته شوند تا همچنان به رانندگان دیگر کمک کنند."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "گزارش‌های گذشته"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "{lead} که در آن‌ها مشارکت داشته‌اید، بدون نمایهٔ شما."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "سوابق معرفی"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead} برای حساب‌های ایمیلی (یک ارجاع داخلی به حساب، شناسهٔ دستگاه، نسخه‌ای با رمزگذاری یک‌طرفه از کد مخفی تلفن و تاریخ‌ها)، تا حذف به‌صورت امن کامل شود و بتوان نشان داد انجام شده است."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "حداقل سابقهٔ حذف"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: ارائه‌دهندهٔ پایگاه دادهٔ ما پشتیبان‌های روزانه را ۷ روز نگه می‌دارد، بنابراین اطلاعات حذف‌شده ممکن است تا ۷ روز در یک پشتیبان بماند."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "پشتیبان‌ها"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "{lead} دربارهٔ درخواست شما، تا زمانی که برای رسیدگی به آن لازم باشد."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "ایمیل‌های پشتیبانی"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "برای جزئیات کامل دربارهٔ مدت نگهداری اطلاعات و دیگر حقوق خود، {privacy} ما را ببینید."
     }
   }
 }

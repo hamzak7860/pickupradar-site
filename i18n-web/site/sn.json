@@ -2,7 +2,7 @@
   "language": "sn",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "Imba"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "Pane peji ino"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "Yakagadziridzwa pekupedzisira: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "Mutemo wekuvanzika"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "Mutemo wekuvanzika — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "Mutemo wekuvanzika wePickupRadar."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "Zvikamu zvemutemo wekuvanzika"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "Pfupiso nemisoro yezvikamu zvakaturikirwa. Mutemo wekuvanzika wakazara uri muChirungu, uye shanduro yeChirungu ndiyo yepamutemo."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "Pfupiso"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "Tiri vanaani"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "Ruzivo rwatinounganidza uye mashandisiro atinoruita"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "Zvatisingakumbiri"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "Hwaro hwedu hwemutemo (UK)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "Vatinogovana navo ruzivo"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "Kutumira ruzivo kunze kwenyika"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "Kuti tinochengeta ruzivo kwenguva yakareba sei"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "Sarudzo nekodzero dzako"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "Kuchengetedzeka"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "Vana"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "Shanduko kumutemo uyu"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "Taura nesu"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar inobatsira vatyairi vanoendesa zvinhu kuona nekushuma nguva yekumirira pakutora maodha nematambudziko enzvimbo."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "Unogona kutarisa usina akaundi. App inogadzira purofira yeRadar isina zita yefoni yako, uye akaundi yeemail ndeyekuzvisarudzira."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "Kana ukabvumira nzvimbo, app inoishandisa chete paunenge uchiishandisa: kuronga nzvimbo dzekutora dziri pedyo, kuziva guta rako, uye kuona kuti uri panzvimbo paunotumira shumo yepanguva iyoyo. Hatichengete nzvimbo yako pamwe neshumo dzako."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "Nzvimbo dzekutora dzawakachengeta dzinoramba dziri pafoni yako."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "Hatitengese ruzivo rwako rwega, uye app haina zvinoteedzera zvekushambadza kana zvekuongorora."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "Unogona kudzima purofira yako yeRadar kana akaundi muapp, kana kutikumbira neemail. Ona {link}."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "Dzima akaundi kana ruzivo rwako — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "Madzimiro eakaundi yePickupRadar, purofira yeRadar neruzivo rwakabatana nazvo, kunyange usina app."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "Zvikamu zvekudzima akaundi"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "Dzima akaundi kana ruzivo rwako"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "Peji ino inotsanangura madzimiro eakaundi yako yePickupRadar, purofira yako yeRadar neruzivo rwakabatana nazvo, kunyange usisina app. PickupRadar yakagadzirwa naHamza Khan."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "Dzima muapp (nzira inokurumidza)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "Vhura PickupRadar."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "Baya {profile} pazasi pechidzitiro chekutanga."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "Dzika pasi wobaya {deleteAccount} kana wakachengetedza RadarPoints dzako neemail, kana {deleteProfile} kana usina."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "Baya {confirm} kuti usimbise."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "Kudzima kunotanga ipapo ipapo. Mushure maizvozvo app inotanga purofira itsva yeRadar isina zita pafoni yako."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "Tikumbire kuti tidzime akaundi yako yeemail"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "Kana wakachengetedza RadarPoints dzako nekero yeemail uye usingakwanisi kushandisa app:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "Tumira email ku{email} {from}, ine musoro unoti “{subject}”."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "uchishandisa kero yeemail yeakaundi yako yePickupRadar"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "Tichapindura kukero iyoyo kuti tisimbise chikumbiro tisati tadzima chero chinhu."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "Kana ukanyora uchishandisa imwe kero, tichada kusimbisa kuti ndiwe unodzora kero yeemail yeakaundi. Hatimbofi takakumbira password kana kodhi yekupinda. Usatitumira kodhi yako."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "Mapurofira eRadar asina zita"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "Kana usati wambowedzera kero yeemail, purofira yako yeRadar yakabatana chete neID isina kurongeka yakachengetwa muapp pafoni yako. Nzira iri nyore yekuidzima iri muapp, uchitevera nhanho dziri pamusoro."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "Kudzima app kunobvisa ID iyoyo pafoni yako, asi {not} marekodhi ari pamaseva edu."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "hakudzime"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "Muridzi wepurofira isina zita anogona kuratidzwa chete kubva pafoni yakaigadzira, achishandisa ID isina kurongeka nekodhi yakavanzika zvakachengetwa muapp. Ruzivo rwakaita sezita reRadar, guta kana mazuva awakashandisa app haruratidze kuti purofira ndeyako, nokuti vamwe vanogonawo kuruziva. Saka kana usisina app, tingasakwanisa kudzima purofira isina zita. Unogona kuramba uchitumira email ku{email} uye tichatsanangura zvatingaite."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "Maemail eyambiro yekuvhurwa muguta"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "Unogona kubvisa yambiro yekuvhurwa muapp, kana kutitumira email uchishandisa kero yawakanyoresa nayo uye tichadzima zvinyoreso zvekero iyoyo. Maemail eyambiro yekuvhurwa anodzimwawo otomatiki, sezvinotsanangurwa ne{privacy} yedu."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "Zvinodzimwa"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "Purofira yako yeRadar, zita reRadar, RadarPoints nenhoroondo yemipiro"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "Kupinda kwako neemail, kana waiva neakaundi yeemail"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "Kubatana pakati peID yemudziyo wefoni yako nepurofira yako"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "Makodhi ako ekukoka, uye mamiriro akaverengwa kana akavharwa emameseji eapp"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "Zvinyoreso zveyambiro yekuvhurwa zvakabatana nepurofira kana foni yako"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "Manotsi ari pashumo dzematambudziko, shumo dzemamiriro nezvirevo zvenzvimbo zvakabatana nepurofira yako"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "Zvingachengetwa"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, zvakaita senguva yekumirira, shumo dzemamiriro nematagi enzvimbo, nezvirevo zvenzvimbo: ID yemudziyo mumarekodhi akabatana nepurofira yako inotsiviwa nehuwandu husina kurongeka, saka munzvimbo yedu yekuchengetera ruzivo haachabatana nepurofira yako. Achine ruzivo rwakaita senzvimbo nenguva, saka akabviswa zviratidzo zvemunhu, asi haana kuva asina zita zvachose. Anogona kuchengetwa kuti arambe achibatsira vamwe vatyairi."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "Shumo dzakapfuura"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "{lead} dzawakapindawo, pasina purofira yako."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "Marekodhi ekukoka"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead} yemaakaundi eemail (chirevo chemukati cheakaundi, ID yemudziyo, kopi yakavharidzirwa nenzira imwe yekodhi yakavanzika yefoni, nemazuva), kuti kudzima kupedzwe zvakachengeteka uye kuratidzwe kuti kwakaitika."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "Rekodhi diki yekudzima"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: mupi wedu wenzvimbo yekuchengetera ruzivo anochengeta makopi ekuchengetedza ezuva nezuva kwemazuva 7, saka ruzivo rwakadzimwa runogona kusara mukopi yekuchengetedza kusvika mazuva 7."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "Makopi ekuchengetedza"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "{lead} pamusoro pechikumbiro chako, kwenguva inodiwa kuti chibatwe."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "Maemail erubatsiro"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "Kuti uwane ruzivo rwakazara pamusoro pekuti tinochengeta ruzivo kwenguva yakareba sei nedzimwe kodzero dzako, ona {privacy} yedu."
     }
   }
 }

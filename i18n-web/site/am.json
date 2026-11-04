@@ -2,7 +2,7 @@
   "language": "am",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "መነሻ"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "በዚህ ገጽ ላይ"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "ለመጨረሻ ጊዜ የተዘመነው፦ {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "የግላዊነት መመሪያ"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "የግላዊነት መመሪያ — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "የPickupRadar የግላዊነት መመሪያ።"
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "የግላዊነት መመሪያ ክፍሎች"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "ማጠቃለያው እና የክፍል ርዕሶቹ ተተርጉመዋል። ሙሉው የግላዊነት መመሪያ በእንግሊዝኛ ነው፤ ይፋዊው ቅጂም የእንግሊዝኛው ነው።"
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "ማጠቃለያ"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "እኛ ማን ነን"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "የምንሰበስበው መረጃ እና እንዴት እንደምንጠቀምበት"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "የማንጠይቀው"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "ሕጋዊ መሠረቶቻችን (ዩኬ)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "መረጃን ለማን እናጋራለን"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "ዓለም አቀፍ ዝውውሮች"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "መረጃን ለምን ያህል ጊዜ እናቆያለን"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "ምርጫዎችዎ እና መብቶችዎ"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "ደህንነት"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "ልጆች"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "በዚህ መመሪያ ላይ የሚደረጉ ለውጦች"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "ያግኙን"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar የማድረሻ አሽከርካሪዎች ትዕዛዝ ሲወስዱ ያለውን የመጠበቂያ ጊዜ እና የቦታ ችግሮችን እንዲያዩ እና እንዲያሳውቁ ይረዳል።"
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "ያለ መለያ ማሰስ ይችላሉ። መተግበሪያው ለስልክዎ ስም-አልባ የRadar መገለጫ ይፈጥራል፤ የኢሜይል መለያ አማራጭ ነው።"
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "አካባቢን ከፈቀዱ፣ መተግበሪያው የሚጠቀመው እየተጠቀሙበት ሳሉ ብቻ ነው፦ በአቅራቢያ ያሉ የመውሰጃ ቦታዎችን ለመደርደር፣ ከተማዎን ለማወቅ እና የቀጥታ ሪፖርት ሲልኩ በቦታው መሆንዎን ለማረጋገጥ። አካባቢዎን ከሪፖርቶችዎ ጋር አናስቀምጥም።"
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "ያስቀመጧቸው የመውሰጃ ቦታዎች በስልክዎ ላይ ይቆያሉ።"
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "የግል መረጃዎን አንሸጥም፤ መተግበሪያውም የማስታወቂያ ወይም የትንታኔ መከታተያ የለውም።"
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "የRadar መገለጫዎን ወይም መለያዎን በመተግበሪያው ውስጥ መሰረዝ ወይም በኢሜይል እንድንሰርዝ መጠየቅ ይችላሉ። {link} ይመልከቱ።"
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "መለያዎን ወይም ውሂብዎን ይሰርዙ — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "የPickupRadar መለያዎን፣ የRadar መገለጫዎን እና ተዛማጅ ውሂብን እንዴት እንደሚሰርዙ፣ ያለ መተግበሪያም ጭምር።"
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "የመለያ ስረዛ ክፍሎች"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "መለያዎን ወይም ውሂብዎን ይሰርዙ"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "ይህ ገጽ የPickupRadar መለያዎን፣ የRadar መገለጫዎን እና ከእነሱ ጋር የተገናኘ ውሂብን እንዴት እንደሚሰርዙ ያብራራል፤ መተግበሪያው ከአሁን በኋላ ባይኖርዎትም። PickupRadar የተሠራው በHamza Khan ነው።"
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "በመተግበሪያው ውስጥ ይሰርዙ (ፈጣኑ)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "PickupRadarን ይክፈቱ።"
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "በመነሻ ማያ ገጹ ታች ላይ {profile} ን መታ ያድርጉ።"
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "ወደ ታች ይሸብልሉ፤ RadarPointsዎን በኢሜይል ጠብቀው ከሆነ {deleteAccount} ን፣ ካልሆነ ደግሞ {deleteProfile} ን መታ ያድርጉ።"
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "ለማረጋገጥ {confirm} ን መታ ያድርጉ።"
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "ስረዛው ወዲያውኑ ይጀምራል። ከዚያ በኋላ መተግበሪያው በስልክዎ ላይ አዲስ ስም-አልባ የRadar መገለጫ ይጀምራል።"
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "የኢሜይል መለያዎን እንድንሰርዝ ይጠይቁን"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "RadarPointsዎን በኢሜይል አድራሻ ጠብቀው ከሆነ እና መተግበሪያውን መጠቀም ካልቻሉ፦"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "{from} ወደ {email} ኢሜይል ይላኩ፤ ርዕሱ “{subject}” ይሁን።"
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "ከPickupRadar መለያዎ የኢሜይል አድራሻ"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "ማንኛውንም ነገር ከመሰረዛችን በፊት ጥያቄውን ለማረጋገጥ ወደዚያ አድራሻ መልስ እንሰጣለን።"
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "ከሌላ አድራሻ ከጻፉ፣ የመለያውን የኢሜይል አድራሻ እርስዎ እንደሚቆጣጠሩት ማረጋገጥ ያስፈልገናል። የይለፍ ቃል ወይም የመግቢያ ኮድ በፍጹም አንጠይቅም። ኮድዎን አይላኩልን።"
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "ስም-አልባ የRadar መገለጫዎች"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "የኢሜይል አድራሻ በጭራሽ ካላከሉ፣ የRadar መገለጫዎ የተገናኘው በስልክዎ መተግበሪያ ውስጥ ከተቀመጠ የዘፈቀደ መታወቂያ ጋር ብቻ ነው። ለመሰረዝ ቀላሉ መንገድ ከላይ ባሉት ደረጃዎች በመተግበሪያው ውስጥ ነው።"
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "መተግበሪያውን መሰረዝ ያንን መታወቂያ ከስልክዎ ያስወግዳል፤ ነገር ግን በአገልጋዮቻችን ላይ ያሉ መዝገቦችን {not}።"
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "አይሰርዝም"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "የስም-አልባ መገለጫ ባለቤትነት ሊረጋገጥ የሚችለው በተፈጠረበት ስልክ ብቻ ነው፤ በመተግበሪያው ውስጥ በተቀመጠው የዘፈቀደ መታወቂያ እና ሚስጥራዊ ኮድ። እንደ Radar ስም፣ ከተማ ወይም መተግበሪያውን የተጠቀሙባቸው ቀናት ያሉ ዝርዝሮች ሌሎችም ሊያውቋቸው ስለሚችሉ መገለጫው የእርስዎ መሆኑን አያረጋግጡም። ስለዚህ መተግበሪያው ከአሁን በኋላ ከሌለዎት ስም-አልባ መገለጫን መሰረዝ ላንችል እንችላለን። አሁንም ወደ {email} ኢሜይል መላክ ይችላሉ፤ ምን ማድረግ እንደምንችል እናብራራለን።"
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "የከተማ ማስጀመሪያ ማሳወቂያ ኢሜይሎች"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "የማስጀመሪያ ማሳወቂያን በመተግበሪያው ውስጥ መሰረዝ ወይም በተመዘገቡበት አድራሻ ኢሜይል ሊልኩልን ይችላሉ፤ የዚያን አድራሻ ምዝገባዎች እንሰርዛለን። የማስጀመሪያ ማሳወቂያ ኢሜይሎች በ{privacy} ላይ እንደተብራራው በራስ-ሰር ይሰረዛሉ።"
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "የሚሰረዘው"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "የRadar መገለጫዎ፣ የRadar ስምዎ፣ RadarPoints እና የአስተዋጽኦ ታሪክዎ"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "የኢሜይል መለያ ከነበረዎት፣ የኢሜይል መግቢያዎ"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "በስልክዎ የመሣሪያ መታወቂያ እና በመገለጫዎ መካከል ያሉ ግንኙነቶች"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "የሪፈራል ኮዶችዎ እና የመተግበሪያ መልዕክቶች የተነበቡ ወይም የተዘጉ ሁኔታ"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "ከመገለጫዎ ወይም ከስልክዎ ጋር የተገናኙ የከተማ ማስጀመሪያ ማሳወቂያ ምዝገባዎች"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "ከመገለጫዎ ጋር በተገናኙ የችግር ሪፖርቶች፣ የሁኔታ ሪፖርቶች እና የቦታ ጥቆማዎች ላይ ያሉ ማስታወሻዎች"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "ሊቆይ የሚችለው"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}፣ ለምሳሌ የመጠበቂያ ጊዜዎች፣ የቦታ ሁኔታ ሪፖርቶች እና መለያ ምልክቶች እንዲሁም የቦታ ጥቆማዎች፦ ከመገለጫዎ ጋር በተገናኙ መዝገቦች ውስጥ ያለው የመሣሪያ መታወቂያ በዘፈቀደ እሴት ይተካል፤ ስለዚህ በውሂብ ጎታችን ውስጥ ከመገለጫዎ ጋር አይገናኙም። አሁንም እንደ ቦታ እና ሰዓት ያሉ ዝርዝሮችን ስለሚይዙ ማንነት የተወገደላቸው እንጂ ሙሉ በሙሉ ስም-አልባ አይደሉም። ሌሎች አሽከርካሪዎችን መርዳታቸውን እንዲቀጥሉ ሊቆዩ ይችላሉ።"
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "ያለፉ ሪፖርቶች"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "የተሳተፉባቸው {lead}፣ ያለ መገለጫዎ።"
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "የሪፈራል መዝገቦች"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "ለኢሜይል መለያዎች {lead} (የውስጥ የመለያ ማጣቀሻ፣ የመሣሪያ መታወቂያ፣ የስልኩ ሚስጥራዊ ኮድ በአንድ አቅጣጫ የተመሰጠረ ቅጂ እና ቀናት)፣ ስረዛው በደህና እንዲጠናቀቅ እና መፈጸሙ እንዲታይ።"
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "አነስተኛ የስረዛ መዝገብ"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}፦ የውሂብ ጎታ አቅራቢያችን ዕለታዊ ምትኬዎችን ለ7 ቀናት ያቆያል፤ ስለዚህ የተሰረዘ መረጃ በምትኬ ውስጥ እስከ 7 ቀናት ሊቆይ ይችላል።"
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "ምትኬዎች"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "ስለ ጥያቄዎ {lead}፣ ጥያቄውን ለማስተናገድ እስከሚያስፈልገው ጊዜ ድረስ።"
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "የድጋፍ ኢሜይሎች"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "መረጃን ለምን ያህል ጊዜ እንደምናቆይ እና ስለሌሎች መብቶችዎ ሙሉ ዝርዝር ለማግኘት የእኛን {privacy} ይመልከቱ።"
     }
   }
 }

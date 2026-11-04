@@ -2,7 +2,7 @@
   "language": "sq",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "Ballina"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "Në këtë faqe"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "Përditësuar së fundi: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "Politika e privatësisë"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "Politika e privatësisë — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "Politika e privatësisë së PickupRadar."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "Seksionet e politikës së privatësisë"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "Përmbledhja dhe titujt e seksioneve janë përkthyer. Politika e plotë e privatësisë është në anglisht dhe versioni zyrtar është ai në anglisht."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "Përmbledhje"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "Kush jemi"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "Çfarë informacioni mbledhim dhe si e përdorim"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "Çfarë nuk kërkojmë"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "Bazat tona ligjore (MB)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "Me kë e ndajmë informacionin"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "Transferimet ndërkombëtare"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "Sa kohë e ruajmë informacionin"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "Zgjedhjet dhe të drejtat tuaja"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "Siguria"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "Fëmijët"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "Ndryshimet në këtë politikë"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "Kontakti"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar i ndihmon shoferët e dorëzimeve të shohin dhe të raportojnë kohët e pritjes për marrjen e porosive dhe problemet në lokale."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "Mund të shfletoni pa llogari. Aplikacioni krijon një profil anonim Radar për telefonin tuaj, dhe llogaria me email është opsionale."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "Nëse lejoni vendndodhjen, aplikacioni e përdor vetëm gjatë përdorimit: për të renditur pikat e marrjes aty pranë, për të gjetur qytetin tuaj dhe për të kontrolluar që jeni në lokal kur dërgoni një raport të drejtpërdrejtë. Nuk e ruajmë vendndodhjen tuaj bashkë me raportet."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "Pikat e marrjes që keni ruajtur mbeten në telefonin tuaj."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "Nuk e shesim informacionin tuaj personal dhe aplikacioni nuk ka gjurmues reklamash ose analitike."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "Mund ta fshini profilin Radar ose llogarinë në aplikacion, ose të na e kërkoni me email. Shihni {link}."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "Fshini llogarinë ose të dhënat tuaja — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "Si ta fshini llogarinë PickupRadar, profilin Radar dhe të dhënat përkatëse, edhe pa aplikacionin."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "Seksionet e fshirjes së llogarisë"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "Fshini llogarinë ose të dhënat tuaja"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "Kjo faqe shpjegon si ta fshini llogarinë PickupRadar, profilin Radar dhe të dhënat e lidhura me to, edhe nëse nuk e keni më aplikacionin. PickupRadar zhvillohet nga Hamza Khan."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "Fshini në aplikacion (më e shpejta)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "Hapni PickupRadar."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "Prekni {profile} në fund të ekranit kryesor."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "Lëvizni poshtë dhe prekni {deleteAccount} nëse i keni mbrojtur RadarPoints me email, ose {deleteProfile} nëse jo."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "Prekni {confirm} për ta konfirmuar."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "Fshirja fillon menjëherë. Më pas aplikacioni nis një profil të ri anonim Radar në telefonin tuaj."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "Na kërkoni të fshijmë llogarinë tuaj me email"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "Nëse i keni mbrojtur RadarPoints me një adresë email-i dhe nuk mund ta përdorni aplikacionin:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "Dërgoni email te {email} {from}, me subjekt “{subject}”."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "nga adresa e email-it të llogarisë suaj PickupRadar"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "Do t'i përgjigjemi asaj adrese për të konfirmuar kërkesën përpara se të fshijmë diçka."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "Nëse shkruani nga një adresë tjetër, do të duhet të konfirmojmë që e kontrolloni adresën e email-it të llogarisë. Nuk do t'ju kërkojmë kurrë fjalëkalim ose kod hyrjeje. Mos na e dërgoni kodin tuaj."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "Profilet anonime Radar"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "Nëse nuk keni shtuar kurrë adresë email-i, profili juaj Radar lidhet vetëm me një ID të rastësishme të ruajtur në aplikacionin e telefonit. Mënyra më e lehtë për ta fshirë është në aplikacion, me hapat më sipër."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "Fshirja e aplikacionit e heq atë ID nga telefoni, por {not} të dhënat në serverët tanë."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "nuk i fshin"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "Pronësia e një profili anonim mund të vërtetohet vetëm nga telefoni ku u krijua, me ID-në e rastësishme dhe kodin sekret të ruajtur në aplikacion. Të dhëna si emri Radar, qyteti ose datat e përdorimit të aplikacionit nuk vërtetojnë se profili është i juaji, sepse mund t'i dinë edhe të tjerët. Prandaj, nëse nuk e keni më aplikacionin, mund të mos jemi në gjendje ta fshijmë profilin anonim. Megjithatë mund të shkruani te {email} dhe do t'ju shpjegojmë çfarë mund të bëjmë."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "Email-et e njoftimit për nisjen në qytete"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "Mund ta tërhiqni njoftimin për nisjen në aplikacion, ose të na shkruani nga adresa me të cilën u regjistruat dhe do t'i fshijmë regjistrimet për atë adresë. Email-et e njoftimeve për nisjen fshihen edhe automatikisht, siç shpjegohet në {privacy} tonë."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "Çfarë fshihet"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "Profili juaj Radar, emri Radar, RadarPoints dhe historiku i kontributeve"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "Hyrja juaj me email, nëse keni pasur llogari me email"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "Lidhjet midis ID-së së pajisjes së telefonit dhe profilit tuaj"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "Kodet tuaja të rekomandimit dhe gjendja e lexuar ose e mbyllur e mesazheve të aplikacionit"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "Regjistrimet për njoftimet e nisjes të lidhura me profilin ose telefonin tuaj"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "Shënimet në raportet e problemeve, raportet e gjendjes dhe sugjerimet e lokaleve të lidhura me profilin tuaj"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "Çfarë mund të ruhet"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, si kohët e pritjes, raportet e gjendjes dhe etiketat e lokaleve, si dhe sugjerimet e lokaleve: ID-ja e pajisjes në të dhënat e lidhura me profilin tuaj zëvendësohet me një vlerë të rastësishme, kështu që në bazën tonë të të dhënave ato nuk lidhen më me profilin tuaj. Ato ende përmbajnë hollësi si lokali dhe ora, prandaj janë të paidentifikuara, jo plotësisht anonime. Mund të ruhen që të vazhdojnë të ndihmojnë shoferët e tjerë."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "Raportet e mëparshme"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "{lead} ku keni marrë pjesë, pa profilin tuaj."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "Të dhënat e rekomandimeve"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead} për llogaritë me email (një referencë e brendshme e llogarisë, ID-ja e pajisjes, një kopje e enkriptuar në një drejtim e kodit sekret të telefonit dhe data), që fshirja të përfundojë në mënyrë të sigurt dhe të tregohet se është bërë."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "Një regjistrim minimal i fshirjes"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: ofruesi ynë i bazës së të dhënave i ruan kopjet rezervë ditore për 7 ditë, prandaj informacioni i fshirë mund të mbetet në një kopje rezervë deri në 7 ditë."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "Kopjet rezervë"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "{lead} për kërkesën tuaj, për aq kohë sa nevojitet për ta trajtuar."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "Email-et drejtuar mbështetjes"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "Për hollësi të plota mbi sa kohë e ruajmë informacionin dhe të drejtat tuaja të tjera, shihni {privacy} tonë."
     }
   }
 }

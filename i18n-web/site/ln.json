@@ -2,7 +2,7 @@
   "language": "ln",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "Ndako"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "Na lokasa oyo"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "Ebongisami mpo na nsuka: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "Mibeko ya sekele"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "Mibeko ya sekele — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "Mibeko ya sekele ya PickupRadar."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "Biteni ya mibeko ya sekele"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "Bokuse mpe mitó ya biteni ebongolami. Mibeko ya sekele mobimba ezali na Lingelesi, mpe ndenge ya Lingelesi nde ya solo."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "Na bokuse"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "Biso tozali banani"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "Bansango nini tozwaka mpe ndenge nini tosalelaka yango"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "Oyo tosɛngaka te"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "Mibeko oyo tolandaka (UK)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "Na banani tokabolaka bansango"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "Kotinda bansango na bikolo mosusu"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "Ntango boni tobombaka bansango"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "Maponi mpe makoki na yo"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "Bobateli"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "Bana"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "Mbongwana na mibeko oyo"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "Benga biso"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar esalisaka bashofɛli ya komema biloko bámona mpe bápesa sango ya ntango ya kozela na kozwa komandi mpe mikakatano ya bisika."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "Okoki kotala kozanga konti. Aplikasyo esalaka profil ya Radar ezangi nkombo mpo na telefone na yo, mpe konti ya imɛli ezali ya kopona."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "Soki opesi nzela ya esika, aplikasyo esalelaka yango kaka ntango ozali kosalela yango: mpo na kobongisa bisika ya kozwa oyo ezali pene, koyeba engumba na yo, mpe kotala ete ozali na esika yango ntango ozali kotinda rapɔ́ ya ntango wana. Tobombaka esika na yo elongo na barapɔ́ na yo te."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "Bisika ya kozwa oyo obombi etikalaka na telefone na yo."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "Totɛkaka bansango na yo ya moto ye moko te, mpe aplikasyo ezali na bilandeli ya piblisite to ya botali te."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "Okoki kolongola profil na yo ya Radar to konti na aplikasyo, to kosɛnga biso na imɛli. Tala {link}."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "Longola konti to bansango na yo — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "Ndenge ya kolongola konti ya PickupRadar, profil ya Radar mpe bansango oyo etali yango, ata soki aplikasyo ezali te."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "Biteni ya kolongola konti"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "Longola konti to bansango na yo"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "Lokasa oyo elimboli ndenge ya kolongola konti na yo ya PickupRadar, profil na yo ya Radar mpe bansango oyo ekangami na yango, ata soki ozali lisusu na aplikasyo te. PickupRadar esalemi na Hamza Khan."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "Longola na aplikasyo (nzela ya noki)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "Fungola PickupRadar."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "Finá {profile} na nse ya ekrá ya ebandeli."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "Kitá na nse mpe finá {deleteAccount} soki obateli RadarPoints na yo na imɛli, to {deleteProfile} soki te."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "Finá {confirm} mpo na kondimisa."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "Kolongola ebandaka mbala moko. Sima na yango aplikasyo ebandaka profil ya sika ya Radar ezangi nkombo na telefone na yo."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "Sɛnga biso tólongola konti na yo ya imɛli"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "Soki obateli RadarPoints na yo na adrɛsi ya imɛli mpe okoki kosalela aplikasyo te:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "Tinda imɛli na {email} {from}, na motó ya likambo “{subject}”."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "longwa na adrɛsi ya imɛli ya konti na yo ya PickupRadar"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "Tokozongisa eyano na adrɛsi yango mpo na kondimisa bosɛngi liboso ya kolongola eloko moko."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "Soki okomi longwa na adrɛsi mosusu, tosengeli kondimisa ete ozali na bokonzi likoló ya adrɛsi ya imɛli ya konti. Tokosɛnga ata mokolo moko te liloba ya sekele to kode ya kokɔta. Kotindela biso kode na yo te."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "Ba profil ya Radar ezangi nkombo"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "Soki obakisaki naino adrɛsi ya imɛli te, profil na yo ya Radar ekangami kaka na ID ya likama oyo ebombami na aplikasyo na telefone na yo. Nzela ya pɛtɛɛ ya kolongola yango ezali na aplikasyo, na kolanda makambo oyo ezali likoló."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "Kolongola aplikasyo elongolaka ID yango na telefone na yo, kasi {not} makomi oyo ezali na baserveur na biso."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "elongolaka te"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "Bonkolo ya profil ezangi nkombo ekoki kolakisama kaka longwa na telefone oyo esalaki yango, na ID ya likama mpe kode ya sekele oyo ebombami na aplikasyo. Bansango lokola nkombo ya Radar, engumba to mikolo osalelaki aplikasyo elakisaka te ete profil ezali ya yo, mpo bato mosusu bakoki mpe koyeba yango. Yango wana, soki ozali lisusu na aplikasyo te, tokoki kozanga makoki ya kolongola profil ezangi nkombo. Kasi okoki kaka kotinda imɛli na {email} mpe tokolimbola oyo tokoki kosala."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "Ba imɛli ya liyebisi ya kobanda na bingumba"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "Okoki kolongola liyebisi ya kobanda na aplikasyo, to kotindela biso imɛli longwa na adrɛsi oyo okomisaki na yango mpe tokolongola bokomami ya adrɛsi yango. Ba imɛli ya liyebisi ya kobanda elongolamaka mpe yango moko, ndenge {privacy} na biso elimboli."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "Oyo elongolamaka"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "Profil na yo ya Radar, nkombo ya Radar, RadarPoints mpe lisolo ya makabo na yo"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "Kokɔta na yo na imɛli, soki ozalaki na konti ya imɛli"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "Bokangami kati na ID ya esaleli ya telefone na yo mpe profil na yo"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "Bakode na yo ya kobengisa, mpe ezalela ya batángá to ya bakangá ya bansango ya aplikasyo"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "Bokomami ya liyebisi ya kobanda oyo ekangami na profil to telefone na yo"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "Makomi na barapɔ́ ya mikakatano, barapɔ́ ya ezalela mpe makanisi ya bisika oyo ekangami na profil na yo"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "Oyo ekoki kobombama"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, lokola ntango ya kozela, barapɔ́ ya ezalela mpe bilembo ya bisika, mpe makanisi ya bisika: ID ya esaleli na makomi oyo ekangami na profil na yo ebongolamaka na motuya ya likama, yango wana na base de données na biso ekangami lisusu na profil na yo te. Ezali kaka na bansango lokola esika mpe ntango, yango wana elongolami bilembo ya moto, kasi ezangi nkombo mobimba te. Ekoki kobombama mpo ekoba kosalisa bashofɛli mosusu."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "Barapɔ́ ya kala"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "{lead} oyo osangani na yango, kozanga profil na yo."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "Makomi ya kobengisa"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead} mpo na ba konti ya imɛli (elembo ya kati ya konti, ID ya esaleli, kopi ya kode ya sekele ya telefone oyo ebombami na ndenge moko, mpe mikolo), mpo kolongola esila na bobateli mpe emonisama ete esalemaki."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "Makomi moke ya kolongola"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: mopesi na biso ya base de données abombaka bakopi ya bobateli ya mokolo na mokolo mikolo 7, yango wana bansango oyo elongolami ekoki kotikala na kopi ya bobateli tii mikolo 7."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "Bakopi ya bobateli"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "{lead} na ntina ya bosɛngi na yo, ntango nyonso oyo esengeli mpo na kosilisa yango."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "Ba imɛli ya lisalisi"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "Mpo na koyeba malamu ntango boni tobombaka bansango mpe makoki na yo mosusu, tala {privacy} na biso."
     }
   }
 }

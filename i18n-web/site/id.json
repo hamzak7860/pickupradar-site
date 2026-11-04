@@ -2,7 +2,7 @@
   "language": "id",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "Beranda"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "Di halaman ini"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "Terakhir diperbarui: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "Kebijakan privasi"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "Kebijakan privasi — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "Kebijakan privasi PickupRadar."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "Bagian kebijakan privasi"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "Ringkasan dan judul bagian telah diterjemahkan. Kebijakan privasi lengkap tersedia dalam bahasa Inggris, dan versi bahasa Inggris adalah versi resmi."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "Ringkasan"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "Siapa kami"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "Informasi yang kami kumpulkan dan cara kami menggunakannya"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "Yang tidak kami minta"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "Dasar hukum kami (Inggris Raya)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "Dengan siapa kami berbagi informasi"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "Transfer internasional"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "Berapa lama kami menyimpan informasi"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "Pilihan dan hak Anda"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "Keamanan"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "Anak-anak"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "Perubahan pada kebijakan ini"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "Kontak"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar membantu pengemudi pengantaran melihat dan melaporkan waktu tunggu pengambilan serta masalah di lokasi."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "Anda bisa menjelajah tanpa akun. Aplikasi membuat profil Radar anonim untuk ponsel Anda, dan akun email bersifat opsional."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "Jika Anda mengizinkan akses lokasi, aplikasi hanya menggunakannya saat dipakai: untuk mengurutkan titik pengambilan terdekat, mendeteksi kota Anda, dan memeriksa bahwa Anda berada di lokasi saat mengirim laporan langsung. Kami tidak menyimpan lokasi Anda bersama laporan."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "Titik pengambilan yang Anda simpan tetap ada di ponsel Anda."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "Kami tidak menjual informasi pribadi Anda, dan aplikasi tidak memiliki pelacak iklan atau analitik."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "Anda dapat menghapus profil Radar atau akun di aplikasi, atau meminta kami lewat email. Lihat {link}."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "Hapus akun atau data Anda — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "Cara menghapus akun PickupRadar, profil Radar, dan data terkait, termasuk tanpa aplikasi."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "Bagian penghapusan akun"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "Hapus akun atau data Anda"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "Halaman ini menjelaskan cara menghapus akun PickupRadar, profil Radar, dan data yang terkait, termasuk jika Anda tidak lagi memiliki aplikasinya. PickupRadar dikembangkan oleh Hamza Khan."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "Hapus di aplikasi (paling cepat)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "Buka PickupRadar."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "Ketuk {profile} di bagian bawah layar beranda."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "Gulir ke bawah dan ketuk {deleteAccount} jika Anda mengamankan RadarPoints dengan email, atau {deleteProfile} jika tidak."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "Ketuk {confirm} untuk mengonfirmasi."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "Penghapusan dimulai segera. Setelah itu aplikasi memulai profil Radar anonim baru di ponsel Anda."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "Minta kami menghapus akun email Anda"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "Jika Anda mengamankan RadarPoints dengan alamat email dan tidak dapat menggunakan aplikasi:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "Kirim email ke {email} {from}, dengan subjek “{subject}”."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "dari alamat email akun PickupRadar Anda"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "Kami akan membalas ke alamat tersebut untuk mengonfirmasi permintaan sebelum menghapus apa pun."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "Jika Anda menulis dari alamat lain, kami perlu memastikan bahwa Anda mengendalikan alamat email akun tersebut. Kami tidak akan pernah meminta kata sandi atau kode masuk. Jangan kirimkan kode Anda kepada kami."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "Profil Radar anonim"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "Jika Anda tidak pernah menambahkan alamat email, profil Radar Anda hanya terhubung ke ID acak yang tersimpan di aplikasi pada ponsel Anda. Cara termudah untuk menghapusnya adalah di aplikasi, dengan langkah di atas."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "Menghapus aplikasi akan menghapus ID itu dari ponsel Anda, tetapi {not} catatan di server kami."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "tidak menghapus"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "Kepemilikan profil anonim hanya dapat dibuktikan dari ponsel tempat profil itu dibuat, menggunakan ID acak dan kode rahasia yang tersimpan di aplikasi. Detail seperti nama Radar, kota, atau tanggal penggunaan aplikasi tidak membuktikan bahwa profil itu milik Anda, karena orang lain juga bisa mengetahuinya. Jadi, jika Anda tidak lagi memiliki aplikasinya, kami mungkin tidak dapat menghapus profil anonim. Anda tetap dapat mengirim email ke {email} dan kami akan menjelaskan apa yang bisa kami lakukan."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "Email pemberitahuan peluncuran kota"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "Anda dapat menarik pemberitahuan peluncuran di aplikasi, atau mengirim email kepada kami dari alamat yang Anda gunakan untuk mendaftar dan kami akan menghapus pendaftaran untuk alamat itu. Email pemberitahuan peluncuran juga dihapus otomatis, seperti dijelaskan dalam {privacy} kami."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "Yang dihapus"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "Profil Radar, nama Radar, RadarPoints, dan riwayat kontribusi Anda"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "Login email Anda, jika Anda memiliki akun email"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "Tautan antara ID perangkat ponsel Anda dan profil Anda"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "Kode referal Anda, serta status dibaca atau ditutup pada pesan aplikasi"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "Pendaftaran pemberitahuan peluncuran kota yang terkait dengan profil atau ponsel Anda"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "Catatan pada laporan masalah, laporan status, dan saran lokasi yang terkait dengan profil Anda"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "Yang mungkin disimpan"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, seperti waktu tunggu, laporan status dan tag lokasi, serta saran lokasi: ID perangkat pada catatan yang terkait dengan profil Anda diganti dengan nilai acak, sehingga di basis data kami catatan itu tidak lagi terhubung dengan profil Anda. Catatan tersebut masih berisi detail seperti lokasi dan waktu, jadi sudah dide-identifikasi, bukan sepenuhnya anonim. Catatan ini dapat disimpan agar tetap membantu pengemudi lain."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "Laporan sebelumnya"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "{lead} yang melibatkan Anda, tanpa profil Anda."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "Catatan referal"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead} untuk akun email (referensi akun internal, ID perangkat, salinan terenkripsi satu arah dari kode rahasia ponsel, dan tanggal), agar penghapusan dapat diselesaikan dengan aman dan dibuktikan telah dilakukan."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "Catatan penghapusan minimal"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: penyedia basis data kami menyimpan cadangan harian selama 7 hari, sehingga informasi yang dihapus dapat tetap ada di cadangan hingga 7 hari."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "Cadangan"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "{lead} tentang permintaan Anda, selama diperlukan untuk menanganinya."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "Email dukungan"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "Untuk detail lengkap tentang berapa lama kami menyimpan informasi dan hak Anda yang lain, lihat {privacy} kami."
     }
   }
 }

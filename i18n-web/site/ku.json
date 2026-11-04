@@ -2,7 +2,7 @@
   "language": "ku",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "Mal"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "Di vê rûpelê de"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "Nûkirina dawî: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "Polîtîkaya nepeniyê"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "Polîtîkaya nepeniyê — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "Polîtîkaya nepeniyê ya PickupRadar."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "Beşên polîtîkaya nepeniyê"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "Kurte û sernavên beşan hatine wergerandin. Polîtîkaya nepeniyê ya tevahî bi îngilîzî ye, û guhertoya îngilîzî ya fermî ye."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "Kurte"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "Em kî ne"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "Em kîjan agahiyan berhev dikin û çawa bikar tînin"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "Tiştên ku em napirsin"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "Bingehên me yên qanûnî (Keyaniya Yekbûyî)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "Em agahiyan bi kê re parve dikin"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "Veguhastinên navneteweyî"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "Em agahiyan çiqas dem diparêzin"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "Bijartin û mafên te"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "Ewlehî"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "Zarok"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "Guhertinên vê polîtîkayê"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "Têkilî"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar alîkariya ajokarên gihandinê dike ku demên benda wergirtinê û pirsgirêkên cihan bibînin û ragihînin."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "Tu dikarî bê hesab bigerî. Sepan ji bo telefona te profîleke Radar a bênav çêdike, û hesabê e-nameyê vebijarkî ye."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "Heke tu destûra cihê bidî, sepan wê tenê dema bikaranînê bikar tîne: ji bo rêzkirina cihên wergirtinê yên nêzîk, naskirina bajarê te û kontrolkirina ku tu li cih î dema raporeke zindî dişînî. Em cihê te bi raporên te re tomar nakin."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "Cihên wergirtinê yên ku te tomar kirine li ser telefona te dimînin."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "Em agahiyên te yên kesane nafiroşin, û di sepanê de şopînerên reklamê an analîtîkê tune ne."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "Tu dikarî profîla xwe ya Radar an hesabê xwe di sepanê de jê bibî, an bi e-nameyê ji me bixwazî. Binêre {link}."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "Hesab an daneyên xwe jê bibe — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "Meriv çawa hesabê PickupRadar, profîla Radar û daneyên têkildar jê dibe, heta bê sepan jî."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "Beşên jêbirina hesabê"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "Hesab an daneyên xwe jê bibe"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "Ev rûpel rave dike ka tu çawa hesabê xwe yê PickupRadar, profîla xwe ya Radar û daneyên bi wan ve girêdayî jê dibî, heta heke sepan êdî li cem te nebe jî. PickupRadar ji aliyê Hamza Khan ve hatiye pêşxistin."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "Di sepanê de jê bibe (ya herî bilez)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "PickupRadar veke."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "Li jêrê ekrana sereke li {profile} bitikîne."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "Ber bi jêr ve here û heke te RadarPoints bi e-nameyê parastibe li {deleteAccount}, wekî din li {deleteProfile} bitikîne."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "Ji bo pejirandinê li {confirm} bitikîne."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "Jêbirin yekser dest pê dike. Paşê sepan li ser telefona te profîleke Radar a bênav a nû dest pê dike."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "Ji me bixwaze ku hesabê te yê e-nameyê jê bibin"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "Heke te RadarPoints bi navnîşaneke e-nameyê parastibe û tu nikaribî sepanê bikar bînî:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "{from} e-nameyekê ji {email} re bişîne, bi mijara “{subject}”."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "ji navnîşana e-nameyê ya hesabê te yê PickupRadar"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "Berî ku em tiştekî jê bibin, em ê bersivê bidin wê navnîşanê da ku daxwazê bipejirînin."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "Heke tu ji navnîşaneke din binivîsî, divê em piştrast bikin ku navnîşana e-nameyê ya hesabê di destê te de ye. Em tu carî şîfre an koda têketinê naxwazin. Koda xwe ji me re neşîne."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "Profîlên Radar ên bênav"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "Heke te tu carî navnîşana e-nameyê lê zêde nekiribe, profîla te ya Radar tenê bi nasnameyeke rasthatî ve girêdayî ye ku di sepana telefona te de tomarkirî ye. Riya herî hêsan a jêbirinê di sepanê de bi gavên jorîn e."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "Jêbirina sepanê wê nasnameyê ji telefona te radike, lê tomarên li ser serverên me {not}."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "jê nabe"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "Xwedîtiya profîleke bênav tenê ji telefona ku lê hatiye çêkirin dikare were îspatkirin, bi nasnameya rasthatî û koda veşartî ya ku di sepanê de tomarkirî ne. Hûrguliyên wekî navê Radar, bajar an dîrokên bikaranîna sepanê îspat nakin ku profîl ya te ye, ji ber ku kesên din jî dikarin wan bizanibin. Ji ber vê yekê, heke sepan êdî li cem te nebe, dibe ku em nikaribin profîleke bênav jê bibin. Dîsa jî tu dikarî e-nameyê ji {email} re bişînî û em ê rave bikin ka em dikarin çi bikin."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "E-nameyên hişyariya destpêkirinê li bajaran"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "Tu dikarî hişyariya destpêkirinê di sepanê de paşve bikişînî, an ji navnîşana ku pê tomar bûyî e-nameyê ji me re bişînî û em ê tomarkirinên wê navnîşanê jê bibin. E-nameyên hişyariya destpêkirinê bixweber jî tên jêbirin, wekî {privacy} ya me rave dike."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "Çi tê jêbirin"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "Profîla te ya Radar, navê Radar, RadarPoints û dîroka beşdariyê"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "Têketina te bi e-nameyê, heke hesabê te yê e-nameyê hebûya"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "Girêdanên di navbera nasnameya cîhaza telefona te û profîla te de"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "Kodên te yên referansê, û rewşa xwendî an girtî ya peyamên sepanê"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "Tomarkirinên hişyariya destpêkirinê yên bi profîl an telefona te ve girêdayî"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "Nîşeyên li ser raporên pirsgirêkan, raporên rewşê û pêşniyarên cihan ên bi profîla te ve girêdayî"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "Çi dikare were parastin"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, wekî demên benda, raporên rewşê û etîketên cihan, û pêşniyarên cihan: nasnameya cîhazê di tomarên bi profîla te ve girêdayî de bi nirxeke rasthatî tê guhertin, ji ber vê yekê di danegeha me de êdî bi profîla te ve ne girêdayî ne. Ew hîn hûrguliyên wekî cih û demê dihewînin, ji ber vê yekê bênasname ne, ne bi tevahî bênav. Dibe ku werin parastin da ku alîkariya ajokarên din bidomînin."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "Raporên berê"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "{lead} ku tu tê de beşdar bûyî, bê profîla te."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "Tomarên referansê"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead} ji bo hesabên e-nameyê (referanseke navxweyî ya hesabê, nasnameya cîhazê, kopiyeke yekalî şîfrekirî ya koda veşartî ya telefonê, û dîrok), da ku jêbirin bi ewlehî were qedandin û were nîşandan ku pêk hatiye."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "Tomareke jêbirinê ya herî kêm"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: dabînkerê danegeha me paşkeftinên rojane 7 rojan diparêze, ji ber vê yekê agahiyên jêbirî dikarin heta 7 rojan di paşkeftinekê de bimînin."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "Paşkeftin"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "{lead} li ser daxwaza te, heta ku ji bo çareserkirina wê pêwîst be."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "E-nameyên piştgiriyê"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "Ji bo hûrguliyên tevahî li ser ka em agahiyan çiqas dem diparêzin û mafên te yên din, li {privacy} ya me binêre."
     }
   }
 }

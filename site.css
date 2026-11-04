@@ -1635,3 +1635,14 @@ body.w-lang-open { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   .w-lang-dialog { scroll-behavior: auto; }
 }
+
+/* Privacy policy: notice shown only in translated languages */
+.w-doc .w-legal-note {
+  margin: 0 0 18px;
+  padding: 12px 14px;
+  border: 1px solid var(--w-line);
+  border-radius: 12px;
+  background: var(--w-panel);
+  color: var(--w-mist);
+  font-size: 15px;
+}

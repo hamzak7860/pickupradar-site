@@ -2,7 +2,7 @@
   "language": "wo",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "Kër"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "Ci xët wii"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "Coppite gu mujj: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "Pólitig sutura"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "Pólitig sutura — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "Pólitig sutura bu PickupRadar."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "Xaaj yi ci pólitig sutura bi"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "Ñu tekki nañu ndajem gi ak bopp xaaj yi. Pólitig sutura bi mépp mu ngi ci àngale, te sumb bu àngale moo nekk sumb bu dëggu bi."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "Ci gàttal"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "Ñan lanu"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "Xibaar yi nuy dajale ak ni nu leen di jëfandikoo"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "Li nu la dul laaj"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "Sunu sukkandiku yu yoon (UK)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "Ñan lanuy séddoo xibaar"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "Yónnee xibaar ci réew yu wuute"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "Lu tollu ban diir lanuy denc xibaar"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "Sa tànneef ak sa sañ-sañ"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "Kaaraange"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "Xale yi"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "Coppite ci pólitig bii"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "Jokkoo ak nun"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar dafay dimbali dawalkat yuy jëfandikoo yobbu, ñu gis te yégle diirub xaar ci jël kómaand yi ak jafe-jafe yi ci bérab yi."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "Mën nga seetlu te amoo kontu. Aplikasioŋ bi dafay sos ab porofil Radar bu amul tur ngir sa telefon, te kontu email day nekk ci sa coobare."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "Bu nga may bérab, aplikasioŋ bi dafay ko jëfandikoo rekk bi ngay jëfandikoo aplikasioŋ bi: ngir toftal bérabi jël yi jege, xam sa dëkk, te seet ne nga ngi ci bérab bi bi ngay yónnee yégle bu leegi leegi. Dunu denc sa bérab ak say yégle."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "Bérabi jël yi nga denc ñu ngi des ci sa telefon."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "Dunu jaay sa xibaar yu sa bopp, te aplikasioŋ bi amul benn toppkat bu kaaraange walla bu xool-xool."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "Mën nga far sa porofil Radar walla sa kontu ci aplikasioŋ bi, walla nga laaj nu ko ci email. Xoolal {link}."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "Far sa kontu walla say xibaar — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "Ni ngay fare sa kontu PickupRadar, sa porofil Radar ak xibaar yi ci aju, su fekkee amoo aplikasioŋ bi sax."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "Xaaj yu fare kontu"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "Far sa kontu walla say xibaar"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "Xët wii dafay leeral ni ngay fare sa kontu PickupRadar, sa porofil Radar ak xibaar yi ci aju, su fekkee amatoo aplikasioŋ bi sax. Hamza Khan moo defar PickupRadar."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "Far ko ci aplikasioŋ bi (moo gën a gaaw)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "Ubbil PickupRadar."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "Bësal {profile} ci suufu ekraŋ bu njëkk bi."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "Wàcc ci suuf te bësal {deleteAccount} bu fekkee aar nga sa RadarPoints ak email, walla {deleteProfile} bu dul noonu."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "Bësal {confirm} ngir dëggal ko."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "Fare gi dafay tàmbali ci saa si. Ginnaaw loolu aplikasioŋ bi dafay tàmbali porofil Radar bu bees bu amul tur ci sa telefon."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "Laaj nu nu far sa kontu email"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "Bu fekkee aar nga sa RadarPoints ak adrees email te mënoo jëfandikoo aplikasioŋ bi:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "Yónneel email ci {email} {from}, ak tur bii: “{subject}”."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "jóge ci adrees email bi ci sa kontu PickupRadar"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "Dinanu tontu ci adrees boobu ngir dëggal laaj bi balaa nuy far dara."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "Bu nga bindee jóge ci beneen adrees, war nanu dëggal ne yaa yor adrees email bu kontu bi. Dunu la mukk laaj baatu jàll walla kodu duggu. Bul nu yónnee sa kod."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "Porofil Radar yu amul tur"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "Bu fekkee mukk yokkuloo adrees email, sa porofil Radar dafa lëkkaloo rekk ak ab ID bu ñu tànn ci ndaw-ndaw bu ñu denc ci aplikasioŋ bi ci sa telefon. Yoon wi gën a yomb ngir far ko mooy ci aplikasioŋ bi, ak tànki kaw yi."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "Fare aplikasioŋ bi dafay dindi ID boobu ci sa telefon, waaye {not} denc yi ci sunu serwëër yi."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "du far"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "Moomeel porofil bu amul tur mën nañu ko dëggal rekk jóge ci telefon bi ñu ko sosee, ak ID bu ñu tànn ci ndaw-ndaw ak kod bu kumpa bu ñu denc ci aplikasioŋ bi. Xibaar yu mel ni turu Radar, dëkk walla bis yi nga jëfandikoo aplikasioŋ bi du wone ne porofil bi yaa ko moom, ndaxte ñeneen mën nañu ko xam itam. Moo tax bu fekkee amatoo aplikasioŋ bi, man na am ne dunu mën a far porofil bu amul tur. Waaye mën nga yónnee email ci {email} te dinanu la leeral li nu mën a def."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "Email yu yégle tàmbali ci dëkk yi"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "Mën nga dindi yégleb tàmbali ci aplikasioŋ bi, walla nga yónnee nu email jóge ci adrees bi nga bindoo te dinanu far bind yu adrees boobu. Email yu yégleb tàmbali ñu ngi leen di far itam ci seen bopp, ni ko sunu {privacy} di leeralee."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "Li ñuy far"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "Sa porofil Radar, turu Radar, RadarPoints ak sa jaar-jaaru njàppale"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "Sa duggu ak email, bu fekkee am nga kontu email"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "Lëkkalé yi ci diggante ID bu jumtukaayu sa telefon ak sa porofil"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "Say kodu woote, ak ndax bataaxali aplikasioŋ bi jàng nañu leen walla tëj nañu leen"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "Bind yu yégleb tàmbali yu lëkkaloo ak sa porofil walla sa telefon"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "Bind yi ci yégle jafe-jafe yi, yégle ci anam yi ak xelal bérab yi yu lëkkaloo ak sa porofil"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "Li ñu mën a denc"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, ni diirub xaar, yégle ci anamu bérab yi ak màndarga yi, ak xelal bérab: ID bu jumtukaay bi ci denc yi lëkkaloo ak sa porofil dañu koy wecciku ak ab njëg bu ñu tànn ci ndaw-ndaw, kon ci sunu dencukaayu xibaar lëkkalootuñu ak sa porofil. Ñu ngi am ba leegi xibaar yu mel ni bérab ak waxtu, kon dindi nañu ci li may xam nit ki, waaye du lu amul tur lépp. Mën nañu leen denc ngir ñu wéy di dimbali yeneen dawalkat."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "Yégle yu weesu"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "{lead} yi nga bokk, te sa porofil nekku ci."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "Dencu woote yi"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead} ngir kontu email yi (jokkoo bu biir bu kontu bi, ID bu jumtukaay bi, ab kopi bu ñu kumpa ci benn yoon bu kod bu kumpa bu telefon bi, ak bis yi), ngir fare gi mën a jeex ci kaaraange te ñu mën a wone ne am na."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "Ab dencu fare bu gën a tuuti"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: kiy may sunu dencukaayu xibaar dafay denc kopi yu bés bu nekk 7 fan, kon xibaar yi ñu far mën nañu des ci ab kopi ba 7 fan."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "Kopi yu aar"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "{lead} ci sa laaj, lu tollu ni ko soxla ngir saytu ko."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "Email yi ñuy yónnee ndimbal"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "Ngir xam lépp ci lu tollu ban diir lanuy denc xibaar ak say yeneen sañ-sañ, xoolal sunu {privacy}."
     }
   }
 }

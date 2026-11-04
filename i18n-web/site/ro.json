@@ -2,7 +2,7 @@
   "language": "ro",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "Pagina principală"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "Pe această pagină"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "Ultima actualizare: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "Politica de confidențialitate"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "Politica de confidențialitate — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "Politica de confidențialitate PickupRadar."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "Secțiunile politicii de confidențialitate"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "Rezumatul și titlurile secțiunilor sunt traduse. Politica de confidențialitate completă este în engleză, iar versiunea în engleză este versiunea oficială."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "Pe scurt"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "Cine suntem"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "Ce informații colectăm și cum le folosim"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "Ce nu vă cerem"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "Temeiurile noastre legale (Regatul Unit)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "Cu cine partajăm informațiile"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "Transferuri internaționale"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "Cât timp păstrăm informațiile"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "Opțiunile și drepturile dvs."
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "Securitate"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "Copii"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "Modificări ale acestei politici"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "Contact"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar îi ajută pe curieri să vadă și să raporteze timpii de așteptare la ridicare și problemele din locații."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "Puteți naviga fără cont. Aplicația creează un profil Radar anonim pentru telefonul dvs., iar un cont cu e-mail este opțional."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "Dacă permiteți accesul la locație, aplicația o folosește doar cât o utilizați: pentru a ordona punctele de ridicare din apropiere, a vă detecta orașul și a verifica dacă sunteți în locație când trimiteți un raport în timp real. Nu salvăm locația dvs. împreună cu rapoartele."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "Punctele de ridicare salvate rămân pe telefonul dvs."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "Nu vindem informațiile dvs. personale, iar aplicația nu are trackere de publicitate sau analiză."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "Vă puteți șterge profilul Radar sau contul în aplicație ori ne puteți cere acest lucru prin e-mail. Consultați {link}."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "Ștergeți-vă contul sau datele — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "Cum vă ștergeți contul PickupRadar, profilul Radar și datele asociate, inclusiv fără aplicație."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "Secțiunile despre ștergerea contului"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "Ștergeți-vă contul sau datele"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "Această pagină explică cum vă ștergeți contul PickupRadar, profilul Radar și datele legate de acestea, inclusiv dacă nu mai aveți aplicația. PickupRadar este dezvoltată de Hamza Khan."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "Ștergeți în aplicație (cel mai rapid)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "Deschideți PickupRadar."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "Atingeți {profile} în partea de jos a ecranului principal."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "Derulați în jos și atingeți {deleteAccount} dacă v-ați protejat RadarPoints cu un e-mail, sau {deleteProfile} în caz contrar."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "Atingeți {confirm} pentru a confirma."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "Ștergerea începe imediat. După aceea, aplicația creează un nou profil Radar anonim pe telefonul dvs."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "Cereți-ne să vă ștergem contul cu e-mail"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "Dacă v-ați protejat RadarPoints cu o adresă de e-mail și nu puteți folosi aplicația:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "Scrieți la {email} {from}, cu subiectul „{subject}”."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "de pe adresa de e-mail a contului dvs. PickupRadar"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "Vom răspunde la acea adresă pentru a confirma cererea înainte de a șterge ceva."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "Dacă scrieți de pe altă adresă, va trebui să confirmăm că dețineți controlul asupra adresei de e-mail a contului. Nu vă vom cere niciodată o parolă sau un cod de conectare. Nu ne trimiteți codul dvs."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "Profiluri Radar anonime"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "Dacă nu ați adăugat niciodată o adresă de e-mail, profilul dvs. Radar este legat doar de un ID aleatoriu salvat în aplicația de pe telefon. Cel mai simplu este să îl ștergeți în aplicație, urmând pașii de mai sus."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "Ștergerea aplicației elimină acel ID de pe telefon, dar {not} înregistrările de pe serverele noastre."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "nu șterge"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "Dreptul de proprietate asupra unui profil anonim poate fi dovedit doar de pe telefonul pe care a fost creat, folosind ID-ul aleatoriu și codul secret salvate în aplicație. Detalii precum numele Radar, orașul sau datele în care ați folosit aplicația nu dovedesc că profilul vă aparține, deoarece și alte persoane le pot cunoaște. Prin urmare, dacă nu mai aveți aplicația, este posibil să nu putem șterge un profil anonim. Ne puteți scrie totuși la {email} și vă vom explica ce putem face."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "E-mailuri de alertă privind lansarea în orașe"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "Puteți retrage o alertă de lansare în aplicație sau ne puteți scrie de pe adresa cu care v-ați înscris, iar noi vom șterge înscrierile pentru acea adresă. E-mailurile pentru alertele de lansare sunt șterse și automat, așa cum se explică în {privacy}."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "Ce se șterge"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "Profilul Radar, numele Radar, RadarPoints și istoricul contribuțiilor dvs."
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "Conectarea prin e-mail, dacă ați avut un cont cu e-mail"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "Legăturile dintre ID-ul dispozitivului telefonului și profilul dvs."
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "Codurile dvs. de recomandare și starea de citit sau închis a mesajelor din aplicație"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "Înscrierile la alertele de lansare legate de profilul sau telefonul dvs."
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "Notițele din rapoartele de probleme, rapoartele de stare și sugestiile de locații legate de profilul dvs."
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "Ce poate fi păstrat"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, cum ar fi timpii de așteptare, rapoartele de stare și etichetele locațiilor și sugestiile de locații: ID-ul dispozitivului din înregistrările legate de profilul dvs. este înlocuit cu o valoare aleatorie, astfel că în baza noastră de date acestea nu mai sunt legate de profilul dvs. Ele conțin în continuare detalii precum locația și ora, deci sunt de-identificate, nu complet anonime. Pot fi păstrate pentru a-i ajuta în continuare pe alți curieri."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "Rapoarte anterioare"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "{lead} la care ați participat, fără profilul dvs."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "Înregistrări de recomandare"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead} pentru conturile cu e-mail (o referință internă a contului, ID-ul dispozitivului, o copie criptată unidirecțional a codului secret al telefonului și date), pentru ca ștergerea să poată fi finalizată în siguranță și să se poată dovedi că a avut loc."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "O înregistrare minimă a ștergerii"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: furnizorul nostru de baze de date păstrează copii de rezervă zilnice timp de 7 zile, astfel că informațiile șterse pot rămâne într-o copie de rezervă până la 7 zile."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "Copii de rezervă"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "{lead} legate de cererea dvs., cât timp este necesar pentru a o soluționa."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "E-mailuri către asistență"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "Pentru detalii complete despre cât timp păstrăm informațiile și despre celelalte drepturi ale dvs., consultați {privacy}."
     }
   }
 }

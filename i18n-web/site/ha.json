@@ -2,7 +2,7 @@
   "language": "ha",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "Gida"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "A wannan shafi"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "Sabuntawa ta ƙarshe: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "Manufar sirri"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "Manufar sirri — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "Manufar sirri ta PickupRadar."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "Sassan manufar sirri"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "An fassara taƙaitawa da kanun sassan. Cikakkiyar manufar sirri tana cikin Turanci, kuma sigar Turanci ita ce sigar hukuma."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "Taƙaitawa"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "Su wane ne mu"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "Bayanan da muke tattarawa da yadda muke amfani da su"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "Abin da ba mu tambaya"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "Tushenmu na shari'a (Birtaniya)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "Da wa muke raba bayanai"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "Canja wurin ƙasa da ƙasa"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "Tsawon lokacin da muke ajiye bayanai"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "Zaɓuɓɓukanka da haƙƙoƙinka"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "Tsaro"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "Yara"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "Canje-canje ga wannan manufar"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "Tuntuɓe mu"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar tana taimaka wa direbobin isar da kaya su gani kuma su ba da rahoton lokacin jira wajen karɓar oda da matsalolin wurare."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "Za ka iya bincike ba tare da asusu ba. Manhajar tana ƙirƙirar bayanin Radar mara suna don wayarka, kuma asusun imel na zaɓi ne."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "Idan ka ba da izinin wuri, manhajar tana amfani da shi ne kawai lokacin da kake amfani da ita: don jera wuraren karɓa na kusa, gano garinka, da tabbatar da cewa kana wurin lokacin da kake aika rahoto kai tsaye. Ba ma ajiye wurinka tare da rahotanninka."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "Wuraren karɓa da ka ajiye suna zama a wayarka."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "Ba ma sayar da bayananka na sirri, kuma manhajar ba ta da masu bin diddigin talla ko nazari."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "Za ka iya goge bayanin Radar ko asusunka a cikin manhajar, ko ka aiko mana da imel. Duba {link}."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "Goge asusunka ko bayananka — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "Yadda ake goge asusun PickupRadar, bayanin Radar da bayanan da suka danganci su, ko da babu manhajar."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "Sassan goge asusu"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "Goge asusunka ko bayananka"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "Wannan shafin yana bayyana yadda ake goge asusunka na PickupRadar, bayanin Radar naka da bayanan da ke da alaƙa da su, ko da ba ka da manhajar kuma. Hamza Khan ne ya ƙirƙiri PickupRadar."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "Goge a cikin manhajar (mafi sauri)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "Buɗe PickupRadar."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "Taɓa {profile} a ƙasan babban allo."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "Gungura ƙasa ka taɓa {deleteAccount} idan ka kare RadarPoints naka da imel, ko {deleteProfile} idan ba haka ba."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "Taɓa {confirm} don tabbatarwa."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "Gogewa tana farawa nan take. Bayan haka manhajar tana fara sabon bayanin Radar mara suna a wayarka."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "Ka nemi mu goge asusunka na imel"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "Idan ka kare RadarPoints naka da adireshin imel kuma ba za ka iya amfani da manhajar ba:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "Aika imel zuwa {email} {from}, da take “{subject}”."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "daga adireshin imel na asusunka na PickupRadar"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "Za mu amsa zuwa wannan adireshin don tabbatar da buƙatar kafin mu goge komai."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "Idan ka rubuto daga wani adireshi, za mu buƙaci tabbatar da cewa kai ne ke sarrafa adireshin imel na asusun. Ba za mu taɓa neman kalmar sirri ko lambar shiga ba. Kada ka aiko mana da lambarka."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "Bayanan Radar marasa suna"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "Idan ba ka taɓa ƙara adireshin imel ba, bayanin Radar naka yana da alaƙa ne kawai da ID na bazuwar da aka ajiye a cikin manhajar wayarka. Hanya mafi sauƙi ta goge shi ita ce a cikin manhajar, da matakan da ke sama."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "Goge manhajar yana cire wannan ID daga wayarka, amma {not} bayanan da ke kan sabobinmu."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "ba ya goge"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "Ana iya tabbatar da mallakar bayanin mara suna ne kawai daga wayar da aka ƙirƙira shi a kanta, ta amfani da ID na bazuwar da lambar sirri da aka ajiye a cikin manhajar. Bayanai kamar sunan Radar, gari ko ranakun da ka yi amfani da manhajar ba sa tabbatar da cewa bayanin naka ne, domin wasu ma suna iya sanin su. Saboda haka, idan ba ka da manhajar kuma, ƙila ba za mu iya goge bayanin mara suna ba. Duk da haka za ka iya aika imel zuwa {email} kuma za mu bayyana abin da za mu iya yi."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "Imel ɗin sanarwar ƙaddamarwa a birane"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "Za ka iya janye sanarwar ƙaddamarwa a cikin manhajar, ko ka aiko mana da imel daga adireshin da ka yi rajista da shi kuma za mu goge rajistar wannan adireshin. Ana kuma goge imel ɗin sanarwar ƙaddamarwa ta atomatik, kamar yadda {privacy} ɗinmu ta bayyana."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "Abin da ake gogewa"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "Bayanin Radar naka, sunan Radar, RadarPoints da tarihin gudummawa"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "Shigarka ta imel, idan kana da asusun imel"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "Alaƙa tsakanin ID na na'urar wayarka da bayaninka"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "Lambobin gayyatarka, da matsayin karantawa ko rufewa na saƙonnin manhajar"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "Rajistar sanarwar ƙaddamarwa da ke da alaƙa da bayaninka ko wayarka"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "Bayanin kula a kan rahotannin matsala, rahotannin matsayi da shawarwarin wurare da ke da alaƙa da bayaninka"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "Abin da za a iya ajiyewa"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, kamar lokutan jira, rahotannin matsayi da alamomin wurare, da shawarwarin wurare: ana maye gurbin ID na na'ura a cikin bayanan da ke da alaƙa da bayaninka da ƙima ta bazuwar, don haka a cikin ma'ajiyar bayananmu ba su da alaƙa da bayaninka kuma. Har yanzu suna ɗauke da bayanai kamar wuri da lokaci, don haka an cire bayanin tantancewa, amma ba su zama marasa suna gaba ɗaya ba. Ana iya ajiye su don su ci gaba da taimaka wa sauran direbobi."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "Rahotannin baya"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "{lead} da ka shiga, ba tare da bayaninka ba."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "Bayanan gayyata"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead} don asusun imel (wani lambar asusu ta ciki, ID na na'ura, kwafin lambar sirrin wayar da aka ɓoye ta hanya ɗaya, da ranaku), don a kammala gogewar cikin aminci kuma a nuna cewa ta faru."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "Ƙaramin bayanin gogewa"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: mai samar da ma'ajiyar bayananmu yana ajiye kwafin ajiya na kullum na kwanaki 7, don haka bayanan da aka goge za su iya zama a cikin kwafin ajiya har zuwa kwanaki 7."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "Kwafin ajiya"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "{lead} game da buƙatarka, muddin ana buƙata don kula da ita."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "Imel ɗin tallafi"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "Don cikakken bayani kan tsawon lokacin da muke ajiye bayanai da sauran haƙƙoƙinka, duba {privacy} ɗinmu."
     }
   }
 }

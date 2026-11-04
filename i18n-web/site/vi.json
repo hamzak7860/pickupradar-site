@@ -2,7 +2,7 @@
   "language": "vi",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "Trang chủ"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "Trên trang này"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "Cập nhật lần cuối: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "Chính sách quyền riêng tư"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "Chính sách quyền riêng tư — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "Chính sách quyền riêng tư của PickupRadar."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "Các mục của chính sách quyền riêng tư"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "Phần tóm tắt và tiêu đề các mục đã được dịch. Toàn bộ chính sách quyền riêng tư bằng tiếng Anh và bản tiếng Anh là bản chính thức."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "Tóm tắt"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "Chúng tôi là ai"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "Thông tin chúng tôi thu thập và cách sử dụng"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "Những gì chúng tôi không yêu cầu"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "Cơ sở pháp lý của chúng tôi (Vương quốc Anh)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "Chúng tôi chia sẻ thông tin với ai"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "Chuyển dữ liệu ra quốc tế"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "Chúng tôi lưu giữ thông tin trong bao lâu"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "Lựa chọn và quyền của bạn"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "Bảo mật"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "Trẻ em"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "Thay đổi chính sách này"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "Liên hệ"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar giúp tài xế giao hàng xem và báo cáo thời gian chờ lấy hàng cũng như sự cố tại địa điểm."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "Bạn có thể xem mà không cần tài khoản. Ứng dụng tạo một hồ sơ Radar ẩn danh cho điện thoại của bạn, còn tài khoản email là tùy chọn."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "Nếu bạn cho phép truy cập vị trí, ứng dụng chỉ dùng vị trí khi đang sử dụng: để sắp xếp các điểm lấy hàng gần đó, xác định thành phố của bạn và kiểm tra bạn đang ở địa điểm khi gửi báo cáo trực tiếp. Chúng tôi không lưu vị trí của bạn cùng với báo cáo."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "Các điểm lấy hàng bạn đã lưu chỉ nằm trên điện thoại của bạn."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "Chúng tôi không bán thông tin cá nhân của bạn và ứng dụng không có trình theo dõi quảng cáo hay phân tích."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "Bạn có thể xóa hồ sơ Radar hoặc tài khoản trong ứng dụng, hoặc gửi email yêu cầu chúng tôi. Xem {link}."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "Xóa tài khoản hoặc dữ liệu — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "Cách xóa tài khoản PickupRadar, hồ sơ Radar và dữ liệu liên quan, kể cả khi không có ứng dụng."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "Các mục về xóa tài khoản"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "Xóa tài khoản hoặc dữ liệu"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "Trang này giải thích cách xóa tài khoản PickupRadar, hồ sơ Radar và dữ liệu liên quan, kể cả khi bạn không còn ứng dụng. PickupRadar do Hamza Khan phát triển."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "Xóa trong ứng dụng (nhanh nhất)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "Mở PickupRadar."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "Chạm vào {profile} ở cuối màn hình chính."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "Cuộn xuống và chạm vào {deleteAccount} nếu bạn đã bảo vệ RadarPoints bằng email, hoặc {deleteProfile} nếu chưa."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "Chạm vào {confirm} để xác nhận."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "Việc xóa bắt đầu ngay lập tức. Sau đó ứng dụng tạo một hồ sơ Radar ẩn danh mới trên điện thoại của bạn."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "Yêu cầu chúng tôi xóa tài khoản email"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "Nếu bạn đã bảo vệ RadarPoints bằng địa chỉ email và không thể dùng ứng dụng:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "Gửi email đến {email} {from}, với tiêu đề “{subject}”."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "từ địa chỉ email của tài khoản PickupRadar"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "Chúng tôi sẽ trả lời đến địa chỉ đó để xác nhận yêu cầu trước khi xóa bất cứ thứ gì."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "Nếu bạn viết từ địa chỉ khác, chúng tôi cần xác minh rằng bạn kiểm soát địa chỉ email của tài khoản. Chúng tôi sẽ không bao giờ hỏi mật khẩu hay mã đăng nhập. Đừng gửi mã của bạn cho chúng tôi."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "Hồ sơ Radar ẩn danh"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "Nếu bạn chưa từng thêm địa chỉ email, hồ sơ Radar của bạn chỉ gắn với một ID ngẫu nhiên được lưu trong ứng dụng trên điện thoại. Cách dễ nhất để xóa là trong ứng dụng, theo các bước ở trên."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "Xóa ứng dụng sẽ xóa ID đó khỏi điện thoại, nhưng {not} dữ liệu trên máy chủ của chúng tôi."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "không xóa"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "Quyền sở hữu hồ sơ ẩn danh chỉ có thể được chứng minh từ chiếc điện thoại đã tạo ra nó, bằng ID ngẫu nhiên và mã bí mật lưu trong ứng dụng. Các thông tin như tên Radar, thành phố hay ngày dùng ứng dụng không chứng minh hồ sơ là của bạn, vì người khác cũng có thể biết. Vì vậy, nếu bạn không còn ứng dụng, chúng tôi có thể không xóa được hồ sơ ẩn danh. Bạn vẫn có thể gửi email đến {email} và chúng tôi sẽ giải thích những gì có thể làm."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "Email thông báo ra mắt tại thành phố"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "Bạn có thể rút lại thông báo ra mắt trong ứng dụng, hoặc gửi email cho chúng tôi từ địa chỉ đã đăng ký và chúng tôi sẽ xóa các đăng ký của địa chỉ đó. Email thông báo ra mắt cũng được tự động xóa, như {privacy} của chúng tôi giải thích."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "Những gì bị xóa"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "Hồ sơ Radar, tên Radar, RadarPoints và lịch sử đóng góp của bạn"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "Đăng nhập bằng email, nếu bạn có tài khoản email"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "Liên kết giữa ID thiết bị của điện thoại và hồ sơ của bạn"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "Mã giới thiệu của bạn và trạng thái đã đọc hoặc đã đóng của tin nhắn trong ứng dụng"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "Các đăng ký thông báo ra mắt gắn với hồ sơ hoặc điện thoại của bạn"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "Ghi chú trong báo cáo sự cố, báo cáo trạng thái và đề xuất địa điểm gắn với hồ sơ của bạn"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "Những gì có thể được giữ lại"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, chẳng hạn thời gian chờ, báo cáo trạng thái và thẻ của địa điểm, và đề xuất địa điểm: ID thiết bị trong các bản ghi gắn với hồ sơ của bạn được thay bằng một giá trị ngẫu nhiên, nên trong cơ sở dữ liệu của chúng tôi chúng không còn gắn với hồ sơ của bạn. Chúng vẫn chứa thông tin như địa điểm và thời gian, nên được khử định danh chứ không hoàn toàn ẩn danh. Chúng có thể được giữ lại để tiếp tục giúp các tài xế khác."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "Báo cáo trước đây"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "{lead} mà bạn tham gia, không kèm hồ sơ của bạn."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "Hồ sơ giới thiệu"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead} đối với tài khoản email (một mã tham chiếu tài khoản nội bộ, ID thiết bị, một bản sao mã hóa một chiều của mã bí mật trên điện thoại và các mốc ngày), để việc xóa có thể hoàn tất an toàn và chứng minh là đã thực hiện."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "Một bản ghi xóa tối thiểu"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: nhà cung cấp cơ sở dữ liệu của chúng tôi giữ bản sao lưu hằng ngày trong 7 ngày, nên thông tin đã xóa có thể còn trong bản sao lưu tối đa 7 ngày."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "Bản sao lưu"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "{lead} về yêu cầu của bạn, trong thời gian cần thiết để xử lý."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "Email hỗ trợ"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "Để biết đầy đủ chúng tôi lưu giữ thông tin bao lâu và các quyền khác của bạn, hãy xem {privacy} của chúng tôi."
     }
   }
 }

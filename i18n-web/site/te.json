@@ -2,7 +2,7 @@
   "language": "te",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "హోమ్"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "ఈ పేజీలో"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "చివరిగా నవీకరించినది: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "గోప్యతా విధానం"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "గోప్యతా విధానం — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "PickupRadar గోప్యతా విధానం."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "గోప్యతా విధానం విభాగాలు"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "సారాంశం మరియు విభాగాల శీర్షికలు అనువదించబడ్డాయి. పూర్తి గోప్యతా విధానం ఆంగ్లంలో ఉంది, ఆంగ్ల వెర్షనే అధికారికమైనది."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "సారాంశం"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "మేము ఎవరు"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "మేము సేకరించే సమాచారం మరియు దాన్ని ఎలా ఉపయోగిస్తాము"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "మేము అడగనివి"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "మా చట్టపరమైన ఆధారాలు (యూకే)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "సమాచారాన్ని ఎవరితో పంచుకుంటాము"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "అంతర్జాతీయ బదిలీలు"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "సమాచారాన్ని ఎంతకాలం ఉంచుతాము"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "మీ ఎంపికలు మరియు హక్కులు"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "భద్రత"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "పిల్లలు"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "ఈ విధానంలో మార్పులు"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "సంప్రదించండి"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar డెలివరీ డ్రైవర్లు పికప్ వద్ద వేచి ఉండే సమయాలను, వేదికల సమస్యలను చూడటానికి మరియు నివేదించడానికి సహాయపడుతుంది."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "ఖాతా లేకుండానే బ్రౌజ్ చేయవచ్చు. యాప్ మీ ఫోన్ కోసం అనామక Radar ప్రొఫైల్‌ను సృష్టిస్తుంది; ఇమెయిల్ ఖాతా ఐచ్ఛికం."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "మీరు లొకేషన్‌ను అనుమతిస్తే, ఉపయోగిస్తున్నప్పుడు మాత్రమే యాప్ దాన్ని వాడుతుంది: సమీప పికప్ స్థలాలను క్రమబద్ధీకరించడానికి, మీ నగరాన్ని గుర్తించడానికి, లైవ్ నివేదిక పంపేటప్పుడు మీరు వేదిక వద్ద ఉన్నారని తనిఖీ చేయడానికి. మీ లొకేషన్‌ను మీ నివేదికలతో పాటు సేవ్ చేయము."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "మీరు సేవ్ చేసిన పికప్ స్థలాలు మీ ఫోన్‌లోనే ఉంటాయి."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "మీ వ్యక్తిగత సమాచారాన్ని మేము అమ్మము, యాప్‌లో ప్రకటనల లేదా విశ్లేషణ ట్రాకర్‌లు లేవు."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "మీ Radar ప్రొఫైల్‌ను లేదా ఖాతాను యాప్‌లో తొలగించవచ్చు, లేదా ఇమెయిల్ ద్వారా మమ్మల్ని అడగవచ్చు. {link} చూడండి."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "మీ ఖాతా లేదా డేటాను తొలగించండి — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "యాప్ లేకపోయినా మీ PickupRadar ఖాతా, Radar ప్రొఫైల్ మరియు సంబంధిత డేటాను ఎలా తొలగించాలి."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "ఖాతా తొలగింపు విభాగాలు"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "మీ ఖాతా లేదా డేటాను తొలగించండి"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "మీ దగ్గర ఇక యాప్ లేకపోయినా, మీ PickupRadar ఖాతా, Radar ప్రొఫైల్ మరియు వాటికి అనుసంధానమైన డేటాను ఎలా తొలగించాలో ఈ పేజీ వివరిస్తుంది. PickupRadar‌ను Hamza Khan అభివృద్ధి చేశారు."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "యాప్‌లో తొలగించండి (అత్యంత వేగవంతం)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "PickupRadar తెరవండి."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "హోమ్ స్క్రీన్ దిగువన {profile} నొక్కండి."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "కిందికి స్క్రోల్ చేసి, మీ RadarPoints‌ను ఇమెయిల్‌తో రక్షించి ఉంటే {deleteAccount}, లేకపోతే {deleteProfile} నొక్కండి."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "నిర్ధారించడానికి {confirm} నొక్కండి."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "తొలగింపు వెంటనే మొదలవుతుంది. ఆ తర్వాత యాప్ మీ ఫోన్‌లో కొత్త అనామక Radar ప్రొఫైల్‌ను ప్రారంభిస్తుంది."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "మీ ఇమెయిల్ ఖాతాను తొలగించమని మమ్మల్ని అడగండి"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "మీ RadarPoints‌ను ఇమెయిల్ చిరునామాతో రక్షించి, యాప్‌ను ఉపయోగించలేకపోతే:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "{from} {email} కు “{subject}” అనే విషయంతో ఇమెయిల్ పంపండి."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "మీ PickupRadar ఖాతాలోని ఇమెయిల్ చిరునామా నుండి"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "ఏదైనా తొలగించే ముందు అభ్యర్థనను నిర్ధారించడానికి ఆ చిరునామాకు సమాధానం ఇస్తాము."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "మీరు వేరే చిరునామా నుండి రాస్తే, ఖాతా ఇమెయిల్ చిరునామా మీ నియంత్రణలో ఉందని నిర్ధారించాలి. పాస్‌వర్డ్ లేదా సైన్-ఇన్ కోడ్‌ను మేము ఎప్పుడూ అడగము. మీ కోడ్‌ను మాకు పంపవద్దు."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "అనామక Radar ప్రొఫైల్‌లు"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "మీరు ఎప్పుడూ ఇమెయిల్ చిరునామా జోడించకపోతే, మీ Radar ప్రొఫైల్ మీ ఫోన్ యాప్‌లో సేవ్ చేసిన యాదృచ్ఛిక ID తో మాత్రమే అనుసంధానమై ఉంటుంది. పై దశలతో యాప్‌లో తొలగించడమే సులభమైన మార్గం."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "యాప్‌ను తొలగిస్తే ఆ ID మీ ఫోన్ నుండి తొలగిపోతుంది, కానీ మా సర్వర్‌లలోని రికార్డులు {not}."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "తొలగించబడవు"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "అనామక ప్రొఫైల్ యాజమాన్యాన్ని అది సృష్టించబడిన ఫోన్ నుండి మాత్రమే, యాప్‌లో సేవ్ చేసిన యాదృచ్ఛిక ID మరియు రహస్య కోడ్‌తో నిరూపించవచ్చు. Radar పేరు, నగరం లేదా యాప్ ఉపయోగించిన తేదీల వంటి వివరాలు ఇతరులకూ తెలిసి ఉండవచ్చు కాబట్టి అవి ప్రొఫైల్ మీదే అని నిరూపించవు. అందువల్ల మీ దగ్గర ఇక యాప్ లేకపోతే, అనామక ప్రొఫైల్‌ను మేము తొలగించలేకపోవచ్చు. అయినా మీరు {email} కు ఇమెయిల్ పంపవచ్చు, మేము ఏమి చేయగలమో వివరిస్తాము."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "నగర ప్రారంభ హెచ్చరిక ఇమెయిల్‌లు"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "ప్రారంభ హెచ్చరికను యాప్‌లో ఉపసంహరించుకోవచ్చు, లేదా మీరు నమోదు చేసిన చిరునామా నుండి మాకు ఇమెయిల్ పంపితే ఆ చిరునామా నమోదులను తొలగిస్తాము. మా {privacy} వివరించినట్లు, ప్రారంభ హెచ్చరిక ఇమెయిల్‌లు ఆటోమేటిక్‌గా కూడా తొలగించబడతాయి."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "తొలగించబడేవి"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "మీ Radar ప్రొఫైల్, Radar పేరు, RadarPoints మరియు సహకార చరిత్ర"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "మీకు ఇమెయిల్ ఖాతా ఉంటే, మీ ఇమెయిల్ సైన్-ఇన్"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "మీ ఫోన్ పరికర ID మరియు మీ ప్రొఫైల్ మధ్య లింక్‌లు"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "మీ రెఫరల్ కోడ్‌లు, యాప్ సందేశాల చదివిన లేదా మూసివేసిన స్థితి"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "మీ ప్రొఫైల్ లేదా ఫోన్‌కు అనుసంధానమైన నగర ప్రారంభ హెచ్చరిక నమోదులు"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "మీ ప్రొఫైల్‌కు అనుసంధానమైన సమస్య నివేదికలు, స్థితి నివేదికలు మరియు వేదిక సూచనలలోని గమనికలు"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "ఉంచబడే అవకాశం ఉన్నవి"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, ఉదా. వేచి ఉండే సమయాలు, వేదిక స్థితి నివేదికలు మరియు ట్యాగ్‌లు, వేదిక సూచనలు: మీ ప్రొఫైల్‌కు అనుసంధానమైన రికార్డులలోని పరికర ID యాదృచ్ఛిక విలువతో భర్తీ చేయబడుతుంది, కాబట్టి మా డేటాబేస్‌లో అవి ఇక మీ ప్రొఫైల్‌కు అనుసంధానమై ఉండవు. వాటిలో వేదిక, సమయం వంటి వివరాలు ఇంకా ఉంటాయి కాబట్టి అవి గుర్తింపు తొలగించబడినవి, పూర్తిగా అనామకం కాదు. ఇతర డ్రైవర్లకు సహాయం కొనసాగించడానికి వాటిని ఉంచవచ్చు."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "గత నివేదికలు"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "మీరు పాల్గొన్న {lead}, మీ ప్రొఫైల్ లేకుండా."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "రెఫరల్ రికార్డులు"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "ఇమెయిల్ ఖాతాల కోసం {lead} (అంతర్గత ఖాతా సూచన, పరికర ID, ఫోన్ రహస్య కోడ్ యొక్క ఏకదిశ ఎన్‌క్రిప్ట్ చేసిన కాపీ, తేదీలు), తొలగింపును సురక్షితంగా పూర్తి చేసి అది జరిగిందని చూపడానికి."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "కనీస తొలగింపు రికార్డు"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: మా డేటాబేస్ ప్రొవైడర్ రోజువారీ బ్యాకప్‌లను 7 రోజులు ఉంచుతారు, కాబట్టి తొలగించిన సమాచారం బ్యాకప్‌లో గరిష్ఠంగా 7 రోజులు ఉండవచ్చు."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "బ్యాకప్‌లు"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "మీ అభ్యర్థన గురించి {lead}, దాన్ని పరిష్కరించడానికి అవసరమైనంత కాలం."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "సహాయ ఇమెయిల్‌లు"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "సమాచారాన్ని ఎంతకాలం ఉంచుతాము మరియు మీ ఇతర హక్కుల పూర్తి వివరాల కోసం మా {privacy} చూడండి."
     }
   }
 }

@@ -2,7 +2,7 @@
   "language": "ko",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "홈"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "이 페이지의 내용"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "마지막 업데이트: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "개인정보 처리방침"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "개인정보 처리방침 — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "PickupRadar 개인정보 처리방침."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "개인정보 처리방침 항목"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "요약과 항목 제목은 번역되어 있습니다. 전체 개인정보 처리방침은 영어로 되어 있으며, 영어 버전이 공식 버전입니다."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "요약"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "운영자 소개"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "수집하는 정보와 이용 방법"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "요청하지 않는 정보"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "법적 근거(영국)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "정보를 공유하는 대상"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "국외 이전"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "정보 보관 기간"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "선택권과 권리"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "보안"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "아동"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "방침 변경"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "문의"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar는 배달 기사가 픽업 대기 시간과 매장 문제를 확인하고 신고할 수 있도록 돕습니다."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "계정 없이도 둘러볼 수 있습니다. 앱은 휴대폰에 익명 Radar 프로필을 만들며, 이메일 계정은 선택 사항입니다."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "위치 권한을 허용하면 앱은 사용 중에만 위치를 이용합니다. 주변 픽업 장소 정렬, 도시 확인, 실시간 신고를 보낼 때 매장에 있는지 확인하기 위해서입니다. 위치는 신고와 함께 저장하지 않습니다."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "저장한 픽업 장소는 휴대폰에만 남습니다."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "개인정보를 판매하지 않으며, 앱에는 광고나 분석 추적기가 없습니다."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "Radar 프로필이나 계정은 앱에서 삭제하거나 이메일로 삭제를 요청할 수 있습니다. {link}을(를) 참고하세요."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "계정 또는 데이터 삭제 — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "앱이 없어도 PickupRadar 계정, Radar 프로필, 관련 데이터를 삭제하는 방법."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "계정 삭제 항목"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "계정 또는 데이터 삭제"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "이 페이지에서는 앱이 더 이상 없더라도 PickupRadar 계정, Radar 프로필 및 관련 데이터를 삭제하는 방법을 설명합니다. PickupRadar는 Hamza Khan이 개발했습니다."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "앱에서 삭제(가장 빠름)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "PickupRadar를 엽니다."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "홈 화면 아래쪽의 {profile}을(를) 탭합니다."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "아래로 스크롤한 뒤 RadarPoints를 이메일로 보호했다면 {deleteAccount}, 그렇지 않다면 {deleteProfile}을(를) 탭합니다."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "{confirm}을(를) 탭해 확인합니다."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "삭제는 즉시 시작됩니다. 이후 앱은 휴대폰에 새 익명 Radar 프로필을 시작합니다."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "이메일 계정 삭제 요청하기"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "RadarPoints를 이메일 주소로 보호했고 앱을 사용할 수 없는 경우:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "{from} {email}(으)로 제목을 “{subject}”(으)로 하여 이메일을 보내 주세요."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "PickupRadar 계정의 이메일 주소에서"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "삭제하기 전에 해당 주소로 회신하여 요청을 확인합니다."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "다른 주소에서 연락하는 경우, 계정 이메일 주소를 본인이 관리하는지 확인해야 합니다. 비밀번호나 로그인 코드를 요청하는 일은 절대 없습니다. 코드를 보내지 마세요."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "익명 Radar 프로필"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "이메일 주소를 추가한 적이 없다면 Radar 프로필은 휴대폰의 앱에 저장된 임의의 ID에만 연결되어 있습니다. 위 단계를 따라 앱에서 삭제하는 것이 가장 쉽습니다."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "앱을 삭제하면 휴대폰에서 해당 ID가 지워지지만, 서버의 기록은 {not}."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "삭제되지 않습니다"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "익명 프로필의 소유는 프로필을 만든 휴대폰에서, 앱에 저장된 임의의 ID와 비밀 코드로만 증명할 수 있습니다. Radar 이름, 도시, 앱 사용 날짜 같은 정보는 다른 사람도 알 수 있으므로 프로필이 본인의 것임을 증명하지 못합니다. 따라서 앱이 더 이상 없다면 익명 프로필을 삭제하지 못할 수도 있습니다. 그래도 {email}(으)로 이메일을 보내 주시면 가능한 방법을 안내해 드립니다."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "도시 출시 알림 이메일"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "출시 알림은 앱에서 취소하거나, 신청한 주소로 이메일을 보내 주시면 해당 주소의 신청을 삭제합니다. 출시 알림 이메일은 {privacy}에 설명된 대로 자동으로도 삭제됩니다."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "삭제되는 항목"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "Radar 프로필, Radar 이름, RadarPoints 및 기여 기록"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "이메일 계정이 있었다면 이메일 로그인"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "휴대폰 기기 ID와 프로필 간의 연결"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "추천 코드와 앱 메시지의 읽음 또는 닫음 상태"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "프로필이나 휴대폰에 연결된 출시 알림 신청"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "프로필에 연결된 문제 신고, 상태 신고, 매장 제안의 메모"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "보관될 수 있는 항목"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}(대기 시간, 매장 상태 신고와 태그, 매장 제안 등): 프로필에 연결된 기록의 기기 ID는 임의의 값으로 바뀌므로 데이터베이스에서 더 이상 프로필과 연결되지 않습니다. 매장과 시간 같은 정보는 남아 있어 완전한 익명이 아니라 비식별 처리된 상태입니다. 다른 기사에게 계속 도움이 되도록 보관될 수 있습니다."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "이전 신고"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "본인이 참여한 {lead}(프로필 제외)."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "추천 기록"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "이메일 계정의 경우 {lead}(내부 계정 참조, 기기 ID, 휴대폰 비밀 코드의 단방향 암호화 사본, 날짜). 삭제를 안전하게 완료하고 완료되었음을 보여 주기 위해서입니다."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "최소한의 삭제 기록"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: 데이터베이스 제공업체는 일일 백업을 7일간 보관하므로 삭제된 정보가 최대 7일 동안 백업에 남을 수 있습니다."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "백업"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "요청과 관련된 {lead}(처리에 필요한 기간 동안)."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "고객 지원 이메일"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "정보 보관 기간과 기타 권리에 대한 자세한 내용은 {privacy}을(를) 참고하세요."
     }
   }
 }

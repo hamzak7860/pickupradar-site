@@ -2,7 +2,7 @@
   "language": "zh-Hant",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "首頁"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "本頁內容"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "最後更新：{date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "隱私權政策"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "隱私權政策 — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "PickupRadar 隱私權政策。"
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "隱私權政策章節"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "摘要和章節標題已翻譯。完整的隱私權政策為英文，並以英文版本為正式版本。"
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "摘要"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "關於我們"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "我們收集的資訊及其用途"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "我們不會要求的資訊"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "我們的法律依據（英國）"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "我們與誰分享資訊"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "國際傳輸"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "我們保留資訊的時間"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "你的選擇與權利"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "安全"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "兒童"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "本政策的變更"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "聯絡我們"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar 協助外送員查看並回報取餐等候時間和店家問題。"
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "不需要帳戶也能瀏覽。App 會為你的手機建立匿名 Radar 個人檔案，電子郵件帳戶為選用。"
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "若你允許位置存取，App 只會在使用期間使用位置：用來排序附近的取餐點、判斷你所在的城市，以及在你傳送即時回報時確認你在店家現場。我們不會將你的位置與回報一起儲存。"
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "你儲存的取餐點只會保留在你的手機上。"
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "我們不會出售你的個人資訊，App 也沒有廣告或分析追蹤器。"
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "你可以在 App 中刪除 Radar 個人檔案或帳戶，或寄電子郵件請我們處理。請參閱{link}。"
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "刪除帳戶或資料 — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "如何刪除你的 PickupRadar 帳戶、Radar 個人檔案及相關資料，即使沒有 App 也可以。"
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "帳戶刪除章節"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "刪除帳戶或資料"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "本頁說明如何刪除你的 PickupRadar 帳戶、Radar 個人檔案及相關資料，包括你已經沒有 App 的情況。PickupRadar 由 Hamza Khan 開發。"
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "在 App 中刪除（最快）"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "開啟 PickupRadar。"
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "點選主畫面底部的 {profile}。"
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "向下捲動，如果你已用電子郵件保護 RadarPoints，請點選 {deleteAccount}；否則請點選 {deleteProfile}。"
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "點選 {confirm} 確認。"
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "刪除會立即開始。之後 App 會在你的手機上建立新的匿名 Radar 個人檔案。"
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "請我們刪除你的電子郵件帳戶"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "如果你已用電子郵件地址保護 RadarPoints，但無法使用 App："
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "請{from}寄信至 {email}，主旨為「{subject}」。"
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "從你的 PickupRadar 帳戶電子郵件地址"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "刪除任何資料前，我們會回覆該地址以確認你的請求。"
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "如果你從其他地址來信，我們需要確認你能控制該帳戶的電子郵件地址。我們絕不會要求密碼或登入碼。請勿將你的驗證碼寄給我們。"
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "匿名 Radar 個人檔案"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "如果你從未新增電子郵件地址，你的 Radar 個人檔案只與儲存在手機 App 中的隨機 ID 相關聯。最簡單的刪除方式是依照上述步驟在 App 中刪除。"
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "刪除 App 會從手機移除該 ID，但{not}我們伺服器上的紀錄。"
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "不會刪除"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "匿名個人檔案的擁有權只能從建立它的手機，透過 App 中儲存的隨機 ID 和密碼來證明。Radar 名稱、城市或使用 App 的日期等資訊無法證明個人檔案屬於你，因為其他人也可能知道。因此，如果你已經沒有 App，我們可能無法刪除匿名個人檔案。你仍可寄信至 {email}，我們會說明能提供哪些協助。"
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "城市上線通知電子郵件"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "你可以在 App 中取消上線通知，或從你登記時使用的地址寫信給我們，我們會刪除該地址的登記。上線通知的電子郵件也會依照我們的{privacy}所述自動刪除。"
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "會刪除的內容"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "你的 Radar 個人檔案、Radar 名稱、RadarPoints 和貢獻紀錄"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "如果你有電子郵件帳戶，你的電子郵件登入"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "你的手機裝置 ID 與個人檔案之間的關聯"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "你的推薦碼，以及 App 訊息的已讀或關閉狀態"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "與你的個人檔案或手機相關的城市上線通知登記"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "與你的個人檔案相關的問題回報、狀態回報和店家建議中的備註"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "可能保留的內容"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}，例如等候時間、店家狀態回報和標籤，以及店家建議：與你個人檔案相關紀錄中的裝置 ID 會被替換為隨機值，因此在我們的資料庫中不再與你的個人檔案相關聯。它們仍包含店家和時間等資訊，因此是去識別化而非完全匿名。這些資料可能會保留，以持續幫助其他外送員。"
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "過去的回報"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "你參與的{lead}，不含你的個人檔案。"
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "推薦紀錄"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "電子郵件帳戶的{lead}（內部帳戶參照、裝置 ID、手機密碼的單向加密副本及日期），以便安全完成刪除並證明已完成。"
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "最少量的刪除紀錄"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}：我們的資料庫供應商會保留每日備份 7 天，因此已刪除的資訊最多可能在備份中保留 7 天。"
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "備份"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "與你的請求相關的{lead}，保留至處理所需的時間。"
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "客服電子郵件"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "如需了解我們保留資訊的時間和你的其他權利，請參閱我們的{privacy}。"
     }
   }
 }

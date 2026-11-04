@@ -2,7 +2,7 @@
   "language": "th",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "หน้าแรก"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "ในหน้านี้"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "อัปเดตล่าสุด: {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "นโยบายความเป็นส่วนตัว"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "นโยบายความเป็นส่วนตัว — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "นโยบายความเป็นส่วนตัวของ PickupRadar"
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "หัวข้อในนโยบายความเป็นส่วนตัว"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "สรุปและหัวข้อต่าง ๆ ได้รับการแปลแล้ว นโยบายความเป็นส่วนตัวฉบับเต็มเป็นภาษาอังกฤษ และฉบับภาษาอังกฤษเป็นฉบับทางการ"
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "สรุป"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "เราคือใคร"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "ข้อมูลที่เราเก็บและวิธีที่เราใช้"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "สิ่งที่เราไม่ขอ"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "ฐานทางกฎหมายของเรา (สหราชอาณาจักร)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "เราแบ่งปันข้อมูลกับใคร"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "การโอนข้อมูลระหว่างประเทศ"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "เราเก็บข้อมูลไว้นานเท่าใด"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "ทางเลือกและสิทธิ์ของคุณ"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "ความปลอดภัย"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "เด็ก"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "การเปลี่ยนแปลงนโยบายนี้"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "ติดต่อ"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar ช่วยให้ไรเดอร์ส่งอาหารเห็นและรายงานเวลารอรับออร์เดอร์และปัญหาที่ร้านได้"
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "คุณใช้งานได้โดยไม่ต้องมีบัญชี แอปจะสร้างโปรไฟล์ Radar แบบไม่ระบุตัวตนให้โทรศัพท์ของคุณ ส่วนบัญชีอีเมลเป็นตัวเลือก"
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "หากคุณอนุญาตตำแหน่ง แอปจะใช้เฉพาะขณะที่คุณใช้งาน เพื่อเรียงจุดรับของที่อยู่ใกล้ ระบุเมืองของคุณ และตรวจสอบว่าคุณอยู่ที่ร้านเมื่อส่งรายงานแบบเรียลไทม์ เราไม่บันทึกตำแหน่งของคุณไว้กับรายงาน"
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "จุดรับของที่คุณบันทึกไว้จะอยู่ในโทรศัพท์ของคุณเท่านั้น"
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "เราไม่ขายข้อมูลส่วนบุคคลของคุณ และแอปไม่มีตัวติดตามเพื่อโฆษณาหรือการวิเคราะห์"
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "คุณลบโปรไฟล์ Radar หรือบัญชีได้ในแอป หรือส่งอีเมลขอให้เราลบ ดู{link}"
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "ลบบัญชีหรือข้อมูลของคุณ — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "วิธีลบบัญชี PickupRadar โปรไฟล์ Radar และข้อมูลที่เกี่ยวข้อง แม้ไม่มีแอป"
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "หัวข้อการลบบัญชี"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "ลบบัญชีหรือข้อมูลของคุณ"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "หน้านี้อธิบายวิธีลบบัญชี PickupRadar โปรไฟล์ Radar และข้อมูลที่เชื่อมโยงอยู่ แม้คุณจะไม่มีแอปแล้วก็ตาม PickupRadar พัฒนาโดย Hamza Khan"
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "ลบในแอป (เร็วที่สุด)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "เปิด PickupRadar"
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "แตะ {profile} ที่ด้านล่างของหน้าจอหลัก"
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "เลื่อนลงแล้วแตะ {deleteAccount} หากคุณปกป้อง RadarPoints ด้วยอีเมล หรือแตะ {deleteProfile} หากไม่ได้ปกป้อง"
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "แตะ {confirm} เพื่อยืนยัน"
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "การลบเริ่มทันที จากนั้นแอปจะเริ่มโปรไฟล์ Radar แบบไม่ระบุตัวตนใหม่ในโทรศัพท์ของคุณ"
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "ขอให้เราลบบัญชีอีเมลของคุณ"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "หากคุณปกป้อง RadarPoints ด้วยที่อยู่อีเมลและใช้แอปไม่ได้:"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "ส่งอีเมลไปที่ {email} {from} โดยใช้หัวเรื่อง “{subject}”"
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "จากที่อยู่อีเมลของบัญชี PickupRadar ของคุณ"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "เราจะตอบกลับไปที่อยู่นั้นเพื่อยืนยันคำขอก่อนลบสิ่งใด"
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "หากคุณเขียนมาจากที่อยู่อื่น เราจะต้องยืนยันว่าคุณเป็นผู้ควบคุมที่อยู่อีเมลของบัญชี เราจะไม่ขอรหัสผ่านหรือรหัสเข้าสู่ระบบเด็ดขาด อย่าส่งรหัสของคุณมาให้เรา"
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "โปรไฟล์ Radar แบบไม่ระบุตัวตน"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "หากคุณไม่เคยเพิ่มที่อยู่อีเมล โปรไฟล์ Radar ของคุณจะเชื่อมโยงกับ ID แบบสุ่มที่บันทึกไว้ในแอปบนโทรศัพท์เท่านั้น วิธีลบที่ง่ายที่สุดคือลบในแอปตามขั้นตอนข้างต้น"
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "การลบแอปจะลบ ID นั้นออกจากโทรศัพท์ แต่{not}บันทึกบนเซิร์ฟเวอร์ของเรา"
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "ไม่ได้ลบ"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "ความเป็นเจ้าของโปรไฟล์แบบไม่ระบุตัวตนพิสูจน์ได้จากโทรศัพท์ที่สร้างโปรไฟล์นั้นเท่านั้น โดยใช้ ID แบบสุ่มและรหัสลับที่บันทึกไว้ในแอป รายละเอียดอย่างชื่อ Radar เมือง หรือวันที่คุณใช้แอป ไม่ได้พิสูจน์ว่าโปรไฟล์เป็นของคุณ เพราะคนอื่นก็อาจรู้ได้ ดังนั้นหากคุณไม่มีแอปแล้ว เราอาจลบโปรไฟล์แบบไม่ระบุตัวตนไม่ได้ แต่คุณยังส่งอีเมลไปที่ {email} ได้ และเราจะอธิบายว่าเราทำอะไรได้บ้าง"
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "อีเมลแจ้งเตือนการเปิดให้บริการในเมือง"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "คุณยกเลิกการแจ้งเตือนการเปิดให้บริการได้ในแอป หรือส่งอีเมลถึงเราจากที่อยู่ที่ใช้ลงทะเบียน แล้วเราจะลบการลงทะเบียนของที่อยู่นั้น อีเมลสำหรับการแจ้งเตือนการเปิดให้บริการจะถูกลบโดยอัตโนมัติด้วย ตามที่อธิบายไว้ใน{privacy}ของเรา"
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "สิ่งที่ถูกลบ"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "โปรไฟล์ Radar ชื่อ Radar RadarPoints และประวัติการมีส่วนร่วมของคุณ"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "การเข้าสู่ระบบด้วยอีเมล หากคุณมีบัญชีอีเมล"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "การเชื่อมโยงระหว่าง ID อุปกรณ์ของโทรศัพท์กับโปรไฟล์ของคุณ"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "รหัสแนะนำของคุณ และสถานะอ่านแล้วหรือปิดแล้วของข้อความในแอป"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "การลงทะเบียนรับแจ้งเตือนการเปิดให้บริการที่เชื่อมโยงกับโปรไฟล์หรือโทรศัพท์ของคุณ"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "บันทึกในรายงานปัญหา รายงานสถานะ และคำแนะนำร้านที่เชื่อมโยงกับโปรไฟล์ของคุณ"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "สิ่งที่อาจถูกเก็บไว้"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead} เช่น เวลารอ รายงานสถานะและแท็กของร้าน และคำแนะนำร้าน: ID อุปกรณ์ในบันทึกที่เชื่อมโยงกับโปรไฟล์ของคุณจะถูกแทนที่ด้วยค่าแบบสุ่ม ทำให้ในฐานข้อมูลของเราไม่เชื่อมโยงกับโปรไฟล์ของคุณอีก แต่ยังมีรายละเอียดอย่างร้านและเวลา จึงเป็นข้อมูลที่ไม่ระบุตัวตน ไม่ใช่ข้อมูลนิรนามโดยสมบูรณ์ ข้อมูลเหล่านี้อาจถูกเก็บไว้เพื่อช่วยไรเดอร์คนอื่นต่อไป"
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "รายงานที่ผ่านมา"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "{lead}ที่คุณมีส่วนร่วม โดยไม่มีโปรไฟล์ของคุณ"
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "บันทึกการแนะนำ"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead}สำหรับบัญชีอีเมล (รหัสอ้างอิงบัญชีภายใน ID อุปกรณ์ สำเนาที่เข้ารหัสทางเดียวของรหัสลับในโทรศัพท์ และวันที่) เพื่อให้การลบเสร็จสมบูรณ์อย่างปลอดภัยและแสดงได้ว่าได้ลบแล้ว"
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "บันทึกการลบขั้นต่ำ"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead}: ผู้ให้บริการฐานข้อมูลของเราเก็บข้อมูลสำรองรายวันไว้ 7 วัน ข้อมูลที่ลบแล้วจึงอาจยังอยู่ในข้อมูลสำรองได้นานสูงสุด 7 วัน"
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "ข้อมูลสำรอง"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "{lead}เกี่ยวกับคำขอของคุณ ตราบเท่าที่จำเป็นต่อการดำเนินการ"
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "อีเมลถึงฝ่ายสนับสนุน"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "ดูรายละเอียดทั้งหมดเกี่ยวกับระยะเวลาที่เราเก็บข้อมูลและสิทธิ์อื่น ๆ ของคุณได้ใน{privacy}ของเรา"
     }
   }
 }

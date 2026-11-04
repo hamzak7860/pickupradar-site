@@ -2,7 +2,7 @@
   "language": "fr",
   "status": "machine",
   "machineTranslatedBy": "Claude Opus 5.5",
-  "machineTranslatedOn": "2026-10-22",
+  "machineTranslatedOn": "2026-11-03",
   "reviewedBy": "",
   "reviewedOn": "",
   "strings": {
@@ -465,6 +465,282 @@
     "notfound.home": {
       "en": "Home",
       "text": "Accueil"
+    },
+    "legal.toc.title": {
+      "en": "On this page",
+      "text": "Sur cette page"
+    },
+    "legal.updated": {
+      "en": "Last updated: {date}",
+      "text": "Dernière mise à jour : {date}"
+    },
+    "legal.privacyPolicy": {
+      "en": "Privacy Policy",
+      "text": "Politique de confidentialité"
+    },
+    "privacy.meta.title": {
+      "en": "Privacy Policy — PickupRadar",
+      "text": "Politique de confidentialité — PickupRadar"
+    },
+    "privacy.meta.description": {
+      "en": "Privacy Policy for PickupRadar.",
+      "text": "Politique de confidentialité de PickupRadar."
+    },
+    "privacy.toc.aria": {
+      "en": "Privacy policy sections",
+      "text": "Sections de la politique de confidentialité"
+    },
+    "privacy.notice": {
+      "en": "The summary and section headings are translated. The full privacy policy is in English, which is the official version.",
+      "text": "Le résumé et les titres des sections sont traduits. La politique de confidentialité complète est en anglais, qui est la version officielle."
+    },
+    "privacy.h.summary": {
+      "en": "Summary",
+      "text": "Résumé"
+    },
+    "privacy.h.who": {
+      "en": "Who we are",
+      "text": "Qui nous sommes"
+    },
+    "privacy.h.collect": {
+      "en": "Information we collect and how we use it",
+      "text": "Les informations que nous collectons et leur utilisation"
+    },
+    "privacy.h.dontAsk": {
+      "en": "What we don’t ask for",
+      "text": "Ce que nous ne demandons pas"
+    },
+    "privacy.h.legalBases": {
+      "en": "Our legal bases (UK)",
+      "text": "Nos bases légales (Royaume-Uni)"
+    },
+    "privacy.h.share": {
+      "en": "Who we share information with",
+      "text": "Avec qui nous partageons des informations"
+    },
+    "privacy.h.transfers": {
+      "en": "International transfers",
+      "text": "Transferts internationaux"
+    },
+    "privacy.h.retention": {
+      "en": "How long we keep information",
+      "text": "Combien de temps nous conservons les informations"
+    },
+    "privacy.h.rights": {
+      "en": "Your choices and rights",
+      "text": "Vos choix et vos droits"
+    },
+    "privacy.h.security": {
+      "en": "Security",
+      "text": "Sécurité"
+    },
+    "privacy.h.children": {
+      "en": "Children",
+      "text": "Enfants"
+    },
+    "privacy.h.changes": {
+      "en": "Changes to this policy",
+      "text": "Modifications de cette politique"
+    },
+    "privacy.h.contact": {
+      "en": "Contact",
+      "text": "Contact"
+    },
+    "privacy.sum.what": {
+      "en": "PickupRadar helps delivery drivers see and report pickup wait times and venue problems.",
+      "text": "PickupRadar aide les livreurs à voir et à signaler les temps d’attente au retrait et les problèmes des établissements."
+    },
+    "privacy.sum.account": {
+      "en": "You can browse without creating an account. The app creates an anonymous Radar profile for your phone, and an email account is optional.",
+      "text": "Vous pouvez naviguer sans créer de compte. L’application crée un profil Radar anonyme pour votre téléphone, et le compte avec e-mail est facultatif."
+    },
+    "privacy.sum.location": {
+      "en": "If you allow location, the app uses it while you are using it: to sort nearby pickup points, detect your city and check that you are at a venue when you submit a live report. We do not save your location with your reports.",
+      "text": "Si vous autorisez la localisation, l’application l’utilise pendant que vous l’utilisez : pour trier les points de retrait proches, détecter votre ville et vérifier que vous êtes sur place quand vous envoyez un signalement en direct. Nous n’enregistrons pas votre position avec vos signalements."
+    },
+    "privacy.sum.saved": {
+      "en": "Your saved pickup points stay on your phone.",
+      "text": "Vos points de retrait enregistrés restent sur votre téléphone."
+    },
+    "privacy.sum.noSale": {
+      "en": "We do not sell your personal information and the app contains no advertising or analytics trackers.",
+      "text": "Nous ne vendons pas vos informations personnelles, et l’application ne contient aucun traceur publicitaire ou d’analyse."
+    },
+    "privacy.sum.delete": {
+      "en": "You can delete your Radar profile or account in the app, or ask us by email. See {link}.",
+      "text": "Vous pouvez supprimer votre profil Radar ou votre compte dans l’application, ou nous le demander par e-mail. Voir {link}."
+    },
+    "delete.meta.title": {
+      "en": "Delete your account or data — PickupRadar",
+      "text": "Supprimer votre compte ou vos données — PickupRadar"
+    },
+    "delete.meta.description": {
+      "en": "How to delete your PickupRadar account, Radar profile and associated data, including without the app.",
+      "text": "Comment supprimer votre compte PickupRadar, votre profil Radar et les données associées, même sans l’application."
+    },
+    "delete.toc.aria": {
+      "en": "Delete account sections",
+      "text": "Sections de suppression du compte"
+    },
+    "delete.h1": {
+      "en": "Delete your account or data",
+      "text": "Supprimer votre compte ou vos données"
+    },
+    "delete.lead": {
+      "en": "This page explains how to delete your PickupRadar account, your Radar profile and the data linked to them, including if you no longer have the app. PickupRadar is developed by Hamza Khan.",
+      "text": "Cette page explique comment supprimer votre compte PickupRadar, votre profil Radar et les données qui y sont liées, y compris si vous n’avez plus l’application. PickupRadar est développé par Hamza Khan."
+    },
+    "delete.app.title": {
+      "en": "Delete in the app (quickest)",
+      "text": "Supprimer dans l’application (le plus rapide)"
+    },
+    "delete.app.step1": {
+      "en": "Open PickupRadar.",
+      "text": "Ouvrez PickupRadar."
+    },
+    "delete.app.step2": {
+      "en": "Tap {profile} at the bottom of the Home screen.",
+      "text": "Touchez {profile} en bas de l’écran d’accueil."
+    },
+    "delete.app.step3": {
+      "en": "Scroll down and tap {deleteAccount} if you protected your RadarPoints with your email, or {deleteProfile} if you did not.",
+      "text": "Faites défiler vers le bas et touchez {deleteAccount} si vous avez protégé vos RadarPoints avec votre e-mail, ou {deleteProfile} sinon."
+    },
+    "delete.app.step4": {
+      "en": "Tap {confirm} to confirm.",
+      "text": "Touchez {confirm} pour confirmer."
+    },
+    "delete.app.after": {
+      "en": "Deletion starts straight away. Afterwards, the app starts a new anonymous Radar profile on your phone.",
+      "text": "La suppression commence immédiatement. Ensuite, l’application crée un nouveau profil Radar anonyme sur votre téléphone."
+    },
+    "delete.email.title": {
+      "en": "Ask us to delete your email account",
+      "text": "Nous demander de supprimer votre compte avec e-mail"
+    },
+    "delete.email.intro": {
+      "en": "If you protected your RadarPoints with your email address and cannot use the app:",
+      "text": "Si vous avez protégé vos RadarPoints avec votre adresse e-mail et ne pouvez pas utiliser l’application :"
+    },
+    "delete.email.step1": {
+      "en": "Email {email} {from}, with the subject “{subject}”.",
+      "text": "Écrivez à {email} {from}, avec l’objet « {subject} »."
+    },
+    "delete.email.from": {
+      "en": "from the email address on your PickupRadar account",
+      "text": "depuis l’adresse e-mail de votre compte PickupRadar"
+    },
+    "delete.email.step2": {
+      "en": "We will reply to that address to confirm the request before deleting anything.",
+      "text": "Nous répondrons à cette adresse pour confirmer la demande avant de supprimer quoi que ce soit."
+    },
+    "delete.email.other": {
+      "en": "If you write from a different address, we will need to confirm that you control the account’s email address. We will never ask for a password or for a sign-in code. Do not send us your code.",
+      "text": "Si vous écrivez depuis une autre adresse, nous devrons vérifier que vous contrôlez l’adresse e-mail du compte. Nous ne vous demanderons jamais de mot de passe ni de code de connexion. Ne nous envoyez pas votre code."
+    },
+    "delete.anon.title": {
+      "en": "Anonymous Radar profiles",
+      "text": "Profils Radar anonymes"
+    },
+    "delete.anon.p1": {
+      "en": "If you never added an email address, your Radar profile is linked only to a random ID stored in the app on your phone. The easiest way to delete it is in the app, using the steps above.",
+      "text": "Si vous n’avez jamais ajouté d’adresse e-mail, votre profil Radar est lié uniquement à un identifiant aléatoire enregistré dans l’application sur votre téléphone. Le plus simple pour le supprimer est de le faire dans l’application, avec les étapes ci-dessus."
+    },
+    "delete.anon.p2": {
+      "en": "Deleting the app removes that ID from your phone, but it does {not} delete the records on our servers.",
+      "text": "Supprimer l’application retire cet identifiant de votre téléphone, mais ne supprime {not} les données sur nos serveurs."
+    },
+    "delete.anon.not": {
+      "en": "not",
+      "text": "pas"
+    },
+    "delete.anon.p3": {
+      "en": "Ownership of an anonymous profile can only be proven from the phone it was created on, using the random ID and secret code stored in the app. Details such as a Radar name, a city or the dates you used the app can’t prove that a profile is yours, because other people could know them. So if you no longer have the app, we may not be able to delete an anonymous profile. You can still email {email} and we will explain what we can do.",
+      "text": "La propriété d’un profil anonyme ne peut être prouvée que depuis le téléphone sur lequel il a été créé, grâce à l’identifiant aléatoire et au code secret enregistrés dans l’application. Des informations comme un nom Radar, une ville ou les dates d’utilisation de l’application ne prouvent pas qu’un profil est le vôtre, car d’autres personnes pourraient les connaître. Si vous n’avez plus l’application, il se peut donc que nous ne puissions pas supprimer un profil anonyme. Vous pouvez quand même écrire à {email}, et nous vous expliquerons ce que nous pouvons faire."
+    },
+    "delete.alerts.title": {
+      "en": "City launch alert emails",
+      "text": "E-mails d’alerte de lancement dans une ville"
+    },
+    "delete.alerts.body": {
+      "en": "You can withdraw a launch alert in the app, or email us from the address you signed up with and we will delete the sign-ups for that address. Launch-alert emails are also deleted automatically, as explained in our {privacy}.",
+      "text": "Vous pouvez retirer une alerte de lancement dans l’application, ou nous écrire depuis l’adresse utilisée pour l’inscription, et nous supprimerons les inscriptions de cette adresse. Les e-mails d’alerte de lancement sont aussi supprimés automatiquement, comme l’explique notre {privacy}."
+    },
+    "delete.deleted.title": {
+      "en": "What is deleted",
+      "text": "Ce qui est supprimé"
+    },
+    "delete.deleted.profile": {
+      "en": "Your Radar profile, Radar name, RadarPoints and contribution history",
+      "text": "Votre profil Radar, votre nom Radar, vos RadarPoints et votre historique de contributions"
+    },
+    "delete.deleted.email": {
+      "en": "Your email sign-in, if you had an email account",
+      "text": "Votre connexion par e-mail, si vous aviez un compte avec e-mail"
+    },
+    "delete.deleted.links": {
+      "en": "The links between your phone’s device ID and your profile",
+      "text": "Les liens entre l’identifiant d’appareil de votre téléphone et votre profil"
+    },
+    "delete.deleted.referrals": {
+      "en": "Your referral codes, and your read or dismissed status for in-app messages",
+      "text": "Vos codes de parrainage, et l’état lu ou ignoré des messages de l’application"
+    },
+    "delete.deleted.alerts": {
+      "en": "City launch alert sign-ups linked to your profile or phone",
+      "text": "Les inscriptions aux alertes de lancement liées à votre profil ou à votre téléphone"
+    },
+    "delete.deleted.notes": {
+      "en": "Notes on the problem reports, status reports and venue suggestions linked to your profile",
+      "text": "Les notes des signalements de problème, des signalements d’état et des suggestions d’établissement liés à votre profil"
+    },
+    "delete.kept.title": {
+      "en": "What may be kept",
+      "text": "Ce qui peut être conservé"
+    },
+    "delete.kept.reports": {
+      "en": "{lead}, such as wait times, venue status reports and tags, and venue suggestions: the device ID on the records linked to your profile is replaced with a random value, so they are no longer connected to your profile in our database. They still contain details such as the venue and time, so they are de-identified rather than fully anonymous. They may be kept so they can still help other drivers.",
+      "text": "{lead}, comme les temps d’attente, les signalements d’état et les étiquettes des établissements, et les suggestions d’établissement : l’identifiant d’appareil des données liées à votre profil est remplacé par une valeur aléatoire, si bien qu’elles ne sont plus reliées à votre profil dans notre base de données. Elles contiennent encore des informations comme l’établissement et l’heure, elles sont donc désidentifiées plutôt que totalement anonymes. Elles peuvent être conservées pour continuer à aider d’autres livreurs."
+    },
+    "delete.kept.reportsLead": {
+      "en": "Past reports",
+      "text": "Les signalements passés"
+    },
+    "delete.kept.referrals": {
+      "en": "{lead} that involved you, without your profile.",
+      "text": "Les {lead} vous concernant, sans votre profil."
+    },
+    "delete.kept.referralsLead": {
+      "en": "Referral records",
+      "text": "données de parrainage"
+    },
+    "delete.kept.receipt": {
+      "en": "{lead} for email accounts (an internal account reference, the device ID, a one-way scrambled copy of the phone’s secret code and dates), so the deletion can be completed safely and shown to have happened.",
+      "text": "{lead} pour les comptes avec e-mail (une référence interne du compte, l’identifiant d’appareil, une copie brouillée à sens unique du code secret du téléphone et des dates), afin que la suppression puisse être menée à bien en toute sécurité et attestée."
+    },
+    "delete.kept.receiptLead": {
+      "en": "A minimal deletion record",
+      "text": "Un enregistrement minimal de suppression"
+    },
+    "delete.kept.backups": {
+      "en": "{lead}: our database provider keeps daily backups for 7 days, so deleted information can stay in a backup for up to 7 days.",
+      "text": "{lead} : notre fournisseur de base de données conserve des sauvegardes quotidiennes pendant 7 jours, donc des informations supprimées peuvent rester dans une sauvegarde jusqu’à 7 jours."
+    },
+    "delete.kept.backupsLead": {
+      "en": "Backups",
+      "text": "Sauvegardes"
+    },
+    "delete.kept.support": {
+      "en": "{lead} about your request, for as long as we need them to deal with it.",
+      "text": "{lead} concernant votre demande, aussi longtemps que nécessaire pour la traiter."
+    },
+    "delete.kept.supportLead": {
+      "en": "Support emails",
+      "text": "Les e-mails au support"
+    },
+    "delete.kept.more": {
+      "en": "See our {privacy} for full details of how long we keep information and your other rights.",
+      "text": "Consultez notre {privacy} pour tous les détails sur la durée de conservation des informations et vos autres droits."
     }
   }
 }
