@@ -41,7 +41,8 @@
     app('shared.term.notify', 'Notify me when live', 'cityAlert.notifyLine', appLabel);
     app('shared.term.how', 'How it works', 'home.help.howItWorks', appLabel);
     app('shared.term.support', 'Support', 'home.help.support', appLabel);
-    app('shared.term.madeOnArrival', 'Made when driver arrives', 'home.badge.madeOnArrival', appLabel);
+    app('shared.term.orderStartsOnArrival', 'Order starts after arrival', 'report.orderStartsOnArrival.title', appLabel);
+    app('shared.term.reportRpPrompt', 'Report needed · +15 RP', 'home.reportRpPrompt', appLabel);
     app('shared.term.closedNow', 'Closed now', 'problem.closedNow', appLabel);
     app('shared.term.notReceiving', 'Not receiving orders', 'problem.notReceiving', appLabel);
     app('shared.term.waitReport', 'Valid wait report', 'radar.earning.waitReport', appLabel);

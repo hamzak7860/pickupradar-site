@@ -1085,7 +1085,7 @@ function mountPickupRadarPreview(container, options) {
       : '';
     let badges = '';
     if (item.madeWhenDriverArrivesBadge) {
-      badges += '<span class="urgent-badge">' + escapeHtml(t('home.badge.madeOnArrival', 'Made when driver arrives')) + '</span>';
+      badges += '<span class="urgent-badge">' + escapeHtml(t('report.orderStartsOnArrival.title', 'Order starts after arrival')) + '</span>';
     }
     if (item.closedWarning) {
       badges += '<span class="urgent-badge">' + escapeHtml(t('home.badge.closedRecently', 'Reported closed recently')) + '</span>';
@@ -1848,6 +1848,10 @@ function mountPickupRadarPreview(container, options) {
       })
       .join('');
     let warnings = '';
+    // App: ReportWaitScreen shows the arrival badge before the closed and tablet/server badges.
+    if (venue.madeWhenDriverArrivesBadge) {
+      warnings += '<span class="selected-venue-warning">' + escapeHtml(t('report.orderStartsOnArrival.title', 'Order starts after arrival')) + '</span>';
+    }
     if (venue.closedWarning) {
       warnings += '<span class="selected-venue-warning">' + escapeHtml(t('report.badge.closedRecently', 'Reported closed recently')) + '</span>';
     }

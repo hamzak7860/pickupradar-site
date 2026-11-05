@@ -111,9 +111,14 @@
       "app": "home.help.support",
       "note": "App dictionary label. Do not translate it in the website file."
     },
-    "shared.term.madeOnArrival": {
-      "en": "Made when driver arrives",
-      "app": "home.badge.madeOnArrival",
+    "shared.term.orderStartsOnArrival": {
+      "en": "Order starts after arrival",
+      "app": "report.orderStartsOnArrival.title",
+      "note": "App dictionary label. Do not translate it in the website file."
+    },
+    "shared.term.reportRpPrompt": {
+      "en": "Report needed · +15 RP",
+      "app": "home.reportRpPrompt",
       "note": "App dictionary label. Do not translate it in the website file."
     },
     "shared.term.closedNow": {
