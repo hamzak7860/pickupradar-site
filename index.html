@@ -32,6 +32,12 @@
   <link rel="preload" href="/assets/fonts/archivo-latin-variable.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="preview.css?v=20261021g" />
   <link rel="stylesheet" href="/site.css?v=20261103a" />
+  <style>
+    /* Homepage only: tighter spacing between sections. */
+    .page-home .w-hero { padding-bottom: clamp(32px, 4vw, 56px); }
+    .page-home .w-section { padding: clamp(36px, 4.5vw, 60px) 0; }
+    .page-home .w-footer { margin-top: clamp(24px, 3vw, 48px); }
+  </style>
 </head>
 <body class="page-home" data-site-i18n-page>
   <a class="w-skip" href="#main" data-site-i18n="shared.skip">Skip to content</a>
@@ -70,7 +76,6 @@
           </p>
           <div class="w-actions">
             <a class="w-btn w-btn-go" href="/app.html" data-site-i18n="home.hero.try">Try it with real data</a>
-            <a class="w-btn w-btn-quiet" href="#how-it-works" data-site-i18n="shared.term.how">How it works</a>
             <a class="w-btn w-btn-quiet" href="/early-access.html">Get early access</a>
           </div>
           <ul class="w-meta" data-site-i18n-aria="home.hero.availability" aria-label="Availability">
@@ -117,7 +122,6 @@
                 </div>
               </div>
             </div>
-            <figcaption class="w-example-caption" data-site-i18n="home.example.caption">Example screen. These are sample wait times, not live reports. <a href="/app.html" data-site-slot="live" data-site-i18n="home.example.live">Try the live preview</a> with real data.</figcaption>
           </figure>
         </div>
       </div>
@@ -188,27 +192,10 @@
       </div>
     </section>
 
-    <section class="w-section" aria-labelledby="points-title">
-      <div class="w-wrap w-points-grid">
-        <div>
-          <h2 class="w-h2" id="points-title" data-site-i18n="home.points.title">Earn RadarPoints</h2>
-          <p class="w-note"><span data-site-i18n="home.points.note"><strong data-site-slot="soon" data-site-i18n="home.points.noteSoon">Rewards coming soon.</strong> You can't redeem RadarPoints yet.</span></p>
-        </div>
-        <ul class="w-ledger" data-site-i18n-aria="home.points.aria" aria-label="How to earn RadarPoints">
-          <li><span data-site-i18n="shared.term.waitReport">Valid wait report</span><span class="w-pill w-pill-rp" data-site-i18n="shared.term.waitRp">+10 RP</span></li>
-          <li><span data-site-i18n="home.points.neededLine">Report needed<small data-site-slot="help" data-site-i18n="home.points.neededHelp">An eligible pickup point near you with no recent wait and no Likely fast or Likely slow. You earn 15 RP for the report instead of 10.</small></span><span class="w-pill w-pill-rp" data-site-i18n="shared.term.neededRp">+15 RP</span></li>
-        </ul>
-      </div>
-    </section>
-
     <section class="w-section" id="cities" aria-labelledby="cities-title">
       <div class="w-wrap w-cities-grid">
         <div>
           <h2 class="w-h2" id="cities-title" data-site-i18n="home.hero.cities">Now in Milton Keynes. London is next.</h2>
-          <p class="w-text" data-site-i18n="home.cities.body">
-            These are the UK cities in the app. Can't find your city? Request it in the app. Or tap
-            Notify me when live on a Coming soon city. We'll email you when it's live.
-          </p>
         </div>
         <div class="w-cities">
           <div class="w-city-group">
@@ -241,50 +228,10 @@
       </div>
     </section>
 
-    <section class="w-section" aria-labelledby="trust-title">
-      <div class="w-wrap w-trust">
-        <div>
-          <h2 class="w-h2" id="trust-title" data-site-i18n="home.trust.title">Not part of any delivery app</h2>
-          <p class="w-text" data-site-i18n="home.trust.body">
-            PickupRadar is independent. It is not part of Uber Eats, Deliveroo, Just Eat or any other delivery app.
-            It never uses your accounts with them.
-          </p>
-          <div class="w-actions">
-            <a class="w-btn w-btn-quiet" href="/privacy.html" data-site-i18n="home.trust.privacy">Read the privacy policy</a>
-          </div>
-        </div>
-        <ul class="w-checks">
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M9.6 16.6 5.3 12.3l-1.4 1.4 5.7 5.7L20.1 8.9l-1.4-1.4z"/></svg>
-            <span data-site-i18n="home.trust.login"><strong data-site-slot="lead" data-site-i18n="home.trust.loginLead">No delivery app logins.</strong> We never ask for your Uber Eats, Deliveroo or Just Eat username or password.</span>
-          </li>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M9.6 16.6 5.3 12.3l-1.4 1.4 5.7 5.7L20.1 8.9l-1.4-1.4z"/></svg>
-            <span data-site-i18n="home.trust.details"><strong data-site-slot="lead" data-site-i18n="home.trust.detailsLead">No customer or order details.</strong> No names, addresses or order numbers.</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="w-wrap" aria-labelledby="early-access-title">
-      <div class="w-closer">
-        <h2 class="w-h2" id="early-access-title" lang="en" dir="ltr">Be one of the first Milton Keynes drivers on PickupRadar.</h2>
-        <p class="w-text" lang="en" dir="ltr">The iPhone and Android apps are almost ready. Tell us your phone and city, and we&rsquo;ll email you when there&rsquo;s a spot for you.</p>
-        <div class="w-actions">
-          <a class="w-btn w-btn-go" href="/early-access.html">Get early access</a>
-          <a class="w-btn w-btn-quiet" href="/app.html" data-site-i18n="home.closer.cta">Open the live preview</a>
-        </div>
-      </div>
-    </section>
-
     <section class="w-section" aria-labelledby="faq-title">
       <div class="w-wrap">
         <h2 class="w-h2" id="faq-title" data-site-i18n="home.faq.title">Questions from drivers</h2>
         <div class="w-faq">
-          <details>
-            <summary data-site-i18n="home.faq.account.q">Do I need an account?</summary>
-            <div><p data-site-i18n="home.faq.account.a">No. The app gives you a Radar profile automatically. You can report waits straight away. To protect your RadarPoints, add your email later. No password needed. The app emails you a 6-digit code.</p></div>
-          </details>
           <details>
             <summary data-site-i18n="home.faq.download.q">When can I download the app?</summary>
             <div><p data-site-i18n="home.faq.download.a">The iPhone and Android apps are coming soon. For now, the <a href="/app.html" data-site-slot="preview" data-site-i18n="home.faq.download.link">live preview</a> shows real Milton Keynes pickup points and waits.</p></div>
